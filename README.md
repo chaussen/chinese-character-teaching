@@ -38,7 +38,7 @@ Pure python packages are required for the tool.
 7. xlsxwriter: for Kahoot spreadsheet file generation
 
 1-4 are necessary for card making. 5 is optional for game.  
-6 and 7 are required for Kahoot.
+3, 4, 6 and 7 are also required for Kahoot processor.
 
 ## API Reference
 

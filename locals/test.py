@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 from ChineseCardMaker import ChineseCardMaker
 cc = ChineseCardMaker()
 cc.generate_separate_images()

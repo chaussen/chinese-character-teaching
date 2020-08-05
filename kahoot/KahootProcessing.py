@@ -1,36 +1,15 @@
-#!py -3
-from PIL import Image
-import os.path
-import sys
+#!/usr/bin/env python3
+from configs import COLUMNS, CHARACTER_PINYIN_MAPPING, PinyinToneMark
 import random
 import csv
 from xlsxwriter.workbook import Workbook
-# pdf to image: PS C:\Users\jni\Pictures> pdftocairo -jpeg jile.pdf
-# (double) with pinyin: py -3 C:\Users\jni\docs\Documents\education\kahoot_processing.py crop .  334 240 970 594
-# (triple) with pinyin: py -3 C:\Users\jni\docs\Documents\education\kahoot_processing.py crop .  146 240 1357 594
-# pip install Pillow pip install XlsxWriter pip install py-translate pip install pinyin
-# https://stackoverflow.com/questions/50854235/how-to-draw-chinese-text-on-the-image-using-cv2-puttextcorrectly-pythonopen
-# https://stackoverflow.com/questions/37191008/load-truetype-font-to-opencv/46558093#46558093
-# https://haptik.ai/tech/putting-text-on-image-using-python/
+# from xpinyin import Pinyin
+import pinyin.cedict
+import pinyin
+# >>> pinyin.cedict.translate_word('你')
+# ['you (informal, as opposed to courteous 您[nin2])']
+# >>> pinyin.cedict.translate_word('你好')
 
-# default generate: py -3 C:\Users\jni\docs\Documents\education\kahoot_processing.py generate kahoo.csv C:\Users\jni\docs\Documents\education\kahoot.txt
-# py -3 .\kahoot_processing.py generate eggs.csv kahoot.txt 15 3 20 1
-# py -3 C:\Users\jni\docs\Documents\education\kahoot_processing.py crop . 337 362 966 477
-#  py -3 C:\Users\jni\docs\Documents\education\kahoot_processing.py crop . 586 365 477 477
-# kahoot.txt:
-# Recognize the character(s).
-# Full|Prepare|Dish; Vegetable|Restaurant|Physical exercise|Tea|Fry|Measure word for meal|Fat|A kind of place|Delicious|Variety|Chicken|Reduce|Lose weight|Egg|Then|Extremely|Empty|US dollar|Capable|Beside|Green|Green vegetable|Meat|Soup|Taste|Fresh|Be a guest
-
-
-COLUMNS = ['', 'Question - max 120 characters', 'Answer 1 - max 75 characters', 'Answer 2 - max 75 characters', 'Answer 3 - max 75 characters',
-           'Answer 4 - max 75 characters', "Time limit (sec) – 5, 10, 20, 30, 60, 90, 120, or 240 secs", 'Correct answer(s) - choose at least one']
-# QUESTIONS = ['Recognize the character(s).'] * 200
-# ALL_CHOICES = ['Full', 'Prepare', 'Dish; Vegetable', 'Restaurant', 'Physical exercise', 'Tea', 'Fry', 'Measure word for meal', 'Fat', 'A kind of place', 'Delicious', 'Variety',
-#                'Chicken', 'Reduce', 'Lose weight', 'Egg', 'Then', 'Extremely', 'Empty', 'US dollar', 'Capable', 'Beside', 'Green', 'Green vegetable', 'Meat', 'Soup', 'Taste', 'Fresh', 'Be a guest']
-# 1165 504 py -3 C:\Users\jni\docs\Documents\education\kahoot_processing.py crop .  1165 504 1175 955
-# 1175 955
-# 670 470 py -3 C:\Users\jni\docs\Documents\education\kahoot_processing.py crop .  670 470 1979 1179
-# 1979 1179
 
 class KahootProcessing:
     def __init__(self):
@@ -101,60 +80,97 @@ class KahootProcessing:
         self.write_csv(csvfile, lines, question)
         self.convert_to_xlsx(csvfile)
 
-    def crop(self, path='', left=0, right=0, length=0, width=0, output=''):
-        #  281 175 226 226
-        if not path:
-            print("no input or output path specified")
-            return
-        if left == 0 and right == 0 and length == 0 and width == 0:
-            print("no cropping options specified")
-            return
-        left, right, length, width = int(left), int(
-            right), int(length), int(width)
-        dirs = os.listdir(path)
-        for item in dirs:
-            fullpath = os.path.join(path, item)  # corrected
-            if os.path.isfile(fullpath):
-                f, e = os.path.splitext(fullpath)
-                if e not in ['.jpg']:
-                    continue
-                outputfile = f + '_cropped.jpg' if not output else output
-                # print(outputfile)
-                try:
-                    with Image.open(fullpath) as im:
-                        transposed  = im.transpose(Image.ROTATE_90)
-                        imCrop = transposed.crop(
-                            (left, right, left + length, right + width))  # corrected
-                        imCrop.save(outputfile)
-                except Exception as inst:
-                    print(f"cannot crop {fullpath}:\n{inst}")
+    def write_question_and_answers_csv(self, csvfile, answers, questions):
+        # answers = self.generate_random_choices()
+        print(csvfile)
+        with open(csvfile, 'w', newline='', encoding="utf8") as csvfile:
+            spamwriter = csv.writer(csvfile)
+            spamwriter.writerow(COLUMNS)
+            count = len(answers)
+            for i in range(count):
+                answer_line = answers[i]
+                spamwriter.writerow(
+                    [str(i), questions[i]] + answer_line)
 
+    def decode_pinyin(self, s):
+        s = s.lower()
+        r = ""
+        t = ""
+        for c in s:
+            if c >= 'a' and c <= 'z':
+                t += c
+            elif c == ':':
+                assert t[-1] == 'u'
+                t = t[:-1] + "\u00fc"
+            else:
+                if c >= '0' and c <= '5':
+                    tone = int(c) % 5
+                    if tone != 0:
+                        m = re.search("[aoeiuv\u00fc]+", t)
+                        if m is None:
+                            t += c
+                        elif len(m.group(0)) == 1:
+                            t = t[:m.start(
+                                0)] + PinyinToneMark[tone][PinyinToneMark[0].index(m.group(0))] + t[m.end(0):]
+                        else:
+                            if 'a' in t:
+                                t = t.replace("a", PinyinToneMark[tone][0])
+                            elif 'o' in t:
+                                t = t.replace("o", PinyinToneMark[tone][1])
+                            elif 'e' in t:
+                                t = t.replace("e", PinyinToneMark[tone][2])
+                            elif t.endswith("ui"):
+                                t = t.replace("i", PinyinToneMark[tone][3])
+                            elif t.endswith("iu"):
+                                t = t.replace("u", PinyinToneMark[tone][4])
+                            else:
+                                t += "!"
+                r += t
+                t = ""
+        r += t
+        return r
 
-def main(argv):
-    command = argv.pop(0)
-    print(command)
-    print(argv)
-    processing = KahootProcessing()
-    if command == 'crop':
-        processing.crop(*argv)
-    else:
-        processing.create_question_spreadsheet(*argv)
+    def translate_pinyin_question_spreadsheet(self, csvfile, source, english=True, reverse=False):
+        # read question template and answers
+        configs = self.read_question_configs(source)
+        question = configs[0]
+        answers = configs[1].split('|')
+        question_count = len(answers)
+        questions = [question] * question_count
+        actual_answers = answers
+        question_answer = {}
+        # check if pinyin is provided. if not use default
+        for i, answer in enumerate(answers):
+            current_pinyin = CHARACTER_PINYIN_MAPPING.get(answer, '')
+            if current_pinyin:
+                pinyins = []
+                for p in current_pinyin.split(' '):
+                    r = self.decode_pinyin(p)
+                    pinyins.append(r)
+                current_pinyin = ''.join(pinyins)
+            else:
+                current_pinyin = pinyin.get(answer)
+            # construct question with corresponding pinyin
 
+            if english:
+                # get the first meaning of the word
+                meanings = pinyin.cedict.translate_word(answer)
+                answer = meanings[0]
+                actual_answers[i] = answer
+            if reverse:
+                answer, current_pinyin = current_pinyin, answer
+                actual_answers[i] = answer
 
-# >>> img = Image.new('RGB', (200, 300), color = (73, 109, 137))
-# >>> d = ImageDraw.Draw(img)
-# >>> font = ImageFont.truetype('arial.ttf')
-# >>> text((100,100), '我', "white", font=font)
-# Traceback (most recent call last):
-#   File "<stdin>", line 1, in <module>
-# TypeError: 'str' object is not callable
-# >>> d.text((100,100), '我', "white", font=font)
-# >>> img.save('pil_text.png')
-# >>> font = ImageFont.truetype('arial.ttf', 100)
-# >>> d.text((100,100), '我', "white", font=font)
-# >>> img.save('pil_text.png')
-# >>> font = ImageFont.truetype('simsun.ttc', 100)
+            print(f'''"{answer}": "{current_pinyin}",''')
+            current_question = question.replace('{answer}', current_pinyin)
+            if reverse:
+                current_question = current_question.replace('meaning', 'sound')
+            questions[i] = current_question
+            question_answer[actual_answers[i]] = questions[i]
 
-if __name__ == '__main__':
-    print(sys.argv)
-    main(sys.argv[1:])
+        lines = self.generate_random_choices(actual_answers,
+                                             question_count, 3, 20, 1)
+        for j, line in enumerate(lines):
+            questions[j] = question_answer[line[0]]
+        self.write_question_and_answers_csv(csvfile, lines, questions)
+        self.convert_to_xlsx(csvfile)

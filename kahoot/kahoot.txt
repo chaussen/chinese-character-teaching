@@ -1,2 +1,2 @@
-CFCS中文第五课音义 What is the meaning of "xxx"?
-weather|if|haha|never|put forth one's strength|always|finally|strength|no|thirsty|rack|wrong|accurate|pick
+CFCS中文第五课音义 What is the meaning of "{answer}"?
+你好|如果|哈哈|从来

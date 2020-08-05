@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 from PIL import ImageFont, ImageDraw, Image, ImageOps
 import pinyin.cedict
 from configs import *
@@ -76,16 +77,6 @@ class ChineseCardMaker:
 
     def add_pinyin_header(self, characters, gap, path):
         pinyins = self.print_character_pinyin(characters)
-
-        # pinyin = CHARACTER_PINYIN_MAPPING.get(characters, '')
-        # pinyins = []
-        # if not pinyin:
-        #     pinyin = Pinyin().get_pinyin(characters, ' ', tone_marks='marks')
-        #     pinyins = pinyin.split(' ')
-        # else:
-        #     for p in pinyin.split(' '):
-        #         r = self.decode_pinyin(p)
-        #         pinyins.append(r)
         max_ph = 0
         pinyin_font = ImageFont.truetype(PINYIN_FONT, PINYIN_FONT_SIZE)
         for p in pinyins:
@@ -195,15 +186,6 @@ class ChineseCardMaker:
             self.draw_image(i, CHARACTER_FONT, CHARACTER_FONT_SIZE, characters,
                        CHARACTER_IMAGE_FILE_NAME_PREFIX, True)
             pinyins = self.print_character_pinyin(characters)
-            # pinyin = CHARACTER_PINYIN_MAPPING.get(characters, '')
-            # pinyins = []
-            # if not pinyin:
-            #     pinyin = Pinyin().get_pinyin(characters, ' ', tone_marks='marks')
-            #     pinyins = pinyin.split(' ')
-            # else:
-            #     for p in pinyin.split(' '):
-            #         r = self.decode_pinyin(p)
-            #         pinyins.append(r)
             self.draw_image(i, PINYIN_FONT, PINYIN_FONT_SIZE, pinyins,
                        PINYIN_IMAGE_FILE_NAME_PREFIX, False)
 
