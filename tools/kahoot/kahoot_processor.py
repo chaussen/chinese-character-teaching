@@ -1,15 +1,17 @@
 #!/usr/bin/env python3
-from configs import COLUMNS, CHARACTER_PINYIN_MAPPING, PinyinToneMark
+from configs import COLUMNS
 import random
-import re
 import csv
 from xlsxwriter.workbook import Workbook
-# from xpinyin import Pinyin
 import pinyin.cedict
 import pinyin
+import sys
 # >>> pinyin.cedict.translate_word('你')
 # ['you (informal, as opposed to courteous 您[nin2])']
 # >>> pinyin.cedict.translate_word('你好')
+sys.path.append('../common/')
+from character_pinyin_constants import CHARACTER_PINYIN_MAPPING
+from character_pinyin_constants import decode_pinyin
 
 
 class KahootProcessing:
@@ -73,7 +75,7 @@ class KahootProcessing:
         answers = configs[1].split('|')
         # print(answers)
         question_count = len(answers)
-        print(f"there are {question_count} answers: {answers}")
+        # print(f"there are {question_count} answers: {answers}")
         if count == 0:
             count = question_count
         lines = self.generate_random_choices(answers,
@@ -93,44 +95,6 @@ class KahootProcessing:
                 spamwriter.writerow(
                     [str(i), questions[i]] + answer_line)
 
-    def decode_pinyin(self, s):
-        s = s.lower()
-        r = ""
-        t = ""
-        for c in s:
-            if c >= 'a' and c <= 'z':
-                t += c
-            elif c == ':':
-                assert t[-1] == 'u'
-                t = t[:-1] + "\u00fc"
-            else:
-                if c >= '0' and c <= '5':
-                    tone = int(c) % 5
-                    if tone != 0:
-                        m = re.search("[aoeiuv\u00fc]+", t)
-                        if m is None:
-                            t += c
-                        elif len(m.group(0)) == 1:
-                            t = t[:m.start(
-                                0)] + PinyinToneMark[tone][PinyinToneMark[0].index(m.group(0))] + t[m.end(0):]
-                        else:
-                            if 'a' in t:
-                                t = t.replace("a", PinyinToneMark[tone][0])
-                            elif 'o' in t:
-                                t = t.replace("o", PinyinToneMark[tone][1])
-                            elif 'e' in t:
-                                t = t.replace("e", PinyinToneMark[tone][2])
-                            elif t.endswith("ui"):
-                                t = t.replace("i", PinyinToneMark[tone][3])
-                            elif t.endswith("iu"):
-                                t = t.replace("u", PinyinToneMark[tone][4])
-                            else:
-                                t += "!"
-                r += t
-                t = ""
-        r += t
-        return r
-
     def translate_pinyin_question_spreadsheet(self, csvfile, source, english=True, reverse=False):
         # read question template and answers
         configs = self.read_question_configs(source)
@@ -146,7 +110,7 @@ class KahootProcessing:
             if current_pinyin:
                 pinyins = []
                 for p in current_pinyin.split(' '):
-                    r = self.decode_pinyin(p)
+                    r = decode_pinyin(p)
                     pinyins.append(r)
                 current_pinyin = ''.join(pinyins)
             else:
@@ -165,7 +129,8 @@ class KahootProcessing:
             print(f'''"{answer}": "{current_pinyin}",''')
             current_question = question.replace('{answer}', current_pinyin)
             if reverse:
-                current_question = current_question.replace('meaning', 'pinyin')
+                current_question = current_question.replace(
+                    'meaning', 'pinyin')
             questions[i] = current_question
             question_answer[actual_answers[i]] = questions[i]
 

@@ -1,12 +1,4 @@
 # FOR CARDS
-
-PinyinToneMark = {
-    0: "aoeiuv\u00fc",
-    1: "\u0101\u014d\u0113\u012b\u016b\u01d6\u01d6",
-    2: "\u00e1\u00f3\u00e9\u00ed\u00fa\u01d8\u01d8",
-    3: "\u01ce\u01d2\u011b\u01d0\u01d4\u01da\u01da",
-    4: "\u00e0\u00f2\u00e8\u00ec\u00f9\u01dc\u01dc",
-}
 CARD_SIDE_LENGTH = 460
 CARD_GRID_COLOR = (185, 185, 185, 200)
 CARD_GRID_WIDTH = 3
