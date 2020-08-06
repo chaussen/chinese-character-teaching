@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 from configs import COLUMNS, CHARACTER_PINYIN_MAPPING, PinyinToneMark
 import random
+import re
 import csv
 from xlsxwriter.workbook import Workbook
 # from xpinyin import Pinyin
@@ -164,7 +165,7 @@ class KahootProcessing:
             print(f'''"{answer}": "{current_pinyin}",''')
             current_question = question.replace('{answer}', current_pinyin)
             if reverse:
-                current_question = current_question.replace('meaning', 'sound')
+                current_question = current_question.replace('meaning', 'pinyin')
             questions[i] = current_question
             question_answer[actual_answers[i]] = questions[i]
 
