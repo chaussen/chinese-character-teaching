@@ -140,3 +140,28 @@ class KahootProcessing:
             questions[j] = question_answer[line[0]]
         self.write_question_and_answers_csv(csvfile, lines, questions)
         self.convert_to_xlsx(csvfile)
+
+    def generate_mixed_questions(self, question_count, resultfile, csvfiles):
+        count_each = question_count // len(csvfiles)
+        question_number = 1
+        final_questions = []
+        for csvfile in csvfiles:
+            lines = []
+            with open(csvfile, 'rt', encoding="utf8") as file:
+                for line in file:
+                    line = line.strip()  # or some other preprocessing
+                    lines.append(line)  # storing everything in memory!
+            questions = lines[1:]
+            question_list = random.sample(questions, count_each)
+            final_questions = final_questions + question_list
+        random.shuffle(final_questions)
+        with open(resultfile, 'w', newline='', encoding="utf8") as csvouput:
+            spamwriter = csv.writer(csvouput)
+            spamwriter.writerow(COLUMNS)
+            for answer_line in final_questions:
+                number, content = answer_line.split(',', 1)
+                content = content.replace('""', '!').replace('"', '')
+                content = content.replace('!', '"')
+                newline = [str(question_number)] + content.split(',')
+                spamwriter.writerow(newline)
+                question_number = question_number + 1
