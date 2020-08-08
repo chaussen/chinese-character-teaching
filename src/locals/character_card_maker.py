@@ -1,58 +1,24 @@
+#!/usr/bin/env python3
 from PIL import ImageFont, ImageDraw, Image, ImageOps
 import pinyin.cedict
 from configs import *
-from CharacterPinyinMapping import CHARACTER_PINYIN_MAPPING
 import os
 from xpinyin import Pinyin
-import re
+import path_configs
+from character_pinyin_constants import CHARACTER_PINYIN_MAPPING
+from character_pinyin_constants import decode_pinyin
 
 
 class ChineseCardMaker:
-    def decode_pinyin(self, s):
-        s = s.lower()
-        r = ""
-        t = ""
-        for c in s:
-            if c >= 'a' and c <= 'z':
-                t += c
-            elif c == ':':
-                assert t[-1] == 'u'
-                t = t[:-1] + "\u00fc"
-            else:
-                if c >= '0' and c <= '5':
-                    tone = int(c) % 5
-                    if tone != 0:
-                        m = re.search("[aoeiuv\u00fc]+", t)
-                        if m is None:
-                            t += c
-                        elif len(m.group(0)) == 1:
-                            t = t[:m.start(
-                                0)] + PinyinToneMark[tone][PinyinToneMark[0].index(m.group(0))] + t[m.end(0):]
-                        else:
-                            if 'a' in t:
-                                t = t.replace("a", PinyinToneMark[tone][0])
-                            elif 'o' in t:
-                                t = t.replace("o", PinyinToneMark[tone][1])
-                            elif 'e' in t:
-                                t = t.replace("e", PinyinToneMark[tone][2])
-                            elif t.endswith("ui"):
-                                t = t.replace("i", PinyinToneMark[tone][3])
-                            elif t.endswith("iu"):
-                                t = t.replace("u", PinyinToneMark[tone][4])
-                            else:
-                                t += "!"
-                r += t
-                t = ""
-        r += t
-        return r
+    def __init__(self):
+        path_configs.show_real_path()
 
     def save_image_to_path(self, image, filename):
         if not os.path.exists(os.path.dirname(filename)):
             try:
                 os.makedirs(os.path.dirname(filename))
-            except OSError as exc:  # Guard against race condition
-                if exc.errno != errno.EEXIST:
-                    raise
+            except OSError as err:  # Guard against race condition
+                print("OS error: {0}".format(err))
         image.save(filename)
 
     def initialize_character_card(self, img, j):
@@ -76,16 +42,6 @@ class ChineseCardMaker:
 
     def add_pinyin_header(self, characters, gap, path):
         pinyins = self.print_character_pinyin(characters)
-
-        # pinyin = CHARACTER_PINYIN_MAPPING.get(characters, '')
-        # pinyins = []
-        # if not pinyin:
-        #     pinyin = Pinyin().get_pinyin(characters, ' ', tone_marks='marks')
-        #     pinyins = pinyin.split(' ')
-        # else:
-        #     for p in pinyin.split(' '):
-        #         r = self.decode_pinyin(p)
-        #         pinyins.append(r)
         max_ph = 0
         pinyin_font = ImageFont.truetype(PINYIN_FONT, PINYIN_FONT_SIZE)
         for p in pinyins:
@@ -159,7 +115,8 @@ class ChineseCardMaker:
         img.paste(single_img, (j * CARD_SIDE_LENGTH, 0))
         # return img
 
-    def draw_image(self, number, font_file, font_size, characters, file_name_prefix, is_grid):
+    def draw_image(self, number, font_file, font_size,
+                   characters, file_name_prefix, is_grid):
         coordinates = (CARD_SIDE_LENGTH * len(characters), CARD_SIDE_LENGTH)
         img = Image.new('RGB', coordinates, color=CARD_BACKGROUND_COLOR)
         draw = ImageDraw.Draw(img)
@@ -193,19 +150,10 @@ class ChineseCardMaker:
     def generate_separate_images(self):
         for i, characters in enumerate(CHARACTER_PINYIN_MAPPING):
             self.draw_image(i, CHARACTER_FONT, CHARACTER_FONT_SIZE, characters,
-                       CHARACTER_IMAGE_FILE_NAME_PREFIX, True)
+                            CHARACTER_IMAGE_FILE_NAME_PREFIX, True)
             pinyins = self.print_character_pinyin(characters)
-            # pinyin = CHARACTER_PINYIN_MAPPING.get(characters, '')
-            # pinyins = []
-            # if not pinyin:
-            #     pinyin = Pinyin().get_pinyin(characters, ' ', tone_marks='marks')
-            #     pinyins = pinyin.split(' ')
-            # else:
-            #     for p in pinyin.split(' '):
-            #         r = self.decode_pinyin(p)
-            #         pinyins.append(r)
             self.draw_image(i, PINYIN_FONT, PINYIN_FONT_SIZE, pinyins,
-                       PINYIN_IMAGE_FILE_NAME_PREFIX, False)
+                            PINYIN_IMAGE_FILE_NAME_PREFIX, False)
 
     def generate_character_pinyin_image(self):
         for i, zi in enumerate(CHARACTER_PINYIN_MAPPING):
@@ -217,12 +165,13 @@ class ChineseCardMaker:
         pinyin_nums = []
         if not pinyin:
             pinyin = Pinyin().get_pinyin(characters, ' ', tone_marks='marks')
-            pinyin_num = Pinyin().get_pinyin(characters, ' ', tone_marks='numbers')
+            pinyin_num = Pinyin().get_pinyin(characters, ' ',
+                                             tone_marks='numbers')
             pinyins = pinyin.split(' ')
             pinyin_nums = pinyin_num.split(' ')
         else:
             for p in pinyin.split(' '):
-                r = self.decode_pinyin(p)
+                r = decode_pinyin(p)
                 pinyins.append(r)
         print(f'''"{characters}": "{''.join(pinyin_nums)}",''')
         return pinyins
@@ -232,7 +181,7 @@ class ChineseCardMaker:
         for translation in translations:
             print(f"{translation}")
 
-### C:\Users\jni>py -3 -m pip install dragonmapper xpinyin pinyin 
+# C:\Users\jni>py -3 -m pip install dragonmapper xpinyin pinyin
 
 # pinyin
 # >>> import pinyin
@@ -247,13 +196,15 @@ class ChineseCardMaker:
 
 # >>> print pinyin.get_initial('你好')
 # n h
-### >>> import pinyin.cedict
+# >>> import pinyin.cedict
 # >>> pinyin.cedict.translate_word('你')
 # ['you (informal, as opposed to courteous 您[nin2])']
 # >>> pinyin.cedict.translate_word('你好')
 # ['Hello!', 'Hi!', 'How are you?']
 # >>> list(pinyin.cedict.all_phrase_translations('你好'))
-# [['你', ['you (informal, as opposed to courteous 您[nin2])']], ['你好', ['Hello!', 'Hi!', 'How are you?']], ['好', ['to be fond of', 'to have a tendency to', 'to be prone to']]]
+# [['你', ['you (informal, as opposed to courteous 您[nin2])']],
+# ['你好', ['Hello!', 'Hi!', 'How are you?']], ['好',
+# ['to be fond of', 'to have a tendency to', 'to be prone to']]]
 
 # dragonmapper
 # >>> s = '我是一个美国人。'

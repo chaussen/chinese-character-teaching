@@ -1,5 +1,4 @@
-# Memory Match Game by Nathan Carmine
-
+#!/usr/bin/env python3
 import pygame
 from pygame.locals import *
 
@@ -16,7 +15,9 @@ from configs import *
 
 
 def match_check(deck, flipped):
-    if deck[CARD_COLUMN_COUNT * flipped[0][1] + flipped[0][0]][1] == deck[CARD_COLUMN_COUNT * flipped[1][1] + flipped[1][0]][1]:
+    if deck[
+            CARD_COLUMN_COUNT * flipped[0][1] + flipped[0][0]][1] == deck[CARD_COLUMN_COUNT * flipped[1][1] + flipped[1][0]
+                                                                          ][1]:
         return True
         # return deck[CARD_COLUMN_COUNT * flipped[0][1] + flipped[0][0]][1]
 
@@ -38,7 +39,8 @@ def card_draw(cards):
     pygame.init()
     screen = pygame.display.set_mode(DISPLAY_SIZE)
 
-    # Place card images in their appropriate spots by multiplying card width & height
+    # Place card images in their appropriate spots
+    # by multiplying card width & height
     for i in range(CARD_COLUMN_COUNT):
         for j in range(CARD_ROW_COUNT):
             if i + CARD_COLUMN_COUNT * j >= CARD_NUMBER:
@@ -171,7 +173,8 @@ def main(runs):
 
     card_deck = cards_init()  # initialize deck
 
-    # Load card-back image for all cards at first, and have matches slowly unveiled
+    # Load card-back image for all cards at first,
+    # and have matches slowly unveiled
     # card_backs = create_card_backs()
     # for x in range(1, CARD_NUMBER + 1):
     #     img = Image.open(f"./card_images/{str(x)}.jpg").convert("RGBA")
@@ -190,12 +193,13 @@ def main(runs):
 
     # Ensure the welcome message is displayed only on the first time through
     if runs == 0:
-        print("Welcome to Memory Match! Select two cards to flip them and find a match!")
+        print("Welcome to Memory Match! \
+                Select two cards to flip them and find a match!")
         print("Press 'q' to quit at any time.")
     elif runs == 1:
         print("\n\nNew Game")
 
-    #"Global" variables used throughout the while loop
+    # "Global" variables used throughout the while loop
     flips = []
     found = []
     missed = 0
@@ -218,7 +222,8 @@ def main(runs):
                 # Make sure card has not been selected before
                 if card_select not in flips and card_select not in found:
                     flips.append(card_select)
-                    # Put the actual value of the card on the screen (vs just the back)
+                    # Put the actual value of the card on
+                    # the screen (vs just the back)
                     if len(flips) <= 2:
                         if CARD_COLUMN_COUNT * card_select[1] + card_select[0] >= len(card_deck):
                             continue
