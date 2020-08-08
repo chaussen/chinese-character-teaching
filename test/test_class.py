@@ -3,7 +3,7 @@ import path_configs
 
 
 class TestClass:
-    def __init__(self):
+    def __show_real_path(self):
         path_configs.show_real_path()
 
     def test_one(self):
