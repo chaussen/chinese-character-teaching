@@ -17,9 +17,8 @@ class ChineseCardMaker:
         if not os.path.exists(os.path.dirname(filename)):
             try:
                 os.makedirs(os.path.dirname(filename))
-            except OSError as exc:  # Guard against race condition
-                if exc.errno != errno.EEXIST:
-                    raise
+            except OSError as err:  # Guard against race condition
+                print("OS error: {0}".format(err))
         image.save(filename)
 
     def initialize_character_card(self, img, j):

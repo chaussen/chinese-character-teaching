@@ -52,8 +52,9 @@ def decode_pinyin(s):
                     if m is None:
                         t += c
                     elif len(m.group(0)) == 1:
+                        pos = PinyinToneMark[0].index(m.group(0))
                         t = t[:m.start(
-                            0)] + PinyinToneMark[tone][PinyinToneMark[0].index(m.group(0))] + t[m.end(0):]
+                            0)] + PinyinToneMark[tone][pos] + t[m.end(0):]
                     else:
                         if 'a' in t:
                             t = t.replace("a", PinyinToneMark[tone][0])
