@@ -5,18 +5,18 @@ import csv
 from xlsxwriter.workbook import Workbook
 import pinyin.cedict
 import pinyin
-import sys
+import path_configs
 # >>> pinyin.cedict.translate_word('你')
 # ['you (informal, as opposed to courteous 您[nin2])']
 # >>> pinyin.cedict.translate_word('你好')
-sys.path.append('../common/')
+# sys.path.append('../common/')
 from character_pinyin_constants import CHARACTER_PINYIN_MAPPING
 from character_pinyin_constants import decode_pinyin
 
 
 class KahootProcessing:
     def __init__(self):
-        pass
+        path_configs.show_real_path()
 
     def read_question_configs(self, config_file):
         lines = []
@@ -50,7 +50,9 @@ class KahootProcessing:
         print(csvfile[:-4] + '.xlsx')
         workbook.close()
 
-    def generate_random_choices(self, answers, count=2, number=3, timeout=20, correct_choice=1):
+    def generate_random_choices(self, answers,
+                                count=2, number=3,
+                                timeout=20, correct_choice=1):
         results = []
         question_list = random.sample(answers, count)
         # question_list = random.sample(ALL_CHOICES, count)
@@ -67,7 +69,9 @@ class KahootProcessing:
             # print(f"recovered answers: {answers}")
         return results
 
-    def create_question_spreadsheet(self, csvfile, config_file, count=0, number=3, timeout=20, correct_choice=1):
+    def create_question_spreadsheet(self, csvfile,
+                                    config_file, count=0,
+                                    number=3, timeout=20, correct_choice=1):
         count = int(count)
         number = int(number)
         configs = self.read_question_configs(config_file)
@@ -79,7 +83,8 @@ class KahootProcessing:
         if count == 0:
             count = question_count
         lines = self.generate_random_choices(answers,
-                                             count, number, timeout, correct_choice)
+                                             count, number,
+                                             timeout, correct_choice)
         self.write_csv(csvfile, lines, question)
         self.convert_to_xlsx(csvfile)
 
@@ -95,7 +100,9 @@ class KahootProcessing:
                 spamwriter.writerow(
                     [str(i), questions[i]] + answer_line)
 
-    def translate_pinyin_question_spreadsheet(self, csvfile, source, english=True, reverse=False):
+    def translate_pinyin_question_spreadsheet(self, csvfile,
+                                              source, english=True,
+                                              reverse=False):
         # read question template and answers
         configs = self.read_question_configs(source)
         question = configs[0]

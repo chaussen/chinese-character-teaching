@@ -4,13 +4,15 @@ import pinyin.cedict
 from configs import *
 import os
 from xpinyin import Pinyin
-import sys
-sys.path.append('../common/')
+import path_configs
 from character_pinyin_constants import CHARACTER_PINYIN_MAPPING
 from character_pinyin_constants import decode_pinyin
 
 
 class ChineseCardMaker:
+    def __init__(self):
+        path_configs.show_real_path()
+
     def save_image_to_path(self, image, filename):
         if not os.path.exists(os.path.dirname(filename)):
             try:
@@ -114,7 +116,8 @@ class ChineseCardMaker:
         img.paste(single_img, (j * CARD_SIDE_LENGTH, 0))
         # return img
 
-    def draw_image(self, number, font_file, font_size, characters, file_name_prefix, is_grid):
+    def draw_image(self, number, font_file, font_size,
+                   characters, file_name_prefix, is_grid):
         coordinates = (CARD_SIDE_LENGTH * len(characters), CARD_SIDE_LENGTH)
         img = Image.new('RGB', coordinates, color=CARD_BACKGROUND_COLOR)
         draw = ImageDraw.Draw(img)
@@ -163,7 +166,8 @@ class ChineseCardMaker:
         pinyin_nums = []
         if not pinyin:
             pinyin = Pinyin().get_pinyin(characters, ' ', tone_marks='marks')
-            pinyin_num = Pinyin().get_pinyin(characters, ' ', tone_marks='numbers')
+            pinyin_num = Pinyin().get_pinyin(characters, ' ',
+                                             tone_marks='numbers')
             pinyins = pinyin.split(' ')
             pinyin_nums = pinyin_num.split(' ')
         else:
@@ -199,7 +203,9 @@ class ChineseCardMaker:
 # >>> pinyin.cedict.translate_word('你好')
 # ['Hello!', 'Hi!', 'How are you?']
 # >>> list(pinyin.cedict.all_phrase_translations('你好'))
-# [['你', ['you (informal, as opposed to courteous 您[nin2])']], ['你好', ['Hello!', 'Hi!', 'How are you?']], ['好', ['to be fond of', 'to have a tendency to', 'to be prone to']]]
+# [['你', ['you (informal, as opposed to courteous 您[nin2])']],
+# ['你好', ['Hello!', 'Hi!', 'How are you?']], ['好',
+# ['to be fond of', 'to have a tendency to', 'to be prone to']]]
 
 # dragonmapper
 # >>> s = '我是一个美国人。'
