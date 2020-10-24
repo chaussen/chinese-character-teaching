@@ -95,7 +95,11 @@ class ChineseCardMaker:
             current_gapx = gapx + i * (cw + 2 * gapx)
             draw.text((current_gapx, gapy), character,
                       CHARACTER_COLOR, font=character_font)
-            p = pinyins[i]
+            try:
+                p = pinyins[i]
+            except IndexError as e:
+                print(f"{pinyins} with no space: {e}")
+                raise e
             pw, ph = pinyin_font.getsize(p)
             # img.paste(pinyin_image, (i * CARD_SIDE_LENGTH, 0))
             gapx = (CARD_SIDE_LENGTH - pw) // 2

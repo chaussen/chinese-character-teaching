@@ -30,7 +30,7 @@ To save time and efforts for Chinese character card making with pinyin.
 Pure python packages are required for the tool.
 
 1. Install Python3
-2. PIL: for image making
+2. Pillow: for image making
 3. pinyin: for translation
 4. xpinyin: for default pinyin
 5. pygame: for the matching game only
