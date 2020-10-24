@@ -5,7 +5,7 @@
 // }
 pipeline {
     agent any
-    stages{
+    stages {
         stage("build") {
             steps {
                 echo "build"
@@ -21,13 +21,14 @@ pipeline {
                 echo "integration"
             }
         }
-    } post {
+    } 
+    post {
         always {
             echo "i am awesome. run always"
         }
         success {
             echo 'i run success'
         }
-        
+
     }
 }
