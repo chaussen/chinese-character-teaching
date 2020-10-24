@@ -21,5 +21,13 @@ pipeline {
                 echo "integration"
             }
         }
+    } post {
+        always {
+            echo "i am awesome. run always"
+        }
+        success {
+            echo 'i run success'
+        }
+        
     }
 }
