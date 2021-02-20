@@ -127,7 +127,9 @@ class KahootProcessing:
             if english:
                 # get the first meaning of the word
                 meanings = pinyin.cedict.translate_word(answer)
-                answer = meanings[0]
+                answer = "UNKNOWN"
+                if meanings:
+                    answer = meanings[0]
                 actual_answers[i] = answer
             if reverse:
                 answer, current_pinyin = current_pinyin, answer

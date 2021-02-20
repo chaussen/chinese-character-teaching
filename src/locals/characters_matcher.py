@@ -125,6 +125,7 @@ def cards_init():
     files = os.listdir(f"{CHARACTER_IMAGES_PATH}")
     calculate_card_size(len(files))
     for f in files:
+        print(f)
         sequence_number = re.search(FILE_NAME_PATTERN, f).group(1)
         surface = card_load(f)
         surface = pygame.transform.scale(surface, (CARD_WIDTH, CARD_HEIGHT))
