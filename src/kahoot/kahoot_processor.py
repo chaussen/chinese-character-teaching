@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-from configs import COLUMNS
+from kahoot_configs import COLUMNS
 import random
 import csv
 from xlsxwriter.workbook import Workbook
@@ -86,7 +86,7 @@ class KahootProcessing:
                                              count, number,
                                              timeout, correct_choice)
         self.write_csv(csvfile, lines, question)
-        self.convert_to_xlsx(csvfile)
+        # self.convert_to_xlsx(csvfile)
 
     def write_question_and_answers_csv(self, csvfile, answers, questions):
         # answers = self.generate_random_choices()
@@ -127,7 +127,6 @@ class KahootProcessing:
             if english:
                 # get the first meaning of the word
                 meanings = pinyin.cedict.translate_word(answer)
-                answer = "UNKNOWN"
                 if meanings:
                     answer = meanings[0]
                 actual_answers[i] = answer
@@ -148,7 +147,7 @@ class KahootProcessing:
         for j, line in enumerate(lines):
             questions[j] = question_answer[line[0]]
         self.write_question_and_answers_csv(csvfile, lines, questions)
-        self.convert_to_xlsx(csvfile)
+        # self.convert_to_xlsx(csvfile)
 
     def generate_mixed_questions(self, question_count, resultfile, csvfiles):
         count_each = question_count // len(csvfiles)

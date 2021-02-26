@@ -3,6 +3,7 @@ import sys
 import os
 sys.path.append('../locals/')
 sys.path.append('../common/')
+sys.path.append('../kahoot/')
 
 
 def show_real_path():
