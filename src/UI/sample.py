@@ -3,7 +3,12 @@ import path_configs
 # from character_pinyin_constants import CHARACTER_PINYIN_MAPPING
 from character_card_maker import ChineseCardMaker
 from kahoot_processor import KahootProcessing
+import subprocess
+import urllib.parse
+from xpinyin import Pinyin
 
+flash_player = "C:\\Users\\abc\\Documents\\jobs\\teaching\\chinese\\zhongwen\\Adobe Flash Player.exe"
+flash_card_url = '''http://www.yes-chinese.com/card/cardB.swf?value='''
 
 class Application(tk.Frame):
     def __init__(self, master=None):
@@ -21,7 +26,9 @@ class Application(tk.Frame):
         self._spreadsheet_widget(2)
         self._separate_image_widget(3)
         self._full_card_widget(4)
-        self._quit_widget(5)
+        self._flash_stroke_widget(5)
+        self._pinyin_widget(6)
+        self._quit_widget(7)
 
     def _translate_widget(self, row):
         v = tk.StringVar(self, value='put in chinese here')
@@ -69,10 +76,31 @@ class Application(tk.Frame):
                                    fg="purple", command=self.generate_character_pinyin_image)
         self.full_card.grid(row=row, column=0)
 
+    def _flash_stroke_widget(self, row):
+        self.characters = tk.Entry(self)
+        self.characters.grid(row=row, column=0)
+        self.stroke = tk.Button(self, text="Show stroke order",
+                                   fg="black", command=self.show_stroke_order)
+        self.stroke.grid(row=row, column=1)
+
+    def _pinyin_widget(self, row):
+        self.to_pinyin = tk.Entry(self)
+        self.to_pinyin.grid(row=row, column=0)
+        self.pinyin = tk.Button(self, text="Show pinyin",
+                                   fg="black", command=self.print_pinyin)
+        self.pinyin.grid(row=row, column=1)
+
+
     def _quit_widget(self, row):
         self.quit = tk.Button(self, text="QUIT", fg="red",
                               command=self.master.destroy)
         self.quit.grid(row=row, column=0)
+
+    def show_stroke_order(self):
+        characters = self.characters.get()
+        encoded = urllib.parse.quote(characters)
+        url = flash_card_url + encoded
+        subprocess.run([flash_player, url])
 
     def create_question_sheet(self):
         english = self.english_var.get()
@@ -111,6 +139,11 @@ class Application(tk.Frame):
     def __get_next_row(self):
         return self.row
 
+    def print_pinyin(self):
+        pinyin = Pinyin().get_pinyin(self.to_pinyin.get(), ' ', tone_marks='marks')
+        pinyins = pinyin.split(' ')
+        print(f'''{''.join(pinyins)}''')
+        return pinyins
 
 root = tk.Tk()
 root.geometry("800x400+120+120")
