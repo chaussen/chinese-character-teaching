@@ -1,14 +1,17 @@
 import tkinter as tk
 import path_configs
-# from character_pinyin_constants import CHARACTER_PINYIN_MAPPING
+from character_pinyin_constants import decode_pinyin
+from character_pinyin_constants import CHARACTER_PINYIN_MAPPING
 from character_card_maker import ChineseCardMaker
 from kahoot_processor import KahootProcessing
 import subprocess
 import urllib.parse
 from xpinyin import Pinyin
+import pinyin.cedict
 
 flash_player = "C:\\Users\\abc\\Documents\\jobs\\teaching\\chinese\\zhongwen\\Adobe Flash Player.exe"
 flash_card_url = '''http://www.yes-chinese.com/card/cardB.swf?value='''
+
 
 class Application(tk.Frame):
     def __init__(self, master=None):
@@ -80,16 +83,15 @@ class Application(tk.Frame):
         self.characters = tk.Entry(self)
         self.characters.grid(row=row, column=0)
         self.stroke = tk.Button(self, text="Show stroke order",
-                                   fg="black", command=self.show_stroke_order)
+                                fg="black", command=self.show_stroke_order)
         self.stroke.grid(row=row, column=1)
 
     def _pinyin_widget(self, row):
         self.to_pinyin = tk.Entry(self)
         self.to_pinyin.grid(row=row, column=0)
         self.pinyin = tk.Button(self, text="Show pinyin",
-                                   fg="black", command=self.print_pinyin)
+                                fg="black", command=self.print_pinyin_translation)
         self.pinyin.grid(row=row, column=1)
-
 
     def _quit_widget(self, row):
         self.quit = tk.Button(self, text="QUIT", fg="red",
@@ -139,11 +141,48 @@ class Application(tk.Frame):
     def __get_next_row(self):
         return self.row
 
-    def print_pinyin(self):
-        pinyin = Pinyin().get_pinyin(self.to_pinyin.get(), ' ', tone_marks='marks')
-        pinyins = pinyin.split(' ')
-        print(f'''{''.join(pinyins)}''')
-        return pinyins
+    def print_pinyin_translation(self):
+        characters = self.to_pinyin.get().split('|')
+        results_pinyin_english = []
+        results_english_pinyin = []
+        results_character_english = []
+        results_english_character = []
+        results_character_pinyin = []
+        for character in characters:
+            defined_pinyin = CHARACTER_PINYIN_MAPPING.get(character, '')
+            pinyins = []
+            if not defined_pinyin:
+                defined_pinyin = Pinyin().get_pinyin(character, ' ', tone_marks='marks')
+                pinyins = defined_pinyin.split(' ')
+            else:
+                for p in defined_pinyin.split(' '):
+                    r = decode_pinyin(p)
+                    pinyins.append(r)
+            complete_pinyin = ''.join(pinyins)
+            meanings = pinyin.cedict.translate_word(character)
+            english = character + complete_pinyin
+            if meanings:
+                english = meanings[0]
+            line_pinyin_english = ','.join((complete_pinyin, english))
+            line_english_pinyin = ','.join((english, complete_pinyin))
+            line_character_english = ','.join((character, english))
+            line_english_character = ','.join((english, character))
+            line_character_pinyin = ','.join((character, complete_pinyin))
+            results_pinyin_english.append(line_pinyin_english)
+            results_english_pinyin.append(line_english_pinyin)
+            results_character_english.append(line_character_english)
+            results_english_character.append(line_english_character)
+            results_character_pinyin.append(line_character_pinyin)
+        print('\n'.join(results_pinyin_english))
+        print('========================================')
+        print('\n'.join(results_english_pinyin))
+        print('========================================')
+        # print('\n'.join(results_character_english))
+        print('========================================')
+        # print('\n'.join(results_english_character))
+        print('========================================')
+        print('\n'.join(results_character_pinyin))
+
 
 root = tk.Tk()
 root.geometry("800x400+120+120")
