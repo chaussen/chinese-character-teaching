@@ -9,6 +9,7 @@ import urllib.parse
 from xpinyin import Pinyin
 import pinyin.cedict
 
+
 flash_player = "C:\\Users\\abc\\Documents\\jobs\\teaching\\chinese\\zhongwen\\Adobe Flash Player.exe"
 flash_card_url = '''http://www.yes-chinese.com/card/cardB.swf?value='''
 
@@ -92,6 +93,14 @@ class Application(tk.Frame):
         self.pinyin = tk.Button(self, text="Show pinyin",
                                 fg="black", command=self.print_pinyin_translation)
         self.pinyin.grid(row=row, column=1)
+        self.mystr = tk.StringVar()
+        self.show_pinyin = tk.Entry(self, textvariable=self.mystr,  
+              state='readonly').grid(row=row, 
+                                   column=2, 
+                                   padx=10, 
+                                   pady=10)   
+  
+
 
     def _quit_widget(self, row):
         self.quit = tk.Button(self, text="QUIT", fg="red",
@@ -173,15 +182,19 @@ class Application(tk.Frame):
             results_character_english.append(line_character_english)
             results_english_character.append(line_english_character)
             results_character_pinyin.append(line_character_pinyin)
-        print('\n'.join(results_pinyin_english))
+        result1 = '\n'.join(results_pinyin_english)
+        result2 = '\n'.join(results_english_pinyin)
+        result3 = '\n'.join(results_character_pinyin)
+        print(result1)
         print('========================================')
-        print('\n'.join(results_english_pinyin))
+        print(result2)
         print('========================================')
         # print('\n'.join(results_character_english))
         print('========================================')
         # print('\n'.join(results_english_character))
         print('========================================')
-        print('\n'.join(results_character_pinyin))
+        print(result3)
+        self.mystr.set(result3)
 
 
 root = tk.Tk()
