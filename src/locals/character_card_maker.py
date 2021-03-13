@@ -5,13 +5,14 @@ from configs import *
 import os
 from xpinyin import Pinyin
 import path_configs
-from character_pinyin_constants import CHARACTER_PINYIN_MAPPING
+from character_pinyin_constants import CHARACTER_PINYIN_ENGLISH_MAPPING
 from character_pinyin_constants import decode_pinyin
 
 
 class ChineseCardMaker:
     def __init__(self):
-        path_configs.show_real_path()
+        pass
+        # path_configs.show_real_path()
 
     def save_image_to_path(self, image, filename):
         if not os.path.exists(os.path.dirname(filename)):
@@ -152,7 +153,7 @@ class ChineseCardMaker:
         self.save_image_to_path(img, file_name)
 
     def generate_separate_images(self):
-        for i, characters in enumerate(CHARACTER_PINYIN_MAPPING):
+        for i, characters in enumerate(CHARACTER_PINYIN_ENGLISH_MAPPING):
             self.draw_image(i, CHARACTER_FONT, CHARACTER_FONT_SIZE, characters,
                             CHARACTER_IMAGE_FILE_NAME_PREFIX, True)
             pinyins = self.print_character_pinyin(characters)
@@ -160,13 +161,16 @@ class ChineseCardMaker:
                             PINYIN_IMAGE_FILE_NAME_PREFIX, False)
 
     def generate_character_pinyin_image(self):
-        for i, zi in enumerate(CHARACTER_PINYIN_MAPPING):
+        for i, zi in enumerate(CHARACTER_PINYIN_ENGLISH_MAPPING):
             self.add_pinyin_header(zi, 5, CHARACTER_PINYIN_FOLDER)
 
     def print_character_pinyin(self, characters):
-        pinyin = CHARACTER_PINYIN_MAPPING.get(characters, '')
+        pinyin_english = CHARACTER_PINYIN_ENGLISH_MAPPING.get(characters, None)
         pinyins = []
         pinyin_nums = []
+        pinyin = ''
+        if pinyin_english:
+            pinyin = pinyin_english[0]
         if not pinyin:
             pinyin = Pinyin().get_pinyin(characters, ' ', tone_marks='marks')
             pinyin_num = Pinyin().get_pinyin(characters, ' ',

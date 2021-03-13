@@ -6,17 +6,15 @@ from xlsxwriter.workbook import Workbook
 import pinyin.cedict
 import pinyin
 import path_configs
-# >>> pinyin.cedict.translate_word('你')
-# ['you (informal, as opposed to courteous 您[nin2])']
-# >>> pinyin.cedict.translate_word('你好')
-# sys.path.append('../common/')
-from character_pinyin_constants import CHARACTER_PINYIN_MAPPING
+from googletrans import Translator
+from character_pinyin_constants import CHARACTER_PINYIN_ENGLISH_MAPPING
 from character_pinyin_constants import decode_pinyin
 
 
 class KahootProcessing:
     def __init__(self):
-        path_configs.show_real_path()
+        pass
+        # self.translator = Translator()
 
     def read_question_configs(self, config_file):
         lines = []
@@ -113,10 +111,18 @@ class KahootProcessing:
         question_answer = {}
         # check if pinyin is provided. if not use default
         for i, answer in enumerate(answers):
-            current_pinyin = CHARACTER_PINYIN_MAPPING.get(answer, '')
-            if current_pinyin:
+            print(f'''answer: {answer}''')
+            current_pinyin_english = CHARACTER_PINYIN_ENGLISH_MAPPING.get(answer, None)
+            pinyin_part = ''
+            english_part = ''
+            current_pinyin = ''
+            current_english = ''
+            if current_pinyin_english:
+                pinyin_part = current_pinyin_english[0]
+                english_part = current_pinyin_english[1]
+            if pinyin_part:
                 pinyins = []
-                for p in current_pinyin.split(' '):
+                for p in pinyin_part.split(' '):
                     r = decode_pinyin(p)
                     pinyins.append(r)
                 current_pinyin = ''.join(pinyins)
@@ -125,16 +131,23 @@ class KahootProcessing:
             # construct question with corresponding pinyin
 
             if english:
-                # get the first meaning of the word
                 meanings = pinyin.cedict.translate_word(answer)
-                if meanings:
-                    answer = meanings[0]
-                actual_answers[i] = answer
+                if english_part:
+                    current_english = english_part
+                elif meanings:
+                    current_english = ';'.join(meanings)
+                    if len(current_english) > 75:
+                        current_english = current_english[:72] + '...'
+                else:
+                    current_english = answer + current_pinyin
+                actual_answers[i] = current_english
             if reverse:
-                answer, current_pinyin = current_pinyin, answer
-                actual_answers[i] = answer
+                if not current_english:
+                    current_english = answer
+                current_english, current_pinyin = current_pinyin, current_english
+                actual_answers[i] = current_english
 
-            print(f'''"{answer}": "{current_pinyin}",''')
+            # print(f'''"{answer}": "{current_pinyin}",''')
             current_question = question.replace('{answer}', current_pinyin)
             if reverse:
                 current_question = current_question.replace(
@@ -146,7 +159,10 @@ class KahootProcessing:
                                              question_count, 3, 20, 1)
         for j, line in enumerate(lines):
             questions[j] = question_answer[line[0]]
-        self.write_question_and_answers_csv(csvfile, lines, questions)
+        name = question.split(' ', 1)[0]
+        dest = csvfile[:-1] + name + csvfile[-1] + '.csv'
+        self.write_question_and_answers_csv(dest, lines, questions)
+        return name
         # self.convert_to_xlsx(csvfile)
 
     def generate_mixed_questions(self, question_count, resultfile, csvfiles):

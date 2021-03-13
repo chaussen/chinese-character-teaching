@@ -1,13 +1,14 @@
 import tkinter as tk
 import path_configs
 from character_pinyin_constants import decode_pinyin
-from character_pinyin_constants import CHARACTER_PINYIN_MAPPING
+from character_pinyin_constants import CHARACTER_PINYIN_ENGLISH_MAPPING
 from character_card_maker import ChineseCardMaker
 from kahoot_processor import KahootProcessing
 import subprocess
 import urllib.parse
 from xpinyin import Pinyin
 import pinyin.cedict
+from googletrans import Translator
 
 
 flash_player = "C:\\Users\\abc\\Documents\\jobs\\teaching\\chinese\\zhongwen\\Adobe Flash Player.exe"
@@ -22,7 +23,9 @@ class Application(tk.Frame):
         self.card_maker = ChineseCardMaker()
         self.processing = KahootProcessing()
         self.create_widgets()
+        # self.translator = Translator()
         self.row = 0
+        self.question = ''
 
     def create_widgets(self):
         self._translate_widget(0)
@@ -90,17 +93,15 @@ class Application(tk.Frame):
     def _pinyin_widget(self, row):
         self.to_pinyin = tk.Entry(self)
         self.to_pinyin.grid(row=row, column=0)
-        self.pinyin = tk.Button(self, text="Show pinyin",
+        self.pinyin = tk.Button(self, text="Show pinyin character and english",
                                 fg="black", command=self.print_pinyin_translation)
         self.pinyin.grid(row=row, column=1)
         self.mystr = tk.StringVar()
-        self.show_pinyin = tk.Entry(self, textvariable=self.mystr,  
-              state='readonly').grid(row=row, 
-                                   column=2, 
-                                   padx=10, 
-                                   pady=10)   
-  
-
+        self.show_pinyin = tk.Entry(self, textvariable=self.mystr,
+                                    state='readonly').grid(row=row,
+                                                           column=2,
+                                                           padx=10,
+                                                           pady=10)
 
     def _quit_widget(self, row):
         self.quit = tk.Button(self, text="QUIT", fg="red",
@@ -119,16 +120,17 @@ class Application(tk.Frame):
         source = '../kahoot/kahoot.txt'
         destination = ''
         if english is True and reverse is False:
-            destination = '../kahoot/kahoot1.csv'
+            destination = '../kahoot/1'
         if english is False and reverse is True:
-            destination = '../kahoot/kahoot2.csv'
+            destination = '../kahoot/2'
         if english is False and reverse is False:
-            destination = '../kahoot/kahoot3.csv'
+            destination = '../kahoot/3'
         if english is True and reverse is True:
-            destination = '../kahoot/kahoot4.csv'
+            destination = '../kahoot/4'
 
-        self.processing.translate_pinyin_question_spreadsheet(
+        question = self.processing.translate_pinyin_question_spreadsheet(
             destination, source, english=english, reverse=reverse)
+        self.question = question
 
     def generate_separate_images(self):
         self.card_maker.generate_separate_images()
@@ -139,9 +141,17 @@ class Application(tk.Frame):
             self.card_maker.translate_to_english(text)
 
     def create_xlsx(self):
-        self.processing.generate_mixed_questions(int(self.question_count.get()), '../kahoot/kahoot.csv', [
-                                                 '../kahoot/kahoot1.csv', '../kahoot/kahoot2.csv', '../kahoot/kahoot3.csv', '../kahoot/kahoot4.csv'])
-        self.processing.convert_to_xlsx('../kahoot/kahoot.csv')
+        whole_csv = f'''../kahoot/{self.question}kahoot.csv'''
+        self.processing.generate_mixed_questions(
+            int(self.question_count.get()),
+            whole_csv,
+            [
+                f'''../kahoot/{self.question}1.csv''',
+                f'''../kahoot/{self.question}2.csv''',
+                f'''../kahoot/{self.question}3.csv''',
+                f'''../kahoot/{self.question}4.csv'''
+            ])
+        self.processing.convert_to_xlsx(whole_csv)
 
 # cc.translate_to_english("慈")
     def generate_character_pinyin_image(self):
@@ -158,8 +168,14 @@ class Application(tk.Frame):
         results_english_character = []
         results_character_pinyin = []
         for character in characters:
-            defined_pinyin = CHARACTER_PINYIN_MAPPING.get(character, '')
+            pinyin_english = CHARACTER_PINYIN_ENGLISH_MAPPING.get(
+                character, None)
             pinyins = []
+            defined_pinyin = ''
+            defined_english = ''
+            if pinyin_english:
+                defined_pinyin = pinyin_english[0]
+                defined_english = pinyin_english[1]
             if not defined_pinyin:
                 defined_pinyin = Pinyin().get_pinyin(character, ' ', tone_marks='marks')
                 pinyins = defined_pinyin.split(' ')
@@ -168,10 +184,15 @@ class Application(tk.Frame):
                     r = decode_pinyin(p)
                     pinyins.append(r)
             complete_pinyin = ''.join(pinyins)
+            # translated = self.translator.translate(character, src='zh-cn')
+            # meanings = translated.text
             meanings = pinyin.cedict.translate_word(character)
             english = character + complete_pinyin
-            if meanings:
-                english = meanings[0]
+            if defined_english:
+                english = defined_english
+            elif meanings:
+                english = '; '.join(meanings)
+                # english = meanings[0]
             line_pinyin_english = ','.join((complete_pinyin, english))
             line_english_pinyin = ','.join((english, complete_pinyin))
             line_character_english = ','.join((character, english))
