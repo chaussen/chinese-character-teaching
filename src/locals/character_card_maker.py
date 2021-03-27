@@ -171,6 +171,7 @@ class ChineseCardMaker:
         pinyin = ''
         if pinyin_english:
             pinyin = pinyin_english[0]
+            print(f'''found pinyin predefined: {pinyin}''')
         if not pinyin:
             pinyin = Pinyin().get_pinyin(characters, ' ', tone_marks='marks')
             pinyin_num = Pinyin().get_pinyin(characters, ' ',

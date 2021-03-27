@@ -167,6 +167,7 @@ class KahootProcessing:
 
     def generate_mixed_questions(self, question_count, resultfile, csvfiles):
         count_each = question_count // len(csvfiles)
+        print(f'''count_each: {count_each}''')
         question_number = 1
         final_questions = []
         for csvfile in csvfiles:
@@ -176,7 +177,8 @@ class KahootProcessing:
                     line = line.strip()  # or some other preprocessing
                     lines.append(line)  # storing everything in memory!
             questions = lines[1:]
-            question_list = random.sample(questions, count_each)
+            print(f'''question count: {len(questions)}''')
+            question_list = random.sample(questions, min(len(questions), count_each))
             final_questions = final_questions + question_list
         random.shuffle(final_questions)
         with open(resultfile, 'w', newline='', encoding="utf8") as csvouput:
