@@ -8,7 +8,7 @@ import subprocess
 import urllib.parse
 from xpinyin import Pinyin
 import pinyin.cedict
-from googletrans import Translator
+# from googletrans import Translator
 
 
 flash_player = "C:\\Users\\abc\\Documents\\jobs\\teaching\\chinese\\zhongwen\\Adobe Flash Player.exe"
@@ -23,9 +23,7 @@ class Application(tk.Frame):
         self.card_maker = ChineseCardMaker()
         self.processing = KahootProcessing()
         self.create_widgets()
-        # self.translator = Translator()
         self.row = 0
-        self.question = ''
 
     def create_widgets(self):
         self._translate_widget(0)
@@ -67,11 +65,15 @@ class Application(tk.Frame):
         self.questions.grid(row=row, column=2)
 
     def _spreadsheet_widget(self, row):
-        self.question_count = tk.Entry(self)
+        v = tk.StringVar(self, value='question count')
+        self.question_count = tk.Entry(self, textvariable=v)
         self.question_count.grid(row=row, column=0)
         self.xlsx = tk.Button(self, text="Kahoot: Create XLSX file",
                               fg="green", command=self.create_xlsx)
-        self.xlsx.grid(row=row, column=1)
+        self.xlsx.grid(row=row, column=2)
+        v = tk.StringVar(self, value='question file name (before number)')
+        self.question_name = tk.Entry(self, textvariable=v)
+        self.question_name.grid(row=row, column=1)
 
     def _separate_image_widget(self, row):
         self.separate_image = tk.Button(self, text="Create separate images for character and pinyin",
@@ -128,9 +130,8 @@ class Application(tk.Frame):
         if english is True and reverse is True:
             destination = '../kahoot/4'
 
-        question = self.processing.translate_pinyin_question_spreadsheet(
+        self.processing.translate_pinyin_question_spreadsheet(
             destination, source, english=english, reverse=reverse)
-        self.question = question
 
     def generate_separate_images(self):
         self.card_maker.generate_separate_images()
@@ -141,6 +142,7 @@ class Application(tk.Frame):
             self.card_maker.translate_to_english(text)
 
     def create_xlsx(self):
+        self.question = self.question_name.get()
         whole_csv = f'''../kahoot/{self.question}kahoot.csv'''
         self.processing.generate_mixed_questions(
             int(self.question_count.get()),

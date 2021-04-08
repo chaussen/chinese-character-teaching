@@ -6,7 +6,7 @@ from xlsxwriter.workbook import Workbook
 import pinyin.cedict
 import pinyin
 import path_configs
-from googletrans import Translator
+# from googletrans import Translator
 from character_pinyin_constants import CHARACTER_PINYIN_ENGLISH_MAPPING
 from character_pinyin_constants import decode_pinyin
 
@@ -121,11 +121,14 @@ class KahootProcessing:
                 pinyin_part = current_pinyin_english[0]
                 english_part = current_pinyin_english[1]
             if pinyin_part:
-                pinyins = []
-                for p in pinyin_part.split(' '):
-                    r = decode_pinyin(p)
-                    pinyins.append(r)
-                current_pinyin = ''.join(pinyins)
+                if any(number in pinyin_part for number in "1234"):
+                    pinyins = []
+                    for p in pinyin_part.split(' '):
+                        r = decode_pinyin(p)
+                        pinyins.append(r)
+                    current_pinyin = ''.join(pinyins)
+                else:
+                    current_pinyin = pinyin_part
             else:
                 current_pinyin = pinyin.get(answer)
             # construct question with corresponding pinyin
@@ -140,12 +143,12 @@ class KahootProcessing:
                         current_english = current_english[:72] + '...'
                 else:
                     current_english = answer + current_pinyin
-                actual_answers[i] = current_english
+                actual_answers[i] = f'''"{current_english}"'''
             if reverse:
                 if not current_english:
                     current_english = answer
                 current_english, current_pinyin = current_pinyin, current_english
-                actual_answers[i] = current_english
+                actual_answers[i] = f'''"{current_english}"'''
 
             # print(f'''"{answer}": "{current_pinyin}",''')
             current_question = question.replace('{answer}', current_pinyin)
