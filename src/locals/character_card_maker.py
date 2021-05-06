@@ -169,7 +169,7 @@ class ChineseCardMaker:
         pinyins = []
         pinyin_nums = []
         pinyin = ''
-        if pinyin_english:
+        if pinyin_english and pinyin_english[0]:
             pinyin = pinyin_english[0]
             print(f'''found pinyin predefined: {pinyin}''')
         if not pinyin:
