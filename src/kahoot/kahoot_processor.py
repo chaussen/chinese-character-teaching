@@ -139,8 +139,9 @@ class KahootProcessing:
                     current_english = english_part
                 elif meanings:
                     current_english = ';'.join(meanings)
+                    current_english = current_english.replace(",", "!!!")
                     if len(current_english) > 75:
-                        current_english = current_english[:72] + '...'
+                        current_english = current_english[:68] + '...'
                 else:
                     current_english = answer + current_pinyin
                 actual_answers[i] = f'''"{current_english}"'''
@@ -188,9 +189,13 @@ class KahootProcessing:
             spamwriter = csv.writer(csvouput)
             spamwriter.writerow(COLUMNS)
             for answer_line in final_questions:
+                # print(f'''{answer_line}''')
                 number, content = answer_line.split(',', 1)
-                content = content.replace('""', '!').replace('"', '')
-                content = content.replace('!', '"')
-                newline = [str(question_number)] + content.split(',')
+                # content = content.replace('"""', '""')
+                # fields = re.split('(?<![a-z]),', content.replace('"""', '"'))
+                fields = content.split(",")
+                fields = [x.replace("!!!", ",") for x in fields]
+                print(f'''{fields}''')
+                newline = [str(question_number)] + fields
                 spamwriter.writerow(newline)
                 question_number = question_number + 1
