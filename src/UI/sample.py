@@ -11,7 +11,7 @@ import pinyin.cedict
 # from googletrans import Translator
 
 
-flash_player = "C:\\Users\\abc\\Documents\\jobs\\teaching\\chinese\\zhongwen\\Adobe Flash Player.exe"
+flash_player = "C:/Users/jni/apps/flashplayer.exe"
 flash_card_url = '''http://www.yes-chinese.com/card/cardB.swf?value='''
 
 
