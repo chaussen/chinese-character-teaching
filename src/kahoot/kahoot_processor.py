@@ -9,7 +9,7 @@ import path_configs
 # from googletrans import Translator
 from character_pinyin_constants import CHARACTER_PINYIN_ENGLISH_MAPPING
 from character_pinyin_constants import decode_pinyin
-
+import re
 
 class KahootProcessing:
     def __init__(self):
@@ -140,9 +140,10 @@ class KahootProcessing:
                 elif meanings:
                     current_english = ';'.join(meanings)
                     if len(current_english) > 75:
-                        current_english = current_english[:72] + '...'
+                        current_english = current_english[:68] + '...'
                 else:
                     current_english = answer + current_pinyin
+                current_english = current_english.replace(",", "!!!")
                 actual_answers[i] = f'''"{current_english}"'''
             if reverse:
                 if not current_english:
@@ -188,9 +189,11 @@ class KahootProcessing:
             spamwriter = csv.writer(csvouput)
             spamwriter.writerow(COLUMNS)
             for answer_line in final_questions:
+                # print(f'''{answer_line}''')
                 number, content = answer_line.split(',', 1)
-                content = content.replace('""', '!').replace('"', '')
-                content = content.replace('!', '"')
-                newline = [str(question_number)] + content.split(',')
+                # content = content.replace('"""', '""')
+                fields = re.split('(?<![a-z]),', content.replace('"""', '"'))
+                print(f'''{fields}''')
+                newline = [str(question_number)] + fields
                 spamwriter.writerow(newline)
                 question_number = question_number + 1
