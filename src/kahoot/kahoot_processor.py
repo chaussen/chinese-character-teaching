@@ -139,10 +139,10 @@ class KahootProcessing:
                     current_english = english_part
                 elif meanings:
                     current_english = ';'.join(meanings)
-                    if len(current_english) > 75:
-                        current_english = current_english[:68] + '...'
                 else:
                     current_english = answer + current_pinyin
+                if len(current_english) >= 75:
+                    current_english = current_english[:65] + '...'
                 current_english = current_english.replace(",", "!!!")
                 actual_answers[i] = f'''"{current_english}"'''
             if reverse:
@@ -193,6 +193,7 @@ class KahootProcessing:
                 number, content = answer_line.split(',', 1)
                 # content = content.replace('"""', '""')
                 fields = re.split('(?<![a-z]),', content.replace('"""', '"'))
+                fields = [x.replace("!!!", ',') for x in fields]
                 print(f'''{fields}''')
                 newline = [str(question_number)] + fields
                 spamwriter.writerow(newline)
