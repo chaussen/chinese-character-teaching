@@ -1,22 +1,20 @@
 #!/usr/bin/env python3
-from configs import COLUMNS
+from kahoot_configs import COLUMNS
 import random
 import csv
 from xlsxwriter.workbook import Workbook
 import pinyin.cedict
 import pinyin
 import path_configs
-# >>> pinyin.cedict.translate_word('你')
-# ['you (informal, as opposed to courteous 您[nin2])']
-# >>> pinyin.cedict.translate_word('你好')
-# sys.path.append('../common/')
-from character_pinyin_constants import CHARACTER_PINYIN_MAPPING
+# from googletrans import Translator
+from character_pinyin_constants import CHARACTER_PINYIN_ENGLISH_MAPPING
 from character_pinyin_constants import decode_pinyin
-
+import re
 
 class KahootProcessing:
     def __init__(self):
-        path_configs.show_real_path()
+        pass
+        # self.translator = Translator()
 
     def read_question_configs(self, config_file):
         lines = []
@@ -86,7 +84,7 @@ class KahootProcessing:
                                              count, number,
                                              timeout, correct_choice)
         self.write_csv(csvfile, lines, question)
-        self.convert_to_xlsx(csvfile)
+        # self.convert_to_xlsx(csvfile)
 
     def write_question_and_answers_csv(self, csvfile, answers, questions):
         # answers = self.generate_random_choices()
@@ -113,27 +111,47 @@ class KahootProcessing:
         question_answer = {}
         # check if pinyin is provided. if not use default
         for i, answer in enumerate(answers):
-            current_pinyin = CHARACTER_PINYIN_MAPPING.get(answer, '')
-            if current_pinyin:
-                pinyins = []
-                for p in current_pinyin.split(' '):
-                    r = decode_pinyin(p)
-                    pinyins.append(r)
-                current_pinyin = ''.join(pinyins)
+            print(f'''answer: {answer}''')
+            current_pinyin_english = CHARACTER_PINYIN_ENGLISH_MAPPING.get(answer, None)
+            pinyin_part = ''
+            english_part = ''
+            current_pinyin = ''
+            current_english = ''
+            if current_pinyin_english:
+                pinyin_part = current_pinyin_english[0]
+                english_part = current_pinyin_english[1]
+            if pinyin_part:
+                if any(number in pinyin_part for number in "1234"):
+                    pinyins = []
+                    for p in pinyin_part.split(' '):
+                        r = decode_pinyin(p)
+                        pinyins.append(r)
+                    current_pinyin = ''.join(pinyins)
+                else:
+                    current_pinyin = pinyin_part
             else:
                 current_pinyin = pinyin.get(answer)
             # construct question with corresponding pinyin
 
             if english:
-                # get the first meaning of the word
                 meanings = pinyin.cedict.translate_word(answer)
-                answer = meanings[0]
-                actual_answers[i] = answer
+                if english_part:
+                    current_english = english_part
+                elif meanings:
+                    current_english = ';'.join(meanings)
+                else:
+                    current_english = answer + current_pinyin
+                if len(current_english) >= 70:
+                    current_english = current_english[:70] + '...'
+                current_english = current_english.replace(",", "!!!")
+                actual_answers[i] = f'''"{current_english}"'''
             if reverse:
-                answer, current_pinyin = current_pinyin, answer
-                actual_answers[i] = answer
+                if not current_english:
+                    current_english = answer
+                current_english, current_pinyin = current_pinyin, current_english
+                actual_answers[i] = f'''"{current_english}"'''
 
-            print(f'''"{answer}": "{current_pinyin}",''')
+            # print(f'''"{answer}": "{current_pinyin}",''')
             current_question = question.replace('{answer}', current_pinyin)
             if reverse:
                 current_question = current_question.replace(
@@ -145,11 +163,15 @@ class KahootProcessing:
                                              question_count, 3, 20, 1)
         for j, line in enumerate(lines):
             questions[j] = question_answer[line[0]]
-        self.write_question_and_answers_csv(csvfile, lines, questions)
-        self.convert_to_xlsx(csvfile)
+        name = question.split(' ', 1)[0]
+        dest = csvfile[:-1] + name + csvfile[-1] + '.csv'
+        self.write_question_and_answers_csv(dest, lines, questions)
+        return name
+        # self.convert_to_xlsx(csvfile)
 
     def generate_mixed_questions(self, question_count, resultfile, csvfiles):
         count_each = question_count // len(csvfiles)
+        print(f'''count_each: {count_each}''')
         question_number = 1
         final_questions = []
         for csvfile in csvfiles:
@@ -159,16 +181,20 @@ class KahootProcessing:
                     line = line.strip()  # or some other preprocessing
                     lines.append(line)  # storing everything in memory!
             questions = lines[1:]
-            question_list = random.sample(questions, count_each)
+            print(f'''question count: {len(questions)}''')
+            question_list = random.sample(questions, min(len(questions), count_each))
             final_questions = final_questions + question_list
         random.shuffle(final_questions)
         with open(resultfile, 'w', newline='', encoding="utf8") as csvouput:
             spamwriter = csv.writer(csvouput)
             spamwriter.writerow(COLUMNS)
             for answer_line in final_questions:
+                # print(f'''{answer_line}''')
                 number, content = answer_line.split(',', 1)
-                content = content.replace('""', '!').replace('"', '')
-                content = content.replace('!', '"')
-                newline = [str(question_number)] + content.split(',')
+                # content = content.replace('"""', '""')
+                fields = re.split('(?<![a-z]),', content.replace('"""', '"'))
+                fields = [x.replace("!!!", ',') for x in fields]
+                print(f'''{fields}''')
+                newline = [str(question_number)] + fields
                 spamwriter.writerow(newline)
                 question_number = question_number + 1

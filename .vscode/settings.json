@@ -1,0 +1,7 @@
+{
+    "python.analysis.extraPaths": [
+        "./src/kahoot",
+        "./src/locals",
+        "./src/common"
+    ]
+}

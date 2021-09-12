@@ -1,24 +1,51 @@
 import re
-CHARACTER_PINYIN_MAPPING = {
-"怎么了": "",
-"为什么": "",
-"买不到": "",
-"什么": "",
-"各种": "",
-"练习": "",
-"一支笔": "",
-"有没有？": "",
-"什么意思？": "",
-"我不知道": "",
-"明白": "",
-"对不起，请慢点": "",
-"作业": "",
-"还行": "",
-"哪个": "",
-"怎么": "",
+CHARACTER_PINYIN_ENGLISH_MAPPING = {
+    "花": ["huā","flower; blossom"],
+"园": ["yuán","land used for growing plants; site used for public recreation"],
+"门": ["mén","gate; door; classifier for lessons, subjects, branches of technology"],
+"前": ["qián","front; forward; ahead; first; top (followed by a number); former; formerly"],
+"个": ["gè","universal measure word"],
+"他": ["tā","he or him"],
+"后": ["hòu","back; behind; rear; afterwards; after; later"],
+"外": ["wài","outside; in addition; foreign; external"],
+"年": ["nián","year"],
+"季": ["jì","season"],
+"儿": ["ér","non-syllabic diminutive suffix"],
+"看": ["kàn","to see; to look at; to read; to watch; to visit; to call on; to consider; to regard as; to look after; to treat (an illness); to depend on; to feel (that); (after verb) to give it a try; Watch out! (for a danger)"],
+"花园": ["huāyuán","garden"],
+"大门": ["dàmén","entrance; door; gate"],
+"后门": ["hòumén","the back door; fig. under the counter (indirect way for influence or pressure)"],
+"好看": ["hǎokàn","good-looking; nice-looking; good (of a movie, book, TV show etc); embarrassed; humiliated"],
+"公": ["gōng","public; collectively owned; common; male (animal)"],
+"朵": ["duǒ","measure word for flower"],
+"可": ["kě","may, can"],
+"玫": ["méi","(fine jade)"],
+"菊": ["jú","chrysanthemum"],
+"兰": ["lán","orchid (Cymbidium goeringii); fragrant thoroughwort (Eupatorium fortunei); lily magnolia"],
+"公园": ["gōngyuán","park (for public recreation)"],
+"可爱": ["kěài","adorable; cute; lovely"],
+"玫瑰": ["méiguī","rugosa rose (shrub) (Rosa rugosa); rose flower"],
+"菊花": ["júhuā","chrysanthemum"],
+"兰花": ["lánhuā","cymbidium; orchid"],
+"目前": ["mùqián","at the present time; currently"],
+"个人": ["gèrén","individual; personal; oneself"],
+"其他": ["qítā","other; (sth or sb) else; the rest"],
+"之后": ["zhīhòu","afterwards; following; later; after"],
+"另外": ["lìngwài","additional; in addition; besides; separate; other; moreover; furthermore"],
+"外国": ["wàiguó","foreign (country)"],
+"季节": ["jìjié","time; season; period"],
+"儿子": ["érzi","son"],
+"女儿": ["nǚér","daughter"],
+"看来": ["kànlái","apparently; it seems that"],
+"看见": ["kànjiàn","to see; to catch sight of"],
 }
 
-
+############################################
+####################################################
+# DO NOT TOUCH THE CODE BELOW! #############
+####################################################
+####################################################
+####################################################
 PinyinToneMark = {
     0: "aoeiuv\u00fc",
     1: "\u0101\u014d\u0113\u012b\u016b\u01d6\u01d6",

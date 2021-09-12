@@ -5,13 +5,14 @@ from configs import *
 import os
 from xpinyin import Pinyin
 import path_configs
-from character_pinyin_constants import CHARACTER_PINYIN_MAPPING
+from character_pinyin_constants import CHARACTER_PINYIN_ENGLISH_MAPPING
 from character_pinyin_constants import decode_pinyin
 
 
 class ChineseCardMaker:
     def __init__(self):
-        path_configs.show_real_path()
+        pass
+        # path_configs.show_real_path()
 
     def save_image_to_path(self, image, filename):
         if not os.path.exists(os.path.dirname(filename)):
@@ -152,7 +153,7 @@ class ChineseCardMaker:
         self.save_image_to_path(img, file_name)
 
     def generate_separate_images(self):
-        for i, characters in enumerate(CHARACTER_PINYIN_MAPPING):
+        for i, characters in enumerate(CHARACTER_PINYIN_ENGLISH_MAPPING):
             self.draw_image(i, CHARACTER_FONT, CHARACTER_FONT_SIZE, characters,
                             CHARACTER_IMAGE_FILE_NAME_PREFIX, True)
             pinyins = self.print_character_pinyin(characters)
@@ -160,13 +161,17 @@ class ChineseCardMaker:
                             PINYIN_IMAGE_FILE_NAME_PREFIX, False)
 
     def generate_character_pinyin_image(self):
-        for i, zi in enumerate(CHARACTER_PINYIN_MAPPING):
+        for i, zi in enumerate(CHARACTER_PINYIN_ENGLISH_MAPPING):
             self.add_pinyin_header(zi, 5, CHARACTER_PINYIN_FOLDER)
 
     def print_character_pinyin(self, characters):
-        pinyin = CHARACTER_PINYIN_MAPPING.get(characters, '')
+        pinyin_english = CHARACTER_PINYIN_ENGLISH_MAPPING.get(characters, None)
         pinyins = []
         pinyin_nums = []
+        pinyin = ''
+        if pinyin_english and pinyin_english[0]:
+            pinyin = pinyin_english[0]
+            print(f'''found pinyin predefined: {pinyin}''')
         if not pinyin:
             pinyin = Pinyin().get_pinyin(characters, ' ', tone_marks='marks')
             pinyin_num = Pinyin().get_pinyin(characters, ' ',
@@ -182,75 +187,6 @@ class ChineseCardMaker:
 
     def translate_to_english(self, characters):
         translations = pinyin.cedict.all_phrase_translations(characters)
-        for translation in translations:
-            print(f"{translation}")
-
-# C:\Users\jni>py -3 -m pip install dragonmapper xpinyin pinyin
-
-# pinyin
-# >>> import pinyin
-# >>> print pinyin.get('你 好')
-# nǐ hǎo
-
-# >>> print pinyin.get('你好', format="strip", delimiter=" ")
-# ni hao
-
-# >>> print pinyin.get('你好', format="numerical")
-# ni3hao3
-
-# >>> print pinyin.get_initial('你好')
-# n h
-# >>> import pinyin.cedict
-# >>> pinyin.cedict.translate_word('你')
-# ['you (informal, as opposed to courteous 您[nin2])']
-# >>> pinyin.cedict.translate_word('你好')
-# ['Hello!', 'Hi!', 'How are you?']
-# >>> list(pinyin.cedict.all_phrase_translations('你好'))
-# [['你', ['you (informal, as opposed to courteous 您[nin2])']],
-# ['你好', ['Hello!', 'Hi!', 'How are you?']], ['好',
-# ['to be fond of', 'to have a tendency to', 'to be prone to']]]
-
-# dragonmapper
-# >>> s = '我是一个美国人。'
-# >>> dragonmapper.hanzi.is_simplified(s)
-# True
-# >>> dragonmapper.hanzi.to_pinyin(s)
-# 'wǒshìyīgèměiguórén。'
-# >>> dragonmapper.hanzi.to_pinyin(s, all_readings=True)
-# '[wǒ][shì/shi/tí][yī][gè/ge/gě/gàn][měi][guó][rén/ren]。'
-# >>> s = 'Wǒ shì yīgè měiguórén.'
-# >>> dragonmapper.transcriptions.is_pinyin(s)
-# True
-
-
-# xpinyin
-# >>> from xpinyin import Pinyin
-# >>> p = Pinyin()
-# >>> # default splitter is `-`
-# >>> p.get_pinyin(u"上海")
-# 'shang-hai'
-# >>> # show tone marks
-# >>> p.get_pinyin(u"上海", tone_marks='marks')
-# 'shàng-hǎi'
-# >>> p.get_pinyin(u"上海", tone_marks='numbers')
-# >>> 'shang4-hai3'
-# >>> # remove splitter
-# >>> p.get_pinyin(u"上海", '')
-# 'shanghai'
-# >>> # set splitter as whitespace
-# >>> p.get_pinyin(u"上海", ' ')
-# 'shang hai'
-# >>> p.get_initial(u"上")
-# 'S'
-# >>> p.get_initials(u"上海")
-# 'S-H'
-# >>> p.get_initials(u"上海", u'')
-# 'SH'
-# >>> p.get_initials(u"上海", u' ')
-# 'S H'
-
-# 如果方法中传入变量，那么直接加前缀是不可以了。而是要将变量转为utf-8编码：
-# >>> wordvalue = '中国'
-# >>> wordvalue= unicode(wordvalue,'utf-8')
-# >>> s = p.get_initials(wordvalue, u'').lower()
-# 'zg'
+        for i, translation in enumerate(translations):
+            print(f"index: {i}: {translation}; type: {type(translation)}")
+        return translations
