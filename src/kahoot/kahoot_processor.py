@@ -141,8 +141,8 @@ class KahootProcessing:
                     current_english = ';'.join(meanings)
                 else:
                     current_english = answer + current_pinyin
-                if len(current_english) >= 75:
-                    current_english = current_english[:65] + '...'
+                if len(current_english) >= 70:
+                    current_english = current_english[:70] + '...'
                 current_english = current_english.replace(",", "!!!")
                 actual_answers[i] = f'''"{current_english}"'''
             if reverse:
