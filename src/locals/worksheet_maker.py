@@ -98,7 +98,8 @@ def dashed_line(draw, p0, p1, color, width=2, dash=DASH_LEN, gap=DASH_GAP):
         n += dash + gap
 
 
-def draw_pinyin_grid(draw, x0, x1, y_top, height, pinyin, pinyin_font):
+def draw_pinyin_grid(draw, x0, x1, y_top, height, pinyin, pinyin_font,
+                     width=GRID_WIDTH, dash=DASH_LEN, gap=DASH_GAP):
     """Draw a 四线三格 (four-line) guide and seat the pinyin on the 3rd line."""
     pad = int(height * 0.12)
     top = y_top + pad
@@ -106,16 +107,33 @@ def draw_pinyin_grid(draw, x0, x1, y_top, height, pinyin, pinyin_font):
     lines = [top + band * i for i in range(4)]
     # outer lines solid, inner two dashed (classic look)
     draw.line([(x0, lines[0]), (x1, lines[0])],
-              fill=PINYIN_LINE_COLOR, width=GRID_WIDTH)
+              fill=PINYIN_LINE_COLOR, width=width)
     draw.line([(x0, lines[3]), (x1, lines[3])],
-              fill=PINYIN_LINE_COLOR, width=GRID_WIDTH)
-    dashed_line(draw, (x0, lines[1]), (x1, lines[1]), PINYIN_LINE_COLOR)
-    dashed_line(draw, (x0, lines[2]), (x1, lines[2]), PINYIN_LINE_COLOR)
+              fill=PINYIN_LINE_COLOR, width=width)
+    dashed_line(draw, (x0, lines[1]), (x1, lines[1]), PINYIN_LINE_COLOR,
+                width=width, dash=dash, gap=gap)
+    dashed_line(draw, (x0, lines[2]), (x1, lines[2]), PINYIN_LINE_COLOR,
+                width=width, dash=dash, gap=gap)
     if pinyin:
         # baseline on the 3rd line -> body sits in the middle band,
         # tone marks / ascenders rise into the top band.
         draw.text(((x0 + x1) / 2, lines[2]), pinyin,
                   fill=PINYIN_COLOR, font=pinyin_font, anchor="ms")
+
+
+def draw_mizige(draw, bx, by, box, char, char_font,
+                width=GRID_WIDTH, border=BORDER_WIDTH,
+                dash=DASH_LEN, gap=DASH_GAP):
+    """Draw a 米字格 box (solid border, dashed cross + diagonals) with a char."""
+    right, bottom = bx + box, by + box
+    mx, my = bx + box // 2, by + box // 2
+    dashed_line(draw, (bx, my), (right, my), GRID_COLOR, width, dash, gap)
+    dashed_line(draw, (mx, by), (mx, bottom), GRID_COLOR, width, dash, gap)
+    dashed_line(draw, (bx, by), (right, bottom), GRID_COLOR, width, dash, gap)
+    dashed_line(draw, (right, by), (bx, bottom), GRID_COLOR, width, dash, gap)
+    draw.rectangle([bx, by, right, bottom], outline=BORDER_COLOR, width=border)
+    if char:
+        draw.text((mx, my), char, fill=CHAR_COLOR, font=char_font, anchor="mm")
 
 
 def draw_cell(draw, x, y, cell_w, cell_h, char, pinyin, char_font, pinyin_font):
@@ -125,23 +143,8 @@ def draw_cell(draw, x, y, cell_w, cell_h, char, pinyin, char_font, pinyin_font):
     box = min(cell_w, cell_h - pinyin_h) - 2 * pad
     bx = x + (cell_w - box) // 2
     by = y + pinyin_h + (cell_h - pinyin_h - box) // 2
-
-    # --- pinyin on top, inside a four-line guide aligned to the box ---
-    right, bottom = bx + box, by + box
-    draw_pinyin_grid(draw, bx, right, y, pinyin_h, pinyin, pinyin_font)
-
-    # --- 米字格 box: solid border, dashed cross + diagonals ---
-    mx, my = bx + box // 2, by + box // 2
-    dashed_line(draw, (bx, my), (right, my), GRID_COLOR)
-    dashed_line(draw, (mx, by), (mx, bottom), GRID_COLOR)
-    dashed_line(draw, (bx, by), (right, bottom), GRID_COLOR)
-    dashed_line(draw, (right, by), (bx, bottom), GRID_COLOR)
-    draw.rectangle([bx, by, right, bottom], outline=BORDER_COLOR,
-                   width=BORDER_WIDTH)
-
-    # --- character, centered in the box ---
-    if char:
-        draw.text((mx, my), char, fill=CHAR_COLOR, font=char_font, anchor="mm")
+    draw_pinyin_grid(draw, bx, bx + box, y, pinyin_h, pinyin, pinyin_font)
+    draw_mizige(draw, bx, by, box, char, char_font)
 
 
 def layout():
@@ -222,6 +225,65 @@ def render(characters, out_prefix, title=""):
     return pdf_path, png_paths, len(characters), per_page, total_pages
 
 
+def render_big(characters, out_prefix, title=""):
+    """One big character per card, two cards (top/bottom) per A4 portrait page.
+
+    Each half is landscape-shaped, so cutting the page in two yields two large
+    single-character cards. The 米字格 box is made as large as the half allows.
+    """
+    margin = 90
+    card_h = (A4_H - 2 * margin) // 2
+    pad_x, pad_y = 120, 70
+    usable_w = A4_W - 2 * margin - 2 * pad_x
+    usable_h = card_h - 2 * pad_y
+    pinyin_h = int(usable_h * 0.18)
+    box = min(usable_w, usable_h - pinyin_h)
+
+    char_font = ImageFont.truetype(CHAR_FONT_PATH, int(box * 0.82))
+    pinyin_font = ImageFont.truetype(PINYIN_FONT_PATH, int(pinyin_h * 0.5))
+    title_font = ImageFont.truetype(PINYIN_FONT_PATH, 46)
+    dash, gap = max(DASH_LEN, box // 38), max(DASH_GAP, box // 60)
+
+    pinyins = [get_pinyin(c) for c in characters]
+    total_pages = max(1, (len(characters) + 1) // 2)
+    pages = []
+
+    for p in range(total_pages):
+        img = Image.new("RGB", (A4_W, A4_H), BG_COLOR)
+        draw = ImageDraw.Draw(img)
+        for card in range(CARDS_PER_PAGE):
+            gi = p * CARDS_PER_PAGE + card
+            card_top = margin + card * card_h
+            if title:
+                draw.text((margin + 10, card_top + 16), title,
+                          fill=(120, 120, 120), font=title_font, anchor="lm")
+            if gi >= len(characters):
+                continue
+            bx = (A4_W - box) // 2
+            block_h = pinyin_h + box
+            top = card_top + (card_h - block_h) // 2
+            draw_pinyin_grid(draw, bx, bx + box, top, pinyin_h, pinyins[gi],
+                             pinyin_font, width=3, dash=dash, gap=gap)
+            draw_mizige(draw, bx, top + pinyin_h, box, characters[gi],
+                        char_font, width=3, border=5, dash=dash, gap=gap)
+
+        cut_y = margin + card_h
+        dashed_line(draw, (margin // 2, cut_y), (A4_W - margin // 2, cut_y),
+                    CUT_COLOR, width=2, dash=22, gap=16)
+        draw.text((A4_W - margin // 2, cut_y - 30), "✂ cut",
+                  fill=CUT_COLOR, font=title_font, anchor="rm")
+        pages.append(img)
+
+    os.makedirs(os.path.dirname(out_prefix) or ".", exist_ok=True)
+    # Pages are pure black/gray on white, so grayscale is lossless and far
+    # smaller than RGB for the print-ready PDF.
+    gray = [page.convert("L") for page in pages]
+    pdf_path = out_prefix + ".pdf"
+    gray[0].save(pdf_path, "PDF", resolution=DPI,
+                 save_all=True, append_images=gray[1:])
+    return pdf_path, [], len(characters), CARDS_PER_PAGE, total_pages
+
+
 def main(argv=None):
     parser = argparse.ArgumentParser(description=__doc__,
                                      formatter_class=argparse.RawDescriptionHelpFormatter)
@@ -234,6 +296,9 @@ def main(argv=None):
     parser.add_argument("--title", default="", help="optional header text")
     parser.add_argument("--cols", type=int, default=DEFAULT_COLS,
                         help=f"cells per row (default: {DEFAULT_COLS})")
+    parser.add_argument("--mode", choices=["grid", "big"], default="grid",
+                        help="'grid' = many cells/page; 'big' = two big "
+                             "characters per A4 (one per half, cut to size)")
     args = parser.parse_args(argv)
 
     raw = " ".join(args.chars) + " " + args.chars_str
@@ -247,7 +312,8 @@ def main(argv=None):
         print("No characters provided; using a sample set.")
 
     layout.cols = max(1, args.cols)
-    pdf_path, png_paths, n, per_page, pages = render(
+    renderer = render_big if args.mode == "big" else render
+    pdf_path, png_paths, n, per_page, pages = renderer(
         characters, args.out, args.title)
     print(f"Characters: {n}  |  per page: {per_page}  |  pages: {pages}")
     print(f"PDF:  {pdf_path}")
