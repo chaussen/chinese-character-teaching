@@ -16,6 +16,7 @@ Usage:
 Output: a multi-page PDF (<out>.pdf) plus per-page PNG previews (<out>_p1.png ...).
 """
 import argparse
+import math
 import os
 import re
 import sys
@@ -53,8 +54,12 @@ CHAR_COLOR = (15, 15, 15)
 PINYIN_COLOR = (40, 40, 40)
 CUT_COLOR = (140, 140, 140)
 
+PINYIN_LINE_COLOR = (180, 180, 180)  # 四线三格 guide lines
+
 GRID_WIDTH = 2
 BORDER_WIDTH = 3
+DASH_LEN = 18
+DASH_GAP = 12
 
 # Fonts
 _HERE = os.path.dirname(__file__)
@@ -77,42 +82,66 @@ def extract_characters(raw):
     return re.findall(r"[一-鿿]", raw)
 
 
+def dashed_line(draw, p0, p1, color, width=2, dash=DASH_LEN, gap=DASH_GAP):
+    """Draw a dashed line between two arbitrary points."""
+    x0, y0 = p0
+    x1, y1 = p1
+    dist = math.hypot(x1 - x0, y1 - y0)
+    if dist == 0:
+        return
+    ux, uy = (x1 - x0) / dist, (y1 - y0) / dist
+    n = 0.0
+    while n < dist:
+        e = min(n + dash, dist)
+        draw.line([(x0 + ux * n, y0 + uy * n),
+                   (x0 + ux * e, y0 + uy * e)], fill=color, width=width)
+        n += dash + gap
+
+
+def draw_pinyin_grid(draw, x0, x1, y_top, height, pinyin, pinyin_font):
+    """Draw a 四线三格 (four-line) guide and seat the pinyin on the 3rd line."""
+    pad = int(height * 0.12)
+    top = y_top + pad
+    band = (height - 2 * pad) / 3.0
+    lines = [top + band * i for i in range(4)]
+    # outer lines solid, inner two dashed (classic look)
+    draw.line([(x0, lines[0]), (x1, lines[0])],
+              fill=PINYIN_LINE_COLOR, width=GRID_WIDTH)
+    draw.line([(x0, lines[3]), (x1, lines[3])],
+              fill=PINYIN_LINE_COLOR, width=GRID_WIDTH)
+    dashed_line(draw, (x0, lines[1]), (x1, lines[1]), PINYIN_LINE_COLOR)
+    dashed_line(draw, (x0, lines[2]), (x1, lines[2]), PINYIN_LINE_COLOR)
+    if pinyin:
+        # baseline on the 3rd line -> body sits in the middle band,
+        # tone marks / ascenders rise into the top band.
+        draw.text(((x0 + x1) / 2, lines[2]), pinyin,
+                  fill=PINYIN_COLOR, font=pinyin_font, anchor="ms")
+
+
 def draw_cell(draw, x, y, cell_w, cell_h, char, pinyin, char_font, pinyin_font):
-    """Draw one cell: pinyin on top, a 米字格 box with the character below."""
+    """Draw one cell: a 四线三格 pinyin guide on top, then a 米字格 box."""
     pinyin_h = int(cell_h * PINYIN_RATIO)
     pad = int(cell_w * CELL_PAD)
     box = min(cell_w, cell_h - pinyin_h) - 2 * pad
     bx = x + (cell_w - box) // 2
     by = y + pinyin_h + (cell_h - pinyin_h - box) // 2
 
-    # --- pinyin on top, centered above the box ---
-    if pinyin:
-        draw.text((x + cell_w / 2, y + pinyin_h / 2), pinyin,
-                  fill=PINYIN_COLOR, font=pinyin_font, anchor="mm")
-
-    # --- 米字格 box ---
+    # --- pinyin on top, inside a four-line guide aligned to the box ---
     right, bottom = bx + box, by + box
+    draw_pinyin_grid(draw, bx, right, y, pinyin_h, pinyin, pinyin_font)
+
+    # --- 米字格 box: solid border, dashed cross + diagonals ---
     mx, my = bx + box // 2, by + box // 2
-    # cross
-    draw.line([(bx, my), (right, my)], fill=GRID_COLOR, width=GRID_WIDTH)
-    draw.line([(mx, by), (mx, bottom)], fill=GRID_COLOR, width=GRID_WIDTH)
-    # diagonals (the 米 strokes)
-    draw.line([(bx, by), (right, bottom)], fill=GRID_COLOR, width=GRID_WIDTH)
-    draw.line([(right, by), (bx, bottom)], fill=GRID_COLOR, width=GRID_WIDTH)
-    # outer border on top
+    dashed_line(draw, (bx, my), (right, my), GRID_COLOR)
+    dashed_line(draw, (mx, by), (mx, bottom), GRID_COLOR)
+    dashed_line(draw, (bx, by), (right, bottom), GRID_COLOR)
+    dashed_line(draw, (right, by), (bx, bottom), GRID_COLOR)
     draw.rectangle([bx, by, right, bottom], outline=BORDER_COLOR,
                    width=BORDER_WIDTH)
 
     # --- character, centered in the box ---
     if char:
         draw.text((mx, my), char, fill=CHAR_COLOR, font=char_font, anchor="mm")
-
-
-def dashed_hline(draw, x0, x1, y, color, width=2, dash=22, gap=16):
-    x = x0
-    while x < x1:
-        draw.line([(x, y), (min(x + dash, x1), y)], fill=color, width=width)
-        x += dash + gap
 
 
 def layout():
@@ -137,7 +166,7 @@ def render(characters, out_prefix, title=""):
     per_page = per_card * CARDS_PER_PAGE
 
     char_size = int(cell_w * 0.74)
-    pinyin_size = int(cell_h * PINYIN_RATIO * 0.62)
+    pinyin_size = int(cell_h * PINYIN_RATIO * 0.46)
     char_font = ImageFont.truetype(CHAR_FONT_PATH, char_size)
     pinyin_font = ImageFont.truetype(PINYIN_FONT_PATH, pinyin_size)
     title_font = ImageFont.truetype(PINYIN_FONT_PATH, 46)
@@ -172,8 +201,9 @@ def render(characters, out_prefix, title=""):
 
         # cut line between the two cards
         cut_y = PAGE_MARGIN + card_h
-        dashed_hline(draw, PAGE_MARGIN // 2, A4_W - PAGE_MARGIN // 2, cut_y,
-                     CUT_COLOR, width=2)
+        dashed_line(draw, (PAGE_MARGIN // 2, cut_y),
+                    (A4_W - PAGE_MARGIN // 2, cut_y), CUT_COLOR,
+                    width=2, dash=22, gap=16)
         draw.text((A4_W - PAGE_MARGIN // 2, cut_y - 30), "✂ cut",
                   fill=CUT_COLOR, font=pinyin_font, anchor="rm")
 
