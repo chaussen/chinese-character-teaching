@@ -161,7 +161,7 @@ function renderBig(
   const halfPage = pageH / 2; // physical half-sheet height — we cut here
 
   const box = halfPage - 2 * margin - 2 * sidePad; // 米字格 nearly fills the half
-  const pinyinH = box * 0.32; // taller band -> bigger pinyin
+  const pinyinH = box * 0.5; // pinyin band ~1/3 of the upright card — as prominent as the character
   const padGuide = pinyinH * 0.12; // four-line guide's inner padding
   const wc = box + 2 * sidePad; // card width (becomes vertical after the 90° rotation)
   const hc = 2 * sidePad + box + pinyinH - padGuide; // card height (becomes horizontal)
@@ -170,7 +170,7 @@ function renderBig(
   const borderW = mm(0.4);
   const dash: [number, number] = [Math.max(mm(2), box / 38), Math.max(mm(1.2), box / 60)];
   const charSize = box * 0.82;
-  const pinyinSize = pinyinH * 0.58;
+  const pinyinSize = pinyinH * 0.6;
 
   const pages = Math.max(1, Math.ceil(chars.length / 2));
   for (let p = 0; p < pages; p++) {
