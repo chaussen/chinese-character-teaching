@@ -2,7 +2,7 @@ import { PDFDocument, PDFFont, PDFPage, rgb, degrees } from "pdf-lib";
 import fontkit from "@pdf-lib/fontkit";
 import type { CharacterDict, Config, Entry, Rgb, Style } from "./types.js";
 import { DEFAULT_STYLE } from "./types.js";
-import { resolvePinyin } from "./pinyin.js";
+import { resolvePinyin, resolveEnglish } from "./pinyin.js";
 
 /** Fonts + curated dictionary the renderer needs, supplied by the host. */
 export interface Assets {
@@ -150,6 +150,7 @@ function renderBig(
   doc: PDFDocument,
   chars: string[],
   readings: string[],
+  _englishes: string[],
   cfg: Config,
   charFont: PDFFont,
   pinyinFont: PDFFont,
@@ -201,6 +202,7 @@ function renderGrid(
   doc: PDFDocument,
   chars: string[],
   readings: string[],
+  _englishes: string[],
   cfg: Config,
   charFont: PDFFont,
   pinyinFont: PDFFont,
@@ -281,9 +283,104 @@ function renderGrid(
   }
 }
 
+/** Greedy word-wrap to a maximum width, capped at `maxLines` (… on overflow). */
+function wrapText(text: string, font: PDFFont, size: number, maxW: number, maxLines: number): string[] {
+  const words = text.split(/\s+/).filter(Boolean);
+  const lines: string[] = [];
+  let line = "";
+  for (const w of words) {
+    const trial = line ? `${line} ${w}` : w;
+    if (font.widthOfTextAtSize(trial, size) <= maxW || !line) {
+      line = trial;
+    } else {
+      lines.push(line);
+      line = w;
+      if (lines.length === maxLines) break;
+    }
+  }
+  if (line && lines.length < maxLines) lines.push(line);
+  if (lines.length === maxLines && words.length) {
+    // crude overflow check: if the last word isn't present, add an ellipsis
+    const joined = lines.join(" ");
+    if (font.widthOfTextAtSize(joined, size) < font.widthOfTextAtSize(text, size) - 1) {
+      lines[maxLines - 1] = lines[maxLines - 1]!.replace(/\s*\S*$/, "") + " …";
+    }
+  }
+  return lines;
+}
+
+// --- Layout: vocab (char/word + pinyin + English flashcards) ---------------
+function renderVocab(
+  doc: PDFDocument,
+  chars: string[],
+  readings: string[],
+  englishes: string[],
+  cfg: Config,
+  charFont: PDFFont,
+  pinyinFont: PDFFont,
+  style: Style,
+): void {
+  const [pageW, pageH] = A4;
+  const margin = mm(cfg.marginMm);
+  const cols = Math.min(Math.max(1, cfg.cols), 6);
+  const gridW = pageW - 2 * margin;
+  const cardW = gridW / cols;
+  const cardH = cardW * 0.72;
+  const rows = Math.max(1, Math.floor((pageH - 2 * margin) / cardH));
+  const perPage = rows * cols;
+
+  const borderW = mm(0.25);
+  const pinyinSize = Math.min(cardH * 0.16, cardW * 0.3);
+  const engSize = cardH * 0.1;
+  const maxCharSize = cardH * 0.46;
+  const maxCharW = cardW * 0.84;
+
+  const pages = Math.max(1, Math.ceil(chars.length / perPage));
+  for (let p = 0; p < pages; p++) {
+    const page = doc.addPage(A4);
+    const pen = new Pen(page, [1, 0, 0, 1, 0, 0]);
+    for (let idx = 0; idx < perPage; idx++) {
+      const gi = p * perPage + idx;
+      if (gi >= chars.length) break;
+      const r = Math.floor(idx / cols);
+      const c = idx % cols;
+      const x0 = margin + c * cardW;
+      const yTop = pageH - margin - r * cardH; // top edge of this card (y-up)
+      const cxc = x0 + cardW / 2;
+
+      pen.rect(x0, yTop - cardH, cardW, cardH, { color: style.cut, thickness: borderW });
+
+      // pinyin (top)
+      const reading = readings[gi]!;
+      if (reading) {
+        const w = pinyinFont.widthOfTextAtSize(reading, pinyinSize);
+        pen.text(cxc - w / 2, yTop - cardH * 0.16 - pinyinSize * 0.3, reading, pinyinFont, pinyinSize, style.pinyinText);
+      }
+
+      // character / word (middle), autosized to fit the card width
+      const word = chars[gi]!;
+      const probe = charFont.widthOfTextAtSize(word, 100);
+      const charSize = Math.min(maxCharSize, (100 * maxCharW) / Math.max(1, probe));
+      const [tx, ty] = centered(charFont, charSize, word, cxc, yTop - cardH * 0.48);
+      pen.text(tx, ty, word, charFont, charSize, style.char);
+
+      // english (bottom, first sense, wrapped)
+      const eng = (englishes[gi] ?? "").split(";")[0]?.trim() ?? "";
+      if (eng) {
+        const lines = wrapText(eng, pinyinFont, engSize, cardW * 0.88, 2);
+        lines.forEach((ln, li) => {
+          const w = pinyinFont.widthOfTextAtSize(ln, engSize);
+          pen.text(cxc - w / 2, yTop - cardH * 0.8 - li * engSize * 1.25, ln, pinyinFont, engSize, style.pinyinText);
+        });
+      }
+    }
+  }
+}
+
 const RENDERERS: Record<Config["layout"], typeof renderBig> = {
   big: renderBig,
   grid: renderGrid,
+  vocab: renderVocab,
 };
 
 /** Build a vector PDF (Uint8Array) for the given entries. */
@@ -300,8 +397,9 @@ export async function buildPdf(
 
   const chars = entries.map((e) => e.char);
   const readings = entries.map((e) => resolvePinyin(e.char, e.override, assets.dict));
+  const englishes = entries.map((e) => resolveEnglish(e.char, assets.dict));
 
-  RENDERERS[cfg.layout](doc, chars, readings, cfg, charFont, pinyinFont, style);
+  RENDERERS[cfg.layout](doc, chars, readings, englishes, cfg, charFont, pinyinFont, style);
   doc.setTitle(cfg.title || "Chinese character practice cards");
   doc.setCreator("chinese-card-maker");
   return doc.save();

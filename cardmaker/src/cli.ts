@@ -11,7 +11,7 @@ import { readFile, writeFile, readdir } from "node:fs/promises";
 import { fileURLToPath } from "node:url";
 import { dirname, join, basename, extname } from "node:path";
 import { parseArgs } from "node:util";
-import { buildPdf, parseEntries, DEFAULT_CONFIG, type Assets, type Config } from "./core/index.js";
+import { buildPdf, parseEntries, parseWords, DEFAULT_CONFIG, type Assets, type Config } from "./core/index.js";
 
 const here = dirname(fileURLToPath(import.meta.url));
 const pkgRoot = join(here, "..");
@@ -33,7 +33,7 @@ function deriveName(inputPath: string): string {
 }
 
 async function generate(raw: string, outPrefix: string, cfg: Config, assets: Assets): Promise<number> {
-  const { entries, dropped } = parseEntries(raw);
+  const { entries, dropped } = cfg.layout === "vocab" ? parseWords(raw) : parseEntries(raw);
   if (dropped.length) console.warn(`  ! skipped ${dropped.length} unsupported char(s): ${dropped.join("")}`);
   if (!entries.length) {
     console.error("No characters provided.");
@@ -54,17 +54,18 @@ async function main(): Promise<number> {
       out: { type: "string" },
       outdir: { type: "string" },
       layout: { type: "string", default: "big" },
-      cols: { type: "string", default: "8" },
+      cols: { type: "string" },
       "margin-mm": { type: "string", default: "7" },
       trace: { type: "string", default: "0" },
       title: { type: "string", default: "" },
     },
   });
 
+  const layout = values.layout === "grid" || values.layout === "vocab" ? values.layout : "big";
   const cfg: Config = {
     ...DEFAULT_CONFIG,
-    layout: values.layout === "grid" ? "grid" : "big",
-    cols: parseInt(values.cols!, 10),
+    layout,
+    cols: values.cols ? parseInt(values.cols, 10) : layout === "vocab" ? 3 : 8,
     marginMm: parseFloat(values["margin-mm"]!),
     trace: parseInt(values.trace!, 10) || 0,
     title: values.title!,

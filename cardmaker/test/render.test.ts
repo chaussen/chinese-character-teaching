@@ -3,7 +3,7 @@ import { readFileSync } from "node:fs";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 import { PDFDocument } from "pdf-lib";
-import { buildPdf, parseEntries, decodePinyin, resolvePinyin, isHan, DEFAULT_CONFIG } from "../src/core/index.js";
+import { buildPdf, parseEntries, parseWords, resolveEnglish, decodePinyin, resolvePinyin, isHan, DEFAULT_CONFIG } from "../src/core/index.js";
 import type { Assets, CharacterDict } from "../src/core/index.js";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
@@ -74,5 +74,23 @@ describe("buildPdf", () => {
     const bytes = await buildPdf(entries, { ...DEFAULT_CONFIG, trace: 1 }, assets);
     const doc = await PDFDocument.load(bytes);
     expect(doc.getPageCount()).toBe(2);
+  });
+
+  it("vocab layout builds with words + English", async () => {
+    const { entries } = parseWords("花园 大门 季节");
+    expect(entries.map((e) => e.char)).toEqual(["花园", "大门", "季节"]);
+    expect(resolveEnglish("花园", dict)).toBe("garden");
+    const bytes = await buildPdf(entries, { ...DEFAULT_CONFIG, layout: "vocab", cols: 3 }, assets);
+    expect(Buffer.from(bytes.slice(0, 5)).toString()).toBe("%PDF-");
+    expect((await PDFDocument.load(bytes)).getPageCount()).toBe(1);
+  });
+});
+
+describe("parseWords", () => {
+  it("keeps multi-char words, supports inline overrides, drops non-han", () => {
+    const { entries, dropped } = parseWords("花园 重(zhòng) hello 季节");
+    expect(entries.map((e) => e.char)).toEqual(["花园", "重", "季节"]);
+    expect(entries.find((e) => e.char === "重")?.override).toBe("zhòng");
+    expect(dropped).toContain("hello");
   });
 });

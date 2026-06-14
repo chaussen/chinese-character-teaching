@@ -1,5 +1,5 @@
 /// <reference types="vite/client" />
-import { buildPdf, parseEntries, DEFAULT_CONFIG } from "../../src/core/index.js";
+import { buildPdf, parseEntries, parseWords, DEFAULT_CONFIG } from "../../src/core/index.js";
 import type { Assets, CharacterDict, Config } from "../../src/core/index.js";
 import dictData from "../../data/characters.json";
 
@@ -42,11 +42,12 @@ async function loadAssets(): Promise<Assets> {
 }
 
 function readConfig(): Config {
-  const layout = els.layout.value === "grid" ? "grid" : "big";
+  const v = els.layout.value;
+  const layout = v === "grid" || v === "vocab" ? v : "big";
   return {
     ...DEFAULT_CONFIG,
     layout,
-    cols: Math.max(1, parseInt(els.cols.value, 10) || 8),
+    cols: Math.max(1, parseInt(els.cols.value, 10) || (layout === "vocab" ? 3 : 8)),
     marginMm: parseFloat(els.margin.value) || 7,
     trace: Math.max(0, parseInt(els.trace.value, 10) || 0),
     title: els.title.value.trim(),
@@ -59,7 +60,8 @@ function setStatus(msg: string, warn = false): void {
 }
 
 async function generate(): Promise<void> {
-  const { entries, dropped } = parseEntries(els.chars.value);
+  const isVocab = els.layout.value === "vocab";
+  const { entries, dropped } = isVocab ? parseWords(els.chars.value) : parseEntries(els.chars.value);
   if (!entries.length) {
     setStatus("Enter at least one Chinese character.", true);
     return;
@@ -101,9 +103,9 @@ function download(): void {
 els.generate.addEventListener("click", generate);
 els.download.addEventListener("click", download);
 els.layout.addEventListener("change", () => {
-  els.cols.disabled = els.layout.value !== "grid";
+  els.cols.disabled = els.layout.value === "big";
 });
 
 // First render on load.
-els.cols.disabled = els.layout.value !== "grid";
+els.cols.disabled = els.layout.value === "big";
 generate();

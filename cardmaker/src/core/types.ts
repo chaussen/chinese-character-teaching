@@ -25,7 +25,7 @@ export interface Style {
   cut: Rgb; // cut line + label
 }
 
-export type Layout = "big" | "grid";
+export type Layout = "big" | "grid" | "vocab";
 
 export interface Config {
   layout: Layout;

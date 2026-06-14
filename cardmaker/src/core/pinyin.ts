@@ -100,6 +100,38 @@ export function parseEntries(raw: string): { entries: Entry[]; dropped: string[]
   return { entries, dropped };
 }
 
+/**
+ * Parse text into word entries (one per whitespace-separated token), keeping
+ * multi-character words intact for vocab cards. A token may carry an inline
+ * reading, e.g. 花园(huāyuán). Tokens with no Han character are skipped.
+ */
+export function parseWords(raw: string): { entries: Entry[]; dropped: string[] } {
+  const entries: Entry[] = [];
+  const dropped: string[] = [];
+  for (const rawTok of raw.split(/\s+/)) {
+    let tok = rawTok.trim();
+    if (!tok) continue;
+    let override: string | null = null;
+    const m = tok.match(/^(.*?)[(（]([^)）]*)[)）]\s*$/);
+    if (m) {
+      tok = m[1]!;
+      override = m[2]!.trim() || null;
+    }
+    const word = Array.from(tok).filter((c) => /\p{Script=Han}/u.test(c)).join("");
+    if (!word) {
+      if (tok) dropped.push(tok);
+      continue;
+    }
+    entries.push({ char: word, override });
+  }
+  return { entries, dropped };
+}
+
+/** Curated English gloss for a character/word, or "" if unknown. */
+export function resolveEnglish(word: string, dict: CharacterDict): string {
+  return dict[word]?.english ?? "";
+}
+
 /** Accept tone marks as-is; convert numbered readings to tone marks. */
 export function normalizePinyin(text: string): string {
   if (/\d/.test(text)) {
