@@ -16,22 +16,24 @@ half upright — the character fills almost the whole card.
 
 ## Regenerate
 
-The generator is `chinese_tools/cards/worksheet_maker.py` (needs `Pillow` and
-`xpinyin`: `pip install Pillow xpinyin`). Run from the repository root:
+The generator is the TypeScript card maker in [`cardmaker/`](../cardmaker). From
+that folder (`npm install` once):
 
 ```bash
 # rebuild every *_chars.txt in this folder
-python -m chinese_tools.cards.worksheet_maker --batch worksheets --outdir worksheets
+npx tsx src/cli.ts --batch ../worksheets --outdir ../worksheets
 
 # one list
-python -m chinese_tools.cards.worksheet_maker --file worksheets/yr1_chars.txt
+npx tsx src/cli.ts --file ../worksheets/yr1_chars.txt --outdir ../worksheets
 
 # ad-hoc characters
-python -m chinese_tools.cards.worksheet_maker --chars "花园门前"
+npx tsx src/cli.ts --chars "花园门前"
 
 # compact multi-cell sheet instead of big cards
-python -m chinese_tools.cards.worksheet_maker --file worksheets/yr1_chars.txt --layout grid --cols 8
+npx tsx src/cli.ts --file ../worksheets/yr1_chars.txt --layout grid --cols 8
 ```
+
+Output is now a small **vector** PDF (the old rasters were ~18 MB each).
 
 ## 多音字 (multiple readings)
 
@@ -43,5 +45,6 @@ character in the `.txt` list (tone marks or tone numbers both work):
 重(zhong4)
 ```
 
-Run `python -m chinese_tools.cards.worksheet_maker --help` for all options
-(`--dpi`, `--margin-mm`, `--char-font` for a 楷体/Kaiti font, `--png`, etc.).
+Run `npx tsx src/cli.ts --help`-style options: `--margin-mm`, `--char-font` for a
+楷体/Kaiti font, `--trace N`, `--layout vocab|strokes`, etc. (see
+[`cardmaker/README.md`](../cardmaker/README.md)).

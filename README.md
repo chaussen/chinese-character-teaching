@@ -1,61 +1,51 @@
 # Chinese Character Teaching Tools
 
-A small collection of Python tools for teaching Chinese characters: A4
-handwriting practice cards, flashcards, a Kahoot quiz-sheet generator, and a
-matching game.
+Tools for teaching Chinese characters: print-ready handwriting practice cards
+(米字格 + pinyin), vocab flashcards, stroke-order diagrams, a Kahoot quiz-sheet
+generator, and a matching game.
+
+The **card maker** has been rewritten as a TypeScript project (`cardmaker/`) that
+emits vector PDFs and runs both as a CLI and a zero-install web app. The Kahoot
+processor and matching game remain small Python tools.
 
 ## Repository layout
 
 ```
-chinese_tools/            # all the code (one package)
-├── cards/
-│   ├── worksheet_maker.py   # A4 practice cards (米字格 + pinyin) -> PDF   ← main tool
-│   └── flashcard_maker.py   # legacy per-character JPG flashcards
-├── kahoot/
-│   ├── processor.py         # build Kahoot question spreadsheets (CSV/XLSX)
-│   ├── columns.py           # Kahoot column headers
-│   └── kahoot.txt           # sample question source
-├── game/
-│   └── matching_game.py     # pygame character-matching game
-├── ui/
-│   └── app.py               # Tkinter front-end tying the tools together
-├── data/
-│   ├── pinyin_data.py       # curated pinyin/English readings + tone decoder
-│   ├── character_dict.py    # per-lesson character dictionaries
-│   ├── common_characters.txt
-│   └── curriculum_y34.txt
-├── fonts/GB2312.ttf         # bundled character font
-├── settings.py              # shared settings (flashcards + game)
-└── paths.py                 # filesystem paths (font, data, output dirs)
+cardmaker/                # ← the card maker (TypeScript): CLI + web app
+├── src/core/               framework-agnostic engine (pinyin, layouts, vector PDF)
+├── src/cli.ts              Node CLI (single / --file / --batch)
+├── web/                    zero-install browser app (paste → preview → download)
+├── data/characters.json    curated pinyin + English
+└── fonts/                  bundled char + pinyin fonts
+
+chinese_tools/            # the remaining Python tools (one package)
+├── kahoot/                 build Kahoot question spreadsheets (CSV/XLSX)
+├── game/matching_game.py   pygame character-matching game
+├── data/                   curated pinyin/English readings + tone decoder
+├── settings.py             shared settings (game)
+└── paths.py                filesystem paths
 
 worksheets/               # ready-to-print PDFs + their source character lists
-tests/                    # pytest suite
-generated/                # scratch output from the legacy tools (git-ignored)
-```
-
-## Setup
-
-```bash
-pip install Pillow xpinyin          # practice cards (the main tool)
-pip install pinyin xlsxwriter       # + flashcards / Kahoot processor
-pip install pygame                  # + matching game
-```
-
-Run tools as modules from the repository root, e.g.:
-
-```bash
-python -m chinese_tools.cards.worksheet_maker --file worksheets/yr1_chars.txt
+tests/                    # pytest suite (Python side)
 ```
 
 ## Tools
 
-### Practice cards — `chinese_tools.cards.worksheet_maker`
+### Card maker — `cardmaker/` (TypeScript)
 
-Generates print-ready A4 PDFs. Each character sits in a 米字格 (solid border,
-dashed cross + diagonals) with its pinyin on top in a 四线三格 guide. The default
-`big` layout puts two large characters per page, rotated 90° so you cut the page
-in half. See [`worksheets/README.md`](worksheets/README.md) for full usage,
-batch regeneration, and 多音字 overrides.
+Print-ready vector PDFs: 米字格 practice cards (`big` / `grid`), tracing/repeat
+practice, vocab flashcards (word + pinyin + English), and stroke-order diagrams.
+Run it as a CLI or the in-browser web app — see
+[`cardmaker/README.md`](cardmaker/README.md).
+
+```bash
+cd cardmaker && npm install
+npx tsx src/cli.ts --file ../worksheets/yr1_chars.txt   # batch/regenerate PDFs
+npm run web:dev                                         # the web app, locally
+```
+
+See [`worksheets/README.md`](worksheets/README.md) for the ready-made Year 1–6
+PDFs and how to regenerate them.
 
 ### Kahoot processor — `chinese_tools.kahoot.processor`
 
@@ -66,14 +56,15 @@ one on the website.
 
 A pygame memory-matching game over generated character images.
 
-### Tkinter UI — `chinese_tools.ui.app`
-
-A desktop front-end that wires the flashcard maker and Kahoot processor together.
+```bash
+pip install -r requirements.txt   # Python tools (Kahoot + game)
+```
 
 ## Tests
 
 ```bash
-pytest -q
+cd cardmaker && npm test   # card maker (TypeScript)
+pytest -q                  # Python tools
 ```
 
 ## Credits

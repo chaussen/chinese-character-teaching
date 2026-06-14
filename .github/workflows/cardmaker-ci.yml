@@ -1,0 +1,31 @@
+# Lints, type-checks, tests, and builds the new TypeScript card maker on every
+# push / PR. (Deployment to Pages is handled by deploy-cardmaker.yml.)
+name: Card Maker CI
+
+on:
+  push:
+    paths:
+      - "cardmaker/**"
+      - ".github/workflows/cardmaker-ci.yml"
+  pull_request:
+    paths:
+      - "cardmaker/**"
+      - ".github/workflows/cardmaker-ci.yml"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: cardmaker
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+          cache-dependency-path: cardmaker/package-lock.json
+      - run: npm ci
+      - run: npm run typecheck
+      - run: npm test
+      - run: npm run web:build

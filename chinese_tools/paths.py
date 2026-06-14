@@ -3,7 +3,7 @@
 Importing anything from ``chinese_tools`` works regardless of the current
 working directory, so tools can be launched with e.g.::
 
-    python -m chinese_tools.cards.worksheet_maker --file worksheets/yr1_chars.txt
+    python -m chinese_tools.kahoot.processor
 """
 import os
 
