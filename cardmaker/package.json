@@ -1,0 +1,29 @@
+{
+  "name": "chinese-card-maker",
+  "version": "0.1.0",
+  "description": "Chinese character practice card & worksheet maker — vector PDFs, in the browser or CLI.",
+  "type": "module",
+  "license": "MIT",
+  "bin": {
+    "card-maker": "dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "cli": "tsx src/cli.ts",
+    "test": "vitest run",
+    "web:dev": "vite",
+    "web:build": "vite build"
+  },
+  "dependencies": {
+    "@pdf-lib/fontkit": "^1.1.1",
+    "pdf-lib": "^1.17.1",
+    "pinyin-pro": "^3.26.0"
+  },
+  "devDependencies": {
+    "@types/node": "^25.9.3",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2",
+    "vite": "^6.0.5",
+    "vitest": "^2.1.8"
+  }
+}
