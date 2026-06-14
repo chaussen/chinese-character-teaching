@@ -1,7 +1,5 @@
 {
-    "python.analysis.extraPaths": [
-        "./src/kahoot",
-        "./src/locals",
-        "./src/common"
-    ]
+    "python.testing.pytestEnabled": true,
+    "python.testing.pytestArgs": ["tests"],
+    "python.analysis.extraPaths": ["."]
 }

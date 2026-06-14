@@ -1,0 +1,1 @@
+"""Chinese character teaching tools."""

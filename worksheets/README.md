@@ -16,21 +16,21 @@ half upright — the character fills almost the whole card.
 
 ## Regenerate
 
-The generator is `../src/locals/worksheet_maker.py` (needs `Pillow` and
-`xpinyin`: `pip install Pillow xpinyin`).
+The generator is `chinese_tools/cards/worksheet_maker.py` (needs `Pillow` and
+`xpinyin`: `pip install Pillow xpinyin`). Run from the repository root:
 
 ```bash
 # rebuild every *_chars.txt in this folder
-python ../src/locals/worksheet_maker.py --batch . --outdir .
+python -m chinese_tools.cards.worksheet_maker --batch worksheets --outdir worksheets
 
 # one list
-python ../src/locals/worksheet_maker.py --file yr1_chars.txt
+python -m chinese_tools.cards.worksheet_maker --file worksheets/yr1_chars.txt
 
 # ad-hoc characters
-python ../src/locals/worksheet_maker.py --chars "花园门前"
+python -m chinese_tools.cards.worksheet_maker --chars "花园门前"
 
 # compact multi-cell sheet instead of big cards
-python ../src/locals/worksheet_maker.py --file yr1_chars.txt --layout grid --cols 8
+python -m chinese_tools.cards.worksheet_maker --file worksheets/yr1_chars.txt --layout grid --cols 8
 ```
 
 ## 多音字 (multiple readings)
@@ -43,5 +43,5 @@ character in the `.txt` list (tone marks or tone numbers both work):
 重(zhong4)
 ```
 
-Run `python ../src/locals/worksheet_maker.py --help` for all options
+Run `python -m chinese_tools.cards.worksheet_maker --help` for all options
 (`--dpi`, `--margin-mm`, `--char-font` for a 楷体/Kaiti font, `--png`, etc.).

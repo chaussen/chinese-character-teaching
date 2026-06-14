@@ -1,61 +1,82 @@
-## Synopsis
+# Chinese Character Teaching Tools
 
-Chinese Character Teaching Tools
+A small collection of Python tools for teaching Chinese characters: A4
+handwriting practice cards, flashcards, a Kahoot quiz-sheet generator, and a
+matching game.
+
+## Repository layout
+
+```
+chinese_tools/            # all the code (one package)
+├── cards/
+│   ├── worksheet_maker.py   # A4 practice cards (米字格 + pinyin) -> PDF   ← main tool
+│   └── flashcard_maker.py   # legacy per-character JPG flashcards
+├── kahoot/
+│   ├── processor.py         # build Kahoot question spreadsheets (CSV/XLSX)
+│   ├── columns.py           # Kahoot column headers
+│   └── kahoot.txt           # sample question source
+├── game/
+│   └── matching_game.py     # pygame character-matching game
+├── ui/
+│   └── app.py               # Tkinter front-end tying the tools together
+├── data/
+│   ├── pinyin_data.py       # curated pinyin/English readings + tone decoder
+│   ├── character_dict.py    # per-lesson character dictionaries
+│   ├── common_characters.txt
+│   └── curriculum_y34.txt
+├── fonts/GB2312.ttf         # bundled character font
+├── settings.py              # shared settings (flashcards + game)
+└── paths.py                 # filesystem paths (font, data, output dirs)
+
+worksheets/               # ready-to-print PDFs + their source character lists
+tests/                    # pytest suite
+generated/                # scratch output from the legacy tools (git-ignored)
+```
+
+## Setup
+
+```bash
+pip install Pillow xpinyin          # practice cards (the main tool)
+pip install pinyin xlsxwriter       # + flashcards / Kahoot processor
+pip install pygame                  # + matching game
+```
+
+Run tools as modules from the repository root, e.g.:
+
+```bash
+python -m chinese_tools.cards.worksheet_maker --file worksheets/yr1_chars.txt
+```
 
 ## Tools
 
-### Chinese Maker
+### Practice cards — `chinese_tools.cards.worksheet_maker`
 
-It makes character flash cards in batches.
+Generates print-ready A4 PDFs. Each character sits in a 米字格 (solid border,
+dashed cross + diagonals) with its pinyin on top in a 四线三格 guide. The default
+`big` layout puts two large characters per page, rotated 90° so you cut the page
+in half. See [`worksheets/README.md`](worksheets/README.md) for full usage,
+batch regeneration, and 多音字 overrides.
 
-Execute the lines in _test.py_:
+### Kahoot processor — `chinese_tools.kahoot.processor`
 
+Builds Kahoot question spreadsheets in bulk, so you don't enter questions one by
+one on the website.
 
-```ChineseCardMaker().generate_separate_images()```
+### Matching game — `chinese_tools.game.matching_game`
 
-```ChineseCardMaker().generate_character_pinyin_image()```
+A pygame memory-matching game over generated character images.
 
-The command will generate images with characters and pinyins set in _CharacterPinyinMapping_, and create files in the folders defined inside _configs_: *CHARACTER_IMAGE_FILE_NAME_PREFIX*, *PINYIN_IMAGE_FILE_NAME_PREFIX*, *CHARACTER_PINYIN_FOLDER*
+### Tkinter UI — `chinese_tools.ui.app`
 
-### Kahoot Processor
-
-It generates Excel sheet quickly for [Kahoot](https://kahoot.it) question uploading. It takes a lot of time to add questions on Kahoot, so it is easier to use Excel spreadsheet to add questions in a large amount.
-
-## Motivation
-
-To save time and efforts for Chinese character card making with pinyin.
-
-## Installation
-
-Pure python packages are required for the tool.
-
-1. Install Python3
-2. Pillow: for image making
-3. pinyin: for translation
-4. xpinyin: for default pinyin
-5. pygame: for the matching game only
-6. csv: for Kahoot spreadsheet file generation
-7. xlsxwriter: for Kahoot spreadsheet file generation
-
-1-4 are necessary for card making. 5 is optional for game.  
-3, 4, 6 and 7 are also required for Kahoot processor.
-
-## API Reference
-
-See the _test.py_.
+A desktop front-end that wires the flashcard maker and Kahoot processor together.
 
 ## Tests
 
-See the _test.py_.
+```bash
+pytest -q
+```
 
-## Contributors
+## Credits
 
-[John Ni](chaussen@gmail.com)
-
-The matching game is based on this [Memory_Match](https://github.com/ncarmine/Memory_Match)
-
-## License
-
-John Ni
-
-[Memory_Match](https://github.com/ncarmine/Memory_Match)
+By [John Ni](mailto:chaussen@gmail.com). The matching game is based on
+[Memory_Match](https://github.com/ncarmine/Memory_Match).
