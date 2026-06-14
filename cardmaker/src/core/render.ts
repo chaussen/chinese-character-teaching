@@ -116,8 +116,9 @@ function drawPinyinGuide(
   style: Style,
   lineW: number,
   dash: [number, number],
+  padFrac = 0.12,
 ): void {
-  const pad = height * 0.12;
+  const pad = height * padFrac;
   const top = yBottom + height - pad;
   const band = (height - 2 * pad) / 3;
   const lines = [0, 1, 2, 3].map((i) => top - band * i);
@@ -162,15 +163,16 @@ function renderBig(
 
   const box = halfPage - 2 * margin - 2 * sidePad; // 米字格 nearly fills the half
   const pinyinH = box * 0.5; // pinyin band ~1/3 of the upright card — as prominent as the character
-  const padGuide = pinyinH * 0.12; // four-line guide's inner padding
+  const padFrac = 0.05; // small inner pad -> taller guide zones so big pinyin fits within the lines
+  const padGuide = pinyinH * padFrac; // four-line guide's inner padding
   const wc = box + 2 * sidePad; // card width (becomes vertical after the 90° rotation)
   const hc = 2 * sidePad + box + pinyinH - padGuide; // card height (becomes horizontal)
 
-  const lineW = mm(0.18);
-  const borderW = mm(0.4);
+  const lineW = mm(0.45); // thicker grid/guide lines — readable from across a room
+  const borderW = mm(0.8);
   const dash: [number, number] = [Math.max(mm(2), box / 38), Math.max(mm(1.2), box / 60)];
   const charSize = box * 0.82;
-  const pinyinSize = pinyinH * 0.6;
+  const pinyinSize = pinyinH * 0.52; // sits inside the four lines (body in the middle zone)
 
   const pages = Math.max(1, Math.ceil(chars.length / 2));
   for (let p = 0; p < pages; p++) {
@@ -190,7 +192,7 @@ function renderBig(
       drawMizige(pen, sidePad, boxBottom, box, chars[gi]!, charFont, charSize, charColor, style, lineW, borderW, dash);
       // seat the pinyin guide so its bottom line meets the box top (no gap)
       const pinyinBottom = boxTop - padGuide;
-      drawPinyinGuide(pen, sidePad, sidePad + box, pinyinBottom, pinyinH, readings[gi]!, pinyinFont, pinyinSize, style, lineW, dash);
+      drawPinyinGuide(pen, sidePad, sidePad + box, pinyinBottom, pinyinH, readings[gi]!, pinyinFont, pinyinSize, style, lineW, dash, padFrac);
     }
     drawCutLine(page, pageW, margin, halfPage, style);
   }
