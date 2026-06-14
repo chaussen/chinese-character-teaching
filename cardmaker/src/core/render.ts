@@ -133,7 +133,7 @@ function drawPinyinGuide(
   }
 }
 
-function drawCutLine(page: PDFPage, pageW: number, margin: number, y: number, font: PDFFont, style: Style): void {
+function drawCutLine(page: PDFPage, pageW: number, margin: number, y: number, style: Style): void {
   page.drawLine({
     start: { x: margin / 2, y },
     end: { x: pageW - margin / 2, y },
@@ -141,10 +141,6 @@ function drawCutLine(page: PDFPage, pageW: number, margin: number, y: number, fo
     color: rgb(...style.cut),
     dashArray: [mm(1.8), mm(1.3)],
   });
-  const label = "✂ cut";
-  const size = mm(3.2);
-  const w = font.widthOfTextAtSize(label, size);
-  page.drawText(label, { x: pageW - margin / 2 - w, y: y + mm(1), size, font, color: rgb(...style.cut) });
 }
 
 // --- Layout: big (two rotated characters per page) -------------------------
@@ -162,21 +158,19 @@ function renderBig(
   const [pageW, pageH] = A4;
   const margin = mm(cfg.marginMm);
   const sidePad = mm(2.5);
-  const usableW = pageW - 2 * margin;
-  const halfH = (pageH - 2 * margin) / 2;
+  const halfPage = pageH / 2; // physical half-sheet height — we cut here
 
-  const box = halfH - 2 * sidePad - mm(0.5);
-  const pinyinH = box * cfg.pinyinRatio;
-  const midGap = Math.max(mm(2), sidePad * 0.5);
-  const wc = box + 2 * sidePad;
-  const hc = 2 * sidePad + box + midGap + pinyinH;
+  const box = halfPage - 2 * margin - 2 * sidePad; // 米字格 nearly fills the half
+  const pinyinH = box * 0.32; // taller band -> bigger pinyin
+  const padGuide = pinyinH * 0.12; // four-line guide's inner padding
+  const wc = box + 2 * sidePad; // card width (becomes vertical after the 90° rotation)
+  const hc = 2 * sidePad + box + pinyinH - padGuide; // card height (becomes horizontal)
 
   const lineW = mm(0.18);
   const borderW = mm(0.4);
   const dash: [number, number] = [Math.max(mm(2), box / 38), Math.max(mm(1.2), box / 60)];
   const charSize = box * 0.82;
-  const pinyinSize = pinyinH * 0.5;
-  const labelFont = pinyinFont;
+  const pinyinSize = pinyinH * 0.58;
 
   const pages = Math.max(1, Math.ceil(chars.length / 2));
   for (let p = 0; p < pages; p++) {
@@ -184,19 +178,21 @@ function renderBig(
     for (let slot = 0; slot < 2; slot++) {
       const gi = p * 2 + slot;
       if (gi >= chars.length) continue;
-      const regionBottom = margin + (1 - slot) * halfH; // slot 0 = top
-      const ex = margin + (usableW - hc) / 2;
-      const ey = regionBottom + (halfH - wc) / 2;
+      const slotBottom = slot === 0 ? halfPage : 0; // slot 0 = top half-sheet
+      const ex = (pageW - hc) / 2; // centre across the full page width
+      const ey = slotBottom + (halfPage - wc) / 2; // centre on the physical half-sheet
       // rotate 90deg CCW then translate so the card bbox sits at (ex, ey)
       const pen = new Pen(page, [0, 1, -1, 0, ex + hc, ey]);
       const boxBottom = sidePad;
+      const boxTop = sidePad + box;
       // trace mode on the big card: render the character faint to be traced over.
       const charColor = cfg.trace > 0 ? style.trace : style.char;
       drawMizige(pen, sidePad, boxBottom, box, chars[gi]!, charFont, charSize, charColor, style, lineW, borderW, dash);
-      const pinyinBottom = boxBottom + box + midGap;
+      // seat the pinyin guide so its bottom line meets the box top (no gap)
+      const pinyinBottom = boxTop - padGuide;
       drawPinyinGuide(pen, sidePad, sidePad + box, pinyinBottom, pinyinH, readings[gi]!, pinyinFont, pinyinSize, style, lineW, dash);
     }
-    drawCutLine(page, pageW, margin, margin + halfH, labelFont, style);
+    drawCutLine(page, pageW, margin, halfPage, style);
   }
 }
 
@@ -263,7 +259,7 @@ function renderGrid(
           }
         }
       }
-      drawCutLine(page, pageW, margin, margin + halfH, pinyinFont, style);
+      drawCutLine(page, pageW, margin, margin + halfH, style);
     }
     return;
   }
@@ -283,7 +279,7 @@ function renderGrid(
         cell(pn, xAt(c), cellTopAt(regionTop, r), chars[gi]!, readings[gi]!, style.char);
       }
     }
-    drawCutLine(page, pageW, margin, margin + halfH, pinyinFont, style);
+    drawCutLine(page, pageW, margin, margin + halfH, style);
   }
 }
 
