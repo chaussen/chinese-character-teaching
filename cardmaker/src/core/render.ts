@@ -186,7 +186,9 @@ function renderBig(
       // rotate 90deg CCW then translate so the card bbox sits at (ex, ey)
       const pen = new Pen(page, [0, 1, -1, 0, ex + hc, ey]);
       const boxBottom = sidePad;
-      drawMizige(pen, sidePad, boxBottom, box, chars[gi]!, charFont, charSize, style.char, style, lineW, borderW, dash);
+      // trace mode on the big card: render the character faint to be traced over.
+      const charColor = cfg.trace > 0 ? style.trace : style.char;
+      drawMizige(pen, sidePad, boxBottom, box, chars[gi]!, charFont, charSize, charColor, style, lineW, borderW, dash);
       const pinyinBottom = boxBottom + box + midGap;
       drawPinyinGuide(pen, sidePad, sidePad + box, pinyinBottom, pinyinH, readings[gi]!, pinyinFont, pinyinSize, style, lineW, dash);
     }
@@ -225,11 +227,45 @@ function renderGrid(
   const charSize = box * 0.78;
   const pinyinSize = pinyinH * 0.46;
 
-  const pen = (page: PDFPage) => new Pen(page, [1, 0, 0, 1, 0, 0]);
+  const newPen = (page: PDFPage) => new Pen(page, [1, 0, 0, 1, 0, 0]);
+  const cell = (pn: Pen, x0: number, cellTop: number, char: string, reading: string, color: Rgb): void => {
+    drawPinyinGuide(pn, x0 + pad, x0 + pad + box, cellTop - pinyinH, pinyinH, reading, pinyinFont, pinyinSize, style, lineW, dash);
+    drawMizige(pn, x0 + pad, cellTop - pinyinH - box, box, char, charFont, charSize, color, style, lineW, borderW, dash);
+  };
+  const cellTopAt = (regionTop: number, r: number): number => regionTop - inner - r * cellH;
+  const xAt = (c: number): number => margin + inner + c * cellW;
+
+  // Trace mode: one character per row — [solid][faint x trace][blank...] —
+  // so a learner copies the model across the row. trace 0 keeps cells packed.
+  const trace = Math.max(0, Math.min(cfg.trace, cols - 1));
+  if (trace > 0) {
+    const perPageRows = rows * 2;
+    const pages = Math.max(1, Math.ceil(chars.length / perPageRows));
+    for (let p = 0; p < pages; p++) {
+      const page = doc.addPage(A4);
+      const pn = newPen(page);
+      for (let slot = 0; slot < 2; slot++) {
+        const regionTop = margin + (2 - slot) * halfH;
+        for (let r = 0; r < rows; r++) {
+          const gi = p * perPageRows + slot * rows + r;
+          if (gi >= chars.length) break;
+          const cellTop = cellTopAt(regionTop, r);
+          for (let c = 0; c < cols; c++) {
+            if (c === 0) cell(pn, xAt(c), cellTop, chars[gi]!, readings[gi]!, style.char);
+            else if (c <= trace) cell(pn, xAt(c), cellTop, chars[gi]!, "", style.trace);
+            else cell(pn, xAt(c), cellTop, "", "", style.char); // blank box to write in
+          }
+        }
+      }
+      drawCutLine(page, pageW, margin, margin + halfH, pinyinFont, style);
+    }
+    return;
+  }
+
   const pages = Math.max(1, Math.ceil(chars.length / perPage));
   for (let p = 0; p < pages; p++) {
     const page = doc.addPage(A4);
-    const pn = pen(page);
+    const pn = newPen(page);
     for (let slot = 0; slot < 2; slot++) {
       const regionTop = margin + (2 - slot) * halfH; // slot 0 = top
       const base = p * perPage + slot * perCard;
@@ -238,10 +274,7 @@ function renderGrid(
         if (gi >= chars.length) break;
         const r = Math.floor(idx / cols);
         const c = idx % cols;
-        const x0 = margin + inner + c * cellW;
-        const cellTop = regionTop - inner - r * cellH;
-        drawPinyinGuide(pn, x0 + pad, x0 + pad + box, cellTop - pinyinH, pinyinH, readings[gi]!, pinyinFont, pinyinSize, style, lineW, dash);
-        drawMizige(pn, x0 + pad, cellTop - pinyinH - box, box, chars[gi]!, charFont, charSize, style.char, style, lineW, borderW, dash);
+        cell(pn, xAt(c), cellTopAt(regionTop, r), chars[gi]!, readings[gi]!, style.char);
       }
     }
     drawCutLine(page, pageW, margin, margin + halfH, pinyinFont, style);

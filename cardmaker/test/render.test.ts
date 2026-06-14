@@ -60,4 +60,19 @@ describe("buildPdf", () => {
     const doc = await PDFDocument.load(bytes);
     expect(doc.getPageCount()).toBe(1);
   });
+
+  it("grid trace mode builds a valid one-page sheet", async () => {
+    const { entries } = parseEntries("花园门前");
+    const bytes = await buildPdf(entries, { ...DEFAULT_CONFIG, layout: "grid", trace: 3 }, assets);
+    expect(Buffer.from(bytes.slice(0, 5)).toString()).toBe("%PDF-");
+    const doc = await PDFDocument.load(bytes);
+    expect(doc.getPageCount()).toBe(1);
+  });
+
+  it("big trace mode builds (faint character)", async () => {
+    const { entries } = parseEntries("学习重");
+    const bytes = await buildPdf(entries, { ...DEFAULT_CONFIG, trace: 1 }, assets);
+    const doc = await PDFDocument.load(bytes);
+    expect(doc.getPageCount()).toBe(2);
+  });
 });

@@ -10,6 +10,7 @@ const els = {
   layout: $<HTMLSelectElement>("layout"),
   cols: $<HTMLInputElement>("cols"),
   margin: $<HTMLInputElement>("margin"),
+  trace: $<HTMLInputElement>("trace"),
   title: $<HTMLInputElement>("title"),
   generate: $<HTMLButtonElement>("generate"),
   download: $<HTMLButtonElement>("download"),
@@ -47,6 +48,7 @@ function readConfig(): Config {
     layout,
     cols: Math.max(1, parseInt(els.cols.value, 10) || 8),
     marginMm: parseFloat(els.margin.value) || 7,
+    trace: Math.max(0, parseInt(els.trace.value, 10) || 0),
     title: els.title.value.trim(),
   };
 }

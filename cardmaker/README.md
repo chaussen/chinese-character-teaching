@@ -35,9 +35,13 @@ npx tsx src/cli.ts --batch ../worksheets --layout big # regenerate a folder
 npx tsx src/cli.ts --chars "重(zhòng) 行(háng)"        # 多音字 overrides
 ```
 
-Options: `--layout big|grid`, `--cols N`, `--margin-mm N`, `--out`, `--outdir`,
-`--title`. Readings resolve as: inline override → curated dictionary →
-`pinyin-pro`.
+Options: `--layout big|grid`, `--cols N`, `--margin-mm N`, `--trace N`, `--out`,
+`--outdir`, `--title`. Readings resolve as: inline override → curated dictionary
+→ `pinyin-pro`.
+
+`--trace N` turns on copy practice: in **grid** each character gets its own row
+(`[solid][faint × N][blank…]`); in **big** the large character is drawn faint to
+be traced over.
 
 ## Web app
 
@@ -63,6 +67,6 @@ npm run build     # tsc -> dist/
 - [x] Core engine: pinyin resolution, both layouts, vector PDF
 - [x] Node CLI (single / file / batch) with parity to the old tool
 - [x] Web app (paste → preview → download), client-side, + Pages deploy workflow
-- [ ] Tracing / repeat-box practice mode
+- [x] Tracing / repeat-box practice mode (grid rows + faint big card)
 - [ ] Stroke order (Hanzi Writer)
 - [ ] Vocab-card mode (char + pinyin + English) and a licensed Kaiti font

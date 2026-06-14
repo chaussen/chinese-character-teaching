@@ -56,6 +56,7 @@ async function main(): Promise<number> {
       layout: { type: "string", default: "big" },
       cols: { type: "string", default: "8" },
       "margin-mm": { type: "string", default: "7" },
+      trace: { type: "string", default: "0" },
       title: { type: "string", default: "" },
     },
   });
@@ -65,6 +66,7 @@ async function main(): Promise<number> {
     layout: values.layout === "grid" ? "grid" : "big",
     cols: parseInt(values.cols!, 10),
     marginMm: parseFloat(values["margin-mm"]!),
+    trace: parseInt(values.trace!, 10) || 0,
     title: values.title!,
   };
   const assets = await loadAssets();
