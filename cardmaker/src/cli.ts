@@ -26,10 +26,10 @@ async function loadStrokes(char: string): Promise<StrokeData | null> {
 const here = dirname(fileURLToPath(import.meta.url));
 const pkgRoot = join(here, "..");
 
-async function loadAssets(): Promise<Assets> {
+async function loadAssets(charFontPath?: string, pinyinFontPath?: string): Promise<Assets> {
   const [charFont, pinyinFont, dictRaw] = await Promise.all([
-    readFile(join(pkgRoot, "fonts", "char.ttf")),
-    readFile(join(pkgRoot, "fonts", "pinyin.ttf")),
+    readFile(charFontPath ?? join(pkgRoot, "fonts", "char.ttf")),
+    readFile(pinyinFontPath ?? join(pkgRoot, "fonts", "pinyin.ttf")),
     readFile(join(pkgRoot, "data", "characters.json"), "utf8"),
   ]);
   return { charFont, pinyinFont, dict: JSON.parse(dictRaw), loadStrokes };
@@ -68,6 +68,8 @@ async function main(): Promise<number> {
       "margin-mm": { type: "string", default: "7" },
       trace: { type: "string", default: "0" },
       title: { type: "string", default: "" },
+      "char-font": { type: "string" },
+      "pinyin-font": { type: "string" },
     },
   });
 
@@ -81,7 +83,7 @@ async function main(): Promise<number> {
     trace: parseInt(values.trace!, 10) || 0,
     title: values.title!,
   };
-  const assets = await loadAssets();
+  const assets = await loadAssets(values["char-font"], values["pinyin-font"]);
 
   if (values.batch) {
     const dir = values.batch;

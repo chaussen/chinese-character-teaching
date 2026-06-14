@@ -27,6 +27,7 @@ const els = {
   margin: $<HTMLInputElement>("margin"),
   trace: $<HTMLInputElement>("trace"),
   title: $<HTMLInputElement>("title"),
+  charfont: $<HTMLInputElement>("charfont"),
   generate: $<HTMLButtonElement>("generate"),
   download: $<HTMLButtonElement>("download"),
   status: $<HTMLDivElement>("status"),
@@ -37,6 +38,7 @@ const els = {
 let assetsPromise: Promise<Assets> | null = null;
 let currentUrl: string | null = null;
 let currentBlob: Blob | null = null;
+let customCharFont: Uint8Array | null = null;
 
 async function loadAssets(): Promise<Assets> {
   if (!assetsPromise) {
@@ -85,7 +87,8 @@ async function generate(): Promise<void> {
   els.generate.disabled = true;
   setStatus("Rendering…");
   try {
-    const assets = await loadAssets();
+    const base = await loadAssets();
+    const assets = customCharFont ? { ...base, charFont: customCharFont } : base;
     const cfg = readConfig();
     const bytes = await buildPdf(entries, cfg, assets);
     const blob = new Blob([bytes as BlobPart], { type: "application/pdf" });
@@ -118,6 +121,11 @@ function download(): void {
 
 els.generate.addEventListener("click", generate);
 els.download.addEventListener("click", download);
+els.charfont.addEventListener("change", async () => {
+  const file = els.charfont.files?.[0];
+  customCharFont = file ? new Uint8Array(await file.arrayBuffer()) : null;
+  generate();
+});
 els.layout.addEventListener("change", () => {
   els.cols.disabled = els.layout.value === "big";
 });

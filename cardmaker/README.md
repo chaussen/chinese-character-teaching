@@ -38,8 +38,13 @@ npx tsx src/cli.ts --chars "我 你 好" --layout strokes      # stroke-order di
 ```
 
 Options: `--layout big|grid|vocab|strokes`, `--cols N`, `--margin-mm N`,
-`--trace N`, `--out`, `--outdir`, `--title`. Readings resolve as: inline override
-→ curated dictionary → `pinyin-pro`.
+`--trace N`, `--out`, `--outdir`, `--title`, `--char-font PATH`,
+`--pinyin-font PATH`. Readings resolve as: inline override → curated dictionary →
+`pinyin-pro`.
+
+For authentic handwriting strokes, pass a 楷体/Kaiti TTF via `--char-font` (e.g.
+[LXGW WenKai](https://github.com/lxgw/LxgwWenKai)); the web app has a font picker
+for the same. fontkit subsets whatever font you give it, so PDFs stay tiny.
 
 `strokes` draws a progressive stroke-order diagram per character (newest stroke
 black, earlier strokes grey) from **Hanzi Writer** data — the CLI reads it from
@@ -80,5 +85,5 @@ npm run build     # tsc -> dist/
 - [x] Tracing / repeat-box practice mode (grid rows + faint big card)
 - [x] Vocab-card mode (word + pinyin + English flashcards)
 - [x] Stroke order (Hanzi Writer) — progressive diagram
-- [ ] Bundle a licensed Kaiti/楷体 font as the practice default
+- [x] Custom character/pinyin fonts (CLI flags + web upload) for Kaiti etc.
 - [ ] Retire the dead Python card code
