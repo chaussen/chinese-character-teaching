@@ -1,6 +1,6 @@
 import { PDFDocument, PDFFont, PDFPage, rgb, degrees } from "pdf-lib";
 import fontkit from "@pdf-lib/fontkit";
-import type { CharacterDict, Config, Entry, Rgb, Style } from "./types.js";
+import type { CharacterDict, Config, Entry, Rgb, StrokeData, Style } from "./types.js";
 import { DEFAULT_STYLE } from "./types.js";
 import { resolvePinyin, resolveEnglish } from "./pinyin.js";
 
@@ -9,6 +9,8 @@ export interface Assets {
   charFont: Uint8Array;
   pinyinFont: Uint8Array;
   dict: CharacterDict;
+  /** Per-character stroke data loader (CLI: package; web: CDN). */
+  loadStrokes?: (char: string) => Promise<StrokeData | null>;
 }
 
 // A4 portrait in PostScript points (72 pt / inch).
@@ -151,6 +153,7 @@ function renderBig(
   chars: string[],
   readings: string[],
   _englishes: string[],
+  _strokes: Map<string, StrokeData | null>,
   cfg: Config,
   charFont: PDFFont,
   pinyinFont: PDFFont,
@@ -203,6 +206,7 @@ function renderGrid(
   chars: string[],
   readings: string[],
   _englishes: string[],
+  _strokes: Map<string, StrokeData | null>,
   cfg: Config,
   charFont: PDFFont,
   pinyinFont: PDFFont,
@@ -315,6 +319,7 @@ function renderVocab(
   chars: string[],
   readings: string[],
   englishes: string[],
+  _strokes: Map<string, StrokeData | null>,
   cfg: Config,
   charFont: PDFFont,
   pinyinFont: PDFFont,
@@ -377,10 +382,104 @@ function renderVocab(
   }
 }
 
-const RENDERERS: Record<Config["layout"], typeof renderBig> = {
+// --- Layout: strokes (progressive stroke-order diagram) --------------------
+// Hanzi Writer paths live in a 1024 box with y pointing up (font coords,
+// y in [-124, 900]). Flip every y to SVG's y-down convention so pdf-lib's
+// drawSvgPath (page = origin + scale * (X, -Y)) places the glyph upright.
+function hwPathToSvg(path: string): string {
+  let n = -1; // running index over the x,y coordinate stream
+  return path.replace(/-?\d*\.?\d+/g, (num) => {
+    n += 1;
+    return n % 2 === 1 ? String(900 - parseFloat(num)) : num;
+  });
+}
+
+function renderStrokes(
+  doc: PDFDocument,
+  chars: string[],
+  readings: string[],
+  _englishes: string[],
+  strokes: Map<string, StrokeData | null>,
+  cfg: Config,
+  charFont: PDFFont,
+  pinyinFont: PDFFont,
+  style: Style,
+): void {
+  const [pageW, pageH] = A4;
+  const margin = mm(cfg.marginMm);
+  const inner = mm(5);
+  const cols = Math.max(1, cfg.cols);
+  const cellW = (pageW - 2 * margin - 2 * inner) / cols;
+  const cellH = cellW;
+  const box = cellW * 0.9;
+  const pad = (cellW - box) / 2;
+  const lineW = mm(0.13);
+  const borderW = mm(0.25);
+  const dash: [number, number] = [Math.max(mm(1.3), box / 28), Math.max(mm(0.9), box / 44)];
+  const scale = box / 1024;
+  const labelSize = mm(3);
+  const labelH = mm(5);
+
+  // One block per character: a label row + enough cell rows for its strokes.
+  type Row = { type: "label"; gi: number } | { type: "cells"; gi: number; start: number; count: number };
+  const rows: Row[] = [];
+  for (let gi = 0; gi < chars.length; gi++) {
+    const sd = strokes.get(chars[gi]!);
+    const total = sd && sd.strokes.length ? sd.strokes.length : 1;
+    rows.push({ type: "label", gi });
+    for (let s = 0; s < total; s += cols) rows.push({ type: "cells", gi, start: s, count: Math.min(cols, total - s) });
+  }
+
+  let page = doc.addPage(A4);
+  let pn = new Pen(page, [1, 0, 0, 1, 0, 0]);
+  let yCursor = pageH - margin;
+  const ensure = (h: number): void => {
+    if (yCursor - h < margin) {
+      page = doc.addPage(A4);
+      pn = new Pen(page, [1, 0, 0, 1, 0, 0]);
+      yCursor = pageH - margin;
+    }
+  };
+
+  for (const row of rows) {
+    if (row.type === "label") {
+      ensure(labelH);
+      const ch = chars[row.gi]!;
+      const reading = readings[row.gi] ?? "";
+      pn.text(margin, yCursor - labelSize, ch, charFont, labelSize, style.char);
+      const cw = charFont.widthOfTextAtSize(ch, labelSize);
+      if (reading) pn.text(margin + cw + mm(2), yCursor - labelSize, reading, pinyinFont, labelSize, style.pinyinText);
+      yCursor -= labelH;
+      continue;
+    }
+    ensure(cellH);
+    const sd = strokes.get(chars[row.gi]!);
+    for (let i = 0; i < row.count; i++) {
+      const k = row.start + i;
+      const boxLeft = margin + inner + i * cellW;
+      const boxTop = yCursor - pad;
+      const boxBottom = boxTop - box;
+      drawMizige(pn, boxLeft, boxBottom, box, "", charFont, 0, style.char, style, lineW, borderW, dash);
+      if (sd && sd.strokes.length) {
+        for (let s = 0; s <= k; s++) {
+          const color = s === k ? style.char : style.trace;
+          page.drawSvgPath(hwPathToSvg(sd.strokes[s]!), { x: boxLeft, y: boxTop, scale, color: rgb(...color) });
+        }
+      } else {
+        // no stroke data: fall back to the plain character
+        const [tx, ty] = centered(charFont, box * 0.8, chars[row.gi]!, boxLeft + box / 2, boxBottom + box / 2);
+        pn.text(tx, ty, chars[row.gi]!, charFont, box * 0.8, style.char);
+      }
+    }
+    yCursor -= cellH;
+  }
+}
+
+const RENDERERS: Record<Config["layout"], typeof renderStrokes> = {
   big: renderBig,
   grid: renderGrid,
   vocab: renderVocab,
+  strokes: renderStrokes,
 };
 
 /** Build a vector PDF (Uint8Array) for the given entries. */
@@ -399,7 +498,14 @@ export async function buildPdf(
   const readings = entries.map((e) => resolvePinyin(e.char, e.override, assets.dict));
   const englishes = entries.map((e) => resolveEnglish(e.char, assets.dict));
 
-  RENDERERS[cfg.layout](doc, chars, readings, englishes, cfg, charFont, pinyinFont, style);
+  const strokeMap = new Map<string, StrokeData | null>();
+  if (cfg.layout === "strokes" && assets.loadStrokes) {
+    const uniq = [...new Set(chars)];
+    const loaded = await Promise.all(uniq.map((c) => assets.loadStrokes!(c)));
+    uniq.forEach((c, i) => strokeMap.set(c, loaded[i]!));
+  }
+
+  RENDERERS[cfg.layout](doc, chars, readings, englishes, strokeMap, cfg, charFont, pinyinFont, style);
   doc.setTitle(cfg.title || "Chinese character practice cards");
   doc.setCreator("chinese-card-maker");
   return doc.save();

@@ -1,7 +1,22 @@
 /// <reference types="vite/client" />
 import { buildPdf, parseEntries, parseWords, DEFAULT_CONFIG } from "../../src/core/index.js";
-import type { Assets, CharacterDict, Config } from "../../src/core/index.js";
+import type { Assets, CharacterDict, Config, StrokeData } from "../../src/core/index.js";
 import dictData from "../../data/characters.json";
+
+// Stroke data is large (one file per character); fetch on demand from a CDN.
+const strokeCache = new Map<string, StrokeData | null>();
+async function loadStrokes(char: string): Promise<StrokeData | null> {
+  if (strokeCache.has(char)) return strokeCache.get(char)!;
+  let data: StrokeData | null = null;
+  try {
+    const res = await fetch(`https://cdn.jsdelivr.net/npm/hanzi-writer-data@2/${encodeURIComponent(char)}.json`);
+    if (res.ok) data = (await res.json()) as StrokeData;
+  } catch {
+    data = null;
+  }
+  strokeCache.set(char, data);
+  return data;
+}
 
 const $ = <T extends HTMLElement>(id: string): T => document.getElementById(id) as T;
 
@@ -35,6 +50,7 @@ async function loadAssets(): Promise<Assets> {
         charFont: new Uint8Array(charFont),
         pinyinFont: new Uint8Array(pinyinFont),
         dict: dictData as CharacterDict,
+        loadStrokes,
       };
     })();
   }
@@ -43,7 +59,7 @@ async function loadAssets(): Promise<Assets> {
 
 function readConfig(): Config {
   const v = els.layout.value;
-  const layout = v === "grid" || v === "vocab" ? v : "big";
+  const layout = v === "grid" || v === "vocab" || v === "strokes" ? v : "big";
   return {
     ...DEFAULT_CONFIG,
     layout,

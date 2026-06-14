@@ -25,7 +25,12 @@ export interface Style {
   cut: Rgb; // cut line + label
 }
 
-export type Layout = "big" | "grid" | "vocab";
+export type Layout = "big" | "grid" | "vocab" | "strokes";
+
+/** Per-character stroke data (Hanzi Writer / Make Me a Hanzi shape). */
+export interface StrokeData {
+  strokes: string[];
+}
 
 export interface Config {
   layout: Layout;

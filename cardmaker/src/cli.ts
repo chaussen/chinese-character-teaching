@@ -11,7 +11,17 @@ import { readFile, writeFile, readdir } from "node:fs/promises";
 import { fileURLToPath } from "node:url";
 import { dirname, join, basename, extname } from "node:path";
 import { parseArgs } from "node:util";
-import { buildPdf, parseEntries, parseWords, DEFAULT_CONFIG, type Assets, type Config } from "./core/index.js";
+import { createRequire } from "node:module";
+import { buildPdf, parseEntries, parseWords, DEFAULT_CONFIG, type Assets, type Config, type StrokeData } from "./core/index.js";
+
+const require = createRequire(import.meta.url);
+async function loadStrokes(char: string): Promise<StrokeData | null> {
+  try {
+    return require(`hanzi-writer-data/${char}.json`) as StrokeData;
+  } catch {
+    return null;
+  }
+}
 
 const here = dirname(fileURLToPath(import.meta.url));
 const pkgRoot = join(here, "..");
@@ -22,7 +32,7 @@ async function loadAssets(): Promise<Assets> {
     readFile(join(pkgRoot, "fonts", "pinyin.ttf")),
     readFile(join(pkgRoot, "data", "characters.json"), "utf8"),
   ]);
-  return { charFont, pinyinFont, dict: JSON.parse(dictRaw) };
+  return { charFont, pinyinFont, dict: JSON.parse(dictRaw), loadStrokes };
 }
 
 /** yr1_chars.txt -> yr1_character_cards */
@@ -61,7 +71,8 @@ async function main(): Promise<number> {
     },
   });
 
-  const layout = values.layout === "grid" || values.layout === "vocab" ? values.layout : "big";
+  const layout =
+    values.layout === "grid" || values.layout === "vocab" || values.layout === "strokes" ? values.layout : "big";
   const cfg: Config = {
     ...DEFAULT_CONFIG,
     layout,

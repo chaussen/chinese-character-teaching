@@ -34,11 +34,16 @@ npx tsx src/cli.ts --file ../worksheets/yr1_chars.txt # -> yr1_character_cards.p
 npx tsx src/cli.ts --batch ../worksheets --layout big # regenerate a folder
 npx tsx src/cli.ts --chars "重(zhòng) 行(háng)"        # 多音字 overrides
 npx tsx src/cli.ts --chars "花园 大门 季节" --layout vocab  # word flashcards + English
+npx tsx src/cli.ts --chars "我 你 好" --layout strokes      # stroke-order diagram
 ```
 
-Options: `--layout big|grid|vocab`, `--cols N`, `--margin-mm N`, `--trace N`,
-`--out`, `--outdir`, `--title`. Readings resolve as: inline override → curated
-dictionary → `pinyin-pro`.
+Options: `--layout big|grid|vocab|strokes`, `--cols N`, `--margin-mm N`,
+`--trace N`, `--out`, `--outdir`, `--title`. Readings resolve as: inline override
+→ curated dictionary → `pinyin-pro`.
+
+`strokes` draws a progressive stroke-order diagram per character (newest stroke
+black, earlier strokes grey) from **Hanzi Writer** data — the CLI reads it from
+the `hanzi-writer-data` package, the web app fetches it per character from a CDN.
 
 `vocab` makes cut-out flashcards (word + pinyin + English from the curated
 dictionary) and parses input as whitespace-separated **words**, so multi-character
@@ -74,6 +79,6 @@ npm run build     # tsc -> dist/
 - [x] Web app (paste → preview → download), client-side, + Pages deploy workflow
 - [x] Tracing / repeat-box practice mode (grid rows + faint big card)
 - [x] Vocab-card mode (word + pinyin + English flashcards)
-- [ ] Stroke order (Hanzi Writer)
+- [x] Stroke order (Hanzi Writer) — progressive diagram
 - [ ] Bundle a licensed Kaiti/楷体 font as the practice default
 - [ ] Retire the dead Python card code

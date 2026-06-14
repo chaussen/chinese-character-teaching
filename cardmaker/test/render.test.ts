@@ -86,6 +86,25 @@ describe("buildPdf", () => {
   });
 });
 
+describe("strokes layout", () => {
+  const stub = { strokes: ["M 100 100 Q 500 500 900 100 Z", "M 200 800 L 800 800 Z"] };
+
+  it("renders a stroke-order diagram from injected stroke data", async () => {
+    const a = { ...assets, loadStrokes: async () => stub };
+    const { entries } = parseEntries("我你");
+    const bytes = await buildPdf(entries, { ...DEFAULT_CONFIG, layout: "strokes", cols: 10 }, a);
+    expect(Buffer.from(bytes.slice(0, 5)).toString()).toBe("%PDF-");
+    expect((await PDFDocument.load(bytes)).getPageCount()).toBeGreaterThanOrEqual(1);
+  });
+
+  it("falls back to the plain character when stroke data is missing", async () => {
+    const a = { ...assets, loadStrokes: async () => null };
+    const { entries } = parseEntries("我");
+    const bytes = await buildPdf(entries, { ...DEFAULT_CONFIG, layout: "strokes" }, a);
+    expect((await PDFDocument.load(bytes)).getPageCount()).toBe(1);
+  });
+});
+
 describe("parseWords", () => {
   it("keeps multi-char words, supports inline overrides, drops non-han", () => {
     const { entries, dropped } = parseWords("花园 重(zhòng) hello 季节");
