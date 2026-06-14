@@ -225,19 +225,34 @@ def render(characters, out_prefix, title=""):
     return pdf_path, png_paths, len(characters), per_page, total_pages
 
 
-def render_big(characters, out_prefix, title=""):
-    """One big character per card, two cards (top/bottom) per A4 portrait page.
+def make_card(char, pinyin, box, pinyin_h, char_font, pinyin_font, dash, gap):
+    """Render one upright card (四线三格 pinyin on top, 米字格 below)."""
+    side_pad = 30
+    top_pad, mid_gap, bot_pad = 24, 14, 24
+    w = box + 2 * side_pad
+    h = top_pad + pinyin_h + mid_gap + box + bot_pad
+    card = Image.new("RGB", (w, h), BG_COLOR)
+    draw = ImageDraw.Draw(card)
+    draw_pinyin_grid(draw, side_pad, side_pad + box, top_pad, pinyin_h,
+                     pinyin, pinyin_font, width=3, dash=dash, gap=gap)
+    draw_mizige(draw, side_pad, top_pad + pinyin_h + mid_gap, box, char,
+                char_font, width=3, border=5, dash=dash, gap=gap)
+    return card
 
-    Each half is landscape-shaped, so cutting the page in two yields two large
-    single-character cards. The 米字格 box is made as large as the half allows.
+
+def render_big(characters, out_prefix, title=""):
+    """Two big characters per A4 portrait page, each rotated 90 deg ("lying
+    down"). Cutting the page across the middle yields two cards; turn each
+    upright and the 米字格 fills nearly the whole width -- minimal blank space.
     """
-    margin = 90
-    card_h = (A4_H - 2 * margin) // 2
-    pad_x, pad_y = 120, 70
-    usable_w = A4_W - 2 * margin - 2 * pad_x
-    usable_h = card_h - 2 * pad_y
-    pinyin_h = int(usable_h * 0.18)
-    box = min(usable_w, usable_h - pinyin_h)
+    margin = 80
+    card_h = (A4_H - 2 * margin) // 2          # vertical extent of each half
+    usable_w = A4_W - 2 * margin
+    side_pad = 30
+    # When rotated 90deg the card's width (box + side pads) becomes its height,
+    # so the box is bounded by the half's vertical extent -> as big as it gets.
+    box = card_h - 2 * side_pad - 6
+    pinyin_h = int(box * 0.20)
 
     char_font = ImageFont.truetype(CHAR_FONT_PATH, int(box * 0.82))
     pinyin_font = ImageFont.truetype(PINYIN_FONT_PATH, int(pinyin_h * 0.5))
@@ -251,21 +266,19 @@ def render_big(characters, out_prefix, title=""):
     for p in range(total_pages):
         img = Image.new("RGB", (A4_W, A4_H), BG_COLOR)
         draw = ImageDraw.Draw(img)
-        for card in range(CARDS_PER_PAGE):
-            gi = p * CARDS_PER_PAGE + card
-            card_top = margin + card * card_h
-            if title:
-                draw.text((margin + 10, card_top + 16), title,
-                          fill=(120, 120, 120), font=title_font, anchor="lm")
+        for card_i in range(CARDS_PER_PAGE):
+            gi = p * CARDS_PER_PAGE + card_i
             if gi >= len(characters):
                 continue
-            bx = (A4_W - box) // 2
-            block_h = pinyin_h + box
-            top = card_top + (card_h - block_h) // 2
-            draw_pinyin_grid(draw, bx, bx + box, top, pinyin_h, pinyins[gi],
-                             pinyin_font, width=3, dash=dash, gap=gap)
-            draw_mizige(draw, bx, top + pinyin_h, box, characters[gi],
-                        char_font, width=3, border=5, dash=dash, gap=gap)
+            card = make_card(characters[gi], pinyins[gi], box, pinyin_h,
+                             char_font, pinyin_font, dash, gap)
+            # rotate 90deg CCW so pinyin sits on the left of the portrait page
+            card = card.rotate(90, expand=True, fillcolor=BG_COLOR)
+            cw, ch = card.size
+            region_top = margin + card_i * card_h
+            x = margin + (usable_w - cw) // 2
+            y = region_top + (card_h - ch) // 2
+            img.paste(card, (x, y))
 
         cut_y = margin + card_h
         dashed_line(draw, (margin // 2, cut_y), (A4_W - margin // 2, cut_y),
