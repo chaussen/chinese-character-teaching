@@ -16,6 +16,7 @@ src/core/        framework-agnostic engine (no file/network I/O)
   pinyin.ts        parse 字(pinyin) input, numbered->tone-mark, resolve readings
   render.ts        pdf-lib vector renderer (big + grid layouts, affine Pen)
 src/cli.ts       Node CLI: single / --file / --batch
+web/             zero-install browser app (Vite): paste -> preview -> download
 data/            characters.json (curated pinyin + English, migrated)
 fonts/           bundled char + pinyin fonts (reproducible output)
 test/            vitest suite
@@ -38,10 +39,22 @@ Options: `--layout big|grid`, `--cols N`, `--margin-mm N`, `--out`, `--outdir`,
 `--title`. Readings resolve as: inline override → curated dictionary →
 `pinyin-pro`.
 
+## Web app
+
+```bash
+npm run web:dev    # local dev server
+npm run web:build  # -> dist-web/ (static, deployable anywhere)
+```
+
+The app is client-side only. It deploys to GitHub Pages via
+`.github/workflows/deploy-cardmaker.yml` — enable it once under
+**repo Settings → Pages → Source: GitHub Actions**.
+
 ## Develop
 
 ```bash
 npm test          # vitest
+npm run typecheck # tsc (core + web)
 npm run build     # tsc -> dist/
 ```
 
@@ -49,7 +62,7 @@ npm run build     # tsc -> dist/
 
 - [x] Core engine: pinyin resolution, both layouts, vector PDF
 - [x] Node CLI (single / file / batch) with parity to the old tool
-- [ ] Web app (paste → preview → download) on GitHub Pages
+- [x] Web app (paste → preview → download), client-side, + Pages deploy workflow
 - [ ] Tracing / repeat-box practice mode
 - [ ] Stroke order (Hanzi Writer)
 - [ ] Vocab-card mode (char + pinyin + English) and a licensed Kaiti font

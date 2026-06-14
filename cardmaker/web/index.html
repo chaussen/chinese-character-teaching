@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chinese Character Card Maker</title>
+    <style>
+      :root {
+        --ink: #1c2430;
+        --muted: #6b7785;
+        --line: #e2e6ea;
+        --accent: #b5402f;
+        --bg: #f7f8fa;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        font: 15px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+        color: var(--ink);
+        background: var(--bg);
+      }
+      header {
+        padding: 18px 24px;
+        border-bottom: 1px solid var(--line);
+        background: #fff;
+      }
+      header h1 { margin: 0; font-size: 19px; }
+      header p { margin: 4px 0 0; color: var(--muted); font-size: 13px; }
+      header .han { color: var(--accent); }
+      main {
+        display: grid;
+        grid-template-columns: 360px 1fr;
+        gap: 0;
+        height: calc(100vh - 70px);
+      }
+      .panel { padding: 20px 24px; overflow-y: auto; border-right: 1px solid var(--line); background: #fff; }
+      .preview { background: #525659; display: flex; flex-direction: column; }
+      .preview iframe { flex: 1; border: 0; width: 100%; }
+      label { display: block; font-weight: 600; font-size: 13px; margin: 16px 0 6px; }
+      label:first-of-type { margin-top: 0; }
+      textarea {
+        width: 100%; min-height: 130px; resize: vertical;
+        font: 16px/1.6 "PingFang SC", "Microsoft YaHei", sans-serif;
+        padding: 10px; border: 1px solid var(--line); border-radius: 8px;
+      }
+      .row { display: flex; gap: 12px; }
+      .row > div { flex: 1; }
+      select, input[type="number"], input[type="text"] {
+        width: 100%; padding: 8px; border: 1px solid var(--line); border-radius: 8px;
+        font-size: 14px; background: #fff;
+      }
+      .hint { color: var(--muted); font-size: 12px; margin-top: 4px; }
+      .actions { margin-top: 22px; display: flex; gap: 10px; }
+      button {
+        flex: 1; padding: 11px; border: 0; border-radius: 8px; font-size: 14px;
+        font-weight: 600; cursor: pointer;
+      }
+      .primary { background: var(--accent); color: #fff; }
+      .primary:disabled { opacity: 0.5; cursor: default; }
+      .ghost { background: #eef1f4; color: var(--ink); }
+      .status { margin-top: 12px; font-size: 13px; color: var(--muted); min-height: 18px; }
+      .status.warn { color: #b06a00; }
+      .toolbar { padding: 8px 16px; color: #cfd3d6; font-size: 13px; display: flex; justify-content: space-between; align-items: center; }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Chinese Character Card Maker <span class="han">汉字练习卡</span></h1>
+      <p>Paste characters, get print-ready <span class="han">米字格</span> practice cards as a vector PDF. Everything runs in your browser.</p>
+    </header>
+    <main>
+      <section class="panel">
+        <label for="chars">Characters</label>
+        <textarea id="chars" placeholder="花 园 门 前&#10;重(zhòng) 行(háng)  ← force a 多音字 reading">花园门前个他后外年季</textarea>
+        <div class="hint">Annotate a multi-reading character with <code>字(pinyin)</code> — tone marks or numbers (<code>zhong4</code>) both work.</div>
+
+        <div class="row">
+          <div>
+            <label for="layout">Layout</label>
+            <select id="layout">
+              <option value="big">Big — 2 cards / page</option>
+              <option value="grid">Grid — many cells</option>
+            </select>
+          </div>
+          <div>
+            <label for="cols">Grid columns</label>
+            <input id="cols" type="number" min="1" max="20" value="8" />
+          </div>
+        </div>
+
+        <div class="row">
+          <div>
+            <label for="margin">Margin (mm)</label>
+            <input id="margin" type="number" min="0" max="30" step="0.5" value="7" />
+          </div>
+          <div>
+            <label for="title">Title (optional)</label>
+            <input id="title" type="text" placeholder="Year 1 — Week 3" />
+          </div>
+        </div>
+
+        <div class="actions">
+          <button id="generate" class="primary">Generate</button>
+          <button id="download" class="ghost" disabled>Download PDF</button>
+        </div>
+        <div id="status" class="status"></div>
+      </section>
+      <section class="preview">
+        <div class="toolbar"><span id="meta">—</span><span>vector PDF</span></div>
+        <iframe id="frame" title="PDF preview"></iframe>
+      </section>
+    </main>
+    <script type="module" src="./src/main.ts"></script>
+  </body>
+</html>

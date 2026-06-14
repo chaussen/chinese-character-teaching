@@ -11,6 +11,7 @@
     "build": "tsc -p tsconfig.json",
     "cli": "tsx src/cli.ts",
     "test": "vitest run",
+    "typecheck": "tsc -p tsconfig.web.json",
     "web:dev": "vite",
     "web:build": "vite build"
   },
