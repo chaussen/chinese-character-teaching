@@ -92,10 +92,30 @@ interface Placed {
  * cross — all without per-character tweaks. Em-box centring can't do this: the
  * em is constant but the ink inside it is not, so glyphs read low and uneven.
  *
+ * `optical` adds a small *downward* correction for the two ways pure geometric
+ * ink-centring still reads high in a square 米字格 cell — both are pure illusions
+ * of the empty cell around the ink, so they only apply where there is a cell
+ * (the grid layouts), never to free-placed flashcard text:
+ *   1. Horizontal-bisector illusion — a glyph that doesn't fill the cell
+ *      vertically (一 一 stroke, 二) looks high when its ink centre is on the
+ *      mid-line; drop it by a fraction of the empty vertical space.
+ *   2. Top-heavy mass — a glyph whose bulk sits high above a thin descending
+ *      tail (中 十 干) reads high because the bbox centre is dragged down by the
+ *      tail; pull it toward its ink *centroid*, but only downward, so genuinely
+ *      bottom-heavy glyphs (人 大 八) are left exactly where ink-centring put them.
+ *
  * Built once from the embedded fontkit face; falls back to advance-width +
  * mid-em centring if the face can't be read (keeps output sane for any font).
  */
-type Seat = (text: string, cx: number, cy: number, fitW: number, fitH: number, maxSize?: number) => Placed;
+type Seat = (
+  text: string,
+  cx: number,
+  cy: number,
+  fitW: number,
+  fitH: number,
+  maxSize?: number,
+  optical?: boolean,
+) => Placed;
 
 function makeSeat(font: PDFFont): Seat {
   // pdf-lib keeps the parsed fontkit face on the (custom-font) embedder.
@@ -125,17 +145,106 @@ function makeSeat(font: PDFFont): Seat {
     return seen ? { minX, minY, maxX, maxY } : null;
   };
 
-  return (text, cx, cy, fitW, fitH, maxSize) => {
+  // Area centroid of the ink (y only, font units): the optical "weight" of the
+  // glyph. Flatten each contour to a polyline and accumulate the shoelace signed
+  // area + first y-moment, so inner contours (holes, e.g. 口) subtract correctly.
+  // Multi-glyph strings are area-weighted across glyphs; x offset is irrelevant.
+  const centroidCache = new Map<string, number | null>();
+  const centroidYOf = (text: string): number | null => {
+    if (centroidCache.has(text)) return centroidCache.get(text)!;
+    let area = 0; // 2·signed area
+    let moment = 0; // Σ (y0+y1)(x0·y1 − x1·y0)
+    for (const ch of text) {
+      const cmds: any[] | undefined = (() => {
+        try {
+          return fk.glyphForCodePoint(ch.codePointAt(0)!)?.path?.commands;
+        } catch {
+          return undefined;
+        }
+      })();
+      if (!cmds) continue;
+      let sx = 0,
+        sy = 0,
+        px = 0,
+        py = 0,
+        open = false;
+      const edge = (x: number, y: number): void => {
+        const cross = px * y - x * py;
+        area += cross;
+        moment += (py + y) * cross;
+        px = x;
+        py = y;
+      };
+      const STEPS = 8; // bezier flattening — plenty for a centroid
+      for (const c of cmds) {
+        const a = c.args as number[];
+        if (c.command === "moveTo") {
+          if (open) edge(sx, sy); // close the previous contour
+          px = a[0]!;
+          py = a[1]!;
+          sx = px;
+          sy = py;
+          open = true;
+        } else if (c.command === "lineTo") {
+          edge(a[0]!, a[1]!);
+        } else if (c.command === "quadraticCurveTo") {
+          const [bx, by, ex, ey] = a as [number, number, number, number];
+          const x0 = px,
+            y0 = py;
+          for (let i = 1; i <= STEPS; i++) {
+            const t = i / STEPS,
+              u = 1 - t;
+            edge(u * u * x0 + 2 * u * t * bx + t * t * ex, u * u * y0 + 2 * u * t * by + t * t * ey);
+          }
+        } else if (c.command === "bezierCurveTo") {
+          const [b1x, b1y, b2x, b2y, ex, ey] = a as [number, number, number, number, number, number];
+          const x0 = px,
+            y0 = py;
+          for (let i = 1; i <= STEPS; i++) {
+            const t = i / STEPS,
+              u = 1 - t;
+            edge(
+              u * u * u * x0 + 3 * u * u * t * b1x + 3 * u * t * t * b2x + t * t * t * ex,
+              u * u * u * y0 + 3 * u * u * t * b1y + 3 * u * t * t * b2y + t * t * t * ey,
+            );
+          }
+        } else if (c.command === "closePath") {
+          edge(sx, sy);
+          open = false;
+        }
+      }
+      if (open) edge(sx, sy);
+    }
+    const cyc = Math.abs(area) > 1e-6 ? moment / (3 * area) : null;
+    centroidCache.set(text, cyc);
+    return cyc;
+  };
+
+  // How far down to nudge an ink-centred glyph so it reads optically centred in
+  // a square cell. `k` is page units per font unit; `h` the ink height (font u).
+  const BISECTOR = 0.06; // drop ∝ this fraction of the empty vertical space
+  const MASS = 0.7; // pull this fraction of the way toward a high centroid
+  const opticalDrop = (text: string, bboxMidY: number, h: number, k: number, fitH: number): number => {
+    const emptyFrac = Math.max(0, 1 - (h * k) / fitH); // 0 = fills cell, →1 = thin bar
+    let drop = BISECTOR * fitH * emptyFrac;
+    const cyc = centroidYOf(text);
+    if (cyc != null && cyc > bboxMidY) drop += MASS * (cyc - bboxMidY) * k; // top-heavy only
+    return drop;
+  };
+
+  return (text, cx, cy, fitW, fitH, maxSize, optical) => {
     const ink = canInk ? inkOf(text) : null;
     if (ink) {
       const w = ink.maxX - ink.minX || 1;
       const h = ink.maxY - ink.minY || 1;
       let k = Math.min(fitW / w, fitH / h); // page units per font unit (uniform)
       if (maxSize) k = Math.min(k, maxSize / em);
+      const bboxMidY = (ink.minY + ink.maxY) / 2;
+      const drop = optical ? opticalDrop(text, bboxMidY, h, k, fitH) : 0;
       return {
         size: k * em,
         x: cx - ((ink.minX + ink.maxX) / 2) * k,
-        y: cy - ((ink.minY + ink.maxY) / 2) * k,
+        y: cy - bboxMidY * k - drop,
       };
     }
     // No face metrics: advance-width centre, mid-em vertical, size-to-fit width.
@@ -172,7 +281,7 @@ function drawMizige(
   pen.line(right, by, bx, top, grid); // diagonal \
   pen.rect(bx, by, box, box, { color: style.border, thickness: borderW });
   if (char) {
-    const { x, y, size } = seat(char, cx, cy, fill * box, fill * box);
+    const { x, y, size } = seat(char, cx, cy, fill * box, fill * box, undefined, true);
     pen.text(x, y, char, charFont, size, color);
   }
 }
@@ -540,7 +649,7 @@ function renderStrokes(
         }
       } else {
         // no stroke data: fall back to the plain character, seated by its ink box
-        const { x: tx, y: ty, size } = seat(chars[row.gi]!, boxLeft + box / 2, boxBottom + box / 2, box * 0.8, box * 0.8);
+        const { x: tx, y: ty, size } = seat(chars[row.gi]!, boxLeft + box / 2, boxBottom + box / 2, box * 0.8, box * 0.8, undefined, true);
         pn.text(tx, ty, chars[row.gi]!, charFont, size, style.char);
       }
     }
