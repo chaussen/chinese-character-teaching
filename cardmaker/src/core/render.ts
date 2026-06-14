@@ -65,13 +65,85 @@ class Pen {
   }
 }
 
-/** Baseline-left point that centres `text` in a box centred on (cx, cy). */
-function centered(font: PDFFont, size: number, text: string, cx: number, cy: number): [number, number] {
-  const w = font.widthOfTextAtSize(text, size);
-  const full = font.heightAtSize(size);
-  const asc = font.heightAtSize(size, { descender: false });
-  const desc = full - asc;
-  return [cx - w / 2, cy - full / 2 + desc];
+/** Tight ink bounds + advance of a string, in font units (y-up, baseline = 0). */
+interface InkBox {
+  minX: number;
+  minY: number;
+  maxX: number;
+  maxY: number;
+}
+
+/** drawText geometry: where to start the baseline and at what size. */
+interface Placed {
+  x: number;
+  y: number;
+  size: number;
+}
+
+/**
+ * Seats a CJK string in a cell by the *ink* of its glyphs, not the em box.
+ *
+ * The teaching rule (and the OpenType "ideographic character face" / ICF idea):
+ * a character is registered to a grid by its tight ink bounding box —
+ *   1. centre the ink box on the cell centre (both axes), and
+ *   2. scale uniformly so the longer ink dimension fills `fill`·cell,
+ * so a square glyph (田) grows until its corners ride the diagonals, a wide flat
+ * glyph (一) stays a thin bar on the mid-line, and a central héng/竖 lands on the
+ * cross — all without per-character tweaks. Em-box centring can't do this: the
+ * em is constant but the ink inside it is not, so glyphs read low and uneven.
+ *
+ * Built once from the embedded fontkit face; falls back to advance-width +
+ * mid-em centring if the face can't be read (keeps output sane for any font).
+ */
+type Seat = (text: string, cx: number, cy: number, fitW: number, fitH: number, maxSize?: number) => Placed;
+
+function makeSeat(font: PDFFont): Seat {
+  // pdf-lib keeps the parsed fontkit face on the (custom-font) embedder.
+  const fk = (font as unknown as { embedder?: { font?: any } }).embedder?.font;
+  const em: number = fk?.unitsPerEm;
+  const canInk = !!em && typeof fk.glyphForCodePoint === "function";
+
+  const inkOf = (text: string): InkBox | null => {
+    let pen = 0;
+    let minX = Infinity,
+      minY = Infinity,
+      maxX = -Infinity,
+      maxY = -Infinity,
+      seen = false;
+    for (const ch of text) {
+      const g = fk.glyphForCodePoint(ch.codePointAt(0)!);
+      const b = g?.bbox;
+      if (b && isFinite(b.minX) && b.maxX > b.minX) {
+        minX = Math.min(minX, pen + b.minX);
+        maxX = Math.max(maxX, pen + b.maxX);
+        minY = Math.min(minY, b.minY);
+        maxY = Math.max(maxY, b.maxY);
+        seen = true;
+      }
+      pen += g?.advanceWidth ?? em;
+    }
+    return seen ? { minX, minY, maxX, maxY } : null;
+  };
+
+  return (text, cx, cy, fitW, fitH, maxSize) => {
+    const ink = canInk ? inkOf(text) : null;
+    if (ink) {
+      const w = ink.maxX - ink.minX || 1;
+      const h = ink.maxY - ink.minY || 1;
+      let k = Math.min(fitW / w, fitH / h); // page units per font unit (uniform)
+      if (maxSize) k = Math.min(k, maxSize / em);
+      return {
+        size: k * em,
+        x: cx - ((ink.minX + ink.maxX) / 2) * k,
+        y: cy - ((ink.minY + ink.maxY) / 2) * k,
+      };
+    }
+    // No face metrics: advance-width centre, mid-em vertical, size-to-fit width.
+    let size = maxSize ?? fitH;
+    const w1 = font.widthOfTextAtSize(text, 1) || 1;
+    size = Math.min(size, fitW / w1);
+    return { x: cx - (size * w1) / 2, y: cy - 0.36 * size, size };
+  };
 }
 
 function drawMizige(
@@ -81,12 +153,13 @@ function drawMizige(
   box: number,
   char: string,
   charFont: PDFFont,
-  charSize: number,
   color: Rgb,
   style: Style,
   lineW: number,
   borderW: number,
   dash: [number, number],
+  seat: Seat,
+  fill: number,
 ): void {
   const right = bx + box;
   const top = by + box;
@@ -99,8 +172,8 @@ function drawMizige(
   pen.line(right, by, bx, top, grid); // diagonal \
   pen.rect(bx, by, box, box, { color: style.border, thickness: borderW });
   if (char) {
-    const [tx, ty] = centered(charFont, charSize, char, cx, cy);
-    pen.text(tx, ty, char, charFont, charSize, color);
+    const { x, y, size } = seat(char, cx, cy, fill * box, fill * box);
+    pen.text(x, y, char, charFont, size, color);
   }
 }
 
@@ -155,6 +228,7 @@ function renderBig(
   charFont: PDFFont,
   pinyinFont: PDFFont,
   style: Style,
+  seat: Seat,
 ): void {
   const [pageW, pageH] = A4;
   const margin = mm(cfg.marginMm);
@@ -171,7 +245,7 @@ function renderBig(
   const lineW = mm(0.45); // thicker grid/guide lines — readable from across a room
   const borderW = mm(0.8);
   const dash: [number, number] = [Math.max(mm(2), box / 38), Math.max(mm(1.2), box / 60)];
-  const charSize = box * 0.82;
+  const fill = 0.8; // ink box fills 80% of the 米字格 (≈ the "字占格三分之二" handwriting norm)
   const pinyinSize = pinyinH * 0.52; // sits inside the four lines (body in the middle zone)
 
   const pages = Math.max(1, Math.ceil(chars.length / 2));
@@ -189,7 +263,7 @@ function renderBig(
       const boxTop = sidePad + box;
       // trace mode on the big card: render the character faint to be traced over.
       const charColor = cfg.trace > 0 ? style.trace : style.char;
-      drawMizige(pen, sidePad, boxBottom, box, chars[gi]!, charFont, charSize, charColor, style, lineW, borderW, dash);
+      drawMizige(pen, sidePad, boxBottom, box, chars[gi]!, charFont, charColor, style, lineW, borderW, dash, seat, fill);
       // seat the pinyin guide so its bottom line meets the box top (no gap)
       const pinyinBottom = boxTop - padGuide;
       drawPinyinGuide(pen, sidePad, sidePad + box, pinyinBottom, pinyinH, readings[gi]!, pinyinFont, pinyinSize, style, lineW, dash, padFrac);
@@ -209,6 +283,7 @@ function renderGrid(
   charFont: PDFFont,
   pinyinFont: PDFFont,
   style: Style,
+  seat: Seat,
 ): void {
   const [pageW, pageH] = A4;
   const margin = mm(cfg.marginMm);
@@ -228,13 +303,13 @@ function renderGrid(
   const lineW = mm(0.15);
   const borderW = mm(0.3);
   const dash: [number, number] = [Math.max(mm(1.5), box / 28), Math.max(mm(1), box / 44)];
-  const charSize = box * 0.78;
+  const fill = 0.8; // ink box fills 80% of the cell
   const pinyinSize = pinyinH * 0.46;
 
   const newPen = (page: PDFPage) => new Pen(page, [1, 0, 0, 1, 0, 0]);
   const cell = (pn: Pen, x0: number, cellTop: number, char: string, reading: string, color: Rgb): void => {
     drawPinyinGuide(pn, x0 + pad, x0 + pad + box, cellTop - pinyinH, pinyinH, reading, pinyinFont, pinyinSize, style, lineW, dash);
-    drawMizige(pn, x0 + pad, cellTop - pinyinH - box, box, char, charFont, charSize, color, style, lineW, borderW, dash);
+    drawMizige(pn, x0 + pad, cellTop - pinyinH - box, box, char, charFont, color, style, lineW, borderW, dash, seat, fill);
   };
   const cellTopAt = (regionTop: number, r: number): number => regionTop - inner - r * cellH;
   const xAt = (c: number): number => margin + inner + c * cellW;
@@ -322,6 +397,7 @@ function renderVocab(
   charFont: PDFFont,
   pinyinFont: PDFFont,
   style: Style,
+  seat: Seat,
 ): void {
   const [pageW, pageH] = A4;
   const margin = mm(cfg.marginMm);
@@ -360,11 +436,9 @@ function renderVocab(
         pen.text(cxc - w / 2, yTop - cardH * 0.16 - pinyinSize * 0.3, reading, pinyinFont, pinyinSize, style.pinyinText);
       }
 
-      // character / word (middle), autosized to fit the card width
+      // character / word (middle), seated by its ink box and capped in size
       const word = chars[gi]!;
-      const probe = charFont.widthOfTextAtSize(word, 100);
-      const charSize = Math.min(maxCharSize, (100 * maxCharW) / Math.max(1, probe));
-      const [tx, ty] = centered(charFont, charSize, word, cxc, yTop - cardH * 0.48);
+      const { x: tx, y: ty, size: charSize } = seat(word, cxc, yTop - cardH * 0.48, maxCharW, maxCharSize, maxCharSize);
       pen.text(tx, ty, word, charFont, charSize, style.char);
 
       // english (bottom, first sense, wrapped)
@@ -402,6 +476,7 @@ function renderStrokes(
   charFont: PDFFont,
   pinyinFont: PDFFont,
   style: Style,
+  seat: Seat,
 ): void {
   const [pageW, pageH] = A4;
   const margin = mm(cfg.marginMm);
@@ -457,16 +532,16 @@ function renderStrokes(
       const boxLeft = margin + inner + i * cellW;
       const boxTop = yCursor - pad;
       const boxBottom = boxTop - box;
-      drawMizige(pn, boxLeft, boxBottom, box, "", charFont, 0, style.char, style, lineW, borderW, dash);
+      drawMizige(pn, boxLeft, boxBottom, box, "", charFont, style.char, style, lineW, borderW, dash, seat, 0.8);
       if (sd && sd.strokes.length) {
         for (let s = 0; s <= k; s++) {
           const color = s === k ? style.char : style.trace;
           page.drawSvgPath(hwPathToSvg(sd.strokes[s]!), { x: boxLeft, y: boxTop, scale, color: rgb(...color) });
         }
       } else {
-        // no stroke data: fall back to the plain character
-        const [tx, ty] = centered(charFont, box * 0.8, chars[row.gi]!, boxLeft + box / 2, boxBottom + box / 2);
-        pn.text(tx, ty, chars[row.gi]!, charFont, box * 0.8, style.char);
+        // no stroke data: fall back to the plain character, seated by its ink box
+        const { x: tx, y: ty, size } = seat(chars[row.gi]!, boxLeft + box / 2, boxBottom + box / 2, box * 0.8, box * 0.8);
+        pn.text(tx, ty, chars[row.gi]!, charFont, size, style.char);
       }
     }
     yCursor -= cellH;
@@ -503,7 +578,8 @@ export async function buildPdf(
     uniq.forEach((c, i) => strokeMap.set(c, loaded[i]!));
   }
 
-  RENDERERS[cfg.layout](doc, chars, readings, englishes, strokeMap, cfg, charFont, pinyinFont, style);
+  const seat = makeSeat(charFont);
+  RENDERERS[cfg.layout](doc, chars, readings, englishes, strokeMap, cfg, charFont, pinyinFont, style, seat);
   doc.setTitle(cfg.title || "Chinese character practice cards");
   doc.setCreator("chinese-card-maker");
   return doc.save();
