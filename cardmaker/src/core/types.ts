@@ -45,14 +45,17 @@ export interface Config {
   trace: number;
 }
 
+// 米字格 grids are traditionally printed in red: high contrast from a distance,
+// distinct in hue from the black character so the two don't visually merge, and
+// it still reduces to a clear mid-grey if printed black & white.
 export const DEFAULT_STYLE: Style = {
-  grid: [0.67, 0.67, 0.67],
-  border: [0.35, 0.35, 0.35],
-  pinyinLines: [0.71, 0.71, 0.71],
-  pinyinText: [0.16, 0.16, 0.16],
-  char: [0.06, 0.06, 0.06],
-  trace: [0.75, 0.75, 0.75],
-  cut: [0.55, 0.55, 0.55],
+  grid: [0.82, 0.24, 0.22], // 米字格 cross + diagonals — red
+  border: [0.7, 0.12, 0.12], // 米字格 outer border — stronger red
+  pinyinLines: [0.85, 0.33, 0.3], // 四线三格 guide — red, slightly lighter
+  pinyinText: [0, 0, 0], // pinyin solid black for contrast
+  char: [0, 0, 0], // character solid black
+  trace: [0.72, 0.72, 0.72], // faint trace / earlier strokes
+  cut: [0.55, 0.55, 0.55], // cut guide stays neutral grey
 };
 
 export const DEFAULT_CONFIG: Config = {
