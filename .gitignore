@@ -4,3 +4,4 @@ characters_pinyin_backup
 practice
 *.csv
 *.xlsx
+.venv
