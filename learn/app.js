@@ -270,6 +270,67 @@
   // ═════════ WRITER ENGINE ═════════
   function palette(n){ var o=[]; for(var i=0;i<n;i++){ var t=n<=1?0:i/(n-1); o.push("hsl("+(8+t*282).toFixed(1)+" 64% 47%)"); } return o; }
   function medianPath(m){ return "M " + m.map(function(p){ return p[0]+" "+p[1]; }).join(" L "); }
+
+  // ═════════ HANDWRITING RECOGNITION ═════════
+  // Match a hand-drawn stroke against an expected stroke median. Everything is in
+  // the 1024 Y-up data space (the same space as char.m / char.s), so callers just
+  // convert pointer coords once. Returns a verdict plus the raw geometry measures
+  // so the UI can give targeted feedback (start / end / direction / shape / length).
+  function _dist(a,b){ var dx=a[0]-b[0], dy=a[1]-b[1]; return Math.sqrt(dx*dx+dy*dy); }
+  function _polyLen(p){ var L=0; for(var i=1;i<p.length;i++) L+=_dist(p[i-1],p[i]); return L; }
+  function _resample(p, n){
+    if(p.length<2) p=[p[0]||[0,0], [(p[0]?p[0][0]:0)+0.01, (p[0]?p[0][1]:0)+0.01]];
+    var L=_polyLen(p)||1, step=L/(n-1), out=[p[0].slice()], acc=0, prev=p[0], i=1;
+    while(out.length<n && i<p.length){
+      var seg=_dist(prev,p[i]);
+      if(acc+seg>=step && seg>1e-6){
+        var t=(step-acc)/seg, np=[prev[0]+(p[i][0]-prev[0])*t, prev[1]+(p[i][1]-prev[1])*t];
+        out.push(np); prev=np; acc=0;
+      } else { acc+=seg; prev=p[i]; i++; }
+    }
+    while(out.length<n) out.push(p[p.length-1].slice());
+    return out;
+  }
+  // discrete Fréchet distance between two equal-length resampled curves
+  function _frechet(P,Q){
+    var n=P.length, m=Q.length, ca=[];
+    for(var a=0;a<n;a++){ ca.push(new Array(m)); for(var b=0;b<m;b++) ca[a][b]=-1; }
+    function c(i,j){
+      if(ca[i][j]>-1) return ca[i][j];
+      var d=_dist(P[i],Q[j]);
+      if(i===0&&j===0) ca[i][j]=d;
+      else if(i>0&&j===0) ca[i][j]=Math.max(c(i-1,0),d);
+      else if(i===0&&j>0) ca[i][j]=Math.max(c(0,j-1),d);
+      else ca[i][j]=Math.max(Math.min(c(i-1,j),c(i-1,j-1),c(i,j-1)),d);
+      return ca[i][j];
+    }
+    return c(n-1,m-1);
+  }
+  function _dir(p){ var a=p[0], b=p[p.length-1], dx=b[0]-a[0], dy=b[1]-a[1], L=Math.hypot(dx,dy)||1; return [dx/L,dy/L]; }
+  function strokeMatch(userPts, median, opts){
+    opts = opts || {};
+    var SIZE = opts.size || 1024, N = 16;
+    // drop jitter-duplicate points
+    var u=[]; for(var i=0;i<userPts.length;i++){ if(!u.length || _dist(userPts[i],u[u.length-1])>1) u.push(userPts[i]); }
+    if(u.length<1) u=userPts.slice();
+    if(!u.length || !median || !median.length) return { match:false, reason:'empty', frechet:1, startDist:1, endDist:1, dirSim:0, lenRatio:0, isDot:false };
+    var uLen=_polyLen(u), mLen=_polyLen(median);
+    var frechet=_frechet(_resample(u,N), _resample(median,N))/SIZE;
+    var isDot=(mLen/SIZE)<0.12;
+    var sF=_dist(u[0],median[0])/SIZE, eF=_dist(u[u.length-1],median[median.length-1])/SIZE;
+    var startDist=sF, endDist=eF;
+    if(opts.anyDir){ var sR=_dist(u[0],median[median.length-1])/SIZE, eR=_dist(u[u.length-1],median[0])/SIZE;
+      if(sR+eR < sF+eF){ startDist=sR; endDist=eR; } }
+    var du=_dir(u), dm=_dir(median), dirSim=du[0]*dm[0]+du[1]*dm[1]; if(opts.anyDir) dirSim=Math.abs(dirSim);
+    var lenRatio = mLen>1 ? uLen/mLen : 1;
+    var FR=opts.frechet||0.34, SE=opts.startEnd||0.28, DIR=(opts.dir!=null?opts.dir:0.20);
+    var okEnds=startDist<=SE && endDist<=SE, okDir=isDot||dirSim>=DIR,
+        okShape=frechet<=FR, okLen=isDot||(lenRatio>=0.28 && lenRatio<=2.6);
+    var reason = !okEnds ? (startDist>SE?'start':'end') : !okDir ? 'direction' : !okShape ? 'shape' : !okLen ? 'length' : 'ok';
+    return { match:okEnds&&okDir&&okShape&&okLen, reason:reason, frechet:frechet,
+             startDist:startDist, endDist:endDist, dirSim:dirSim, lenRatio:lenRatio, isDot:isDot };
+  }
+
   function gridSVG(){
     return '<svg class="writer__grid" viewBox="0 0 1024 1024" aria-hidden="true">'+
       '<rect x="3" y="3" width="1018" height="1018" rx="10" fill="none" class="g-frame"/>'+
@@ -523,7 +584,8 @@
     showView: showView, openUnit: openUnit, openBand: openBand,
     esc: esc, shuffle: shuffle, palette: palette,
     extra: EXTRA, extraOf: extraOf, playAudio: playAudio, charIndex: CHAR_INDEX,
-    gridSVG: gridSVG, medianPath: medianPath, rubySeg: rubySeg, segText: segText
+    gridSVG: gridSVG, medianPath: medianPath, rubySeg: rubySeg, segText: segText,
+    strokeMatch: strokeMatch
   };
 
   if (document.readyState==="loading") document.addEventListener("DOMContentLoaded", init); else init();

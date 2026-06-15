@@ -32,7 +32,7 @@ Everything on Home is grouped **Series → Book → Lesson → Character**.
 | `learn/studio.css` | all styles. |
 | `learn/app.js` | engine: lock, routing, Home(series)/Units/Deck/**Learn**, the stroke **writer**, finger-trace, `CHAR_INDEX`, Library/series resolver, **audio (file → TTS)**. Exposes `window.STUDIO`. |
 | `learn/exercises.js` | Exercise **Hub** + session controller + MCQ/match/order/listen/word/fill. `window.Exercises`. |
-| `learn/exercises-draw.js` | writing exercises: **描红 trace** (coverage check) + **结构 structure** builder. `window.ExercisesDraw`. |
+| `learn/exercises-draw.js` | writing exercises: **描红 trace** (real stroke-by-stroke recognition via `STUDIO.strokeMatch`) + **结构 structure** builder (recognition-graded sketch). `window.ExercisesDraw`. |
 | `learn/app-data.js` | the **school's four-book series** (B1–B4), the taught Write characters, with stroke data. |
 | `learn/general-data.js` | **General Characters** themed library, with stroke data. |
 | `learn/library-data.js` | **added book series** (中文 pilot). Lists Hanzi only; resolved via `CHAR_INDEX`. |
@@ -69,7 +69,11 @@ SERIES  (a course/publisher)             Home renders one section per series
   does NOT mark it learned in Band 1; each book's progress bar is independent. This is
   intentional and is what "manage the libraries properly" means here.
 - `window.STUDIO` exposes helpers (`charIndex`, `extra`, `playAudio`, `makeWriter`,
-  `gridSVG`, `medianPath`, `shuffle`, `palette`, …) for the exercise modules.
+  `gridSVG`, `medianPath`, `shuffle`, `palette`, **`strokeMatch`**, …) for the exercise
+  modules. `strokeMatch(userPts, median, opts)` is the handwriting recogniser — all points
+  in the 1024 **Y-up** data space; returns `{match, reason, frechet, startDist, endDist,
+  dirSim, lenRatio, isDot}`. `opts`: `frechet`/`startEnd`/`dir` thresholds, `anyDir` (ignore
+  stroke direction & orientation — used by the free-sketch grader).
 
 ---
 
@@ -172,9 +176,15 @@ entry, a `render…()`, and a `case` in `render()`'s dispatch.
 - **结构 Structure builder** (teacher's idea, built as proposed): pinyin+meaning shown, char
   hidden → **pick the overall shape** (the scored, auto-graded step) → free-sketch each part
   in dashed regions → **Reveal & compare** overlays the real character (self-assessed).
-- **描红 Trace** uses a **median-coverage** heuristic (% of target path covered, threshold
-  60%) — an honest simple check, not true recognition. Real handwriting/stroke recognition
-  for both is a future Claude-Code task.
+- **描红 Trace** now does **real stroke-by-stroke handwriting recognition**
+  (`STUDIO.strokeMatch`): each drawn stroke is checked for **shape** (discrete Fréchet
+  distance over resampled curves), **position** (start/end proximity), **direction**, and
+  **length**, and **stroke order is enforced** (you must draw the expected next stroke).
+  Correct strokes are inked in; a wrong one flashes and gives a targeted tip (start /
+  direction / shape …), and after two misses the expected stroke is shown as a faint hint.
+  The score is **first-try accuracy** (strokes correct without a miss or hint).
+- **结构 Structure** reveal also uses `strokeMatch` (order-/direction-independent) to grade
+  the free sketch — "your sketch matched N of M strokes" — instead of pure self-assessment.
 
 ---
 
@@ -201,7 +211,7 @@ entry, a `render…()`, and a `case` in `render()`'s dispatch.
 | **Author stories + sentences** toward full coverage | ✅ for the grade books (§10); pilot ZW1 still partial |
 | 中文 grade books (Years 2–6) added | ✅ new `ZWG` series, 5 books, 60 lessons (§10) |
 | **Finish 中文 Book 1** (45 chars) + add more 中文 volumes | ⏳ pilot ZW1 still missing 45 chars (§6) |
-| Real stroke/handwriting recognition for trace & structure | ⏳ future |
+| Real stroke/handwriting recognition for trace & structure | ✅ `STUDIO.strokeMatch` (Fréchet + start/end + direction + length); 描红 is stroke-order-graded, 结构 sketch is auto-scored (§7) |
 
 ---
 

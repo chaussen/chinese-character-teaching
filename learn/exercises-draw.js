@@ -21,58 +21,91 @@
   }
 
   // ═════════ 描红 TRACE ═════════
+  // Real stroke-by-stroke handwriting recognition (S.strokeMatch): every drawn
+  // stroke is checked for shape, position, direction and order. Correct strokes
+  // are inked in; wrong ones flash and prompt a targeted tip, with the expected
+  // stroke shown as a hint after repeated misses. Score = first-try accuracy.
+  var SVGNS = "http://www.w3.org/2000/svg";
   function trace(c, body, onDone, S){
+    var n = c.s.length, cols = S.palette(n);
     body.innerHTML =
-      '<div class="ex-ask">Write <b class="zh" style="font-size:1.3em">'+c.ch+'</b> over the faint guide. <span class="ex-sub">Stay on the lines.</span></div>'+
+      '<div class="ex-ask">Write <b class="zh" style="font-size:1.3em">'+c.ch+'</b> stroke by stroke. <span class="ex-sub">Follow the order — each stroke is checked.</span></div>'+
       '<div class="ex-orderwrap">'+
         '<div class="writer ex-orderboard" id="ex-traceboard">'+ S.gridSVG() +
-          '<svg class="ex-draw-svg" viewBox="0 0 1024 1024"><g transform="translate(0,900) scale(1,-1)">'+ghostPaths(c,S)+
-          '<g class="ex-reveal-ink" style="display:none">'+inkPaths(c,S)+'</g></g></svg>'+
+          '<svg class="ex-draw-svg" viewBox="0 0 1024 1024"><g transform="translate(0,900) scale(1,-1)">'+
+            ghostPaths(c,S)+
+            '<g class="ex-trace-done"></g>'+
+            '<g class="ex-trace-hint"></g>'+
+          '</g></svg>'+
           '<canvas class="ex-drawcanvas" id="ex-tracecanvas"></canvas>'+
         '</div>'+
+        '<div class="ex-traceprog" id="ex-traceprog"></div>'+
         '<div class="ex-drawbar">'+
-          '<button class="ctl" id="ex-trace-undo">↶ Undo</button>'+
-          '<button class="ctl" id="ex-trace-clear">Clear</button>'+
-          '<button class="ctl primary" id="ex-trace-check">Check ✓</button>'+
+          '<button class="ctl" id="ex-trace-hintbtn">Show this stroke</button>'+
         '</div>'+
       '</div>';
-    var board = $("#ex-traceboard"), cv = $("#ex-tracecanvas"), ctx, strokes = [], cur = null, drawing = false, done = false;
-    function size(){
-      var dpr = window.devicePixelRatio||1, w = board.clientWidth, h = board.clientHeight;
-      cv.width = w*dpr; cv.height = h*dpr; ctx = cv.getContext("2d");
-      ctx.setTransform(dpr,0,0,dpr,0,0); ctx.lineCap="round"; ctx.lineJoin="round"; redraw();
-    }
-    function redraw(){
-      if(!ctx) return; ctx.clearRect(0,0,cv.width,cv.height);
-      ctx.strokeStyle=accentCol(); ctx.lineWidth=20; ctx.globalAlpha=.92;
-      strokes.forEach(function(s){ if(!s.length) return; ctx.beginPath(); ctx.moveTo(s[0][0],s[0][1]);
-        for(var i=1;i<s.length;i++) ctx.lineTo(s[i][0],s[i][1]); if(s.length===1) ctx.lineTo(s[0][0]+.1,s[0][1]+.1); ctx.stroke(); });
-    }
+    var board=$("#ex-traceboard"), cv=$("#ex-tracecanvas"), ctx;
+    var doneG=$(".ex-trace-done",board), hintG=$(".ex-trace-hint",board), prog=$("#ex-traceprog");
+    var curIdx=0, firstTry=0, mistakes=[], cur=null, drawing=false, done=false;
+    for(var k=0;k<n;k++) mistakes.push(0);
+
+    function size(){ var dpr=window.devicePixelRatio||1,w=board.clientWidth,h=board.clientHeight;
+      cv.width=w*dpr; cv.height=h*dpr; ctx=cv.getContext("2d"); ctx.setTransform(dpr,0,0,dpr,0,0);
+      ctx.lineCap="round"; ctx.lineJoin="round"; drawCur(); }
+    function drawCur(){ if(!ctx) return; ctx.clearRect(0,0,cv.width,cv.height); if(!cur||!cur.length) return;
+      ctx.strokeStyle=accentCol(); ctx.lineWidth=20; ctx.globalAlpha=.92; ctx.beginPath(); ctx.moveTo(cur[0][0],cur[0][1]);
+      for(var i=1;i<cur.length;i++) ctx.lineTo(cur[i][0],cur[i][1]); if(cur.length===1) ctx.lineTo(cur[0][0]+.1,cur[0][1]+.1); ctx.stroke(); }
     function xy(e){ var r=cv.getBoundingClientRect(); return [e.clientX-r.left, e.clientY-r.top]; }
-    function down(e){ if(done) return; e.preventDefault(); drawing=true; cur=[xy(e)]; strokes.push(cur); redraw(); }
-    function move(e){ if(done||!drawing) return; e.preventDefault(); cur.push(xy(e)); redraw(); }
-    function up(){ drawing=false; cur=null; }
+    function toData(p){ var W=board.clientWidth, H=board.clientHeight; return [p[0]*1024/W, 900 - p[1]*1024/H]; }
+    function setProg(){ if(!done) prog.innerHTML = 'Stroke <b>'+(curIdx+1)+'</b> of '+n; }
+    function clearHint(){ hintG.innerHTML=""; }
+    function inkInto(g, i, dur, cls){
+      var p=document.createElementNS(SVGNS,'path');
+      p.setAttribute('class',cls); p.setAttribute('d',S.medianPath(c.m[i])); p.setAttribute('fill','none');
+      p.setAttribute('stroke',cols[i]); p.setAttribute('stroke-width','150');
+      p.setAttribute('stroke-linecap','round'); p.setAttribute('stroke-linejoin','round'); g.appendChild(p);
+      var L=p.getTotalLength(); p.style.strokeDasharray=L; p.style.strokeDashoffset=L;
+      p.animate([{strokeDashoffset:L},{strokeDashoffset:0}],{duration:dur,easing:'cubic-bezier(.45,.05,.3,1)',fill:'forwards'});
+    }
+    function showHint(manual){ clearHint(); inkInto(hintG, curIdx, 560, 'g-ink-hint');
+      if(manual && mistakes[curIdx]===0) mistakes[curIdx]=1; }   // using the hint forfeits first-try credit
+    function flash(ok){ board.classList.remove('ex-flash-ok','ex-flash-no'); void board.offsetWidth;
+      board.classList.add(ok?'ex-flash-ok':'ex-flash-no'); }
+
+    function commit(){
+      var raw=cur; cur=null; drawCur();
+      if(!raw || raw.length<1) return;
+      var v=S.strokeMatch(raw.map(toData), c.m[curIdx], {});
+      if(v.match){
+        if(mistakes[curIdx]===0) firstTry++;
+        clearHint(); inkInto(doneG, curIdx, 340, 'g-ink-done'); flash(true);
+        curIdx++; if(curIdx>=n) return finish(); setProg();
+      } else {
+        mistakes[curIdx]++; flash(false);
+        var tip = v.reason==='start' ? 'start it in the right place'
+                : v.reason==='end' ? 'end it where the stroke finishes'
+                : v.reason==='direction' ? 'check the stroke direction'
+                : v.reason==='length' ? 'cover the whole stroke'
+                : 'follow the stroke shape';
+        prog.innerHTML = 'Stroke <b>'+(curIdx+1)+'</b> of '+n+' — not quite, '+tip+'.';
+        if(mistakes[curIdx]>=2) showHint(false);
+      }
+    }
+
+    function down(e){ if(done) return; e.preventDefault(); clearHint(); drawing=true; cur=[xy(e)]; drawCur(); }
+    function move(e){ if(done||!drawing) return; e.preventDefault(); cur.push(xy(e)); drawCur(); }
+    function up(){ if(done||!drawing) return; drawing=false; commit(); }
     cv.addEventListener("pointerdown",down); cv.addEventListener("pointermove",move);
     window.addEventListener("pointerup",up); window.addEventListener("pointercancel",up);
-    $("#ex-trace-undo").addEventListener("click", function(){ if(done)return; strokes.pop(); redraw(); });
-    $("#ex-trace-clear").addEventListener("click", function(){ if(done)return; strokes=[]; redraw(); });
-    $("#ex-trace-check").addEventListener("click", check);
-    requestAnimationFrame(size);
+    $("#ex-trace-hintbtn").addEventListener("click", function(){ if(!done) showHint(true); });
+    setProg(); requestAnimationFrame(size);
 
-    function check(){
-      if(done) return; done=true;
-      var W=board.clientWidth, H=board.clientHeight, R=94;
-      var pts=[]; strokes.forEach(function(s){ s.forEach(function(p){ pts.push([p[0]*1024/W, 900 - p[1]*1024/H]); }); });
-      var covered=0, total=0;
-      c.m.forEach(function(med){ med.forEach(function(mp){ total++;
-        for(var i=0;i<pts.length;i++){ var dx=pts[i][0]-mp[0], dy=pts[i][1]-mp[1]; if(dx*dx+dy*dy<=R*R){ covered++; break; } } }); });
-      var cov = total? covered/total : 0, pct = Math.round(cov*100), n=c.s.length;
-      $(".ex-reveal-ink", board).style.display = "";   // reveal correct strokes
-      cv.style.opacity = ".4"; cv.style.pointerEvents="none";
-      $("#ex-trace-check").style.display="none"; $("#ex-trace-undo").disabled=true; $("#ex-trace-clear").disabled=true;
-      var ok = cov >= 0.6 && strokes.length >= 1;
-      var msg = ok ? ('Nice tracing — '+pct+'% on the lines.')
-                   : (strokes.length===0 ? 'Draw over the guide, then Check.' : 'Keep on the lines — '+pct+'% covered. The strokes are shown now.');
+    function finish(){
+      done=true; cv.style.pointerEvents="none"; clearHint(); $("#ex-trace-hintbtn").disabled=true;
+      var pct=Math.round(100*firstTry/n), ok=firstTry/n>=0.5;
+      prog.innerHTML = '✓ '+c.ch+' complete — '+firstTry+' / '+n+' strokes right first try ('+pct+'%).';
+      var msg = ok ? ('Well written — '+firstTry+'/'+n+' strokes correct first try.')
+                   : ('Completed — '+firstTry+'/'+n+' first try. Keep practising the order.');
       onDone(ok, msg, pct);
     }
   }
@@ -152,7 +185,26 @@
       $("#ex-struct-clear").addEventListener("click",function(){ strokes=[]; rd(); });
       $("#ex-struct-reveal").addEventListener("click",function(){
         $(".ex-struct-real", board).style.display=""; $(".ex-struct-region", board).style.opacity=".25";
-        cv.style.opacity=".45"; $("#ex-struct-reveal").textContent="That\u2019s "+c.ch;
+        cv.style.opacity=".45";
+        // real recognition: how many of the character's strokes did the sketch capture?
+        // Order- and direction-independent (free sketch), so each median is matched once.
+        var W=board.clientWidth, H=board.clientHeight, used=[], hit=0, m=c.m.length;
+        for(var z=0;z<m;z++) used.push(false);
+        strokes.forEach(function(s){
+          if(s.length<2) return;
+          var pts=s.map(function(p){ return [p[0]*1024/W, 900 - p[1]*1024/H]; });
+          var best=-1, bestFr=1;
+          for(var i=0;i<m;i++){ if(used[i]) continue;
+            var v=S.strokeMatch(pts, c.m[i], {anyDir:true, dir:-1, frechet:0.42, startEnd:0.34});
+            if(v.match && v.frechet<bestFr){ bestFr=v.frechet; best=i; } }
+          if(best>=0){ used[best]=true; hit++; }
+        });
+        var pct=Math.round(100*hit/m), grade=document.createElement('div'); grade.className='ex-struct-grade';
+        grade.innerHTML = strokes.length
+          ? ('Your sketch matched <b>'+hit+'</b> of '+m+' strokes ('+pct+'%) \u2014 compare with '+c.ch+'.')
+          : ('Sketch the parts next time. This is '+c.ch+'.');
+        wrap.appendChild(grade);
+        $("#ex-struct-reveal").textContent="That\u2019s "+c.ch;
         $("#ex-struct-reveal").classList.remove("primary"); $("#ex-struct-reveal").disabled=true;
       });
       requestAnimationFrame(sz);
