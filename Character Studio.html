@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, maximum-scale=1" />
+  <meta name="theme-color" content="#C2473C" />
+  <title>Character Studio · 学写字</title>
+
+  <!-- Fonts (graceful fallback to system fonts when offline — see studio.css stacks) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Newsreader:ital,wght@0,400;0,500;1,400;1,500&family=Noto+Sans+SC:wght@400;500;600;700&family=Noto+Serif+SC:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="learn/studio.css?v=20260616" />
+</head>
+<body>
+<div id="app">
+
+  <!-- ═════════ LOCK ═════════ -->
+  <section class="view" id="view-lock">
+    <div class="lock">
+      <div class="lock__logo zh">写</div>
+      <h1 class="lock__name">Character Studio</h1>
+      <div class="lock__zh">学写字 · Casey Chinese School</div>
+      <div class="dots" id="lock-dots">
+        <span class="d"></span><span class="d"></span><span class="d"></span><span class="d"></span>
+      </div>
+      <div class="keypad" id="keypad"></div>
+      <p class="lock__hint">Enter the class code to begin</p>
+    </div>
+  </section>
+
+  <!-- ═════════ HOME (series → books) ═════════ -->
+  <section class="view" id="view-home">
+    <header class="topbar">
+      <span class="ttl">Character Studio <span class="zh">学写字</span></span>
+      <span class="spacer"></span>
+      <span class="pill-progress" id="home-progress"></span>
+      <button class="iconbtn" id="home-lock" aria-label="Lock the app" title="Lock">🔒</button>
+    </header>
+    <div class="scroll"><div class="pad">
+      <div class="home-hero">
+        <div class="eyebrow"><span class="dot"></span>Casey Chinese School</div>
+        <h1>Learn to <em>write</em> Chinese characters</h1>
+        <p>Pick a book, then a lesson — watch each character build stroke by stroke, trace it, and practise.
+          <span class="zh">选一本书，开始学写字吧。</span></p>
+      </div>
+      <div id="home-sections"></div>
+    </div></div>
+  </section>
+
+  <!-- ═════════ UNITS / LESSONS ═════════ -->
+  <section class="view" id="view-units">
+    <header class="topbar">
+      <button class="back" id="units-back"><span class="ar">←</span> Books</button>
+      <span class="ttl" id="units-title"></span>
+      <span class="spacer"></span>
+      <span class="pill-progress" id="units-band-pill"></span>
+    </header>
+    <div class="scroll"><div class="pad">
+      <div class="section-head">
+        <h2>Lessons <span class="zh">课</span></h2>
+        <div style="display:flex;gap:12px;align-items:center;flex-wrap:wrap;">
+          <span class="pill-progress" id="units-progress"></span>
+          <button class="btn btn--solid" id="units-practice"></button>
+        </div>
+      </div>
+      <div class="unitgrid" id="unitgrid"></div>
+    </div></div>
+  </section>
+
+  <!-- ═════════ DECK (character tiles) ═════════ -->
+  <section class="view" id="view-deck">
+    <header class="topbar">
+      <button class="back" id="deck-back"><span class="ar">←</span> Lessons</button>
+      <span class="ttl" id="deck-title"></span>
+      <span class="spacer"></span>
+      <button class="btn btn--solid" id="deck-exercises"><span class="ic">✎</span> Exercises</button>
+    </header>
+    <div class="scroll"><div class="pad">
+      <p id="deck-sub" style="color:var(--ink-soft);font-size:15px;margin:0 0 20px;"></p>
+      <div class="deckgrid" id="deckgrid"></div>
+    </div></div>
+  </section>
+
+  <!-- ═════════ LEARN A CHARACTER ═════════ -->
+  <section class="view" id="view-learn">
+    <header class="topbar">
+      <button class="back" id="learn-back"><span class="ar">←</span> Characters</button>
+      <span class="ttl" id="learn-topttl"></span>
+      <span class="spacer"></span>
+      <button class="btn btn--solid" id="learn-exercises"><span class="ic">✎</span> Exercises</button>
+    </header>
+    <div class="scroll"><div class="pad">
+      <div class="learn">
+
+        <!-- left: stroke writer + finger-trace -->
+        <div class="learn__left">
+          <div class="writerwrap" id="learn-writerwrap">
+            <div class="writer" id="learn-writer"></div>
+            <canvas class="tracecanvas" id="trace-canvas"></canvas>
+            <span class="trace-badge">描红 · Trace</span>
+          </div>
+          <div class="ctlbar" id="learn-strokectls">
+            <button class="ctl" id="learn-replay">↻ Replay</button>
+            <button class="ctl" id="learn-step">⊕ Step</button>
+            <span class="ctl-sep"></span>
+            <button class="toggle is-on" id="opt-rainbow">🌈 Colour</button>
+            <button class="toggle is-on" id="opt-numbers">① Order</button>
+          </div>
+          <div class="ctlbar ctlbar--trace">
+            <button class="ctl" id="learn-trace">✍ Trace it</button>
+            <button class="ctl" id="learn-undo">↶ Undo</button>
+            <button class="ctl" id="learn-clear">Clear</button>
+          </div>
+        </div>
+
+        <!-- right: character information -->
+        <div class="learn__right">
+          <div class="ce-head">
+            <div class="ce-bigch zh" id="learn-bigch"></div>
+            <div class="ce-headtext">
+              <div class="ce-pyrow">
+                <span class="ce-py" id="learn-py"></span>
+                <button class="saybtn lg" id="learn-say" aria-label="Play the character sound">🔊</button>
+              </div>
+              <div class="ce-en" id="learn-en"></div>
+            </div>
+            <div class="chips">
+              <div class="chip"><span class="v num" id="learn-strokes-v"></span><span class="k">strokes</span></div>
+            </div>
+          </div>
+
+          <div class="factrow">
+            <div class="fact fact--rad" id="learn-radwrap">
+              <span class="lbl">部首 · Radical</span>
+              <div class="radv" id="learn-radv"></div>
+              <p class="rad-note" id="learn-radnote"></p>
+            </div>
+            <div class="fact">
+              <span class="lbl">笔顺 · Stroke order</span>
+              <div class="strokeorder" id="learn-order"></div>
+            </div>
+          </div>
+
+          <!-- enrichment: 小故事 origin · 词语 word · 句子 sentence (shown when present) -->
+          <div class="learn-extra" id="learn-extra"></div>
+
+          <div class="learn-actions">
+            <button class="knowbtn" id="learn-know"><span class="st">☆</span> <span class="lab">Mark as learned</span></button>
+            <div class="learn-nav">
+              <button class="navbtn" id="learn-prev" aria-label="Previous character">‹</button>
+              <span class="learn-pos" id="learn-pos"></span>
+              <button class="navbtn" id="learn-next" aria-label="Next character">›</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div></div>
+  </section>
+
+  <!-- ═════════ EXERCISE HUB ═════════ -->
+  <section class="view" id="view-exhub">
+    <header class="topbar">
+      <button class="back" id="exh-back"><span class="ar">←</span> Characters</button>
+      <span class="ttl" id="exh-title"></span>
+      <span class="spacer"></span>
+      <span class="pill-progress" id="exh-count"></span>
+    </header>
+    <div class="scroll"><div class="pad">
+      <div class="exhub-hero">
+        <div class="eyebrow"><span class="dot"></span>Exercises</div>
+        <h1>Choose how to practise</h1>
+        <p>Each card trains one skill — <b>听 listen</b>, <b>读 read</b>, or <b>写 write</b>. Start with
+          <b>综合 Mixed</b> for a balanced set.</p>
+      </div>
+      <div id="exh-groups"></div>
+    </div></div>
+  </section>
+
+  <!-- ═════════ EXERCISE SESSION ═════════ -->
+  <section class="view" id="view-exercises">
+    <header class="topbar">
+      <button class="back" id="ex-back"><span class="ar">←</span> Hub</button>
+      <span class="ttl" id="ex-title"></span>
+      <span class="spacer"></span>
+      <span class="ex-steps" id="ex-steps"></span>
+      <span class="pill-progress" id="ex-score">★ <b>0</b></span>
+    </header>
+    <div class="ex-track"><i id="ex-track-i"></i></div>
+    <div class="scroll">
+      <div class="ex-stage" id="ex-stage">
+        <div class="ex-card" id="ex-card">
+          <span class="ex-kind" id="ex-kind"></span>
+          <div id="ex-body"></div>
+          <div class="ex-foot">
+            <div class="ex-feedback" id="ex-feedback"></div>
+            <button class="ctl primary ex-next" id="ex-next" style="display:none"></button>
+          </div>
+        </div>
+      </div>
+      <div class="ex-result" id="ex-result" style="display:none">
+        <div class="ex-ring" id="ex-ring"></div>
+        <h2 id="ex-result-h"></h2>
+        <p id="ex-result-sub"></p>
+        <div style="display:flex;gap:12px;flex-wrap:wrap;justify-content:center;">
+          <button class="btn btn--ghost" id="ex-again">↻ Try again</button>
+          <button class="btn btn--solid" id="ex-done">Back to characters</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- audio toast (file → TTS → "coming soon") -->
+  <div class="audio-toast" id="audio-toast" aria-live="polite"></div>
+
+</div>
+
+<!-- ───── data (load order matters: see HANDOFF §2) ───── -->
+<script src="learn/app-data.js"></script>
+<script src="learn/general-data.js"></script>
+<script src="learn/radicals.js"></script>
+<script src="learn/content-extra.js"></script>
+<script src="learn/audio-index.js"></script>
+<script src="learn/library-data.js"></script>
+<!-- ───── engine + exercise modules ───── -->
+<script src="learn/app.js"></script>
+<script src="learn/exercises-draw.js"></script>
+<script src="learn/exercises.js"></script>
+</body>
+</html>
