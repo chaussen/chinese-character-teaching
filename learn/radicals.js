@@ -183,5 +183,10 @@ window.RADICALS = {
   "香":{cn:"香字旁", en:"fragrant", note:"a sweet smell"},
   "鼓":{cn:"鼓字旁", en:"drum", note:"about drums"},
   "鼠":{cn:"鼠字旁", en:"rat", note:"a rat or mouse"},
-  "日字旁":{cn:"日字旁", en:"sun / day", note:"to do with the sun, daytime or time"}
+  "日字旁":{cn:"日字旁", en:"sun / day", note:"to do with the sun, daytime or time"},
+  "金":{cn:"金字旁", en:"metal / gold", note:"to do with metal, gold or money"},
+  "瓜":{cn:"瓜字旁", en:"melon", note:"about melons and gourds"},
+  "生":{cn:"生字旁", en:"life / grow", note:"about life, birth or growing"},
+  "老":{cn:"老字旁", en:"old", note:"about old age"},
+  "面":{cn:"面字旁", en:"face", note:"the face, or flour and noodles"}
 };

@@ -1,0 +1,112 @@
+{
+  "见": {
+    "origin": "An eye 目 on top of a person's legs 儿 — someone standing up to see and meet the world.",
+    "word": { "w": "看见", "en": "to see" },
+    "sentence": { "cn": "我看见一只小鸟。", "en": "I see a little bird." }
+  },
+  "老": {
+    "origin": "A person bent over with long hair leaning on a cane — old and wise.",
+    "word": { "w": "老师", "en": "teacher" },
+    "sentence": { "cn": "老爷爷在公园里散步。", "en": "The old grandpa is walking in the park." }
+  },
+  "师": {
+    "origin": "Think of a skilled master who has gathered lots of knowledge to share — a teacher.",
+    "word": { "w": "老师", "en": "teacher" },
+    "sentence": { "cn": "我的老师很温柔。", "en": "My teacher is very gentle." }
+  },
+  "们": {
+    "origin": "A person 亻 standing by a door 门 — and many people make a group, so 们 means 'they/we'.",
+    "word": { "w": "我们", "en": "we, us" },
+    "sentence": { "cn": "我们一起去上学。", "en": "We go to school together." }
+  },
+  "方": {
+    "origin": "Picture a flat, square shape with straight sides — 方 means square and direction.",
+    "word": { "w": "地方", "en": "place" },
+    "sentence": { "cn": "这个盒子是方的。", "en": "This box is square." }
+  },
+  "向": {
+    "origin": "A little window 口 in a wall shows which way to face — 向 means toward a direction.",
+    "word": { "w": "方向", "en": "direction" },
+    "sentence": { "cn": "我向老师问好。", "en": "I say hello to the teacher." }
+  },
+  "面": {
+    "origin": "A drawing of a person's face with the eye inside — 面 means face or surface.",
+    "word": { "w": "前面", "en": "in front" },
+    "sentence": { "cn": "前面有一条小河。", "en": "There is a little river ahead." }
+  },
+  "太": {
+    "origin": "A big person 大 with one extra dot — even bigger! So 太 means too much or very.",
+    "word": { "w": "太阳", "en": "the sun" },
+    "sentence": { "cn": "今天太阳真大。", "en": "The sun is really strong today." }
+  },
+  "阳": {
+    "origin": "A sunny hillside 阝 lit by the sun 日 — 阳 means sunshine and the bright side.",
+    "word": { "w": "太阳", "en": "the sun" },
+    "sentence": { "cn": "太阳出来了。", "en": "The sun has come out." }
+  },
+  "个": {
+    "origin": "A person 人 with a little tally mark below — 个 is the word we use to count things.",
+    "word": { "w": "一个", "en": "one (item)" },
+    "sentence": { "cn": "我有一个苹果。", "en": "I have one apple." }
+  },
+  "季": {
+    "origin": "Grain 禾 above a child 子 — when seeds grow, it's the season for planting.",
+    "word": { "w": "季节", "en": "season" },
+    "sentence": { "cn": "春天是我最爱的季节。", "en": "Spring is my favorite season." }
+  },
+  "知": {
+    "origin": "An arrow 矢 and a mouth 口 — speak as quick and sure as an arrow when you know something.",
+    "word": { "w": "知道", "en": "to know" },
+    "sentence": { "cn": "我知道这个答案。", "en": "I know this answer." }
+  },
+  "唱": {
+    "origin": "A mouth 口 next to 昌 (bright and cheery) — open your mouth to sing happily!",
+    "word": { "w": "唱歌", "en": "to sing" },
+    "sentence": { "cn": "我们一起唱歌吧。", "en": "Let's sing together." }
+  },
+  "叶": {
+    "origin": "A mouth 口 plus ten 十 — picture many little green tongues on a tree: leaves!",
+    "word": { "w": "树叶", "en": "leaf" },
+    "sentence": { "cn": "秋天树叶变黄了。", "en": "In autumn the leaves turn yellow." }
+  },
+  "新": {
+    "origin": "An axe 斤 chopping fresh wood from a tree — newly cut means new and fresh.",
+    "word": { "w": "新年", "en": "New Year" },
+    "sentence": { "cn": "我有一支新铅笔。", "en": "I have a new pencil." }
+  },
+  "到": {
+    "origin": "Arrive 至 beside a standing knife 刂 — you've reached the spot, you've arrived!",
+    "word": { "w": "到家", "en": "to arrive home" },
+    "sentence": { "cn": "我到学校了。", "en": "I have arrived at school." }
+  },
+  "闹": {
+    "origin": "A busy market 市 right inside the gate 门 — crowded and noisy, that's 闹!",
+    "word": { "w": "热闹", "en": "lively, bustling" },
+    "sentence": { "cn": "街上很热闹。", "en": "The street is very lively." }
+  },
+  "穿": {
+    "origin": "A cave 穴 and a tooth 牙 — sharp enough to bore right through, so 穿 means pierce or wear.",
+    "word": { "w": "穿衣", "en": "to put on clothes" },
+    "sentence": { "cn": "今天我穿红衣服。", "en": "Today I am wearing red clothes." }
+  },
+  "戴": {
+    "origin": "Picture lifting something high to put on your head — 戴 means to wear a hat or glasses.",
+    "word": { "w": "戴帽子", "en": "to wear a hat" },
+    "sentence": { "cn": "他戴着一副眼镜。", "en": "He is wearing a pair of glasses." }
+  },
+  "帽": {
+    "origin": "A cloth 巾 placed on top 冒 of your head — a soft little hat to keep you warm.",
+    "word": { "w": "帽子", "en": "hat" },
+    "sentence": { "cn": "我的帽子是蓝色的。", "en": "My hat is blue." }
+  },
+  "祝": {
+    "origin": "A person 兄 standing before an altar 礻 with good wishes — 祝 means to wish or bless.",
+    "word": { "w": "祝福", "en": "blessing, to bless" },
+    "sentence": { "cn": "祝你生日快乐！", "en": "Happy birthday to you!" }
+  },
+  "体": {
+    "origin": "A person 亻 next to root 本 — the body is the root that holds the whole person together.",
+    "word": { "w": "身体", "en": "body" },
+    "sentence": { "cn": "多运动身体好。", "en": "Exercising more keeps the body healthy." }
+  }
+}

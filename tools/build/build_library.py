@@ -1,6 +1,7 @@
 import json, sys
 sys.path.insert(0,'tools/build')
 from curriculum import GRADES
+from zw1_extra import ZW1_ADD   # the 45 chars that complete 中文 Book 1
 
 # The original 暨南《中文》第一册 pilot series, preserved verbatim.
 ZW = {
@@ -49,6 +50,14 @@ for grade,lines in GRADES.items():
 ZWG={"id":"ZWG","cn":"中文","cnpy":[["中","zhōng"],["文","wén"]],
      "en":"Zhōngwén · Years 2–6",
      "sub":"年级中文 — the grade-based reader, Year 2 through Year 6","books":books}
+
+# complete ZW1: append the 45 previously-missing chars to their lessons (deduped)
+for lesson in ZW["books"][0]["lessons"]:
+    extra=ZW1_ADD.get(lesson["n"])
+    if extra:
+        for ch in extra:
+            if ch not in lesson["chars"]:
+                lesson["chars"].append(ch)
 
 data={"series":[ZW,ZWG]}
 HEADER='''/* library-data.js — 学写字 · Character Studio · the Library (added book series).

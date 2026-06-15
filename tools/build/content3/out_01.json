@@ -1,0 +1,117 @@
+{
+ "出": {
+  "origin": "A little sprout 屮 pushing up out of its container 凵 — popping out to go outside!",
+  "word": { "w": "出门", "en": "to go out" },
+  "sentence": { "cn": "妈妈出门买菜了。", "en": "Mom went out to buy groceries." }
+ },
+ "入": {
+  "origin": "Like an arrow pointing the way inside — step in and enter the door.",
+  "word": { "w": "进入", "en": "to enter" },
+  "sentence": { "cn": "请大家入座。", "en": "Everyone please take your seats." }
+ },
+ "座": {
+  "origin": "Under a wide roof 广, two people sit 坐 down — that spot is your seat.",
+  "word": { "w": "座位", "en": "seat" },
+  "sentence": { "cn": "我的座位在前面。", "en": "My seat is in the front." }
+ },
+ "立": {
+  "origin": "A person standing tall with feet planted firmly on the ground 一.",
+  "word": { "w": "立正", "en": "to stand at attention" },
+  "sentence": { "cn": "他立在门口等我。", "en": "He stood at the door waiting for me." }
+ },
+ "地": {
+  "origin": "Soil 土 stretches everywhere — the wide, solid ground under your feet.",
+  "word": { "w": "地方", "en": "place" },
+  "sentence": { "cn": "小猫躺在地上睡觉。", "en": "The kitten lies on the ground sleeping." }
+ },
+ "父": {
+  "origin": "A strong hand holding a tool — the dad who works hard for the family.",
+  "word": { "w": "父亲", "en": "father" },
+  "sentence": { "cn": "父亲爱看报纸。", "en": "Father likes to read the newspaper." }
+ },
+ "母": {
+  "origin": "A picture of a caring mother — the dots remind us she feeds her baby.",
+  "word": { "w": "母亲", "en": "mother" },
+  "sentence": { "cn": "母亲做的菜很好吃。", "en": "The food Mother makes is delicious." }
+ },
+ "电": {
+  "origin": "Picture lightning flashing from a storm cloud — that crackling power is electricity!",
+  "word": { "w": "电灯", "en": "electric light" },
+  "sentence": { "cn": "晚上我们开电灯。", "en": "At night we turn on the electric light." }
+ },
+ "禾": {
+  "origin": "A grain plant with its heavy head bending over — ripe rice ready to pick.",
+  "word": { "w": "禾苗", "en": "rice seedling" },
+  "sentence": { "cn": "田里的禾苗绿油油。", "en": "The rice seedlings in the field are bright green." }
+ },
+ "金": {
+  "origin": "Shiny bits of metal hidden in the earth — precious, gleaming gold.",
+  "word": { "w": "金子", "en": "gold" },
+  "sentence": { "cn": "这块石头像金子。", "en": "This stone looks like gold." }
+ },
+ "衣": {
+  "origin": "A picture of a flowing robe with sleeves — clothes to keep you warm.",
+  "word": { "w": "衣服", "en": "clothes" },
+  "sentence": { "cn": "天冷了多穿衣服。", "en": "It's cold, wear more clothes." }
+ },
+ "车": {
+  "origin": "Look down at a cart and you see its wheels and body — a vehicle that rolls!",
+  "word": { "w": "汽车", "en": "car" },
+  "sentence": { "cn": "爸爸开车去上班。", "en": "Dad drives a car to work." }
+ },
+ "瓜": {
+  "origin": "Curling vines with a round melon hanging at the bottom — yummy and juicy.",
+  "word": { "w": "西瓜", "en": "watermelon" },
+  "sentence": { "cn": "夏天吃西瓜真甜。", "en": "Eating watermelon in summer is so sweet." }
+ },
+ "生": {
+  "origin": "A young shoot 屮 sprouting from the soil 土 — new life growing up!",
+  "word": { "w": "生日", "en": "birthday" },
+  "sentence": { "cn": "今天是我的生日。", "en": "Today is my birthday." }
+ },
+ "叫": {
+  "origin": "A mouth 口 opening wide to call out loud — shout and someone will hear!",
+  "word": { "w": "叫声", "en": "a call, a cry" },
+  "sentence": { "cn": "妈妈叫我回家吃饭。", "en": "Mom calls me home to eat." }
+ },
+ "岁": {
+  "origin": "A mountain 山 plus evening 夕 — as days and seasons pass, you grow a year older.",
+  "word": { "w": "岁数", "en": "age (in years)" },
+  "sentence": { "cn": "弟弟今年五岁了。", "en": "Little brother is five years old this year." }
+ },
+ "喜": {
+  "origin": "Beating a happy drum 壴 while a mouth 口 sings — that joyful feeling is happiness!",
+  "word": { "w": "喜欢", "en": "to like" },
+  "sentence": { "cn": "我喜欢画画。", "en": "I like to draw." }
+ },
+ "欢": {
+  "origin": "A bright, cheerful feeling — when your heart is glad and you want to smile.",
+  "word": { "w": "欢乐", "en": "joyful" },
+  "sentence": { "cn": "孩子们欢笑着玩游戏。", "en": "The children laugh joyfully while playing games." }
+ },
+ "习": {
+  "origin": "Picture a little bird flapping its wings over and over — that's how you practice and learn.",
+  "word": { "w": "学习", "en": "to study" },
+  "sentence": { "cn": "我们每天学习汉字。", "en": "We study Chinese characters every day." }
+ },
+ "的": {
+  "origin": "A tiny helper word that joins things together, like \"mine\" or \"the cat's tail.\"",
+  "word": { "w": "我的", "en": "my, mine" },
+  "sentence": { "cn": "这是我的书。", "en": "This is my book." }
+ },
+ "开": {
+  "origin": "Two hands 廾 lifting the latch 一 off a door — push it open!",
+  "word": { "w": "打开", "en": "to open" },
+  "sentence": { "cn": "请你打开窗户。", "en": "Please open the window." }
+ },
+ "真": {
+  "origin": "Eyes 目 looking carefully to see what is straight and real — truly true!",
+  "word": { "w": "真的", "en": "real, really" },
+  "sentence": { "cn": "这个故事是真的。", "en": "This story is real." }
+ },
+ "兴": {
+  "origin": "Hands lifting up together with joy — everyone excited and full of energy!",
+  "word": { "w": "高兴", "en": "happy, glad" },
+  "sentence": { "cn": "见到你我很高兴。", "en": "I am very happy to see you." }
+ }
+}

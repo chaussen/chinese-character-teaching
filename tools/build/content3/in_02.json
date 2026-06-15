@@ -1,0 +1,200 @@
+[
+ {
+  "ch": "见",
+  "py": "jiàn",
+  "en": "to see, to observe, to meet, to appear",
+  "radical": "见",
+  "decomp": "⿵冂儿",
+  "hint": "Simplified form of 見; a man 儿 with the eye 目 emphasized",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "老",
+  "py": "lǎo",
+  "en": "old, aged",
+  "radical": "老",
+  "decomp": "⿱耂匕",
+  "hint": "A person bent over with long hair 匕 and a crutch; compare 耂",
+  "etype": "pictographic"
+ },
+ {
+  "ch": "师",
+  "py": "shī",
+  "en": "teacher, professional, master",
+  "radical": "巾",
+  "decomp": "⿰刂帀",
+  "hint": "To skillfully wield 帀 a knife 刂",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "们",
+  "py": "men",
+  "en": "plural marker for pronouns and some nouns",
+  "radical": "亻",
+  "decomp": "⿰亻门",
+  "hint": "people",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "方",
+  "py": "fāng",
+  "en": "square, rectangle",
+  "radical": "方",
+  "decomp": "⿱亠？",
+  "hint": "",
+  "etype": ""
+ },
+ {
+  "ch": "向",
+  "py": "xiàng",
+  "en": "towards",
+  "radical": "口",
+  "decomp": "⿵？口",
+  "hint": "",
+  "etype": ""
+ },
+ {
+  "ch": "面",
+  "py": "miàn",
+  "en": "face",
+  "radical": "面",
+  "decomp": "⿱？？",
+  "hint": "A person's face",
+  "etype": "pictographic"
+ },
+ {
+  "ch": "太",
+  "py": "tài",
+  "en": "very, too much",
+  "radical": "大",
+  "decomp": "⿵大丶",
+  "hint": "A giant 大 with a normal-sized man 丶 for scale",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "阳",
+  "py": "yáng",
+  "en": "the male principle",
+  "radical": "阝",
+  "decomp": "⿰阝日",
+  "hint": "The place 阝 of the sun 日; compare 阴",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "个",
+  "py": "gè",
+  "en": "this, that",
+  "radical": "丨",
+  "decomp": "⿱人丨",
+  "hint": "A tally 丨 of people 人",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "季",
+  "py": "jì",
+  "en": "a quarter-year, a season",
+  "radical": "子",
+  "decomp": "⿱禾子",
+  "hint": "The time for planting seeds 子 of grain 禾",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "知",
+  "py": "zhī",
+  "en": "to know, to perceive, to comprehend",
+  "radical": "矢",
+  "decomp": "⿰矢口",
+  "hint": "mouth",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "唱",
+  "py": "chàng",
+  "en": "to sing, to chant, to call",
+  "radical": "口",
+  "decomp": "⿰口昌",
+  "hint": "mouth",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "叶",
+  "py": "yè",
+  "en": "leaf, page",
+  "radical": "口",
+  "decomp": "⿰口十",
+  "hint": "",
+  "etype": ""
+ },
+ {
+  "ch": "新",
+  "py": "xīn",
+  "en": "new, recent, fresh, modern",
+  "radical": "斤",
+  "decomp": "⿰亲斤",
+  "hint": "A freshly chopped 斤 tree 亲",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "到",
+  "py": "dào",
+  "en": "to go to, to arrive",
+  "radical": "刂",
+  "decomp": "⿰至刂",
+  "hint": "arrive",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "闹",
+  "py": "nào",
+  "en": "busy, lively",
+  "radical": "门",
+  "decomp": "⿵门市",
+  "hint": "As busy as the market 市 gate 门",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "穿",
+  "py": "chuān",
+  "en": "to drill, to pierce",
+  "radical": "穴",
+  "decomp": "⿱穴牙",
+  "hint": "tooth",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "戴",
+  "py": "dài",
+  "en": "to support",
+  "radical": "戈",
+  "decomp": "⿻⿱十異戈",
+  "hint": "",
+  "etype": ""
+ },
+ {
+  "ch": "帽",
+  "py": "mào",
+  "en": "hat, cap",
+  "radical": "巾",
+  "decomp": "⿰巾冒",
+  "hint": "towel",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "祝",
+  "py": "zhù",
+  "en": "to pray",
+  "radical": "礻",
+  "decomp": "⿰礻兄",
+  "hint": "A person 兄 praying before an altar 礻",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "体",
+  "py": "tǐ",
+  "en": "body",
+  "radical": "亻",
+  "decomp": "⿰亻本",
+  "hint": "",
+  "etype": ""
+ }
+]

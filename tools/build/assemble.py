@@ -35,7 +35,7 @@ def build_seg(cn):
 
 merged={}
 errors=[]
-for f in sorted(glob.glob('tools/build/content/out_*.json')+glob.glob('tools/build/content2/out_*.json')):
+for f in sorted(glob.glob('tools/build/content/out_*.json')+glob.glob('tools/build/content2/out_*.json')+glob.glob('tools/build/content3/out_*.json')):
     data=json.load(open(f,encoding='utf-8'))
     for ch,v in data.items():
         if len(ch)!=1: errors.append((f,ch,"bad key")); continue

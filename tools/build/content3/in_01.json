@@ -1,0 +1,209 @@
+[
+ {
+  "ch": "出",
+  "py": "chū",
+  "en": "to go out, to send out",
+  "radical": "凵",
+  "decomp": "⿱屮凵",
+  "hint": "A sprout 屮 growing out of a container 凵",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "入",
+  "py": "rù",
+  "en": "to enter, to come in",
+  "radical": "入",
+  "decomp": "？",
+  "hint": "An arrow indicating \"enter\"",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "座",
+  "py": "zuò",
+  "en": "seat",
+  "radical": "广",
+  "decomp": "⿸广坐",
+  "hint": "A wide 广 seat 坐; 坐 also provides the pronunciation",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "立",
+  "py": "lì",
+  "en": "to stand",
+  "radical": "立",
+  "decomp": "⿳亠丷一",
+  "hint": "A man standing on the ground 一",
+  "etype": "pictographic"
+ },
+ {
+  "ch": "地",
+  "py": "de",
+  "en": "earth, ground, soil",
+  "radical": "土",
+  "decomp": "⿰土也",
+  "hint": "earth",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "父",
+  "py": "fù",
+  "en": "father, dad",
+  "radical": "父",
+  "decomp": "⿱八乂",
+  "hint": "A hand 乂 holding an axe 八",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "母",
+  "py": "mǔ",
+  "en": "mother",
+  "radical": "母",
+  "decomp": "？",
+  "hint": "A mother's breasts",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "电",
+  "py": "diàn",
+  "en": "electricity",
+  "radical": "曰",
+  "decomp": "⿻曰乚",
+  "hint": "Simplified form of 電; lightning 申 from a storm cloud 雨",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "禾",
+  "py": "hé",
+  "en": "cereal, grain, rice",
+  "radical": "禾",
+  "decomp": "⿱丿木",
+  "hint": "A plant stalk with a sagging head",
+  "etype": "pictographic"
+ },
+ {
+  "ch": "金",
+  "py": "jīn",
+  "en": "gold, metal",
+  "radical": "金",
+  "decomp": "⿱人⿻王丷",
+  "hint": "A cast-iron bell",
+  "etype": "pictographic"
+ },
+ {
+  "ch": "衣",
+  "py": "yī",
+  "en": "cloth",
+  "radical": "衣",
+  "decomp": "⿱亠？",
+  "hint": "A woman's dress",
+  "etype": "pictographic"
+ },
+ {
+  "ch": "车",
+  "py": "chē",
+  "en": "cart, vehicle",
+  "radical": "车",
+  "decomp": "⿻七十",
+  "hint": "Simplified form of 車, a cart with two wheels, seen from above",
+  "etype": "pictographic"
+ },
+ {
+  "ch": "瓜",
+  "py": "guā",
+  "en": "melon, gourd, squash, cucumber",
+  "radical": "瓜",
+  "decomp": "⿵？厶",
+  "hint": "Vines growing with a melon at their base",
+  "etype": "pictographic"
+ },
+ {
+  "ch": "生",
+  "py": "shēng",
+  "en": "life, lifetime",
+  "radical": "生",
+  "decomp": "⿻一土",
+  "hint": " A shoot 屮 growing in the soil 土",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "叫",
+  "py": "jiào",
+  "en": "cry, shout",
+  "radical": "口",
+  "decomp": "⿰口丩",
+  "hint": "mouth",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "岁",
+  "py": "suì",
+  "en": "year",
+  "radical": "山",
+  "decomp": "⿱山夕",
+  "hint": "",
+  "etype": ""
+ },
+ {
+  "ch": "喜",
+  "py": "xǐ",
+  "en": "to love",
+  "radical": "口",
+  "decomp": "⿱壴口",
+  "hint": "Singing 口 and beating drums 壴",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "欢",
+  "py": "huān",
+  "en": "happy, glad, joyful",
+  "radical": "欠",
+  "decomp": "⿰又欠",
+  "hint": "",
+  "etype": ""
+ },
+ {
+  "ch": "习",
+  "py": "xí",
+  "en": "to study, to practice",
+  "radical": "冫",
+  "decomp": "⿹？冫",
+  "hint": "",
+  "etype": ""
+ },
+ {
+  "ch": "的",
+  "py": "de",
+  "en": "aim, goal",
+  "radical": "白",
+  "decomp": "⿰白勺",
+  "hint": "",
+  "etype": ""
+ },
+ {
+  "ch": "开",
+  "py": "kāi",
+  "en": "to open",
+  "radical": "廾",
+  "decomp": "⿱一廾",
+  "hint": "Simplified form of 開; hands 廾 lifting the latch 一 of a door",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "真",
+  "py": "zhēn",
+  "en": "real, actual, true, genuine",
+  "radical": "目",
+  "decomp": "⿱直几",
+  "hint": "A straight 直 (that is, level) table 几",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "兴",
+  "py": "xìng",
+  "en": "to thrive, to prosper, to flourish",
+  "radical": "八",
+  "decomp": "⿳⺍一八",
+  "hint": "",
+  "etype": ""
+ }
+]
