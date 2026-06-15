@@ -1,0 +1,362 @@
+[
+ {
+  "ch": "锄",
+  "py": "chú",
+  "en": "hoe",
+  "radical": "钅",
+  "decomp": "⿰钅助",
+  "hint": "A metal 钅 tool 助; 助 also provides the pronunciation",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "粒",
+  "py": "lì",
+  "en": "grain, granule",
+  "radical": "米",
+  "decomp": "⿰米立",
+  "hint": "grain",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "皆",
+  "py": "jiē",
+  "en": "all, every, everybody",
+  "radical": "白",
+  "decomp": "⿱比白",
+  "hint": "",
+  "etype": ""
+ },
+ {
+  "ch": "辛",
+  "py": "xīn",
+  "en": "bitter",
+  "radical": "辛",
+  "decomp": "⿱立十",
+  "hint": "A hot iron used to brand prisoners and slaves",
+  "etype": "pictographic"
+ },
+ {
+  "ch": "苦",
+  "py": "kǔ",
+  "en": "bitter",
+  "radical": "艹",
+  "decomp": "⿱艹古",
+  "hint": "grass",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "洁",
+  "py": "jié",
+  "en": "clean, pure",
+  "radical": "氵",
+  "decomp": "⿰氵吉",
+  "hint": "water",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "牌",
+  "py": "pái",
+  "en": "card, game piece",
+  "radical": "片",
+  "decomp": "⿰片卑",
+  "hint": "page",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "报",
+  "py": "bào",
+  "en": "to announce, to report",
+  "radical": "扌",
+  "decomp": "⿰扌⿸卩又",
+  "hint": "A hand 扌 cuffing 又 a criminal 卩, representing sentencing",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "半",
+  "py": "bàn",
+  "en": "half",
+  "radical": "十",
+  "decomp": "⿻丷牛",
+  "hint": "A cow 牛 splitting 丷 wood in half",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "剩",
+  "py": "shèng",
+  "en": "leftovers, residue, remains",
+  "radical": "刂",
+  "decomp": "⿰乘刂",
+  "hint": "knife",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "夫",
+  "py": "fū",
+  "en": "man, husband",
+  "radical": "大",
+  "decomp": "⿻一大",
+  "hint": "A man 大 wearing a coming-of-age hairpin 一",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "鸦",
+  "py": "yā",
+  "en": "crow",
+  "radical": "鸟",
+  "decomp": "⿰牙鸟",
+  "hint": "bird",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "泥",
+  "py": "ní",
+  "en": "mud, earth, clay",
+  "radical": "氵",
+  "decomp": "⿰氵尼",
+  "hint": "water",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "肥",
+  "py": "féi",
+  "en": "fat, plump, obese",
+  "radical": "⺼",
+  "decomp": "⿰⺼巴",
+  "hint": "flesh",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "料",
+  "py": "liào",
+  "en": "ingredients, materials",
+  "radical": "斗",
+  "decomp": "⿰米斗",
+  "hint": "A hand measuring 斗 a cup of rice 米",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "言",
+  "py": "yán",
+  "en": "words, speech",
+  "radical": "言",
+  "decomp": "⿱亠⿱二口",
+  "hint": "A tongue sticking out of a mouth 口",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "丰",
+  "py": "fēng",
+  "en": "abundant, lush, bountiful, plenty",
+  "radical": "丨",
+  "decomp": "⿻三丨",
+  "hint": "An ear of grass",
+  "etype": "pictographic"
+ },
+ {
+  "ch": "富",
+  "py": "fù",
+  "en": "abundant, ample",
+  "radical": "宀",
+  "decomp": "⿱宀畐",
+  "hint": "roof",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "晴",
+  "py": "qíng",
+  "en": "clear weather, fine weather",
+  "radical": "日",
+  "decomp": "⿰日青",
+  "hint": "sun",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "蚂",
+  "py": "mǎ",
+  "en": "ant",
+  "radical": "虫",
+  "decomp": "⿰虫马",
+  "hint": "insect",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "蚁",
+  "py": "yǐ",
+  "en": "ant",
+  "radical": "虫",
+  "decomp": "⿰虫义",
+  "hint": "insect",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "搬",
+  "py": "bān",
+  "en": "to move, to remove, to shift, to transfer",
+  "radical": "扌",
+  "decomp": "⿰扌般",
+  "hint": "hand",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "伞",
+  "py": "sǎn",
+  "en": "umbrella, parasol, parachute",
+  "radical": "人",
+  "decomp": "⿱人？",
+  "hint": "An umbrella",
+  "etype": "pictographic"
+ },
+ {
+  "ch": "察",
+  "py": "chá",
+  "en": "to examine, to investigate, to observe",
+  "radical": "宀",
+  "decomp": "⿱宀祭",
+  "hint": "roof",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "懂",
+  "py": "dǒng",
+  "en": "to understand, to know",
+  "radical": "忄",
+  "decomp": "⿰忄董",
+  "hint": "mind",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "考",
+  "py": "kǎo",
+  "en": "to test, to investigate, to examine",
+  "radical": "耂",
+  "decomp": "⿸耂丂",
+  "hint": "old",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "探",
+  "py": "tàn",
+  "en": "to find, to locate",
+  "radical": "扌",
+  "decomp": "⿰扌⿱？木",
+  "hint": "hand",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "员",
+  "py": "yuán",
+  "en": "employee",
+  "radical": "口",
+  "decomp": "⿱口贝",
+  "hint": "money",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "次",
+  "py": "cì",
+  "en": "order, sequence",
+  "radical": "欠",
+  "decomp": "⿰冫欠",
+  "hint": "A person 欠 yawning multiple times 冫",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "类",
+  "py": "lèi",
+  "en": "category, class, group, kind",
+  "radical": "大",
+  "decomp": "⿱米大",
+  "hint": "",
+  "etype": ""
+ },
+ {
+  "ch": "实",
+  "py": "shí",
+  "en": "real, true",
+  "radical": "宀",
+  "decomp": "⿱宀头",
+  "hint": "",
+  "etype": ""
+ },
+ {
+  "ch": "梦",
+  "py": "mèng",
+  "en": "dream",
+  "radical": "木",
+  "decomp": "⿱林夕",
+  "hint": "Two eyes shut 林 at night 夕",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "植",
+  "py": "zhí",
+  "en": "tree, plant",
+  "radical": "木",
+  "decomp": "⿰木直",
+  "hint": "tree",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "式",
+  "py": "shì",
+  "en": "formula, pattern, rule, style, system",
+  "radical": "弋",
+  "decomp": "⿹弋工",
+  "hint": "A craftsman using an awl 弋 and a measuring square 工",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "程",
+  "py": "chéng",
+  "en": "process, rules",
+  "radical": "禾",
+  "decomp": "⿰禾呈",
+  "hint": "grain",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "器",
+  "py": "qì",
+  "en": "device, instrument, tool",
+  "radical": "口",
+  "decomp": "⿳⿰口口犬⿰口口",
+  "hint": "Four cooking vessels 口 guarded by a dog 犬",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "背",
+  "py": "bèi",
+  "en": "back, backside",
+  "radical": "⺼",
+  "decomp": "⿱北⺼",
+  "hint": "flesh",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "陆",
+  "py": "lù",
+  "en": "land, continent",
+  "radical": "阝",
+  "decomp": "⿰阝击",
+  "hint": "place",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "超",
+  "py": "chāo",
+  "en": "to jump over, to leap over",
+  "radical": "走",
+  "decomp": "⿺走召",
+  "hint": "run",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "周",
+  "py": "zhōu",
+  "en": "Zhou dynasty",
+  "radical": "口",
+  "decomp": "⿵冂⿱土口",
+  "hint": "Border 冂 around land 土 with a well 口",
+  "etype": "ideographic"
+ }
+]

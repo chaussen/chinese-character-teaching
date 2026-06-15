@@ -1,0 +1,202 @@
+{
+ "教": {
+  "origin": "On the left is 孝 (showing care for elders); on the right 攵 is a hand with a stick, gently guiding learning.",
+  "word": { "w": "教书", "en": "to teach" },
+  "sentence": { "cn": "老师教我们写汉字。", "en": "The teacher teaches us to write Chinese characters." }
+ },
+ "汉": {
+  "origin": "The water drops 氵 on the left remind you of the great Han river that gave the Han people their name.",
+  "word": { "w": "汉字", "en": "Chinese characters" },
+  "sentence": { "cn": "我会写很多汉字。", "en": "I can write many Chinese characters." }
+ },
+ "语": {
+  "origin": "The speech marks 讠 on the left mean words; add 吾 (me) and you get the language I speak.",
+  "word": { "w": "语文", "en": "language and literature" },
+  "sentence": { "cn": "我喜欢上语文课。", "en": "I like attending language class." }
+ },
+ "歌": {
+  "origin": "Picture brother 哥 opening his mouth wide with a big breath 欠 to sing out a happy song.",
+  "word": { "w": "唱歌", "en": "to sing" },
+  "sentence": { "cn": "我们一起唱歌吧。", "en": "Let's sing together." }
+ },
+ "画": {
+  "origin": "Imagine a framed field 田 inside a box — a finished picture hanging on the wall for everyone to see.",
+  "word": { "w": "画画", "en": "to draw a picture" },
+  "sentence": { "cn": "我喜欢画画。", "en": "I like to draw pictures." }
+ },
+ "这": {
+  "origin": "The walking path 辶 brings something right up close to you — 这 means 'this,' the thing nearby.",
+  "word": { "w": "这里", "en": "here" },
+  "sentence": { "cn": "这是我的书。", "en": "This is my book." }
+ },
+ "又": {
+  "origin": "A simple drawing of a right hand reaching out — when you do something 'again,' your hand goes back for more.",
+  "word": { "w": "又来了", "en": "here it comes again" },
+  "sentence": { "cn": "他又迟到了。", "en": "He is late again." }
+ },
+ "桌": {
+  "origin": "Stand something tall 卓 on legs of wood 木 at the bottom, and you have a sturdy table.",
+  "word": { "w": "桌子", "en": "table" },
+  "sentence": { "cn": "书在桌子上。", "en": "The book is on the table." }
+ },
+ "椅": {
+  "origin": "Wood 木 on the left makes the seat; the part on the right tells you how to say it — a wooden chair.",
+  "word": { "w": "椅子", "en": "chair" },
+  "sentence": { "cn": "请坐这把椅子。", "en": "Please sit in this chair." }
+ },
+ "两": {
+  "origin": "Look inside the little house and you can spot two people 从 standing side by side — that means 'two.'",
+  "word": { "w": "两个", "en": "two (of something)" },
+  "sentence": { "cn": "我有两个苹果。", "en": "I have two apples." }
+ },
+ "边": {
+  "origin": "The walking path 辶 wraps around the edge of things — 边 means the side or border you walk along.",
+  "word": { "w": "旁边", "en": "beside, next to" },
+  "sentence": { "cn": "他坐在我旁边。", "en": "He sits beside me." }
+ },
+ "墙": {
+  "origin": "Earth 土 on the left reminds you that long ago people piled up soil to build a tall, strong wall.",
+  "word": { "w": "墙上", "en": "on the wall" },
+  "sentence": { "cn": "墙上有一张画。", "en": "There is a picture on the wall." }
+ },
+ "着": {
+  "origin": "An eye 目 keeps watching while something keeps happening — 着 shows an action carrying on right now.",
+  "word": { "w": "看着", "en": "looking at" },
+  "sentence": { "cn": "他笑着对我说话。", "en": "He talks to me with a smile." }
+ },
+ "图": {
+  "origin": "A box 囗 draws a border all around, like the edge of a map — inside it you find a chart or picture.",
+  "word": { "w": "图书", "en": "books" },
+  "sentence": { "cn": "我们去图书馆吧。", "en": "Let's go to the library." }
+ },
+ "角": {
+  "origin": "This character is shaped like an animal's pointy horn — and a horn is sharp at its corner or angle.",
+  "word": { "w": "角落", "en": "corner" },
+  "sentence": { "cn": "猫睡在角落里。", "en": "The cat sleeps in the corner." }
+ },
+ "星": {
+  "origin": "A sun 日 grows 生 small and bright in the night sky — that twinkling little sun is a star.",
+  "word": { "w": "星星", "en": "star" },
+  "sentence": { "cn": "天上有很多星星。", "en": "There are many stars in the sky." }
+ },
+ "期": {
+  "origin": "The moon 月 on the right marks time as it grows and shrinks, helping us count out a period of days.",
+  "word": { "w": "星期", "en": "week" },
+  "sentence": { "cn": "这个星期我很忙。", "en": "I am very busy this week." }
+ },
+ "做": {
+  "origin": "A person 亻 on the left is busy making things happen — 做 means to do, work, or make something.",
+  "word": { "w": "做饭", "en": "to cook" },
+  "sentence": { "cn": "妈妈在做饭。", "en": "Mom is cooking." }
+ },
+ "客": {
+  "origin": "Under a roof 宀 a visitor arrives 各 — a welcome guest stepping into your warm home.",
+  "word": { "w": "客人", "en": "guest" },
+  "sentence": { "cn": "今天家里来了客人。", "en": "Guests came to our home today." }
+ },
+ "本": {
+  "origin": "Draw a tree 木 and add one line 一 at the bottom to point out its roots — the very beginning of things.",
+  "word": { "w": "本子", "en": "notebook" },
+  "sentence": { "cn": "我有一本新书。", "en": "I have a new book." }
+ },
+ "玩": {
+  "origin": "The jade 王 on the left was a smooth, shiny stone people loved to hold and play with for fun.",
+  "word": { "w": "玩具", "en": "toy" },
+  "sentence": { "cn": "我们一起玩游戏。", "en": "Let's play a game together." }
+ },
+ "形": {
+  "origin": "The three little strokes 彡 on the right are like light or lines showing the shape and form of a thing.",
+  "word": { "w": "形状", "en": "shape" },
+  "sentence": { "cn": "这是什么形状？", "en": "What shape is this?" }
+ },
+ "都": {
+  "origin": "The city part 阝 on the right gathers everyone in — 都 means 'all,' as if the whole town is together.",
+  "word": { "w": "都是", "en": "all are" },
+  "sentence": { "cn": "我们都是好朋友。", "en": "We are all good friends." }
+ },
+ "用": {
+  "origin": "Picture a bucket with handles, ready to be picked up and put to work — 用 means to use something.",
+  "word": { "w": "用心", "en": "attentively, with care" },
+  "sentence": { "cn": "我用铅笔写字。", "en": "I write with a pencil." }
+ },
+ "记": {
+  "origin": "Speech marks 讠 on the left plus 己 (oneself) — words you note down for yourself so you remember.",
+  "word": { "w": "记住", "en": "to remember" },
+  "sentence": { "cn": "我记住了你的名字。", "en": "I remembered your name." }
+ },
+ "请": {
+  "origin": "Speech marks 讠 on the left mean you are using polite words — 请 is how you kindly ask or invite.",
+  "word": { "w": "请坐", "en": "please sit" },
+  "sentence": { "cn": "请进来坐。", "en": "Please come in and sit." }
+ },
+ "谢": {
+  "origin": "Speech marks 讠 on the left mean kind words — 谢 is the warm word you say to thank someone.",
+  "word": { "w": "谢谢", "en": "thank you" },
+  "sentence": { "cn": "谢谢你帮助我。", "en": "Thank you for helping me." }
+ },
+ "对": {
+  "origin": "Two hands 又 and 寸 reaching toward each other and matching up — when things match, they are correct.",
+  "word": { "w": "对不起", "en": "sorry" },
+  "sentence": { "cn": "你说得对。", "en": "What you said is right." }
+ },
+ "没": {
+  "origin": "Water 氵 on the left swallows things up until they sink away and are gone — 没 means 'not' or 'none.'",
+  "word": { "w": "没有", "en": "to not have" },
+  "sentence": { "cn": "我没有铅笔。", "en": "I don't have a pencil." }
+ },
+ "关": {
+  "origin": "Picture two doors shutting together tight — 关 means to close, like locking a frontier gate.",
+  "word": { "w": "关上", "en": "to close" },
+  "sentence": { "cn": "请关上门。", "en": "Please close the door." }
+ },
+ "系": {
+  "origin": "The thread 糸 at the bottom is being tied up — 系 means to fasten or connect things into one system.",
+  "word": { "w": "关系", "en": "relationship" },
+  "sentence": { "cn": "他们关系很好。", "en": "They have a good relationship." }
+ },
+ "孩": {
+  "origin": "The child 子 on the left tells you at a glance that 孩 is all about a little baby or kid.",
+  "word": { "w": "孩子", "en": "child" },
+  "sentence": { "cn": "孩子们在玩。", "en": "The children are playing." }
+ },
+ "过": {
+  "origin": "The walking path 辶 on the left shows feet moving by — 过 means to pass by or to cross over.",
+  "word": { "w": "过来", "en": "come over" },
+  "sentence": { "cn": "请过来一下。", "en": "Please come over for a moment." }
+ },
+ "昨": {
+  "origin": "The sun 日 on the left marks a day — 昨 is the day whose sun has already set: yesterday.",
+  "word": { "w": "昨天", "en": "yesterday" },
+  "sentence": { "cn": "昨天下雨了。", "en": "It rained yesterday." }
+ },
+ "全": {
+  "origin": "Precious jade 玉 tucked safely 入 under a roof — every piece is there, so 全 means whole and complete.",
+  "word": { "w": "全部", "en": "all, whole" },
+  "sentence": { "cn": "作业我全做完了。", "en": "I finished all my homework." }
+ },
+ "会": {
+  "origin": "People 人 gathering together under one roof to talk 云 — when people meet, they can do things together.",
+  "word": { "w": "开会", "en": "to have a meeting" },
+  "sentence": { "cn": "我会唱这首歌。", "en": "I can sing this song." }
+ },
+ "给": {
+  "origin": "Thread 纟 on the left ties two people together as one hands a gift to the other — 给 means to give.",
+  "word": { "w": "给你", "en": "for you" },
+  "sentence": { "cn": "我给你一支笔。", "en": "I give you a pen." }
+ },
+ "蛋": {
+  "origin": "The insect 虫 at the bottom reminds you that little creatures and birds lay eggs — 蛋 means egg.",
+  "word": { "w": "鸡蛋", "en": "egg (chicken egg)" },
+  "sentence": { "cn": "我早上吃鸡蛋。", "en": "I eat eggs in the morning." }
+ },
+ "送": {
+  "origin": "The walking path 辶 carries you along as you wave 关 to a friend — 送 means to see off or to give.",
+  "word": { "w": "送给", "en": "to give to" },
+  "sentence": { "cn": "我送给妈妈一朵花。", "en": "I give Mom a flower." }
+ },
+ "具": {
+  "origin": "Two hands 八 hold up a tablet 目 to write on — 具 means a tool or thing you use to get work done.",
+  "word": { "w": "文具", "en": "stationery" },
+  "sentence": { "cn": "我的文具盒很漂亮。", "en": "My pencil case is very pretty." }
+ }
+}

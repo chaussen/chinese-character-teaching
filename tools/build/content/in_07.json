@@ -1,0 +1,362 @@
+[
+ {
+  "ch": "朝",
+  "py": "cháo",
+  "en": "to face",
+  "radical": "月",
+  "decomp": "⿰龺月",
+  "hint": "moon",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "清",
+  "py": "qīng",
+  "en": "clean, pure",
+  "radical": "氵",
+  "decomp": "⿰氵青",
+  "hint": "water",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "皇",
+  "py": "huáng",
+  "en": "royal, imperial",
+  "radical": "白",
+  "decomp": "⿱白王",
+  "hint": "A crown 白 on the head of the emperor 王",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "位",
+  "py": "wèi",
+  "en": "seat, throne",
+  "radical": "亻",
+  "decomp": "⿰亻立",
+  "hint": "The place where a person 亻 stands 立",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "帝",
+  "py": "dì",
+  "en": "supreme ruler, emperor",
+  "radical": "巾",
+  "decomp": "⿱立巾",
+  "hint": "An altar on which a sacrifice is being made",
+  "etype": "pictographic"
+ },
+ {
+  "ch": "居",
+  "py": "jū",
+  "en": "to live, to reside",
+  "radical": "户",
+  "decomp": "⿸户古",
+  "hint": "door",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "殿",
+  "py": "diàn",
+  "en": "hall",
+  "radical": "殳",
+  "decomp": "⿰⿸尸共殳",
+  "hint": "",
+  "etype": ""
+ },
+ {
+  "ch": "间",
+  "py": "jiān",
+  "en": "between, among",
+  "radical": "门",
+  "decomp": "⿵门日",
+  "hint": "The sun 日 shining through a doorway 门",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "筑",
+  "py": "zhù",
+  "en": "building",
+  "radical": "⺮",
+  "decomp": "⿱⺮巩",
+  "hint": "A strong  巩 bamboo ⺮ building; ⺮ also provides the pronunciation",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "藏",
+  "py": "cáng",
+  "en": "to conceal, to hide",
+  "radical": "艹",
+  "decomp": "⿱艹臧",
+  "hint": "grass",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "内",
+  "py": "nèi",
+  "en": "inside",
+  "radical": "入",
+  "decomp": "⿻冂人",
+  "hint": "A man 人  entering a door 冂",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "颐",
+  "py": "yí",
+  "en": "cheeks, jaw",
+  "radical": "页",
+  "decomp": "⿰臣页",
+  "hint": "head",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "久",
+  "py": "jiǔ",
+  "en": "long ago",
+  "radical": "丿",
+  "decomp": "⿻勹？",
+  "hint": "",
+  "etype": ""
+ },
+ {
+  "ch": "站",
+  "py": "zhàn",
+  "en": "stand, station",
+  "radical": "立",
+  "decomp": "⿰立占",
+  "hint": "stand",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "底",
+  "py": "dǐ",
+  "en": "bottom, underside",
+  "radical": "广",
+  "decomp": "⿸广氐",
+  "hint": "building",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "岛",
+  "py": "dǎo",
+  "en": "island",
+  "radical": "山",
+  "decomp": "⿹鸟山",
+  "hint": "A bird 鸟 perched atop a mountain 山",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "桥",
+  "py": "qiáo",
+  "en": "bridge",
+  "radical": "木",
+  "decomp": "⿰木乔",
+  "hint": "wood",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "洞",
+  "py": "dòng",
+  "en": "cave, grotto, hole, ravine",
+  "radical": "氵",
+  "decomp": "⿰氵同",
+  "hint": "water",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "孔",
+  "py": "kǒng",
+  "en": "opening, hole, orifice",
+  "radical": "子",
+  "decomp": "⿰子乚",
+  "hint": "The mouth 乚 of a crying baby 子",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "柱",
+  "py": "zhù",
+  "en": "to lean on",
+  "radical": "木",
+  "decomp": "⿰木主",
+  "hint": "tree",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "狮",
+  "py": "shī",
+  "en": "lion",
+  "radical": "犭",
+  "decomp": "⿰犭师",
+  "hint": "animal",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "分",
+  "py": "fēn",
+  "en": "to divide, to allocate",
+  "radical": "刀",
+  "decomp": "⿱八刀",
+  "hint": "Pieces 八 being further subdivided with a knife 刀 ",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "廊",
+  "py": "láng",
+  "en": "corridor, porch, veranda",
+  "radical": "广",
+  "decomp": "⿸广郎",
+  "hint": "wide",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "眼",
+  "py": "yǎn",
+  "en": "eyelet, hole, opening",
+  "radical": "目",
+  "decomp": "⿰目艮",
+  "hint": "eye",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "寿",
+  "py": "shòu",
+  "en": "old age, longevity",
+  "radical": "寸",
+  "decomp": "⿸丰寸",
+  "hint": "Altered form of 老",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "骆",
+  "py": "luò",
+  "en": "camel",
+  "radical": "马",
+  "decomp": "⿰马各",
+  "hint": "horse",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "驼",
+  "py": "tuó",
+  "en": "camel",
+  "radical": "马",
+  "decomp": "⿰马它",
+  "hint": "horse",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "件",
+  "py": "jiàn",
+  "en": "item, matter",
+  "radical": "亻",
+  "decomp": "⿰亻牛",
+  "hint": "A man 亻 dividing up a cow 牛",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "俩",
+  "py": "liǎ",
+  "en": "two, a pair, a couple",
+  "radical": "亻",
+  "decomp": "⿰亻两",
+  "hint": "A couple 寿; 寿 also provides the pronunciation",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "扒",
+  "py": "bā",
+  "en": "to scratch, to dig up",
+  "radical": "扌",
+  "decomp": "⿰扌八",
+  "hint": "hand",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "肯",
+  "py": "kěn",
+  "en": "to agree to, to consent, to permit",
+  "radical": "⺼",
+  "decomp": "⿱止⺼",
+  "hint": "To stop 止 flexing one's muscles ⺼",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "输",
+  "py": "shū",
+  "en": "to carry, to haul, to transport",
+  "radical": "车",
+  "decomp": "⿰车俞",
+  "hint": "cart",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "窄",
+  "py": "zhǎi",
+  "en": "narrow, tight",
+  "radical": "穴",
+  "decomp": "⿱穴乍",
+  "hint": "cave",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "跪",
+  "py": "guì",
+  "en": "to kneel",
+  "radical": "足",
+  "decomp": "⿰足危",
+  "hint": "foot",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "钻",
+  "py": "zuān",
+  "en": "diamond",
+  "radical": "钅",
+  "decomp": "⿰钅占",
+  "hint": "metal",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "找",
+  "py": "zhǎo",
+  "en": "to search for, to look for, to find",
+  "radical": "扌",
+  "decomp": "⿰扌戈",
+  "hint": "To go searching with a spear 戈 in hand 扌",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "评",
+  "py": "píng",
+  "en": "to appraise, to criticize, to evaluate",
+  "radical": "讠",
+  "decomp": "⿰讠平",
+  "hint": "speech",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "短",
+  "py": "duǎn",
+  "en": "brief, short",
+  "radical": "矢",
+  "decomp": "⿰矢豆",
+  "hint": "dart",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "伯",
+  "py": "bó",
+  "en": "older brother",
+  "radical": "亻",
+  "decomp": "⿰亻白",
+  "hint": "person",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "深",
+  "py": "shēn",
+  "en": "deep, profound",
+  "radical": "氵",
+  "decomp": "⿰氵罙",
+  "hint": "Deep 罙 water 氵",
+  "etype": "ideographic"
+ }
+]

@@ -1,0 +1,202 @@
+{
+  "朝": {
+    "origin": "Grass and sun on the left, moon 月 on the right — the sun rises while the moon fades, that's morning.",
+    "word": { "w": "朝阳", "en": "morning sun" },
+    "sentence": { "cn": "早上的太阳叫朝阳。", "en": "The morning sun is called the rising sun." }
+  },
+  "清": {
+    "origin": "Water 氵 plus 青 (blue-green) — clear, clean water you can almost see right through.",
+    "word": { "w": "清水", "en": "clear water" },
+    "sentence": { "cn": "小河里的水很清。", "en": "The water in the little river is very clear." }
+  },
+  "皇": {
+    "origin": "A bright crown 白 sitting on top of a king 王 — the grand emperor of all.",
+    "word": { "w": "皇帝", "en": "emperor" },
+    "sentence": { "cn": "古时候有一位皇帝。", "en": "Long ago there was an emperor." }
+  },
+  "位": {
+    "origin": "A person 亻 standing 立 in one spot — the place or seat where someone belongs.",
+    "word": { "w": "座位", "en": "seat" },
+    "sentence": { "cn": "请回到你的座位上。", "en": "Please go back to your seat." }
+  },
+  "帝": {
+    "origin": "Picture a tall altar where offerings were made — the ruler above everyone is the emperor 帝.",
+    "word": { "w": "皇帝", "en": "emperor" },
+    "sentence": { "cn": "皇帝住在大宫殿里。", "en": "The emperor lives in a big palace." }
+  },
+  "居": {
+    "origin": "A door 户 above 古 (old) — where you settle down behind your door is where you live.",
+    "word": { "w": "居住", "en": "to reside" },
+    "sentence": { "cn": "我们居住在城里。", "en": "We live in the city." }
+  },
+  "殿": {
+    "origin": "A grand, sturdy building where kings sat — think of a great royal hall 殿.",
+    "word": { "w": "宫殿", "en": "palace" },
+    "sentence": { "cn": "这座宫殿真漂亮。", "en": "This palace is really beautiful." }
+  },
+  "间": {
+    "origin": "The sun 日 peeking through a doorway 门 — the space in between, like a room.",
+    "word": { "w": "房间", "en": "room" },
+    "sentence": { "cn": "我的房间很干净。", "en": "My room is very clean." }
+  },
+  "筑": {
+    "origin": "Bamboo ⺮ over 巩 (strong) — strong bamboo poles used to build things up.",
+    "word": { "w": "建筑", "en": "building" },
+    "sentence": { "cn": "这座建筑很高。", "en": "This building is very tall." }
+  },
+  "藏": {
+    "origin": "Grass 艹 on top hiding something underneath — slip away and conceal yourself in the grass.",
+    "word": { "w": "藏起来", "en": "to hide away" },
+    "sentence": { "cn": "小猫藏在桌子下面。", "en": "The kitten is hiding under the table." }
+  },
+  "内": {
+    "origin": "A person 人 stepping through a door frame 冂 — going inside, the inner part.",
+    "word": { "w": "里内", "en": "inside" },
+    "sentence": { "cn": "屋内非常暖和。", "en": "It is very warm inside the house." }
+  },
+  "颐": {
+    "origin": "A head 页 on the right — 颐 means the cheeks and jaw, the soft part of your face.",
+    "word": { "w": "颐和园", "en": "Summer Palace" },
+    "sentence": { "cn": "我们去颐和园玩。", "en": "We went to play at the Summer Palace." }
+  },
+  "久": {
+    "origin": "A simple stroke like a person walking on and on — 久 means a long, long time.",
+    "word": { "w": "很久", "en": "a long time" },
+    "sentence": { "cn": "我们很久没见了。", "en": "We haven't seen each other for a long time." }
+  },
+  "站": {
+    "origin": "Stand 立 next to 占 — to stand up straight, or a station where buses stop.",
+    "word": { "w": "车站", "en": "station" },
+    "sentence": { "cn": "我在车站等妈妈。", "en": "I wait for mom at the bus station." }
+  },
+  "底": {
+    "origin": "A shelter 广 over 氐 (low) — the lowest, bottom part underneath.",
+    "word": { "w": "底下", "en": "underneath" },
+    "sentence": { "cn": "球滚到了桌子底下。", "en": "The ball rolled under the table." }
+  },
+  "岛": {
+    "origin": "A bird 鸟 resting on a mountain 山 poking out of the sea — that's an island.",
+    "word": { "w": "海岛", "en": "island" },
+    "sentence": { "cn": "海上有一座小岛。", "en": "There is a small island in the sea." }
+  },
+  "桥": {
+    "origin": "Wood 木 plus 乔 (tall) — tall wooden planks laid across the water make a bridge.",
+    "word": { "w": "小桥", "en": "small bridge" },
+    "sentence": { "cn": "小桥下面有流水。", "en": "Water flows under the little bridge." }
+  },
+  "洞": {
+    "origin": "Water 氵 plus 同 — water hollows out the rock to make a deep cave or hole.",
+    "word": { "w": "山洞", "en": "cave" },
+    "sentence": { "cn": "小熊住在山洞里。", "en": "The little bear lives in a cave." }
+  },
+  "孔": {
+    "origin": "A baby 子 beside a little curl 乚 — picture the tiny mouth of a crying baby, a small hole.",
+    "word": { "w": "鼻孔", "en": "nostril" },
+    "sentence": { "cn": "针上有一个小孔。", "en": "There is a small hole in the needle." }
+  },
+  "柱": {
+    "origin": "Wood 木 plus 主 (main) — a main wooden post that holds the roof up, a pillar.",
+    "word": { "w": "柱子", "en": "pillar" },
+    "sentence": { "cn": "大厅里有四根柱子。", "en": "There are four pillars in the hall." }
+  },
+  "狮": {
+    "origin": "The animal sign 犭 plus 师 for the sound — the big, brave lion king.",
+    "word": { "w": "狮子", "en": "lion" },
+    "sentence": { "cn": "狮子是草原之王。", "en": "The lion is the king of the grassland." }
+  },
+  "分": {
+    "origin": "A knife 刀 cutting something into pieces 八 — to split or divide things up.",
+    "word": { "w": "分开", "en": "to separate" },
+    "sentence": { "cn": "我把蛋糕分给大家。", "en": "I divided the cake among everyone." }
+  },
+  "廊": {
+    "origin": "A wide roof 广 with 郎 for the sound — a long covered walkway, a corridor.",
+    "word": { "w": "走廊", "en": "corridor" },
+    "sentence": { "cn": "教室外面有走廊。", "en": "There is a corridor outside the classroom." }
+  },
+  "眼": {
+    "origin": "An eye 目 plus 艮 — your eyes, the little windows you see the world through.",
+    "word": { "w": "眼睛", "en": "eye" },
+    "sentence": { "cn": "她的眼睛又大又亮。", "en": "Her eyes are big and bright." }
+  },
+  "寿": {
+    "origin": "An older form of 老 (old) — 寿 means a long life and growing happily old.",
+    "word": { "w": "长寿", "en": "long life" },
+    "sentence": { "cn": "祝爷爷健康长寿。", "en": "Wishing grandpa health and a long life." }
+  },
+  "骆": {
+    "origin": "A horse 马 plus 各 for the sound — but with a hump on its back, it's a camel.",
+    "word": { "w": "骆驼", "en": "camel" },
+    "sentence": { "cn": "骆驼在沙漠里走。", "en": "The camel walks in the desert." }
+  },
+  "驼": {
+    "origin": "A horse 马 plus 它 — a humped desert horse, the camel that carries loads.",
+    "word": { "w": "骆驼", "en": "camel" },
+    "sentence": { "cn": "骆驼能背很多东西。", "en": "Camels can carry many things on their backs." }
+  },
+  "件": {
+    "origin": "A person 亻 beside a cow 牛 — dividing things up, so 件 counts items one by one.",
+    "word": { "w": "一件", "en": "one item" },
+    "sentence": { "cn": "我买了一件新衣服。", "en": "I bought a new piece of clothing." }
+  },
+  "俩": {
+    "origin": "A person 亻 plus 两 (two) — 俩 simply means the two of them, a pair.",
+    "word": { "w": "我俩", "en": "us two" },
+    "sentence": { "cn": "我俩是好朋友。", "en": "The two of us are good friends." }
+  },
+  "扒": {
+    "origin": "A hand 扌 plus 八 — using your hand to scratch, push aside, or dig something up.",
+    "word": { "w": "扒土", "en": "to dig soil" },
+    "sentence": { "cn": "小狗用爪子扒土。", "en": "The puppy digs the soil with its paws." }
+  },
+  "肯": {
+    "origin": "Stop 止 above flesh ⺼ — when you stop and settle, you agree and say yes.",
+    "word": { "w": "肯定", "en": "certainly" },
+    "sentence": { "cn": "他肯帮我做作业。", "en": "He is willing to help me with homework." }
+  },
+  "输": {
+    "origin": "A cart 车 plus 俞 — carts haul and carry things; 输 also means to lose a game.",
+    "word": { "w": "运输", "en": "to transport" },
+    "sentence": { "cn": "这次比赛我们输了。", "en": "We lost the game this time." }
+  },
+  "窄": {
+    "origin": "A cave 穴 over 乍 — a tiny squeezed opening, so 窄 means narrow and tight.",
+    "word": { "w": "窄路", "en": "narrow road" },
+    "sentence": { "cn": "这条小路很窄。", "en": "This little path is very narrow." }
+  },
+  "跪": {
+    "origin": "A foot 足 plus 危 — bending your legs all the way down to kneel.",
+    "word": { "w": "下跪", "en": "to kneel down" },
+    "sentence": { "cn": "他跪在地上找钥匙。", "en": "He knelt on the ground to look for the key." }
+  },
+  "钻": {
+    "origin": "Metal 钅 plus 占 — a hard metal tool that bores holes; 钻石 is a sparkling diamond.",
+    "word": { "w": "钻石", "en": "diamond" },
+    "sentence": { "cn": "这颗钻石很亮。", "en": "This diamond is very shiny." }
+  },
+  "找": {
+    "origin": "A hand 扌 holding a spear 戈 — searching all around, hunting for what you want to find.",
+    "word": { "w": "找到", "en": "to find" },
+    "sentence": { "cn": "我找到了我的书。", "en": "I found my book." }
+  },
+  "评": {
+    "origin": "Speech 讠 plus 平 (level) — using fair words to judge and comment on things.",
+    "word": { "w": "评分", "en": "to grade" },
+    "sentence": { "cn": "老师评了我的作文。", "en": "The teacher graded my essay." }
+  },
+  "短": {
+    "origin": "A dart 矢 next to 豆 — a tiny arrow is little, so 短 means short and brief.",
+    "word": { "w": "短发", "en": "short hair" },
+    "sentence": { "cn": "我的铅笔太短了。", "en": "My pencil is too short." }
+  },
+  "伯": {
+    "origin": "A person 亻 plus 白 (white) — picture an older man with white hair, your uncle 伯.",
+    "word": { "w": "伯伯", "en": "uncle" },
+    "sentence": { "cn": "伯伯送我一本书。", "en": "Uncle gave me a book as a gift." }
+  },
+  "深": {
+    "origin": "Water 氵 plus 罙 — water that goes way, way down; 深 means deep.",
+    "word": { "w": "深海", "en": "deep sea" },
+    "sentence": { "cn": "这个池子很深。", "en": "This pool is very deep." }
+  }
+}

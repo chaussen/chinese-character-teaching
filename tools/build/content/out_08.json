@@ -1,0 +1,202 @@
+{
+ "浅": {
+  "origin": "Water 氵 on the left means shallow water — like a stream you can wade across without getting wet.",
+  "word": { "w": "浅色", "en": "light color" },
+  "sentence": { "cn": "小河的水很浅。", "en": "The little river's water is very shallow." }
+ },
+ "正": {
+  "origin": "A foot 止 stopping right on the line 一 — standing straight and squarely in the correct spot.",
+  "word": { "w": "正确", "en": "correct" },
+  "sentence": { "cn": "他的答案是正确的。", "en": "His answer is correct." }
+ },
+ "突": {
+  "origin": "A dog 犬 suddenly bursts out of its cave 穴 — surprise! That's how 突 means sudden.",
+  "word": { "w": "突然", "en": "suddenly" },
+  "sentence": { "cn": "天突然下起了大雨。", "en": "It suddenly started to rain hard." }
+ },
+ "松": {
+  "origin": "The tree 木 on the left shows this is a kind of tree — the tall, green pine tree.",
+  "word": { "w": "松树", "en": "pine tree" },
+  "sentence": { "cn": "山上有很多松树。", "en": "There are many pine trees on the mountain." }
+ },
+ "鼠": {
+  "origin": "A whole mouse drawn out — teeth on top, paws on the left, and a long curly tail to the right.",
+  "word": { "w": "老鼠", "en": "mouse, rat" },
+  "sentence": { "cn": "猫在追一只老鼠。", "en": "The cat is chasing a mouse." }
+ },
+ "淹": {
+  "origin": "Water 氵 on the left — so much water that it covers everything over and drowns it.",
+  "word": { "w": "淹没", "en": "to submerge, to flood over" },
+  "sentence": { "cn": "大水淹了田地。", "en": "The flood drowned the fields." }
+ },
+ "定": {
+  "origin": "A person settling down to stay under a roof 宀 — once they sit, the plan is decided.",
+  "word": { "w": "一定", "en": "certainly, must" },
+  "sentence": { "cn": "我们定好了明天去公园。", "en": "We have decided to go to the park tomorrow." }
+ },
+ "猴": {
+  "origin": "The animal sign 犭 on the left tells you this is a creature — the cheeky, climbing monkey.",
+  "word": { "w": "猴子", "en": "monkey" },
+  "sentence": { "cn": "猴子最爱吃香蕉。", "en": "Monkeys love to eat bananas most." }
+ },
+ "捞": {
+  "origin": "A hand 扌 on the left does the work — reaching down to scoop and dredge something up from the water.",
+  "word": { "w": "打捞", "en": "to salvage, to fish up" },
+  "sentence": { "cn": "他从水里捞起一条鱼。", "en": "He scooped a fish up out of the water." }
+ },
+ "群": {
+  "origin": "Sheep 羊 on the right — and sheep love to gather, so 群 means a whole group or flock.",
+  "word": { "w": "一群", "en": "a group of" },
+  "sentence": { "cn": "天上飞过一群鸟。", "en": "A flock of birds flew across the sky." }
+ },
+ "啊": {
+  "origin": "A mouth 口 on the left shows it is a sound we say — 'ah!' when surprised or happy.",
+  "word": { "w": "好啊", "en": "okay!, sure!" },
+  "sentence": { "cn": "啊，天上有彩虹！", "en": "Ah, there's a rainbow in the sky!" }
+ },
+ "接": {
+  "origin": "A hand 扌 on the left reaches out to join things together or to catch what comes your way.",
+  "word": { "w": "接住", "en": "to catch" },
+  "sentence": { "cn": "请你接住这个球。", "en": "Please catch this ball." }
+ },
+ "碰": {
+  "origin": "A rock 石 on the left — think of two stones bumping and touching each other, knock-knock.",
+  "word": { "w": "碰到", "en": "to bump into, to run into" },
+  "sentence": { "cn": "我在路上碰到了同学。", "en": "I bumped into a classmate on the road." }
+ },
+ "司": {
+  "origin": "A mouth 口 giving orders inside a curved shape — the boss who takes charge and manages things.",
+  "word": { "w": "公司", "en": "company" },
+  "sentence": { "cn": "爸爸在一家公司工作。", "en": "Dad works at a company." }
+ },
+ "扑": {
+  "origin": "A hand 扌 on the left springs forward — pouncing and striking quickly, like a cat on a mouse.",
+  "word": { "w": "扑灭", "en": "to put out (a fire)" },
+  "sentence": { "cn": "小猫扑向了小球。", "en": "The kitten pounced on the little ball." }
+ },
+ "缸": {
+  "origin": "The pottery sign 缶 on the left shows this is a clay vessel — a big round jar or fish tank.",
+  "word": { "w": "鱼缸", "en": "fish tank" },
+  "sentence": { "cn": "鱼缸里有两条金鱼。", "en": "There are two goldfish in the fish tank." }
+ },
+ "装": {
+  "origin": "Clothes 衣 sit at the bottom — 装 is what you wear, your outfit, and also how you dress things up.",
+  "word": { "w": "衣装", "en": "clothing, attire" },
+  "sentence": { "cn": "她穿着漂亮的衣装。", "en": "She is wearing beautiful clothes." }
+ },
+ "吓": {
+  "origin": "A mouth 口 on the left lets out a cry — 'boo!' That sudden shout is how 吓 means to scare.",
+  "word": { "w": "吓人", "en": "scary, frightening" },
+  "sentence": { "cn": "这个故事吓了我一跳。", "en": "This story gave me a fright." }
+ },
+ "哭": {
+  "origin": "Two mouths 口 like crying eyes above, with a little dog 犬 below — boo-hoo, lots of tears.",
+  "word": { "w": "哭声", "en": "the sound of crying" },
+  "sentence": { "cn": "弟弟摔倒了，哭了起来。", "en": "Little brother fell down and started to cry." }
+ },
+ "慌": {
+  "origin": "The heart sign 忄 on the left — when your heart races and feels wild, that's feeling panicked.",
+  "word": { "w": "慌张", "en": "flustered, panicky" },
+  "sentence": { "cn": "别慌，慢慢说。", "en": "Don't panic, speak slowly." }
+ },
+ "法": {
+  "origin": "Water 氵 flows along its own course 去 — a steady path to follow, just like a rule or law.",
+  "word": { "w": "办法", "en": "method, way" },
+  "sentence": { "cn": "我想到了一个好办法。", "en": "I thought of a good method." }
+ },
+ "使": {
+  "origin": "A person 亻 on the left carrying out a task — sent to do a job and make things happen.",
+  "word": { "w": "使用", "en": "to use" },
+  "sentence": { "cn": "请正确使用剪刀。", "en": "Please use the scissors correctly." }
+ },
+ "劲": {
+  "origin": "Strength 力 on the right shows this is about power — the energy and force you push with.",
+  "word": { "w": "用劲", "en": "to exert effort, to use strength" },
+  "sentence": { "cn": "他用劲推开了大门。", "en": "He pushed the big door open with all his might." }
+ },
+ "砸": {
+  "origin": "A rock 石 on the left — drop a heavy stone down hard and you smash and crush things.",
+  "word": { "w": "砸碎", "en": "to smash to pieces" },
+  "sentence": { "cn": "皮球砸到了窗户。", "en": "The ball smashed into the window." }
+ },
+ "靠": {
+  "origin": "Picture two people back-to-back, leaning on each other for support — that's what 靠 means.",
+  "word": { "w": "靠近", "en": "to draw near, to lean close" },
+  "sentence": { "cn": "请不要靠近火堆。", "en": "Please do not get close to the fire." }
+ },
+ "仰": {
+  "origin": "A person 亻 on the left tips their head way back — looking up high to admire something.",
+  "word": { "w": "仰望", "en": "to look up at" },
+  "sentence": { "cn": "他仰头看着星星。", "en": "He looked up at the stars." }
+ },
+ "颗": {
+  "origin": "Fruit 果 on the left, head 页 on the right — 颗 counts small round things, like a seed or star.",
+  "word": { "w": "一颗", "en": "one (round small thing)" },
+  "sentence": { "cn": "天上有一颗亮亮的星。", "en": "There is one bright star in the sky." }
+ },
+ "连": {
+  "origin": "A cart 车 rolling along the road 辶 — moving and linking one place to the next, joining them up.",
+  "word": { "w": "连接", "en": "to connect, to link" },
+  "sentence": { "cn": "这座桥连着两个村子。", "en": "This bridge connects two villages." }
+ },
+ "勺": {
+  "origin": "A curved scoop 勹 with a little something 丶 held inside it — that's a spoon ready to feed you.",
+  "word": { "w": "勺子", "en": "spoon" },
+  "sentence": { "cn": "用勺子喝汤。", "en": "Drink the soup with a spoon." }
+ },
+ "斗": {
+  "origin": "Picture a hand gripping a long-handled dipper for measuring grain — a tool that turned into 'fight'.",
+  "word": { "w": "战斗", "en": "to battle, to fight" },
+  "sentence": { "cn": "勇士勇敢地战斗。", "en": "The warrior fought bravely." }
+ },
+ "离": {
+  "origin": "Picture a strange animal standing tall, head 亠 on top — over time 离 came to mean to leave or be apart.",
+  "word": { "w": "离开", "en": "to leave" },
+  "sentence": { "cn": "我们三点离开学校。", "en": "We leave school at three o'clock." }
+ },
+ "衡": {
+  "origin": "A big 大 horn 角 sits inside the road sign 行 — think of weighing and balancing things just right.",
+  "word": { "w": "平衡", "en": "balance" },
+  "sentence": { "cn": "他在木桥上保持平衡。", "en": "He kept his balance on the wooden bridge." }
+ },
+ "晓": {
+  "origin": "The sun 日 on the left is just peeking up — early light at daybreak, when day begins to dawn.",
+  "word": { "w": "知晓", "en": "to know, to be aware of" },
+  "sentence": { "cn": "天刚晓，鸟就叫了。", "en": "As soon as dawn broke, the birds began to sing." }
+ },
+ "孟": {
+  "origin": "A child 子 sitting above a bowl 皿 — picture the eldest, the first child who leads the others.",
+  "word": { "w": "孟夏", "en": "early summer" },
+  "sentence": { "cn": "孟夏的天气很暖和。", "en": "The weather in early summer is very warm." }
+ },
+ "浩": {
+  "origin": "Water 氵 on the left — imagine a huge, wide ocean stretching far. 浩 means vast and grand.",
+  "word": { "w": "浩大", "en": "vast, immense" },
+  "sentence": { "cn": "大海浩浩荡荡。", "en": "The sea is vast and mighty." }
+ },
+ "眠": {
+  "origin": "An eye 目 on the left — when your eyes close and rest, that is sleep.",
+  "word": { "w": "睡眠", "en": "sleep" },
+  "sentence": { "cn": "好的睡眠很重要。", "en": "Good sleep is very important." }
+ },
+ "啼": {
+  "origin": "A mouth 口 on the left makes the sound — the cry of a baby or a bird at dawn.",
+  "word": { "w": "啼叫", "en": "to crow, to cry out (of birds)" },
+  "sentence": { "cn": "公鸡早早地啼叫。", "en": "The rooster crows early in the morning." }
+ },
+ "悯": {
+  "origin": "The heart sign 忄 on the left — when your heart feels soft and sorry for someone, that is pity.",
+  "word": { "w": "怜悯", "en": "compassion, pity" },
+  "sentence": { "cn": "我们要怜悯弱小的动物。", "en": "We should have compassion for small, weak animals." }
+ },
+ "农": {
+  "origin": "The simple form of 農 — picture a farmer working the field with a hoe, growing our food.",
+  "word": { "w": "农民", "en": "farmer" },
+  "sentence": { "cn": "农民在田里种菜。", "en": "The farmer grows vegetables in the field." }
+ },
+ "绅": {
+  "origin": "The silk sign 纟 on the left — a long silk sash tied at the waist, worn by a polite gentleman.",
+  "word": { "w": "绅士", "en": "gentleman" },
+  "sentence": { "cn": "他是一位有礼貌的绅士。", "en": "He is a polite gentleman." }
+ }
+}

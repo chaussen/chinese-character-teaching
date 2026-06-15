@@ -1,0 +1,362 @@
+[
+ {
+  "ch": "她",
+  "py": "tā",
+  "en": "she, her",
+  "radical": "女",
+  "decomp": "⿰女也",
+  "hint": "A woman 女 beside you 也",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "服",
+  "py": "fú",
+  "en": "clothes",
+  "radical": "月",
+  "decomp": "⿰月⿸卩又",
+  "hint": "A person 卩 putting on 又 a coat 月",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "干",
+  "py": "gàn",
+  "en": "arid, dry",
+  "radical": "十",
+  "decomp": "⿱一十",
+  "hint": "A club or axe",
+  "etype": "pictographic"
+ },
+ {
+  "ch": "呢",
+  "py": "né",
+  "en": "wool",
+  "radical": "口",
+  "decomp": "⿰口尼",
+  "hint": "mouth",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "办",
+  "py": "bàn",
+  "en": "to set up",
+  "radical": "力",
+  "decomp": "⿻力八",
+  "hint": "strength",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "片",
+  "py": "piàn",
+  "en": "slice, splinter",
+  "radical": "片",
+  "decomp": "⿸？？",
+  "hint": "Half of a tree trunk; compare 爿",
+  "etype": "pictographic"
+ },
+ {
+  "ch": "兔",
+  "py": "tù",
+  "en": "rabbit, hare",
+  "radical": "儿",
+  "decomp": "⿸免丶",
+  "hint": "A rabbit",
+  "etype": "pictographic"
+ },
+ {
+  "ch": "赛",
+  "py": "sài",
+  "en": "to compete, to contend",
+  "radical": "贝",
+  "decomp": "⿱宀⿱？贝",
+  "hint": "money",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "乌",
+  "py": "wū",
+  "en": "crow, rook, raven",
+  "radical": "丿",
+  "decomp": "⿱丿？",
+  "hint": "Simplified form of 烏; a crow; compare 鸟",
+  "etype": "pictographic"
+ },
+ {
+  "ch": "步",
+  "py": "bù",
+  "en": "walk, stroll, pace, march",
+  "radical": "止",
+  "decomp": "⿱止？",
+  "hint": "Modern form of 歨; putting one foot 止 in front of the other",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "爬",
+  "py": "pá",
+  "en": "to climb, to scramble",
+  "radical": "爪",
+  "decomp": "⿺爪巴",
+  "hint": "claw",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "慢",
+  "py": "màn",
+  "en": "slowly, leisurely",
+  "radical": "忄",
+  "decomp": "⿰忄曼",
+  "hint": "heart",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "追",
+  "py": "zhuī",
+  "en": "to pursue, to chase after",
+  "radical": "辶",
+  "decomp": "⿺辶⿱丿㠯",
+  "hint": "walk",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "仍",
+  "py": "réng",
+  "en": "yet, still",
+  "radical": "亻",
+  "decomp": "⿰亻乃",
+  "hint": "then",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "第",
+  "py": "dì",
+  "en": "sequence, number",
+  "radical": "⺮",
+  "decomp": "⿱⺮弟",
+  "hint": "Bamboo strips ⺮ arrayed in sequence; 弟 provides the pronunciation",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "样",
+  "py": "yàng",
+  "en": "form, pattern, shape, style",
+  "radical": "木",
+  "decomp": "⿰木羊",
+  "hint": "tree",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "终",
+  "py": "zhōng",
+  "en": "end",
+  "radical": "纟",
+  "decomp": "⿰纟冬",
+  "hint": "thread",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "钓",
+  "py": "diào",
+  "en": "fishhook",
+  "radical": "钅",
+  "decomp": "⿰钅勺",
+  "hint": "A metal 钅 hook 勺; 勺 also provides the pronunciation",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "只",
+  "py": "zhī",
+  "en": "only, merely, just",
+  "radical": "口",
+  "decomp": "⿱口八",
+  "hint": "Simple words 八 coming from the mouth 口",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "捉",
+  "py": "zhuō",
+  "en": "to clutch, to grasp, to seize",
+  "radical": "扌",
+  "decomp": "⿰扌足",
+  "hint": "hand",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "什",
+  "py": "shén",
+  "en": "what? mixed, miscellaneous",
+  "radical": "亻",
+  "decomp": "⿰亻十",
+  "hint": "A file of ten 十 people 亻",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "么",
+  "py": "me",
+  "en": "interrogative particle",
+  "radical": "丿",
+  "decomp": "⿱丿厶",
+  "hint": "",
+  "etype": ""
+ },
+ {
+  "ch": "也",
+  "py": "yě",
+  "en": "also, too",
+  "radical": "乚",
+  "decomp": "⿻？乚",
+  "hint": "",
+  "etype": ""
+ },
+ {
+  "ch": "几",
+  "py": "jǐ",
+  "en": "small table",
+  "radical": "几",
+  "decomp": "⿰丿乙",
+  "hint": "A small table; compare 丌",
+  "etype": "pictographic"
+ },
+ {
+  "ch": "专",
+  "py": "zhuān",
+  "en": "concentrated, specialized",
+  "radical": "一",
+  "decomp": "⿻？一",
+  "hint": "",
+  "etype": ""
+ },
+ {
+  "ch": "笑",
+  "py": "xiào",
+  "en": "to smile, to laugh",
+  "radical": "⺮",
+  "decomp": "⿱⺮夭",
+  "hint": "A person 夭 with a big grin ⺮",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "狼",
+  "py": "láng",
+  "en": "wolf",
+  "radical": "犭",
+  "decomp": "⿰犭良",
+  "hint": "dog",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "活",
+  "py": "huó",
+  "en": "to exist, to live, to survive",
+  "radical": "氵",
+  "decomp": "⿰氵舌",
+  "hint": "water",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "弄",
+  "py": "nòng",
+  "en": "to do",
+  "radical": "廾",
+  "decomp": "⿱玉廾",
+  "hint": "Two hands 廾 playing with a piece of jade 玉; 廾 also provides the pronunciation",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "声",
+  "py": "shēng",
+  "en": "sound, noise",
+  "radical": "士",
+  "decomp": "⿱士？",
+  "hint": "Simplified form of 聲; see that character for the etymology",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "喊",
+  "py": "hǎn",
+  "en": "to shout, to yell, to call out",
+  "radical": "口",
+  "decomp": "⿰口咸",
+  "hint": "mouth",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "刻",
+  "py": "kè",
+  "en": "to carve, to engrave",
+  "radical": "刂",
+  "decomp": "⿰亥刂",
+  "hint": "knife",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "跟",
+  "py": "gēn",
+  "en": "heel",
+  "radical": "足",
+  "decomp": "⿰足艮",
+  "hint": "foot",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "撒",
+  "py": "sā",
+  "en": "to disperse, to let go, to relax",
+  "radical": "扌",
+  "decomp": "⿰扌散",
+  "hint": "To scatter 散 seeds by hand 扌; 散 also provides the pronunciation",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "谎",
+  "py": "huǎng",
+  "en": "to lie",
+  "radical": "讠",
+  "decomp": "⿰讠荒",
+  "hint": "speech",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "欺",
+  "py": "qī",
+  "en": "to cheat, to double-cross, to deceive",
+  "radical": "欠",
+  "decomp": "⿰其欠",
+  "hint": "lack",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "骗",
+  "py": "piàn",
+  "en": "to cheat, to defraud, to swindle",
+  "radical": "马",
+  "decomp": "⿰马扁",
+  "hint": "horse",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "理",
+  "py": "lǐ",
+  "en": "science, reason, logic",
+  "radical": "王",
+  "decomp": "⿰王里",
+  "hint": "king",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "静",
+  "py": "jìng",
+  "en": "still, quiet, motionless, gentle",
+  "radical": "青",
+  "decomp": "⿰青争",
+  "hint": "nature",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "夜",
+  "py": "yè",
+  "en": "night, dark",
+  "radical": "夕",
+  "decomp": "⿱亠⿰亻夕",
+  "hint": "A person 亻 sneaking by under cover 亠 of night 夕",
+  "etype": "ideographic"
+ }
+]

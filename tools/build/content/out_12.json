@@ -1,0 +1,202 @@
+{
+  "升": {
+    "origin": "Picture a ladle scooping up grain and rising — 升 means to rise or go up.",
+    "word": { "w": "升旗", "en": "to raise a flag" },
+    "sentence": { "cn": "太阳升起来了。", "en": "The sun has risen." }
+  },
+  "钟": {
+    "origin": "The metal radical 钅 plus 中 (center) — a metal bell at the center of town that rings the hour: a clock.",
+    "word": { "w": "闹钟", "en": "alarm clock" },
+    "sentence": { "cn": "现在五点钟了。", "en": "It is five o'clock now." }
+  },
+  "厅": {
+    "origin": "The cliff-like roof 厂 shelters 丁 — a big open room or hall where people gather.",
+    "word": { "w": "客厅", "en": "living room" },
+    "sentence": { "cn": "我们在客厅看电视。", "en": "We watch TV in the living room." }
+  },
+  "另": {
+    "origin": "A mouth 口 over strength 力 — point and say 'that other one!' 另 means another.",
+    "word": { "w": "另外", "en": "in addition, besides" },
+    "sentence": { "cn": "我想要另一个。", "en": "I want another one." }
+  },
+  "宝": {
+    "origin": "Jade 玉 kept safe under a house roof 宀 — your most precious treasure.",
+    "word": { "w": "宝贝", "en": "treasure, darling" },
+    "sentence": { "cn": "这是我的宝贝。", "en": "This is my treasure." }
+  },
+  "英": {
+    "origin": "Grass 艹 on top growing tall and beautiful — 英 means a flower's petal, and also heroic.",
+    "word": { "w": "英语", "en": "English (language)" },
+    "sentence": { "cn": "我喜欢学英语。", "en": "I like learning English." }
+  },
+  "雄": {
+    "origin": "The short-tailed bird 隹 on the right — 雄 is the male bird, the strong hero.",
+    "word": { "w": "英雄", "en": "hero" },
+    "sentence": { "cn": "他是大家的英雄。", "en": "He is everyone's hero." }
+  },
+  "顺": {
+    "origin": "A flowing river 川 beside a head 页 — go smoothly with the current. 顺 means smooth.",
+    "word": { "w": "顺利", "en": "smoothly" },
+    "sentence": { "cn": "祝你一路顺风。", "en": "Wish you a smooth journey." }
+  },
+  "充": {
+    "origin": "Picture pouring more in until it brims over the top — 充 means to fill up.",
+    "word": { "w": "充满", "en": "to be full of" },
+    "sentence": { "cn": "请给手机充电。", "en": "Please charge the phone." }
+  },
+  "秘": {
+    "origin": "Grain 禾 beside 必 (sound) — hidden away like seeds in the ground. 秘 means secret.",
+    "word": { "w": "秘密", "en": "secret" },
+    "sentence": { "cn": "这是我们的秘密。", "en": "This is our secret." }
+  },
+  "永": {
+    "origin": "Picture a long river flowing on and on without end — 永 means forever.",
+    "word": { "w": "永远", "en": "forever" },
+    "sentence": { "cn": "我们永远是朋友。", "en": "We are friends forever." }
+  },
+  "歇": {
+    "origin": "A wide-open yawn 欠 on the right — when you yawn, it's time to 歇, to rest.",
+    "word": { "w": "歇息", "en": "to rest" },
+    "sentence": { "cn": "我们坐下歇一会儿。", "en": "Let's sit down and rest a while." }
+  },
+  "吟": {
+    "origin": "A mouth 口 beside 今 (sound) — the mouth softly sings or hums a poem. 吟 means to chant.",
+    "word": { "w": "吟唱", "en": "to chant, to sing" },
+    "sentence": { "cn": "他在轻轻吟诗。", "en": "He is softly reciting a poem." }
+  },
+  "慈": {
+    "origin": "A heart 心 at the bottom full of warmth — 慈 means kind and loving, like a caring grandma.",
+    "word": { "w": "慈爱", "en": "loving-kindness" },
+    "sentence": { "cn": "奶奶很慈祥。", "en": "Grandma is very kind." }
+  },
+  "线": {
+    "origin": "The silk-thread radical 纟 on the left — a thin thread or line you can pull. 线 means line.",
+    "word": { "w": "线条", "en": "line, stroke" },
+    "sentence": { "cn": "妈妈用线缝衣服。", "en": "Mom sews clothes with thread." }
+  },
+  "临": {
+    "origin": "Picture leaning down close over something to look at it — 临 means to come near, to face.",
+    "word": { "w": "临时", "en": "temporary, at the last moment" },
+    "sentence": { "cn": "我们临时改了计划。", "en": "We changed the plan at the last minute." }
+  },
+  "缝": {
+    "origin": "The silk-thread radical 纟 beside 逢 (sound) — pull thread to join cloth. 缝 means to sew.",
+    "word": { "w": "缝衣服", "en": "to sew clothes" },
+    "sentence": { "cn": "奶奶在缝裤子。", "en": "Grandma is mending the trousers." }
+  },
+  "恐": {
+    "origin": "A heart 心 at the bottom pounding hard — 恐 is the trembly feeling of fear.",
+    "word": { "w": "恐龙", "en": "dinosaur" },
+    "sentence": { "cn": "我最爱看恐龙。", "en": "I love looking at dinosaurs the most." }
+  },
+  "迟": {
+    "origin": "The walking road 辶 wrapping a foot — taking slow steps, arriving late. 迟 means late.",
+    "word": { "w": "迟到", "en": "to be late" },
+    "sentence": { "cn": "上学不要迟到。", "en": "Don't be late for school." }
+  },
+  "归": {
+    "origin": "Simplified from 歸 — picture coming back home where you belong. 归 means to return.",
+    "word": { "w": "归来", "en": "to return" },
+    "sentence": { "cn": "爸爸晚上才归来。", "en": "Dad doesn't return until evening." }
+  },
+  "寸": {
+    "origin": "A hand with a tiny dot marking the pulse, about an inch up the wrist — 寸 means inch.",
+    "word": { "w": "尺寸", "en": "size, measurements" },
+    "sentence": { "cn": "这块布只有一寸长。", "en": "This cloth is only one inch long." }
+  },
+  "无": {
+    "origin": "Picture empty hands held up with nothing in them — 无 means none, not having.",
+    "word": { "w": "无聊", "en": "boring" },
+    "sentence": { "cn": "天空中无云。", "en": "There are no clouds in the sky." }
+  },
+  "改": {
+    "origin": "A hand with a stick 攵 helping a child 己 do better — 改 means to change or fix.",
+    "word": { "w": "改正", "en": "to correct" },
+    "sentence": { "cn": "请改正你的错误。", "en": "Please correct your mistakes." }
+  },
+  "衰": {
+    "origin": "A person in a robe 衣 drooping with a mark inside — 衰 means weak and worn out.",
+    "word": { "w": "衰老", "en": "to grow old, aging" },
+    "sentence": { "cn": "老人身体衰弱。", "en": "The old man's body is weak." }
+  },
+  "童": {
+    "origin": "A child standing 立 in the village 里 — 童 means child.",
+    "word": { "w": "儿童", "en": "child, children" },
+    "sentence": { "cn": "今天是儿童节。", "en": "Today is Children's Day." }
+  },
+  "何": {
+    "origin": "A person 亻 beside 可 (sound) asking with a shrug — 何 means what or why.",
+    "word": { "w": "任何", "en": "any, whatever" },
+    "sentence": { "cn": "你有何打算？", "en": "What plans do you have?" }
+  },
+  "冲": {
+    "origin": "Two ice drops 冫 plus 中 (center) — water rushing straight through the middle. 冲 means to rush, to rinse.",
+    "word": { "w": "冲水", "en": "to flush, to rinse" },
+    "sentence": { "cn": "他冲过来抱住我。", "en": "He rushed over and hugged me." }
+  },
+  "称": {
+    "origin": "Grain 禾 on the left being weighed and named — 称 means to weigh or to call something.",
+    "word": { "w": "称呼", "en": "to address, a form of address" },
+    "sentence": { "cn": "我们都称他老师。", "en": "We all call him teacher." }
+  },
+  "官": {
+    "origin": "Under a big roof 宀 sits someone in charge — 官 means an official.",
+    "word": { "w": "官员", "en": "official" },
+    "sentence": { "cn": "他是一位大官。", "en": "He is a high official." }
+  },
+  "重": {
+    "origin": "A heavy load carried a thousand 千 miles 里 — 重 means heavy.",
+    "word": { "w": "重要", "en": "important" },
+    "sentence": { "cn": "这个箱子很重。", "en": "This box is very heavy." }
+  },
+  "秤": {
+    "origin": "A flat, level 平 tool for weighing grain 禾 — 秤 means a scale or balance.",
+    "word": { "w": "天秤", "en": "balance scale" },
+    "sentence": { "cn": "用秤称一下苹果。", "en": "Weigh the apples on the scale." }
+  },
+  "摇": {
+    "origin": "A hand 扌 on the left doing the shaking — 摇 means to rock or shake.",
+    "word": { "w": "摇头", "en": "to shake one's head" },
+    "sentence": { "cn": "小狗摇着尾巴。", "en": "The puppy is wagging its tail." }
+  },
+  "赶": {
+    "origin": "The walking-fast 走 radical means running — 赶 means to chase or hurry after.",
+    "word": { "w": "赶快", "en": "hurry up, quickly" },
+    "sentence": { "cn": "我们赶快回家吧。", "en": "Let's hurry home." }
+  },
+  "沿": {
+    "origin": "Water 氵 on the left flowing along its banks — 沿 means to follow along.",
+    "word": { "w": "沿着", "en": "along" },
+    "sentence": { "cn": "我们沿着河走。", "en": "We walk along the river." }
+  },
+  "沉": {
+    "origin": "Too much 冗 water 氵 pulls things down — 沉 means to sink.",
+    "word": { "w": "沉默", "en": "silent" },
+    "sentence": { "cn": "石头沉到水里了。", "en": "The stone sank into the water." }
+  },
+  "赞": {
+    "origin": "The shell 贝 at the bottom meant money long ago — give support and praise. 赞 means to praise.",
+    "word": { "w": "赞美", "en": "to praise" },
+    "sentence": { "cn": "老师赞美了我。", "en": "The teacher praised me." }
+  },
+  "镜": {
+    "origin": "The metal radical 钅 plus 竟 (sound) — polished metal you see yourself in. 镜 means mirror.",
+    "word": { "w": "镜子", "en": "mirror" },
+    "sentence": { "cn": "她照着镜子笑。", "en": "She smiles into the mirror." }
+  },
+  "参": {
+    "origin": "Picture joining a group and adding your part — 参 means to take part, to join in.",
+    "word": { "w": "参加", "en": "to take part in" },
+    "sentence": { "cn": "我想参加比赛。", "en": "I want to take part in the contest." }
+  },
+  "任": {
+    "origin": "A person 亻 beside 壬 (sound) you can lean on — 任 means to trust or a duty.",
+    "word": { "w": "任务", "en": "task, mission" },
+    "sentence": { "cn": "这是我的任务。", "en": "This is my task." }
+  },
+  "而": {
+    "origin": "Originally a drawing of a beard hanging down; today 而 is a little word meaning 'and' or 'but'.",
+    "word": { "w": "而且", "en": "moreover, and also" },
+    "sentence": { "cn": "他聪明而努力。", "en": "He is clever and hardworking." }
+  }
+}

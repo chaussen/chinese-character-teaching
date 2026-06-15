@@ -1,0 +1,202 @@
+{
+  "她": {
+    "origin": "The woman radical 女 plus 也 — it means 'she,' the girl standing right beside you.",
+    "word": { "w": "她们", "en": "they (female)" },
+    "sentence": { "cn": "她是我的好朋友。", "en": "She is my good friend." }
+  },
+  "服": {
+    "origin": "Picture a person slipping their arm 又 into a coat 月 — 服 means clothes.",
+    "word": { "w": "衣服", "en": "clothes" },
+    "sentence": { "cn": "今天我穿新衣服。", "en": "Today I am wearing new clothes." }
+  },
+  "干": {
+    "origin": "A simple shape like a wooden pole standing straight up; 干 means dry or to do.",
+    "word": { "w": "干净", "en": "clean" },
+    "sentence": { "cn": "衣服晒得很干了。", "en": "The clothes are dried very dry." }
+  },
+  "呢": {
+    "origin": "A mouth 口 next to 尼 — say 'ne' out loud, the little word you add when asking.",
+    "word": { "w": "呢子", "en": "woolen cloth" },
+    "sentence": { "cn": "你的书包在哪里呢？", "en": "Where is your school bag?" }
+  },
+  "办": {
+    "origin": "Strength 力 in the middle with two dots beside it — use your power 力 to get things done.",
+    "word": { "w": "办法", "en": "way, method" },
+    "sentence": { "cn": "这件事我来办。", "en": "I will take care of this matter." }
+  },
+  "片": {
+    "origin": "Half of a tree trunk split down the middle — 片 means a thin flat slice.",
+    "word": { "w": "卡片", "en": "card" },
+    "sentence": { "cn": "我吃了一片面包。", "en": "I ate a slice of bread." }
+  },
+  "兔": {
+    "origin": "Look closely and you can see a rabbit with long ears and a tiny tail dot 丶.",
+    "word": { "w": "兔子", "en": "rabbit" },
+    "sentence": { "cn": "小兔子爱吃萝卜。", "en": "The little rabbit loves to eat carrots." }
+  },
+  "赛": {
+    "origin": "Under a roof 宀 sits a shell 贝 — long ago shells were money, the prize you win in a 赛, a race.",
+    "word": { "w": "比赛", "en": "competition, match" },
+    "sentence": { "cn": "明天有跑步比赛。", "en": "There is a running race tomorrow." }
+  },
+  "乌": {
+    "origin": "Like the bird 鸟 but missing the eye dot — a crow is so black you cannot even see its eye!",
+    "word": { "w": "乌云", "en": "dark clouds" },
+    "sentence": { "cn": "天上有一片乌云。", "en": "There is a dark cloud in the sky." }
+  },
+  "步": {
+    "origin": "Two feet 止, one in front of the other — 步 is taking a step as you walk.",
+    "word": { "w": "跑步", "en": "to run, running" },
+    "sentence": { "cn": "我们一起去散步。", "en": "Let's go for a walk together." }
+  },
+  "爬": {
+    "origin": "A claw 爪 reaching and grabbing — 爬 means to climb up, hand over hand.",
+    "word": { "w": "爬山", "en": "to climb a mountain" },
+    "sentence": { "cn": "小猫爬上了树。", "en": "The kitten climbed up the tree." }
+  },
+  "慢": {
+    "origin": "The heart radical 忄 on the left — a calm, easy heart takes its time, so 慢 means slow.",
+    "word": { "w": "慢慢", "en": "slowly" },
+    "sentence": { "cn": "他走路很慢。", "en": "He walks very slowly." }
+  },
+  "追": {
+    "origin": "The walking radical 辶 — your feet keep moving fast to 追, to chase after someone.",
+    "word": { "w": "追赶", "en": "to chase, to catch up" },
+    "sentence": { "cn": "小狗追着球跑。", "en": "The puppy runs chasing the ball." }
+  },
+  "仍": {
+    "origin": "A person 亻 standing beside 乃 — they are still there, so 仍 means still or yet.",
+    "word": { "w": "仍然", "en": "still, yet" },
+    "sentence": { "cn": "外面仍然在下雨。", "en": "It is still raining outside." }
+  },
+  "第": {
+    "origin": "Bamboo strips ⺮ laid out in order, with 弟 below — 第 marks the order, like 'number one.'",
+    "word": { "w": "第一", "en": "first" },
+    "sentence": { "cn": "他得了第一名。", "en": "He won first place." }
+  },
+  "样": {
+    "origin": "A tree 木 beside a sheep 羊 — 样 means a shape, kind, or pattern of things.",
+    "word": { "w": "一样", "en": "the same" },
+    "sentence": { "cn": "我们的衣服一样。", "en": "Our clothes are the same." }
+  },
+  "终": {
+    "origin": "The thread radical 纟 with 冬 (winter) — winter is the end of the year, so 终 means end.",
+    "word": { "w": "终于", "en": "finally, at last" },
+    "sentence": { "cn": "我们终于到家了。", "en": "We finally got home." }
+  },
+  "钓": {
+    "origin": "The metal radical 钅 makes a little hook 勺 — 钓 is fishing with a hook and line.",
+    "word": { "w": "钓鱼", "en": "to fish, fishing" },
+    "sentence": { "cn": "爷爷在河边钓鱼。", "en": "Grandpa is fishing by the river." }
+  },
+  "只": {
+    "origin": "A mouth 口 with two little strokes 八 — just a tiny word, so 只 means only or just.",
+    "word": { "w": "只有", "en": "only have, only" },
+    "sentence": { "cn": "我只有一支铅笔。", "en": "I only have one pencil." }
+  },
+  "捉": {
+    "origin": "The hand radical 扌 beside a foot 足 — chase with your feet, then grab with your hand to 捉, catch.",
+    "word": { "w": "捉迷藏", "en": "hide-and-seek" },
+    "sentence": { "cn": "猫想捉那只老鼠。", "en": "The cat wants to catch that mouse." }
+  },
+  "什": {
+    "origin": "A person 亻 next to ten 十 — when there are ten of something mixed up, you ask 什, 'what?'",
+    "word": { "w": "什么", "en": "what" },
+    "sentence": { "cn": "你在做什么？", "en": "What are you doing?" }
+  },
+  "么": {
+    "origin": "A tiny curling shape — 么 is a little ending sound, used in the question word 什么.",
+    "word": { "w": "怎么", "en": "how" },
+    "sentence": { "cn": "你怎么来学校？", "en": "How do you come to school?" }
+  },
+  "也": {
+    "origin": "A single curvy stroke 乚 — easy to write and easy to say, 也 means 'also' or 'too.'",
+    "word": { "w": "也许", "en": "maybe, perhaps" },
+    "sentence": { "cn": "我也想去公园。", "en": "I also want to go to the park." }
+  },
+  "几": {
+    "origin": "Two little legs holding up a flat top — 几 looks like a small table, and also asks 'how many?'",
+    "word": { "w": "几个", "en": "a few, how many" },
+    "sentence": { "cn": "你家有几口人？", "en": "How many people are in your family?" }
+  },
+  "专": {
+    "origin": "A simple shape that turns and focuses — 专 means to concentrate on one special thing.",
+    "word": { "w": "专心", "en": "to concentrate" },
+    "sentence": { "cn": "上课要专心听讲。", "en": "In class you must listen attentively." }
+  },
+  "笑": {
+    "origin": "Bamboo ⺮ on top, a swaying person 夭 below — picture a face crinkling up; 笑 means to laugh.",
+    "word": { "w": "微笑", "en": "smile" },
+    "sentence": { "cn": "妹妹笑得很开心。", "en": "Little sister laughs very happily." }
+  },
+  "狼": {
+    "origin": "The dog radical 犭 on the left — a wolf is a wild cousin of the dog, so 狼 means wolf.",
+    "word": { "w": "大灰狼", "en": "big bad wolf" },
+    "sentence": { "cn": "森林里有一只狼。", "en": "There is a wolf in the forest." }
+  },
+  "活": {
+    "origin": "Water 氵 plus a tongue 舌 — water keeps things alive, so 活 means to live.",
+    "word": { "w": "生活", "en": "life, to live" },
+    "sentence": { "cn": "小鱼在水里活着。", "en": "The little fish lives in the water." }
+  },
+  "弄": {
+    "origin": "Two hands 廾 holding up a piece of jade 玉 — playing with it; 弄 means to do or fiddle with.",
+    "word": { "w": "弄脏", "en": "to make dirty" },
+    "sentence": { "cn": "别把衣服弄脏了。", "en": "Don't get your clothes dirty." }
+  },
+  "声": {
+    "origin": "Think of something making noise that reaches your ear — 声 means sound or voice.",
+    "word": { "w": "声音", "en": "sound, voice" },
+    "sentence": { "cn": "我听到鸟的声音。", "en": "I hear the sound of birds." }
+  },
+  "喊": {
+    "origin": "The mouth radical 口 on the left — open your mouth wide and 喊, shout out loud!",
+    "word": { "w": "喊叫", "en": "to shout, to yell" },
+    "sentence": { "cn": "他大声喊我的名字。", "en": "He loudly shouts my name." }
+  },
+  "刻": {
+    "origin": "The knife radical 刂 on the right — use a blade to 刻, to carve marks into wood or stone.",
+    "word": { "w": "时刻", "en": "moment, time" },
+    "sentence": { "cn": "现在是六点一刻。", "en": "It is now a quarter past six." }
+  },
+  "跟": {
+    "origin": "The foot radical 足 on the left — your feet 跟 follow along behind someone.",
+    "word": { "w": "跟着", "en": "to follow" },
+    "sentence": { "cn": "小鸭跟着妈妈走。", "en": "The duckling follows its mother." }
+  },
+  "撒": {
+    "origin": "The hand radical 扌 plus 散 (scatter) — toss seeds with your hand; 撒 means to scatter or let go.",
+    "word": { "w": "撒种", "en": "to sow seeds" },
+    "sentence": { "cn": "他撒了一把米。", "en": "He scattered a handful of rice." }
+  },
+  "谎": {
+    "origin": "The speech radical 讠 plus 荒 — words that are empty and wild; 谎 means a lie.",
+    "word": { "w": "说谎", "en": "to tell a lie" },
+    "sentence": { "cn": "好孩子不说谎。", "en": "A good child does not lie." }
+  },
+  "欺": {
+    "origin": "The right side 欠 shows an open mouth — tricky words used to 欺, to cheat someone.",
+    "word": { "w": "欺负", "en": "to bully" },
+    "sentence": { "cn": "我们不欺负同学。", "en": "We do not bully our classmates." }
+  },
+  "骗": {
+    "origin": "The horse radical 马 on the left — once it meant jumping sideways onto a horse; now 骗 means to cheat.",
+    "word": { "w": "骗人", "en": "to deceive someone" },
+    "sentence": { "cn": "他用假话骗人。", "en": "He uses lies to deceive people." }
+  },
+  "理": {
+    "origin": "The jade radical 王 plus 里 — carefully sorting the lines in jade; 理 means reason or to tidy.",
+    "word": { "w": "道理", "en": "reason, sense" },
+    "sentence": { "cn": "妈妈讲的很有道理。", "en": "What mother says makes a lot of sense." }
+  },
+  "静": {
+    "origin": "On the left is 青 (green calm) — like a quiet green field, 静 means still and quiet.",
+    "word": { "w": "安静", "en": "quiet" },
+    "sentence": { "cn": "请大家安静一点。", "en": "Everyone please be a little quieter." }
+  },
+  "夜": {
+    "origin": "A person 亻 tucked under a cover 亠 with the moon-evening 夕 — 夜 means nighttime.",
+    "word": { "w": "夜晚", "en": "night" },
+    "sentence": { "cn": "夜晚的天上有星星。", "en": "At night there are stars in the sky." }
+  }
+}

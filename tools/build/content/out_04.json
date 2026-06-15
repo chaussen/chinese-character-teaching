@@ -1,0 +1,202 @@
+{
+  "想": {
+    "origin": "On top 相 gives the sound, and underneath sits 心 (heart) — when your heart thinks, you 想 (want or wish).",
+    "word": { "w": "想念", "en": "to miss someone" },
+    "sentence": { "cn": "我想吃苹果。", "en": "I want to eat an apple." }
+  },
+  "些": {
+    "origin": "Picture 此 (this) sitting above 二 (two) — pointing at just a few of something means 些 (some).",
+    "word": { "w": "一些", "en": "some, a few" },
+    "sentence": { "cn": "我要买一些水果。", "en": "I want to buy some fruit." }
+  },
+  "先": {
+    "origin": "A foot stepping out in front of a person 儿 — whoever steps ahead goes 先 (first).",
+    "word": { "w": "先生", "en": "mister, sir" },
+    "sentence": { "cn": "你先走吧。", "en": "You go first." }
+  },
+  "怎": {
+    "origin": "The heart 心 sits at the bottom, asking with worry — when your heart wonders, you ask 怎 (how).",
+    "word": { "w": "怎么", "en": "how, why" },
+    "sentence": { "cn": "你怎么来的？", "en": "How did you get here?" }
+  },
+  "倒": {
+    "origin": "A person 亻 next to 到 — when a person tips all the way over, they 倒 (fall down).",
+    "word": { "w": "摔倒", "en": "to trip and fall" },
+    "sentence": { "cn": "小猫倒在地上。", "en": "The kitten fell down on the ground." }
+  },
+  "筷": {
+    "origin": "Bamboo ⺮ on top with 快 below — bamboo sticks you eat with quickly are 筷 (chopsticks).",
+    "word": { "w": "筷子", "en": "chopsticks" },
+    "sentence": { "cn": "我用筷子吃饭。", "en": "I eat with chopsticks." }
+  },
+  "练": {
+    "origin": "Thread 纟 on the left — like working a thread again and again, you 练 (practice) until you're good.",
+    "word": { "w": "练习", "en": "to practice" },
+    "sentence": { "cn": "我每天练写字。", "en": "I practice writing every day." }
+  },
+  "像": {
+    "origin": "A person 亻 standing beside an elephant 象 — copying just how it looks means 像 (to resemble).",
+    "word": { "w": "好像", "en": "to seem like" },
+    "sentence": { "cn": "他长得像爸爸。", "en": "He looks like his dad." }
+  },
+  "幅": {
+    "origin": "Cloth 巾 on the left with 畐 giving the sound — a hanging strip of cloth is one 幅 (piece) of art.",
+    "word": { "w": "一幅画", "en": "a painting" },
+    "sentence": { "cn": "墙上有一幅画。", "en": "There is a painting on the wall." }
+  },
+  "弯": {
+    "origin": "A bow 弓 sits at the bottom — a bow is never straight, so 弯 means bent or curved.",
+    "word": { "w": "弯腰", "en": "to bend over" },
+    "sentence": { "cn": "这条路很弯。", "en": "This road is very curvy." }
+  },
+  "每": {
+    "origin": "Think of a mother 母 caring the same way for all her children — 每 means each and every one.",
+    "word": { "w": "每天", "en": "every day" },
+    "sentence": { "cn": "每天我都喝牛奶。", "en": "I drink milk every day." }
+  },
+  "侯": {
+    "origin": "A person 亻 standing tall like a target 矦 — an honored noble person was called a 侯 (lord).",
+    "word": { "w": "诸侯", "en": "feudal lords" },
+    "sentence": { "cn": "古时候有很多侯。", "en": "In old times there were many lords." }
+  },
+  "伸": {
+    "origin": "A person 亻 beside 申 — reaching out long and straight, the person can 伸 (stretch).",
+    "word": { "w": "伸手", "en": "to reach out a hand" },
+    "sentence": { "cn": "请伸出你的手。", "en": "Please stretch out your hand." }
+  },
+  "腿": {
+    "origin": "Flesh ⺼ on the left with 退 (to step back) — the fleshy part you walk with is your 腿 (leg).",
+    "word": { "w": "大腿", "en": "thigh" },
+    "sentence": { "cn": "我的腿有点疼。", "en": "My legs hurt a little." }
+  },
+  "让": {
+    "origin": "Speech 讠 on the left — using kind words to step aside means 让 (to let or yield).",
+    "word": { "w": "让开", "en": "to step aside" },
+    "sentence": { "cn": "妈妈让我玩。", "en": "Mom lets me play." }
+  },
+  "进": {
+    "origin": "The walking radical 辶 wraps around 井 — when your feet move forward, you 进 (enter or advance).",
+    "word": { "w": "进来", "en": "to come in" },
+    "sentence": { "cn": "请进来坐。", "en": "Please come in and sit." }
+  },
+  "猜": {
+    "origin": "The dog radical 犭 on the left with 青 — sniffing around to figure something out is to 猜 (guess).",
+    "word": { "w": "猜谜", "en": "to guess a riddle" },
+    "sentence": { "cn": "你猜我多大？", "en": "Can you guess how old I am?" }
+  },
+  "粉": {
+    "origin": "Grain 米 on the left with 分 (to divide) — grain ground into tiny bits becomes 粉 (powder).",
+    "word": { "w": "面粉", "en": "flour" },
+    "sentence": { "cn": "桌上有白粉。", "en": "There is white powder on the table." }
+  },
+  "采": {
+    "origin": "A hand 爫 reaching down onto a tree 木 — picking fruit off the branches is to 采 (gather).",
+    "word": { "w": "采花", "en": "to pick flowers" },
+    "sentence": { "cn": "我们去采草莓。", "en": "Let's go pick strawberries." }
+  },
+  "蜜": {
+    "origin": "The insect 虫 at the bottom — the sweet treat made by little bees is 蜜 (honey).",
+    "word": { "w": "蜂蜜", "en": "honey" },
+    "sentence": { "cn": "小熊爱吃蜜。", "en": "The little bear loves eating honey." }
+  },
+  "劳": {
+    "origin": "Strength 力 at the bottom lifting a load — using all your might to work hard is 劳 (labor).",
+    "word": { "w": "劳动", "en": "to do physical work" },
+    "sentence": { "cn": "农民很辛劳。", "en": "Farmers work very hard." }
+  },
+  "落": {
+    "origin": "Grass 艹 on top with 洛 giving the sound — like a leaf coming down, 落 means to fall.",
+    "word": { "w": "落叶", "en": "fallen leaves" },
+    "sentence": { "cn": "树叶落下来了。", "en": "The leaves have fallen down." }
+  },
+  "腰": {
+    "origin": "Flesh ⺼ on the left with 要 for the sound — the bendy middle part of your body is your 腰 (waist).",
+    "word": { "w": "弯腰", "en": "to bend at the waist" },
+    "sentence": { "cn": "我的腰好酸。", "en": "My lower back is sore." }
+  },
+  "挂": {
+    "origin": "The hand radical 扌 on the left — your hand reaches up to 挂 (hang) something on the wall.",
+    "word": { "w": "挂钟", "en": "wall clock" },
+    "sentence": { "cn": "墙上挂着帽子。", "en": "A hat is hanging on the wall." }
+  },
+  "梢": {
+    "origin": "Tree 木 on the left with 肖 for the sound — the very end of a tree's branch is the 梢 (treetop).",
+    "word": { "w": "树梢", "en": "treetop, branch tip" },
+    "sentence": { "cn": "鸟停在树梢。", "en": "A bird rests on the treetop." }
+  },
+  "把": {
+    "origin": "The hand radical 扌 on the left — your hand reaches out to 把 (grasp and hold) something.",
+    "word": { "w": "把手", "en": "handle" },
+    "sentence": { "cn": "请把书给我。", "en": "Please give me the book." }
+  },
+  "刀": {
+    "origin": "The shape itself is a picture of a blade with a handle — 刀 simply means knife.",
+    "word": { "w": "小刀", "en": "small knife" },
+    "sentence": { "cn": "这把刀很快。", "en": "This knife is very sharp." }
+  },
+  "谁": {
+    "origin": "Speech 讠 on the left with a little bird 隹 — when you speak to ask a name, you say 谁 (who).",
+    "word": { "w": "谁的", "en": "whose" },
+    "sentence": { "cn": "门外是谁？", "en": "Who is outside the door?" }
+  },
+  "吗": {
+    "origin": "A mouth 口 on the left with horse 马 for the sound — the mouth's little question word is 吗.",
+    "word": { "w": "好吗", "en": "okay?, alright?" },
+    "sentence": { "cn": "你饿了吗？", "en": "Are you hungry?" }
+  },
+  "变": {
+    "origin": "A hand 又 at the bottom busily working — when something turns into something new, it 变 (changes).",
+    "word": { "w": "变化", "en": "change" },
+    "sentence": { "cn": "天气变冷了。", "en": "The weather has turned cold." }
+  },
+  "汽": {
+    "origin": "Water 氵 on the left with air 气 — when water turns into floating air, it becomes 汽 (steam, gas).",
+    "word": { "w": "汽车", "en": "car" },
+    "sentence": { "cn": "汽车开走了。", "en": "The car drove away." }
+  },
+  "飘": {
+    "origin": "Wind 风 on the right pushing 票 along — caught in the breeze, things 飘 (float and flutter).",
+    "word": { "w": "飘扬", "en": "to flutter, to wave" },
+    "sentence": { "cn": "红旗在风中飘。", "en": "The red flag flutters in the wind." }
+  },
+  "珠": {
+    "origin": "The jade radical 王 on the left with 朱 — a small round shiny gem is a 珠 (pearl or bead).",
+    "word": { "w": "珍珠", "en": "pearl" },
+    "sentence": { "cn": "她戴着珠子。", "en": "She is wearing beads." }
+  },
+  "掉": {
+    "origin": "The hand radical 扌 on the left — letting go, the thing slips and 掉 (drops) to the floor.",
+    "word": { "w": "掉下", "en": "to fall down" },
+    "sentence": { "cn": "杯子掉了。", "en": "The cup fell down." }
+  },
+  "湖": {
+    "origin": "Water 氵 on the left with 胡 for the sound — a big quiet pool of water is a 湖 (lake).",
+    "word": { "w": "湖水", "en": "lake water" },
+    "sentence": { "cn": "湖里有小鱼。", "en": "There are little fish in the lake." }
+  },
+  "问": {
+    "origin": "A mouth 口 peeking out from a door 门 — calling through the door to find out is to 问 (ask).",
+    "word": { "w": "问题", "en": "question, problem" },
+    "sentence": { "cn": "我想问老师。", "en": "I want to ask the teacher." }
+  },
+  "渴": {
+    "origin": "Water 氵 on the left with 曷 for the sound — when you really need water, you feel 渴 (thirsty).",
+    "word": { "w": "口渴", "en": "thirsty" },
+    "sentence": { "cn": "我渴了想喝水。", "en": "I'm thirsty and want some water." }
+  },
+  "死": {
+    "origin": "A person kneeling 匕 beside bare bones 歹 — the sad picture of an ending means 死 (dead).",
+    "word": { "w": "死亡", "en": "death" },
+    "sentence": { "cn": "那只虫子死了。", "en": "That bug has died." }
+  },
+  "啦": {
+    "origin": "A mouth 口 on the left with 拉 for the sound — the cheerful word your mouth adds at the end is 啦.",
+    "word": { "w": "好啦", "en": "okay then!" },
+    "sentence": { "cn": "我们走啦！", "en": "Let's go now!" }
+  },
+  "刚": {
+    "origin": "The knife radical 刂 on the right — strong and sharp like a blade, 刚 means firm or just now.",
+    "word": { "w": "刚才", "en": "just now" },
+    "sentence": { "cn": "他刚回来。", "en": "He just came back." }
+  }
+}

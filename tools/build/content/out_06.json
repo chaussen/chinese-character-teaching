@@ -1,0 +1,202 @@
+{
+  "床": {
+    "origin": "A roof 广 sheltering wood 木 — a wooden frame under a house where you sleep: a bed.",
+    "word": { "w": "起床", "en": "to get out of bed" },
+    "sentence": { "cn": "我每天早上七点起床。", "en": "I get up at seven every morning." }
+  },
+  "疑": {
+    "origin": "Picture someone stopping at a crossroads, unsure which way to go — that puzzled, head-scratching feeling is doubt.",
+    "word": { "w": "怀疑", "en": "to doubt" },
+    "sentence": { "cn": "这道题我有点疑问。", "en": "I have a little question about this problem." }
+  },
+  "举": {
+    "origin": "Lots of hands working together to lift something up high — 举 means to raise.",
+    "word": { "w": "举手", "en": "to raise one's hand" },
+    "sentence": { "cn": "有问题请举手。", "en": "If you have a question, please raise your hand." }
+  },
+  "低": {
+    "origin": "A person 亻 bending way down toward the ground — they make themselves low.",
+    "word": { "w": "低头", "en": "to lower one's head" },
+    "sentence": { "cn": "小鸟飞得很低。", "en": "The little bird flies very low." }
+  },
+  "乡": {
+    "origin": "The flowing lines look like winding country paths and rivers leading home to your village.",
+    "word": { "w": "家乡", "en": "hometown" },
+    "sentence": { "cn": "我爱我的家乡。", "en": "I love my hometown." }
+  },
+  "楼": {
+    "origin": "Wood 木 stacked up floor by floor — that's how you build a tall, many-story building.",
+    "word": { "w": "楼上", "en": "upstairs" },
+    "sentence": { "cn": "我家住在三楼。", "en": "My home is on the third floor." }
+  },
+  "层": {
+    "origin": "Under a roof 尸, things pile up in layers — 层 is a floor or layer.",
+    "word": { "w": "一层", "en": "one layer / first floor" },
+    "sentence": { "cn": "这座楼有十层。", "en": "This building has ten floors." }
+  },
+  "造": {
+    "origin": "The walking radical 辶 plus 告 — you go to work and tell people what to make: you build it.",
+    "word": { "w": "造句", "en": "to make a sentence" },
+    "sentence": { "cn": "工人们正在造房子。", "en": "The workers are building a house." }
+  },
+  "代": {
+    "origin": "A person 亻 standing in for another as time marches on — one generation, one era.",
+    "word": { "w": "古代", "en": "ancient times" },
+    "sentence": { "cn": "我代你去开会。", "en": "I will go to the meeting on your behalf." }
+  },
+  "竹": {
+    "origin": "Two tall stalks with leaves hanging down — a perfect picture of bamboo.",
+    "word": { "w": "竹子", "en": "bamboo" },
+    "sentence": { "cn": "熊猫最爱吃竹子。", "en": "Pandas love to eat bamboo the most." }
+  },
+  "试": {
+    "origin": "Speech 讠 next to 式 (a method) — you talk through a way of doing something: you try it.",
+    "word": { "w": "考试", "en": "exam" },
+    "sentence": { "cn": "我想试一试。", "en": "I want to give it a try." }
+  },
+  "验": {
+    "origin": "A horse 马 plus 佥 — long ago people checked a horse carefully before buying it: to test and inspect.",
+    "word": { "w": "试验", "en": "experiment" },
+    "sentence": { "cn": "我们做了一个实验。", "en": "We did an experiment." }
+  },
+  "皮": {
+    "origin": "A hand using a tool to peel the hide off — 皮 means skin or peel.",
+    "word": { "w": "皮球", "en": "rubber ball" },
+    "sentence": { "cn": "香蕉皮别乱扔。", "en": "Don't throw the banana peel around." }
+  },
+  "破": {
+    "origin": "A rock 石 hitting skin 皮 — something cracks and tears: it breaks.",
+    "word": { "w": "破了", "en": "broken" },
+    "sentence": { "cn": "我的杯子破了。", "en": "My cup is broken." }
+  },
+  "布": {
+    "origin": "A hand spreading out a piece of cloth 巾 — 布 is cloth or fabric.",
+    "word": { "w": "布料", "en": "fabric" },
+    "sentence": { "cn": "妈妈用布做了一个袋子。", "en": "Mom made a bag out of cloth." }
+  },
+  "术": {
+    "origin": "Wood 木 with a small mark — think of a clever skill grown like a branch: 术 means skill or art.",
+    "word": { "w": "美术", "en": "fine art" },
+    "sentence": { "cn": "我喜欢上美术课。", "en": "I like art class." }
+  },
+  "之": {
+    "origin": "Shaped like a little foot stepping forward — an old word that means to go or links words together.",
+    "word": { "w": "之间", "en": "between" },
+    "sentence": { "cn": "这是我之前的书。", "en": "This is the book I had before." }
+  },
+  "砍": {
+    "origin": "A rock 石 swung with an open mouth 欠 of effort — you chop and hack with it.",
+    "word": { "w": "砍树", "en": "to chop a tree" },
+    "sentence": { "cn": "他用斧头砍木头。", "en": "He chops wood with an axe." }
+  },
+  "建": {
+    "origin": "A hand holding a brush 聿 plus the walking line 廴 — drawing plans and stepping out to build.",
+    "word": { "w": "建房", "en": "to build a house" },
+    "sentence": { "cn": "工人在建一座桥。", "en": "The workers are building a bridge." }
+  },
+  "房": {
+    "origin": "A door 户 with 方 below it — step through the door into a room: a house or room.",
+    "word": { "w": "房间", "en": "room" },
+    "sentence": { "cn": "我的房间很干净。", "en": "My room is very clean." }
+  },
+  "粗": {
+    "origin": "Grain 米 next to 且 — big, chunky grains feel thick and rough: 粗 means thick or coarse.",
+    "word": { "w": "粗心", "en": "careless" },
+    "sentence": { "cn": "这棵树很粗。", "en": "This tree is very thick." }
+  },
+  "累": {
+    "origin": "A field 田 piled over silk threads 糸 — heavy work stacking up makes you tired.",
+    "word": { "w": "劳累", "en": "weary" },
+    "sentence": { "cn": "走了一天我很累。", "en": "After walking all day I am very tired." }
+  },
+  "路": {
+    "origin": "A foot 足 beside 各 — feet going their separate ways trace out a road.",
+    "word": { "w": "马路", "en": "road" },
+    "sentence": { "cn": "过马路要小心。", "en": "Be careful when crossing the road." }
+  },
+  "难": {
+    "origin": "A hand 又 trying to catch a flying bird 隹 — so tricky to grab! That's why 难 means difficult.",
+    "word": { "w": "困难", "en": "difficulty" },
+    "sentence": { "cn": "这道题太难了。", "en": "This problem is too hard." }
+  },
+  "抓": {
+    "origin": "A hand 扌 with claws 爪 reaching out — grab and hold on tight!",
+    "word": { "w": "抓住", "en": "to grab hold of" },
+    "sentence": { "cn": "小猫抓住了线团。", "en": "The kitten grabbed the ball of yarn." }
+  },
+  "疼": {
+    "origin": "The sickness sign 疒 with 冬 (winter) inside — a cold, sore ache: 疼 means it hurts.",
+    "word": { "w": "头疼", "en": "headache" },
+    "sentence": { "cn": "我的肚子有点疼。", "en": "My tummy hurts a little." }
+  },
+  "痛": {
+    "origin": "The sickness sign 疒 wrapped around 甬 — that sharp, painful feeling: 痛 means pain.",
+    "word": { "w": "痛苦", "en": "pain, suffering" },
+    "sentence": { "cn": "他的牙很痛。", "en": "His tooth hurts a lot." }
+  },
+  "血": {
+    "origin": "A drop 丿 falling into a bowl 皿 — it pictures a bowl of blood.",
+    "word": { "w": "血液", "en": "blood" },
+    "sentence": { "cn": "他的手流血了。", "en": "His hand is bleeding." }
+  },
+  "棵": {
+    "origin": "Tree wood 木 next to fruit 果 — 棵 is the counting word we use for trees.",
+    "word": { "w": "一棵树", "en": "one tree" },
+    "sentence": { "cn": "门口有一棵大树。", "en": "There is a big tree by the door." }
+  },
+  "利": {
+    "origin": "A blade 刂 cutting ripe grain 禾 — a sharp tool brings a good harvest and benefit.",
+    "word": { "w": "顺利", "en": "smoothly" },
+    "sentence": { "cn": "这把刀很锋利。", "en": "This knife is very sharp." }
+  },
+  "细": {
+    "origin": "Silk 纟 beside a tiny field 田 — silk threads are super thin: 细 means fine or slender.",
+    "word": { "w": "仔细", "en": "carefully" },
+    "sentence": { "cn": "请你仔细看。", "en": "Please look carefully." }
+  },
+  "如": {
+    "origin": "A woman 女 next to a mouth 口 — listening and going along, meaning 'as' or 'like'.",
+    "word": { "w": "如果", "en": "if" },
+    "sentence": { "cn": "如果下雨就别出门。", "en": "If it rains, don't go out." }
+  },
+  "切": {
+    "origin": "The number 七 next to a knife 刀 — bring the knife down and slice it: 切 means to cut.",
+    "word": { "w": "切菜", "en": "to chop vegetables" },
+    "sentence": { "cn": "妈妈在切水果。", "en": "Mom is cutting fruit." }
+  },
+  "逛": {
+    "origin": "The walking radical 辶 with 狂 — wandering around freely with no rush: to stroll.",
+    "word": { "w": "逛街", "en": "to stroll the streets" },
+    "sentence": { "cn": "周末我们去逛公园。", "en": "On the weekend we stroll in the park." }
+  },
+  "力": {
+    "origin": "Shaped like a strong plow or a flexed arm pushing hard — 力 means strength and power.",
+    "word": { "w": "力气", "en": "physical strength" },
+    "sentence": { "cn": "他的力气真大。", "en": "He is really strong." }
+  },
+  "暖": {
+    "origin": "The sun 日 next to 爰 — sunshine spreading over you makes everything cozy and warm.",
+    "word": { "w": "温暖", "en": "warm" },
+    "sentence": { "cn": "春天的天气很暖。", "en": "The weather in spring is warm." }
+  },
+  "曲": {
+    "origin": "Picture a bent, folded shape with lines turning inside — 曲 means crooked or curved.",
+    "word": { "w": "弯曲", "en": "curved, winding" },
+    "sentence": { "cn": "这条小路弯弯曲曲。", "en": "This little path twists and turns." }
+  },
+  "哪": {
+    "origin": "A mouth 口 next to 那 — the mouth asks the question 'which one?' or 'where?'",
+    "word": { "w": "哪里", "en": "where" },
+    "sentence": { "cn": "你住在哪里？", "en": "Where do you live?" }
+  },
+  "款": {
+    "origin": "Think of 欠 (owing) on the side — money you give or owe: 款 means funds or a payment.",
+    "word": { "w": "付款", "en": "to make a payment" },
+    "sentence": { "cn": "这款玩具很好玩。", "en": "This kind of toy is really fun." }
+  },
+  "借": {
+    "origin": "A person 亻 next to 昔 — one person hands something to another for a while: to borrow or lend.",
+    "word": { "w": "借书", "en": "to borrow a book" },
+    "sentence": { "cn": "我能借你的笔吗？", "en": "May I borrow your pen?" }
+  }
+}

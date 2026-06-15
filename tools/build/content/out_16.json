@@ -1,0 +1,431 @@
+{
+ "祖": {
+  "origin": "The 礻 (spirit/altar) side honors those before us, so 祖 means ancestor — family we remember.",
+  "word": {
+   "w": "祖父",
+   "en": "grandfather"
+  },
+  "sentence": {
+   "cn": "我爱我的祖父。",
+   "en": "I love my grandfather."
+  }
+ },
+ "政": {
+  "origin": "正 (upright/correct) plus 攵 (a tapping hand) means setting things right — that's government and politics.",
+  "word": {
+   "w": "政府",
+   "en": "government"
+  },
+  "sentence": {
+   "cn": "政府帮助大家。",
+   "en": "The government helps everyone."
+  }
+ },
+ "治": {
+  "origin": "Water 氵 needs a wise plan 台 to guide it — so 治 means to manage and govern.",
+  "word": {
+   "w": "治理",
+   "en": "to govern"
+  },
+  "sentence": {
+   "cn": "大禹治水的故事很有名。",
+   "en": "The story of Yu controlling the floods is famous."
+  }
+ },
+ "却": {
+  "origin": "去 (to go away) beside a kneeling 卩 (seal) — picture turning back, so 却 means 'but' or 'yet'.",
+  "word": {
+   "w": "冷却",
+   "en": "to cool down"
+  },
+  "sentence": {
+   "cn": "天黑了，他却还在玩。",
+   "en": "It got dark, but he was still playing."
+  }
+ },
+ "灭": {
+  "origin": "A lid 一 pressed down on a fire 火 — cover the flame and it goes out, so 灭 means to extinguish.",
+  "word": {
+   "w": "灭火",
+   "en": "to put out a fire"
+  },
+  "sentence": {
+   "cn": "请把灯灭了。",
+   "en": "Please turn off the light."
+  }
+ },
+ "初": {
+  "origin": "A knife 刀 cutting cloth 衤 is the very first step in sewing, so 初 means beginning.",
+  "word": {
+   "w": "初次",
+   "en": "first time"
+  },
+  "sentence": {
+   "cn": "这是我初次来北京。",
+   "en": "This is my first time coming to Beijing."
+  }
+ },
+ "投": {
+  "origin": "A hand 扌 swinging hard — picture an arm tossing a ball, so 投 means to throw or pitch.",
+  "word": {
+   "w": "投球",
+   "en": "to throw a ball"
+  },
+  "sentence": {
+   "cn": "他用力投球。",
+   "en": "He throws the ball hard."
+  }
+ },
+ "悲": {
+  "origin": "Below 非 (not, opposite) sits the heart 心 — a heart turned the wrong way feels sad, so 悲 means sorrow.",
+  "word": {
+   "w": "悲伤",
+   "en": "sad"
+  },
+  "sentence": {
+   "cn": "她哭得很悲伤。",
+   "en": "She cried very sadly."
+  }
+ },
+ "划": {
+  "origin": "Think of a paddle slicing through water in long strokes — 划 means to row or paddle a boat.",
+  "word": {
+   "w": "划船",
+   "en": "to row a boat"
+  },
+  "sentence": {
+   "cn": "我们去湖上划船。",
+   "en": "We go rowing a boat on the lake."
+  }
+ },
+ "寻": {
+  "origin": "A hand 彐 and a measuring inch 寸 reaching out and feeling around — that's 寻, to search and seek.",
+  "word": {
+   "w": "寻找",
+   "en": "to look for"
+  },
+  "sentence": {
+   "cn": "我在寻找我的猫。",
+   "en": "I am looking for my cat."
+  }
+ },
+ "伤": {
+  "origin": "A person 亻 who has been hurt — 伤 means to injure or a wound.",
+  "word": {
+   "w": "受伤",
+   "en": "to get hurt"
+  },
+  "sentence": {
+   "cn": "他的手受伤了。",
+   "en": "His hand got hurt."
+  }
+ },
+ "纪": {
+  "origin": "Silk thread 纟 kept neat and in order — 纪 means discipline, and also an age or era.",
+  "word": {
+   "w": "世纪",
+   "en": "century"
+  },
+  "sentence": {
+   "cn": "他年纪很小。",
+   "en": "He is very young in age."
+  }
+ },
+ "念": {
+  "origin": "Keep the present 今 close to your heart 心 — 念 means to think of and to miss someone.",
+  "word": {
+   "w": "想念",
+   "en": "to miss"
+  },
+  "sentence": {
+   "cn": "我很想念奶奶。",
+   "en": "I miss Grandma very much."
+  }
+ },
+ "德": {
+  "origin": "Walk 彳 with a straight eye and an honest heart 心 — that good path is 德, virtue.",
+  "word": {
+   "w": "道德",
+   "en": "morality"
+  },
+  "sentence": {
+   "cn": "她是一个有道德的人。",
+   "en": "She is a person with good morals."
+  }
+ },
+ "毕": {
+  "origin": "Picture finishing every last task on the list — 毕 means to complete or to end.",
+  "word": {
+   "w": "毕业",
+   "en": "to graduate"
+  },
+  "sentence": {
+   "cn": "哥哥今年大学毕业。",
+   "en": "My brother graduates from college this year."
+  }
+ },
+ "战": {
+  "origin": "占 (to occupy) beside 戈 (a spear) — soldiers fighting for a place, so 战 means war and battle.",
+  "word": {
+   "w": "战士",
+   "en": "soldier"
+  },
+  "sentence": {
+   "cn": "战士很勇敢。",
+   "en": "The soldiers are very brave."
+  }
+ },
+ "领": {
+  "origin": "令 (command) beside 页 (a head) — the head that gives orders, so 领 means to lead, and also a collar.",
+  "word": {
+   "w": "领导",
+   "en": "leader"
+  },
+  "sentence": {
+   "cn": "老师领我们进教室。",
+   "en": "The teacher leads us into the classroom."
+  }
+ },
+ "务": {
+  "origin": "Think of getting busy with a strong effort 力 — 务 means tasks, duties, and business.",
+  "word": {
+   "w": "任务",
+   "en": "task"
+  },
+  "sentence": {
+   "cn": "我完成了今天的任务。",
+   "en": "I finished today's task."
+  }
+ },
+ "尊": {
+  "origin": "A hand 寸 lifting a jar of wine 酋 up high as a gift — that's 尊, to honor and respect.",
+  "word": {
+   "w": "尊敬",
+   "en": "to respect"
+  },
+  "sentence": {
+   "cn": "我们要尊敬老人。",
+   "en": "We should respect the elderly."
+  }
+ },
+ "敬": {
+  "origin": "苟 (careful) beside 攵 (an action hand) — acting with care toward others is 敬, to respect.",
+  "word": {
+   "w": "敬爱",
+   "en": "to respect and love"
+  },
+  "sentence": {
+   "cn": "我们敬爱老师。",
+   "en": "We respect and love our teacher."
+  }
+ },
+ "束": {
+  "origin": "Wood 木 wrapped tight by a tie 口 in the middle — 束 means to bind, and also a bundle.",
+  "word": {
+   "w": "一束花",
+   "en": "a bunch of flowers"
+  },
+  "sentence": {
+   "cn": "他送给妈妈一束花。",
+   "en": "He gave Mom a bunch of flowers."
+  }
+ },
+ "贡": {
+  "origin": "工 (work) over 贝 (shell money) — work and treasure given to others, so 贡 means to offer and contribute.",
+  "word": {
+   "w": "贡献",
+   "en": "contribution"
+  },
+  "sentence": {
+   "cn": "他为大家做出了贡献。",
+   "en": "He made a contribution for everyone."
+  }
+ },
+ "献": {
+  "origin": "In old days a dog 犬 was offered as a gift — 献 means to offer up and present.",
+  "word": {
+   "w": "献花",
+   "en": "to present flowers"
+  },
+  "sentence": {
+   "cn": "小朋友给客人献花。",
+   "en": "The children present flowers to the guests."
+  }
+ },
+ "誉": {
+  "origin": "Lifted-up 兴 words 言 of praise — when people speak well of you, that's 誉, fame and good name.",
+  "word": {
+   "w": "名誉",
+   "en": "reputation"
+  },
+  "sentence": {
+   "cn": "他很爱护自己的名誉。",
+   "en": "He cares a lot about his reputation."
+  }
+ },
+ "培": {
+  "origin": "Earth 土 piled around a young plant to help it grow — 培 means to cultivate and nurture.",
+  "word": {
+   "w": "培养",
+   "en": "to nurture"
+  },
+  "sentence": {
+   "cn": "老师培养我们读书。",
+   "en": "The teacher nurtures our love of reading."
+  }
+ },
+ "批": {
+  "origin": "A hand 扌 next to 比 (compare) — looking closely to compare and judge, so 批 means to comment or criticize.",
+  "word": {
+   "w": "批评",
+   "en": "to criticize"
+  },
+  "sentence": {
+   "cn": "妈妈批评了我。",
+   "en": "Mom scolded me."
+  }
+ },
+ "聂": {
+  "origin": "One ear 耳 with a pair 双 more below — so many ears leaning in to listen, that's 聂, to whisper.",
+  "word": {
+   "w": "聂耳",
+   "en": "Nie Er (a famous musician's name)"
+  },
+  "sentence": {
+   "cn": "聂耳写了很多歌。",
+   "en": "Nie Er wrote many songs."
+  }
+ },
+ "灵": {
+  "origin": "A hand 彐 over fire 火 — quick and lively like a darting flame, so 灵 means spirit and clever.",
+  "word": {
+   "w": "灵巧",
+   "en": "clever and nimble"
+  },
+  "sentence": {
+   "cn": "小猫真灵巧。",
+   "en": "The kitten is so nimble."
+  }
+ },
+ "琴": {
+  "origin": "Two jade 玨 strings on top and 今 for the sound — 琴 is a beautiful string instrument.",
+  "word": {
+   "w": "弹琴",
+   "en": "to play a stringed instrument"
+  },
+  "sentence": {
+   "cn": "姐姐会弹琴。",
+   "en": "My older sister can play the piano."
+  }
+ },
+ "渐": {
+  "origin": "Water 氵 beside 斩 for the sound — like a stream slowly rising, 渐 means gradually.",
+  "word": {
+   "w": "渐渐",
+   "en": "gradually"
+  },
+  "sentence": {
+   "cn": "天渐渐黑了。",
+   "en": "The sky gradually grew dark."
+  }
+ },
+ "舍": {
+  "origin": "A roof 人 over a space where you speak and rest 舌 — a home, so 舍 means house or dwelling.",
+  "word": {
+   "w": "宿舍",
+   "en": "dormitory"
+  },
+  "sentence": {
+   "cn": "我住在学校宿舍。",
+   "en": "I live in the school dormitory."
+  }
+ },
+ "创": {
+  "origin": "仓 (storehouse) beside a knife 刂 — carving something new, so 创 means to create and establish.",
+  "word": {
+   "w": "创造",
+   "en": "to create"
+  },
+  "sentence": {
+   "cn": "我们要学会创造。",
+   "en": "We should learn to create."
+  }
+ },
+ "杰": {
+  "origin": "A tree 木 standing tall over a fire 灬 — outstanding above the rest, so 杰 means a hero.",
+  "word": {
+   "w": "杰出",
+   "en": "outstanding"
+  },
+  "sentence": {
+   "cn": "他是一个杰出的画家。",
+   "en": "He is an outstanding painter."
+  }
+ },
+ "侵": {
+  "origin": "A person 亻 sneaking in with a sweeping hand — pushing into another's space, so 侵 means to invade.",
+  "word": {
+   "w": "侵略",
+   "en": "to invade"
+  },
+  "sentence": {
+   "cn": "我们反对侵略。",
+   "en": "We are against invasion."
+  }
+ },
+ "愤": {
+  "origin": "The heart 忄 beside 贲 for sound — a heart bursting hot inside is 愤, anger.",
+  "word": {
+   "w": "愤怒",
+   "en": "furious"
+  },
+  "sentence": {
+   "cn": "他气得很愤怒。",
+   "en": "He was so furious he was shaking."
+  }
+ },
+ "义": {
+  "origin": "A simple cross 乂 with a dot 丶 on top — doing what is fair and right, that's 义.",
+  "word": {
+   "w": "意义",
+   "en": "meaning"
+  },
+  "sentence": {
+   "cn": "这件事很有意义。",
+   "en": "This matter is very meaningful."
+  }
+ },
+ "鼓": {
+  "origin": "壴 shows a tall drum on a stand and 支 is a hand with a stick — 鼓 is a drum, ready to be hit.",
+  "word": {
+   "w": "打鼓",
+   "en": "to play the drum"
+  },
+  "sentence": {
+   "cn": "他高兴地打鼓。",
+   "en": "He happily beats the drum."
+  }
+ },
+ "奋": {
+  "origin": "A big person 大 working hard in the field 田 — putting in real effort, so 奋 means to strive.",
+  "word": {
+   "w": "奋斗",
+   "en": "to strive"
+  },
+  "sentence": {
+   "cn": "我们要努力奋斗。",
+   "en": "We must work hard and strive."
+  }
+ },
+ "抗": {
+  "origin": "A hand 扌 pushing back against 亢 — standing firm with your hands up, so 抗 means to resist.",
+  "word": {
+   "w": "抵抗",
+   "en": "to resist"
+  },
+  "sentence": {
+   "cn": "他勇敢地抗争。",
+   "en": "He bravely fought back."
+  }
+ }
+}

@@ -1,0 +1,362 @@
+[
+ {
+  "ch": "末",
+  "py": "mò",
+  "en": "end, final, last",
+  "radical": "木",
+  "decomp": "⿻木一",
+  "hint": "The top 一 of a tree 木",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "列",
+  "py": "liè",
+  "en": "a line",
+  "radical": "刂",
+  "decomp": "⿰歹刂",
+  "hint": "line",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "购",
+  "py": "gòu",
+  "en": "to buy, to purchase",
+  "radical": "贝",
+  "decomp": "⿰贝勾",
+  "hint": "money",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "单",
+  "py": "dān",
+  "en": "single, individual, only",
+  "radical": "丷",
+  "decomp": "⿱丷？",
+  "hint": "",
+  "etype": ""
+ },
+ {
+  "ch": "约",
+  "py": "yuē",
+  "en": "treaty, covenant, agreement",
+  "radical": "纟",
+  "decomp": "⿰纟勺",
+  "hint": "thread",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "品",
+  "py": "pǐn",
+  "en": "article, good, product",
+  "radical": "口",
+  "decomp": "⿱口⿰口口",
+  "hint": "Something that everyone is talking 口 about",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "挑",
+  "py": "tiāo",
+  "en": "to select, to choose",
+  "radical": "扌",
+  "decomp": "⿰扌兆",
+  "hint": "hand",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "折",
+  "py": "zhé",
+  "en": "to break, to snap",
+  "radical": "扌",
+  "decomp": "⿰扌斤",
+  "hint": "A hand 扌 wielding an axe 斤",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "裙",
+  "py": "qún",
+  "en": "skirt, petticoat, apron",
+  "radical": "衤",
+  "decomp": "⿰衤君",
+  "hint": "clothes",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "错",
+  "py": "cuò",
+  "en": "error, mistake",
+  "radical": "钅",
+  "decomp": "⿰钅昔",
+  "hint": "Gold 钅 that once was 昔 but is lost",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "颜",
+  "py": "yán",
+  "en": "face, facial appearance",
+  "radical": "页",
+  "decomp": "⿰彦页",
+  "hint": "head",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "露",
+  "py": "lù",
+  "en": "dew",
+  "radical": "雨",
+  "decomp": "⿱雨路",
+  "hint": "rain",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "滩",
+  "py": "tān",
+  "en": "rapids",
+  "radical": "氵",
+  "decomp": "⿰氵难",
+  "hint": "Difficult 难 waters 氵 to navigate; 难 also provides the pronunciation",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "搭",
+  "py": "dā",
+  "en": "to attach, to build, to join",
+  "radical": "扌",
+  "decomp": "⿰扌荅",
+  "hint": "hand",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "油",
+  "py": "yóu",
+  "en": "oil, fat, grease, lard",
+  "radical": "氵",
+  "decomp": "⿰氵由",
+  "hint": "water",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "换",
+  "py": "huàn",
+  "en": "to change",
+  "radical": "扌",
+  "decomp": "⿰扌奂",
+  "hint": "hand",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "聊",
+  "py": "liáo",
+  "en": "somewhat, slightly, at least",
+  "radical": "耳",
+  "decomp": "⿰耳卯",
+  "hint": "ear",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "烤",
+  "py": "kǎo",
+  "en": "to bake, to cook, to roast, to toast",
+  "radical": "火",
+  "decomp": "⿰火考",
+  "hint": "fire",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "躺",
+  "py": "tǎng",
+  "en": "to recline, to lie down",
+  "radical": "身",
+  "decomp": "⿰身尚",
+  "hint": "body",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "浪",
+  "py": "làng",
+  "en": "breaker, wave",
+  "radical": "氵",
+  "decomp": "⿰氵良",
+  "hint": "water",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "者",
+  "py": "zhě",
+  "en": "that which",
+  "radical": "耂",
+  "decomp": "⿸耂日",
+  "hint": "",
+  "etype": ""
+ },
+ {
+  "ch": "始",
+  "py": "shǐ",
+  "en": "to begin, to start",
+  "radical": "女",
+  "decomp": "⿰女台",
+  "hint": "woman",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "民",
+  "py": "mín",
+  "en": "citizens, subjects",
+  "radical": "民",
+  "decomp": "⿻巳戈",
+  "hint": "An eye 巳 pierced by a dagger 戈, an old mark of slavery",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "族",
+  "py": "zú",
+  "en": "race, nationality, ethnicity",
+  "radical": "方",
+  "decomp": "⿰方⿱？矢",
+  "hint": "A group of people that swear by 矢 a single flag 方",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "舞",
+  "py": "wǔ",
+  "en": "to dance",
+  "radical": "舛",
+  "decomp": "⿱無舛",
+  "hint": "A hand 舛 holding a fan",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "捏",
+  "py": "niē",
+  "en": "to knead, to mold, to pinch",
+  "radical": "扌",
+  "decomp": "⿰扌圼",
+  "hint": "hand",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "勇",
+  "py": "yǒng",
+  "en": "brave, courageous, fierce",
+  "radical": "力",
+  "decomp": "⿱甬力",
+  "hint": "strength",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "敢",
+  "py": "gǎn",
+  "en": "bold, brave",
+  "radical": "攵",
+  "decomp": "⿰⿱？耳攵",
+  "hint": "A hand with a stick 攵 striking a beast 耳",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "艺",
+  "py": "yì",
+  "en": "art",
+  "radical": "艹",
+  "decomp": "⿱艹乙",
+  "hint": "grass",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "彩",
+  "py": "cǎi",
+  "en": "color, hue",
+  "radical": "彡",
+  "decomp": "⿰采彡",
+  "hint": "hair",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "巧",
+  "py": "qiǎo",
+  "en": "skillful, ingenious, clever",
+  "radical": "工",
+  "decomp": "⿰工丂",
+  "hint": "work",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "脏",
+  "py": "zàng",
+  "en": "organs, viscera",
+  "radical": "⺼",
+  "decomp": "⿰⺼庄",
+  "hint": "flesh",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "害",
+  "py": "hài",
+  "en": "to injure, to harm",
+  "radical": "宀",
+  "decomp": "⿱宀⿱丰口",
+  "hint": "",
+  "etype": ""
+ },
+ {
+  "ch": "惊",
+  "py": "jīng",
+  "en": "to frighten, to startle",
+  "radical": "忄",
+  "decomp": "⿰忄京",
+  "hint": "heart",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "轻",
+  "py": "qīng",
+  "en": "light, gentle",
+  "radical": "车",
+  "decomp": "⿰车⿱又工",
+  "hint": "cart",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "算",
+  "py": "suàn",
+  "en": "to calculate, to count",
+  "radical": "⺮",
+  "decomp": "⿱⺮具",
+  "hint": "A bamboo ⺮ abacus 具",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "坏",
+  "py": "huài",
+  "en": "bad, rotten, spoiled",
+  "radical": "土",
+  "decomp": "⿰土不",
+  "hint": "earth",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "反",
+  "py": "fǎn",
+  "en": "reverse, opposite",
+  "radical": "又",
+  "decomp": "⿸厂又",
+  "hint": "A hand 又 held up against a cliff 厂",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "狐",
+  "py": "hú",
+  "en": "fox",
+  "radical": "犭",
+  "decomp": "⿰犭瓜",
+  "hint": "dog",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "葡",
+  "py": "pú",
+  "en": "grapes",
+  "radical": "艹",
+  "decomp": "⿱艹匍",
+  "hint": "plant",
+  "etype": "pictophonetic"
+ }
+]

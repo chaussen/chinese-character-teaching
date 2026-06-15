@@ -77,6 +77,12 @@ def collect():
             if c.get("ch"):
                 want["char"].add(c["ch"])
 
+    # stroke-data-only pool feeding the Library books (library-chars.js)
+    lib = load_window_json(LEARN / "library-chars.js") or {}
+    for c in lib.get("chars", []):
+        if c.get("ch"):
+            want["char"].add(c["ch"])
+
     # words + sentences: per-character enrichment, keyed by Hanzi
     extra = load_window_json(LEARN / "content-extra.js") or {}
     for ch, x in extra.items():

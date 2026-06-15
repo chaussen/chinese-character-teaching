@@ -31,6 +31,8 @@
   function buildIndex(){
     DATA.forEach(function(b){ b.units.forEach(function(u){ u.chars.forEach(indexChar); }); });
     var G=(window.GENERAL_DATA&&window.GENERAL_DATA.groups)||[]; G.forEach(function(g){ g.chars.forEach(indexChar); });
+    // stroke-data-only pool feeding the Library books (no Home theme of its own).
+    var LC=(window.LIBRARY_CHARS&&window.LIBRARY_CHARS.chars)||[]; LC.forEach(indexChar);
   }
 
   // ── audio: play a recorded file if the teacher has supplied one, else fall

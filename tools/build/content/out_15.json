@@ -1,0 +1,202 @@
+{
+  "帮": {
+    "origin": "Think of a nation's 邦 raising its cloth 巾 flag — neighbors come together to help. 邦 also hints at the sound.",
+    "word": { "w": "帮忙", "en": "to help out" },
+    "sentence": { "cn": "我来帮你拿书包。", "en": "Let me help you carry your school bag." }
+  },
+  "助": {
+    "origin": "Add your strength 力 to someone else — that extra muscle on the right means to help.",
+    "word": { "w": "帮助", "en": "to help" },
+    "sentence": { "cn": "谢谢你帮助我。", "en": "Thank you for helping me." }
+  },
+  "林": {
+    "origin": "Two trees 木 standing side by side make a little woods — many of them become a forest.",
+    "word": { "w": "森林", "en": "forest" },
+    "sentence": { "cn": "小鸟住在树林里。", "en": "The little bird lives in the woods." }
+  },
+  "怕": {
+    "origin": "A heart 忄 that turns white 白 with fright — that shaky feeling is being afraid.",
+    "word": { "w": "害怕", "en": "to be afraid" },
+    "sentence": { "cn": "我不怕黑。", "en": "I am not afraid of the dark." }
+  },
+  "妻": {
+    "origin": "A woman 女 holding a broom in her hand 彐, busy at home — she is the wife.",
+    "word": { "w": "妻子", "en": "wife" },
+    "sentence": { "cn": "他的妻子很善良。", "en": "His wife is very kind." }
+  },
+  "尖": {
+    "origin": "Small 小 sitting on top of big 大 — narrowing to a tiny point at the tip makes it sharp.",
+    "word": { "w": "尖锐", "en": "sharp, pointed" },
+    "sentence": { "cn": "铅笔的头很尖。", "en": "The tip of the pencil is very sharp." }
+  },
+  "志": {
+    "origin": "A scholar 士 on top of a heart 心 — what your heart sets out to do is your will. 士 also gives the sound.",
+    "word": { "w": "志愿", "en": "aspiration, wish" },
+    "sentence": { "cn": "他从小就有大志。", "en": "He has had big dreams since he was little." }
+  },
+  "克": {
+    "origin": "Picture a strong child 兄 carrying a heavy load 十 on top yet pushing through — to overcome.",
+    "word": { "w": "克服", "en": "to overcome" },
+    "sentence": { "cn": "他克服了困难。", "en": "He overcame the difficulty." }
+  },
+  "困": {
+    "origin": "A tree 木 boxed inside a fence 囗 — trapped and stuck, just like being sleepy and tired.",
+    "word": { "w": "困难", "en": "difficulty" },
+    "sentence": { "cn": "我今天很困。", "en": "I am very sleepy today." }
+  },
+  "取": {
+    "origin": "An ear 耳 next to a hand 又 — reach out with your hand and take something.",
+    "word": { "w": "取出", "en": "to take out" },
+    "sentence": { "cn": "我去取我的书。", "en": "I am going to fetch my book." }
+  },
+  "胜": {
+    "origin": "On the left is flesh ⺼; the right 生 gives the sound. Together it means to win and feel alive.",
+    "word": { "w": "胜利", "en": "victory" },
+    "sentence": { "cn": "我们队取得了胜利。", "en": "Our team won the victory." }
+  },
+  "守": {
+    "origin": "A hand 寸 kept safe under a roof 宀 — staying inside to guard and protect the home.",
+    "word": { "w": "守护", "en": "to guard, to protect" },
+    "sentence": { "cn": "大狗守着家门。", "en": "The big dog guards the front door." }
+  },
+  "景": {
+    "origin": "The sun 日 shining over a tall city 京 lights up the lovely scenery. 京 also gives the sound.",
+    "word": { "w": "风景", "en": "scenery" },
+    "sentence": { "cn": "这里的景色真美。", "en": "The scenery here is really beautiful." }
+  },
+  "争": {
+    "origin": "Two hands reaching from above and below for the same thing 亅 — pulling and tugging is to fight over it.",
+    "word": { "w": "争论", "en": "to argue, to debate" },
+    "sentence": { "cn": "他们在争一个玩具。", "en": "They are fighting over a toy." }
+  },
+  "管": {
+    "origin": "Bamboo ⺮ on top of an official 官 — a hollow bamboo tube, and also the one in charge who manages.",
+    "word": { "w": "水管", "en": "water pipe" },
+    "sentence": { "cn": "妈妈在管我的作业。", "en": "Mom is in charge of my homework." }
+  },
+  "凹": {
+    "origin": "Look at its shape — it dips down in the middle like a little bowl. That sunken dent means concave.",
+    "word": { "w": "凹下", "en": "to cave in, sunken" },
+    "sentence": { "cn": "这块地中间是凹的。", "en": "The middle of this ground is sunken." }
+  },
+  "凸": {
+    "origin": "Look at its shape — a bump pokes up in the middle. That sticking-out part means to bulge out.",
+    "word": { "w": "凸出", "en": "to stick out, protruding" },
+    "sentence": { "cn": "他的额头有点凸。", "en": "His forehead sticks out a little." }
+  },
+  "楚": {
+    "origin": "Two trees 林 over feet 疋 — picture walking through clear, open woods where everything looks distinct.",
+    "word": { "w": "清楚", "en": "clear" },
+    "sentence": { "cn": "我看得很清楚。", "en": "I can see very clearly." }
+  },
+  "且": {
+    "origin": "A picture of a stacked stone altar — its steady layers help you remember 'moreover, and also.'",
+    "word": { "w": "而且", "en": "moreover, and also" },
+    "sentence": { "cn": "他聪明而且努力。", "en": "He is clever, and also hard-working." }
+  },
+  "倍": {
+    "origin": "A person 亻 beside 咅 — imagine standing next to your twin, so now there are two: double.",
+    "word": { "w": "一倍", "en": "double, twice as much" },
+    "sentence": { "cn": "今天的人多了一倍。", "en": "Today there are twice as many people." }
+  },
+  "似": {
+    "origin": "One person 亻 standing beside 以 another — two people looking so alike means similar.",
+    "word": { "w": "相似", "en": "similar" },
+    "sentence": { "cn": "他们俩长得很相似。", "en": "The two of them look very similar." }
+  },
+  "乎": {
+    "origin": "A little curling shape like a puff of breath rising — it ends questions, like 'oh?' in old stories.",
+    "word": { "w": "几乎", "en": "almost, nearly" },
+    "sentence": { "cn": "我几乎忘了。", "en": "I almost forgot." }
+  },
+  "继": {
+    "origin": "Silk thread 纟 on the left — when one thread joins the next, the line continues on.",
+    "word": { "w": "继续", "en": "to continue" },
+    "sentence": { "cn": "我们继续玩吧。", "en": "Let's keep playing." }
+  },
+  "续": {
+    "origin": "Silk thread 纟 on the left keeps spinning out without stopping — going on and on, serial.",
+    "word": { "w": "连续", "en": "continuous, in a row" },
+    "sentence": { "cn": "他连续读了三本书。", "en": "He read three books in a row." }
+  },
+  "研": {
+    "origin": "A stone 石 you rub flat 开 — grinding it down little by little, just like studying a problem closely.",
+    "word": { "w": "研究", "en": "to research, to study" },
+    "sentence": { "cn": "他喜欢研究昆虫。", "en": "He loves studying insects." }
+  },
+  "究": {
+    "origin": "Dig deep into a cave 穴 right to the very end 九 — to investigate and find out everything.",
+    "word": { "w": "研究", "en": "to research, to study" },
+    "sentence": { "cn": "科学家在研究月亮。", "en": "Scientists are studying the moon." }
+  },
+  "辞": {
+    "origin": "A tongue 舌 next to the sharp word 辛 — careful spoken words, and saying goodbye.",
+    "word": { "w": "辞别", "en": "to say goodbye, to take leave" },
+    "sentence": { "cn": "他向大家辞行了。", "en": "He said goodbye to everyone before leaving." }
+  },
+  "陵": {
+    "origin": "A mound shape 阝 on the left where people climb 夌 — a tall hill. 夌 also gives the sound.",
+    "word": { "w": "山陵", "en": "hill, mountain mound" },
+    "sentence": { "cn": "山陵上长满了树。", "en": "The hill is covered with trees." }
+  },
+  "猿": {
+    "origin": "The animal radical 犭 on the left tells you it's a creature; 袁 gives the sound — a long-armed ape.",
+    "word": { "w": "猿猴", "en": "apes and monkeys" },
+    "sentence": { "cn": "树上有一只猿。", "en": "There is an ape in the tree." }
+  },
+  "舟": {
+    "origin": "A picture of a little boat with its curved sides riding the water — it means boat.",
+    "word": { "w": "小舟", "en": "small boat" },
+    "sentence": { "cn": "一只小舟在河上。", "en": "A little boat is on the river." }
+  },
+  "庐": {
+    "origin": "A roof 广 over a door 户 — a tiny home tucked under the eaves, a simple hut. 户 also gives the sound.",
+    "word": { "w": "茅庐", "en": "thatched cottage" },
+    "sentence": { "cn": "山里有一间小庐。", "en": "There is a little hut in the mountains." }
+  },
+  "瀑": {
+    "origin": "Water 氵 crashing down violently 暴 — that roaring rush off a cliff is a waterfall. 暴 also gives the sound.",
+    "word": { "w": "瀑布", "en": "waterfall" },
+    "sentence": { "cn": "瀑布从山上流下来。", "en": "The waterfall flows down from the mountain." }
+  },
+  "炉": {
+    "origin": "A fire 火 burning by the door 户 of your home — a warm stove or furnace.",
+    "word": { "w": "火炉", "en": "stove, furnace" },
+    "sentence": { "cn": "火炉旁边很暖和。", "en": "It is very warm beside the stove." }
+  },
+  "紫": {
+    "origin": "Silk 糸 dyed below the top part 此 — mixing red and blue threads makes the color purple.",
+    "word": { "w": "紫色", "en": "purple" },
+    "sentence": { "cn": "我喜欢紫色的花。", "en": "I like purple flowers." }
+  },
+  "烟": {
+    "origin": "Fire 火 on the left; 因 gives the sound. Where there's fire, gray smoke curls up.",
+    "word": { "w": "烟雾", "en": "smoke, mist" },
+    "sentence": { "cn": "烟从烟囱里冒出来。", "en": "Smoke comes out of the chimney." }
+  },
+  "遥": {
+    "origin": "The walking radical 辶 means a journey; here the path stretches far and far away — remote.",
+    "word": { "w": "遥远", "en": "far away, distant" },
+    "sentence": { "cn": "他来自遥远的地方。", "en": "He comes from a faraway place." }
+  },
+  "川": {
+    "origin": "Three flowing lines like water running between banks — picture a river streaming along.",
+    "word": { "w": "山川", "en": "mountains and rivers" },
+    "sentence": { "cn": "小河流过山川。", "en": "The little river flows through the mountains and streams." }
+  },
+  "尺": {
+    "origin": "Picture a person bending down to measure by pacing — the tool for measuring is a ruler.",
+    "word": { "w": "尺子", "en": "ruler" },
+    "sentence": { "cn": "我用尺子画线。", "en": "I draw lines with a ruler." }
+  },
+  "篇": {
+    "origin": "Bamboo ⺮ on top, flat 扁 below — old books were flat bamboo strips, so this counts a chapter. 扁 gives the sound.",
+    "word": { "w": "篇章", "en": "chapter, piece of writing" },
+    "sentence": { "cn": "我写了一篇作文。", "en": "I wrote an essay." }
+  },
+  "颂": {
+    "origin": "A head or page 页 on the right tells the family; 公 gives the sound — to praise out loud.",
+    "word": { "w": "歌颂", "en": "to sing the praises of" },
+    "sentence": { "cn": "这首歌颂扬英雄。", "en": "This song praises the hero." }
+  }
+}

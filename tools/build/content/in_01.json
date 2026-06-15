@@ -1,0 +1,362 @@
+[
+ {
+  "ch": "教",
+  "py": "jiào",
+  "en": "school, education",
+  "radical": "攵",
+  "decomp": "⿰孝攵",
+  "hint": "script",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "汉",
+  "py": "hàn",
+  "en": "Chinese people",
+  "radical": "氵",
+  "decomp": "⿰氵又",
+  "hint": "Simplified form of 漢; the Han 𦰩 river 氵",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "语",
+  "py": "yǔ",
+  "en": "words, language",
+  "radical": "讠",
+  "decomp": "⿰讠吾",
+  "hint": "words",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "歌",
+  "py": "gē",
+  "en": "song, lyrics",
+  "radical": "欠",
+  "decomp": "⿰哥欠",
+  "hint": "breath",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "画",
+  "py": "huà",
+  "en": "picture, painting, drawing",
+  "radical": "田",
+  "decomp": "⿱一⿶凵田",
+  "hint": "A painting on an easel; compare 畫, which includes the brush",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "这",
+  "py": "zhè",
+  "en": "this, these",
+  "radical": "辶",
+  "decomp": "⿺辶文",
+  "hint": "",
+  "etype": ""
+ },
+ {
+  "ch": "又",
+  "py": "yòu",
+  "en": "and, also, again, in addition",
+  "radical": "又",
+  "decomp": "？",
+  "hint": "A right hand, representing a pair; compare 左",
+  "etype": "pictographic"
+ },
+ {
+  "ch": "桌",
+  "py": "zhuō",
+  "en": "table, stand, desk, counter",
+  "radical": "木",
+  "decomp": "⿱卓木",
+  "hint": "",
+  "etype": ""
+ },
+ {
+  "ch": "椅",
+  "py": "yǐ",
+  "en": "chair, seat",
+  "radical": "木",
+  "decomp": "⿰木奇",
+  "hint": "wood",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "两",
+  "py": "liǎng",
+  "en": "two, both, pair, couple",
+  "radical": "一",
+  "decomp": "⿱一⿻冂从",
+  "hint": "Two people 从 together in a cart",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "边",
+  "py": "biān",
+  "en": "border, edge, margin, side",
+  "radical": "辶",
+  "decomp": "⿺辶力",
+  "hint": "walk",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "墙",
+  "py": "qiáng",
+  "en": "wall",
+  "radical": "土",
+  "decomp": "⿰土啬",
+  "hint": "earth",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "着",
+  "py": "zhe",
+  "en": "to make a move, to take action",
+  "radical": "目",
+  "decomp": "⿸羊目",
+  "hint": "",
+  "etype": ""
+ },
+ {
+  "ch": "图",
+  "py": "tú",
+  "en": "diagram, chart, map, picture",
+  "radical": "囗",
+  "decomp": "⿴囗冬",
+  "hint": "Simplified form of 圖; a map of a district's 啚 borders 囗",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "角",
+  "py": "jiǎo",
+  "en": "angle, corner",
+  "radical": "角",
+  "decomp": "⿱⺈用",
+  "hint": "A rhinoceros or other animal horn",
+  "etype": "pictographic"
+ },
+ {
+  "ch": "星",
+  "py": "xīng",
+  "en": "star, planet",
+  "radical": "日",
+  "decomp": "⿱日生",
+  "hint": "sun",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "期",
+  "py": "qī",
+  "en": "a period of time",
+  "radical": "月",
+  "decomp": "⿰其月",
+  "hint": "moon",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "做",
+  "py": "zuò",
+  "en": "to work, to make",
+  "radical": "亻",
+  "decomp": "⿰亻故",
+  "hint": "Someone 亻 who causes things to happen 故; 故 also provides the pronuncation",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "客",
+  "py": "kè",
+  "en": "guest, traveller",
+  "radical": "宀",
+  "decomp": "⿱宀各",
+  "hint": "A person 各 welcomed under one's roof 宀; 各 also provides the pronunciation",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "本",
+  "py": "běn",
+  "en": "root, origin, source",
+  "radical": "木",
+  "decomp": "⿻木一",
+  "hint": "A tree 木 with its roots highlighted",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "玩",
+  "py": "wán",
+  "en": "to play with, to joke, to entertain",
+  "radical": "王",
+  "decomp": "⿰王元",
+  "hint": "jade",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "形",
+  "py": "xíng",
+  "en": "form, shape",
+  "radical": "彡",
+  "decomp": "⿰开彡",
+  "hint": "Sunlight 彡 streaming through a window 开",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "都",
+  "py": "dōu",
+  "en": "all, each, entirely, whole",
+  "radical": "阝",
+  "decomp": "⿰者阝",
+  "hint": "city",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "用",
+  "py": "yòng",
+  "en": "to use, to employ, to apply",
+  "radical": "用",
+  "decomp": "⿵冂？",
+  "hint": "",
+  "etype": ""
+ },
+ {
+  "ch": "记",
+  "py": "jì",
+  "en": "mark, sign",
+  "radical": "讠",
+  "decomp": "⿰讠己",
+  "hint": "A private 己 note 讠; 己 also provides the pronunciation",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "请",
+  "py": "qǐng",
+  "en": "to ask, to request",
+  "radical": "讠",
+  "decomp": "⿰讠青",
+  "hint": "speech",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "谢",
+  "py": "xiè",
+  "en": "to thank",
+  "radical": "讠",
+  "decomp": "⿰讠射",
+  "hint": "speech",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "对",
+  "py": "duì",
+  "en": "correct, right",
+  "radical": "寸",
+  "decomp": "⿰又寸",
+  "hint": "A pair 又 of hands 寸",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "没",
+  "py": "méi",
+  "en": "not, none, gone",
+  "radical": "氵",
+  "decomp": "⿰氵殳",
+  "hint": "water",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "关",
+  "py": "guān",
+  "en": "frontier pass",
+  "radical": "丷",
+  "decomp": "⿱丷天",
+  "hint": "",
+  "etype": ""
+ },
+ {
+  "ch": "系",
+  "py": "xì",
+  "en": "system",
+  "radical": "糸",
+  "decomp": "⿱丿糸",
+  "hint": "thread",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "孩",
+  "py": "hái",
+  "en": "baby, child",
+  "radical": "子",
+  "decomp": "⿰子亥",
+  "hint": "child",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "过",
+  "py": "guò",
+  "en": "pass",
+  "radical": "辶",
+  "decomp": "⿺辶寸",
+  "hint": "walk",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "昨",
+  "py": "zuó",
+  "en": "yesterday",
+  "radical": "日",
+  "decomp": "⿰日乍",
+  "hint": "day",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "全",
+  "py": "quán",
+  "en": "whole, entire, complete",
+  "radical": "入",
+  "decomp": "⿱入玉",
+  "hint": "Jade 玉 put away 入 for safe-keeping",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "会",
+  "py": "huì",
+  "en": "to assemble, to meet",
+  "radical": "人",
+  "decomp": "⿱人云",
+  "hint": "People 人 speaking 云",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "给",
+  "py": "gěi",
+  "en": "to give, to lend",
+  "radical": "纟",
+  "decomp": "⿰纟合",
+  "hint": "thread",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "蛋",
+  "py": "dàn",
+  "en": "egg",
+  "radical": "虫",
+  "decomp": "⿱疋虫",
+  "hint": "insect",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "送",
+  "py": "sòng",
+  "en": "to see off, to send off, to dispatch",
+  "radical": "辶",
+  "decomp": "⿺辶关",
+  "hint": "A person waving 关 to someone walking away 辶",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "具",
+  "py": "jù",
+  "en": "tool, implement",
+  "radical": "八",
+  "decomp": "⿱目⿱一八",
+  "hint": "Two hands 八 writing on a tablet 目",
+  "etype": "ideographic"
+ }
+]

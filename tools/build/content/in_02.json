@@ -1,0 +1,362 @@
+[
+ {
+  "ch": "事",
+  "py": "shì",
+  "en": "affair, matter, business",
+  "radical": "亅",
+  "decomp": "⿻⿳一口彐亅",
+  "hint": "",
+  "etype": ""
+ },
+ {
+  "ch": "可",
+  "py": "kě",
+  "en": "may, can, -able",
+  "radical": "口",
+  "decomp": "⿻丁口",
+  "hint": "vigorous",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "别",
+  "py": "bié",
+  "en": "to separate, to distinguish, to classify",
+  "radical": "刂",
+  "decomp": "⿰另刂",
+  "hint": "To draw boundaries 刂 between classes 另",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "洗",
+  "py": "xǐ",
+  "en": "to bathe, to rinse, to wash",
+  "radical": "氵",
+  "decomp": "⿰氵先",
+  "hint": "water",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "澡",
+  "py": "zǎo",
+  "en": "to wash, to bathe",
+  "radical": "氵",
+  "decomp": "⿰氵喿",
+  "hint": "water",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "还",
+  "py": "hái",
+  "en": "also, besides",
+  "radical": "辶",
+  "decomp": "⿺辶不",
+  "hint": "Not 不 moving 辶",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "收",
+  "py": "shōu",
+  "en": "to collect, to gather, to harvest",
+  "radical": "攵",
+  "decomp": "⿰丩攵",
+  "hint": "hand",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "拾",
+  "py": "shí",
+  "en": "to collect, to pick up, to tidy up",
+  "radical": "扌",
+  "decomp": "⿰扌合",
+  "hint": "To gather 合 things in one's hands 扌",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "扫",
+  "py": "sǎo",
+  "en": "to clean, to sweep, to wipe away",
+  "radical": "扌",
+  "decomp": "⿰扌彐",
+  "hint": "Simplified form of 掃; to use 扌 a broom 帚; 帚 also provides the pronunciation",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "饿",
+  "py": "è",
+  "en": "hungry",
+  "radical": "饣",
+  "decomp": "⿰饣我",
+  "hint": "To want 我 food 饣; 我 also provides the pronunciation",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "喂",
+  "py": "wèi",
+  "en": "interjection used to call attention",
+  "radical": "口",
+  "decomp": "⿰口畏",
+  "hint": "mouth",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "灯",
+  "py": "dēng",
+  "en": "lamp, lantern, light",
+  "radical": "火",
+  "decomp": "⿰火丁",
+  "hint": "fire",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "街",
+  "py": "jiē",
+  "en": "street, road, thoroughfare",
+  "radical": "行",
+  "decomp": "⿻行圭",
+  "hint": "walk",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "道",
+  "py": "dào",
+  "en": "method, way",
+  "radical": "辶",
+  "decomp": "⿺辶首",
+  "hint": "walk",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "长",
+  "py": "zhǎng",
+  "en": "long, lasting",
+  "radical": "长",
+  "decomp": "⿻？一",
+  "hint": "Simplified form of 長; an old man with long hair and a cane",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "交",
+  "py": "jiāo",
+  "en": "to connect",
+  "radical": "亠",
+  "decomp": "⿱六乂",
+  "hint": "A person with crossed (intersecting) legs",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "通",
+  "py": "tōng",
+  "en": "to pass through, to open, to connect",
+  "radical": "辶",
+  "decomp": "⿺辶甬",
+  "hint": "walk",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "忙",
+  "py": "máng",
+  "en": "busy, hurried, pressed for time",
+  "radical": "忄",
+  "decomp": "⿰忄亡",
+  "hint": "A heart 忄 faced with death 亡; 亡 also provides the pronunciation",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "往",
+  "py": "wǎng",
+  "en": "to go, to depart",
+  "radical": "彳",
+  "decomp": "⿰彳⿱？王",
+  "hint": "step",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "拉",
+  "py": "lā",
+  "en": "to pull, to drag",
+  "radical": "扌",
+  "decomp": "⿰扌立",
+  "hint": "hand",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "停",
+  "py": "tíng",
+  "en": "to suspend, to halt, to delay",
+  "radical": "亻",
+  "decomp": "⿰亻亭",
+  "hint": "person",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "快",
+  "py": "kuài",
+  "en": "speedy, rapid, quick",
+  "radical": "忄",
+  "decomp": "⿰忄夬",
+  "hint": "A decisive 夬 will 忄; 夬 also provides the pronunciation",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "带",
+  "py": "dài",
+  "en": "belt, strap",
+  "radical": "巾",
+  "decomp": "⿱卅⿱冖巾",
+  "hint": "A belt, creasing one's robe above 卅 but not below 巾",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "那",
+  "py": "nà",
+  "en": "that, that one, those",
+  "radical": "阝",
+  "decomp": "⿰⿹？？阝",
+  "hint": "",
+  "etype": ""
+ },
+ {
+  "ch": "拿",
+  "py": "ná",
+  "en": "to bring, to grasp, to hold, to take",
+  "radical": "手",
+  "decomp": "⿱合手",
+  "hint": "hand",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "奇",
+  "py": "qí",
+  "en": "strange, unusual, odd",
+  "radical": "大",
+  "decomp": "⿱大可",
+  "hint": "A person 大 riding a horse 可",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "他",
+  "py": "tā",
+  "en": "other, another",
+  "radical": "亻",
+  "decomp": "⿰亻也",
+  "hint": "An additional, \"also\" 也  person 亻",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "点",
+  "py": "diǎn",
+  "en": "dot, point, speck",
+  "radical": "灬",
+  "decomp": "⿱占灬",
+  "hint": "fire",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "该",
+  "py": "gāi",
+  "en": "should, ought to, must",
+  "radical": "讠",
+  "decomp": "⿰讠亥",
+  "hint": "speech",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "回",
+  "py": "huí",
+  "en": "to return, to turn around",
+  "radical": "囗",
+  "decomp": "⿴囗口",
+  "hint": "Originally, a spiral signifying return",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "吧",
+  "py": "bā",
+  "en": "emphatic final particle",
+  "radical": "口",
+  "decomp": "⿰口巴",
+  "hint": "mouth",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "付",
+  "py": "fù",
+  "en": "give, deliver, pay, hand over",
+  "radical": "亻",
+  "decomp": "⿰亻寸",
+  "hint": "To hand 寸 something over to someone 亻 ",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "医",
+  "py": "yī",
+  "en": "to cure, to heal, to treat",
+  "radical": "匸",
+  "decomp": "⿷匸矢",
+  "hint": "arrow",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "院",
+  "py": "yuàn",
+  "en": "court, yard, courtyard",
+  "radical": "阝",
+  "decomp": "⿰阝完",
+  "hint": "place",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "得",
+  "py": "dé",
+  "en": "to obtain, to get, to acquire",
+  "radical": "彳",
+  "decomp": "⿰彳⿱旦寸",
+  "hint": "A hand 寸 grabbing a shell 旦",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "急",
+  "py": "jí",
+  "en": "anxious, worried",
+  "radical": "心",
+  "decomp": "⿱刍心",
+  "hint": "heart",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "病",
+  "py": "bìng",
+  "en": "sickness, illness, disease",
+  "radical": "疒",
+  "decomp": "⿸疒丙",
+  "hint": "sickness",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "要",
+  "py": "yào",
+  "en": "essential, necessary",
+  "radical": "覀",
+  "decomp": "⿱覀女",
+  "hint": "A woman 女 with hands on her waist 覀",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "药",
+  "py": "yào",
+  "en": "drugs, medicine",
+  "radical": "艹",
+  "decomp": "⿱艹约",
+  "hint": "plant",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "就",
+  "py": "jiù",
+  "en": "just, simply",
+  "radical": "尢",
+  "decomp": "⿰京尤",
+  "hint": "specialty",
+  "etype": "pictophonetic"
+ }
+]

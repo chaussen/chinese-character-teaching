@@ -1,0 +1,202 @@
+{
+  "锄": {
+    "origin": "The metal radical 钅 shows it's a tool, paired with 助 (to help) — a hoe helps you work the soil.",
+    "word": { "w": "锄头", "en": "hoe" },
+    "sentence": { "cn": "爷爷用锄头种菜。", "en": "Grandpa uses a hoe to grow vegetables." }
+  },
+  "粒": {
+    "origin": "The rice radical 米 next to 立 (to stand) — picture one tiny grain of rice standing all by itself.",
+    "word": { "w": "一粒", "en": "one grain" },
+    "sentence": { "cn": "桌上有一粒米。", "en": "There is a grain of rice on the table." }
+  },
+  "皆": {
+    "origin": "Picture people side by side 比 above the sun 白 — when everyone shines together, it means all.",
+    "word": { "w": "皆大欢喜", "en": "everyone is happy" },
+    "sentence": { "cn": "我们皆是好朋友。", "en": "We are all good friends." }
+  },
+  "辛": {
+    "origin": "A pointed shape standing tall — it once meant a sharp tool, and now it means a spicy, hard, bitter feeling.",
+    "word": { "w": "辛苦", "en": "hard, toilsome" },
+    "sentence": { "cn": "妈妈工作很辛苦。", "en": "Mom works very hard." }
+  },
+  "苦": {
+    "origin": "The grass radical 艹 over 古 (old) — like an old bitter herb that makes your tongue scrunch up.",
+    "word": { "w": "苦瓜", "en": "bitter melon" },
+    "sentence": { "cn": "这个药很苦。", "en": "This medicine is very bitter." }
+  },
+  "洁": {
+    "origin": "Water 氵 beside 吉 (lucky) — fresh water washes everything clean and pure.",
+    "word": { "w": "干净整洁", "en": "neat and clean" },
+    "sentence": { "cn": "她的房间很整洁。", "en": "Her room is very tidy." }
+  },
+  "牌": {
+    "origin": "Made from a flat slice of wood 片 — a little board you hold, like a playing card or a sign.",
+    "word": { "w": "卡牌", "en": "playing card" },
+    "sentence": { "cn": "我们一起玩牌。", "en": "Let's play cards together." }
+  },
+  "报": {
+    "origin": "A hand 扌 reaching out to pass on news — 报 means to tell, announce, or a newspaper.",
+    "word": { "w": "报纸", "en": "newspaper" },
+    "sentence": { "cn": "爸爸每天看报。", "en": "Dad reads the newspaper every day." }
+  },
+  "半": {
+    "origin": "Two little strokes 丷 splitting something down the middle — that line cuts it into two halves.",
+    "word": { "w": "一半", "en": "one half" },
+    "sentence": { "cn": "苹果分成两半。", "en": "The apple is split into two halves." }
+  },
+  "剩": {
+    "origin": "A knife 刂 stands beside 乘 — after cutting and taking, what is left over is the leftovers.",
+    "word": { "w": "剩饭", "en": "leftover food" },
+    "sentence": { "cn": "碗里剩了一点饭。", "en": "A little rice is left in the bowl." }
+  },
+  "夫": {
+    "origin": "A grown person 大 with a hairpin 一 across the top — a man old enough to be a husband.",
+    "word": { "w": "丈夫", "en": "husband" },
+    "sentence": { "cn": "那位农夫很忙。", "en": "That farmer is very busy." }
+  },
+  "鸦": {
+    "origin": "The bird radical 鸟 with 牙 for sound — a big black bird that goes 'caw,' the crow.",
+    "word": { "w": "乌鸦", "en": "crow" },
+    "sentence": { "cn": "树上有一只乌鸦。", "en": "There is a crow in the tree." }
+  },
+  "泥": {
+    "origin": "Water 氵 mixed into soil — add a splash of water to dirt and you get squishy mud.",
+    "word": { "w": "泥土", "en": "mud, soil" },
+    "sentence": { "cn": "下雨后路上有泥。", "en": "After the rain there is mud on the road." }
+  },
+  "肥": {
+    "origin": "The flesh radical ⺼ shows it's about the body — 肥 means plump, round, and fat.",
+    "word": { "w": "肥皂", "en": "soap" },
+    "sentence": { "cn": "这只猫又肥又可爱。", "en": "This cat is fat and cute." }
+  },
+  "料": {
+    "origin": "Rice 米 beside a measuring scoop 斗 — measuring out grain, like gathering ingredients and materials.",
+    "word": { "w": "材料", "en": "materials" },
+    "sentence": { "cn": "我们准备好了材料。", "en": "We have prepared the materials." }
+  },
+  "言": {
+    "origin": "Picture a tongue lifting out of a mouth 口 — 言 means words and speech.",
+    "word": { "w": "语言", "en": "language" },
+    "sentence": { "cn": "他说了一句言语。", "en": "He spoke a few words." }
+  },
+  "丰": {
+    "origin": "Three lines crossed by one stalk — like a plant heavy with leaves, full and bountiful.",
+    "word": { "w": "丰富", "en": "rich, plentiful" },
+    "sentence": { "cn": "今年的收成很丰。", "en": "This year's harvest is bountiful." }
+  },
+  "富": {
+    "origin": "A roof 宀 over a full storehouse 畐 — a house packed with good things means rich.",
+    "word": { "w": "富有", "en": "wealthy" },
+    "sentence": { "cn": "这个国家很富有。", "en": "This country is very wealthy." }
+  },
+  "晴": {
+    "origin": "The sun 日 next to 青 (blue) — bright sun in a blue sky means clear, sunny weather.",
+    "word": { "w": "晴天", "en": "sunny day" },
+    "sentence": { "cn": "今天是个大晴天。", "en": "Today is a bright sunny day." }
+  },
+  "蚂": {
+    "origin": "The insect radical 虫 with 马 for sound — a tiny crawling bug, the busy little ant.",
+    "word": { "w": "蚂蚁", "en": "ant" },
+    "sentence": { "cn": "地上有很多蚂蚁。", "en": "There are many ants on the ground." }
+  },
+  "蚁": {
+    "origin": "The insect radical 虫 beside 义 — another part of the word for the tiny, hard-working ant.",
+    "word": { "w": "蚂蚁", "en": "ant" },
+    "sentence": { "cn": "小蚁搬走了面包屑。", "en": "The little ant carried away the bread crumb." }
+  },
+  "搬": {
+    "origin": "A hand 扌 doing the work 般 — 搬 means to use your hands to move and carry things.",
+    "word": { "w": "搬家", "en": "to move house" },
+    "sentence": { "cn": "我们下周要搬家。", "en": "We are moving house next week." }
+  },
+  "伞": {
+    "origin": "Look at the shape — a round top with a handle below, just like an open umbrella keeping you dry.",
+    "word": { "w": "雨伞", "en": "umbrella" },
+    "sentence": { "cn": "下雨了，快打伞。", "en": "It's raining, open the umbrella quickly." }
+  },
+  "察": {
+    "origin": "Under a roof 宀 you look closely at things 祭 — 察 means to examine and observe carefully.",
+    "word": { "w": "观察", "en": "to observe" },
+    "sentence": { "cn": "我们仔细观察小鱼。", "en": "We watch the little fish closely." }
+  },
+  "懂": {
+    "origin": "The heart radical 忄 beside 董 — when your heart truly gets it, you understand.",
+    "word": { "w": "懂得", "en": "to understand" },
+    "sentence": { "cn": "我懂你的意思。", "en": "I understand what you mean." }
+  },
+  "考": {
+    "origin": "Shaped like the 'old' radical 耂 — wise elders give a test, so 考 means to examine.",
+    "word": { "w": "考试", "en": "exam" },
+    "sentence": { "cn": "明天我们要考试。", "en": "We have an exam tomorrow." }
+  },
+  "探": {
+    "origin": "A hand 扌 reaching deep into something — 探 means to reach in, search, and explore.",
+    "word": { "w": "探险", "en": "to explore, adventure" },
+    "sentence": { "cn": "他们去山里探险。", "en": "They go exploring in the mountains." }
+  },
+  "员": {
+    "origin": "A mouth 口 above a shell of money 贝 — picture a worker or member earning their pay.",
+    "word": { "w": "员工", "en": "staff, employee" },
+    "sentence": { "cn": "他是一名运动员。", "en": "He is an athlete." }
+  },
+  "次": {
+    "origin": "Two ice strokes 冫 beside a yawning person 欠 — yawn after yawn, one time after another.",
+    "word": { "w": "一次", "en": "once, one time" },
+    "sentence": { "cn": "这是我第一次坐船。", "en": "This is my first time on a boat." }
+  },
+  "类": {
+    "origin": "Grains of rice 米 over 大 (big) — sort the big pile of rice into groups, into kinds.",
+    "word": { "w": "种类", "en": "kind, type" },
+    "sentence": { "cn": "水果有很多种类。", "en": "There are many kinds of fruit." }
+  },
+  "实": {
+    "origin": "A roof 宀 over 头 — what is really inside the house is solid, true, and real.",
+    "word": { "w": "实在", "en": "really, truly" },
+    "sentence": { "cn": "他说的话很真实。", "en": "What he said is very true." }
+  },
+  "梦": {
+    "origin": "Two trees 林 with the evening 夕 below — eyes shut in the dark of night brings a dream.",
+    "word": { "w": "做梦", "en": "to dream" },
+    "sentence": { "cn": "我昨晚做了个梦。", "en": "I had a dream last night." }
+  },
+  "植": {
+    "origin": "The tree radical 木 beside 直 (straight) — push a seed straight down into the soil to plant it.",
+    "word": { "w": "植物", "en": "plant" },
+    "sentence": { "cn": "我在花园里植树。", "en": "I plant trees in the garden." }
+  },
+  "式": {
+    "origin": "A tool 弋 over a craftsman's square 工 — making things by a set pattern or style.",
+    "word": { "w": "方式", "en": "way, method" },
+    "sentence": { "cn": "这是一种新式样。", "en": "This is a new style." }
+  },
+  "程": {
+    "origin": "The grain radical 禾 beside 呈 — measuring how grain grows step by step, like a process.",
+    "word": { "w": "工程", "en": "engineering project" },
+    "sentence": { "cn": "上学的路程很短。", "en": "The way to school is short." }
+  },
+  "器": {
+    "origin": "Four mouths 口 around a dog 犬 — picture pots and bowls guarded by a watchful dog.",
+    "word": { "w": "机器", "en": "machine" },
+    "sentence": { "cn": "这台机器很有用。", "en": "This machine is very useful." }
+  },
+  "背": {
+    "origin": "Two people back to back 北 above the flesh radical ⺼ — that's your body's back.",
+    "word": { "w": "背包", "en": "backpack" },
+    "sentence": { "cn": "他背着一个书包。", "en": "He carries a schoolbag on his back." }
+  },
+  "陆": {
+    "origin": "The mound radical 阝 stands for hills and earth — 陆 means solid land and the great continent.",
+    "word": { "w": "大陆", "en": "mainland, continent" },
+    "sentence": { "cn": "飞机在陆地上降落。", "en": "The plane lands on the ground." }
+  },
+  "超": {
+    "origin": "The 'run' radical 走 with 召 for sound — run so fast you leap past everyone, you go beyond.",
+    "word": { "w": "超市", "en": "supermarket" },
+    "sentence": { "cn": "妈妈去超市买菜。", "en": "Mom goes to the supermarket to buy food." }
+  },
+  "周": {
+    "origin": "A border 冂 wrapped around the land — going all the way around means a circle, or a week.",
+    "word": { "w": "周末", "en": "weekend" },
+    "sentence": { "cn": "这个周末我们去公园。", "en": "This weekend we are going to the park." }
+  }
+}

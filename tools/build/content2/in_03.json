@@ -1,0 +1,317 @@
+[
+ {
+  "ch": "达",
+  "py": "dá",
+  "en": "reach; express",
+  "radical": "辶 (走之底)",
+  "decomp": "⿺辶大",
+  "hint": "",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "音",
+  "py": "yīn",
+  "en": "sound; music",
+  "radical": "音",
+  "decomp": "⿱立日",
+  "hint": "A tongue 立 forming a sound in the mouth 日",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "市",
+  "py": "shì",
+  "en": "market, city",
+  "radical": "巾",
+  "decomp": "⿱亠巾",
+  "hint": "",
+  "etype": ""
+ },
+ {
+  "ch": "行",
+  "py": "háng / xíng",
+  "en": "row; walk",
+  "radical": "彳 (双人旁)",
+  "decomp": "⿰彳亍",
+  "hint": "To take small steps 亍 with one's feet 彳",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "选",
+  "py": "xuǎn",
+  "en": "choose, select",
+  "radical": "辶",
+  "decomp": "⿺辶先",
+  "hint": "walk",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "营",
+  "py": "yíng",
+  "en": "nourish; operate",
+  "radical": "艹 (草字头)",
+  "decomp": "⿱艹⿱冖吕",
+  "hint": "",
+  "etype": ""
+ },
+ {
+  "ch": "泳",
+  "py": "yǒng",
+  "en": "swim",
+  "radical": "氵",
+  "decomp": "⿰氵永",
+  "hint": "water",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "功",
+  "py": "gōng",
+  "en": "achievement, merit",
+  "radical": "力",
+  "decomp": "⿰工力",
+  "hint": "Results produced by capable 力 labor 工; 工 also provides the pronunciation",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "影",
+  "py": "yǐng",
+  "en": "shadow, film",
+  "radical": "彡",
+  "decomp": "⿰景彡",
+  "hint": "sunlight",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "统",
+  "py": "tǒng",
+  "en": "system, unify",
+  "radical": "纟 (绞丝旁)",
+  "decomp": "⿰纟充",
+  "hint": "thread",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "响",
+  "py": "xiǎng",
+  "en": "sound; resound",
+  "radical": "口",
+  "decomp": "⿰口向",
+  "hint": "mouth",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "骑",
+  "py": "qí",
+  "en": "ride (a-stride)",
+  "radical": "马 (马字旁)",
+  "decomp": "⿰马奇",
+  "hint": "horse",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "总",
+  "py": "zǒng",
+  "en": "sum; always",
+  "radical": "心 (心字底)",
+  "decomp": "⿳丷口心",
+  "hint": "Many mouths 口 speaking with one mind 心",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "近",
+  "py": "jìn",
+  "en": "near",
+  "radical": "辶 (走之底)",
+  "decomp": "⿺辶斤",
+  "hint": "walk",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "运",
+  "py": "yùn",
+  "en": "move, transport",
+  "radical": "辶",
+  "decomp": "⿺辶云",
+  "hint": "walk",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "但",
+  "py": "dàn",
+  "en": "but",
+  "radical": "亻 (单人旁).",
+  "decomp": "⿰亻旦",
+  "hint": "",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "商",
+  "py": "shāng",
+  "en": "commerce; shop",
+  "radical": "立",
+  "decomp": "⿱⿱亠丷冏",
+  "hint": "bright",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "卖",
+  "py": "mài",
+  "en": "sell",
+  "radical": "十",
+  "decomp": "⿱十买",
+  "hint": "buy",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "联",
+  "py": "lián",
+  "en": "join; couplet",
+  "radical": "耳 (耳字旁)",
+  "decomp": "⿰耳关",
+  "hint": "ear",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "适",
+  "py": "shì",
+  "en": "suit, fit",
+  "radical": "辶",
+  "decomp": "⿺辶舌",
+  "hint": "walk",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "男",
+  "py": "nán",
+  "en": "man, boy",
+  "radical": "田",
+  "decomp": "⿱田力",
+  "hint": "Someone who can work 力 the farm 田",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "演",
+  "py": "yǎn",
+  "en": "perform, evolve",
+  "radical": "氵 (三点水)",
+  "decomp": "⿰氵寅",
+  "hint": "water",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "解",
+  "py": "jiě",
+  "en": "solve, understand",
+  "radical": "角 (角字旁)",
+  "decomp": "⿰角⿱刀牛",
+  "hint": "To cut 刀 the horns 角 off of an ox 牛; 角 also provides the pronunciation",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "题",
+  "py": "tí",
+  "en": "topic, question",
+  "radical": "页 (页字旁)",
+  "decomp": "⿺是页",
+  "hint": "head",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "虽",
+  "py": "suī",
+  "en": "although",
+  "radical": "虫",
+  "decomp": "⿱口虫",
+  "hint": "",
+  "etype": ""
+ },
+ {
+  "ch": "养",
+  "py": "yǎng",
+  "en": "raise, nurture",
+  "radical": "丷",
+  "decomp": "⿱羊儿",
+  "hint": "child",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "未",
+  "py": "wèi",
+  "en": "not yet, future",
+  "radical": "木",
+  "decomp": "⿻一木",
+  "hint": "A wheat plant that has not yet borne fruit; compare 來",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "社",
+  "py": "shè",
+  "en": "society",
+  "radical": "礻 (示字旁)",
+  "decomp": "⿰礻土",
+  "hint": "An earth 土 spirit 礻; 礻 also provides the pronunciation",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "除",
+  "py": "chú",
+  "en": "remove; except",
+  "radical": "阝 (左耳旁)",
+  "decomp": "⿰阝余",
+  "hint": "The waste 余 produced by a city 阝",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "旅",
+  "py": "lǚ",
+  "en": "travel",
+  "radical": "方 (方字旁).",
+  "decomp": "⿰方⿱？氏",
+  "hint": "A man 方 traveling with a pack 氏 on his back",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "银",
+  "py": "yín",
+  "en": "silver",
+  "radical": "钅 (金字旁)",
+  "decomp": "⿰钅艮",
+  "hint": "money",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "端",
+  "py": "duān",
+  "en": "start, upright",
+  "radical": "立",
+  "decomp": "⿰立耑",
+  "hint": "stand",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "护",
+  "py": "hù",
+  "en": "protect, defend",
+  "radical": "扌 (提手旁)",
+  "decomp": "⿰扌户",
+  "hint": "Guarding 扌 a home 户; 户 also provides the pronunciation",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "业",
+  "py": "yè",
+  "en": "trade, undertaking",
+  "radical": "一",
+  "decomp": "⿱？一",
+  "hint": "",
+  "etype": ""
+ },
+ {
+  "ch": "康",
+  "py": "kāng",
+  "en": "well-being",
+  "radical": "广 (广字头)",
+  "decomp": "⿸广隶",
+  "hint": "A home 广 with a servant 隶",
+  "etype": "ideographic"
+ }
+]

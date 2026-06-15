@@ -1,0 +1,362 @@
+[
+ {
+  "ch": "话",
+  "py": "huà",
+  "en": "talk, speech",
+  "radical": "讠",
+  "decomp": "⿰讠舌",
+  "hint": "A spoken 讠 tongue 舌; 舌 also provides the pronunciation",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "放",
+  "py": "fàng",
+  "en": "to release, to liberate, to free",
+  "radical": "攵",
+  "decomp": "⿰方攵",
+  "hint": "let go",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "完",
+  "py": "wán",
+  "en": "to complete, to finish, to settle",
+  "radical": "宀",
+  "decomp": "⿱宀元",
+  "hint": "roof",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "觉",
+  "py": "jué",
+  "en": "conscious",
+  "radical": "见",
+  "decomp": "⿳⺍冖见",
+  "hint": "see",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "滴",
+  "py": "dī",
+  "en": "to drip",
+  "radical": "氵",
+  "decomp": "⿰氵啇",
+  "hint": "water",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "答",
+  "py": "dá",
+  "en": "answer, reply",
+  "radical": "⺮",
+  "decomp": "⿱⺮合",
+  "hint": "",
+  "etype": ""
+ },
+ {
+  "ch": "芽",
+  "py": "yá",
+  "en": "bud, shoot, sprout",
+  "radical": "艹",
+  "decomp": "⿱艹牙",
+  "hint": "plant",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "苗",
+  "py": "miáo",
+  "en": "sprouts",
+  "radical": "艹",
+  "decomp": "⿱艹田",
+  "hint": "Grass 艹 growing in a field 田",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "种",
+  "py": "zhǒng",
+  "en": "race, kind, breed",
+  "radical": "禾",
+  "decomp": "⿰禾中",
+  "hint": "grain",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "青",
+  "py": "qīng",
+  "en": "nature's color",
+  "radical": "青",
+  "decomp": "⿱龶月",
+  "hint": "",
+  "etype": ""
+ },
+ {
+  "ch": "沙",
+  "py": "shā",
+  "en": "sand, gravel, pebbles",
+  "radical": "氵",
+  "decomp": "⿰氵少",
+  "hint": "water",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "当",
+  "py": "dāng",
+  "en": "appropriate, timely",
+  "radical": "⺌",
+  "decomp": "⿱⺌彐",
+  "hint": "",
+  "etype": ""
+ },
+ {
+  "ch": "号",
+  "py": "hào",
+  "en": "mark, sign",
+  "radical": "口",
+  "decomp": "⿱口丂",
+  "hint": "mouth",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "能",
+  "py": "néng",
+  "en": "can, may",
+  "radical": "⺼",
+  "decomp": "⿰⿱厶⺼⿱匕匕",
+  "hint": "A bear's head 厶, body ⺼, and claws 匕",
+  "etype": "pictographic"
+ },
+ {
+  "ch": "句",
+  "py": "jù",
+  "en": "sentence, clause, phrase, paragraph",
+  "radical": "口",
+  "decomp": "⿹勹口",
+  "hint": "A phrase 勹 from the mouth 口",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "串",
+  "py": "chuàn",
+  "en": "string",
+  "radical": "丨",
+  "decomp": "⿻⿱口口丨",
+  "hint": "Two objects 口 strung 丨 together",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "以",
+  "py": "yǐ",
+  "en": "according to",
+  "radical": "人",
+  "decomp": "⿰？人",
+  "hint": "",
+  "etype": ""
+ },
+ {
+  "ch": "省",
+  "py": "shěng",
+  "en": "province",
+  "radical": "目",
+  "decomp": "⿱少目",
+  "hint": "division",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "成",
+  "py": "chéng",
+  "en": "to accomplish",
+  "radical": "戈",
+  "decomp": "⿰丁戈",
+  "hint": "",
+  "etype": ""
+ },
+ {
+  "ch": "江",
+  "py": "jiāng",
+  "en": "large river",
+  "radical": "氵",
+  "decomp": "⿰氵工",
+  "hint": "water",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "河",
+  "py": "hé",
+  "en": "river, stream",
+  "radical": "氵",
+  "decomp": "⿰氵可",
+  "hint": "water",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "古",
+  "py": "gǔ",
+  "en": "old, classic, ancient",
+  "radical": "口",
+  "decomp": "⿱十口",
+  "hint": "Words passing through ten 十 mouths 口",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "国",
+  "py": "guó",
+  "en": "country, nation, state",
+  "radical": "囗",
+  "decomp": "⿴囗玉",
+  "hint": "Treasure 玉 within a country's borders 囗",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "条",
+  "py": "tiáo",
+  "en": "clause, condition",
+  "radical": "木",
+  "decomp": "⿱夂木",
+  "hint": "",
+  "etype": ""
+ },
+ {
+  "ch": "它",
+  "py": "tā",
+  "en": "it",
+  "radical": "宀",
+  "decomp": "⿱宀匕",
+  "hint": "",
+  "etype": ""
+ },
+ {
+  "ch": "名",
+  "py": "míng",
+  "en": "name",
+  "radical": "口",
+  "decomp": "⿸夕口",
+  "hint": "A name called out 口 to hail someone at night 夕",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "最",
+  "py": "zuì",
+  "en": "most, extremely, exceedingly",
+  "radical": "曰",
+  "decomp": "⿱日取",
+  "hint": "To take place 取 under the sun 日 (that is, everywhere)",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "亲",
+  "py": "qīn",
+  "en": "relatives, parents",
+  "radical": "立",
+  "decomp": "⿱立⿻一小",
+  "hint": "A tree 木 bearing fruit 立",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "从",
+  "py": "cóng",
+  "en": "from, by, since, whence, through",
+  "radical": "人",
+  "decomp": "⿰人人",
+  "hint": "One person 人 following another",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "华",
+  "py": "huá",
+  "en": "flowery",
+  "radical": "十",
+  "decomp": "⿱化十",
+  "hint": "ten",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "等",
+  "py": "děng",
+  "en": "rank, grade",
+  "radical": "⺮",
+  "decomp": "⿱⺮寺",
+  "hint": "Bamboo strips ⺮ laid before a court 寺",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "各",
+  "py": "gè",
+  "en": "individual",
+  "radical": "口",
+  "decomp": "⿱夂口",
+  "hint": "Walking 夂 and talking 口",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "香",
+  "py": "xiāng",
+  "en": "incense",
+  "radical": "香",
+  "decomp": "⿱禾日",
+  "hint": "A herb 禾 with a sweet 甘 smell",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "茶",
+  "py": "chá",
+  "en": "tea",
+  "radical": "艹",
+  "decomp": "⿱艹⿱人木",
+  "hint": "plant",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "汤",
+  "py": "tāng",
+  "en": "soup, gravy, broth",
+  "radical": "氵",
+  "decomp": "⿰氵昜",
+  "hint": "water",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "虾",
+  "py": "xiā",
+  "en": "shrimp, prawn",
+  "radical": "虫",
+  "decomp": "⿰虫下",
+  "hint": "insect",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "饱",
+  "py": "bǎo",
+  "en": "satisfied",
+  "radical": "饣",
+  "decomp": "⿰饣包",
+  "hint": "food",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "顿",
+  "py": "dùn",
+  "en": "to pause",
+  "radical": "页",
+  "decomp": "⿰屯页",
+  "hint": "head",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "才",
+  "py": "cái",
+  "en": "ability, talent, gift",
+  "radical": "扌",
+  "decomp": "⿻扌？",
+  "hint": "A sprout growing in the ground, representing a budding talent",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "意",
+  "py": "yì",
+  "en": "thought, idea, opinion",
+  "radical": "心",
+  "decomp": "⿱音心",
+  "hint": "heart",
+  "etype": "pictophonetic"
+ }
+]

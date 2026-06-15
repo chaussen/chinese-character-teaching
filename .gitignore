@@ -6,3 +6,8 @@ practice
 *.csv
 *.xlsx
 .venv
+
+# Character Studio build pipeline — large external download (regenerate via curl
+# in tools/build/fetch_chars.py); intermediate caches.
+tools/build/dictionary.txt
+tools/build/*.txt

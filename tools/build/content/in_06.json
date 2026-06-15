@@ -1,0 +1,362 @@
+[
+ {
+  "ch": "床",
+  "py": "chuáng",
+  "en": "bed, couch",
+  "radical": "广",
+  "decomp": "⿸广木",
+  "hint": "A house 广 made out of wood 木; 广 also provides the pronunciation",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "疑",
+  "py": "yí",
+  "en": "to doubt, to question, to suspect",
+  "radical": "疋",
+  "decomp": "⿰⿱匕矢⿱？疋",
+  "hint": "An old man walking 疋 while holding 匕 a cane 矢",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "举",
+  "py": "jǔ",
+  "en": "to raise",
+  "radical": "丶",
+  "decomp": "⿱兴扌",
+  "hint": "hand",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "低",
+  "py": "dī",
+  "en": "low",
+  "radical": "亻",
+  "decomp": "⿰亻氐",
+  "hint": "",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "乡",
+  "py": "xiāng",
+  "en": "country, village",
+  "radical": "幺",
+  "decomp": "幺",
+  "hint": "",
+  "etype": ""
+ },
+ {
+  "ch": "楼",
+  "py": "lóu",
+  "en": "multi-story building",
+  "radical": "木",
+  "decomp": "⿰木娄",
+  "hint": "wood",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "层",
+  "py": "céng",
+  "en": "layer, floor, story, stratum",
+  "radical": "尸",
+  "decomp": "⿸尸云",
+  "hint": "Simplified form of 層; 曾 provides the pronunciation",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "造",
+  "py": "zào",
+  "en": "to build, to construct, to invent, to…",
+  "radical": "辶",
+  "decomp": "⿺辶告",
+  "hint": "walk",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "代",
+  "py": "dài",
+  "en": "era, generation",
+  "radical": "亻",
+  "decomp": "⿰亻弋",
+  "hint": "A man 亻 caught 弋 by the passing of time",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "竹",
+  "py": "zhú",
+  "en": "bamboo",
+  "radical": "竹",
+  "decomp": "⿰？？",
+  "hint": "Two stalks of bamboo",
+  "etype": "pictographic"
+ },
+ {
+  "ch": "试",
+  "py": "shì",
+  "en": "to try, to experiment",
+  "radical": "讠",
+  "decomp": "⿰讠式",
+  "hint": "speech",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "验",
+  "py": "yàn",
+  "en": "to examine, to inspect, to test, to verify",
+  "radical": "马",
+  "decomp": "⿰马佥",
+  "hint": "horse",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "皮",
+  "py": "pí",
+  "en": "skin, hide, fur, feathers",
+  "radical": "皮",
+  "decomp": "⿸？攴",
+  "hint": "A hand using a tool 攴 to strip the hide from a carcass",
+  "etype": "pictographic"
+ },
+ {
+  "ch": "破",
+  "py": "pò",
+  "en": "to break, to rout",
+  "radical": "石",
+  "decomp": "⿰石皮",
+  "hint": "rock",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "布",
+  "py": "bù",
+  "en": "cotton, linen, textiles",
+  "radical": "巾",
+  "decomp": "⿸？巾",
+  "hint": "Cloth 巾 held in a hand",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "术",
+  "py": "shù",
+  "en": "skill, art",
+  "radical": "木",
+  "decomp": "⿺木丶",
+  "hint": "",
+  "etype": ""
+ },
+ {
+  "ch": "之",
+  "py": "zhī",
+  "en": "marks preceding phrase as modifier of…",
+  "radical": "丿",
+  "decomp": "⿱丶？",
+  "hint": "A foot meaning \"to follow\"; cursive version of 止",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "砍",
+  "py": "kǎn",
+  "en": "to hack, to chop, to cut, to fell",
+  "radical": "石",
+  "decomp": "⿰石欠",
+  "hint": "stone",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "建",
+  "py": "jiàn",
+  "en": "to build, to erect",
+  "radical": "廴",
+  "decomp": "⿺廴聿",
+  "hint": "action",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "房",
+  "py": "fáng",
+  "en": "building, house, room",
+  "radical": "户",
+  "decomp": "⿸户方",
+  "hint": "door",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "粗",
+  "py": "cū",
+  "en": "rough, think",
+  "radical": "米",
+  "decomp": "⿰米且",
+  "hint": "grain",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "累",
+  "py": "lèi",
+  "en": "tired",
+  "radical": "糸",
+  "decomp": "⿱田糸",
+  "hint": "Simplified form of 纍; growing silk 糸 in the fields 畾; 畾 also provides the pronunciation",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "路",
+  "py": "lù",
+  "en": "road, path, street",
+  "radical": "足",
+  "decomp": "⿰足各",
+  "hint": "foot",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "难",
+  "py": "nán",
+  "en": "hard, difficult, arduous",
+  "radical": "又",
+  "decomp": "⿰又隹",
+  "hint": "A hand 又 trying to grasp at a bird 隹",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "抓",
+  "py": "zhuā",
+  "en": "to clutch, to grab, to seize",
+  "radical": "扌",
+  "decomp": "⿰扌爪",
+  "hint": "A hand 扌 with claws 爪; 爪 also provides the pronunciation",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "疼",
+  "py": "téng",
+  "en": "ache, pain",
+  "radical": "疒",
+  "decomp": "⿸疒冬",
+  "hint": "sickness",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "痛",
+  "py": "tòng",
+  "en": "ache, pain",
+  "radical": "疒",
+  "decomp": "⿸疒甬",
+  "hint": "sickness",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "血",
+  "py": "xuè",
+  "en": "blood",
+  "radical": "血",
+  "decomp": "⿱丿皿",
+  "hint": "A chalice 皿 filled with blood 丿",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "棵",
+  "py": "kē",
+  "en": "measure word for trees",
+  "radical": "木",
+  "decomp": "⿰木果",
+  "hint": "tree",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "利",
+  "py": "lì",
+  "en": "gains, advantage, profit, merit",
+  "radical": "刂",
+  "decomp": "⿰禾刂",
+  "hint": "Harvesting 刂 grain 禾",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "细",
+  "py": "xì",
+  "en": "fine, detailed",
+  "radical": "纟",
+  "decomp": "⿰纟田",
+  "hint": "silk",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "如",
+  "py": "rú",
+  "en": "as, as if, like, such as, supposing",
+  "radical": "女",
+  "decomp": "⿰女口",
+  "hint": "A wife 女 following her husband's words 口",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "切",
+  "py": "qiè",
+  "en": "to cut, to mince, to slice, to carve",
+  "radical": "刀",
+  "decomp": "⿰七刀",
+  "hint": "knife",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "逛",
+  "py": "guàng",
+  "en": "to ramble, to stroll, to wander",
+  "radical": "辶",
+  "decomp": "⿺辶狂",
+  "hint": "walk",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "力",
+  "py": "lì",
+  "en": "strength, power",
+  "radical": "力",
+  "decomp": "⿻丿？",
+  "hint": "A plow's head representing strength",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "暖",
+  "py": "nuǎn",
+  "en": "warm, genial",
+  "radical": "日",
+  "decomp": "⿰日爰",
+  "hint": "sun",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "曲",
+  "py": "qū",
+  "en": "crooked, bent",
+  "radical": "曰",
+  "decomp": "⿻曰⿰丨丨",
+  "hint": "A folded object 曰",
+  "etype": "pictographic"
+ },
+ {
+  "ch": "哪",
+  "py": "nǎ",
+  "en": "which? where? how?",
+  "radical": "口",
+  "decomp": "⿰口那",
+  "hint": "mouth",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "款",
+  "py": "kuǎn",
+  "en": "funds, payment",
+  "radical": "欠",
+  "decomp": "⿰⿱士示欠",
+  "hint": "owe",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "借",
+  "py": "jiè",
+  "en": "to borrow",
+  "radical": "亻",
+  "decomp": "⿰亻昔",
+  "hint": "person",
+  "etype": "pictophonetic"
+ }
+]

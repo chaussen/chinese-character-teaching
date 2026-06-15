@@ -1,0 +1,202 @@
+{
+  "萄": {
+    "origin": "The grass top 艹 grows over 匋 — together they name the juicy grapes that hang on the vine.",
+    "word": { "w": "葡萄", "en": "grapes" },
+    "sentence": { "cn": "我喜欢吃葡萄。", "en": "I like to eat grapes." }
+  },
+  "照": {
+    "origin": "The bright 昭 part sits above four little fire dots 灬 — a fire that shines and lights everything up.",
+    "word": { "w": "照片", "en": "photograph" },
+    "sentence": { "cn": "太阳照在大地上。", "en": "The sun shines on the earth." }
+  },
+  "架": {
+    "origin": "Add 加 something on top of wood 木 to make a stand or shelf for holding things up.",
+    "word": { "w": "书架", "en": "bookshelf" },
+    "sentence": { "cn": "书都放在书架上。", "en": "The books are all on the bookshelf." }
+  },
+  "甜": {
+    "origin": "A tongue 舌 next to something tasty 甘 — your tongue smiles because it tastes so sweet.",
+    "word": { "w": "甜点", "en": "dessert" },
+    "sentence": { "cn": "这个西瓜很甜。", "en": "This watermelon is very sweet." }
+  },
+  "准": {
+    "origin": "Two ice drops 冫 by a bird 隹 — like a level checking that everything is exactly straight and accurate.",
+    "word": { "w": "准时", "en": "on time" },
+    "sentence": { "cn": "你说得很准。", "en": "What you said is very accurate." }
+  },
+  "摘": {
+    "origin": "A hand 扌 reaches up to a branch 啇 to pick a fruit or pluck a flower.",
+    "word": { "w": "摘花", "en": "to pick flowers" },
+    "sentence": { "cn": "他摘了一个苹果。", "en": "He picked an apple." }
+  },
+  "够": {
+    "origin": "When 句 plus many 多 things pile up, you finally have enough — no more is needed.",
+    "word": { "w": "足够", "en": "enough" },
+    "sentence": { "cn": "饭已经够了。", "en": "There is already enough food." }
+  },
+  "垂": {
+    "origin": "Picture a tree with branches and leaves drooping down low, hanging and dangling toward the ground.",
+    "word": { "w": "下垂", "en": "to droop" },
+    "sentence": { "cn": "柳枝垂到水面。", "en": "The willow branches hang down to the water." }
+  },
+  "丧": {
+    "origin": "A simpler way to write 喪 — people crying over someone who has gone 亡, showing deep sad mourning.",
+    "word": { "w": "沮丧", "en": "dejected" },
+    "sentence": { "cn": "他今天很沮丧。", "en": "He is very dejected today." }
+  },
+  "励": {
+    "origin": "A steep cliff 厉 plus strength 力 — pushing yourself with power gives the courage to encourage others.",
+    "word": { "w": "鼓励", "en": "to encourage" },
+    "sentence": { "cn": "老师鼓励我们读书。", "en": "The teacher encourages us to read." }
+  },
+  "晨": {
+    "origin": "The sun 日 rises above 辰 the horizon — that's dawn, the fresh early morning.",
+    "word": { "w": "早晨", "en": "early morning" },
+    "sentence": { "cn": "早晨的空气很新鲜。", "en": "The morning air is very fresh." }
+  },
+  "断": {
+    "origin": "An axe 斤 chops down hard and cuts something right through, so it snaps and breaks apart.",
+    "word": { "w": "断开", "en": "to disconnect" },
+    "sentence": { "cn": "树枝断了。", "en": "The tree branch broke." }
+  },
+  "武": {
+    "origin": "A foot 止 stepping out with a weapon 弋 — that's the strong, soldier-like power of the military.",
+    "word": { "w": "武术", "en": "martial arts" },
+    "sentence": { "cn": "他在学武术。", "en": "He is learning martial arts." }
+  },
+  "章": {
+    "origin": "Music 音 with ten 十 parts joined together — like the chapters and sections that make up a whole piece.",
+    "word": { "w": "文章", "en": "article" },
+    "sentence": { "cn": "这篇文章很有趣。", "en": "This article is very interesting." }
+  },
+  "效": {
+    "origin": "Crossing 交 hands with a tap 攵 — when actions come together they make a real result and effect.",
+    "word": { "w": "效果", "en": "effect" },
+    "sentence": { "cn": "这个办法很有效。", "en": "This method is very effective." }
+  },
+  "睛": {
+    "origin": "An eye 目 beside the blue-green 青 — your bright, shiny eyeball that sees the whole world.",
+    "word": { "w": "眼睛", "en": "eyes" },
+    "sentence": { "cn": "她的眼睛很大。", "en": "Her eyes are very big." }
+  },
+  "补": {
+    "origin": "Cloth 衤 with a little patch 卜 — sewing a hole shut to fix and mend what is torn.",
+    "word": { "w": "补丁", "en": "patch" },
+    "sentence": { "cn": "妈妈补好了我的衣服。", "en": "Mom mended my clothes." }
+  },
+  "拒": {
+    "origin": "A hand 扌 held up big 巨 like a wall — pushing something away to refuse it.",
+    "word": { "w": "拒绝", "en": "to refuse" },
+    "sentence": { "cn": "他拒绝了这个礼物。", "en": "He refused this gift." }
+  },
+  "绝": {
+    "origin": "A thread 纟 beside 色 — snip the thread and it is completely cut off, gone for good.",
+    "word": { "w": "拒绝", "en": "to refuse" },
+    "sentence": { "cn": "她绝不放弃。", "en": "She will never give up." }
+  },
+  "信": {
+    "origin": "A person 亻 standing by their words 言 — someone who keeps their word is someone you can trust.",
+    "word": { "w": "相信", "en": "to believe" },
+    "sentence": { "cn": "我相信你。", "en": "I believe you." }
+  },
+  "求": {
+    "origin": "Picture two hands reaching out wide — stretching forward to seek and ask for what you really want.",
+    "word": { "w": "要求", "en": "request" },
+    "sentence": { "cn": "他向老师求助。", "en": "He sought help from the teacher." }
+  },
+  "提": {
+    "origin": "A hand 扌 plus 是 — your hand grabs the handle and lifts the bag right up.",
+    "word": { "w": "提问", "en": "to ask a question" },
+    "sentence": { "cn": "他提着一个书包。", "en": "He is carrying a school bag." }
+  },
+  "驾": {
+    "origin": "Add 加 yourself onto a horse 马 — climb on and drive it forward down the road.",
+    "word": { "w": "驾驶", "en": "to drive" },
+    "sentence": { "cn": "爸爸在学驾车。", "en": "Dad is learning to drive." }
+  },
+  "繁": {
+    "origin": "Quick 敏 hands tangled with silk threads 糸 — so many threads it becomes busy and complex.",
+    "word": { "w": "繁忙", "en": "busy" },
+    "sentence": { "cn": "城市的街道很繁忙。", "en": "The city streets are very busy." }
+  },
+  "荣": {
+    "origin": "Grass 艹 and a tree 木 blooming under a roof 冖 — flourishing plants that bring glory and honor.",
+    "word": { "w": "光荣", "en": "glory" },
+    "sentence": { "cn": "我为你感到光荣。", "en": "I feel proud of you." }
+  },
+  "强": {
+    "origin": "A bow 弓 plus 虽 — a tightly drawn bow shows great power, strong and full of energy.",
+    "word": { "w": "强大", "en": "powerful" },
+    "sentence": { "cn": "他的身体很强壮。", "en": "His body is very strong." }
+  },
+  "所": {
+    "origin": "An axe 斤 by a door 户 — the spot where work happens marks the place or location.",
+    "word": { "w": "厕所", "en": "toilet" },
+    "sentence": { "cn": "这是我学习的地方所在。", "en": "This is the place where I study." }
+  },
+  "侨": {
+    "origin": "A person 亻 living tall and far away 乔 — someone who has moved abroad, an emigrant.",
+    "word": { "w": "华侨", "en": "overseas Chinese" },
+    "sentence": { "cn": "他是一位华侨。", "en": "He is an overseas Chinese person." }
+  },
+  "集": {
+    "origin": "Birds 隹 settling together on a tree 木 — all gathering and collecting in one place.",
+    "word": { "w": "集合", "en": "to assemble" },
+    "sentence": { "cn": "同学们集合在操场上。", "en": "The students gathered on the playground." }
+  },
+  "旧": {
+    "origin": "A line 丨 beside the sun 日 — something that has seen many suns is worn and old.",
+    "word": { "w": "旧书", "en": "old book" },
+    "sentence": { "cn": "这本书很旧了。", "en": "This book is very old." }
+  },
+  "岸": {
+    "origin": "A mountain 山 over a cliff 厂 by the water — that steep edge is the shore or coast.",
+    "word": { "w": "海岸", "en": "coast" },
+    "sentence": { "cn": "船靠在岸边。", "en": "The boat rests by the shore." }
+  },
+  "独": {
+    "origin": "A lone dog 犭 beside a little bug 虫 — staying by itself, alone and independent.",
+    "word": { "w": "独自", "en": "alone" },
+    "sentence": { "cn": "他独自走回家。", "en": "He walked home alone." }
+  },
+  "越": {
+    "origin": "A foot running 走 plus a weapon 戉 — leaping forward to cross over and surpass.",
+    "word": { "w": "超越", "en": "to surpass" },
+    "sentence": { "cn": "他越过了小河。", "en": "He crossed over the little river." }
+  },
+  "贴": {
+    "origin": "A shell of money 贝 plus 占 — press a stamp on tight, sticking and pasting it down.",
+    "word": { "w": "贴纸", "en": "sticker" },
+    "sentence": { "cn": "她在墙上贴画。", "en": "She is sticking a picture on the wall." }
+  },
+  "笼": {
+    "origin": "Bamboo ⺮ woven above a dragon 龙 — thin bamboo strips bent into a basket or cage.",
+    "word": { "w": "笼子", "en": "cage" },
+    "sentence": { "cn": "鸟儿在笼子里。", "en": "The bird is in the cage." }
+  },
+  "迎": {
+    "origin": "Walking 辶 toward 卬 someone arriving — stepping out to welcome and greet a guest.",
+    "word": { "w": "欢迎", "en": "to welcome" },
+    "sentence": { "cn": "欢迎你来我家。", "en": "Welcome to my home." }
+  },
+  "艘": {
+    "origin": "A boat 舟 beside 叟 — this is the counting word we use when we count ships.",
+    "word": { "w": "一艘船", "en": "one ship" },
+    "sentence": { "cn": "海上有一艘大船。", "en": "There is a big ship on the sea." }
+  },
+  "载": {
+    "origin": "A cart 车 wrapped inside 哉 — a cart piled up with goods, carrying a heavy load.",
+    "word": { "w": "下载", "en": "to download" },
+    "sentence": { "cn": "车上载满了水果。", "en": "The cart is loaded full of fruit." }
+  },
+  "航": {
+    "origin": "A boat 舟 beside 亢 — a sturdy vessel that sails far across the sea or sky.",
+    "word": { "w": "航行", "en": "to navigate" },
+    "sentence": { "cn": "飞机在天上航行。", "en": "The plane flies through the sky." }
+  },
+  "射": {
+    "origin": "A drawn bow-body 身 with a hand 寸 letting go — the arrow shoots out fast.",
+    "word": { "w": "射箭", "en": "to shoot an arrow" },
+    "sentence": { "cn": "他用弓射箭。", "en": "He shoots an arrow with a bow." }
+  }
+}

@@ -1,0 +1,362 @@
+[
+ {
+  "ch": "想",
+  "py": "xiǎng",
+  "en": "to believe, to wish for",
+  "radical": "心",
+  "decomp": "⿱相心",
+  "hint": "mind",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "些",
+  "py": "xiē",
+  "en": "little, few",
+  "radical": "二",
+  "decomp": "⿱此二",
+  "hint": "two",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "先",
+  "py": "xiān",
+  "en": "first, former, previous",
+  "radical": "儿",
+  "decomp": "⿱⿰？土儿",
+  "hint": "Someone stepping 止 in front of another person 儿",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "怎",
+  "py": "zěn",
+  "en": "what? why? how?",
+  "radical": "心",
+  "decomp": "⿱乍心",
+  "hint": "heart",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "倒",
+  "py": "dào",
+  "en": "to collapse, to fall over",
+  "radical": "亻",
+  "decomp": "⿰亻到",
+  "hint": "person",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "筷",
+  "py": "kuài",
+  "en": "chopsticks",
+  "radical": "⺮",
+  "decomp": "⿱⺮快",
+  "hint": "bamboo",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "练",
+  "py": "liàn",
+  "en": "to drill, to exercise",
+  "radical": "纟",
+  "decomp": "⿰纟柬",
+  "hint": "thread",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "像",
+  "py": "xiàng",
+  "en": "picture, image, figure",
+  "radical": "亻",
+  "decomp": "⿰亻象",
+  "hint": "person",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "幅",
+  "py": "fú",
+  "en": "piece, roll, strip",
+  "radical": "巾",
+  "decomp": "⿰巾畐",
+  "hint": "A roll 畐 of cloth 巾; 畐 also provides the pronunciation",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "弯",
+  "py": "wān",
+  "en": "bend, curve, turn",
+  "radical": "弓",
+  "decomp": "⿱亦弓",
+  "hint": "Like 亦 a bow 弓",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "每",
+  "py": "měi",
+  "en": "each, every",
+  "radical": "母",
+  "decomp": "⿱？母",
+  "hint": "",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "侯",
+  "py": "hóu",
+  "en": "marquis, lord",
+  "radical": "亻",
+  "decomp": "⿰亻矦",
+  "hint": "A person 亻 who might be a target 矦",
+  "etype": "pictographic"
+ },
+ {
+  "ch": "伸",
+  "py": "shēn",
+  "en": "to extend, to stretch out, to open up",
+  "radical": "亻",
+  "decomp": "⿰亻申",
+  "hint": "To extend your confidence 申 to another person 亻; 申 also provides the pronunciation",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "腿",
+  "py": "tuǐ",
+  "en": "legs, thighs",
+  "radical": "⺼",
+  "decomp": "⿰⺼退",
+  "hint": "Flesh ⺼ used to walk 退; 退 also provides the pronunciation",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "让",
+  "py": "ràng",
+  "en": "to allow, to permit, to yield",
+  "radical": "讠",
+  "decomp": "⿰讠上",
+  "hint": "speech",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "进",
+  "py": "jìn",
+  "en": "to advance, to make progress",
+  "radical": "辶",
+  "decomp": "⿺辶井",
+  "hint": "walk",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "猜",
+  "py": "cāi",
+  "en": "to guess, to conjecture, to suppose",
+  "radical": "犭",
+  "decomp": "⿰犭青",
+  "hint": "dog",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "粉",
+  "py": "fěn",
+  "en": "powder, flour, cosmetic powder",
+  "radical": "米",
+  "decomp": "⿰米分",
+  "hint": "grain",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "采",
+  "py": "cǎi",
+  "en": "to collect, to gather",
+  "radical": "釆",
+  "decomp": "⿱爫木",
+  "hint": "A hand picking 爫 fruit from a tree 木",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "蜜",
+  "py": "mì",
+  "en": "honey, nectar",
+  "radical": "虫",
+  "decomp": "⿱宓虫",
+  "hint": "insect",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "劳",
+  "py": "láo",
+  "en": "to labor, to toil",
+  "radical": "力",
+  "decomp": "⿱艹⿱冖力",
+  "hint": "A man lifting 力 a load 冖 of grass 艹",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "落",
+  "py": "luò",
+  "en": "to fall, to drop",
+  "radical": "艹",
+  "decomp": "⿱艹洛",
+  "hint": "plant",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "腰",
+  "py": "yāo",
+  "en": "waist, lower back",
+  "radical": "⺼",
+  "decomp": "⿰⺼要",
+  "hint": "flesh",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "挂",
+  "py": "guà",
+  "en": "to suspend, to put up, to hang",
+  "radical": "扌",
+  "decomp": "⿰扌圭",
+  "hint": "hand",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "梢",
+  "py": "shāo",
+  "en": "the tip of a branch",
+  "radical": "木",
+  "decomp": "⿰木肖",
+  "hint": "tree",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "把",
+  "py": "bǎ",
+  "en": "to grasp, to hold",
+  "radical": "扌",
+  "decomp": "⿰扌巴",
+  "hint": "hand",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "刀",
+  "py": "dāo",
+  "en": "knife",
+  "radical": "刀",
+  "decomp": "⿹？丿",
+  "hint": "",
+  "etype": ""
+ },
+ {
+  "ch": "谁",
+  "py": "shuí",
+  "en": "who? whom? whose? anyone?",
+  "radical": "讠",
+  "decomp": "⿰讠隹",
+  "hint": "speech",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "吗",
+  "py": "ma",
+  "en": "final interrogative particle",
+  "radical": "口",
+  "decomp": "⿰口马",
+  "hint": "mouth",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "变",
+  "py": "biàn",
+  "en": "to change, to transform, to alter",
+  "radical": "又",
+  "decomp": "⿱亦又",
+  "hint": "",
+  "etype": ""
+ },
+ {
+  "ch": "汽",
+  "py": "qì",
+  "en": "gasoline",
+  "radical": "氵",
+  "decomp": "⿰氵气",
+  "hint": "Liquid 氵 gas 气; 气 also provides the pronunciation",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "飘",
+  "py": "piāo",
+  "en": "to drift, to float, to flutter",
+  "radical": "风",
+  "decomp": "⿰票风",
+  "hint": "wind",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "珠",
+  "py": "zhū",
+  "en": "gem, jewel, pearl, precious stone",
+  "radical": "王",
+  "decomp": "⿰王朱",
+  "hint": "jade",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "掉",
+  "py": "diào",
+  "en": "to drop, to fall, to remove",
+  "radical": "扌",
+  "decomp": "⿰扌卓",
+  "hint": "hand",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "湖",
+  "py": "hú",
+  "en": "lake",
+  "radical": "氵",
+  "decomp": "⿰氵胡",
+  "hint": "water",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "问",
+  "py": "wèn",
+  "en": "to ask about, to inquire after",
+  "radical": "门",
+  "decomp": "⿵门口",
+  "hint": "mouth",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "渴",
+  "py": "kě",
+  "en": "thirsty, parched",
+  "radical": "氵",
+  "decomp": "⿰氵曷",
+  "hint": "water",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "死",
+  "py": "sǐ",
+  "en": "dead",
+  "radical": "歹",
+  "decomp": "⿸歹匕",
+  "hint": "A person kneeling 匕 before a corpse 歹",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "啦",
+  "py": "la",
+  "en": "final particle of an assertion",
+  "radical": "口",
+  "decomp": "⿰口拉",
+  "hint": "mouth",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "刚",
+  "py": "gāng",
+  "en": "hard, strong, tough",
+  "radical": "刂",
+  "decomp": "⿰冈刂",
+  "hint": "knife",
+  "etype": "pictophonetic"
+ }
+]

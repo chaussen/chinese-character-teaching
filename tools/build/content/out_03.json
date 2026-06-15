@@ -1,0 +1,202 @@
+{
+  "话": {
+    "origin": "The speech radical 讠 next to a tongue 舌 — words made by a wagging tongue become talk.",
+    "word": { "w": "说话", "en": "to speak" },
+    "sentence": { "cn": "请你大声说话。", "en": "Please speak loudly." }
+  },
+  "放": {
+    "origin": "On the left 方 gives the sound, and on the right 攵 is a hand that lets something go free.",
+    "word": { "w": "放学", "en": "to finish school" },
+    "sentence": { "cn": "我们三点放学。", "en": "We finish school at three o'clock." }
+  },
+  "完": {
+    "origin": "A roof 宀 over 元 (the first one) — when everything is tucked safely inside, the job is finished.",
+    "word": { "w": "完成", "en": "to complete" },
+    "sentence": { "cn": "我做完作业了。", "en": "I have finished my homework." }
+  },
+  "觉": {
+    "origin": "Little marks on top sit over an eye 见 that sees — when you see clearly, you feel and become aware.",
+    "word": { "w": "觉得", "en": "to feel, to think" },
+    "sentence": { "cn": "我觉得很开心。", "en": "I feel very happy." }
+  },
+  "滴": {
+    "origin": "The water radical 氵 means this is about water — a tiny drop of water falling down.",
+    "word": { "w": "水滴", "en": "water drop" },
+    "sentence": { "cn": "屋顶滴下水来。", "en": "Water drips down from the roof." }
+  },
+  "答": {
+    "origin": "Bamboo ⺮ over 合 (to join) — long ago answers were written on bamboo slips that fit together.",
+    "word": { "w": "回答", "en": "to answer" },
+    "sentence": { "cn": "我会回答这个问题。", "en": "I can answer this question." }
+  },
+  "芽": {
+    "origin": "Grass 艹 on top shows it is a plant, and 牙 (tooth) gives the sound — a tiny tooth-like sprout.",
+    "word": { "w": "发芽", "en": "to sprout" },
+    "sentence": { "cn": "小种子发芽了。", "en": "The little seed has sprouted." }
+  },
+  "苗": {
+    "origin": "Grass 艹 growing up out of a field 田 — a young green seedling.",
+    "word": { "w": "树苗", "en": "sapling" },
+    "sentence": { "cn": "田里有许多禾苗。", "en": "There are many rice seedlings in the field." }
+  },
+  "种": {
+    "origin": "The grain radical 禾 with 中 (middle) for the sound — seeds you plant in the ground.",
+    "word": { "w": "种子", "en": "seed" },
+    "sentence": { "cn": "我们一起种花。", "en": "We plant flowers together." }
+  },
+  "青": {
+    "origin": "Think of fresh young plants under the sky — 青 is the blue-green color of nature.",
+    "word": { "w": "青色", "en": "blue-green" },
+    "sentence": { "cn": "山上一片青草。", "en": "The mountain is covered with green grass." }
+  },
+  "沙": {
+    "origin": "Water 氵 beside 少 (few, tiny) — sand is countless little grains left by the water.",
+    "word": { "w": "沙子", "en": "sand" },
+    "sentence": { "cn": "我们在沙地上玩。", "en": "We play on the sand." }
+  },
+  "当": {
+    "origin": "Tiny strokes ⺌ over 彐 — picture standing right in the proper place at the right time.",
+    "word": { "w": "当然", "en": "of course" },
+    "sentence": { "cn": "我长大想当老师。", "en": "When I grow up I want to be a teacher." }
+  },
+  "号": {
+    "origin": "A mouth 口 above 丂 calling out — a loud cry, and later a number or sign you announce.",
+    "word": { "w": "号码", "en": "number" },
+    "sentence": { "cn": "今天是几号？", "en": "What is today's date?" }
+  },
+  "能": {
+    "origin": "A bear shape — head 厶, body ⺼, and strong claws 匕 — a mighty bear that is able to do anything.",
+    "word": { "w": "能力", "en": "ability" },
+    "sentence": { "cn": "我能跑得很快。", "en": "I can run very fast." }
+  },
+  "句": {
+    "origin": "A wrapping shape 勹 curling around a mouth 口 — words from the mouth wrapped into one sentence.",
+    "word": { "w": "句子", "en": "sentence" },
+    "sentence": { "cn": "请读这个句子。", "en": "Please read this sentence." }
+  },
+  "串": {
+    "origin": "Two mouths 口 poked through by a line 丨 — like beads threaded together on a string.",
+    "word": { "w": "一串", "en": "a string of" },
+    "sentence": { "cn": "桌上有一串葡萄。", "en": "There is a bunch of grapes on the table." }
+  },
+  "以": {
+    "origin": "A person 人 stands beside a tool — 以 means using something to get a task done.",
+    "word": { "w": "可以", "en": "may, can" },
+    "sentence": { "cn": "我可以进来吗？", "en": "May I come in?" }
+  },
+  "省": {
+    "origin": "Fewer 少 over an eye 目 — looking closely with small eyes means to save and to examine.",
+    "word": { "w": "省钱", "en": "to save money" },
+    "sentence": { "cn": "他住在广东省。", "en": "He lives in Guangdong Province." }
+  },
+  "成": {
+    "origin": "A guard with a spear 戈 watching over the work — when the job is well done, it is accomplished.",
+    "word": { "w": "成功", "en": "success" },
+    "sentence": { "cn": "我们成功了！", "en": "We succeeded!" }
+  },
+  "江": {
+    "origin": "Water 氵 beside 工 (work) for the sound — a very big, wide river.",
+    "word": { "w": "长江", "en": "Yangtze River" },
+    "sentence": { "cn": "江里有很多鱼。", "en": "There are many fish in the river." }
+  },
+  "河": {
+    "origin": "The water radical 氵 with 可 giving the sound — a flowing river or stream.",
+    "word": { "w": "小河", "en": "small river" },
+    "sentence": { "cn": "小河里水很清。", "en": "The water in the little river is clear." }
+  },
+  "古": {
+    "origin": "Words passed down through ten 十 mouths 口 — stories so old they come from long ago.",
+    "word": { "w": "古老", "en": "ancient" },
+    "sentence": { "cn": "这是一座古城。", "en": "This is an ancient city." }
+  },
+  "国": {
+    "origin": "Precious jade 玉 kept safe inside the borders 囗 — a treasured country.",
+    "word": { "w": "中国", "en": "China" },
+    "sentence": { "cn": "我爱我的国家。", "en": "I love my country." }
+  },
+  "条": {
+    "origin": "Picture a long thin branch of wood 木 below — 条 counts long, narrow things like a strip or a fish.",
+    "word": { "w": "一条", "en": "a strip of" },
+    "sentence": { "cn": "我买了一条鱼。", "en": "I bought a fish." }
+  },
+  "它": {
+    "origin": "A roof 宀 over 匕 — long ago this was a snake under a roof; now 它 simply means 'it'.",
+    "word": { "w": "它们", "en": "they (things/animals)" },
+    "sentence": { "cn": "这是我的猫，它很可爱。", "en": "This is my cat; it is very cute." }
+  },
+  "名": {
+    "origin": "At night 夕 you call out 口 to say who you are — that is your name.",
+    "word": { "w": "名字", "en": "name" },
+    "sentence": { "cn": "你叫什么名字？", "en": "What is your name?" }
+  },
+  "最": {
+    "origin": "Under the sun 日, taking 取 the top spot — 最 means the most of all.",
+    "word": { "w": "最好", "en": "best" },
+    "sentence": { "cn": "她跑得最快。", "en": "She runs the fastest." }
+  },
+  "亲": {
+    "origin": "Think of family standing close 立 and small 小 together — the people dearest and nearest to you.",
+    "word": { "w": "亲人", "en": "loved ones" },
+    "sentence": { "cn": "我很亲我的妈妈。", "en": "I am very close to my mother." }
+  },
+  "从": {
+    "origin": "One person 人 walking right behind another 人 — following along, going from here to there.",
+    "word": { "w": "从来", "en": "ever, always" },
+    "sentence": { "cn": "我从家里来。", "en": "I come from home." }
+  },
+  "华": {
+    "origin": "Picture a plant bursting into bloom — 华 means flowery, splendid, and also stands for China.",
+    "word": { "w": "中华", "en": "China" },
+    "sentence": { "cn": "我是中华儿女。", "en": "I am a child of China." }
+  },
+  "等": {
+    "origin": "Bamboo strips ⺮ set out before a court 寺 in order — sorted by rank, and you wait your turn.",
+    "word": { "w": "等待", "en": "to wait" },
+    "sentence": { "cn": "请等我一下。", "en": "Please wait for me a moment." }
+  },
+  "各": {
+    "origin": "Feet walking 夂 above a mouth 口 — everyone arrives their own way, so 各 means each one.",
+    "word": { "w": "各种", "en": "all kinds" },
+    "sentence": { "cn": "公园里有各种花。", "en": "There are all kinds of flowers in the park." }
+  },
+  "香": {
+    "origin": "Grain 禾 over the sun 日 — ripe grain warmed by the sun gives off a sweet, lovely smell.",
+    "word": { "w": "香味", "en": "fragrance" },
+    "sentence": { "cn": "花儿很香。", "en": "The flowers smell very sweet." }
+  },
+  "茶": {
+    "origin": "The grass radical 艹 shows it is a plant — tea leaves you pick and brew into a warm drink.",
+    "word": { "w": "喝茶", "en": "to drink tea" },
+    "sentence": { "cn": "爷爷喜欢喝茶。", "en": "Grandpa likes to drink tea." }
+  },
+  "汤": {
+    "origin": "The water radical 氵 tells you it is liquid — hot, tasty soup in a bowl.",
+    "word": { "w": "喝汤", "en": "to drink soup" },
+    "sentence": { "cn": "这碗汤很好喝。", "en": "This bowl of soup is delicious." }
+  },
+  "虾": {
+    "origin": "The insect radical 虫 (used for small creatures) with 下 for the sound — a little shrimp.",
+    "word": { "w": "小虾", "en": "little shrimp" },
+    "sentence": { "cn": "我喜欢吃虾。", "en": "I like to eat shrimp." }
+  },
+  "饱": {
+    "origin": "The food radical 饣 with 包 (wrap) for the sound — your tummy wrapped full and satisfied.",
+    "word": { "w": "吃饱", "en": "to eat one's fill" },
+    "sentence": { "cn": "我吃饱了。", "en": "I am full." }
+  },
+  "顿": {
+    "origin": "The head radical 页 with 屯 for the sound — you nod your head and pause, and it also counts meals.",
+    "word": { "w": "一顿饭", "en": "a meal" },
+    "sentence": { "cn": "我吃了一顿饭。", "en": "I ate a meal." }
+  },
+  "才": {
+    "origin": "Picture a little sprout pushing up through the ground — a budding talent just beginning to grow.",
+    "word": { "w": "才能", "en": "talent" },
+    "sentence": { "cn": "他很有才能。", "en": "He is very talented." }
+  },
+  "意": {
+    "origin": "A sound 音 over a heart 心 — what your heart says inside is your idea or meaning.",
+    "word": { "w": "意思", "en": "meaning" },
+    "sentence": { "cn": "这个词是什么意思？", "en": "What does this word mean?" }
+  }
+}

@@ -1,0 +1,202 @@
+{
+ "在": {
+  "origin": "A sprout 才 pushing up from the earth 土 — it shows where something is, right here at this spot.",
+  "word": { "w": "现在", "en": "now" },
+  "sentence": { "cn": "妈妈在家里。", "en": "Mom is at home." }
+ },
+ "写": {
+  "origin": "A little roof 冖 over your busy hand — under it you sit down and write your words.",
+  "word": { "w": "写字", "en": "to write characters" },
+  "sentence": { "cn": "我在本子上写名字。", "en": "I write my name in the notebook." }
+ },
+ "很": {
+  "origin": "The step radical 彳 walks beside 艮 — picture taking very, very many steps to mean a lot.",
+  "word": { "w": "很好", "en": "very good" },
+  "sentence": { "cn": "今天天气很好。", "en": "The weather is very nice today." }
+ },
+ "讲": {
+  "origin": "The speech radical 讠 next to a tidy well 井 — you talk and explain things in neat order.",
+  "word": { "w": "讲话", "en": "to speak, give a talk" },
+  "sentence": { "cn": "老师在讲故事。", "en": "The teacher is telling a story." }
+ },
+ "书": {
+  "origin": "Think of a pen making a flowing mark on paper — that writing becomes a book full of words.",
+  "word": { "w": "看书", "en": "to read a book" },
+  "sentence": { "cn": "我喜欢看书。", "en": "I like reading books." }
+ },
+ "朋": {
+  "origin": "Two moons 月 side by side, like two people walking together — that is what makes good friends.",
+  "word": { "w": "朋友", "en": "friend" },
+  "sentence": { "cn": "他是我的好朋友。", "en": "He is my good friend." }
+ },
+ "友": {
+  "origin": "Two hands 又 reaching out and joining together — friends help each other, hand in hand.",
+  "word": { "w": "朋友", "en": "friend" },
+  "sentence": { "cn": "我和小明是朋友。", "en": "Xiao Ming and I are friends." }
+ },
+ "午": {
+  "origin": "Picture the sun standing tall and straight overhead at the very middle of the day — that's noon.",
+  "word": { "w": "中午", "en": "noon" },
+  "sentence": { "cn": "中午我们吃饭。", "en": "We eat lunch at noon." }
+ },
+ "里": {
+  "origin": "A field 田 sitting on the soil 土 — it marks the land inside, the place where things are kept.",
+  "word": { "w": "里面", "en": "inside" },
+  "sentence": { "cn": "猫在屋子里。", "en": "The cat is inside the room." }
+ },
+ "不": {
+  "origin": "Picture a little bird flying up toward the sky line 一 but not landing — it means no, not yet.",
+  "word": { "w": "不是", "en": "is not" },
+  "sentence": { "cn": "我不喜欢下雨。", "en": "I don't like the rain." }
+ },
+ "再": {
+  "origin": "Think of stacking one thing on top of 一 another — doing it once more, again and again.",
+  "word": { "w": "再见", "en": "goodbye (see you again)" },
+  "sentence": { "cn": "明天再来玩吧。", "en": "Come play again tomorrow." }
+ },
+ "菜": {
+  "origin": "Grass 艹 growing above a picking hand 采 — you reach down and gather fresh vegetables to eat.",
+  "word": { "w": "蔬菜", "en": "vegetables" },
+  "sentence": { "cn": "我喜欢吃青菜。", "en": "I like eating green vegetables." }
+ },
+ "买": {
+  "origin": "Picture carrying coins to the market and bringing home a treasure — that is what it means to buy.",
+  "word": { "w": "买东西", "en": "to buy things, go shopping" },
+  "sentence": { "cn": "妈妈去买水果。", "en": "Mom goes to buy fruit." }
+ },
+ "龙": {
+  "origin": "This whole character curls and twists like a long, magical dragon flying through the clouds.",
+  "word": { "w": "龙年", "en": "Year of the Dragon" },
+  "sentence": { "cn": "我画了一条龙。", "en": "I drew a dragon." }
+ },
+ "打": {
+  "origin": "A hand 扌 swinging down on a nail 丁 — your hand taps, hits, or plays a game.",
+  "word": { "w": "打球", "en": "to play ball" },
+  "sentence": { "cn": "弟弟在打篮球。", "en": "My little brother is playing basketball." }
+ },
+ "猫": {
+  "origin": "The animal radical 犭 beside a sprout 苗 — a small furry creature that says meow: a cat.",
+  "word": { "w": "小猫", "en": "kitten" },
+  "sentence": { "cn": "小猫喜欢喝牛奶。", "en": "The kitten likes drinking milk." }
+ },
+ "红": {
+  "origin": "The silk radical 纟 beside 工 — picture silk threads dyed a bright, warm red color.",
+  "word": { "w": "红色", "en": "red (color)" },
+  "sentence": { "cn": "她穿着红色的鞋。", "en": "She is wearing red shoes." }
+ },
+ "绿": {
+  "origin": "The silk radical 纟 again — here the threads are dyed the fresh green of new leaves.",
+  "word": { "w": "绿色", "en": "green (color)" },
+  "sentence": { "cn": "草地是绿色的。", "en": "The grass is green." }
+ },
+ "弟": {
+  "origin": "Picture cord wrapped neatly down a bow 弓, step by step — like a younger brother coming after.",
+  "word": { "w": "弟弟", "en": "younger brother" },
+  "sentence": { "cn": "我的弟弟很可爱。", "en": "My younger brother is very cute." }
+ },
+ "店": {
+  "origin": "A wide roof 广 sheltering a spot 占 — a cozy building where a shop sets up to sell things.",
+  "word": { "w": "商店", "en": "shop, store" },
+  "sentence": { "cn": "我们去书店买书。", "en": "We go to the bookstore to buy books." }
+ },
+ "区": {
+  "origin": "An open box 匸 holding things inside — it marks off one small area or district from the rest.",
+  "word": { "w": "地区", "en": "area, region" },
+  "sentence": { "cn": "这个区有很多树。", "en": "This area has many trees." }
+ },
+ "饭": {
+  "origin": "The food radical 饣 beside 反 — it makes you think of a warm bowl of rice at mealtime.",
+  "word": { "w": "米饭", "en": "cooked rice" },
+  "sentence": { "cn": "我们一起吃饭。", "en": "We eat a meal together." }
+ },
+ "钱": {
+  "origin": "The metal radical 钅 tells you it's made of metal — think of shiny metal coins, which are money.",
+  "word": { "w": "金钱", "en": "money" },
+  "sentence": { "cn": "我有一点零钱。", "en": "I have a little change." }
+ },
+ "听": {
+  "origin": "A mouth 口 sends out words and an ear nearby catches them — that is how you listen.",
+  "word": { "w": "听话", "en": "to obey, be obedient" },
+  "sentence": { "cn": "我喜欢听音乐。", "en": "I like listening to music." }
+ },
+ "睡": {
+  "origin": "An eye 目 with lids drooping down 垂 — when your eyes hang heavy, it's time to sleep.",
+  "word": { "w": "睡觉", "en": "to sleep" },
+  "sentence": { "cn": "宝宝睡着了。", "en": "The baby has fallen asleep." }
+ },
+ "发": {
+  "origin": "Picture an arrow shooting out from a hand 又 — energy bursting out, sending something off.",
+  "word": { "w": "发现", "en": "to discover" },
+  "sentence": { "cn": "老师给我们发书。", "en": "The teacher hands out books to us." }
+ },
+ "诗": {
+  "origin": "The speech radical 讠 beside a temple 寺 — gentle, quiet words arranged into a beautiful poem.",
+  "word": { "w": "古诗", "en": "ancient poem" },
+  "sentence": { "cn": "我会背一首诗。", "en": "I can recite a poem." }
+ },
+ "草": {
+  "origin": "The grass radical 艹 sits above the early sun 早 — soft green grass waking up in the morning.",
+  "word": { "w": "小草", "en": "little grass" },
+  "sentence": { "cn": "草地上有小花。", "en": "There are little flowers on the grass." }
+ },
+ "流": {
+  "origin": "Three water drops 氵 on the side — picture water flowing and streaming gently down a river.",
+  "word": { "w": "河流", "en": "river" },
+  "sentence": { "cn": "小河的水流得很快。", "en": "The little river flows very fast." }
+ },
+ "美": {
+  "origin": "A person 大 wearing a grand woolly 羊 crown — standing tall and looking truly beautiful.",
+  "word": { "w": "美丽", "en": "beautiful" },
+  "sentence": { "cn": "这朵花真美。", "en": "This flower is really beautiful." }
+ },
+ "肉": {
+  "origin": "Picture lines of meat layered between an animal's ribs 冂 — that's where meat comes from.",
+  "word": { "w": "牛肉", "en": "beef" },
+  "sentence": { "cn": "我喜欢吃鸡肉。", "en": "I like eating chicken." }
+ },
+ "份": {
+  "origin": "A person 亻 beside divide 分 — it's the share or portion that gets split and handed to you.",
+  "word": { "w": "一份", "en": "one portion, one copy" },
+  "sentence": { "cn": "给我一份报纸。", "en": "Give me a copy of the newspaper." }
+ },
+ "饺": {
+  "origin": "The food radical 饣 beside 交 — think of dough folded and crossed over to wrap a tasty dumpling.",
+  "word": { "w": "饺子", "en": "dumpling" },
+  "sentence": { "cn": "过年我们吃饺子。", "en": "We eat dumplings at New Year." }
+ },
+ "元": {
+  "origin": "A person 儿 with two strokes 二 marking the head on top — the first, the head, the main one.",
+  "word": { "w": "元旦", "en": "New Year's Day" },
+  "sentence": { "cn": "这本书五元钱。", "en": "This book costs five yuan." }
+ },
+ "时": {
+  "origin": "The sun 日 beside a measure 寸 — watching the sun move tells you what time it is.",
+  "word": { "w": "时间", "en": "time" },
+  "sentence": { "cn": "现在是上学时间。", "en": "It is time to go to school now." }
+ },
+ "动": {
+  "origin": "Clouds 云 swept along by strength 力 — when force pushes, things begin to move.",
+  "word": { "w": "运动", "en": "exercise, sports" },
+  "sentence": { "cn": "小鱼在水里动。", "en": "The little fish moves in the water." }
+ },
+ "踢": {
+  "origin": "The foot radical 足 on the left — your foot swings out to kick the ball away.",
+  "word": { "w": "踢球", "en": "to kick a ball" },
+  "sentence": { "cn": "他们在操场踢球。", "en": "They are kicking a ball on the playground." }
+ },
+ "更": {
+  "origin": "Picture stacking one good thing over another — pushing it higher, making it even more.",
+  "word": { "w": "更好", "en": "even better" },
+  "sentence": { "cn": "今天比昨天更冷。", "en": "Today is even colder than yesterday." }
+ },
+ "故": {
+  "origin": "An old thing 古 with a tapping hand 攵 — looking back at old times and the reasons behind them.",
+  "word": { "w": "故事", "en": "story" },
+  "sentence": { "cn": "奶奶讲了一个故事。", "en": "Grandma told a story." }
+ },
+ "传": {
+  "origin": "A person 亻 beside 专 — picture handing something from person to person, passing it along.",
+  "word": { "w": "传话", "en": "to pass on a message" },
+  "sentence": { "cn": "请把书传给他。", "en": "Please pass the book to him." }
+ }
+}

@@ -1,0 +1,362 @@
+[
+ {
+  "ch": "圆",
+  "py": "yuán",
+  "en": "round",
+  "radical": "囗",
+  "decomp": "⿴囗员",
+  "hint": "enclosure",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "冷",
+  "py": "lěng",
+  "en": "cold",
+  "radical": "冫",
+  "decomp": "⿰冫令",
+  "hint": "ice",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "跑",
+  "py": "pǎo",
+  "en": "run",
+  "radical": "⻊",
+  "decomp": "⿰足包",
+  "hint": "foot",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "海",
+  "py": "hǎi",
+  "en": "sea",
+  "radical": "氵",
+  "decomp": "⿰氵每",
+  "hint": "water",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "跳",
+  "py": "tiào",
+  "en": "jump",
+  "radical": "⻊",
+  "decomp": "⿰足兆",
+  "hint": "foot",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "白",
+  "py": "bái",
+  "en": "white",
+  "radical": "白",
+  "decomp": "⿻？日",
+  "hint": "A burning candle; the rays of the sun",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "数",
+  "py": "shù",
+  "en": "number; maths",
+  "radical": "攵",
+  "decomp": "⿰娄攵",
+  "hint": "script",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "黑",
+  "py": "hēi",
+  "en": "black",
+  "radical": "黑",
+  "decomp": "⿱？灬",
+  "hint": "A man's face blacked by soot from a fire 灬",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "结",
+  "py": "jié",
+  "en": "knot; conclude",
+  "radical": "纟 (绞丝旁)",
+  "decomp": "⿰纟吉",
+  "hint": "thread",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "气",
+  "py": "qì",
+  "en": "air, weather",
+  "radical": "气",
+  "decomp": "⿱亻？",
+  "hint": "A person 亻 breathing air",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "被",
+  "py": "bèi",
+  "en": "by (passive)",
+  "radical": "衤 (衣字旁)",
+  "decomp": "⿰衤皮",
+  "hint": "cloth",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "首",
+  "py": "shǒu",
+  "en": "first; head",
+  "radical": "首",
+  "decomp": "⿱丷自",
+  "hint": "A deer's head 自 adorned with antlers 丷",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "王",
+  "py": "wáng",
+  "en": "king",
+  "radical": "王",
+  "decomp": "⿱一土",
+  "hint": "A man 十 bridging heaven and earth (both 一)",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "纸",
+  "py": "zhǐ",
+  "en": "paper",
+  "radical": "纟 (绞丝旁)",
+  "decomp": "⿰纟氏",
+  "hint": "silk",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "便",
+  "py": "pián",
+  "en": "cheap (便宜)",
+  "radical": "亻",
+  "decomp": "⿰亻更",
+  "hint": "",
+  "etype": ""
+ },
+ {
+  "ch": "决",
+  "py": "jué",
+  "en": "decide",
+  "radical": "冫 (两点水)",
+  "decomp": "⿰冫夬",
+  "hint": "",
+  "etype": ""
+ },
+ {
+  "ch": "明",
+  "py": "míng",
+  "en": "bright",
+  "radical": "日",
+  "decomp": "⿰日月",
+  "hint": "The light of the sun 日 and moon 月",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "节",
+  "py": "jié",
+  "en": "festival",
+  "radical": "艹",
+  "decomp": "⿱艹？",
+  "hint": "Simplified form of 節; sections of bamboo ⺮",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "闻",
+  "py": "wén",
+  "en": "hear; well-known",
+  "radical": "门",
+  "decomp": "⿵门耳",
+  "hint": "ear",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "城",
+  "py": "chéng",
+  "en": "city, town",
+  "radical": "土",
+  "decomp": "⿰土成",
+  "hint": "earth",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "合",
+  "py": "hé",
+  "en": "fit, combine",
+  "radical": "口",
+  "decomp": "⿱亼口",
+  "hint": "",
+  "etype": ""
+ },
+ {
+  "ch": "蓝",
+  "py": "lán",
+  "en": "blue",
+  "radical": "艹",
+  "decomp": "⿱艹监",
+  "hint": "plant",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "既",
+  "py": "jì",
+  "en": "since; both…and…",
+  "radical": "旡 (jì)",
+  "decomp": "⿰？旡",
+  "hint": "A person 旡 turning away from food 皀; compare 即",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "外",
+  "py": "wài",
+  "en": "out, outside, external",
+  "radical": "夕",
+  "decomp": "⿰夕卜",
+  "hint": "Night-time 夕 divinations 卜; the supernatural, the foreign",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "园",
+  "py": "yuán",
+  "en": "garden, park",
+  "radical": "囗",
+  "decomp": "⿴囗元",
+  "hint": "enclosure",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "万",
+  "py": "wàn",
+  "en": "ten thousand",
+  "radical": "一",
+  "decomp": "⿱一？",
+  "hint": "",
+  "etype": ""
+ },
+ {
+  "ch": "脚",
+  "py": "jiǎo",
+  "en": "foot",
+  "radical": "月 (肉月旁)",
+  "decomp": "⿰⺼却",
+  "hint": "flesh",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "矮",
+  "py": "ǎi",
+  "en": "short (height)",
+  "radical": "矢",
+  "decomp": "⿰矢委",
+  "hint": "dart",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "比",
+  "py": "bǐ",
+  "en": "compare",
+  "radical": "比",
+  "decomp": "⿰匕匕",
+  "hint": "Two spoons 匕 side-by-side; 匕 also provides the pronunciation",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "喝",
+  "py": "hē",
+  "en": "drink",
+  "radical": "口",
+  "decomp": "⿰口曷",
+  "hint": "mouth",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "晚",
+  "py": "wǎn",
+  "en": "evening, late",
+  "radical": "日字旁",
+  "decomp": "⿰日免",
+  "hint": "Avoiding 免 the sun 日; 免 also provides the pronunciation",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "聪",
+  "py": "cōng",
+  "en": "clever",
+  "radical": "耳",
+  "decomp": "⿰耳总",
+  "hint": "ear",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "块",
+  "py": "kuài",
+  "en": "dollar (spoken), piece",
+  "radical": "土",
+  "decomp": "⿰土夬",
+  "hint": "earth",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "远",
+  "py": "yuǎn",
+  "en": "far",
+  "radical": "辶 (走之底)",
+  "decomp": "⿺辶元",
+  "hint": "walk",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "努",
+  "py": "nǔ",
+  "en": "strive, exert",
+  "radical": "力",
+  "decomp": "⿱奴力",
+  "hint": "strength",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "球",
+  "py": "qiú",
+  "en": "ball",
+  "radical": "王",
+  "decomp": "⿰王求",
+  "hint": "jade",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "漂",
+  "py": "piào",
+  "en": "pretty (漂亮)",
+  "radical": "氵",
+  "decomp": "⿰氵票",
+  "hint": "water",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "环",
+  "py": "huán",
+  "en": "ring; environment",
+  "radical": "王 (王字旁)",
+  "decomp": "⿰王不",
+  "hint": "jade",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "境",
+  "py": "jìng",
+  "en": "environment; border",
+  "radical": "土 (土字旁)",
+  "decomp": "⿰土竟",
+  "hint": "earth",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "船",
+  "py": "chuán",
+  "en": "boat, ship",
+  "radical": "舟 (舟字旁)",
+  "decomp": "⿰舟⿱几口",
+  "hint": "ship",
+  "etype": "pictophonetic"
+ }
+]

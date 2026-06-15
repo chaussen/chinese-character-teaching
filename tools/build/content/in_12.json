@@ -1,0 +1,362 @@
+[
+ {
+  "ch": "升",
+  "py": "shēng",
+  "en": "to advance",
+  "radical": "十",
+  "decomp": "⿻十？",
+  "hint": "",
+  "etype": ""
+ },
+ {
+  "ch": "钟",
+  "py": "zhōng",
+  "en": "clock",
+  "radical": "钅",
+  "decomp": "⿰钅中",
+  "hint": "metal",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "厅",
+  "py": "tīng",
+  "en": "hall, central room",
+  "radical": "厂",
+  "decomp": "⿸厂丁",
+  "hint": "spacious",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "另",
+  "py": "lìng",
+  "en": "another",
+  "radical": "口",
+  "decomp": "⿱口力",
+  "hint": "",
+  "etype": ""
+ },
+ {
+  "ch": "宝",
+  "py": "bǎo",
+  "en": "treasure, jewel",
+  "radical": "宀",
+  "decomp": "⿱宀玉",
+  "hint": "Jade 玉 kept in one's house 宀",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "英",
+  "py": "yīng",
+  "en": "petal, flower, leaf",
+  "radical": "艹",
+  "decomp": "⿱艹央",
+  "hint": "flower",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "雄",
+  "py": "xióng",
+  "en": "alpha male, hero",
+  "radical": "隹",
+  "decomp": "⿰厷隹",
+  "hint": "bird",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "顺",
+  "py": "shùn",
+  "en": "to submit to, to obey, to go along with",
+  "radical": "页",
+  "decomp": "⿰川页",
+  "hint": "head",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "充",
+  "py": "chōng",
+  "en": "to fill, to supply",
+  "radical": "儿",
+  "decomp": "⿱亠允",
+  "hint": "",
+  "etype": ""
+ },
+ {
+  "ch": "秘",
+  "py": "mì",
+  "en": "secret, mysterious, abstruse",
+  "radical": "禾",
+  "decomp": "⿰禾必",
+  "hint": "grain",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "永",
+  "py": "yǒng",
+  "en": "long",
+  "radical": "水",
+  "decomp": "⿱？水",
+  "hint": "",
+  "etype": ""
+ },
+ {
+  "ch": "歇",
+  "py": "xiē",
+  "en": "to stop, to rest, to lodge",
+  "radical": "欠",
+  "decomp": "⿰曷欠",
+  "hint": "yawn",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "吟",
+  "py": "yín",
+  "en": "to sing, to hum",
+  "radical": "口",
+  "decomp": "⿰口今",
+  "hint": "mouth",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "慈",
+  "py": "cí",
+  "en": "gentle, humane, kind, merciful",
+  "radical": "心",
+  "decomp": "⿱兹心",
+  "hint": "heart",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "线",
+  "py": "xiàn",
+  "en": "line, thread, wire",
+  "radical": "纟",
+  "decomp": "⿰纟戋",
+  "hint": "thread",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "临",
+  "py": "lín",
+  "en": "to draw near, to approach",
+  "radical": "丨",
+  "decomp": "⿰⿰？丨？",
+  "hint": "",
+  "etype": ""
+ },
+ {
+  "ch": "缝",
+  "py": "fèng",
+  "en": "to sew, to mend",
+  "radical": "纟",
+  "decomp": "⿰纟逢",
+  "hint": "thread",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "恐",
+  "py": "kǒng",
+  "en": "fearful, apprehensive",
+  "radical": "心",
+  "decomp": "⿱巩心",
+  "hint": "heart",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "迟",
+  "py": "chí",
+  "en": "tardy, slow, late",
+  "radical": "辶",
+  "decomp": "⿺辶尺",
+  "hint": "walk",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "归",
+  "py": "guī",
+  "en": "to return, to go back",
+  "radical": "彐",
+  "decomp": "⿰？彐",
+  "hint": "Simplified form of 歸; a wife 帚 returning home; 追 provides the pronunciation",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "寸",
+  "py": "cùn",
+  "en": "inch",
+  "radical": "寸",
+  "decomp": "？",
+  "hint": "A hand with a dot indicating where the pulse can be felt, about an inch up the wrist",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "无",
+  "py": "wú",
+  "en": "no, not",
+  "radical": "无",
+  "decomp": "⿱一尢",
+  "hint": "",
+  "etype": ""
+ },
+ {
+  "ch": "改",
+  "py": "gǎi",
+  "en": "to alter, to change, to improve, to…",
+  "radical": "攵",
+  "decomp": "⿰己攵",
+  "hint": "A hand with a stick 攵 disciplining a kneeling child 己",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "衰",
+  "py": "shuāi",
+  "en": "weak, feeble",
+  "radical": "衣",
+  "decomp": "⿻衣⿻口一",
+  "hint": "A person in a robe 衣 with an injury 一 to his head 口",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "童",
+  "py": "tóng",
+  "en": "child, boy",
+  "radical": "立",
+  "decomp": "⿱立里",
+  "hint": "A child standing 立 in the village 里",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "何",
+  "py": "hé",
+  "en": "what, why, where, which, how",
+  "radical": "亻",
+  "decomp": "⿰亻可",
+  "hint": "",
+  "etype": ""
+ },
+ {
+  "ch": "冲",
+  "py": "chōng",
+  "en": "wash, rinse, flush",
+  "radical": "冫",
+  "decomp": "⿰冫中",
+  "hint": "water",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "称",
+  "py": "chēng",
+  "en": "balanced",
+  "radical": "禾",
+  "decomp": "⿰禾尔",
+  "hint": "",
+  "etype": ""
+ },
+ {
+  "ch": "官",
+  "py": "guān",
+  "en": "official, public servant",
+  "radical": "宀",
+  "decomp": "⿱宀㠯",
+  "hint": "",
+  "etype": ""
+ },
+ {
+  "ch": "重",
+  "py": "zhòng",
+  "en": "heavy, weighty",
+  "radical": "里",
+  "decomp": "⿻千里",
+  "hint": "A burden carried for a thousand 千 miles 里",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "秤",
+  "py": "chèng",
+  "en": "balance, scale",
+  "radical": "禾",
+  "decomp": "⿰禾平",
+  "hint": "A balance 平 used to measure grain 禾",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "摇",
+  "py": "yáo",
+  "en": "to rock, to shake",
+  "radical": "扌",
+  "decomp": "⿰扌䍃",
+  "hint": "hand",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "赶",
+  "py": "gǎn",
+  "en": "to pursue, to overtake",
+  "radical": "走",
+  "decomp": "⿺走干",
+  "hint": "run",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "沿",
+  "py": "yán",
+  "en": "to follow a course, to go along",
+  "radical": "氵",
+  "decomp": "⿰氵⿱几口",
+  "hint": "water",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "沉",
+  "py": "chén",
+  "en": "to sink, to submerge",
+  "radical": "氵",
+  "decomp": "⿰氵冗",
+  "hint": "An excessive 冗 amount of water 氵",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "赞",
+  "py": "zàn",
+  "en": "to help, to support",
+  "radical": "贝",
+  "decomp": "⿱兟贝",
+  "hint": "money",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "镜",
+  "py": "jìng",
+  "en": "mirror, glass",
+  "radical": "钅",
+  "decomp": "⿰钅竟",
+  "hint": "metal",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "参",
+  "py": "cān",
+  "en": "to take part in, to intervene",
+  "radical": "厶",
+  "decomp": "⿱⿱厶大彡",
+  "hint": "",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "任",
+  "py": "rèn",
+  "en": "to trust, to rely on",
+  "radical": "亻",
+  "decomp": "⿰亻壬",
+  "hint": "person",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "而",
+  "py": "ér",
+  "en": "and, and then, and yet",
+  "radical": "而",
+  "decomp": "？",
+  "hint": "",
+  "etype": ""
+ }
+]

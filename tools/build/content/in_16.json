@@ -1,0 +1,353 @@
+[
+ {
+  "ch": "祖",
+  "py": "zǔ",
+  "en": "ancestor, forefather",
+  "radical": "礻",
+  "decomp": "⿰礻且",
+  "hint": "spirit",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "政",
+  "py": "zhèng",
+  "en": "government, politics",
+  "radical": "攵",
+  "decomp": "⿰正攵",
+  "hint": "script",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "治",
+  "py": "zhì",
+  "en": "to administer, to govern, to regulate",
+  "radical": "氵",
+  "decomp": "⿰氵台",
+  "hint": "A structure 台 that directs the flow of water 氵",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "却",
+  "py": "què",
+  "en": "still, but",
+  "radical": "卩",
+  "decomp": "⿰去卩",
+  "hint": "seal",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "灭",
+  "py": "miè",
+  "en": "to extinguish",
+  "radical": "火",
+  "decomp": "⿱一火",
+  "hint": "To cover 一 a flame 火",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "初",
+  "py": "chū",
+  "en": "beginning, initial, primary",
+  "radical": "刀",
+  "decomp": "⿰衤刀",
+  "hint": "Cutting 刀 the cloth 衤 is the first step in making clothes",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "投",
+  "py": "tóu",
+  "en": "to pitch, to throw",
+  "radical": "扌",
+  "decomp": "⿰扌殳",
+  "hint": "hand",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "悲",
+  "py": "bēi",
+  "en": "sorrow, sadness, grief",
+  "radical": "心",
+  "decomp": "⿱非心",
+  "hint": "heart",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "划",
+  "py": "huà",
+  "en": "to row or paddle a boat",
+  "radical": "刂",
+  "decomp": "⿰戈刂",
+  "hint": "",
+  "etype": ""
+ },
+ {
+  "ch": "寻",
+  "py": "xún",
+  "en": "to seek",
+  "radical": "彐",
+  "decomp": "⿱彐寸",
+  "hint": "snout",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "伤",
+  "py": "shāng",
+  "en": "to injure, to harm",
+  "radical": "亻",
+  "decomp": "⿰亻⿱？力",
+  "hint": "",
+  "etype": ""
+ },
+ {
+  "ch": "纪",
+  "py": "jì",
+  "en": "discipline, age",
+  "radical": "纟",
+  "decomp": "⿰纟己",
+  "hint": "thread",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "念",
+  "py": "niàn",
+  "en": "to think of, to recall",
+  "radical": "心",
+  "decomp": "⿱今心",
+  "hint": "To keep the present 今 in mind 心",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "德",
+  "py": "dé",
+  "en": "ethics, morality",
+  "radical": "彳",
+  "decomp": "⿰彳⿱⿱十罒⿱一心",
+  "hint": "heart",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "毕",
+  "py": "bì",
+  "en": "to finish, to conclude, to end",
+  "radical": "比",
+  "decomp": "⿱比十",
+  "hint": "complete",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "战",
+  "py": "zhàn",
+  "en": "war, fighting, battle",
+  "radical": "戈",
+  "decomp": "⿰占戈",
+  "hint": "spear",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "领",
+  "py": "lǐng",
+  "en": "neck, collar",
+  "radical": "页",
+  "decomp": "⿰令页",
+  "hint": "head",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "务",
+  "py": "wù",
+  "en": "affairs, business",
+  "radical": "夂",
+  "decomp": "⿱夂力",
+  "hint": "",
+  "etype": ""
+ },
+ {
+  "ch": "尊",
+  "py": "zūn",
+  "en": "to honor, to respect, to venerate",
+  "radical": "寸",
+  "decomp": "⿱酋寸",
+  "hint": "A hand 寸 making an offering of wine 酋",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "敬",
+  "py": "jìng",
+  "en": "to respect, to honor",
+  "radical": "攵",
+  "decomp": "⿰苟攵",
+  "hint": "",
+  "etype": ""
+ },
+ {
+  "ch": "束",
+  "py": "shù",
+  "en": "to bind, to control, to restrain",
+  "radical": "木",
+  "decomp": "⿻木口",
+  "hint": "Lumber 木 bound by rope 口",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "贡",
+  "py": "gòng",
+  "en": "to offer, to contribute",
+  "radical": "贝",
+  "decomp": "⿱工贝",
+  "hint": "money",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "献",
+  "py": "xiàn",
+  "en": "to offer, to present",
+  "radical": "犬",
+  "decomp": "⿰南犬",
+  "hint": "dog",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "誉",
+  "py": "yù",
+  "en": "fame, reputation",
+  "radical": "言",
+  "decomp": "⿱兴言",
+  "hint": "Word 言 of one's success 兴",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "培",
+  "py": "péi",
+  "en": "to cultivate, to farm",
+  "radical": "土",
+  "decomp": "⿰土咅",
+  "hint": "earth",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "批",
+  "py": "pī",
+  "en": "comment, criticism",
+  "radical": "扌",
+  "decomp": "⿰扌比",
+  "hint": "hand",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "聂",
+  "py": "niè",
+  "en": "to whisper",
+  "radical": "耳",
+  "decomp": "⿱耳双",
+  "hint": "A pair 双 of ears 耳",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "灵",
+  "py": "líng",
+  "en": "spirit, soul",
+  "radical": "彐",
+  "decomp": "⿱彐火",
+  "hint": "fire",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "琴",
+  "py": "qín",
+  "en": "Chinese lute or guitar, string instrument",
+  "radical": "王",
+  "decomp": "⿱玨今",
+  "hint": "Two guitar strings 玨 suggest the meaning; 今 provides the pronunciation",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "渐",
+  "py": "jiàn",
+  "en": "gradually",
+  "radical": "氵",
+  "decomp": "⿰氵斩",
+  "hint": "water",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "舍",
+  "py": "shě",
+  "en": "house, dwelling",
+  "radical": "舌",
+  "decomp": "⿱人舌",
+  "hint": "the shape of a roof",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "创",
+  "py": "chuàng",
+  "en": "to establish, to create",
+  "radical": "刂",
+  "decomp": "⿰仓刂",
+  "hint": "knife",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "杰",
+  "py": "jié",
+  "en": "hero",
+  "radical": "木",
+  "decomp": "⿱木灬",
+  "hint": "",
+  "etype": ""
+ },
+ {
+  "ch": "侵",
+  "py": "qīn",
+  "en": "to invade, to encroach upon, to raid",
+  "radical": "亻",
+  "decomp": "⿰亻⿳彐冖又",
+  "hint": "",
+  "etype": ""
+ },
+ {
+  "ch": "愤",
+  "py": "fèn",
+  "en": "anger, indignation",
+  "radical": "忄",
+  "decomp": "⿰忄贲",
+  "hint": "heart",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "义",
+  "py": "yì",
+  "en": "right conduct, propriety",
+  "radical": "丿",
+  "decomp": "⿻丶乂",
+  "hint": "sheep; simplified form of 義",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "鼓",
+  "py": "gǔ",
+  "en": "drum",
+  "radical": "鼓",
+  "decomp": "⿰壴支",
+  "hint": "drum",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "奋",
+  "py": "fèn",
+  "en": "to strive, to exert effort",
+  "radical": "大",
+  "decomp": "⿱大田",
+  "hint": "A man 大 working on the farm 田",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "抗",
+  "py": "kàng",
+  "en": "to defy, to fight, to resist",
+  "radical": "扌",
+  "decomp": "⿰扌亢",
+  "hint": "Fighting 亢 with bare hands 扌; 亢 also provides the pronunciation",
+  "etype": "ideographic"
+ }
+]

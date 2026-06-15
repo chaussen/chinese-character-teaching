@@ -1,0 +1,202 @@
+{
+  "事": {
+    "origin": "A busy hand 彐 holding a brush over a mouth 口 — keeping track of all the affairs and matters of the day.",
+    "word": { "w": "事情", "en": "thing, matter" },
+    "sentence": { "cn": "我有一件事要告诉你。", "en": "I have something to tell you." }
+  },
+  "可": {
+    "origin": "A mouth 口 saying 'yes, that's fine' — 可 means can or may, like giving the okay.",
+    "word": { "w": "可以", "en": "may, can" },
+    "sentence": { "cn": "我可以喝点水吗？", "en": "May I drink some water?" }
+  },
+  "别": {
+    "origin": "A knife 刂 on the right draws a line to separate 另 things — 别 means to part or 'don't'.",
+    "word": { "w": "别人", "en": "other people" },
+    "sentence": { "cn": "别忘了带书包。", "en": "Don't forget to bring your schoolbag." }
+  },
+  "洗": {
+    "origin": "Water 氵 on the left plus 先 — splash water first to get clean. 洗 means to wash.",
+    "word": { "w": "洗手", "en": "to wash hands" },
+    "sentence": { "cn": "吃饭前要洗手。", "en": "Wash your hands before eating." }
+  },
+  "澡": {
+    "origin": "Water 氵 plus 喿 — pour lots of water all over yourself. 澡 means to bathe.",
+    "word": { "w": "洗澡", "en": "to take a bath" },
+    "sentence": { "cn": "我每天晚上洗澡。", "en": "I take a bath every evening." }
+  },
+  "还": {
+    "origin": "The walking path 辶 wrapping around 不 — to go back, or 'still' more to come.",
+    "word": { "w": "还有", "en": "still have, also" },
+    "sentence": { "cn": "天还很早。", "en": "It is still very early." }
+  },
+  "收": {
+    "origin": "A hand with a stick 攵 reaching out to gather things in — 收 means to collect.",
+    "word": { "w": "收到", "en": "to receive" },
+    "sentence": { "cn": "请把书收好。", "en": "Please put the books away neatly." }
+  },
+  "拾": {
+    "origin": "A hand 扌 bringing things together 合 — bend down and pick them up. 拾 means to gather.",
+    "word": { "w": "收拾", "en": "to tidy up" },
+    "sentence": { "cn": "我帮妈妈收拾房间。", "en": "I help mom tidy up the room." }
+  },
+  "扫": {
+    "origin": "A hand 扌 holding a broom 彐 — sweep the floor clean. 扫 means to sweep.",
+    "word": { "w": "打扫", "en": "to clean, to sweep" },
+    "sentence": { "cn": "我们一起打扫教室。", "en": "We clean the classroom together." }
+  },
+  "饿": {
+    "origin": "Food 饣 beside 我 (me) — when my tummy wants food, I feel 饿, hungry.",
+    "word": { "w": "饥饿", "en": "hunger" },
+    "sentence": { "cn": "我有点饿了。", "en": "I am a little hungry." }
+  },
+  "喂": {
+    "origin": "A mouth 口 plus 畏 — open your mouth and call out 'hey!' 喂 grabs attention.",
+    "word": { "w": "喂养", "en": "to feed (animals)" },
+    "sentence": { "cn": "喂，你在哪里？", "en": "Hello, where are you?" }
+  },
+  "灯": {
+    "origin": "Fire 火 on the left plus 丁 — a little flame that gives light. 灯 means lamp.",
+    "word": { "w": "电灯", "en": "electric lamp" },
+    "sentence": { "cn": "天黑了，开灯吧。", "en": "It's dark, let's turn on the light." }
+  },
+  "街": {
+    "origin": "A crossroads 行 wrapped around 圭 — where people walk between houses. 街 is a street.",
+    "word": { "w": "街道", "en": "street" },
+    "sentence": { "cn": "街上有很多人。", "en": "There are many people on the street." }
+  },
+  "道": {
+    "origin": "A walking path 辶 led by a head 首 — the road, or the way to go. 道 means way.",
+    "word": { "w": "知道", "en": "to know" },
+    "sentence": { "cn": "我知道你的名字。", "en": "I know your name." }
+  },
+  "长": {
+    "origin": "Picture an old man with long, flowing hair and a cane — 长 means long.",
+    "word": { "w": "长大", "en": "to grow up" },
+    "sentence": { "cn": "这条路很长。", "en": "This road is very long." }
+  },
+  "交": {
+    "origin": "A person standing with legs crossed over each other — 交 means to cross or connect.",
+    "word": { "w": "交朋友", "en": "to make friends" },
+    "sentence": { "cn": "我们交了好朋友。", "en": "We became good friends." }
+  },
+  "通": {
+    "origin": "A walking path 辶 plus 甬 — the road runs straight through. 通 means to pass through.",
+    "word": { "w": "通过", "en": "to pass through" },
+    "sentence": { "cn": "这条路通到学校。", "en": "This road leads to the school." }
+  },
+  "忙": {
+    "origin": "A heart 忄 next to 亡 — so much to do your heart races. 忙 means busy.",
+    "word": { "w": "帮忙", "en": "to help" },
+    "sentence": { "cn": "爸爸今天很忙。", "en": "Dad is very busy today." }
+  },
+  "往": {
+    "origin": "A small step 彳 heading toward 王 — set off and go that way. 往 means to go toward.",
+    "word": { "w": "往前", "en": "forward" },
+    "sentence": { "cn": "请往前走。", "en": "Please walk forward." }
+  },
+  "拉": {
+    "origin": "A hand 扌 next to 立 (stand) — grab hold and tug. 拉 means to pull.",
+    "word": { "w": "拉手", "en": "to hold hands" },
+    "sentence": { "cn": "妹妹拉着我的手。", "en": "Little sister holds my hand." }
+  },
+  "停": {
+    "origin": "A person 亻 resting by a pavilion 亭 — pause and take a break. 停 means to stop.",
+    "word": { "w": "停车", "en": "to park a car" },
+    "sentence": { "cn": "车停在门口。", "en": "The car stopped at the gate." }
+  },
+  "快": {
+    "origin": "A heart 忄 that decides 夬 in a flash — quick thinking. 快 means fast.",
+    "word": { "w": "很快", "en": "very fast" },
+    "sentence": { "cn": "他跑得很快。", "en": "He runs very fast." }
+  },
+  "带": {
+    "origin": "Picture a belt with cloth 巾 hanging below — it ties around you. 带 means belt or to carry.",
+    "word": { "w": "带来", "en": "to bring" },
+    "sentence": { "cn": "记得带雨伞。", "en": "Remember to bring an umbrella." }
+  },
+  "那": {
+    "origin": "Point far away to the right side 阝 — 那 means 'that' one over there.",
+    "word": { "w": "那里", "en": "there" },
+    "sentence": { "cn": "那是我的书。", "en": "That is my book." }
+  },
+  "拿": {
+    "origin": "Two hands joining 合 with a hand 手 below — grab it tight. 拿 means to take.",
+    "word": { "w": "拿走", "en": "to take away" },
+    "sentence": { "cn": "请拿一支笔。", "en": "Please take a pen." }
+  },
+  "奇": {
+    "origin": "A big person 大 over 可 — looking at something amazing! 奇 means strange or wonderful.",
+    "word": { "w": "奇怪", "en": "strange" },
+    "sentence": { "cn": "这件事真奇怪。", "en": "This matter is really strange." }
+  },
+  "他": {
+    "origin": "A person 亻 plus 也 (also) — another person, a 'he'. 他 means he or him.",
+    "word": { "w": "他们", "en": "they (male)" },
+    "sentence": { "cn": "他是我的同学。", "en": "He is my classmate." }
+  },
+  "点": {
+    "origin": "Fire dots 灬 beneath 占 — tiny sparks like little dots. 点 means a dot or point.",
+    "word": { "w": "一点", "en": "a little" },
+    "sentence": { "cn": "现在是三点。", "en": "It is now three o'clock." }
+  },
+  "该": {
+    "origin": "Words 讠 plus 亥 — when someone reminds you it's 'your turn'. 该 means should or ought to.",
+    "word": { "w": "应该", "en": "should, ought to" },
+    "sentence": { "cn": "我们该回家了。", "en": "We should go home now." }
+  },
+  "回": {
+    "origin": "A little square inside a big square 囗 — like a spiral curling back. 回 means to return.",
+    "word": { "w": "回家", "en": "to go home" },
+    "sentence": { "cn": "放学了，我们回家。", "en": "School is over, we go home." }
+  },
+  "吧": {
+    "origin": "A mouth 口 plus 巴 — a soft sound at the end of a sentence. 吧 means 'let's' or 'okay?'.",
+    "word": { "w": "好吧", "en": "all right" },
+    "sentence": { "cn": "我们一起玩吧。", "en": "Let's play together." }
+  },
+  "付": {
+    "origin": "A person 亻 with a hand 寸 — handing something over. 付 means to pay or deliver.",
+    "word": { "w": "付钱", "en": "to pay money" },
+    "sentence": { "cn": "妈妈去付钱。", "en": "Mom goes to pay." }
+  },
+  "医": {
+    "origin": "An arrow 矢 tucked inside a box 匸 — pulling out what hurts. 医 means to heal.",
+    "word": { "w": "医生", "en": "doctor" },
+    "sentence": { "cn": "医生很会看病。", "en": "The doctor is good at treating illness." }
+  },
+  "院": {
+    "origin": "A place 阝 plus 完 — walls around an open space. 院 means a yard or courtyard.",
+    "word": { "w": "医院", "en": "hospital" },
+    "sentence": { "cn": "爷爷在医院休息。", "en": "Grandpa is resting in the hospital." }
+  },
+  "得": {
+    "origin": "A small step 彳 and a hand 寸 reaching for a treasure 旦 — 得 means to get.",
+    "word": { "w": "得到", "en": "to obtain" },
+    "sentence": { "cn": "我得到了一个奖。", "en": "I received a prize." }
+  },
+  "急": {
+    "origin": "A pressing hand over a heart 心 — your heart beats fast. 急 means anxious or in a hurry.",
+    "word": { "w": "着急", "en": "anxious, worried" },
+    "sentence": { "cn": "别着急，慢慢来。", "en": "Don't worry, take it slow." }
+  },
+  "病": {
+    "origin": "The sickness sign 疒 (a person on a bed) plus 丙 — 病 means illness.",
+    "word": { "w": "生病", "en": "to fall ill" },
+    "sentence": { "cn": "弟弟生病了。", "en": "Little brother is sick." }
+  },
+  "要": {
+    "origin": "A woman 女 with hands on her waist 覀 — standing firm about what she wants. 要 means to want.",
+    "word": { "w": "需要", "en": "to need" },
+    "sentence": { "cn": "我要一杯牛奶。", "en": "I want a glass of milk." }
+  },
+  "药": {
+    "origin": "Plants 艹 on top plus 约 — herbs that make you better. 药 means medicine.",
+    "word": { "w": "吃药", "en": "to take medicine" },
+    "sentence": { "cn": "生病要吃药。", "en": "When sick, you must take medicine." }
+  },
+  "就": {
+    "origin": "A tall city 京 beside 尤 — head straight there right away. 就 means at once or just.",
+    "word": { "w": "就是", "en": "exactly, just is" },
+    "sentence": { "cn": "我马上就来。", "en": "I'll come right away." }
+  }
+}

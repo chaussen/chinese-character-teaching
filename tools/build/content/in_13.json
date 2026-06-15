@@ -1,0 +1,362 @@
+[
+ {
+  "ch": "拍",
+  "py": "pāi",
+  "en": "to clap, to tap",
+  "radical": "扌",
+  "decomp": "⿰扌白",
+  "hint": "hand",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "唯",
+  "py": "wéi",
+  "en": "only",
+  "radical": "口",
+  "decomp": "⿰口隹",
+  "hint": "",
+  "etype": ""
+ },
+ {
+  "ch": "设",
+  "py": "shè",
+  "en": "to build, to design",
+  "radical": "讠",
+  "decomp": "⿰讠殳",
+  "hint": "speech",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "计",
+  "py": "jì",
+  "en": "to calculate, to count",
+  "radical": "讠",
+  "decomp": "⿰讠十",
+  "hint": "speech",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "受",
+  "py": "shòu",
+  "en": "to receive, to get, to accept",
+  "radical": "又",
+  "decomp": "⿳爫冖又",
+  "hint": "Something 冖 passed from one hand 爫 to another 又",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "扩",
+  "py": "kuò",
+  "en": "to expand, to stretch, to magnify",
+  "radical": "扌",
+  "decomp": "⿰扌广",
+  "hint": "wide",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "怀",
+  "py": "huái",
+  "en": "bosom, breast",
+  "radical": "忄",
+  "decomp": "⿰忄不",
+  "hint": "heart",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "精",
+  "py": "jīng",
+  "en": "essence, germ, spirit",
+  "radical": "米",
+  "decomp": "⿰米青",
+  "hint": "grain",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "特",
+  "py": "tè",
+  "en": "special, unique, distinguished",
+  "radical": "牛",
+  "decomp": "⿰牛寺",
+  "hint": "ox",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "赢",
+  "py": "yíng",
+  "en": "to win, to gain",
+  "radical": "贝",
+  "decomp": "⿱吂⿲⺼贝？",
+  "hint": "money",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "止",
+  "py": "zhǐ",
+  "en": "to stop, to halt",
+  "radical": "止",
+  "decomp": "⿻上丨",
+  "hint": "A foot",
+  "etype": "pictographic"
+ },
+ {
+  "ch": "典",
+  "py": "diǎn",
+  "en": "law, canon",
+  "radical": "八",
+  "decomp": "⿱曲八",
+  "hint": "Two hands 八 holding a book 冊",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "珍",
+  "py": "zhēn",
+  "en": "a treasure, a precious thing",
+  "radical": "王",
+  "decomp": "⿰王⿱人彡",
+  "hint": "jade",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "穷",
+  "py": "qióng",
+  "en": "poor, destitute",
+  "radical": "穴",
+  "decomp": "⿱穴力",
+  "hint": "",
+  "etype": ""
+ },
+ {
+  "ch": "留",
+  "py": "liú",
+  "en": "to stay, to remain",
+  "radical": "田",
+  "decomp": "⿱卯田",
+  "hint": "",
+  "etype": ""
+ },
+ {
+  "ch": "暗",
+  "py": "àn",
+  "en": "dark, gloomy",
+  "radical": "日",
+  "decomp": "⿰日音",
+  "hint": "sun",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "此",
+  "py": "cǐ",
+  "en": "this, these",
+  "radical": "止",
+  "decomp": "⿰止匕",
+  "hint": "sitting man",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "误",
+  "py": "wù",
+  "en": "error, fault, mistake",
+  "radical": "讠",
+  "decomp": "⿰讠吴",
+  "hint": "speech",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "性",
+  "py": "xìng",
+  "en": "sex, nature, character",
+  "radical": "忄",
+  "decomp": "⿰忄生",
+  "hint": "heart",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "纲",
+  "py": "gāng",
+  "en": "program, outline",
+  "radical": "纟",
+  "decomp": "⿰纟冈",
+  "hint": "thread",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "部",
+  "py": "bù",
+  "en": "department, ministry",
+  "radical": "阝",
+  "decomp": "⿰咅阝",
+  "hint": "place",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "译",
+  "py": "yì",
+  "en": "to translate, to interpret",
+  "radical": "讠",
+  "decomp": "⿰讠？",
+  "hint": "speech",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "广",
+  "py": "guǎng",
+  "en": "broad, vast, wide",
+  "radical": "广",
+  "decomp": "⿱丶厂",
+  "hint": "A lean-to 厂, suggesting a building",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "附",
+  "py": "fù",
+  "en": "nearby",
+  "radical": "阝",
+  "decomp": "⿰阝付",
+  "hint": "place",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "显",
+  "py": "xiǎn",
+  "en": "clear, evident",
+  "radical": "日",
+  "decomp": "⿱日业",
+  "hint": "sun",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "雕",
+  "py": "diāo",
+  "en": "to carve, to engrave",
+  "radical": "隹",
+  "decomp": "⿰周隹",
+  "hint": "bird",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "复",
+  "py": "fù",
+  "en": "again, repeatedly",
+  "radical": "夊",
+  "decomp": "⿱亻⿱日夂",
+  "hint": "A person 亻 who goes  somewhere 夂 every day 日",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "制",
+  "py": "zhì",
+  "en": "system",
+  "radical": "刂",
+  "decomp": "⿰⿻？巾刂",
+  "hint": "knife",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "基",
+  "py": "jī",
+  "en": "foundation, base",
+  "radical": "土",
+  "decomp": "⿱其土",
+  "hint": "earth",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "顶",
+  "py": "dǐng",
+  "en": "top, summit, peak",
+  "radical": "页",
+  "decomp": "⿰丁页",
+  "hint": "head",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "嘴",
+  "py": "zuǐ",
+  "en": "mouth, lips",
+  "radical": "口",
+  "decomp": "⿰口觜",
+  "hint": "mouth",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "唇",
+  "py": "chún",
+  "en": "lips",
+  "radical": "口",
+  "decomp": "⿸辰口",
+  "hint": "mouth",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "严",
+  "py": "yán",
+  "en": "strict, rigorous, rigid",
+  "radical": "一",
+  "decomp": "⿻亚厂",
+  "hint": "",
+  "etype": ""
+ },
+ {
+  "ch": "随",
+  "py": "suí",
+  "en": "to follow, to listen to, to submit to",
+  "radical": "阝",
+  "decomp": "⿰阝迶",
+  "hint": "To walk 迶 to the city 阝; to follow a path",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "加",
+  "py": "jiā",
+  "en": "to add to, to increase, to augment",
+  "radical": "力",
+  "decomp": "⿰力口",
+  "hint": "Supporting a cause with the strength 力 of one's words 口",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "呀",
+  "py": "ya",
+  "en": "particle used to express surprise",
+  "radical": "口",
+  "decomp": "⿰口牙",
+  "hint": "mouth",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "匹",
+  "py": "pǐ",
+  "en": "bolt of cloth",
+  "radical": "匸",
+  "decomp": "⿷匸儿",
+  "hint": "A roll of cloth",
+  "etype": "pictographic"
+ },
+ {
+  "ch": "瓷",
+  "py": "cí",
+  "en": "china, crockery, porcelain",
+  "radical": "瓦",
+  "decomp": "⿱次瓦",
+  "hint": "pottery",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "众",
+  "py": "zhòng",
+  "en": "multitude, crowd",
+  "radical": "人",
+  "decomp": "⿱人⿰人人",
+  "hint": "Three people 人 representing a crowd",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "令",
+  "py": "lìng",
+  "en": "command, decree, order",
+  "radical": "人",
+  "decomp": "⿱人？",
+  "hint": "A person kneeling before a master 人",
+  "etype": "ideographic"
+ }
+]

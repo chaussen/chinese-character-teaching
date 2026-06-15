@@ -192,12 +192,49 @@ entry, a `render…()`, and a `case` in `render()`'s dispatch.
 ## 9. Status / roadmap
 | | |
 |---|---|
-| Learn = website model (radical meaning, story, word, sentence, audio) | ✅ display done; content partial (§5) |
+| Learn = website model (radical meaning, story, word, sentence, audio) | ✅ display done; content now ~complete for the grade books (§10) |
 | Stroke-control cleanup (defaults, remove speed/watch) | ✅ |
 | Exercise Hub + 描红 / 结构 / 听音选字 / 组词 / 选字填空 / hard distractors | ✅ |
 | Home unified & grouped by series → book | ✅ |
-| Audio: file-or-TTS hook + manifest | ✅ (TTS now; drop files + flip manifest) |
-| **Real audio** (char/word/sentence) | ⏳ teacher supplies → Claude Code wires (§4) |
-| **Author stories + sentences** toward full coverage | ⏳ ongoing (§5b) |
-| **Finish 中文 Book 1** (45 chars) + add more 中文 volumes | ⏳ (§6) |
+| Audio: file-or-TTS hook + manifest | ✅ |
+| **Real audio** (char/word/sentence) | ✅ generated with edge-tts for every char/word/sentence (§10) |
+| **Author stories + sentences** toward full coverage | ✅ for the grade books (§10); pilot ZW1 still partial |
+| 中文 grade books (Years 2–6) added | ✅ new `ZWG` series, 5 books, 60 lessons (§10) |
+| **Finish 中文 Book 1** (45 chars) + add more 中文 volumes | ⏳ pilot ZW1 still missing 45 chars (§6) |
 | Real stroke/handwriting recognition for trace & structure | ⏳ future |
+
+---
+
+## 10. 中文 grade books (Years 2–6) — added by the build pipeline
+
+A second Library series **`ZWG` (中文 · Years 2–6)** was added: 5 books (`G2`–`G6`),
+12 lessons each, 756 unique characters. Everything is regenerable from
+`tools/build/`:
+
+- **`tools/build/curriculum.py`** — the source list (grade → lesson → Hanzi). Edit
+  here to change/extend the curriculum.
+- **`tools/build/fetch_chars.py`** — downloads stroke data (hanzi-writer-data CDN,
+  URL-encoded, 1024 Y-up — identical coords to the app) + pinyin/meaning/radical
+  (makemeahanzi `dictionary.txt`) for any curriculum char not already in
+  `CHAR_INDEX`, and writes **`learn/library-chars.js`** (`window.LIBRARY_CHARS`).
+  This is a stroke-data-only pool wired into `buildIndex()` in `app.js` — it feeds
+  the Library books but is **not** a Home theme of its own.
+- **`tools/build/build_library.py`** — emits `learn/library-data.js` (preserves the
+  ZW pilot, regenerates the ZWG grade series).
+- **`tools/build/add_radicals.py`** — added 74 missing radicals to `radicals.js`.
+- **`tools/build/make_batches.py` / `make_batches2.py`** — split chars needing
+  enrichment into `tools/build/content/in_*.json` (per-char pinyin/meaning/radical/
+  decomposition/etymology-hint) for authoring.
+- **Authoring** (the per-char 小故事 origin · 词语 word · 句子 sentence) was done in
+  `tools/build/content*/out_*.json` (Hanzi → {origin, word{w,en}, sentence{cn,en}}).
+- **`tools/build/assemble.py`** — derives `struct` from the decomposition IDC,
+  fills **accurate pinyin via `pypinyin`** (context-aware, so 教书→jiāo shū, 一个→yí
+  gè), validates the invariants (word/sentence must contain the headword), and merges
+  into **`learn/content-extra.js`**.
+- **Audio**: `tools/generate_audio.py` now also scans `library-chars.js`; it was run
+  to produce real recordings for **every** char/word/sentence (914 / 804 / 775 clips)
+  with `zh-CN-XiaoxiaoNeural`. NOTE: edge-tts uses certifi's CA bundle — in this
+  sandbox the egress-gateway CA must be appended to `certifi.where()` first.
+
+`tools/build/dictionary.txt` is the only large input and is **git-ignored**;
+re-download it with the curl line at the top of `fetch_chars.py`.

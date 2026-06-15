@@ -1,0 +1,362 @@
+[
+ {
+  "ch": "玉",
+  "py": "yù",
+  "en": "jade, gem, precious stone",
+  "radical": "玉",
+  "decomp": "⿻王丶",
+  "hint": "A necklace 丨 adorned with three pieces of jade",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "异",
+  "py": "yì",
+  "en": "different, strange, unusual",
+  "radical": "廾",
+  "decomp": "⿱巳廾",
+  "hint": "Simplified form of 異; a person 共 with a scary face田",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "智",
+  "py": "zhì",
+  "en": "wisdom, knowledge, intelligence",
+  "radical": "日",
+  "decomp": "⿱知日",
+  "hint": "Known 知 clearly 日; 知 also provides the pronunciation",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "及",
+  "py": "jí",
+  "en": "to extend",
+  "radical": "又",
+  "decomp": "⿻？又",
+  "hint": "",
+  "etype": ""
+ },
+ {
+  "ch": "豚",
+  "py": "tún",
+  "en": "suckling pig",
+  "radical": "豕",
+  "decomp": "⿰⺼豕",
+  "hint": "A pig 豕 suckling at its mother's teat ⺼",
+  "etype": "pictographic"
+ },
+ {
+  "ch": "熊",
+  "py": "xióng",
+  "en": "a bear",
+  "radical": "灬",
+  "decomp": "⿱能灬",
+  "hint": "A bear's 能 footprints 灬",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "鲨",
+  "py": "shā",
+  "en": "shark",
+  "radical": "鱼",
+  "decomp": "⿱沙鱼",
+  "hint": "fish",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "透",
+  "py": "tòu",
+  "en": "to pierce, to penetrate, to pass through",
+  "radical": "辶",
+  "decomp": "⿺辶秀",
+  "hint": "walk",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "担",
+  "py": "dān",
+  "en": "to bear, to carry",
+  "radical": "扌",
+  "decomp": "⿰扌旦",
+  "hint": "hand",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "撞",
+  "py": "zhuàng",
+  "en": "to bump into, to collide, to hit, to…",
+  "radical": "扌",
+  "decomp": "⿰扌童",
+  "hint": "hand",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "鲸",
+  "py": "jīng",
+  "en": "whale",
+  "radical": "鱼",
+  "decomp": "⿰鱼京",
+  "hint": "fish",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "尾",
+  "py": "wěi",
+  "en": "tail",
+  "radical": "尸",
+  "decomp": "⿸尸毛",
+  "hint": "A furry 毛 tail behind a body 尸",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "溅",
+  "py": "jiàn",
+  "en": "to sprinkle, to spray, to splash, to spill",
+  "radical": "氵",
+  "decomp": "⿰氵贱",
+  "hint": "water",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "肚",
+  "py": "dù",
+  "en": "belly",
+  "radical": "⺼",
+  "decomp": "⿰⺼土",
+  "hint": "flesh",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "埋",
+  "py": "mái",
+  "en": "to bury",
+  "radical": "土",
+  "decomp": "⿰土里",
+  "hint": "earth",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "挖",
+  "py": "wā",
+  "en": "to dig, to excavate",
+  "radical": "扌",
+  "decomp": "⿰扌穵",
+  "hint": "To dig out 扌 a hollow 穵; 穵 also provides the pronunciation",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "遍",
+  "py": "biàn",
+  "en": "everywhere, all over, throughout",
+  "radical": "辶",
+  "decomp": "⿺辶扁",
+  "hint": "walk",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "庄",
+  "py": "zhuāng",
+  "en": "village, hamlet",
+  "radical": "广",
+  "decomp": "⿸广土",
+  "hint": "house",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "产",
+  "py": "chǎn",
+  "en": "to give birth, to bring forth, to produce",
+  "radical": "亠",
+  "decomp": "⿳亠丷厂",
+  "hint": "",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "量",
+  "py": "liàng",
+  "en": "measure, volume",
+  "radical": "里",
+  "decomp": "⿱旦里",
+  "hint": "unit",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "粮",
+  "py": "liáng",
+  "en": "food, grain, provisions",
+  "radical": "米",
+  "decomp": "⿰米良",
+  "hint": "grain",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "勤",
+  "py": "qín",
+  "en": "industrious, diligent, attentive",
+  "radical": "力",
+  "decomp": "⿰堇力",
+  "hint": "strength",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "巨",
+  "py": "jù",
+  "en": "large, huge, gigantic",
+  "radical": "匚",
+  "decomp": "⿷匚？",
+  "hint": "A hand holding a large carpenter's square 工",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "围",
+  "py": "wéi",
+  "en": "to surround, to encircle, to corral",
+  "radical": "囗",
+  "decomp": "⿴囗韦",
+  "hint": "enclosure",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "禁",
+  "py": "jìn",
+  "en": "to restrict, to prohibit, to forbid",
+  "radical": "示",
+  "decomp": "⿱林示",
+  "hint": "altar",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "私",
+  "py": "sī",
+  "en": "personal, private, secret",
+  "radical": "禾",
+  "decomp": "⿰禾厶",
+  "hint": "厶 provides the meaning and pronunciation",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "愿",
+  "py": "yuàn",
+  "en": "desire, wish",
+  "radical": "心",
+  "decomp": "⿸原心",
+  "hint": "heart",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "必",
+  "py": "bì",
+  "en": "surely, certainly",
+  "radical": "心",
+  "decomp": "⿻心丿",
+  "hint": "",
+  "etype": ""
+ },
+ {
+  "ch": "须",
+  "py": "xū",
+  "en": "beard",
+  "radical": "彡",
+  "decomp": "⿰彡页",
+  "hint": "Hair 彡 growing on the face 页",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "拆",
+  "py": "chāi",
+  "en": "to break open, to split up, to tear apart",
+  "radical": "扌",
+  "decomp": "⿰扌斥",
+  "hint": "hand",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "亡",
+  "py": "wáng",
+  "en": "death, destruction",
+  "radical": "亠",
+  "decomp": "⿱亠？",
+  "hint": "A man 人 in a coffin; see 亾",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "牢",
+  "py": "láo",
+  "en": "pen, prison, stable",
+  "radical": "牛",
+  "decomp": "⿱宀牛",
+  "hint": "A stable 宀 where cattle are kept 牛",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "屋",
+  "py": "wū",
+  "en": "building, house, shelter",
+  "radical": "尸",
+  "decomp": "⿸尸至",
+  "hint": "To stop 至 under a roof 尸 (variant of 厂)",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "修",
+  "py": "xiū",
+  "en": "to study",
+  "radical": "亻",
+  "decomp": "⿱攸彡",
+  "hint": "hair",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "邻",
+  "py": "lín",
+  "en": "neighbor",
+  "radical": "阝",
+  "decomp": "⿰令阝",
+  "hint": "town",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "劝",
+  "py": "quàn",
+  "en": "to recommend, to advise",
+  "radical": "力",
+  "decomp": "⿰又力",
+  "hint": "The power 力 beside 又 the throne",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "丢",
+  "py": "diū",
+  "en": "to lose",
+  "radical": "一",
+  "decomp": "⿱王厶",
+  "hint": "A lost 厶 jade 玉",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "拔",
+  "py": "bá",
+  "en": "to uproot, to pull out",
+  "radical": "扌",
+  "decomp": "⿰扌犮",
+  "hint": "hand",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "盼",
+  "py": "pàn",
+  "en": "to look, to gaze",
+  "radical": "目",
+  "decomp": "⿰目分",
+  "hint": "eye",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "秧",
+  "py": "yāng",
+  "en": "shoots, sprouts",
+  "radical": "禾",
+  "decomp": "⿰禾央",
+  "hint": "rice",
+  "etype": "pictophonetic"
+ }
+]

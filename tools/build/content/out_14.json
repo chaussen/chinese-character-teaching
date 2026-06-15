@@ -1,0 +1,442 @@
+{
+ "玉": {
+  "origin": "A king 王 holding one extra dot 丶 — a precious piece of jade so special it gets its own sparkle.",
+  "word": {
+   "w": "玉米",
+   "en": "corn"
+  },
+  "sentence": {
+   "cn": "这块玉很漂亮。",
+   "en": "This piece of jade is very beautiful."
+  }
+ },
+ "异": {
+  "origin": "Two hands 廾 lifting something up to show it off — it looks different and strange from everything else.",
+  "word": {
+   "w": "奇异",
+   "en": "strange"
+  },
+  "sentence": {
+   "cn": "他有一个奇异的想法。",
+   "en": "He has a strange idea."
+  }
+ },
+ "智": {
+  "origin": "Knowing 知 something as clearly as the bright sun 日 — that clear knowing is wisdom.",
+  "word": {
+   "w": "智慧",
+   "en": "wisdom"
+  },
+  "sentence": {
+   "cn": "他是个很有智慧的人。",
+   "en": "He is a very wise person."
+  }
+ },
+ "及": {
+  "origin": "Picture a hand 又 reaching out to catch a person running away — stretching to reach and extend.",
+  "word": {
+   "w": "以及",
+   "en": "as well as"
+  },
+  "sentence": {
+   "cn": "我们及时到了车站。",
+   "en": "We reached the station in time."
+  }
+ },
+ "豚": {
+  "origin": "A bit of flesh ⺼ next to a pig 豕 — a plump little suckling pig.",
+  "word": {
+   "w": "海豚",
+   "en": "dolphin"
+  },
+  "sentence": {
+   "cn": "海豚在水里游泳。",
+   "en": "The dolphin swims in the water."
+  }
+ },
+ "熊": {
+  "origin": "A strong, able 能 animal standing on four fiery dots 灬 for paws — that's a big bear.",
+  "word": {
+   "w": "熊猫",
+   "en": "panda"
+  },
+  "sentence": {
+   "cn": "大熊在树下睡觉。",
+   "en": "The big bear sleeps under the tree."
+  }
+ },
+ "鲨": {
+  "origin": "A fish 鱼 that swims through sand 沙 at the bottom of the sea — the speedy shark.",
+  "word": {
+   "w": "鲨鱼",
+   "en": "shark"
+  },
+  "sentence": {
+   "cn": "鲨鱼游得很快。",
+   "en": "The shark swims very fast."
+  }
+ },
+ "透": {
+  "origin": "Walking 辶 right through something pretty 秀 — passing all the way through, see-through clear.",
+  "word": {
+   "w": "透明",
+   "en": "transparent"
+  },
+  "sentence": {
+   "cn": "玻璃是透明的。",
+   "en": "Glass is transparent."
+  }
+ },
+ "担": {
+  "origin": "A hand 扌 carrying a load while the sun rises 旦 — you carry and bear the weight.",
+  "word": {
+   "w": "担心",
+   "en": "to worry"
+  },
+  "sentence": {
+   "cn": "妈妈很担心我。",
+   "en": "Mom worries about me a lot."
+  }
+ },
+ "撞": {
+  "origin": "A hand 扌 and a child 童 rushing about — bump! That's how you crash and collide.",
+  "word": {
+   "w": "撞车",
+   "en": "car crash"
+  },
+  "sentence": {
+   "cn": "他不小心撞到了门。",
+   "en": "He accidentally bumped into the door."
+  }
+ },
+ "鲸": {
+  "origin": "A fish 鱼 as big as a capital city 京 — the giant whale of the sea.",
+  "word": {
+   "w": "鲸鱼",
+   "en": "whale"
+  },
+  "sentence": {
+   "cn": "鲸鱼是最大的动物。",
+   "en": "The whale is the biggest animal."
+  }
+ },
+ "尾": {
+  "origin": "Soft fur 毛 hanging behind a body 尸 — that wiggly part is the tail.",
+  "word": {
+   "w": "尾巴",
+   "en": "tail"
+  },
+  "sentence": {
+   "cn": "小狗的尾巴很长。",
+   "en": "The puppy's tail is very long."
+  }
+ },
+ "溅": {
+  "origin": "Water 氵 jumping up in tiny drops — splash! It sprays everywhere.",
+  "word": {
+   "w": "溅水",
+   "en": "to splash water"
+  },
+  "sentence": {
+   "cn": "车子溅了我一身水。",
+   "en": "The car splashed water all over me."
+  }
+ },
+ "肚": {
+  "origin": "A piece of flesh ⺼ shaped like a mound of earth 土 — your round, full belly.",
+  "word": {
+   "w": "肚子",
+   "en": "belly"
+  },
+  "sentence": {
+   "cn": "我的肚子饿了。",
+   "en": "My belly is hungry."
+  }
+ },
+ "埋": {
+  "origin": "Earth 土 piled over a village 里 — you cover something with soil to bury it.",
+  "word": {
+   "w": "埋葬",
+   "en": "to bury"
+  },
+  "sentence": {
+   "cn": "小狗把骨头埋起来。",
+   "en": "The puppy buries its bone."
+  }
+ },
+ "挖": {
+  "origin": "A hand 扌 scooping out a hollow 穵 in the ground — that's how you dig.",
+  "word": {
+   "w": "挖土",
+   "en": "to dig soil"
+  },
+  "sentence": {
+   "cn": "他们在沙滩上挖洞。",
+   "en": "They dig a hole on the beach."
+  }
+ },
+ "遍": {
+  "origin": "Walking 辶 over every flat 扁 place — going all over, everywhere.",
+  "word": {
+   "w": "遍地",
+   "en": "all over the ground"
+  },
+  "sentence": {
+   "cn": "公园里遍地是花。",
+   "en": "Flowers are all over the park."
+  }
+ },
+ "庄": {
+  "origin": "A house 广 sitting on the earth 土 — a little home in a country village.",
+  "word": {
+   "w": "村庄",
+   "en": "village"
+  },
+  "sentence": {
+   "cn": "我住在一个小村庄。",
+   "en": "I live in a small village."
+  }
+ },
+ "产": {
+  "origin": "Think of something new coming out from under a roof 亠 — to bring forth and produce.",
+  "word": {
+   "w": "生产",
+   "en": "to produce"
+  },
+  "sentence": {
+   "cn": "这个工厂产玩具。",
+   "en": "This factory produces toys."
+  }
+ },
+ "量": {
+  "origin": "The sunrise 旦 over a measured field 里 — counting how much there is to measure.",
+  "word": {
+   "w": "数量",
+   "en": "quantity"
+  },
+  "sentence": {
+   "cn": "请量一量你的身高。",
+   "en": "Please measure your height."
+  }
+ },
+ "粮": {
+  "origin": "Good 良 rice 米 stored away — that's your food and grain.",
+  "word": {
+   "w": "粮食",
+   "en": "grain, food"
+  },
+  "sentence": {
+   "cn": "农民种了很多粮食。",
+   "en": "The farmers grew lots of grain."
+  }
+ },
+ "勤": {
+  "origin": "Strong muscle 力 working with great effort 堇 — a hardworking, diligent helper.",
+  "word": {
+   "w": "勤劳",
+   "en": "hardworking"
+  },
+  "sentence": {
+   "cn": "她是个勤劳的孩子。",
+   "en": "She is a hardworking child."
+  }
+ },
+ "巨": {
+  "origin": "A hand holding a big carpenter's square — used to make things gigantic and huge.",
+  "word": {
+   "w": "巨大",
+   "en": "huge"
+  },
+  "sentence": {
+   "cn": "大象有巨大的身体。",
+   "en": "The elephant has a huge body."
+  }
+ },
+ "围": {
+  "origin": "A wall 囗 going all the way around 韦 — it surrounds and encircles.",
+  "word": {
+   "w": "周围",
+   "en": "surroundings"
+  },
+  "sentence": {
+   "cn": "大家围在一起玩。",
+   "en": "Everyone gathers around to play."
+  }
+ },
+ "禁": {
+  "origin": "A forest 林 by an altar 示 — a sacred place where some things are forbidden.",
+  "word": {
+   "w": "禁止",
+   "en": "to forbid"
+  },
+  "sentence": {
+   "cn": "这里禁止抽烟。",
+   "en": "Smoking is forbidden here."
+  }
+ },
+ "私": {
+  "origin": "Grain 禾 kept just for oneself 厶 — something private and personal.",
+  "word": {
+   "w": "私人",
+   "en": "private, personal"
+  },
+  "sentence": {
+   "cn": "这是我的私人东西。",
+   "en": "This is my personal thing."
+  }
+ },
+ "愿": {
+  "origin": "A heart 心 sitting under a hillside spring 原 — your deepest wish and desire.",
+  "word": {
+   "w": "愿望",
+   "en": "wish"
+  },
+  "sentence": {
+   "cn": "我愿意帮助你。",
+   "en": "I am willing to help you."
+  }
+ },
+ "必": {
+  "origin": "A heart 心 with a line slicing through it — when your heart is set, it surely must be.",
+  "word": {
+   "w": "必须",
+   "en": "must"
+  },
+  "sentence": {
+   "cn": "我们必须按时回家。",
+   "en": "We must go home on time."
+  }
+ },
+ "须": {
+  "origin": "Three strands of hair 彡 growing on a head 页 — the beard on a chin.",
+  "word": {
+   "w": "必须",
+   "en": "must"
+  },
+  "sentence": {
+   "cn": "你须要多喝水。",
+   "en": "You need to drink more water."
+  }
+ },
+ "拆": {
+  "origin": "A hand 扌 pushing apart 斥 — to break open and take something to pieces.",
+  "word": {
+   "w": "拆开",
+   "en": "to take apart"
+  },
+  "sentence": {
+   "cn": "他把礼物拆开了。",
+   "en": "He opened up the gift."
+  }
+ },
+ "亡": {
+  "origin": "A roof 亠 hiding a hidden shape — picture someone lost from sight, gone away.",
+  "word": {
+   "w": "死亡",
+   "en": "death"
+  },
+  "sentence": {
+   "cn": "他的小猫死亡了。",
+   "en": "His kitten died."
+  }
+ },
+ "牢": {
+  "origin": "A cow 牛 kept safe under a roof 宀 — a pen or stable that holds tight.",
+  "word": {
+   "w": "牢房",
+   "en": "prison cell"
+  },
+  "sentence": {
+   "cn": "请把门关牢。",
+   "en": "Please shut the door tight."
+  }
+ },
+ "屋": {
+  "origin": "Stop and arrive 至 under a roof 尸 — a cozy house to live in.",
+  "word": {
+   "w": "屋子",
+   "en": "room, house"
+  },
+  "sentence": {
+   "cn": "屋子里很暖和。",
+   "en": "It is warm inside the house."
+  }
+ },
+ "修": {
+  "origin": "A person tidying with strokes like neat hair 彡 — fixing and grooming things to study and improve.",
+  "word": {
+   "w": "修理",
+   "en": "to repair"
+  },
+  "sentence": {
+   "cn": "爸爸在修自行车。",
+   "en": "Dad is repairing the bicycle."
+  }
+ },
+ "邻": {
+  "origin": "An order 令 next to a little town 阝 — the people living right next door, your neighbors.",
+  "word": {
+   "w": "邻居",
+   "en": "neighbor"
+  },
+  "sentence": {
+   "cn": "我的邻居很友好。",
+   "en": "My neighbor is very friendly."
+  }
+ },
+ "劝": {
+  "origin": "A gentle hand 又 plus strength 力 — using kind words to advise and persuade.",
+  "word": {
+   "w": "劝告",
+   "en": "to advise"
+  },
+  "sentence": {
+   "cn": "妈妈劝我早点睡。",
+   "en": "Mom advised me to sleep early."
+  }
+ },
+ "丢": {
+  "origin": "A piece of jade 玉 with a little 厶 slipping off the top — oops, you lost it!",
+  "word": {
+   "w": "丢失",
+   "en": "to lose"
+  },
+  "sentence": {
+   "cn": "我丢了我的铅笔。",
+   "en": "I lost my pencil."
+  }
+ },
+ "拔": {
+  "origin": "A hand 扌 gripping and yanking 犮 — to pull out and uproot.",
+  "word": {
+   "w": "拔河",
+   "en": "tug-of-war"
+  },
+  "sentence": {
+   "cn": "他拔了一根萝卜。",
+   "en": "He pulled out a radish."
+  }
+ },
+ "盼": {
+  "origin": "An eye 目 split 分 between waiting and watching — gazing and hoping for something.",
+  "word": {
+   "w": "盼望",
+   "en": "to hope for"
+  },
+  "sentence": {
+   "cn": "我盼望放假。",
+   "en": "I am hoping for the holidays."
+  }
+ },
+ "秧": {
+  "origin": "Young rice 禾 right in the center 央 of the field — tiny green sprouts.",
+  "word": {
+   "w": "秧苗",
+   "en": "rice seedlings"
+  },
+  "sentence": {
+   "cn": "田里长满了秧苗。",
+   "en": "The field is full of rice seedlings."
+  }
+ }
+}

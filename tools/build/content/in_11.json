@@ -1,0 +1,362 @@
+[
+ {
+  "ch": "萄",
+  "py": "táo",
+  "en": "grapes",
+  "radical": "艹",
+  "decomp": "⿱艹匋",
+  "hint": "plant",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "照",
+  "py": "zhào",
+  "en": "to shine, to reflect, to illuminate",
+  "radical": "灬",
+  "decomp": "⿱昭灬",
+  "hint": "fire",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "架",
+  "py": "jià",
+  "en": "frame, rack, stand",
+  "radical": "木",
+  "decomp": "⿱加木",
+  "hint": "wood",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "甜",
+  "py": "tián",
+  "en": "sweet, sweetness",
+  "radical": "甘",
+  "decomp": "⿰舌甘",
+  "hint": "Something tasty 甘 to the tongue 舌",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "准",
+  "py": "zhǔn",
+  "en": "standard, accurate",
+  "radical": "冫",
+  "decomp": "⿰冫隹",
+  "hint": "water in a spirit level",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "摘",
+  "py": "zhāi",
+  "en": "to pick, to pluck, to select, to take",
+  "radical": "扌",
+  "decomp": "⿰扌啇",
+  "hint": "To pick 扌 a fruit off a branch 啇",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "够",
+  "py": "gòu",
+  "en": "enough, adequate",
+  "radical": "夕",
+  "decomp": "⿰句多",
+  "hint": "more",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "垂",
+  "py": "chuí",
+  "en": "to hang, to dangle",
+  "radical": "土",
+  "decomp": "⿻⿱？士卄",
+  "hint": "A tree with drooping branches",
+  "etype": "pictographic"
+ },
+ {
+  "ch": "丧",
+  "py": "sàng",
+  "en": "mourning",
+  "radical": "十",
+  "decomp": "⿱？亡",
+  "hint": "Simplified form of 喪; to cry 哭 over the dead 亡",
+  "etype": "pictographic"
+ },
+ {
+  "ch": "励",
+  "py": "lì",
+  "en": "to encourage",
+  "radical": "力",
+  "decomp": "⿰厉力",
+  "hint": "strength",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "晨",
+  "py": "chén",
+  "en": "dawn, early morning",
+  "radical": "日",
+  "decomp": "⿱日辰",
+  "hint": "sun",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "断",
+  "py": "duàn",
+  "en": "to sever, to cut off, to interrupt",
+  "radical": "斤",
+  "decomp": "⿰⿺？米斤",
+  "hint": "Using an axe 斤 to harvest grain 米",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "武",
+  "py": "wǔ",
+  "en": "military",
+  "radical": "止",
+  "decomp": "⿸一⿹弋止",
+  "hint": "To stop someone 止 with an arrow 弋",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "章",
+  "py": "zhāng",
+  "en": "chapter, section, writing",
+  "radical": "立",
+  "decomp": "⿱音十",
+  "hint": "The ten 十 movements of a piece of music 音",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "效",
+  "py": "xiào",
+  "en": "result, effect",
+  "radical": "攵",
+  "decomp": "⿰交攵",
+  "hint": "strike",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "睛",
+  "py": "jīng",
+  "en": "eyeball",
+  "radical": "目",
+  "decomp": "⿰目青",
+  "hint": "eye",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "补",
+  "py": "bǔ",
+  "en": "to fix, to mend, to patch, to restore",
+  "radical": "衤",
+  "decomp": "⿰衤卜",
+  "hint": "cloth",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "拒",
+  "py": "jù",
+  "en": "to defend, to ward off",
+  "radical": "扌",
+  "decomp": "⿰扌巨",
+  "hint": "hand",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "绝",
+  "py": "jué",
+  "en": "to cut, to sever",
+  "radical": "纟",
+  "decomp": "⿰纟色",
+  "hint": "thread",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "信",
+  "py": "xìn",
+  "en": "to trust, to believe",
+  "radical": "亻",
+  "decomp": "⿰亻言",
+  "hint": "",
+  "etype": ""
+ },
+ {
+  "ch": "求",
+  "py": "qiú",
+  "en": "to seek",
+  "radical": "氺",
+  "decomp": "⿻一氺",
+  "hint": "",
+  "etype": ""
+ },
+ {
+  "ch": "提",
+  "py": "tí",
+  "en": "to hold in the hand",
+  "radical": "扌",
+  "decomp": "⿰扌是",
+  "hint": "hand",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "驾",
+  "py": "jià",
+  "en": "to drive, to ride, to sail",
+  "radical": "马",
+  "decomp": "⿱加马",
+  "hint": "horse",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "繁",
+  "py": "fán",
+  "en": "complex, difficult",
+  "radical": "糸",
+  "decomp": "⿱敏糸",
+  "hint": "silk",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "荣",
+  "py": "róng",
+  "en": "glory, honor",
+  "radical": "艹",
+  "decomp": "⿱艹⿱冖木",
+  "hint": "Grass 艹 and trees 木 flourishing in a garden 冖",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "强",
+  "py": "qiáng",
+  "en": "strong, powerful, energetic",
+  "radical": "弓",
+  "decomp": "⿰弓虽",
+  "hint": "bow",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "所",
+  "py": "suǒ",
+  "en": "place, location",
+  "radical": "户",
+  "decomp": "⿰户斤",
+  "hint": "An axe 斤 swung at a door 户",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "侨",
+  "py": "qiáo",
+  "en": "emigrant",
+  "radical": "亻",
+  "decomp": "⿰亻乔",
+  "hint": "person",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "集",
+  "py": "jí",
+  "en": "to gather, to collect",
+  "radical": "隹",
+  "decomp": "⿱隹木",
+  "hint": "Birds 隹 flocking on a tree 木",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "旧",
+  "py": "jiù",
+  "en": "old, ancient",
+  "radical": "日",
+  "decomp": "⿰丨日",
+  "hint": "Older than 丨 the sun 日",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "岸",
+  "py": "àn",
+  "en": "beach, coast, shore",
+  "radical": "山",
+  "decomp": "⿱山⿸厂干",
+  "hint": "A mountain 山 cliff 厂; 干 provides the pronunciation",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "独",
+  "py": "dú",
+  "en": "alone, independent, only, single, solitary",
+  "radical": "犭",
+  "decomp": "⿰犭虫",
+  "hint": "dog",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "越",
+  "py": "yuè",
+  "en": "to exceed, to surpass, to transcend",
+  "radical": "走",
+  "decomp": "⿺走戉",
+  "hint": "run",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "贴",
+  "py": "tiē",
+  "en": "to stick, to paste",
+  "radical": "贝",
+  "decomp": "⿰贝占",
+  "hint": "money",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "笼",
+  "py": "lóng",
+  "en": "basket",
+  "radical": "⺮",
+  "decomp": "⿱⺮龙",
+  "hint": "bamboo",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "迎",
+  "py": "yíng",
+  "en": "to welcome, to receive, to greet",
+  "radical": "辶",
+  "decomp": "⿺辶卬",
+  "hint": "walk",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "艘",
+  "py": "sōu",
+  "en": "measure word for ships or vessels",
+  "radical": "舟",
+  "decomp": "⿰舟叟",
+  "hint": "ship",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "载",
+  "py": "zài",
+  "en": "load",
+  "radical": "戈",
+  "decomp": "⿹哉车",
+  "hint": "cart",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "航",
+  "py": "háng",
+  "en": "vessel, craft",
+  "radical": "舟",
+  "decomp": "⿰舟亢",
+  "hint": "ship",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "射",
+  "py": "shè",
+  "en": "to shoot, to eject, to emit",
+  "radical": "寸",
+  "decomp": "⿰身寸",
+  "hint": "A bow 身 being drawn by a hand 寸",
+  "etype": "pictographic"
+ }
+]

@@ -1,0 +1,362 @@
+[
+ {
+  "ch": "在",
+  "py": "zài",
+  "en": "at, in, on",
+  "radical": "土",
+  "decomp": "⿸才土",
+  "hint": "earth",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "写",
+  "py": "xiě",
+  "en": "write",
+  "radical": "冖",
+  "decomp": "⿱冖与",
+  "hint": "",
+  "etype": ""
+ },
+ {
+  "ch": "很",
+  "py": "hěn",
+  "en": "very",
+  "radical": "彳",
+  "decomp": "⿰彳艮",
+  "hint": "step",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "讲",
+  "py": "jiǎng",
+  "en": "speak, explain",
+  "radical": "讠 (言字旁)",
+  "decomp": "⿰讠井",
+  "hint": "speech",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "书",
+  "py": "shū",
+  "en": "book",
+  "radical": "乛",
+  "decomp": "⿻？丨",
+  "hint": "A mark made by a pen ⺺",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "朋",
+  "py": "péng",
+  "en": "friend",
+  "radical": "月",
+  "decomp": "⿰月月",
+  "hint": "Two people 月 walking together",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "友",
+  "py": "yǒu",
+  "en": "friend",
+  "radical": "又",
+  "decomp": "⿸？又",
+  "hint": "Two hands 又 joined, representing friendship; 又 also provides the pronunciation",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "午",
+  "py": "wǔ",
+  "en": "midday",
+  "radical": "十",
+  "decomp": "⿻丿干",
+  "hint": "",
+  "etype": ""
+ },
+ {
+  "ch": "里",
+  "py": "lǐ",
+  "en": "inside, in",
+  "radical": "里",
+  "decomp": "⿱田土",
+  "hint": "Unit of measure for farm 田 land 土",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "不",
+  "py": "bù",
+  "en": "no, not, un-",
+  "radical": "一",
+  "decomp": "⿱一？",
+  "hint": "A bird flying toward the sky 一",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "再",
+  "py": "zài",
+  "en": "again",
+  "radical": "一",
+  "decomp": "⿱一冉",
+  "hint": "Two fish 冉 caught on a line 一",
+  "etype": "pictographic"
+ },
+ {
+  "ch": "菜",
+  "py": "cài",
+  "en": "vegetable; dish",
+  "radical": "艹 (草字头)",
+  "decomp": "⿱艹采",
+  "hint": "plant",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "买",
+  "py": "mǎi",
+  "en": "buy",
+  "radical": "乙",
+  "decomp": "⿱乛头",
+  "hint": "",
+  "etype": ""
+ },
+ {
+  "ch": "龙",
+  "py": "lóng",
+  "en": "dragon",
+  "radical": "龙",
+  "decomp": "⿻尤丿",
+  "hint": "A dragon",
+  "etype": "pictographic"
+ },
+ {
+  "ch": "打",
+  "py": "dǎ",
+  "en": "play (hands), hit",
+  "radical": "扌",
+  "decomp": "⿰扌丁",
+  "hint": "hand",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "猫",
+  "py": "māo",
+  "en": "cat",
+  "radical": "犭 (反犬旁)",
+  "decomp": "⿰犭苗",
+  "hint": "animal",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "红",
+  "py": "hóng",
+  "en": "red",
+  "radical": "纟 (绞丝旁)",
+  "decomp": "⿰纟工",
+  "hint": "silk",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "绿",
+  "py": "lǜ",
+  "en": "green",
+  "radical": "纟",
+  "decomp": "⿰纟录",
+  "hint": "silk",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "弟",
+  "py": "dì",
+  "en": "young brother, junior",
+  "radical": "弓",
+  "decomp": "⿱丷⿻弓？",
+  "hint": "",
+  "etype": ""
+ },
+ {
+  "ch": "店",
+  "py": "diàn",
+  "en": "shop, store",
+  "radical": "广",
+  "decomp": "⿸广占",
+  "hint": "building",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "区",
+  "py": "qū",
+  "en": "area, district",
+  "radical": "匚",
+  "decomp": "⿷匸乂",
+  "hint": "A place 匸 under a lord's control 乂",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "饭",
+  "py": "fàn",
+  "en": "rice, meal",
+  "radical": "饣",
+  "decomp": "⿰饣反",
+  "hint": "food",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "钱",
+  "py": "qián",
+  "en": "money",
+  "radical": "钅",
+  "decomp": "⿰钅戋",
+  "hint": "money",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "听",
+  "py": "tīng",
+  "en": "listen",
+  "radical": "口 (口字旁)",
+  "decomp": "⿰口斤",
+  "hint": "Words 口 reaching an ear 斤",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "睡",
+  "py": "shuì",
+  "en": "sleep",
+  "radical": "目",
+  "decomp": "⿰目垂",
+  "hint": "eye",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "发",
+  "py": "fā",
+  "en": "develop, send out",
+  "radical": "又 (又字旁)",
+  "decomp": "⿸？又",
+  "hint": "",
+  "etype": ""
+ },
+ {
+  "ch": "诗",
+  "py": "shī",
+  "en": "poem",
+  "radical": "讠 (言字旁)",
+  "decomp": "⿰讠寺",
+  "hint": "speech",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "草",
+  "py": "cǎo",
+  "en": "grass, herbs",
+  "radical": "艹",
+  "decomp": "⿱艹早",
+  "hint": "grass",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "流",
+  "py": "liú",
+  "en": "flow, stream",
+  "radical": "氵 (三点水)",
+  "decomp": "⿰氵㐬",
+  "hint": "water",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "美",
+  "py": "měi",
+  "en": "beautiful; art",
+  "radical": "羊",
+  "decomp": "⿱羊大",
+  "hint": "A person 大 wearing an elegant crown 羊",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "肉",
+  "py": "ròu",
+  "en": "meat",
+  "radical": "肉",
+  "decomp": "⿻冂仌",
+  "hint": "Meat on the ribs of an animal",
+  "etype": "pictographic"
+ },
+ {
+  "ch": "份",
+  "py": "fèn",
+  "en": "portion, identity",
+  "radical": "亻 (单人旁)",
+  "decomp": "⿰亻分",
+  "hint": "The lot or portion 分 allotted to a man 亻",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "饺",
+  "py": "jiǎo",
+  "en": "dumpling",
+  "radical": "饣 (食字旁)",
+  "decomp": "⿰饣交",
+  "hint": "food",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "元",
+  "py": "yuán",
+  "en": "yuan, dollar",
+  "radical": "二",
+  "decomp": "⿱二儿",
+  "hint": "A man 儿 with two lines emphasizing their head 二",
+  "etype": "pictographic"
+ },
+ {
+  "ch": "时",
+  "py": "shí",
+  "en": "time, o'clock",
+  "radical": "日字旁",
+  "decomp": "⿰日寸",
+  "hint": "day",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "动",
+  "py": "dòng",
+  "en": "move, activity",
+  "radical": "力",
+  "decomp": "⿰云力",
+  "hint": "strength",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "踢",
+  "py": "tī",
+  "en": "kick",
+  "radical": "⻊",
+  "decomp": "⿰足易",
+  "hint": "foot",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "更",
+  "py": "gèng",
+  "en": "more, even more",
+  "radical": "曰",
+  "decomp": "⿱一⿻曰乂",
+  "hint": "",
+  "etype": ""
+ },
+ {
+  "ch": "故",
+  "py": "gù",
+  "en": "old; reason",
+  "radical": "攵 (反文旁).",
+  "decomp": "⿰古攵",
+  "hint": "tap",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "传",
+  "py": "chuán",
+  "en": "pass on",
+  "radical": "亻 (单人旁)",
+  "decomp": "⿰亻专",
+  "hint": "people",
+  "etype": "pictophonetic"
+ }
+]

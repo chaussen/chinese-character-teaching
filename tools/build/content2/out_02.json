@@ -1,0 +1,202 @@
+{
+  "圆": {
+    "origin": "An enclosure 囗 wrapped neatly all the way around — round like a coin with no corners.",
+    "word": { "w": "圆形", "en": "round shape; circle" },
+    "sentence": { "cn": "月亮今天又大又圆。", "en": "The moon is big and round today." }
+  },
+  "冷": {
+    "origin": "Two little ice drops 冫 on the side mean freezing — so 冷 feels nice and cold.",
+    "word": { "w": "冷水", "en": "cold water" },
+    "sentence": { "cn": "冬天的风很冷。", "en": "The winter wind is very cold." }
+  },
+  "跑": {
+    "origin": "A foot 足 on the left gets your legs moving fast — that's how you run!",
+    "word": { "w": "跑步", "en": "to run; jogging" },
+    "sentence": { "cn": "小狗在草地上跑。", "en": "The puppy runs on the grass." }
+  },
+  "海": {
+    "origin": "Three water drops 氵 beside 每 — so much water all together makes the great sea.",
+    "word": { "w": "大海", "en": "the sea; ocean" },
+    "sentence": { "cn": "我们去海边玩。", "en": "We go to the seaside to play." }
+  },
+  "跳": {
+    "origin": "A foot 足 next to 兆 — push off with your feet and jump up high!",
+    "word": { "w": "跳高", "en": "high jump" },
+    "sentence": { "cn": "小兔子跳来跳去。", "en": "The little rabbit hops around." }
+  },
+  "白": {
+    "origin": "Like a bright ray of sunlight or a glowing candle — clean and shining white.",
+    "word": { "w": "白色", "en": "white (color)" },
+    "sentence": { "cn": "天上的云是白的。", "en": "The clouds in the sky are white." }
+  },
+  "数": {
+    "origin": "Counting things one by one — 数 means numbers and the maths you do at school.",
+    "word": { "w": "数学", "en": "mathematics" },
+    "sentence": { "cn": "我喜欢上数学课。", "en": "I like math class." }
+  },
+  "黑": {
+    "origin": "A face smudged with soot from a fire 灬 below — all dark and black.",
+    "word": { "w": "黑色", "en": "black (color)" },
+    "sentence": { "cn": "晚上天很黑。", "en": "At night the sky is very dark." }
+  },
+  "结": {
+    "origin": "A silk thread 纟 beside 吉 — tie the thread tightly and you make a knot.",
+    "word": { "w": "结果", "en": "result; outcome" },
+    "sentence": { "cn": "他帮我结好鞋带。", "en": "He helped me tie my shoelaces." }
+  },
+  "气": {
+    "origin": "Wavy lines like a breath puffing out — 气 is the air we breathe and the weather.",
+    "word": { "w": "天气", "en": "weather" },
+    "sentence": { "cn": "今天天气很好。", "en": "The weather is very nice today." }
+  },
+  "被": {
+    "origin": "A cloth 衤 by 皮 — first a warm blanket, now it also means something is done to you.",
+    "word": { "w": "被子", "en": "quilt; blanket" },
+    "sentence": { "cn": "花被风吹倒了。", "en": "The flower was blown over by the wind." }
+  },
+  "首": {
+    "origin": "A head with little horns 丷 on top of a face 自 — 首 means head, or first.",
+    "word": { "w": "首先", "en": "first of all" },
+    "sentence": { "cn": "我会唱这首歌。", "en": "I can sing this song." }
+  },
+  "王": {
+    "origin": "Three lines joined by one stroke — a person linking heaven and earth: the king.",
+    "word": { "w": "国王", "en": "king" },
+    "sentence": { "cn": "故事里有一位国王。", "en": "There is a king in the story." }
+  },
+  "纸": {
+    "origin": "Silk threads 纟 pressed flat beside 氏 — long ago that's how people made paper.",
+    "word": { "w": "纸张", "en": "paper" },
+    "sentence": { "cn": "我在纸上画画。", "en": "I draw pictures on the paper." }
+  },
+  "便": {
+    "origin": "A person 亻 making things easy and handy — 便 means convenient, and also cheap.",
+    "word": { "w": "便宜", "en": "cheap; inexpensive" },
+    "sentence": { "cn": "这本书很便宜。", "en": "This book is very cheap." }
+  },
+  "决": {
+    "origin": "Two ice drops 冫 beside 夬 — make up your mind firmly, clear as ice: decide!",
+    "word": { "w": "决定", "en": "to decide; decision" },
+    "sentence": { "cn": "我决定去公园。", "en": "I decided to go to the park." }
+  },
+  "明": {
+    "origin": "The sun 日 and the moon 月 standing together — both lights make everything bright.",
+    "word": { "w": "明天", "en": "tomorrow" },
+    "sentence": { "cn": "明天我们去上学。", "en": "Tomorrow we go to school." }
+  },
+  "节": {
+    "origin": "Grass 艹 on top, like a section of bamboo — 节 means a joint, or a festival day.",
+    "word": { "w": "节日", "en": "festival; holiday" },
+    "sentence": { "cn": "今天是个好节日。", "en": "Today is a happy festival." }
+  },
+  "闻": {
+    "origin": "An ear 耳 inside a door 门 — listen and you hear the news through the doorway.",
+    "word": { "w": "新闻", "en": "news" },
+    "sentence": { "cn": "我闻到花香了。", "en": "I smell the flowers." }
+  },
+  "城": {
+    "origin": "Earth 土 piled up beside 成 — long ago walls of earth grew into a whole city.",
+    "word": { "w": "城市", "en": "city" },
+    "sentence": { "cn": "我住在大城市里。", "en": "I live in a big city." }
+  },
+  "合": {
+    "origin": "A lid coming down to cover a mouth 口 — pieces fit and join neatly together.",
+    "word": { "w": "合作", "en": "to cooperate" },
+    "sentence": { "cn": "大家一起合作。", "en": "Everyone works together." }
+  },
+  "蓝": {
+    "origin": "Grass 艹 on top of 监 — long ago a special plant gave the lovely color blue.",
+    "word": { "w": "蓝色", "en": "blue (color)" },
+    "sentence": { "cn": "天空是蓝色的。", "en": "The sky is blue." }
+  },
+  "既": {
+    "origin": "A person turning away from a full bowl of food — already finished: 既 means since.",
+    "word": { "w": "既然", "en": "since; now that" },
+    "sentence": { "cn": "他既高又快。", "en": "He is both tall and fast." }
+  },
+  "外": {
+    "origin": "Evening 夕 and a divining stick 卜 — fortune-telling at night points to the outside.",
+    "word": { "w": "外面", "en": "outside" },
+    "sentence": { "cn": "外面下雨了。", "en": "It is raining outside." }
+  },
+  "园": {
+    "origin": "An enclosure 囗 around 元 — a fence circling green space makes a lovely garden.",
+    "word": { "w": "公园", "en": "park" },
+    "sentence": { "cn": "我们在公园玩。", "en": "We play in the park." }
+  },
+  "万": {
+    "origin": "A single sweeping stroke that stands for a huge number — ten thousand!",
+    "word": { "w": "万岁", "en": "long live; hooray" },
+    "sentence": { "cn": "天上有一万颗星。", "en": "There are ten thousand stars in the sky." }
+  },
+  "脚": {
+    "origin": "The flesh radical ⺼ beside 却 — a part of your body at the bottom: your foot.",
+    "word": { "w": "脚步", "en": "footstep" },
+    "sentence": { "cn": "我的脚有点疼。", "en": "My foot hurts a little." }
+  },
+  "矮": {
+    "origin": "An arrow 矢 beside 委 — measure with a tiny arrow and you find something short.",
+    "word": { "w": "矮小", "en": "short and small" },
+    "sentence": { "cn": "弟弟比我矮。", "en": "My little brother is shorter than me." }
+  },
+  "比": {
+    "origin": "Two little spoons 匕 standing side by side — line them up to compare them.",
+    "word": { "w": "比赛", "en": "match; competition" },
+    "sentence": { "cn": "我们来比一比。", "en": "Let's compare." }
+  },
+  "喝": {
+    "origin": "A mouth 口 beside 曷 — open wide and sip something tasty: that's to drink.",
+    "word": { "w": "喝水", "en": "to drink water" },
+    "sentence": { "cn": "我每天喝牛奶。", "en": "I drink milk every day." }
+  },
+  "晚": {
+    "origin": "The sun 日 beside 免 — when the sun slips away, it becomes evening and gets late.",
+    "word": { "w": "晚上", "en": "evening; at night" },
+    "sentence": { "cn": "晚上我早点睡。", "en": "At night I go to sleep early." }
+  },
+  "聪": {
+    "origin": "An ear 耳 beside 总 — a child who listens well learns fast and is very clever.",
+    "word": { "w": "聪明", "en": "clever; smart" },
+    "sentence": { "cn": "这个孩子真聪明。", "en": "This child is really clever." }
+  },
+  "块": {
+    "origin": "Earth 土 beside 夬 — a lump of ground broken off is a piece, or one dollar.",
+    "word": { "w": "一块", "en": "one piece; one dollar" },
+    "sentence": { "cn": "给我一块饼干。", "en": "Give me a piece of cookie." }
+  },
+  "远": {
+    "origin": "The walking road 辶 beside 元 — keep walking on and on until it gets very far.",
+    "word": { "w": "远方", "en": "faraway place" },
+    "sentence": { "cn": "学校离家很远。", "en": "The school is far from home." }
+  },
+  "努": {
+    "origin": "Strength 力 at the bottom — squeeze out all your power and try your very hardest.",
+    "word": { "w": "努力", "en": "to work hard; effort" },
+    "sentence": { "cn": "我们要努力学习。", "en": "We should study hard." }
+  },
+  "球": {
+    "origin": "The jade radical 王 beside 求 — once a round jade gem, now any round ball.",
+    "word": { "w": "皮球", "en": "rubber ball" },
+    "sentence": { "cn": "他在玩皮球。", "en": "He is playing with a ball." }
+  },
+  "漂": {
+    "origin": "Water 氵 beside 票 — things float on the water, and pretty things float into view.",
+    "word": { "w": "漂亮", "en": "pretty; beautiful" },
+    "sentence": { "cn": "她的裙子很漂亮。", "en": "Her dress is very pretty." }
+  },
+  "环": {
+    "origin": "The jade radical 王 beside 不 — a round jade loop you can wear: a ring or circle.",
+    "word": { "w": "环境", "en": "environment" },
+    "sentence": { "cn": "我们要爱护环境。", "en": "We should protect the environment." }
+  },
+  "境": {
+    "origin": "Earth 土 beside 竟 — the land that surrounds you is your place, or a border.",
+    "word": { "w": "环境", "en": "environment" },
+    "sentence": { "cn": "这里的环境很美。", "en": "The environment here is beautiful." }
+  },
+  "船": {
+    "origin": "A little boat 舟 on the left carries you across the water: a ship sails away.",
+    "word": { "w": "轮船", "en": "ship; steamboat" },
+    "sentence": { "cn": "大船在海上开。", "en": "The big ship sails on the sea." }
+  }
+}

@@ -1,0 +1,362 @@
+[
+ {
+  "ch": "浅",
+  "py": "qiǎn",
+  "en": "shallow, superficial",
+  "radical": "氵",
+  "decomp": "⿰氵戋",
+  "hint": "water",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "正",
+  "py": "zhèng",
+  "en": "straight, right, proper, correct, just,…",
+  "radical": "止",
+  "decomp": "⿱一止",
+  "hint": "A foot 止 stopping in the right place 一",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "突",
+  "py": "tū",
+  "en": "sudden, abrupt, unexpected",
+  "radical": "穴",
+  "decomp": "⿱穴犬",
+  "hint": "A dog 犬 rushing out of a cave 穴",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "松",
+  "py": "sōng",
+  "en": "pine tree",
+  "radical": "木",
+  "decomp": "⿰木公",
+  "hint": "tree",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "鼠",
+  "py": "shǔ",
+  "en": "rat, mouse",
+  "radical": "鼠",
+  "decomp": "⿱臼？",
+  "hint": "A mouse, with two paws to the left and the tail to the right",
+  "etype": "pictographic"
+ },
+ {
+  "ch": "淹",
+  "py": "yān",
+  "en": "to drown, to immerse, to steep",
+  "radical": "氵",
+  "decomp": "⿰氵奄",
+  "hint": "water",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "定",
+  "py": "dìng",
+  "en": "to decide, to fix, to settle",
+  "radical": "宀",
+  "decomp": "⿱宀疋",
+  "hint": "A person 疋 settling under a roof 宀",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "猴",
+  "py": "hóu",
+  "en": "monkey, ape",
+  "radical": "犭",
+  "decomp": "⿰犭侯",
+  "hint": "animal",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "捞",
+  "py": "lāo",
+  "en": "to dredge up",
+  "radical": "扌",
+  "decomp": "⿰扌劳",
+  "hint": "hand",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "群",
+  "py": "qún",
+  "en": "group, crowd",
+  "radical": "羊",
+  "decomp": "⿰君羊",
+  "hint": "sheep",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "啊",
+  "py": "a",
+  "en": "ah, exclamatory particle",
+  "radical": "口",
+  "decomp": "⿰口阿",
+  "hint": "mouth",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "接",
+  "py": "jiē",
+  "en": "to connect, to join",
+  "radical": "扌",
+  "decomp": "⿰扌妾",
+  "hint": "hand",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "碰",
+  "py": "pèng",
+  "en": "to touch",
+  "radical": "石",
+  "decomp": "⿰石並",
+  "hint": "rock",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "司",
+  "py": "sī",
+  "en": "to take charge of, to control, to manage",
+  "radical": "口",
+  "decomp": "⿹？口",
+  "hint": "A person speaking orders 口 and raising their arm",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "扑",
+  "py": "pū",
+  "en": "to attack, to beat, to hit, to strike",
+  "radical": "扌",
+  "decomp": "⿰扌卜",
+  "hint": "hand",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "缸",
+  "py": "gāng",
+  "en": "earthen jug, crock, cistern",
+  "radical": "缶",
+  "decomp": "⿰缶工",
+  "hint": "pottery",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "装",
+  "py": "zhuāng",
+  "en": "dress, clothes, attire",
+  "radical": "衣",
+  "decomp": "⿱壮衣",
+  "hint": "clothes",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "吓",
+  "py": "xià",
+  "en": "to scare, to frighten",
+  "radical": "口",
+  "decomp": "⿰口下",
+  "hint": "mouth",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "哭",
+  "py": "kū",
+  "en": "to weep, to cry, to wail",
+  "radical": "口",
+  "decomp": "⿱⿰口口犬",
+  "hint": "To shed a tear from your eyes 口 over a person 犬",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "慌",
+  "py": "huāng",
+  "en": "frantic, nervous, panicked",
+  "radical": "忄",
+  "decomp": "⿰忄荒",
+  "hint": "heart",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "法",
+  "py": "fǎ",
+  "en": "law, rule, statute",
+  "radical": "氵",
+  "decomp": "⿰氵去",
+  "hint": "The course 去 followed by a stream 氵",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "使",
+  "py": "shǐ",
+  "en": "cause, mission, orders",
+  "radical": "亻",
+  "decomp": "⿰亻吏",
+  "hint": "A person 亻 working for the government 吏",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "劲",
+  "py": "jìn",
+  "en": "strong, tough, unyielding",
+  "radical": "力",
+  "decomp": "⿰？力",
+  "hint": "strength",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "砸",
+  "py": "zá",
+  "en": "to smash, to pound, to crush, to break",
+  "radical": "石",
+  "decomp": "⿰石匝",
+  "hint": "rock",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "靠",
+  "py": "kào",
+  "en": "nearby",
+  "radical": "非",
+  "decomp": "⿱告非",
+  "hint": "people back-to-back",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "仰",
+  "py": "yǎng",
+  "en": "raise the head to look",
+  "radical": "亻",
+  "decomp": "⿰亻卬",
+  "hint": "To exalt 卬 a person 亻",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "颗",
+  "py": "kē",
+  "en": "grain, kernel",
+  "radical": "页",
+  "decomp": "⿰果页",
+  "hint": "grain",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "连",
+  "py": "lián",
+  "en": "to join, to connect",
+  "radical": "辶",
+  "decomp": "⿺辶车",
+  "hint": "A cart 车 moving 辶 goods between cities",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "勺",
+  "py": "sháo",
+  "en": "spoon, ladle",
+  "radical": "勹",
+  "decomp": "⿹勹丶",
+  "hint": "A spoon 勹 with something in it 丶",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "斗",
+  "py": "dòu",
+  "en": "to struggle, to fight, to contend",
+  "radical": "斗",
+  "decomp": "⿻十？",
+  "hint": "A hand holding a measuring dipper",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "离",
+  "py": "lí",
+  "en": "rare beast",
+  "radical": "禸",
+  "decomp": "⿱⿱亠凶禸",
+  "hint": "An animal standing straight; 亠 is the head",
+  "etype": "pictographic"
+ },
+ {
+  "ch": "衡",
+  "py": "héng",
+  "en": "to measure, to weigh",
+  "radical": "行",
+  "decomp": "⿻行⿱角大",
+  "hint": "A big 大 horn 角; 行 provides the pronunciation",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "晓",
+  "py": "xiǎo",
+  "en": "dawn",
+  "radical": "日",
+  "decomp": "⿰日尧",
+  "hint": "sun",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "孟",
+  "py": "mèng",
+  "en": "first in a series",
+  "radical": "子",
+  "decomp": "⿱子皿",
+  "hint": "A child 子 sitting on a throne 皿",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "浩",
+  "py": "hào",
+  "en": "great, grand, vast",
+  "radical": "氵",
+  "decomp": "⿰氵告",
+  "hint": "water",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "眠",
+  "py": "mián",
+  "en": "sleep, shut-eye, hibernatation",
+  "radical": "目",
+  "decomp": "⿰目民",
+  "hint": "eye",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "啼",
+  "py": "tí",
+  "en": "to weep, to whimper",
+  "radical": "口",
+  "decomp": "⿰口帝",
+  "hint": "mouth",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "悯",
+  "py": "mǐn",
+  "en": "to pity, to sympathize with",
+  "radical": "忄",
+  "decomp": "⿰忄闵",
+  "hint": "heart",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "农",
+  "py": "nóng",
+  "en": "agriculture, farming",
+  "radical": "冖",
+  "decomp": "⿻冖？",
+  "hint": "Simplified form of 農, tilling the field 田 with a hoe 辰",
+  "etype": "pictographic"
+ },
+ {
+  "ch": "绅",
+  "py": "shēn",
+  "en": "girdle, tie",
+  "radical": "纟",
+  "decomp": "⿰纟申",
+  "hint": "silk",
+  "etype": "pictophonetic"
+ }
+]

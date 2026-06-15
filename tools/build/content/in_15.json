@@ -1,0 +1,362 @@
+[
+ {
+  "ch": "帮",
+  "py": "bāng",
+  "en": "to help, to assist",
+  "radical": "巾",
+  "decomp": "⿱邦巾",
+  "hint": "A nation's 邦 flag 巾; 邦 also provides the pronunciation",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "助",
+  "py": "zhù",
+  "en": "to help, to aid, to assist",
+  "radical": "力",
+  "decomp": "⿰且力",
+  "hint": "strength",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "林",
+  "py": "lín",
+  "en": "forest, grove",
+  "radical": "木",
+  "decomp": "⿰木木",
+  "hint": "Two trees 木 representing a forest",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "怕",
+  "py": "pà",
+  "en": "to fear, to be afraid of",
+  "radical": "忄",
+  "decomp": "⿰忄白",
+  "hint": "heart",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "妻",
+  "py": "qī",
+  "en": "wife",
+  "radical": "女",
+  "decomp": "⿱⿻十彐女",
+  "hint": "A woman 女 holding a broom 十 in her hand 彐",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "尖",
+  "py": "jiān",
+  "en": "sharp, pointed, acute",
+  "radical": "小",
+  "decomp": "⿱小大",
+  "hint": "A point, small 小 over big 大",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "志",
+  "py": "zhì",
+  "en": "determination, will",
+  "radical": "心",
+  "decomp": "⿱士心",
+  "hint": "The mind 心 of a scholar 士; 士 also provides the pronunciation",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "克",
+  "py": "kè",
+  "en": "to subdue, to restrain, to overcome",
+  "radical": "儿",
+  "decomp": "⿱十兄",
+  "hint": "A weapon 十 used to subdue a beast 兄",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "困",
+  "py": "kùn",
+  "en": "to surround",
+  "radical": "囗",
+  "decomp": "⿴囗木",
+  "hint": "A fence 囗 built around a tree 木",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "取",
+  "py": "qǔ",
+  "en": "to take, to receive, to obtain",
+  "radical": "又",
+  "decomp": "⿰耳又",
+  "hint": "A hand 又 taking the ear 耳 of a fallen enemy",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "胜",
+  "py": "shèng",
+  "en": "victory",
+  "radical": "⺼",
+  "decomp": "⿰⺼生",
+  "hint": "flesh",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "守",
+  "py": "shǒu",
+  "en": "to defend, to guard, to protect",
+  "radical": "宀",
+  "decomp": "⿱宀寸",
+  "hint": "Keeping something 寸 within one's walls 宀",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "景",
+  "py": "jǐng",
+  "en": "scenery, view",
+  "radical": "日",
+  "decomp": "⿱日京",
+  "hint": "The sun 日 rising over a city 京; 京 also provides the pronunciation",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "争",
+  "py": "zhēng",
+  "en": "to dispute, to fight, to contend, to…",
+  "radical": "亅",
+  "decomp": "⿱⺈⿻彐亅",
+  "hint": "Simplified form of 爭, two hands 爪 and 彐 fighting over 亅",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "管",
+  "py": "guǎn",
+  "en": "tube, pipe, duct",
+  "radical": "⺮",
+  "decomp": "⿱⺮官",
+  "hint": "bamboo",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "凹",
+  "py": "āo",
+  "en": "concave, hollow",
+  "radical": "凵",
+  "decomp": "⿱？一",
+  "hint": "A rectangle with a hollow",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "凸",
+  "py": "tū",
+  "en": "to protrude, to bulge out",
+  "radical": "凵",
+  "decomp": "⿱⿰？？一",
+  "hint": "A rectangle with a bulge",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "楚",
+  "py": "chǔ",
+  "en": "clear, distinct",
+  "radical": "木",
+  "decomp": "⿱林疋",
+  "hint": "",
+  "etype": ""
+ },
+ {
+  "ch": "且",
+  "py": "qiě",
+  "en": "moreover, also (post-subject)",
+  "radical": "一",
+  "decomp": "⿱月一",
+  "hint": "A stone altar",
+  "etype": "pictographic"
+ },
+ {
+  "ch": "倍",
+  "py": "bèi",
+  "en": "to double",
+  "radical": "亻",
+  "decomp": "⿰亻咅",
+  "hint": "",
+  "etype": ""
+ },
+ {
+  "ch": "似",
+  "py": "shì",
+  "en": "resembling, similar to",
+  "radical": "亻",
+  "decomp": "⿰亻以",
+  "hint": "One person 亻 resembles another",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "乎",
+  "py": "hū",
+  "en": "interrogative or exclamatory final…",
+  "radical": "丿",
+  "decomp": "⿻丿⿻？丷",
+  "hint": "",
+  "etype": ""
+ },
+ {
+  "ch": "继",
+  "py": "jì",
+  "en": "to continue, to carry on",
+  "radical": "纟",
+  "decomp": "⿰纟⿺？米",
+  "hint": "thread",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "续",
+  "py": "xù",
+  "en": "continuous, serial",
+  "radical": "纟",
+  "decomp": "⿰纟卖",
+  "hint": "thread",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "研",
+  "py": "yán",
+  "en": "to grind, to rub",
+  "radical": "石",
+  "decomp": "⿰石开",
+  "hint": "stone",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "究",
+  "py": "jiū",
+  "en": "to dig into, to investigate",
+  "radical": "穴",
+  "decomp": "⿱穴九",
+  "hint": "cave",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "辞",
+  "py": "cí",
+  "en": "words, speech",
+  "radical": "舌",
+  "decomp": "⿰舌辛",
+  "hint": "Bitter 辛 words 舌",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "陵",
+  "py": "líng",
+  "en": "hill, mound",
+  "radical": "阝",
+  "decomp": "⿰阝夌",
+  "hint": "A hill 阝 where people are laid to rest 夌; 夌 also provides the pronunciation",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "猿",
+  "py": "yuán",
+  "en": "ape",
+  "radical": "犭",
+  "decomp": "⿰犭袁",
+  "hint": "animal",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "舟",
+  "py": "zhōu",
+  "en": "boat, ship",
+  "radical": "舟",
+  "decomp": "⿻？？",
+  "hint": "A boat",
+  "etype": "pictographic"
+ },
+ {
+  "ch": "庐",
+  "py": "lú",
+  "en": "hut, cottage",
+  "radical": "广",
+  "decomp": "⿸广户",
+  "hint": "A house 广 with an open door 户; 户 also provides the pronunciation",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "瀑",
+  "py": "pù",
+  "en": "waterfall, cascade",
+  "radical": "氵",
+  "decomp": "⿰氵暴",
+  "hint": "Violent 暴 water 氵; 暴 also provides the pronunciation",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "炉",
+  "py": "lú",
+  "en": "fireplace, furnace, oven, stove",
+  "radical": "火",
+  "decomp": "⿰火户",
+  "hint": "A fire 火 in one's home 户",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "紫",
+  "py": "zǐ",
+  "en": "purple, violet",
+  "radical": "糸",
+  "decomp": "⿱此糸",
+  "hint": "silk",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "烟",
+  "py": "yān",
+  "en": "smoke, soot",
+  "radical": "火",
+  "decomp": "⿰火因",
+  "hint": "fire",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "遥",
+  "py": "yáo",
+  "en": "distant, remote",
+  "radical": "辶",
+  "decomp": "⿺辶䍃",
+  "hint": "walk",
+  "etype": "pictophonetic"
+ },
+ {
+  "ch": "川",
+  "py": "chuān",
+  "en": "stream, river",
+  "radical": "川",
+  "decomp": "⿲丿丨丨",
+  "hint": "A river's flow; compare 巛",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "尺",
+  "py": "chǐ",
+  "en": "ruler, tape-measure",
+  "radical": "尸",
+  "decomp": "⿸尸乚",
+  "hint": "Picture of a man measuring by pacing",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "篇",
+  "py": "piān",
+  "en": "chapter, section",
+  "radical": "⺮",
+  "decomp": "⿱⺮扁",
+  "hint": "A bamboo ⺮ tablet 扁; 扁 also provides the pronunciation",
+  "etype": "ideographic"
+ },
+ {
+  "ch": "颂",
+  "py": "sòng",
+  "en": "to laud, to acclaim",
+  "radical": "页",
+  "decomp": "⿰公页",
+  "hint": "page",
+  "etype": "pictophonetic"
+ }
+]

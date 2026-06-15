@@ -1,0 +1,202 @@
+{
+  "末": {
+    "origin": "Take a tree 木 and add a long line 一 right at the very top — that mark points to the tip, the end.",
+    "word": { "w": "周末", "en": "weekend" },
+    "sentence": { "cn": "周末我们去公园。", "en": "On the weekend we go to the park." }
+  },
+  "列": {
+    "origin": "The knife 刂 on the right slices things into neat pieces, lining them up in a row — that's a line.",
+    "word": { "w": "排列", "en": "to arrange in a row" },
+    "sentence": { "cn": "我们排成一列。", "en": "We line up in a row." }
+  },
+  "购": {
+    "origin": "The shell 贝 was old money, so this character means to spend money — to buy something.",
+    "word": { "w": "购物", "en": "to shop" },
+    "sentence": { "cn": "妈妈去商店购物。", "en": "Mom goes to the store to shop." }
+  },
+  "单": {
+    "origin": "Two little dots 丷 sit alone on top — picture one single thing standing by itself.",
+    "word": { "w": "简单", "en": "simple" },
+    "sentence": { "cn": "这道题很简单。", "en": "This problem is very simple." }
+  },
+  "约": {
+    "origin": "A silk thread 纟 ties two friends together with a promise — that's making an appointment.",
+    "word": { "w": "约会", "en": "appointment, date" },
+    "sentence": { "cn": "我们约好明天见。", "en": "We agreed to meet tomorrow." }
+  },
+  "品": {
+    "origin": "Three mouths 口 stacked up — when everyone is talking about something, it must be a fine product.",
+    "word": { "w": "礼品", "en": "gift" },
+    "sentence": { "cn": "这件礼品真好看。", "en": "This gift is really pretty." }
+  },
+  "挑": {
+    "origin": "A hand 扌 reaching out to pick the best one — that's how you choose and pick things.",
+    "word": { "w": "挑选", "en": "to pick out, to select" },
+    "sentence": { "cn": "我挑了一个苹果。", "en": "I picked an apple." }
+  },
+  "折": {
+    "origin": "A hand 扌 swinging an axe 斤 to chop wood — snap, the branch breaks!",
+    "word": { "w": "折纸", "en": "paper folding" },
+    "sentence": { "cn": "我们一起折纸。", "en": "We fold paper together." }
+  },
+  "裙": {
+    "origin": "The clothes radical 衤 on the left tells you it's something you wear — a pretty skirt.",
+    "word": { "w": "裙子", "en": "skirt" },
+    "sentence": { "cn": "妹妹穿了红裙子。", "en": "Little sister is wearing a red skirt." }
+  },
+  "错": {
+    "origin": "The metal radical 钅 plus 昔 'long ago' — like gold once held but now lost, it means a mistake.",
+    "word": { "w": "错误", "en": "mistake, error" },
+    "sentence": { "cn": "我写错了一个字。", "en": "I wrote one character wrong." }
+  },
+  "颜": {
+    "origin": "The head 页 on the right shows this is about your face — its look and its colors.",
+    "word": { "w": "颜色", "en": "color" },
+    "sentence": { "cn": "你喜欢什么颜色？", "en": "What color do you like?" }
+  },
+  "露": {
+    "origin": "Rain 雨 sitting on top of a road 路 — tiny drops of rain left on the grass are dew.",
+    "word": { "w": "露水", "en": "dew" },
+    "sentence": { "cn": "早上草上有露水。", "en": "In the morning there is dew on the grass." }
+  },
+  "滩": {
+    "origin": "Water 氵 that is hard 难 to cross — a rushing, rocky beach where the river runs fast.",
+    "word": { "w": "沙滩", "en": "sandy beach" },
+    "sentence": { "cn": "我们在沙滩上玩。", "en": "We play on the sandy beach." }
+  },
+  "搭": {
+    "origin": "A hand 扌 piecing things together — stacking and joining blocks to build something up.",
+    "word": { "w": "搭积木", "en": "to build with blocks" },
+    "sentence": { "cn": "弟弟喜欢搭积木。", "en": "Little brother likes building with blocks." }
+  },
+  "油": {
+    "origin": "The water radical 氵 shows a liquid, and 由 gives the sound — slippery, shiny oil.",
+    "word": { "w": "油画", "en": "oil painting" },
+    "sentence": { "cn": "锅里有很多油。", "en": "There is a lot of oil in the pan." }
+  },
+  "换": {
+    "origin": "A hand 扌 swapping one thing for another — trade this, take that, you change them.",
+    "word": { "w": "交换", "en": "to exchange" },
+    "sentence": { "cn": "我们换一下座位。", "en": "Let's switch seats." }
+  },
+  "聊": {
+    "origin": "The ear 耳 on the left listens — when ears are busy, friends are happily chatting.",
+    "word": { "w": "聊天", "en": "to chat" },
+    "sentence": { "cn": "我和朋友聊天。", "en": "I chat with my friend." }
+  },
+  "烤": {
+    "origin": "Fire 火 on the left does the work — hold food over the flames to roast and bake it.",
+    "word": { "w": "烤肉", "en": "barbecue, grilled meat" },
+    "sentence": { "cn": "我们一起去烤肉。", "en": "We go to have a barbecue together." }
+  },
+  "躺": {
+    "origin": "The body 身 on the left tells you what you do — stretch your body out and lie down.",
+    "word": { "w": "躺下", "en": "to lie down" },
+    "sentence": { "cn": "他躺在床上看书。", "en": "He lies on the bed and reads." }
+  },
+  "浪": {
+    "origin": "Water 氵 plus 良 for the sound — the sea pushes up rolling, splashing waves.",
+    "word": { "w": "海浪", "en": "ocean waves" },
+    "sentence": { "cn": "海浪一波一波。", "en": "The waves come one after another." }
+  },
+  "者": {
+    "origin": "Think of it as a little tag pointing at a person — 'the one who' does something.",
+    "word": { "w": "记者", "en": "reporter, journalist" },
+    "sentence": { "cn": "他是一名记者。", "en": "He is a reporter." }
+  },
+  "始": {
+    "origin": "The woman radical 女 on the left, with 台 for the sound — a mother begins new life, so it means to start.",
+    "word": { "w": "开始", "en": "to begin" },
+    "sentence": { "cn": "上课开始了。", "en": "Class has begun." }
+  },
+  "民": {
+    "origin": "An old shape standing for ordinary working people — together they are the people, the citizens.",
+    "word": { "w": "人民", "en": "the people" },
+    "sentence": { "cn": "我爱我的人民。", "en": "I love my people." }
+  },
+  "族": {
+    "origin": "People gathered under one flag 方, swearing together — a family, a clan, a whole group.",
+    "word": { "w": "民族", "en": "ethnic group, nationality" },
+    "sentence": { "cn": "中国有很多民族。", "en": "China has many ethnic groups." }
+  },
+  "舞": {
+    "origin": "Picture two feet 舛 stepping below while hands wave fans above — that's dancing!",
+    "word": { "w": "跳舞", "en": "to dance" },
+    "sentence": { "cn": "姐姐很喜欢跳舞。", "en": "Big sister loves to dance." }
+  },
+  "捏": {
+    "origin": "A hand 扌 squeezing and shaping — pinch and press the clay to mold a little shape.",
+    "word": { "w": "捏泥人", "en": "to mold clay figures" },
+    "sentence": { "cn": "我们用泥巴捏小鸟。", "en": "We mold a little bird out of clay." }
+  },
+  "勇": {
+    "origin": "The strength radical 力 at the bottom gives the power you need to be brave.",
+    "word": { "w": "勇敢", "en": "brave" },
+    "sentence": { "cn": "他是个勇敢的孩子。", "en": "He is a brave child." }
+  },
+  "敢": {
+    "origin": "A hand holding a stick 攵 striking at something fierce — you need courage to dare to do that.",
+    "word": { "w": "勇敢", "en": "brave" },
+    "sentence": { "cn": "我敢自己睡觉。", "en": "I dare to sleep by myself." }
+  },
+  "艺": {
+    "origin": "The grass radical 艹 on top — long ago planting things skillfully was an art.",
+    "word": { "w": "艺术", "en": "art" },
+    "sentence": { "cn": "画画是一种艺术。", "en": "Drawing is a kind of art." }
+  },
+  "彩": {
+    "origin": "The three soft strokes 彡 on the right are like brush hairs sweeping bright colors.",
+    "word": { "w": "彩色", "en": "colorful, multicolored" },
+    "sentence": { "cn": "天上有彩色的云。", "en": "There are colorful clouds in the sky." }
+  },
+  "巧": {
+    "origin": "The work radical 工 on the left — doing work neatly and cleverly makes you skillful.",
+    "word": { "w": "巧手", "en": "skillful hands" },
+    "sentence": { "cn": "奶奶有一双巧手。", "en": "Grandma has a pair of skillful hands." }
+  },
+  "脏": {
+    "origin": "The flesh radical ⺼ on the left tells you it's part of the body — your inside organs.",
+    "word": { "w": "心脏", "en": "heart (organ)" },
+    "sentence": { "cn": "心脏在我们身体里。", "en": "The heart is inside our body." }
+  },
+  "害": {
+    "origin": "Under a roof 宀 something sharp hides — be careful, it can hurt and harm.",
+    "word": { "w": "害怕", "en": "to be afraid" },
+    "sentence": { "cn": "我不害怕黑夜。", "en": "I am not afraid of the dark." }
+  },
+  "惊": {
+    "origin": "The heart radical 忄 on the left jumps — your heart leaps when something gives you a fright.",
+    "word": { "w": "惊喜", "en": "surprise" },
+    "sentence": { "cn": "这是一个大惊喜。", "en": "This is a big surprise." }
+  },
+  "轻": {
+    "origin": "The cart radical 车 on the left — an empty cart is easy to pull, nice and light.",
+    "word": { "w": "轻松", "en": "relaxed, easy" },
+    "sentence": { "cn": "这个箱子很轻。", "en": "This box is very light." }
+  },
+  "算": {
+    "origin": "Bamboo ⺮ on top sits over a counting tool — bamboo sticks once helped people calculate.",
+    "word": { "w": "算术", "en": "arithmetic" },
+    "sentence": { "cn": "老师教我们算术。", "en": "The teacher teaches us arithmetic." }
+  },
+  "坏": {
+    "origin": "The earth radical 土 plus 不 'not' — soil that is no good has gone bad and rotten.",
+    "word": { "w": "坏人", "en": "bad person" },
+    "sentence": { "cn": "故事里有个坏人。", "en": "There is a bad person in the story." }
+  },
+  "反": {
+    "origin": "A hand 又 pressed up against a cliff 厂 — pushing the other way means the opposite.",
+    "word": { "w": "反对", "en": "to oppose" },
+    "sentence": { "cn": "他们的意见相反。", "en": "Their opinions are opposite." }
+  },
+  "狐": {
+    "origin": "The dog radical 犭 on the left tells you it's an animal — a clever, bushy-tailed fox.",
+    "word": { "w": "狐狸", "en": "fox" },
+    "sentence": { "cn": "森林里有一只狐狸。", "en": "There is a fox in the forest." }
+  },
+  "葡": {
+    "origin": "The grass radical 艹 on top shows it grows from a plant — sweet, juicy grapes on a vine.",
+    "word": { "w": "葡萄", "en": "grapes" },
+    "sentence": { "cn": "我喜欢吃葡萄。", "en": "I like eating grapes." }
+  }
+}
