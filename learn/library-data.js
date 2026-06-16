@@ -42,9 +42,9 @@ window.LIBRARY_DATA = {
           "vol": "第一册",
           "glyph": "一",
           "pigment": "Crimson",
-          "accent": "#D23B54",
-          "accentSoft": "#F0BCC5",
-          "tint": "#FAE7EA",
+          "accent": "#BE2D45",
+          "accentSoft": "#ECC0C7",
+          "tint": "#F8E8EB",
           "lessons": [
             {
               "n": 1,
@@ -285,9 +285,9 @@ window.LIBRARY_DATA = {
           "vol": "第二册",
           "glyph": "二",
           "pigment": "Magenta",
-          "accent": "#A62A7E",
-          "accentSoft": "#E1B7D3",
-          "tint": "#F4E5F0",
+          "accent": "#BE2D8F",
+          "accentSoft": "#ECC0DD",
+          "tint": "#F8E8F3",
           "lessons": [
             {
               "n": 1,
@@ -525,9 +525,9 @@ window.LIBRARY_DATA = {
           "vol": "第三册",
           "glyph": "三",
           "pigment": "Violet",
-          "accent": "#8C2CBF",
-          "accentSoft": "#D8B7E9",
-          "tint": "#F1E6F7",
+          "accent": "#8C2DBE",
+          "accentSoft": "#DCC0EC",
+          "tint": "#F2E8F8",
           "lessons": [
             {
               "n": 1,
@@ -777,9 +777,9 @@ window.LIBRARY_DATA = {
           "vol": "第四册",
           "glyph": "四",
           "pigment": "Indigo",
-          "accent": "#4A33B7",
-          "accentSoft": "#C1BAE7",
-          "tint": "#E9E7F6",
+          "accent": "#462DBE",
+          "accentSoft": "#C7C0EC",
+          "tint": "#EBE8F8",
           "lessons": [
             {
               "n": 1,
@@ -1029,9 +1029,9 @@ window.LIBRARY_DATA = {
           "vol": "第五册",
           "glyph": "五",
           "pigment": "Azure",
-          "accent": "#2484D8",
-          "accentSoft": "#B5D5F2",
-          "tint": "#E5F0FA",
+          "accent": "#2D7ABE",
+          "accentSoft": "#C0D7EC",
+          "tint": "#E8F0F8",
           "lessons": [
             {
               "n": 1,
@@ -1293,9 +1293,9 @@ window.LIBRARY_DATA = {
           "vol": "第六册",
           "glyph": "六",
           "pigment": "Cyan",
-          "accent": "#1FA6CE",
-          "accentSoft": "#B3E1EE",
-          "tint": "#E4F4F9",
+          "accent": "#2D9DBE",
+          "accentSoft": "#C0E2EC",
+          "tint": "#E8F4F8",
           "lessons": [
             {
               "n": 1,
