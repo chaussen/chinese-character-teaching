@@ -39,7 +39,7 @@ window.LIBRARY_DATA = {
             ]
           ],
           "vol": "第一册",
-          "glyph": "文",
+          "glyph": "一",
           "pigment": "Jade",
           "accent": "#4C7A52",
           "accentSoft": "#CBE0CD",
