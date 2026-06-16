@@ -64,8 +64,8 @@
       p.setAttribute('class',cls); p.setAttribute('d',S.medianPath(c.m[i])); p.setAttribute('fill','none');
       p.setAttribute('stroke',cols[i]); p.setAttribute('stroke-width','150');
       p.setAttribute('stroke-linecap','round'); p.setAttribute('stroke-linejoin','round'); g.appendChild(p);
-      var L=p.getTotalLength(); p.style.strokeDasharray=L; p.style.strokeDashoffset=L;
-      p.animate([{strokeDashoffset:L},{strokeDashoffset:0}],{duration:dur,easing:'cubic-bezier(.45,.05,.3,1)',fill:'forwards'});
+      var L=p.getTotalLength(); p.dataset.len=L; p.style.strokeDasharray=L; p.style.strokeDashoffset=L;
+      S.tweenDash(p, dur);  // rAF tween — reliable in Firefox (WAAPI dashoffset is not)
     }
     function showHint(manual){ clearHint(); inkInto(hintG, curIdx, 560, 'g-ink-hint');
       if(manual && mistakes[curIdx]===0) mistakes[curIdx]=1; }   // using the hint forfeits first-try credit

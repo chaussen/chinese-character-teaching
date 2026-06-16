@@ -370,9 +370,20 @@
     var du=_dir(u), dm=_dir(median), dirSim=du[0]*dm[0]+du[1]*dm[1]; if(opts.anyDir) dirSim=Math.abs(dirSim);
     var lenRatio = mLen>1 ? uLen/mLen : 1;
     var FR=opts.frechet||0.34, SE=opts.startEnd||0.28, DIR=(opts.dir!=null?opts.dir:0.20);
-    var okEnds=startDist<=SE && endDist<=SE, okDir=isDot||dirSim>=DIR,
+    // Position tolerance scales with stroke size. A flat box is far bigger than a
+    // dot and bigger than the gaps between closely-packed strokes (e.g. the four
+    // dots in 雨), so tiny strokes were accepted anywhere in the middle. Tighten
+    // the box for short strokes — position is their only cue — while long strokes
+    // keep the generous tolerance so normal tracing isn't made harder.
+    var mFrac = mLen/SIZE;
+    var posTol = isDot ? Math.min(SE, 0.13) : Math.min(SE, Math.max(0.16, 0.13 + 0.30*mFrac));
+    var okEnds=startDist<=posTol && endDist<=posTol, okDir=isDot||dirSim>=DIR,
         okShape=frechet<=FR, okLen=isDot||(lenRatio>=0.28 && lenRatio<=2.6);
-    var reason = !okEnds ? (startDist>SE?'start':'end') : !okDir ? 'direction' : !okShape ? 'shape' : !okLen ? 'length' : 'ok';
+    // A wildly wrong length is the clearest signal you're drawing a different
+    // stroke than expected (e.g. a dot where a long stroke is wanted), so report
+    // it ahead of a start/end miss for a more useful tip.
+    var grossLen = !isDot && mLen>1 && (lenRatio<0.45 || lenRatio>2.4);
+    var reason = grossLen ? 'length' : !okEnds ? (startDist>posTol?'start':'end') : !okDir ? 'direction' : !okShape ? 'shape' : !okLen ? 'length' : 'ok';
     return { match:okEnds&&okDir&&okShape&&okLen, reason:reason, frechet:frechet,
              startDist:startDist, endDist:endDist, dirSim:dirSim, lenRatio:lenRatio, isDot:isDot };
   }
@@ -398,6 +409,28 @@
     }
     pos.forEach(function(p){ p[0]=clamp(p[0],60,964); p[1]=clamp(p[1],60,964); });
     return pos;
+  }
+  // Reveal a stroke by tweening its stroke-dashoffset L→0 via requestAnimationFrame.
+  // We do this by hand rather than via element.animate(): Firefox doesn't reliably
+  // animate stroke-dashoffset (an SVG presentation attribute) through the Web
+  // Animations API, which left the stroke player static there. rAF + inline style
+  // works in every browser. Returns a handle with .cancel(). Honours reduced motion.
+  function tweenDash(p, dur, onDone){
+    var L = +p.dataset.len; if (!(L>0)) { L = p.getTotalLength(); p.dataset.len = L; }
+    if (reduced || !(dur>1)){ p.style.strokeDashoffset = 0; if(onDone) onDone(); return null; }
+    p.style.strokeDashoffset = L;
+    var raf = 0, start = 0, cancelled = false;
+    function frame(ts){
+      if(cancelled) return;
+      if(!start) start = ts;
+      var t = clamp((ts-start)/dur, 0, 1);
+      var e = t<0.5 ? 4*t*t*t : 1 - Math.pow(-2*t+2,3)/2;  // easeInOutCubic
+      p.style.strokeDashoffset = (L*(1-e)).toFixed(2);
+      if(t<1) raf = requestAnimationFrame(frame);
+      else { p.style.strokeDashoffset = 0; if(onDone) onDone(); }
+    }
+    raf = requestAnimationFrame(frame);
+    return { cancel:function(){ cancelled = true; if(raf) cancelAnimationFrame(raf); } };
   }
   // returns { play, step, showAll }
   function makeWriter(el, d, opts){
@@ -428,26 +461,26 @@
       '<g class="writer__nums">'+nums+'</g></svg>';
     inkEls = $all(".ink", el);
     inkEls.forEach(function(p){ var L=p.getTotalLength(); p.dataset.len=L; p.style.strokeDasharray=L; p.style.strokeDashoffset=L; });
-    var speed = opts.speed || 1;
+    var speed = opts.speed || 1, tweens=[];
 
-    function showAll(){ inkEls.forEach(function(p){ (p.getAnimations()||[]).forEach(function(a){a.cancel();}); p.style.strokeDashoffset=0; }); stepIdx=inkEls.length; }
+    function stopAll(){ tweens.forEach(function(t){ if(t&&t.cancel) t.cancel(); }); tweens=[]; seqTimers.forEach(clearTimeout); seqTimers=[]; }
+    function showAll(){ stopAll(); inkEls.forEach(function(p){ p.style.strokeDashoffset=0; }); stepIdx=inkEls.length; }
     function play(){
-      seqTimers.forEach(clearTimeout); seqTimers=[];
-      inkEls.forEach(function(p){ (p.getAnimations()||[]).forEach(function(a){a.cancel();}); p.style.strokeDashoffset=+p.dataset.len; });
+      stopAll();
+      inkEls.forEach(function(p){ p.style.strokeDashoffset=+p.dataset.len; });
       if (reduced){ showAll(); return; }
-      stepIdx=0; var i=0;
+      var i=0; stepIdx=0;
       (function nextS(){
         if (i>=inkEls.length) return;
         var p=inkEls[i], L=+p.dataset.len, dur=clamp(220+L*0.34,320,900)/speed;
-        p.animate([{strokeDashoffset:L},{strokeDashoffset:0}],{duration:dur,easing:"cubic-bezier(.45,.05,.3,1)",fill:"forwards"});
-        i++; stepIdx=i; seqTimers.push(setTimeout(nextS, dur+80/speed));
+        stepIdx=i+1;
+        tweens.push(tweenDash(p, dur, function(){ i++; seqTimers.push(setTimeout(nextS, 80/speed)); }));
       })();
     }
     function step(){
-      seqTimers.forEach(clearTimeout); seqTimers=[];
+      stopAll();
       if (stepIdx>=inkEls.length){ inkEls.forEach(function(p){ p.style.strokeDashoffset=+p.dataset.len; }); stepIdx=0; }
-      var p=inkEls[stepIdx], L=+p.dataset.len;
-      p.animate([{strokeDashoffset:L},{strokeDashoffset:0}],{duration:reduced?1:460/speed,easing:"cubic-bezier(.45,.05,.3,1)",fill:"forwards"});
+      tweens.push(tweenDash(inkEls[stepIdx], reduced?1:460/speed));
       stepIdx++;
     }
     return { play:play, step:step, showAll:showAll, hasStrokes:true };
@@ -631,7 +664,7 @@
     esc: esc, shuffle: shuffle, palette: palette,
     extra: EXTRA, extraOf: extraOf, playAudio: playAudio, charIndex: CHAR_INDEX,
     gridSVG: gridSVG, medianPath: medianPath, rubySeg: rubySeg, segText: segText,
-    strokeMatch: strokeMatch
+    strokeMatch: strokeMatch, tweenDash: tweenDash
   };
 
   if (document.readyState==="loading") document.addEventListener("DOMContentLoaded", init); else init();
