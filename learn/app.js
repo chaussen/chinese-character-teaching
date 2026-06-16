@@ -374,9 +374,11 @@
     // dot and bigger than the gaps between closely-packed strokes (e.g. the four
     // dots in 雨), so tiny strokes were accepted anywhere in the middle. Tighten
     // the box for short strokes — position is their only cue — while long strokes
-    // keep the generous tolerance so normal tracing isn't made harder.
+    // keep the generous tolerance so normal tracing isn't made harder. Only the
+    // ordered (trace) path tightens; the free-sketch grader (anyDir) stays lenient.
     var mFrac = mLen/SIZE;
-    var posTol = isDot ? Math.min(SE, 0.13) : Math.min(SE, Math.max(0.16, 0.13 + 0.30*mFrac));
+    var posTol = opts.anyDir ? SE
+               : isDot ? Math.min(SE, 0.13) : Math.min(SE, Math.max(0.16, 0.13 + 0.30*mFrac));
     var okEnds=startDist<=posTol && endDist<=posTol, okDir=isDot||dirSim>=DIR,
         okShape=frechet<=FR, okLen=isDot||(lenRatio>=0.28 && lenRatio<=2.6);
     // A wildly wrong length is the clearest signal you're drawing a different
