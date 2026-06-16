@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#C2473C" />
+  <title>Casey Chinese School · 凯西中文学校</title>
+  <meta name="description" content="Casey Chinese School — learn to write Chinese characters stroke by stroke, and print 米字格 practice sheets. Character Studio and Card Maker, free in your browser." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Noto+Serif+SC:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <style>
+    :root{
+      --red:#C2473C; --red-deep:#9E382F; --ink:#2A2622; --ink-soft:#6F6760;
+      --paper:#FBF6EF; --card:#FFFFFF; --line:#ECE2D6; --gold:#C99A4B;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{-webkit-text-size-adjust:100%}
+    body{
+      font-family:Manrope,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+      color:var(--ink); background:var(--paper);
+      line-height:1.5; -webkit-font-smoothing:antialiased;
+      min-height:100vh; display:flex; flex-direction:column;
+    }
+    .zh{font-family:"Noto Serif SC","Noto Sans SC",serif;}
+    a{color:inherit}
+    .wrap{width:100%; max-width:1040px; margin:0 auto; padding:0 24px;}
+
+    /* header */
+    header.top{padding:26px 0 6px;}
+    .brand{display:flex; align-items:center; gap:14px;}
+    .logo{
+      width:54px; height:54px; border-radius:15px; display:grid; place-items:center;
+      background:linear-gradient(150deg,var(--red),var(--red-deep));
+      color:#fff; font-family:"Noto Serif SC",serif; font-size:30px; font-weight:700;
+      box-shadow:0 8px 22px rgba(194,71,60,.28); flex:none;
+    }
+    .brand h1{font-size:21px; font-weight:800; letter-spacing:-.2px; line-height:1.15;}
+    .brand .sub{font-size:13.5px; color:var(--ink-soft);}
+    .brand .sub .zh{color:var(--red-deep); font-weight:600;}
+
+    /* hero */
+    .hero{padding:46px 0 30px; max-width:680px;}
+    .eyebrow{
+      display:inline-flex; align-items:center; gap:8px; font-size:12.5px; font-weight:700;
+      letter-spacing:.08em; text-transform:uppercase; color:var(--red-deep);
+      background:#fff; border:1px solid var(--line); padding:6px 13px; border-radius:999px;
+    }
+    .eyebrow .dot{width:7px; height:7px; border-radius:50%; background:var(--gold);}
+    .hero h2{
+      font-family:"Noto Serif SC",serif; font-weight:700;
+      font-size:clamp(30px,5.2vw,46px); line-height:1.12; letter-spacing:-.5px;
+      margin:18px 0 14px;
+    }
+    .hero h2 em{font-style:normal; color:var(--red);}
+    .hero p{font-size:17px; color:var(--ink-soft); max-width:580px;}
+    .hero p .zh{color:var(--ink);}
+
+    /* tool cards */
+    .tools{
+      display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+      gap:20px; padding:8px 0 40px;
+    }
+    .card{
+      position:relative; background:var(--card); border:1px solid var(--line);
+      border-radius:20px; padding:26px 24px 24px; display:flex; flex-direction:column;
+      box-shadow:0 1px 0 rgba(0,0,0,.02); transition:transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+    }
+    .card:hover{transform:translateY(-3px); box-shadow:0 16px 34px rgba(42,38,34,.10); border-color:#e2d3c2;}
+    .card .glyph{
+      width:60px; height:60px; border-radius:16px; display:grid; place-items:center;
+      font-family:"Noto Serif SC",serif; font-size:34px; font-weight:700; margin-bottom:18px;
+    }
+    .card.studio .glyph{background:#FBE9E6; color:var(--red);}
+    .card.maker  .glyph{background:#EAF1F2; color:#3E7C8C;}
+    .card h3{font-size:21px; font-weight:800; letter-spacing:-.2px;}
+    .card h3 .zh{font-weight:600; color:var(--ink-soft); font-size:16px; margin-left:6px;}
+    .card .desc{color:var(--ink-soft); font-size:15px; margin:10px 0 18px; flex:1;}
+    .card ul{list-style:none; margin:0 0 20px; display:flex; flex-wrap:wrap; gap:7px;}
+    .card li{font-size:12.5px; font-weight:600; color:var(--ink-soft); background:var(--paper); border:1px solid var(--line); padding:5px 10px; border-radius:999px;}
+    .go{
+      display:inline-flex; align-items:center; justify-content:center; gap:9px;
+      font-weight:700; font-size:15.5px; text-decoration:none; padding:13px 18px;
+      border-radius:13px; color:#fff; background:var(--red); transition:background .15s ease;
+    }
+    .card.maker .go{background:#3E7C8C;}
+    .go:hover{background:var(--red-deep);}
+    .card.maker .go:hover{background:#326576;}
+    .go .ar{transition:transform .15s ease;}
+    .go:hover .ar{transform:translateX(3px);}
+    .note{font-size:12.5px; color:var(--ink-soft); margin-top:12px;}
+    .note b{color:var(--ink);}
+
+    /* footer */
+    footer{margin-top:auto; border-top:1px solid var(--line); padding:22px 0 30px;}
+    .foot{display:flex; flex-wrap:wrap; gap:8px 18px; align-items:center; justify-content:space-between; font-size:13.5px; color:var(--ink-soft);}
+    .foot a{color:var(--red-deep); text-decoration:none; font-weight:600;}
+    .foot a:hover{text-decoration:underline;}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="top">
+      <div class="brand">
+        <div class="logo">写</div>
+        <div>
+          <h1>Casey Chinese School</h1>
+          <div class="sub"><span class="zh">凯西中文学校</span> · learning tools</div>
+        </div>
+      </div>
+
+      <section class="hero">
+        <span class="eyebrow"><span class="dot"></span>Free · in your browser</span>
+        <h2>Learn to <em>write</em> Chinese characters, the way they're built.</h2>
+        <p>Two classroom-grown tools for our students and families. Watch each character grow
+          stroke by stroke, trace it, and practise — or print beautiful 米字格 practice sheets at home.
+          <span class="zh">一起学写字。</span></p>
+      </section>
+    </header>
+  </div>
+
+  <div class="wrap">
+    <section class="tools">
+      <article class="card studio">
+        <div class="glyph zh">学</div>
+        <h3>Character Studio<span class="zh">学写字</span></h3>
+        <p class="desc">The interactive learning app. Animated stroke order, pinyin and meaning,
+          radicals, finger-tracing, and listen / read / write exercises — organised by book and lesson.</p>
+        <ul><li>笔顺 Stroke order</li><li>描红 Trace</li><li>听·读·写 Exercises</li></ul>
+        <a class="go" href="studio/">Open Character Studio <span class="ar">→</span></a>
+        <p class="note">Students: enter your <b>class code</b> to begin.</p>
+      </article>
+
+      <article class="card maker">
+        <div class="glyph zh">卡</div>
+        <h3>Card Maker<span class="zh">写字卡</span></h3>
+        <p class="desc">Generate print-ready PDFs: 米字格 handwriting cards, tracing and repeat
+          practice, vocab flashcards, and stroke-order diagrams. Paste characters, preview, download.</p>
+        <ul><li>米字格 Cards</li><li>Flashcards</li><li>Vector PDF</li></ul>
+        <a class="go" href="cardmaker/">Open Card Maker <span class="ar">→</span></a>
+        <p class="note">No sign-in needed — great for printing practice at home.</p>
+      </article>
+    </section>
+  </div>
+
+  <footer>
+    <div class="wrap foot">
+      <span>© Casey Chinese School · <span class="zh">凯西中文学校</span></span>
+      <span><a href="https://caseychinese.org">caseychinese.org</a></span>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,85 @@
+# Builds and publishes the whole public site to GitHub Pages:
+#
+#   /            landing / hub                (landing/)
+#   /studio/     Character Studio learning app (Character Studio.html + learn/ + audio/)
+#   /cardmaker/  Card Maker web app           (built from cardmaker/)
+#
+# One-time setup (repo owner): Settings -> Pages -> "Build and deployment" ->
+# Source: "GitHub Actions". For the custom domain, also add the DNS record and
+# set the custom domain in Settings -> Pages (see the CNAME file written below).
+name: Deploy site to GitHub Pages
+
+on:
+  push:
+    branches: [master]
+    paths:
+      - "Character Studio.html"
+      - "learn/**"
+      - "audio/**"
+      - "cardmaker/**"
+      - "landing/**"
+      - ".github/workflows/deploy-pages.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+          cache-dependency-path: cardmaker/package-lock.json
+
+      - name: Build Card Maker web app
+        working-directory: cardmaker
+        run: |
+          npm ci
+          npm run web:build
+
+      - name: Assemble site
+        run: |
+          set -euo pipefail
+          SITE="_site"
+          rm -rf "$SITE"
+          mkdir -p "$SITE/studio" "$SITE/cardmaker"
+
+          # Landing / hub  ->  /
+          cp -r landing/. "$SITE"/
+
+          # Character Studio  ->  /studio/   (relative asset paths, self-contained)
+          cp "Character Studio.html" "$SITE/studio/index.html"
+          cp -r learn  "$SITE/studio/learn"
+          cp -r audio  "$SITE/studio/audio"
+
+          # Card Maker  ->  /cardmaker/   (vite built with relative base)
+          cp -r cardmaker/dist-web/. "$SITE/cardmaker/"
+
+          # Custom domain + skip Jekyll processing of the artifact
+          echo "studio.caseychinese.org" > "$SITE/CNAME"
+          touch "$SITE/.nojekyll"
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
