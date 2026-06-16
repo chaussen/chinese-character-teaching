@@ -66,9 +66,13 @@ jobs:
           # Card Maker  ->  /cardmaker/   (vite built with relative base)
           cp -r cardmaker/dist-web/. "$SITE/cardmaker/"
 
-          # Custom domain + skip Jekyll processing of the artifact
-          echo "studio.caseychinese.org" > "$SITE/CNAME"
+          # Skip Jekyll processing of the artifact.
           touch "$SITE/.nojekyll"
+
+          # Custom domain — disabled while testing on the github.io URL. When the
+          # DNS record for studio.caseychinese.org is in place, uncomment this and
+          # set the custom domain under Settings -> Pages.
+          # echo "studio.caseychinese.org" > "$SITE/CNAME"
 
       - uses: actions/upload-pages-artifact@v3
         with:
