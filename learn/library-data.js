@@ -265,7 +265,7 @@ window.LIBRARY_DATA = {
         },
         {
           "id": "G2",
-          "title": "Year 2",
+          "title": "Zhōngwén Book 2",
           "cn": "中文",
           "cnpy": [
             [
@@ -281,7 +281,7 @@ window.LIBRARY_DATA = {
               "jí"
             ]
           ],
-          "vol": "二年级",
+          "vol": "第二册",
           "glyph": "二",
           "pigment": "Coral",
           "accent": "#C2613B",
@@ -505,7 +505,7 @@ window.LIBRARY_DATA = {
         },
         {
           "id": "G3",
-          "title": "Year 3",
+          "title": "Zhōngwén Book 3",
           "cn": "中文",
           "cnpy": [
             [
@@ -521,7 +521,7 @@ window.LIBRARY_DATA = {
               "jí"
             ]
           ],
-          "vol": "三年级",
+          "vol": "第三册",
           "glyph": "三",
           "pigment": "Amber",
           "accent": "#B8862F",
@@ -757,7 +757,7 @@ window.LIBRARY_DATA = {
         },
         {
           "id": "G4",
-          "title": "Year 4",
+          "title": "Zhōngwén Book 4",
           "cn": "中文",
           "cnpy": [
             [
@@ -773,7 +773,7 @@ window.LIBRARY_DATA = {
               "jí"
             ]
           ],
-          "vol": "四年级",
+          "vol": "第四册",
           "glyph": "四",
           "pigment": "Teal",
           "accent": "#2F7E78",
@@ -1009,7 +1009,7 @@ window.LIBRARY_DATA = {
         },
         {
           "id": "G5",
-          "title": "Year 5",
+          "title": "Zhōngwén Book 5",
           "cn": "中文",
           "cnpy": [
             [
@@ -1025,7 +1025,7 @@ window.LIBRARY_DATA = {
               "jí"
             ]
           ],
-          "vol": "五年级",
+          "vol": "第五册",
           "glyph": "五",
           "pigment": "Indigo",
           "accent": "#4B5FA6",
@@ -1273,7 +1273,7 @@ window.LIBRARY_DATA = {
         },
         {
           "id": "G6",
-          "title": "Year 6",
+          "title": "Zhōngwén Book 6",
           "cn": "中文",
           "cnpy": [
             [
@@ -1289,7 +1289,7 @@ window.LIBRARY_DATA = {
               "jí"
             ]
           ],
-          "vol": "六年级",
+          "vol": "第六册",
           "glyph": "六",
           "pigment": "Plum",
           "accent": "#8A4B86",
