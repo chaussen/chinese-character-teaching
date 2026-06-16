@@ -1,12 +1,17 @@
 #!/usr/bin/env python3
 """Expand learn/general-data.js with the full common-character pool.
 
-Every character that already carries stroke data in the app (app-data.js,
-general-data.js, library-chars.js) — and therefore already has a recording in
-audio/char — is grouped by theme and appended to the General library. The
-existing 10 themed groups are preserved untouched; new themed groups are added
-below them. No network access and NO new audio are required: each added char
-is drawn from the existing stroke/audio pool.
+Draws from every character that already carries stroke data in the app
+(app-data.js, general-data.js, library-chars.js) plus, if present, the staged
+tools/build/common_pool.json produced by fetch_common.py (extra common chars
+fetched from the hanzi-writer-data CDN). Each char is grouped by theme —
+curated semantic themes first, then the broad tail grouped by radical (部首)
+— and appended to the General library. The pre-existing groups are preserved
+byte-for-byte; new themed groups are added below them.
+
+common_pool.json is a build-time-only staging file (never shipped to the
+browser): its chars end up embedded directly in general-data.js, so the app
+ships each glyph's stroke data exactly once.
 
 Run:  python3 tools/build/expand_general.py
 """
@@ -15,6 +20,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
 LEARN = ROOT / "learn"
+POOL_PATH = ROOT / "tools/build/common_pool.json"
 
 
 def load_window(path):
@@ -27,6 +33,8 @@ def load_window(path):
 # ---- master stroke-data index: ch -> {ch,py,en,s,m,strokes} -----------------
 def build_index():
     idx = {}
+
+    radical = {}
 
     def take(rec):
         ch = rec.get("ch")
@@ -42,6 +50,8 @@ def build_index():
             "m": rec["m"],
             "strokes": rec.get("strokes", len(rec["s"])),
         }
+        if rec.get("radical"):
+            radical[ch] = rec["radical"]
 
     gen = load_window(LEARN / "general-data.js")
     for g in gen["groups"]:
@@ -55,7 +65,39 @@ def build_index():
     lib = load_window(LEARN / "library-chars.js")
     for c in lib.get("chars", []):
         take(c)
-    return gen, idx
+    if POOL_PATH.exists():
+        pool = json.loads(POOL_PATH.read_text(encoding="utf-8"))
+        for c in pool.get("chars", []):
+            take(c)
+    return gen, idx, radical
+
+
+# Readable English names for the common radicals we turn into theme groups.
+RADICAL_NAME = {
+    "扌": "hand", "手": "hand", "口": "mouth", "氵": "water", "水": "water",
+    "木": "tree & wood", "亻": "person", "人": "person", "钅": "metal",
+    "艹": "plants", "⺼": "body & flesh", "月": "moon & flesh", "纟": "silk & thread",
+    "辶": "movement", "土": "earth", "火": "fire", "灬": "fire", "讠": "speech",
+    "阝": "place & mound", "石": "stone", "刂": "knife", "刀": "knife",
+    "贝": "money & shell", "宀": "roof & home", "心": "heart & mind",
+    "忄": "heart & feeling", "日": "sun & day", "⺮": "bamboo", "竹": "bamboo",
+    "女": "woman", "疒": "sickness", "足": "foot", "目": "eye", "虫": "insect",
+    "禾": "grain", "广": "shelter", "车": "vehicle", "饣": "food", "食": "food",
+    "犭": "animal", "犬": "dog", "鸟": "bird", "鱼": "fish", "马": "horse",
+    "雨": "weather", "山": "mountain", "彳": "step & go", "攵": "tap & action",
+    "宀": "roof & home", "穴": "cave & hole", "立": "stand", "示": "ritual",
+    "礻": "ritual", "衤": "clothing", "衣": "clothing", "巾": "cloth",
+    "页": "head & page", "力": "strength", "金": "metal", "门": "door",
+    "王": "jade & king", "玉": "jade", "弓": "bow", "戈": "spear", "斤": "axe",
+    "皿": "vessel", "舟": "boat", "工": "work", "白": "white", "田": "field",
+    "糸": "silk & thread", "见": "see", "走": "walk & run", "齿": "teeth",
+    "骨": "bone", "革": "leather", "音": "sound", "风": "wind", "鬼": "spirit",
+    "酉": "wine & jar", "黑": "black", "齐": "even", "羽": "feather",
+    "耳": "ear", "缶": "jar", "至": "arrive", "豆": "bean", "辛": "bitter",
+    "色": "colour", "血": "blood", "肉": "flesh", "高": "tall", "毛": "fur",
+    "气": "air", "瓦": "tile", "用": "use", "生": "life", "甘": "sweet",
+    "大": "big", "米": "rice", "尸": "corpse & body",
+}
 
 
 # ---- new themed groups (every char drawn from the existing pool) ------------
@@ -125,16 +167,22 @@ NEW_THEMES = [
 ]
 
 
+MIN_RADICAL = 12  # radicals with at least this many leftover chars get a group
+
+
 def main():
-    gen, idx = build_index()
+    gen, idx, radical = build_index()
 
     existing = {c["ch"] for g in gen["groups"] for c in g["chars"]}
-    pool = set(idx)  # everything with stroke data + (essentially) audio
+    pool = set(idx)  # everything with stroke data
     candidates = pool - existing  # chars to place into new groups
     print(f"pool={len(pool)} existing-general={len(existing)} to-add={len(candidates)}")
 
+    order = {ch: i for i, ch in enumerate(idx)}  # frequency-ish insertion order
+
     placed = set()
     new_groups = []
+    # 1) curated semantic themes
     for title, chars in NEW_THEMES:
         members = []
         for ch in chars:
@@ -144,17 +192,40 @@ def main():
         if members:
             new_groups.append({"title": title, "chars": members})
 
+    # 2) the broad common-character tail, grouped by radical (部首)
     leftovers = [ch for ch in candidates if ch not in placed]
-    # keep a stable, frequency-ish order: fall back to pool insertion order
-    order = {ch: i for i, ch in enumerate(idx)}
-    leftovers.sort(key=lambda c: order[c])
-    if leftovers:
-        new_groups.append({
-            "title": "常用字（更多）· More everyday characters",
-            "chars": [idx[ch] for ch in leftovers],
-        })
-    print(f"placed={len(placed)} leftovers={len(leftovers)}")
-    print("leftovers:", "".join(leftovers))
+    by_rad = {}
+    for ch in leftovers:
+        by_rad.setdefault(radical.get(ch, ""), []).append(ch)
+
+    rad_groups, other = [], []
+    for rad, chs in by_rad.items():
+        if rad and len(chs) >= MIN_RADICAL:
+            chs.sort(key=lambda c: order[c])
+            name = RADICAL_NAME.get(rad)
+            en = f"{name} radical" if name else f"{rad} radical"
+            rad_groups.append((len(chs), {
+                "title": f"{rad}部 · {en}",
+                "chars": [idx[c] for c in chs],
+            }))
+        else:
+            other.extend(chs)
+    rad_groups.sort(key=lambda t: -t[0])  # biggest radical families first
+    new_groups.extend(g for _, g in rad_groups)
+
+    # remaining small-radical chars: frequency-ordered tiers so no group is huge
+    if other:
+        other.sort(key=lambda c: order[c])
+        TIER = 150
+        tiers = [other[i:i + TIER] for i in range(0, len(other), TIER)]
+        for n, chunk in enumerate(tiers, 1):
+            new_groups.append({
+                "title": f"其他常用字 {n} · More common characters {n}",
+                "chars": [idx[c] for c in chunk],
+            })
+
+    placed |= set(leftovers)
+    print(f"placed={len(placed)} radical-groups={len(rad_groups)} tail={len(other)}")
 
     # sanity: no char placed twice across new groups
     seen = {}

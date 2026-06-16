@@ -11,3 +11,4 @@ practice
 # in tools/build/fetch_chars.py); intermediate caches.
 tools/build/dictionary.txt
 tools/build/*.txt
+tools/build/common_pool.json
