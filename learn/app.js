@@ -76,13 +76,36 @@
     b.units.forEach(function(u){ if (unit && u.n !== unit) return; u.chars.forEach(function(c){ if (isKnown(bandId, c.ch)) n++; }); });
     return n;
   }
-  var GEN_BAND = null, LIB = {}, LIB_SERIES = [];
+  var GEN_BAND = null, GEN_THEMES = [], LIB = {}, LIB_SERIES = [];
   function buildGenBand(){
     var G = (window.GENERAL_DATA && window.GENERAL_DATA.groups) || [];
     GEN_BAND = { id:'GEN', name:'General Characters', cnpy:[["通","tōng"],["用","yòng"],["汉","hàn"],["字","zì"],], isGen:true,
       glyph:'字', pigment:{glyph:'字', name:'Free practice'}, accent:'#3E7C8C', accentSoft:'#C2DBE1', tint:'#E6F0F3',
       total: G.reduce(function(s,g){ return s+g.chars.length; }, 0),
       units: G.map(function(g,i){ return { n:i+1, title:g.title, chars:g.chars }; }) };
+  }
+  // Extension learning is browsed as theme groups: one card per General theme,
+  // each deep-linking straight to that theme's characters. Curated glyph+accent
+  // per theme keep the grid lively; an unlisted theme falls back to the GEN teal.
+  function buildGenThemes(){
+    var STYLE = {
+      "数字":  {g:"三", a:"#C2473C", s:"#F4C9C3", t:"#FBE7E3"},
+      "人和家": {g:"人", a:"#C77F2E", s:"#F0D6AE", t:"#FBEFDC"},
+      "身体":  {g:"手", a:"#B5566B", s:"#EAC5CF", t:"#F8E8ED"},
+      "大自然": {g:"山", a:"#4E8A5B", s:"#C2DDC8", t:"#E6F1E9"},
+      "动物":  {g:"鸟", a:"#7A6BBE", s:"#D3CCEC", t:"#ECE8F7"},
+      "时间":  {g:"日", a:"#3E7C8C", s:"#C2DBE1", t:"#E6F0F3"},
+      "方位":  {g:"上", a:"#8A7340", s:"#DACBA0", t:"#F1EAD7"},
+      "颜色":  {g:"红", a:"#C44E8B", s:"#EFC4DA", t:"#FAE7F1"},
+      "动作":  {g:"走", a:"#2F7E6F", s:"#BADBD3", t:"#E3F0EC"},
+      "常用字": {g:"字", a:"#6E7687", s:"#CDD2DB", t:"#EEF0F3"}
+    };
+    var DEF = { g:"字", a:"#3E7C8C", s:"#C2DBE1", t:"#E6F0F3" };
+    GEN_THEMES = (GEN_BAND ? GEN_BAND.units : []).map(function(u){
+      var p = String(u.title).split("·"), cn=(p[0]||"").trim(), en=(p[1]||"").trim();
+      var st = STYLE[cn] || DEF;
+      return { n:u.n, cn:cn, en:en||cn, glyph:st.g, accent:st.a, accentSoft:st.s, tint:st.t, total:u.chars.length };
+    });
   }
   // resolve each library series' Hanzi lists into full char objects via CHAR_INDEX.
   // Characters without bundled stroke data are dropped (and logged) — house rule.
@@ -125,9 +148,7 @@
       }) });
     });
     secs.push({ cn:'通用汉字', cnpy:[["通","tōng"],["用","yòng"],["汉","hàn"],["字","zì"]], en:'General characters',
-      sub:'Common everyday characters, grouped by theme', books:[{
-        id:'GEN', accent:GEN_BAND.accent, accentSoft:GEN_BAND.accentSoft, tint:GEN_BAND.tint, glyph:GEN_BAND.glyph, pigmentName:GEN_BAND.pigment.name,
-        eyebrow:'Free practice', titleEn:'General Characters', cnpy:GEN_BAND.cnpy, unitWord:'themes', total:GEN_BAND.total, unitsLen:GEN_BAND.units.length }] });
+      sub:'Extra characters for extension learning — pick a theme.', themes: GEN_THEMES });
     return secs;
   }
 
@@ -200,15 +221,33 @@
         '</div>'+
       '</div><div class="bookcard__arrow">→</div></button>';
   }
+  // a theme group card (extension learning) — same shell as a book card, but it
+  // deep-links into one General theme and tracks that theme's own progress.
+  function themeCard(t){
+    var done = masteredCount('GEN', t.n), pct = t.total?Math.round(done/t.total*100):0;
+    return '<button class="bookcard themecard" data-band="GEN" data-unit="'+t.n+'" style="--bc:'+t.accent+';--bc-soft:'+t.accentSoft+';--bc-tint:'+t.tint+'">'+
+      '<div class="bookcard__pig"><span class="g zh">'+t.glyph+'</span><span class="nm">'+t.total+' 字</span></div>'+
+      '<div class="bookcard__body">'+
+        '<div class="bookcard__ey">Theme · 主题</div>'+
+        '<div class="bookcard__title">'+esc(t.en)+' <span class="zh">'+esc(t.cn)+'</span></div>'+
+        '<div class="bookcard__foot">'+
+          '<span class="bookcard__cnt"><b>'+done+'</b> / '+t.total+' learned</span>'+
+          '<span class="bar"><i style="width:'+pct+'%"></i></span>'+
+        '</div>'+
+      '</div><div class="bookcard__arrow">→</div></button>';
+  }
   function buildHome(){
     var host = $("#home-sections");
     host.innerHTML = buildSections().map(function(sec){
+      var cards = sec.themes ? sec.themes.map(themeCard).join('') : sec.books.map(bookCard).join('');
       return '<section class="hsec">'+
         '<div class="hsec__head"><h2 class="hsec__title">'+esc(sec.en)+' <span class="zh">'+ruby(sec.cnpy)+'</span></h2>'+
         '<p class="hsec__sub">'+esc(sec.sub)+'</p></div>'+
-        '<div class="bookgrid">'+ sec.books.map(bookCard).join('') +'</div></section>';
+        '<div class="bookgrid">'+ cards +'</div></section>';
     }).join("");
-    $all(".bookcard", host).forEach(function(c){ c.addEventListener("click", function(){ openBand(c.dataset.band); }); });
+    $all(".bookcard", host).forEach(function(c){ c.addEventListener("click", function(){
+      if (c.dataset.unit) openGenTheme(+c.dataset.unit); else openBand(c.dataset.band);
+    }); });
     var tot=0, done=0; DATA.forEach(function(b){ tot+=b.total; done+=masteredCount(b.id); });
     $("#home-progress").innerHTML = '<b>'+done+'</b> of '+tot+' characters';
   }
@@ -240,6 +279,13 @@
       c.addEventListener("click", function(){ openUnit(id, +c.dataset.unit); });
     });
     showView("units");
+  }
+  // jump straight from a theme group card into its characters, carrying the
+  // theme's accent through the deck/learn views.
+  function openGenTheme(n){
+    var t = GEN_THEMES.filter(function(x){ return x.n===n; })[0];
+    if (t) applyAccent({ accent:t.accent, accentSoft:t.accentSoft, tint:t.tint });
+    openUnit('GEN', n);
   }
   function rubyInline(pairs){ return pairs.map(function(p){ return "<ruby>"+p[0]+"<rt>"+p[1]+"</rt></ruby>"; }).join(""); }
 
@@ -537,7 +583,7 @@
 
   // ═════════ INIT ═════════
   function init(){
-    buildKeypad(); renderDots(); bindTrace(); buildGenBand();
+    buildKeypad(); renderDots(); bindTrace(); buildGenBand(); buildGenThemes();
     buildIndex(); buildLibrary();
     // lock or enter
     var unlocked=false; try{ unlocked = sessionStorage.getItem(SS)==="1"; }catch(e){}
