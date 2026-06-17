@@ -57,12 +57,16 @@
   function toast(text, sub){ var t=$("#audio-toast"); if(!t) return;
     t.innerHTML='<span class="zh">'+esc(text)+'</span> · '+sub; t.classList.add("show");
     clearTimeout(audioToastT); audioToastT=setTimeout(function(){ t.classList.remove("show"); },1600); }
-  function playAudio(kind, key){
+  function playAudio(kind, key, label){
+    // `label` is what the toast shows — defaults to the audio key (the character),
+    // but exercises that hide the character (e.g. listen & choose) pass pinyin so
+    // the toast doesn't leak the answer.
+    var shown = label || key;
     if (hasRecording(kind,key)){
       var a=new Audio('audio/'+kind+'/'+encodeURIComponent(key)+'.mp3');
-      a.play().then(function(){ toast(key,'playing'); }).catch(function(){ if(speak(key)) toast(key,'read aloud'); });
-    } else if (speak(key)){ toast(key,'read aloud'); }
-    else { toast(key,'audio coming soon'); }
+      a.play().then(function(){ toast(shown,'playing'); }).catch(function(){ if(speak(key)) toast(shown,'read aloud'); });
+    } else if (speak(key)){ toast(shown,'read aloud'); }
+    else { toast(shown,'audio coming soon'); }
   }
 
   // ───────── persistence ─────────

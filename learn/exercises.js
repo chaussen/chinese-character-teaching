@@ -239,7 +239,8 @@
     body.innerHTML = '<button class="ex-listenbtn" id="ex-listen-play" aria-label="Play sound">🔊</button>'+
       '<div class="ex-ask">Listen, then tap the character you heard. <span class="ex-sub">(audio coming soon)</span></div>'+
       '<div class="ex-options wide">'+options.map(function(o,i){ return '<button class="ex-opt ex-opt--zh" data-i="'+i+'"><span class="zh">'+o.v+'</span></button>'; }).join('')+'</div>';
-    $("#ex-listen-play").addEventListener('click', function(){ S.playAudio('char', c.ch); });
+    // show pinyin (not the character) in the audio toast — the character is the answer
+    $("#ex-listen-play").addEventListener('click', function(){ S.playAudio('char', c.ch, c.py); });
     bindOpts(body, options, {t:'listen'}, c, c.py+' · '+S.esc(c.en)+' = '+c.ch);
   }
 
