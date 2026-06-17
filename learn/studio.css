@@ -426,6 +426,7 @@ body.no-pinyin ruby rt{visibility:hidden;}
 .lx__sent .punc{font-family:var(--zh);}
 .lx__sent .saybtn{margin-left:8px;width:32px;height:32px;font-size:14px;}
 .lx__senten{font-size:15px;color:var(--ink-soft);margin:8px 0 0;}
+.lx__sentsrc{font-size:13px;color:var(--ink-soft);opacity:.8;font-style:italic;margin:4px 0 0;}
 
 /* audio stub toast */
 .audio-toast{position:fixed;left:50%;bottom:26px;transform:translateX(-50%) translateY(14px);

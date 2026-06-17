@@ -22,15 +22,23 @@ def py_tone(text):
 PUNCT=set("。，！？、；：“”‘’（）《》—…·,.!?\"'()")
 
 def build_seg(cn):
+    # Compute pinyin per maximal run of Han characters. Doing it run-by-run keeps
+    # phrase context (tone sandhi / heteronyms) while staying perfectly aligned —
+    # pypinyin collapses *consecutive* non-Han chars (e.g. 》，) into one token, so
+    # a single positional list over the whole string would drift after them.
     out=[]
-    # per-character pinyin in context (phrase-aware)
-    plist = py_tone(cn)
-    for i,ch in enumerate(cn):
-        if ch in PUNCT or not ('一'<=ch<='鿿'):
-            out.append([ch,""])
+    i,n=0,len(cn)
+    while i<n:
+        if '一'<=cn[i]<='鿿':
+            j=i
+            while j<n and '一'<=cn[j]<='鿿': j+=1
+            plist=py_tone(cn[i:j])
+            for k,ch in enumerate(cn[i:j]):
+                out.append([ch, plist[k] if k<len(plist) else ""])
+            i=j
         else:
-            p = plist[i] if i < len(plist) else ""
-            out.append([ch, p])
+            out.append([cn[i],""])
+            i+=1
     return out
 
 merged={}
@@ -51,7 +59,9 @@ for f in sorted(glob.glob('tools/build/content*/out_*.json')):
             wpy=" ".join(py_tone(wv))
             entry['word']={"w":wv,"py":wpy,"en":w.get('en','').strip()}
         if cn:
-            entry['sentence']={"seg":build_seg(cn),"en":sent.get('en','').strip()}
+            sobj={"seg":build_seg(cn),"en":sent.get('en','').strip()}
+            if sent.get('src'): sobj['src']=sent['src'].strip()
+            entry['sentence']=sobj
         merged[ch]=entry
 
 print("assembled",len(merged),"entries; errors:",len(errors))

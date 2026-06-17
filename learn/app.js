@@ -554,7 +554,8 @@
     if (x.sentence){ html += '<div class="lx"><span class="lx__lbl">句子 · In a sentence</span>'+
       '<p class="lx__sent zh">'+rubySeg(x.sentence.seg, d.ch)+
       '<button class="saybtn" data-say="sentence" data-key="'+segText(x.sentence.seg)+'" aria-label="Play sentence">🔊</button></p>'+
-      '<p class="lx__senten">'+esc(x.sentence.en)+'</p></div>'; }
+      '<p class="lx__senten">'+esc(x.sentence.en)+'</p>'+
+      (x.sentence.src ? '<p class="lx__sentsrc">— '+esc(x.sentence.src)+'</p>' : '')+'</div>'; }
     var box=$("#learn-extra"); if(!box) return;
     box.innerHTML=html; box.style.display = html?'':'none';
     $all('.saybtn', box).forEach(function(b){ b.addEventListener('click', function(){ playAudio(b.dataset.say, b.dataset.key); }); });
