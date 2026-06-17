@@ -1,0 +1,252 @@
+{
+  "朽": {
+    "origin": "木 is wood and 丂 hints at the sound; together it means wood that has rotted away.",
+    "word": {"w": "腐朽", "en": "rotten, decayed"},
+    "sentence": {"cn": "这块木头朽了。", "en": "This piece of wood has rotted."}
+  },
+  "杀": {
+    "origin": "A picture of cutting something down; it means to kill.",
+    "word": {"w": "杀死", "en": "to kill"},
+    "sentence": {"cn": "猫想杀那只虫子。", "en": "The cat wants to kill that bug."}
+  },
+  "杂": {
+    "origin": "九 over 木 (tree); it means mixed or miscellaneous.",
+    "word": {"w": "复杂", "en": "complicated, complex"},
+    "sentence": {"cn": "这件事很复杂。", "en": "This matter is very complicated."}
+  },
+  "权": {
+    "origin": "木 (wood) with 又 (hand) for the sound; it means power or right.",
+    "word": {"w": "权利", "en": "right (entitlement)"},
+    "sentence": {"cn": "每个人都有权利。", "en": "Everyone has rights."}
+  },
+  "杆": {
+    "origin": "木 (wood) with 干 for the sound; it means a pole or stick.",
+    "word": {"w": "旗杆", "en": "flagpole"},
+    "sentence": {"cn": "旗杆又高又直。", "en": "The flagpole is tall and straight."}
+  },
+  "杈": {
+    "origin": "木 (branches) and 叉 (fork) where two branches fork apart.",
+    "word": {"w": "树杈", "en": "tree fork, crotch of a tree"},
+    "sentence": {"cn": "鸟在树杈上做窝。", "en": "The bird builds a nest in the tree fork."}
+  },
+  "李": {
+    "origin": "木 (tree) over 子 (seed/child); it names the plum tree.",
+    "word": {"w": "李子", "en": "plum"},
+    "sentence": {"cn": "李子又甜又酸。", "en": "Plums are both sweet and sour."}
+  },
+  "杏": {
+    "origin": "A tree 木 with a mouth 口 below, waiting for the fruit to fall; it means apricot.",
+    "word": {"w": "杏子", "en": "apricot"},
+    "sentence": {"cn": "树上结满了杏子。", "en": "The tree is full of apricots."}
+  },
+  "材": {
+    "origin": "木 (wood) with 才 for the sound; it means timber or material.",
+    "word": {"w": "材料", "en": "material"},
+    "sentence": {"cn": "盖房子要用很多材料。", "en": "Building a house needs a lot of materials."}
+  },
+  "村": {
+    "origin": "木 (trees) with 寸 for the sound; it means a village among the trees.",
+    "word": {"w": "村子", "en": "village"},
+    "sentence": {"cn": "我家在小村子里。", "en": "My home is in a small village."}
+  },
+  "杜": {
+    "origin": "木 (tree) with 土 for the sound; it can mean to stop or shut out.",
+    "word": {"w": "杜绝", "en": "to put an end to, eradicate"},
+    "sentence": {"cn": "我们要杜绝浪费。", "en": "We must put an end to waste."}
+  },
+  "杠": {
+    "origin": "木 (wood) and 工 (also the sound); a wooden bar or pole.",
+    "word": {"w": "单杠", "en": "horizontal bar (gymnastics)"},
+    "sentence": {"cn": "他在单杠上玩。", "en": "He plays on the horizontal bar."}
+  },
+  "杨": {
+    "origin": "木 (tree) with 昜 for the sound; it names the poplar or willow tree.",
+    "word": {"w": "杨树", "en": "poplar tree"},
+    "sentence": {"cn": "路边有很多杨树。", "en": "There are many poplar trees by the road."}
+  },
+  "杭": {
+    "origin": "木 (tree) with 亢 for the sound; it appears in the city name Hangzhou.",
+    "word": {"w": "杭州", "en": "Hangzhou (city)"},
+    "sentence": {"cn": "杭州的风景很美。", "en": "The scenery in Hangzhou is beautiful."}
+  },
+  "杯": {
+    "origin": "木 (once wooden) with 不 for the sound; it means a cup.",
+    "word": {"w": "杯子", "en": "cup, glass"},
+    "sentence": {"cn": "桌上有一个杯子。", "en": "There is a cup on the table."}
+  },
+  "板": {
+    "origin": "木 (wood) with 反 for the sound; it means a board or plank.",
+    "word": {"w": "黑板", "en": "blackboard"},
+    "sentence": {"cn": "老师在黑板上写字。", "en": "The teacher writes on the blackboard."}
+  },
+  "极": {
+    "origin": "木 (wood) with 及 for the sound; it means the very top or extreme.",
+    "word": {"w": "北极", "en": "the North Pole"},
+    "sentence": {"cn": "北极非常冷。", "en": "The North Pole is very cold."}
+  },
+  "构": {
+    "origin": "木 (wood) with 勾 for the sound; it means to build or construct.",
+    "word": {"w": "结构", "en": "structure"},
+    "sentence": {"cn": "这座桥的结构很牢。", "en": "This bridge's structure is very sturdy."}
+  },
+  "枉": {
+    "origin": "木 (wood) with 王 for the sound; it means crooked or in vain.",
+    "word": {"w": "冤枉", "en": "to wrong someone, treat unjustly"},
+    "sentence": {"cn": "你冤枉了我。", "en": "You have wronged me."}
+  },
+  "枕": {
+    "origin": "木 (once wooden) with 冘 for the sound; it means a pillow.",
+    "word": {"w": "枕头", "en": "pillow"},
+    "sentence": {"cn": "我睡觉要用枕头。", "en": "I need a pillow to sleep."}
+  },
+  "枚": {
+    "origin": "木 (tree) with 攵 for the sound; used to count small flat things.",
+    "word": {"w": "一枚", "en": "one (measure word for coins, stamps)"},
+    "sentence": {"cn": "我有一枚硬币。", "en": "I have one coin."}
+  },
+  "果": {
+    "origin": "Fruit drawn on top of a tree 木; it means fruit or result.",
+    "word": {"w": "水果", "en": "fruit"},
+    "sentence": {"cn": "我喜欢吃水果。", "en": "I like to eat fruit."}
+  },
+  "枝": {
+    "origin": "木 (tree) with 支 for the sound; it means a branch.",
+    "word": {"w": "树枝", "en": "tree branch"},
+    "sentence": {"cn": "鸟站在树枝上。", "en": "The bird stands on the branch."}
+  },
+  "枣": {
+    "origin": "A thorny tree with dates falling off it; it means jujube or date.",
+    "word": {"w": "红枣", "en": "red date, jujube"},
+    "sentence": {"cn": "妈妈买了一些红枣。", "en": "Mom bought some red dates."}
+  },
+  "枪": {
+    "origin": "木 (once wooden spear) with 仓 for the sound; now it means a gun.",
+    "word": {"w": "手枪", "en": "pistol, handgun"},
+    "sentence": {"cn": "警察带着手枪。", "en": "The police officer carries a pistol."}
+  },
+  "枫": {
+    "origin": "木 (tree) with 风 for the sound; it names the maple tree.",
+    "word": {"w": "枫叶", "en": "maple leaf"},
+    "sentence": {"cn": "秋天枫叶红了。", "en": "In autumn the maple leaves turn red."}
+  },
+  "枯": {
+    "origin": "An old 古 tree 木 that has dried up; it means withered.",
+    "word": {"w": "枯萎", "en": "to wither, dry up"},
+    "sentence": {"cn": "花儿枯了。", "en": "The flowers have withered."}
+  },
+  "枷": {
+    "origin": "木 (wood) with 加 for the sound; a wooden device locked on prisoners.",
+    "word": {"w": "枷锁", "en": "shackles, chains"},
+    "sentence": {"cn": "他挣脱了枷锁。", "en": "He broke free from the shackles."}
+  },
+  "柄": {
+    "origin": "木 (wood) with 丙 for the sound; it means a handle.",
+    "word": {"w": "把柄", "en": "handle; sb's weak point"},
+    "sentence": {"cn": "刀柄是木头做的。", "en": "The knife handle is made of wood."}
+  },
+  "柏": {
+    "origin": "木 (tree) with 白 for the sound; it names the cypress tree.",
+    "word": {"w": "柏树", "en": "cypress tree"},
+    "sentence": {"cn": "山上有很多柏树。", "en": "There are many cypress trees on the mountain."}
+  },
+  "某": {
+    "origin": "甘 (sweet) over 木 (tree); it means a certain one or someone.",
+    "word": {"w": "某人", "en": "someone, a certain person"},
+    "sentence": {"cn": "某人拿走了我的书。", "en": "Someone took my book."}
+  },
+  "柑": {
+    "origin": "木 (tree) and 甘 (sweet, also the sound); a sweet citrus fruit.",
+    "word": {"w": "柑橘", "en": "tangerine, citrus"},
+    "sentence": {"cn": "柑橘很好吃。", "en": "Tangerines are delicious."}
+  },
+  "柒": {
+    "origin": "A fancy form of 七 (seven) used on checks to stop fraud.",
+    "word": {"w": "柒", "en": "seven (formal numeral)"},
+    "sentence": {"cn": "支票上写着柒元。", "en": "The check says seven yuan."}
+  },
+  "染": {
+    "origin": "Water 氵, many 九, and wood 木: dipping cloth in a wooden dye bowl.",
+    "word": {"w": "染色", "en": "to dye, dyeing"},
+    "sentence": {"cn": "她把布染成红色。", "en": "She dyed the cloth red."}
+  },
+  "柔": {
+    "origin": "矛 (spear) over 木 (wood); wood so supple it can bend. It means soft.",
+    "word": {"w": "温柔", "en": "gentle, tender"},
+    "sentence": {"cn": "妈妈说话很温柔。", "en": "Mom speaks very gently."}
+  },
+  "柜": {
+    "origin": "木 (wood) with 巨 for the sound; it means a cabinet or cupboard.",
+    "word": {"w": "柜子", "en": "cabinet, cupboard"},
+    "sentence": {"cn": "衣服放在柜子里。", "en": "The clothes are kept in the cabinet."}
+  },
+  "查": {
+    "origin": "木 over 旦; it means to check, investigate, or look up.",
+    "word": {"w": "检查", "en": "to check, inspect"},
+    "sentence": {"cn": "老师检查作业。", "en": "The teacher checks the homework."}
+  },
+  "柯": {
+    "origin": "木 (tree) with 可 for the sound; it means a branch or axe handle.",
+    "word": {"w": "枝柯", "en": "branches and twigs"},
+    "sentence": {"cn": "大树的枝柯很多。", "en": "The big tree has many branches."}
+  },
+  "柳": {
+    "origin": "木 (tree) with 卯 for the sound; it names the willow tree.",
+    "word": {"w": "柳树", "en": "willow tree"},
+    "sentence": {"cn": "河边有一棵柳树。", "en": "There is a willow tree by the river."}
+  },
+  "柴": {
+    "origin": "此 for the sound over 木 (wood); it means firewood.",
+    "word": {"w": "柴火", "en": "firewood"},
+    "sentence": {"cn": "爷爷去山上捡柴火。", "en": "Grandpa goes up the hill to gather firewood."}
+  },
+  "标": {
+    "origin": "木 (tree) with 示 part; it means a mark or sign.",
+    "word": {"w": "目标", "en": "goal, target"},
+    "sentence": {"cn": "我有一个小目标。", "en": "I have a small goal."}
+  },
+  "栋": {
+    "origin": "木 (wood) with 东 for the sound; it means a roof beam; also counts buildings.",
+    "word": {"w": "一栋楼", "en": "one building"},
+    "sentence": {"cn": "那是一栋大楼。", "en": "That is a tall building."}
+  },
+  "栏": {
+    "origin": "木 (wood) with 兰 for the sound; it means a fence or railing.",
+    "word": {"w": "栏杆", "en": "railing, banister"},
+    "sentence": {"cn": "别趴在栏杆上。", "en": "Don't lean on the railing."}
+  },
+  "栓": {
+    "origin": "木 (wood) with 全 for the sound; it means a peg, plug, or bolt.",
+    "word": {"w": "螺栓", "en": "bolt"},
+    "sentence": {"cn": "这个栓很紧。", "en": "This bolt is very tight."}
+  },
+  "栗": {
+    "origin": "A tree 木 bearing hard nuts on top; it names the chestnut.",
+    "word": {"w": "栗子", "en": "chestnut"},
+    "sentence": {"cn": "冬天我们吃栗子。", "en": "In winter we eat chestnuts."}
+  },
+  "校": {
+    "origin": "木 (wood) with 交 for the sound; it means a school.",
+    "word": {"w": "学校", "en": "school"},
+    "sentence": {"cn": "我每天去学校。", "en": "I go to school every day."}
+  },
+  "株": {
+    "origin": "木 (tree) with 朱 for the sound; it means a plant stump; counts plants.",
+    "word": {"w": "一株", "en": "one (measure word for plants)"},
+    "sentence": {"cn": "院子里有一株花。", "en": "There is a flower in the yard."}
+  },
+  "核": {
+    "origin": "木 (tree) with 亥 for the sound; it means the core or pit of a fruit.",
+    "word": {"w": "果核", "en": "fruit pit, core"},
+    "sentence": {"cn": "桃子里面有果核。", "en": "There is a pit inside the peach."}
+  },
+  "根": {
+    "origin": "木 (tree) with 艮 for the sound; it means a root; also counts long things.",
+    "word": {"w": "树根", "en": "tree root"},
+    "sentence": {"cn": "大树的根很深。", "en": "The big tree's roots are deep."}
+  },
+  "格": {
+    "origin": "木 (wood) with 各 for the sound; it means a square, grid, or standard.",
+    "word": {"w": "格子", "en": "square, grid, check pattern"},
+    "sentence": {"cn": "本子上有小格子。", "en": "The notebook has little squares."}
+  }
+}

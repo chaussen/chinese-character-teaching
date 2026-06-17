@@ -1,0 +1,252 @@
+{
+  "栽": {
+    "origin": "木 (tree) with 𢦏 for the sound; it means to plant or grow.",
+    "word": {"w": "栽树", "en": "to plant trees"},
+    "sentence": {"cn": "我们在山上栽树。", "en": "We plant trees on the mountain."}
+  },
+  "桂": {
+    "origin": "木 (tree) with 圭 for the sound; it names the fragrant osmanthus tree.",
+    "word": {"w": "桂花", "en": "osmanthus flower"},
+    "sentence": {"cn": "桂花很香。", "en": "Osmanthus flowers are very fragrant."}
+  },
+  "桃": {
+    "origin": "木 (tree) with 兆 for the sound; it names the peach tree.",
+    "word": {"w": "桃子", "en": "peach"},
+    "sentence": {"cn": "这个桃子很甜。", "en": "This peach is very sweet."}
+  },
+  "框": {
+    "origin": "木 (wood) with 匡 for the sound; it means a frame.",
+    "word": {"w": "门框", "en": "door frame"},
+    "sentence": {"cn": "照片放进了框里。", "en": "The photo is put into the frame."}
+  },
+  "案": {
+    "origin": "安 for the sound over 木 (wood); it means a table, file, or case.",
+    "word": {"w": "答案", "en": "answer"},
+    "sentence": {"cn": "这道题的答案对了。", "en": "The answer to this question is correct."}
+  },
+  "桑": {
+    "origin": "A tree 木 with leaves on top; it names the mulberry tree.",
+    "word": {"w": "桑树", "en": "mulberry tree"},
+    "sentence": {"cn": "蚕吃桑树的叶子。", "en": "Silkworms eat mulberry leaves."}
+  },
+  "档": {
+    "origin": "木 (wood) with 当 for the sound; it means a shelf, file, or grade.",
+    "word": {"w": "档案", "en": "file, archive, record"},
+    "sentence": {"cn": "老师收好档案。", "en": "The teacher puts away the files."}
+  },
+  "桨": {
+    "origin": "Sounds like 将 on top, wood 木 below; it means an oar or paddle.",
+    "word": {"w": "船桨", "en": "boat oar, paddle"},
+    "sentence": {"cn": "他用力划船桨。", "en": "He rows hard with the oar."}
+  },
+  "桩": {
+    "origin": "木 (wood) with 庄 for the sound; it means a stake or post.",
+    "word": {"w": "木桩", "en": "wooden stake, post"},
+    "sentence": {"cn": "地上有一个木桩。", "en": "There is a wooden stake on the ground."}
+  },
+  "桶": {
+    "origin": "木 (once wooden) with 甬 for the sound; it means a bucket or barrel.",
+    "word": {"w": "水桶", "en": "water bucket"},
+    "sentence": {"cn": "他提着一个水桶。", "en": "He carries a water bucket."}
+  },
+  "梁": {
+    "origin": "Water 氵 and wood 木: a wooden beam or bridge over water.",
+    "word": {"w": "桥梁", "en": "bridge"},
+    "sentence": {"cn": "河上有一座桥梁。", "en": "There is a bridge over the river."}
+  },
+  "梅": {
+    "origin": "木 (tree) with 每 for the sound; it names the plum tree.",
+    "word": {"w": "梅花", "en": "plum blossom"},
+    "sentence": {"cn": "冬天梅花开了。", "en": "In winter the plum blossoms open."}
+  },
+  "梗": {
+    "origin": "木 (tree) with 更 for the sound; it means a stem or stalk.",
+    "word": {"w": "花梗", "en": "flower stem"},
+    "sentence": {"cn": "这朵花的梗很长。", "en": "This flower's stem is very long."}
+  },
+  "梨": {
+    "origin": "利 for the sound over 木 (tree); it names the pear tree.",
+    "word": {"w": "梨子", "en": "pear"},
+    "sentence": {"cn": "梨子又甜又脆。", "en": "Pears are sweet and crisp."}
+  },
+  "梳": {
+    "origin": "木 (once wooden) with 㐬 for the sound; it means a comb.",
+    "word": {"w": "梳子", "en": "comb"},
+    "sentence": {"cn": "她用梳子梳头。", "en": "She combs her hair with a comb."}
+  },
+  "检": {
+    "origin": "木 part with 佥 for the sound; it means to check or inspect.",
+    "word": {"w": "检查", "en": "to check, examine"},
+    "sentence": {"cn": "医生给我检查身体。", "en": "The doctor checks my body."}
+  },
+  "棉": {
+    "origin": "木 (plant) and 帛 (cloth); the cotton plant that gives soft fiber.",
+    "word": {"w": "棉花", "en": "cotton"},
+    "sentence": {"cn": "棉花又白又软。", "en": "Cotton is white and soft."}
+  },
+  "棋": {
+    "origin": "木 (once wooden pieces) with 其 for the sound; it means chess.",
+    "word": {"w": "下棋", "en": "to play chess"},
+    "sentence": {"cn": "爷爷喜欢下棋。", "en": "Grandpa likes to play chess."}
+  },
+  "棍": {
+    "origin": "木 (wood) with 昆 for the sound; it means a stick or rod.",
+    "word": {"w": "棍子", "en": "stick, rod"},
+    "sentence": {"cn": "小狗叼着一根棍子。", "en": "The puppy holds a stick in its mouth."}
+  },
+  "棒": {
+    "origin": "木 (wood) with 奉 for the sound; it means a club; also means great.",
+    "word": {"w": "棒球", "en": "baseball"},
+    "sentence": {"cn": "你做得真棒。", "en": "You did really great."}
+  },
+  "棚": {
+    "origin": "木 (wood) with 朋 for the sound; it means a shed or shack.",
+    "word": {"w": "棚子", "en": "shed, shack"},
+    "sentence": {"cn": "院子里有个棚子。", "en": "There is a shed in the yard."}
+  },
+  "棱": {
+    "origin": "木 (wood) with 夌 for the sound; it means an edge or ridge.",
+    "word": {"w": "棱角", "en": "edges and corners"},
+    "sentence": {"cn": "石头的棱角很尖。", "en": "The stone's edges are very sharp."}
+  },
+  "楷": {
+    "origin": "木 part with 皆 (all); the clear standard style of writing.",
+    "word": {"w": "楷书", "en": "regular script (calligraphy)"},
+    "sentence": {"cn": "他写一手好楷书。", "en": "He writes beautiful regular script."}
+  },
+  "概": {
+    "origin": "木 part with 既 for the sound; it means general or approximate.",
+    "word": {"w": "大概", "en": "roughly, probably"},
+    "sentence": {"cn": "他大概八岁。", "en": "He is probably eight years old."}
+  },
+  "榆": {
+    "origin": "木 (tree) with 俞 for the sound; it names the elm tree.",
+    "word": {"w": "榆树", "en": "elm tree"},
+    "sentence": {"cn": "门口有一棵榆树。", "en": "There is an elm tree at the gate."}
+  },
+  "榜": {
+    "origin": "A notice 旁 posted on a board 木; it means a list or placard.",
+    "word": {"w": "榜样", "en": "role model, example"},
+    "sentence": {"cn": "哥哥是我的榜样。", "en": "My older brother is my role model."}
+  },
+  "榨": {
+    "origin": "木 (wood) with 窄 for the sound; it means to press out juice.",
+    "word": {"w": "榨汁", "en": "to squeeze juice"},
+    "sentence": {"cn": "妈妈给我榨果汁。", "en": "Mom squeezes juice for me."}
+  },
+  "槌": {
+    "origin": "木 (wood) with 追 for the sound; it means a mallet or hammer.",
+    "word": {"w": "鼓槌", "en": "drumstick (mallet)"},
+    "sentence": {"cn": "他拿起鼓槌敲鼓。", "en": "He picks up the drumstick and beats the drum."}
+  },
+  "槐": {
+    "origin": "木 (tree) with 鬼 for the sound; it names the locust tree.",
+    "word": {"w": "槐树", "en": "locust tree"},
+    "sentence": {"cn": "槐树开白花。", "en": "The locust tree blooms with white flowers."}
+  },
+  "槽": {
+    "origin": "木 (wood) with 曹 for the sound; it means a trough or groove.",
+    "word": {"w": "水槽", "en": "sink, water trough"},
+    "sentence": {"cn": "碗放在水槽里。", "en": "The bowls are in the sink."}
+  },
+  "樊": {
+    "origin": "棥 (fence of wood) with 大 (big); it means a railing or enclosure; also a surname.",
+    "word": {"w": "樊篱", "en": "fence, barrier"},
+    "sentence": {"cn": "他姓樊。", "en": "His surname is Fan."}
+  },
+  "模": {
+    "origin": "木 part with 莫 for the sound; it means a model or pattern.",
+    "word": {"w": "模型", "en": "model"},
+    "sentence": {"cn": "他做了一个飞机模型。", "en": "He made an airplane model."}
+  },
+  "横": {
+    "origin": "木 part with 黄 for the sound; it means horizontal or across.",
+    "word": {"w": "横线", "en": "horizontal line"},
+    "sentence": {"cn": "请画一条横线。", "en": "Please draw a horizontal line."}
+  },
+  "橘": {
+    "origin": "木 (tree) with 矞 for the sound; it names the orange or tangerine.",
+    "word": {"w": "橘子", "en": "orange, tangerine"},
+    "sentence": {"cn": "橘子是橙色的。", "en": "Oranges are orange-colored."}
+  },
+  "橙": {
+    "origin": "木 (tree) with 登 for the sound; it means orange, the fruit and color.",
+    "word": {"w": "橙子", "en": "orange (fruit)"},
+    "sentence": {"cn": "我想吃一个橙子。", "en": "I want to eat an orange."}
+  },
+  "橱": {
+    "origin": "A wooden 木 cabinet 厨 (also the sound); it means a cupboard.",
+    "word": {"w": "橱柜", "en": "cupboard, cabinet"},
+    "sentence": {"cn": "碗放在橱柜里。", "en": "The bowls are kept in the cupboard."}
+  },
+  "橹": {
+    "origin": "木 (wood) with 鲁 for the sound; it means a long oar or scull.",
+    "word": {"w": "船橹", "en": "boat scull, oar"},
+    "sentence": {"cn": "渔夫摇着船橹。", "en": "The fisherman rows the scull."}
+  },
+  "檐": {
+    "origin": "木 (wood) with 詹 for the sound; it means the eaves of a roof.",
+    "word": {"w": "屋檐", "en": "eaves of a house"},
+    "sentence": {"cn": "鸟在屋檐下做窝。", "en": "The bird nests under the eaves."}
+  },
+  "欠": {
+    "origin": "A person with an open mouth yawning; it means to lack or to owe.",
+    "word": {"w": "欠债", "en": "to owe a debt"},
+    "sentence": {"cn": "我欠他一块钱。", "en": "I owe him one yuan."}
+  },
+  "欣": {
+    "origin": "斤 for the sound with 欠; it means happy or glad.",
+    "word": {"w": "欣赏", "en": "to appreciate, admire"},
+    "sentence": {"cn": "我们一起欣赏风景。", "en": "We admire the scenery together."}
+  },
+  "欧": {
+    "origin": "区 for the sound with 欠; it stands for Europe.",
+    "word": {"w": "欧洲", "en": "Europe"},
+    "sentence": {"cn": "他去过欧洲。", "en": "He has been to Europe."}
+  },
+  "欲": {
+    "origin": "谷 for the sound with 欠 (to lack); it means desire or to want.",
+    "word": {"w": "食欲", "en": "appetite"},
+    "sentence": {"cn": "今天我食欲很好。", "en": "I have a good appetite today."}
+  },
+  "歪": {
+    "origin": "不 (not) over 正 (straight): not straight, so it means crooked.",
+    "word": {"w": "歪斜", "en": "crooked, slanted"},
+    "sentence": {"cn": "这幅画挂歪了。", "en": "This picture is hung crooked."}
+  },
+  "歼": {
+    "origin": "歹 (death) with 千 (thousand, also the sound); to wipe out.",
+    "word": {"w": "歼灭", "en": "to annihilate, wipe out"},
+    "sentence": {"cn": "军队歼灭了敌人。", "en": "The army wiped out the enemy."}
+  },
+  "殊": {
+    "origin": "歹 part with 朱 for the sound; it means special or different.",
+    "word": {"w": "特殊", "en": "special"},
+    "sentence": {"cn": "今天是特殊的日子。", "en": "Today is a special day."}
+  },
+  "残": {
+    "origin": "歹 (death) with 戋 for the sound; it means broken or to harm.",
+    "word": {"w": "残疾", "en": "disability"},
+    "sentence": {"cn": "我们要帮助残疾人。", "en": "We should help people with disabilities."}
+  },
+  "段": {
+    "origin": "A hand using a chisel to cut stone into pieces; it means a section.",
+    "word": {"w": "一段", "en": "a section, a passage"},
+    "sentence": {"cn": "请读这一段。", "en": "Please read this passage."}
+  },
+  "殷": {
+    "origin": "Shows care and attention; it means abundant or earnest; also an old dynasty name.",
+    "word": {"w": "殷勤", "en": "attentive, eager to please"},
+    "sentence": {"cn": "主人很殷勤。", "en": "The host is very attentive."}
+  },
+  "毁": {
+    "origin": "Hands using a tool to smash a clay pot; it means to destroy.",
+    "word": {"w": "毁坏", "en": "to destroy, damage"},
+    "sentence": {"cn": "大风毁坏了房子。", "en": "The strong wind destroyed the house."}
+  },
+  "毋": {
+    "origin": "A form related to 母 (mother) with a stroke through it; it means do not.",
+    "word": {"w": "毋庸", "en": "need not, no need to"},
+    "sentence": {"cn": "这件事毋庸怀疑。", "en": "This matter needs no doubting."}
+  }
+}

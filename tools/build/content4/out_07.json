@@ -1,0 +1,252 @@
+{
+ "咽": {
+  "origin": "口 mouth plus 因; the throat is the part of the mouth that food goes through.",
+  "word": {"w": "咽喉", "en": "throat"},
+  "sentence": {"cn": "他的咽喉很疼。", "en": "His throat hurts a lot."}
+ },
+ "哄": {
+  "origin": "口 mouth plus 共; using sweet words from the mouth to coax someone.",
+  "word": {"w": "哄骗", "en": "to coax and trick"},
+  "sentence": {"cn": "妈妈哄宝宝睡觉。", "en": "Mom soothes the baby to sleep."}
+ },
+ "哇": {
+  "origin": "口 mouth plus 圭; a sound that comes out of the mouth, like a cry.",
+  "word": {"w": "哇哇", "en": "wah-wah (crying sound)"},
+  "sentence": {"cn": "小弟弟哇哇大哭。", "en": "The little brother cries wah-wah loudly."}
+ },
+ "哈": {
+  "origin": "口 mouth plus 合; the sound of laughing out loud, ha-ha.",
+  "word": {"w": "哈哈", "en": "ha-ha (laughter)"},
+  "sentence": {"cn": "大家哈哈大笑。", "en": "Everyone laughs out loud."}
+ },
+ "哎": {
+  "origin": "口 mouth plus 艾; a little word that pops out when you are surprised.",
+  "word": {"w": "哎呀", "en": "oh no! (exclamation)"},
+  "sentence": {"cn": "哎，我忘带书了。", "en": "Oh, I forgot to bring my book."}
+ },
+ "哏": {
+  "origin": "口 mouth plus 艮; a sound from the mouth, often something funny.",
+  "word": {"w": "逗哏", "en": "the funny role in a comic duo"},
+  "sentence": {"cn": "这个故事真哏。", "en": "This story is really funny."}
+ },
+ "哐": {
+  "origin": "口 mouth plus 匡; the clang sound something makes when it bangs.",
+  "word": {"w": "哐当", "en": "clang (banging sound)"},
+  "sentence": {"cn": "门哐的一声关上了。", "en": "The door shut with a clang."}
+ },
+ "哑": {
+  "origin": "口 mouth plus 亚; a mouth that cannot make a sound.",
+  "word": {"w": "哑巴", "en": "a mute person"},
+  "sentence": {"cn": "他的嗓子哑了。", "en": "His voice has gone hoarse."}
+ },
+ "哗": {
+  "origin": "口 mouth plus 华; the loud noise of many people or water.",
+  "word": {"w": "哗哗", "en": "rushing or splashing sound"},
+  "sentence": {"cn": "雨哗哗地下。", "en": "The rain falls with a splash."}
+ },
+ "哞": {
+  "origin": "口 mouth plus 牟; the sound a cow makes, moo.",
+  "word": {"w": "哞哞", "en": "moo (a cow's sound)"},
+  "sentence": {"cn": "牛哞哞地叫。", "en": "The cow goes moo."}
+ },
+ "哟": {
+  "origin": "口 mouth plus 约; a soft word added at the end of a sentence.",
+  "word": {"w": "哎哟", "en": "ouch! oh!"},
+  "sentence": {"cn": "这汤好香哟。", "en": "This soup smells so nice."}
+ },
+ "哦": {
+  "origin": "口 mouth plus 我; the little sound you make when you understand, oh.",
+  "word": {"w": "哦", "en": "oh (I see)"},
+  "sentence": {"cn": "哦，原来是你。", "en": "Oh, so it was you."}
+ },
+ "哧": {
+  "origin": "口 mouth plus 赤; the soft sound of a giggle or a rip.",
+  "word": {"w": "扑哧", "en": "the sound of a sudden giggle"},
+  "sentence": {"cn": "她扑哧一声笑了。", "en": "She burst into a giggle."}
+ },
+ "哨": {
+  "origin": "口 mouth plus 肖; the mouth blows to make a whistle sound.",
+  "word": {"w": "哨子", "en": "a whistle"},
+  "sentence": {"cn": "老师吹哨子。", "en": "The teacher blows the whistle."}
+ },
+ "哩": {
+  "origin": "口 mouth plus 里; a soft word added to the end of a sentence.",
+  "word": {"w": "哩", "en": "(a sentence-final particle)"},
+  "sentence": {"cn": "他还在睡觉哩。", "en": "He is still sleeping, you know."}
+ },
+ "哼": {
+  "origin": "口 mouth plus 亨; the gentle sound of humming a tune.",
+  "word": {"w": "哼歌", "en": "to hum a song"},
+  "sentence": {"cn": "她一边走一边哼歌。", "en": "She hums a song as she walks."}
+ },
+ "哽": {
+  "origin": "口 mouth plus 更; when crying makes it hard to speak from the mouth.",
+  "word": {"w": "哽咽", "en": "to choke with sobs"},
+  "sentence": {"cn": "他哽咽着说不出话。", "en": "He was so choked up he could not speak."}
+ },
+ "唉": {
+  "origin": "口 mouth plus 矣; the sigh you let out when you are sad or tired.",
+  "word": {"w": "唉声叹气", "en": "to sigh and moan"},
+  "sentence": {"cn": "唉，今天真累。", "en": "Sigh, today is so tiring."}
+ },
+ "唐": {
+  "origin": "Think of 广 a big building where children learn 口 to read; 唐 is the famous Tang dynasty.",
+  "word": {"w": "唐朝", "en": "the Tang dynasty"},
+  "sentence": {"cn": "我喜欢读唐诗。", "en": "I like to read Tang poems."}
+ },
+ "唤": {
+  "origin": "口 mouth plus 奂; using the mouth to call someone over.",
+  "word": {"w": "呼唤", "en": "to call out"},
+  "sentence": {"cn": "妈妈唤我回家。", "en": "Mom calls me to come home."}
+ },
+ "唬": {
+  "origin": "口 mouth plus 虎 tiger; using scary words to frighten someone.",
+  "word": {"w": "吓唬", "en": "to scare, to intimidate"},
+  "sentence": {"cn": "别吓唬小猫。", "en": "Don't scare the kitten."}
+ },
+ "售": {
+  "origin": "A vendor talks 口 all day like a bird 隹, to sell things.",
+  "word": {"w": "出售", "en": "to sell"},
+  "sentence": {"cn": "这里出售水果。", "en": "Fruit is sold here."}
+ },
+ "唷": {
+  "origin": "口 mouth plus 育; a soft sound added at the end of a sentence.",
+  "word": {"w": "哎唷", "en": "ouch! oh!"},
+  "sentence": {"cn": "哎唷，好重啊。", "en": "Oof, it is so heavy."}
+ },
+ "啃": {
+  "origin": "口 mouth plus 肯; using your teeth and mouth to gnaw something hard.",
+  "word": {"w": "啃骨头", "en": "to gnaw a bone"},
+  "sentence": {"cn": "小狗在啃骨头。", "en": "The puppy is gnawing a bone."}
+ },
+ "啄": {
+  "origin": "口 mouth plus 豖; a bird uses its beak to peck.",
+  "word": {"w": "啄食", "en": "to peck at food"},
+  "sentence": {"cn": "小鸡在啄米。", "en": "The chick pecks at the rice."}
+ },
+ "啐": {
+  "origin": "口 mouth plus 卒; to take a tiny sip or taste with the mouth.",
+  "word": {"w": "啐了一口", "en": "to take a small sip"},
+  "sentence": {"cn": "他啐了一口茶。", "en": "He took a small sip of tea."}
+ },
+ "啥": {
+  "origin": "口 mouth plus 舍; a casual mouth word meaning what.",
+  "word": {"w": "啥", "en": "what"},
+  "sentence": {"cn": "你刚才说啥。", "en": "What did you just say?"}
+ },
+ "啪": {
+  "origin": "口 mouth plus 拍; the sharp bang or clap sound.",
+  "word": {"w": "啪啪", "en": "clap-clap (slapping sound)"},
+  "sentence": {"cn": "他啪地拍了一下桌子。", "en": "He slapped the table with a bang."}
+ },
+ "啵": {
+  "origin": "口 mouth plus 波; the soft sound of ripples in the water.",
+  "word": {"w": "啵", "en": "(a soft sentence-final sound)"},
+  "sentence": {"cn": "快点来啵。", "en": "Do come quickly."}
+ },
+ "啸": {
+  "origin": "口 mouth plus 肃; a long, loud howling sound.",
+  "word": {"w": "呼啸", "en": "to whistle, to howl"},
+  "sentence": {"cn": "北风呼啸。", "en": "The north wind howls."}
+ },
+ "善": {
+  "origin": "To give someone food 羊 and kind words 口 is to be good and kind.",
+  "word": {"w": "善良", "en": "kind-hearted"},
+  "sentence": {"cn": "她是个善良的人。", "en": "She is a kind-hearted person."}
+ },
+ "喉": {
+  "origin": "口 mouth plus 侯; the throat is just inside the mouth.",
+  "word": {"w": "喉咙", "en": "throat"},
+  "sentence": {"cn": "我的喉咙好痛。", "en": "My throat hurts a lot."}
+ },
+ "喔": {
+  "origin": "口 mouth plus 屋; the sound a rooster makes when it crows.",
+  "word": {"w": "喔喔", "en": "cock-a-doodle-doo"},
+  "sentence": {"cn": "公鸡喔喔叫。", "en": "The rooster crows."}
+ },
+ "喘": {
+  "origin": "口 mouth plus 耑; to breathe hard and fast through the mouth.",
+  "word": {"w": "喘气", "en": "to gasp for breath"},
+  "sentence": {"cn": "他跑得直喘气。", "en": "He ran until he was panting."}
+ },
+ "喵": {
+  "origin": "口 mouth plus 苗; the sound a cat makes, meow.",
+  "word": {"w": "喵喵", "en": "meow (a cat's sound)"},
+  "sentence": {"cn": "小猫喵喵叫。", "en": "The kitten goes meow."}
+ },
+ "喷": {
+  "origin": "口 mouth plus 贲; water or air bursting out in a spray.",
+  "word": {"w": "喷水", "en": "to spray water"},
+  "sentence": {"cn": "大象用鼻子喷水。", "en": "The elephant sprays water with its trunk."}
+ },
+ "嗅": {
+  "origin": "口 plus 臭 smell; to use the nose and mouth to sniff a smell.",
+  "word": {"w": "嗅觉", "en": "sense of smell"},
+  "sentence": {"cn": "小狗的嗅觉很灵。", "en": "A dog's sense of smell is very sharp."}
+ },
+ "嗑": {
+  "origin": "口 mouth plus 盍; to crack open seeds with your teeth.",
+  "word": {"w": "嗑瓜子", "en": "to crack melon seeds"},
+  "sentence": {"cn": "奶奶在嗑瓜子。", "en": "Grandma is cracking melon seeds."}
+ },
+ "嗒": {
+  "origin": "口 mouth plus 荅; the soft tick-tock sound of something dripping.",
+  "word": {"w": "嗒嗒", "en": "tick-tock, clack-clack"},
+  "sentence": {"cn": "马蹄嗒嗒响。", "en": "The horse's hooves go clack-clack."}
+ },
+ "嗓": {
+  "origin": "口 mouth plus 桑; the throat, where your voice comes from.",
+  "word": {"w": "嗓子", "en": "throat, voice"},
+  "sentence": {"cn": "他的嗓子很好。", "en": "He has a fine voice."}
+ },
+ "嗔": {
+  "origin": "口 mouth plus 真; to use the mouth to scold in anger.",
+  "word": {"w": "嗔怪", "en": "to blame gently"},
+  "sentence": {"cn": "妈妈嗔怪我贪玩。", "en": "Mom gently scolded me for playing too much."}
+ },
+ "嗖": {
+  "origin": "口 mouth plus 叟; the whizzing sound of something flying fast.",
+  "word": {"w": "嗖嗖", "en": "whizzing sound"},
+  "sentence": {"cn": "箭嗖地飞出去。", "en": "The arrow whizzes out."}
+ },
+ "嗡": {
+  "origin": "口 mouth plus 翁; the buzzing or droning sound of bees or engines.",
+  "word": {"w": "嗡嗡", "en": "buzz (humming sound)"},
+  "sentence": {"cn": "蜜蜂嗡嗡飞。", "en": "The bees fly buzzing."}
+ },
+ "嗥": {
+  "origin": "口 mouth plus 皋; the long howl of an animal.",
+  "word": {"w": "嗥叫", "en": "to howl"},
+  "sentence": {"cn": "狼在山里嗥叫。", "en": "The wolf howls in the mountains."}
+ },
+ "嗨": {
+  "origin": "口 mouth plus 海; a cheerful word you say to greet someone, hi.",
+  "word": {"w": "嗨", "en": "hi (a greeting)"},
+  "sentence": {"cn": "嗨，大家好。", "en": "Hi, hello everyone."}
+ },
+ "嗬": {
+  "origin": "口 mouth plus 荷; a little sound you make when surprised.",
+  "word": {"w": "嗬", "en": "hey! oh! (exclamation)"},
+  "sentence": {"cn": "嗬，这花真漂亮。", "en": "Wow, this flower is so pretty."}
+ },
+ "嗯": {
+  "origin": "口 mouth plus 恩; the small sound you make to say yes or agree.",
+  "word": {"w": "嗯", "en": "mm, yes (agreement)"},
+  "sentence": {"cn": "嗯，我知道了。", "en": "Mm, I understand."}
+ },
+ "嗲": {
+  "origin": "口 mouth plus 爹; a sweet, babyish way of talking.",
+  "word": {"w": "嗲声嗲气", "en": "in a coy, sweet voice"},
+  "sentence": {"cn": "她说话嗲嗲的。", "en": "She talks in a sweet, coy voice."}
+ },
+ "嗳": {
+  "origin": "口 mouth plus 爱; a sigh you make when you feel sorry.",
+  "word": {"w": "嗳", "en": "alas, oh dear"},
+  "sentence": {"cn": "嗳，别难过了。", "en": "Oh, don't be sad."}
+ },
+ "嗵": {
+  "origin": "口 mouth plus 通; the thumping sound of a heartbeat or steps.",
+  "word": {"w": "扑嗵", "en": "thump (a falling sound)"},
+  "sentence": {"cn": "心嗵嗵地跳。", "en": "The heart goes thump-thump."}
+ }
+}

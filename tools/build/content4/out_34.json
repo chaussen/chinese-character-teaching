@@ -1,0 +1,252 @@
+{
+ "蟒": {
+  "origin": "蟒 has the insect 虫 to show it is a huge snake, a python.",
+  "word": {"w": "蟒蛇", "en": "python; boa"},
+  "sentence": {"cn": "蟒蛇很长。", "en": "The python is very long."}
+ },
+ "蟹": {
+  "origin": "蟹 has the insect 虫 below and means crab.",
+  "word": {"w": "螃蟹", "en": "crab"},
+  "sentence": {"cn": "我喜欢吃蟹。", "en": "I like to eat crab."}
+ },
+ "蠹": {
+  "origin": "蠹 shows insects 虫 eating wood, a moth or bookworm.",
+  "word": {"w": "蠹虫", "en": "bookworm; wood-borer"},
+  "sentence": {"cn": "书里有蠹虫。", "en": "There is a bookworm in the book."}
+ },
+ "衔": {
+  "origin": "衔 means to hold in the mouth, and also a rank or title.",
+  "word": {"w": "头衔", "en": "title; rank"},
+  "sentence": {"cn": "他有很高的头衔。", "en": "He has a very high title."}
+ },
+ "表": {
+  "origin": "表 once meant outer fur clothing; now it means surface or to express, and also a watch.",
+  "word": {"w": "手表", "en": "wristwatch"},
+  "sentence": {"cn": "我有一块手表。", "en": "I have a wristwatch."}
+ },
+ "衫": {
+  "origin": "衫 has the clothing radical 衤 and means a shirt or thin robe.",
+  "word": {"w": "衬衫", "en": "shirt"},
+  "sentence": {"cn": "他穿着白衫。", "en": "He is wearing a white shirt."}
+ },
+ "衬": {
+  "origin": "衬 has the clothing radical 衤 and means to line or an undershirt.",
+  "word": {"w": "衬衫", "en": "shirt"},
+  "sentence": {"cn": "这件衬衫很新。", "en": "This shirt is very new."}
+ },
+ "袁": {
+  "origin": "袁 pictures a person wearing a long robe; today it is mostly a family name.",
+  "word": {"w": "袁先生", "en": "Mr. Yuan"},
+  "sentence": {"cn": "袁老师来了。", "en": "Teacher Yuan has come."}
+ },
+ "袄": {
+  "origin": "袄 has the clothing radical 衤 and means a padded coat or jacket.",
+  "word": {"w": "棉袄", "en": "padded coat"},
+  "sentence": {"cn": "冬天要穿袄。", "en": "In winter you wear a padded coat."}
+ },
+ "袋": {
+  "origin": "袋 has clothing 衣 at the bottom and means a bag or sack.",
+  "word": {"w": "口袋", "en": "pocket; bag"},
+  "sentence": {"cn": "我有一个袋子。", "en": "I have a bag."}
+ },
+ "袖": {
+  "origin": "袖 has the clothing radical 衤 and means a sleeve.",
+  "word": {"w": "袖子", "en": "sleeve"},
+  "sentence": {"cn": "他的袖子太长。", "en": "His sleeves are too long."}
+ },
+ "袭": {
+  "origin": "袭 means to attack or to raid by surprise.",
+  "word": {"w": "袭击", "en": "to attack; raid"},
+  "sentence": {"cn": "敌人来袭。", "en": "The enemy is attacking."}
+ },
+ "袱": {
+  "origin": "袱 has the cloth radical 衤 and means a cloth wrapper for carrying things.",
+  "word": {"w": "包袱", "en": "cloth bundle"},
+  "sentence": {"cn": "她背着包袱。", "en": "She is carrying a cloth bundle."}
+ },
+ "裁": {
+  "origin": "裁 means to cut cloth 衣 with a blade 戈, so to trim or tailor.",
+  "word": {"w": "裁剪", "en": "to cut out (cloth)"},
+  "sentence": {"cn": "妈妈在裁布。", "en": "Mom is cutting cloth."}
+ },
+ "裂": {
+  "origin": "裂 has clothing 衣 and means to split or tear apart.",
+  "word": {"w": "破裂", "en": "to crack; split"},
+  "sentence": {"cn": "杯子裂了。", "en": "The cup cracked."}
+ },
+ "裆": {
+  "origin": "裆 has the cloth radical 衤 and means the crotch of pants.",
+  "word": {"w": "裤裆", "en": "crotch of pants"},
+  "sentence": {"cn": "他的裤裆破了。", "en": "The crotch of his pants is torn."}
+ },
+ "裤": {
+  "origin": "裤 has the cloth radical 衤 and means pants or trousers.",
+  "word": {"w": "裤子", "en": "pants"},
+  "sentence": {"cn": "我买了一条裤子。", "en": "I bought a pair of pants."}
+ },
+ "裱": {
+  "origin": "裱 means to mount or hang a picture, using cloth 衤.",
+  "word": {"w": "裱画", "en": "to mount a painting"},
+  "sentence": {"cn": "他在裱画。", "en": "He is mounting a painting."}
+ },
+ "裸": {
+  "origin": "裸 has the cloth radical 衤 but means bare, with no clothes.",
+  "word": {"w": "裸露", "en": "to be bare; exposed"},
+  "sentence": {"cn": "他光着脚裸露在外。", "en": "He stands outside with bare feet."}
+ },
+ "裹": {
+  "origin": "裹 has clothing 衣 around 果 and means to wrap up.",
+  "word": {"w": "包裹", "en": "parcel; package"},
+  "sentence": {"cn": "我收到一个包裹。", "en": "I received a parcel."}
+ },
+ "褐": {
+  "origin": "褐 has the cloth radical 衤 and means coarse cloth, also the color brown.",
+  "word": {"w": "褐色", "en": "brown"},
+  "sentence": {"cn": "她的头发是褐色。", "en": "Her hair is brown."}
+ },
+ "褪": {
+  "origin": "褪 means to take off clothing 衤 or for color to fade.",
+  "word": {"w": "褪色", "en": "to fade"},
+  "sentence": {"cn": "这件衣服褪色了。", "en": "This clothing has faded."}
+ },
+ "襟": {
+  "origin": "襟 has the cloth radical 衤 and means the front of a coat, the lapel.",
+  "word": {"w": "衣襟", "en": "front of a garment"},
+  "sentence": {"cn": "他的衣襟湿了。", "en": "The front of his coat got wet."}
+ },
+ "覃": {
+  "origin": "覃 means to reach or spread far; today it is also a family name.",
+  "word": {"w": "覃先生", "en": "Mr. Qin"},
+  "sentence": {"cn": "覃老师很忙。", "en": "Teacher Qin is very busy."}
+ },
+ "覆": {
+  "origin": "覆 means to cover over or to turn upside down.",
+  "word": {"w": "覆盖", "en": "to cover"},
+  "sentence": {"cn": "白雪覆盖大地。", "en": "White snow covers the ground."}
+ },
+ "观": {
+  "origin": "观 means to look at or watch, using the eye 见.",
+  "word": {"w": "观看", "en": "to watch"},
+  "sentence": {"cn": "我们去观看比赛。", "en": "We are going to watch the game."}
+ },
+ "规": {
+  "origin": "规 means rules and also a compass for drawing circles.",
+  "word": {"w": "规则", "en": "rules"},
+  "sentence": {"cn": "我们要守规则。", "en": "We must follow the rules."}
+ },
+ "觅": {
+  "origin": "觅 shows a hand 爫 and an eye 见 searching, so to seek.",
+  "word": {"w": "寻觅", "en": "to search for"},
+  "sentence": {"cn": "小鸟在觅食。", "en": "The little bird is looking for food."}
+ },
+ "视": {
+  "origin": "视 has the eye 见 and means to look or to view.",
+  "word": {"w": "电视", "en": "television"},
+  "sentence": {"cn": "我在看电视。", "en": "I am watching television."}
+ },
+ "触": {
+  "origin": "触 has horn 角 and means to touch or bump into.",
+  "word": {"w": "接触", "en": "to touch; contact"},
+  "sentence": {"cn": "请不要触摸。", "en": "Please do not touch."}
+ },
+ "詹": {
+  "origin": "詹 has speech 言 and once meant talkative; today it is a family name.",
+  "word": {"w": "詹先生", "en": "Mr. Zhan"},
+  "sentence": {"cn": "詹老师笑了。", "en": "Teacher Zhan smiled."}
+ },
+ "誊": {
+  "origin": "誊 has speech 言 and means to copy out neatly.",
+  "word": {"w": "誊写", "en": "to copy out"},
+  "sentence": {"cn": "请把作文誊写一遍。", "en": "Please copy out the essay once."}
+ },
+ "誓": {
+  "origin": "誓 has words 言 and means a vow that must not be broken.",
+  "word": {"w": "发誓", "en": "to swear; vow"},
+  "sentence": {"cn": "他发誓要努力。", "en": "He vowed to work hard."}
+ },
+ "警": {
+  "origin": "警 has speech 言 and means to warn or to guard.",
+  "word": {"w": "警察", "en": "police officer"},
+  "sentence": {"cn": "警察来了。", "en": "The police have come."}
+ },
+ "订": {
+  "origin": "订 has the speech radical 讠 and means to order or to fix an agreement.",
+  "word": {"w": "订书", "en": "to order a book"},
+  "sentence": {"cn": "我要订一本书。", "en": "I want to order a book."}
+ },
+ "认": {
+  "origin": "认 has the speech radical 讠 and means to recognize or to admit.",
+  "word": {"w": "认识", "en": "to know; recognize"},
+  "sentence": {"cn": "我认识他。", "en": "I know him."}
+ },
+ "讨": {
+  "origin": "讨 has the speech radical 讠 and means to discuss or to ask for.",
+  "word": {"w": "讨论", "en": "to discuss"},
+  "sentence": {"cn": "我们一起讨论。", "en": "Let's discuss together."}
+ },
+ "训": {
+  "origin": "训 has the speech radical 讠 and means to teach or to instruct.",
+  "word": {"w": "训练", "en": "to train"},
+  "sentence": {"cn": "老师在训练我们。", "en": "The teacher is training us."}
+ },
+ "议": {
+  "origin": "议 has the speech radical 讠 and means to discuss or to talk over.",
+  "word": {"w": "会议", "en": "meeting"},
+  "sentence": {"cn": "今天有会议。", "en": "There is a meeting today."}
+ },
+ "讯": {
+  "origin": "讯 has the speech radical 讠 and means news or information.",
+  "word": {"w": "新闻讯息", "en": "news message"},
+  "sentence": {"cn": "我收到一条讯息。", "en": "I received a message."}
+ },
+ "讳": {
+  "origin": "讳 has the speech radical 讠 and means a word one avoids saying, a taboo.",
+  "word": {"w": "忌讳", "en": "taboo"},
+  "sentence": {"cn": "这是他的忌讳。", "en": "This is his taboo."}
+ },
+ "许": {
+  "origin": "许 has the speech radical 讠 and means to allow or to permit.",
+  "word": {"w": "允许", "en": "to allow"},
+  "sentence": {"cn": "妈妈许我出去玩。", "en": "Mom allows me to go out and play."}
+ },
+ "讹": {
+  "origin": "讹 has the speech radical 讠 and means to cheat or an error.",
+  "word": {"w": "讹诈", "en": "to extort; blackmail"},
+  "sentence": {"cn": "坏人想讹钱。", "en": "The bad guy wants to extort money."}
+ },
+ "论": {
+  "origin": "论 has the speech radical 讠 and means to discuss or to reason.",
+  "word": {"w": "讨论", "en": "to discuss"},
+  "sentence": {"cn": "大家在论这件事。", "en": "Everyone is discussing this matter."}
+ },
+ "访": {
+  "origin": "访 has the speech radical 讠 and means to visit or to call on.",
+  "word": {"w": "访问", "en": "to visit"},
+  "sentence": {"cn": "我们去访问朋友。", "en": "We are going to visit a friend."}
+ },
+ "识": {
+  "origin": "识 has the speech radical 讠 and means to know or knowledge.",
+  "word": {"w": "知识", "en": "knowledge"},
+  "sentence": {"cn": "读书能学到知识。", "en": "Reading can teach you knowledge."}
+ },
+ "诈": {
+  "origin": "诈 has the speech radical 讠 and means to cheat or to defraud.",
+  "word": {"w": "诈骗", "en": "to swindle"},
+  "sentence": {"cn": "他被人诈骗了。", "en": "He was swindled."}
+ },
+ "诉": {
+  "origin": "诉 has the speech radical 讠 and means to tell or to accuse.",
+  "word": {"w": "告诉", "en": "to tell"},
+  "sentence": {"cn": "请告诉我答案。", "en": "Please tell me the answer."}
+ },
+ "诌": {
+  "origin": "诌 has the speech radical 讠 and means to make up or babble words.",
+  "word": {"w": "胡诌", "en": "to talk nonsense"},
+  "sentence": {"cn": "他在胡诌。", "en": "He is talking nonsense."}
+ },
+ "词": {
+  "origin": "词 has the speech radical 讠 and means a word or term.",
+  "word": {"w": "生词", "en": "new word"},
+  "sentence": {"cn": "这个词很难。", "en": "This word is very hard."}
+ }
+}

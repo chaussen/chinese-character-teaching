@@ -1,0 +1,252 @@
+{
+  "毒": {
+    "origin": "A plant part over 母; it pictures a harmful plant and means poison.",
+    "word": {"w": "毒药", "en": "poison"},
+    "sentence": {"cn": "蛇有毒。", "en": "Snakes are poisonous."}
+  },
+  "毙": {
+    "origin": "比 for the sound over 死 (death); it means to kill or die.",
+    "word": {"w": "击毙", "en": "to shoot dead"},
+    "sentence": {"cn": "猎人击毙了野猪。", "en": "The hunter shot the wild boar dead."}
+  },
+  "毛": {
+    "origin": "A picture of hair or fur; it means hair, fur, or feathers.",
+    "word": {"w": "毛巾", "en": "towel"},
+    "sentence": {"cn": "我用毛巾擦脸。", "en": "I wipe my face with a towel."}
+  },
+  "毫": {
+    "origin": "毛 (hair) with parts for the sound; it means a fine hair, tiny bit.",
+    "word": {"w": "毫米", "en": "millimeter"},
+    "sentence": {"cn": "这条线长十毫米。", "en": "This line is ten millimeters long."}
+  },
+  "氏": {
+    "origin": "A picture of a person bowing; it means a clan or family name.",
+    "word": {"w": "姓氏", "en": "surname, family name"},
+    "sentence": {"cn": "请写下你的姓氏。", "en": "Please write down your surname."}
+  },
+  "氖": {
+    "origin": "气 (gas) with 乃 for the sound; it names the gas neon.",
+    "word": {"w": "氖灯", "en": "neon lamp"},
+    "sentence": {"cn": "商店的氖灯很亮。", "en": "The shop's neon lights are bright."}
+  },
+  "氟": {
+    "origin": "气 (gas) with 弗 for the sound; it names the element fluorine.",
+    "word": {"w": "氟化物", "en": "fluoride"},
+    "sentence": {"cn": "牙膏里有氟。", "en": "There is fluorine in toothpaste."}
+  },
+  "氡": {
+    "origin": "气 (gas) with 冬 for the sound; it names the gas radon.",
+    "word": {"w": "氡气", "en": "radon gas"},
+    "sentence": {"cn": "地下有一些氡气。", "en": "There is some radon gas underground."}
+  },
+  "氢": {
+    "origin": "气 (gas) with parts for the sound; it names hydrogen, the lightest gas.",
+    "word": {"w": "氢气", "en": "hydrogen gas"},
+    "sentence": {"cn": "气球里装着氢气。", "en": "The balloon is filled with hydrogen gas."}
+  },
+  "氦": {
+    "origin": "气 (gas) with 亥 for the sound; it names the gas helium.",
+    "word": {"w": "氦气", "en": "helium gas"},
+    "sentence": {"cn": "氦气球飞上了天。", "en": "The helium balloon flew up into the sky."}
+  },
+  "氧": {
+    "origin": "气 (gas) with 羊 for the sound; it names oxygen, the gas we breathe.",
+    "word": {"w": "氧气", "en": "oxygen"},
+    "sentence": {"cn": "人离不开氧气。", "en": "People cannot live without oxygen."}
+  },
+  "氨": {
+    "origin": "气 (gas) with 安 for the sound; it names ammonia.",
+    "word": {"w": "氨水", "en": "ammonia water"},
+    "sentence": {"cn": "氨水的气味很冲。", "en": "Ammonia has a sharp smell."}
+  },
+  "氩": {
+    "origin": "气 (gas) with 亚 for the sound; it names the gas argon.",
+    "word": {"w": "氩气", "en": "argon gas"},
+    "sentence": {"cn": "灯泡里充了氩气。", "en": "The light bulb is filled with argon gas."}
+  },
+  "氮": {
+    "origin": "气 (gas) with 炎 for the sound; it names nitrogen.",
+    "word": {"w": "氮气", "en": "nitrogen gas"},
+    "sentence": {"cn": "空气里有很多氮气。", "en": "There is a lot of nitrogen in the air."}
+  },
+  "氯": {
+    "origin": "气 (gas) with 录 for the sound; it names the gas chlorine.",
+    "word": {"w": "氯气", "en": "chlorine gas"},
+    "sentence": {"cn": "氯气有毒。", "en": "Chlorine gas is poisonous."}
+  },
+  "氽": {
+    "origin": "人 (person) over 水 (water): floating on water; it means to float or boil quickly.",
+    "word": {"w": "氽丸子", "en": "to quick-boil meatballs"},
+    "sentence": {"cn": "妈妈氽了几个丸子。", "en": "Mom quick-boiled a few meatballs."}
+  },
+  "汁": {
+    "origin": "氵 (water) with 十 for the sound; it means juice or liquid.",
+    "word": {"w": "果汁", "en": "fruit juice"},
+    "sentence": {"cn": "我爱喝果汁。", "en": "I love to drink fruit juice."}
+  },
+  "汇": {
+    "origin": "Water 氵 gathering into a container 匚; it means to gather or remit.",
+    "word": {"w": "汇合", "en": "to converge, join together"},
+    "sentence": {"cn": "两条河在这里汇合。", "en": "Two rivers join together here."}
+  },
+  "汗": {
+    "origin": "氵 (water) with 干 for the sound; it means sweat.",
+    "word": {"w": "出汗", "en": "to sweat"},
+    "sentence": {"cn": "天热我出汗了。", "en": "It's hot and I'm sweating."}
+  },
+  "汛": {
+    "origin": "氵 (water) with 卂 for the sound; it means a flood or high water.",
+    "word": {"w": "汛期", "en": "flood season"},
+    "sentence": {"cn": "汛期河水很大。", "en": "During flood season the river is high."}
+  },
+  "汝": {
+    "origin": "氵 (water) with 女 for the sound; an old word meaning you.",
+    "word": {"w": "汝", "en": "you (classical)"},
+    "sentence": {"cn": "古人说汝是你。", "en": "The ancients used ru to mean you."}
+  },
+  "汞": {
+    "origin": "工 over 水 (water); it names mercury, a liquid metal.",
+    "word": {"w": "汞柱", "en": "mercury column"},
+    "sentence": {"cn": "温度计里有汞。", "en": "There is mercury in the thermometer."}
+  },
+  "池": {
+    "origin": "氵 (water) with 也 for the sound; it means a pond or pool.",
+    "word": {"w": "池塘", "en": "pond"},
+    "sentence": {"cn": "池塘里有小鱼。", "en": "There are little fish in the pond."}
+  },
+  "汪": {
+    "origin": "氵 (water) with 王 for the sound; it means a vast expanse of water; also a dog's bark.",
+    "word": {"w": "汪汪", "en": "woof woof (dog sound)"},
+    "sentence": {"cn": "小狗汪汪叫。", "en": "The puppy goes woof woof."}
+  },
+  "汲": {
+    "origin": "氵 (water) with 及 for the sound; it means to draw water.",
+    "word": {"w": "汲水", "en": "to draw water"},
+    "sentence": {"cn": "他去井里汲水。", "en": "He goes to the well to draw water."}
+  },
+  "沁": {
+    "origin": "氵 (water) with 心 for the sound; it means to soak in or seep.",
+    "word": {"w": "沁人", "en": "refreshing, soothing"},
+    "sentence": {"cn": "花香沁人心脾。", "en": "The flower's scent is refreshing."}
+  },
+  "沈": {
+    "origin": "氵 (water) with 冘 for the sound; a surname, and an old form of 沉 (to sink).",
+    "word": {"w": "沈阳", "en": "Shenyang (city)"},
+    "sentence": {"cn": "他住在沈阳。", "en": "He lives in Shenyang."}
+  },
+  "沏": {
+    "origin": "氵 (water) with 切 for the sound; it means to brew with hot water.",
+    "word": {"w": "沏茶", "en": "to brew tea"},
+    "sentence": {"cn": "奶奶给客人沏茶。", "en": "Grandma brews tea for the guests."}
+  },
+  "沓": {
+    "origin": "水 (water) over 日; it means repeated or piled up.",
+    "word": {"w": "一沓", "en": "a stack (of paper)"},
+    "sentence": {"cn": "桌上有一沓纸。", "en": "There is a stack of paper on the table."}
+  },
+  "沟": {
+    "origin": "氵 (water) with 勾 for the sound; it means a ditch or channel.",
+    "word": {"w": "水沟", "en": "ditch, drain"},
+    "sentence": {"cn": "雨水流进水沟。", "en": "The rainwater flows into the ditch."}
+  },
+  "沤": {
+    "origin": "氵 (water) with 区 for the sound; it means to soak for a long time.",
+    "word": {"w": "沤肥", "en": "to make compost by soaking"},
+    "sentence": {"cn": "农民在沤肥。", "en": "The farmer is making compost."}
+  },
+  "沪": {
+    "origin": "氵 (water) with 户 for the sound; it is the short name for Shanghai.",
+    "word": {"w": "沪市", "en": "Shanghai (stock) market"},
+    "sentence": {"cn": "他坐车去沪。", "en": "He takes the train to Shanghai."}
+  },
+  "沫": {
+    "origin": "氵 (water) with 末 for the sound; it means foam or froth.",
+    "word": {"w": "泡沫", "en": "foam, bubbles"},
+    "sentence": {"cn": "肥皂有很多泡沫。", "en": "The soap makes lots of bubbles."}
+  },
+  "沸": {
+    "origin": "氵 (water) with 弗 for the sound; it means to boil.",
+    "word": {"w": "沸腾", "en": "to boil, seethe"},
+    "sentence": {"cn": "水开始沸腾了。", "en": "The water is starting to boil."}
+  },
+  "沽": {
+    "origin": "氵 (water) with 古 for the sound; it means to buy or sell.",
+    "word": {"w": "沽名", "en": "to fish for fame"},
+    "sentence": {"cn": "他不爱沽名。", "en": "He does not seek fame."}
+  },
+  "沾": {
+    "origin": "氵 (water) with 占 for the sound; it means to get wet or to stick to.",
+    "word": {"w": "沾水", "en": "to get wet, dip in water"},
+    "sentence": {"cn": "我的鞋沾了泥。", "en": "My shoes got mud on them."}
+  },
+  "泄": {
+    "origin": "氵 (water) with 世 for the sound; it means to leak or let out.",
+    "word": {"w": "泄气", "en": "to lose heart, deflate"},
+    "sentence": {"cn": "别泄气，再试一次。", "en": "Don't lose heart, try again."}
+  },
+  "泅": {
+    "origin": "氵 (water) with 囚 for the sound; it means to swim.",
+    "word": {"w": "泅水", "en": "to swim"},
+    "sentence": {"cn": "他泅水过河。", "en": "He swims across the river."}
+  },
+  "泉": {
+    "origin": "白 over 水 (water): water flowing from the ground; it means a spring.",
+    "word": {"w": "泉水", "en": "spring water"},
+    "sentence": {"cn": "山里的泉水很甜。", "en": "The spring water in the mountains is sweet."}
+  },
+  "泊": {
+    "origin": "氵 (water) with 白 for the sound; it means to moor a boat; also calm.",
+    "word": {"w": "停泊", "en": "to moor, anchor"},
+    "sentence": {"cn": "小船停泊在岸边。", "en": "The small boat is moored by the shore."}
+  },
+  "泓": {
+    "origin": "Wide 弘 water 氵 (弘 also gives the sound); a deep clear pool.",
+    "word": {"w": "一泓", "en": "a pool of (water)"},
+    "sentence": {"cn": "山下有一泓清水。", "en": "There is a pool of clear water below the hill."}
+  },
+  "泛": {
+    "origin": "氵 (water) with 乏 for the sound; it means to float or be widespread.",
+    "word": {"w": "广泛", "en": "extensive, widespread"},
+    "sentence": {"cn": "他的爱好很广泛。", "en": "His hobbies are very wide-ranging."}
+  },
+  "泡": {
+    "origin": "氵 (water) with 包 for the sound; it means a bubble or to soak.",
+    "word": {"w": "泡泡", "en": "bubble"},
+    "sentence": {"cn": "孩子们吹泡泡。", "en": "The children blow bubbles."}
+  },
+  "波": {
+    "origin": "氵 (water) with 皮 for the sound; it means a wave.",
+    "word": {"w": "波浪", "en": "wave (water)"},
+    "sentence": {"cn": "海上有大波浪。", "en": "There are big waves on the sea."}
+  },
+  "注": {
+    "origin": "氵 (water) with 主 for the sound; it means to pour in or to focus.",
+    "word": {"w": "注意", "en": "to pay attention"},
+    "sentence": {"cn": "过马路要注意车。", "en": "Watch out for cars when crossing the road."}
+  },
+  "泪": {
+    "origin": "Water 氵 from the eye 目; it means tears.",
+    "word": {"w": "眼泪", "en": "tears"},
+    "sentence": {"cn": "她流下了眼泪。", "en": "She shed tears."}
+  },
+  "泰": {
+    "origin": "Water held back safely; it means peaceful, grand, or great.",
+    "word": {"w": "泰山", "en": "Mount Tai"},
+    "sentence": {"cn": "泰山非常高。", "en": "Mount Tai is very tall."}
+  },
+  "泵": {
+    "origin": "石 (stone) over 水 (water): a machine to push water; it means a pump.",
+    "word": {"w": "水泵", "en": "water pump"},
+    "sentence": {"cn": "水泵把水抽上来。", "en": "The pump draws the water up."}
+  },
+  "泻": {
+    "origin": "氵 (water) with 写 for the sound; it means to flow down fast or leak.",
+    "word": {"w": "腹泻", "en": "diarrhea"},
+    "sentence": {"cn": "他吃坏了肚子，腹泻了。", "en": "He ate something bad and had diarrhea."}
+  },
+  "泼": {
+    "origin": "氵 (water) with 发 (to send forth); it means to splash or pour.",
+    "word": {"w": "泼水", "en": "to splash water"},
+    "sentence": {"cn": "弟弟往地上泼水。", "en": "Little brother splashes water on the ground."}
+  }
+}

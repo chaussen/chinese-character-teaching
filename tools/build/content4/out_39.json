@@ -1,0 +1,252 @@
+{
+  "铆": {
+    "origin": "A metal 钅 pin that fastens parts — it means rivet.",
+    "word": {"w": "铆钉", "en": "rivet"},
+    "sentence": {"cn": "铁板用铆钉。", "en": "The iron plate uses rivets."}
+  },
+  "铐": {
+    "origin": "Metal 钅 rings for the wrists — it means handcuffs.",
+    "word": {"w": "手铐", "en": "handcuffs"},
+    "sentence": {"cn": "警察拿出手铐。", "en": "The police took out handcuffs."}
+  },
+  "铙": {
+    "origin": "A round metal 钅 instrument — it means cymbals.",
+    "word": {"w": "铙钹", "en": "cymbals"},
+    "sentence": {"cn": "他敲打铙钹。", "en": "He plays the cymbals."}
+  },
+  "铛": {
+    "origin": "A flat metal 钅 pan — it means a frying pan.",
+    "word": {"w": "饼铛", "en": "pancake griddle"},
+    "sentence": {"cn": "饼铛上烙饼。", "en": "Pancakes are cooked on the griddle."}
+  },
+  "铜": {
+    "origin": "A reddish metal 钅 — it means copper.",
+    "word": {"w": "铜钱", "en": "copper coin"},
+    "sentence": {"cn": "这是铜做的。", "en": "This is made of copper."}
+  },
+  "铝": {
+    "origin": "A light, shiny metal 钅 — it means aluminum.",
+    "word": {"w": "铝锅", "en": "aluminum pot"},
+    "sentence": {"cn": "铝锅很轻。", "en": "The aluminum pot is light."}
+  },
+  "铡": {
+    "origin": "A metal 钅 blade for cutting hay — it means a fodder knife.",
+    "word": {"w": "铡刀", "en": "hay cutter, guillotine knife"},
+    "sentence": {"cn": "他用铡刀切草。", "en": "He cuts grass with the fodder knife."}
+  },
+  "铭": {
+    "origin": "To carve 钅 a name 名 deep — it means to engrave or inscribe.",
+    "word": {"w": "铭记", "en": "to engrave in memory"},
+    "sentence": {"cn": "我铭记这一天。", "en": "I will always remember this day."}
+  },
+  "铰": {
+    "origin": "A metal 钅 joint 交 that turns — it means hinge.",
+    "word": {"w": "铰链", "en": "hinge"},
+    "sentence": {"cn": "门上有铰链。", "en": "There is a hinge on the door."}
+  },
+  "铱": {
+    "origin": "A metal 钅 element — it means iridium.",
+    "word": {"w": "铱", "en": "iridium"},
+    "sentence": {"cn": "铱非常硬。", "en": "Iridium is very hard."}
+  },
+  "铲": {
+    "origin": "A flat metal 钅 tool for digging — it means shovel or spade.",
+    "word": {"w": "铲子", "en": "shovel, spatula"},
+    "sentence": {"cn": "他用铲子。", "en": "He uses a shovel."}
+  },
+  "铸": {
+    "origin": "To melt metal 钅 and pour it into a mold — it means to cast.",
+    "word": {"w": "铸造", "en": "to cast, to found"},
+    "sentence": {"cn": "工人铸造钢铁。", "en": "Workers cast steel."}
+  },
+  "铺": {
+    "origin": "To lay metal 钅 or things out flat — it means to spread or a shop.",
+    "word": {"w": "铺路", "en": "to pave a road"},
+    "sentence": {"cn": "工人在铺路。", "en": "Workers are paving the road."}
+  },
+  "链": {
+    "origin": "Metal 钅 rings that join 连 — it means chain.",
+    "word": {"w": "链子", "en": "chain"},
+    "sentence": {"cn": "狗戴着链子。", "en": "The dog wears a chain."}
+  },
+  "销": {
+    "origin": "To melt metal 钅 down — it means to sell or to cancel.",
+    "word": {"w": "销售", "en": "to sell, sales"},
+    "sentence": {"cn": "商店销售玩具。", "en": "The store sells toys."}
+  },
+  "锁": {
+    "origin": "A metal 钅 thing that keeps doors shut — it means lock.",
+    "word": {"w": "锁门", "en": "to lock the door"},
+    "sentence": {"cn": "记得锁门。", "en": "Remember to lock the door."}
+  },
+  "锅": {
+    "origin": "A metal 钅 pot for cooking — it means pot or pan.",
+    "word": {"w": "锅子", "en": "pot, pan"},
+    "sentence": {"cn": "锅里有汤。", "en": "There is soup in the pot."}
+  },
+  "锈": {
+    "origin": "The brown coat metal 钅 grows when wet — it means rust.",
+    "word": {"w": "生锈", "en": "to rust"},
+    "sentence": {"cn": "刀子生锈了。", "en": "The knife has rusted."}
+  },
+  "锉": {
+    "origin": "A rough metal 钅 tool that smooths things — it means file.",
+    "word": {"w": "锉刀", "en": "file (tool)"},
+    "sentence": {"cn": "他用锉刀。", "en": "He uses a file."}
+  },
+  "锌": {
+    "origin": "A metal 钅 element — it means zinc.",
+    "word": {"w": "锌", "en": "zinc"},
+    "sentence": {"cn": "身体需要锌。", "en": "The body needs zinc."}
+  },
+  "锑": {
+    "origin": "A metal 钅 element — it means antimony.",
+    "word": {"w": "锑", "en": "antimony"},
+    "sentence": {"cn": "锑是金属。", "en": "Antimony is a metal."}
+  },
+  "锔": {
+    "origin": "A metal 钅 element — it means curium.",
+    "word": {"w": "锔", "en": "curium"},
+    "sentence": {"cn": "锔很稀有。", "en": "Curium is very rare."}
+  },
+  "锚": {
+    "origin": "A heavy metal 钅 hook that holds a boat — it means anchor.",
+    "word": {"w": "锚", "en": "anchor"},
+    "sentence": {"cn": "船放下了锚。", "en": "The boat dropped its anchor."}
+  },
+  "锛": {
+    "origin": "A metal 钅 tool for shaping wood — it means adze.",
+    "word": {"w": "锛子", "en": "adze"},
+    "sentence": {"cn": "木匠用锛子。", "en": "The carpenter uses an adze."}
+  },
+  "锡": {
+    "origin": "A soft, shiny metal 钅 — it means tin.",
+    "word": {"w": "锡纸", "en": "tin foil"},
+    "sentence": {"cn": "用锡纸包菜。", "en": "Wrap the food in tin foil."}
+  },
+  "锣": {
+    "origin": "A round metal 钅 disc you strike — it means gong.",
+    "word": {"w": "锣鼓", "en": "gongs and drums"},
+    "sentence": {"cn": "他们敲锣打鼓。", "en": "They beat gongs and drums."}
+  },
+  "锤": {
+    "origin": "A heavy metal 钅 head on a handle — it means hammer.",
+    "word": {"w": "锤子", "en": "hammer"},
+    "sentence": {"cn": "他用锤子。", "en": "He uses a hammer."}
+  },
+  "锨": {
+    "origin": "A wide metal 钅 blade for digging — it means shovel.",
+    "word": {"w": "锨", "en": "shovel"},
+    "sentence": {"cn": "他拿着一把锨。", "en": "He holds a shovel."}
+  },
+  "锭": {
+    "origin": "A block of cast metal 钅 — it means ingot.",
+    "word": {"w": "钢锭", "en": "steel ingot"},
+    "sentence": {"cn": "工厂有钢锭。", "en": "The factory has steel ingots."}
+  },
+  "键": {
+    "origin": "A metal 钅 bolt, now also a key on a board — it means key.",
+    "word": {"w": "键盘", "en": "keyboard"},
+    "sentence": {"cn": "我用键盘打字。", "en": "I type with a keyboard."}
+  },
+  "锯": {
+    "origin": "A toothed metal 钅 tool — it means saw.",
+    "word": {"w": "锯子", "en": "saw"},
+    "sentence": {"cn": "他用锯子锯木。", "en": "He saws wood with a saw."}
+  },
+  "锰": {
+    "origin": "A metal 钅 element — it means manganese.",
+    "word": {"w": "锰", "en": "manganese"},
+    "sentence": {"cn": "锰是金属。", "en": "Manganese is a metal."}
+  },
+  "锹": {
+    "origin": "A metal 钅 blade for digging — it means shovel or spade.",
+    "word": {"w": "铁锹", "en": "iron shovel"},
+    "sentence": {"cn": "他用铁锹挖土。", "en": "He digs soil with an iron shovel."}
+  },
+  "锻": {
+    "origin": "To hammer hot metal 钅 — it means to forge or temper.",
+    "word": {"w": "锻炼", "en": "to exercise, to train"},
+    "sentence": {"cn": "我每天锻炼。", "en": "I exercise every day."}
+  },
+  "镀": {
+    "origin": "To coat with a thin metal 钅 layer — it means to plate.",
+    "word": {"w": "电镀", "en": "electroplating"},
+    "sentence": {"cn": "勺子镀了银。", "en": "The spoon is plated with silver."}
+  },
+  "镁": {
+    "origin": "A light metal 钅 element — it means magnesium.",
+    "word": {"w": "镁", "en": "magnesium"},
+    "sentence": {"cn": "镁燃烧很亮。", "en": "Magnesium burns very brightly."}
+  },
+  "镇": {
+    "origin": "A heavy metal 钅 weight holds things down — it means calm, or a town.",
+    "word": {"w": "镇静", "en": "calm, composed"},
+    "sentence": {"cn": "请保持镇静。", "en": "Please stay calm."}
+  },
+  "镍": {
+    "origin": "A silvery metal 钅 element — it means nickel.",
+    "word": {"w": "镍", "en": "nickel"},
+    "sentence": {"cn": "硬币含镍。", "en": "The coin contains nickel."}
+  },
+  "镐": {
+    "origin": "A metal 钅 tool with a point — it means a pickaxe.",
+    "word": {"w": "镐头", "en": "pickaxe"},
+    "sentence": {"cn": "工人挥动镐头。", "en": "The worker swings the pickaxe."}
+  },
+  "镑": {
+    "origin": "A metal 钅 money word — it means pound (the money).",
+    "word": {"w": "英镑", "en": "British pound"},
+    "sentence": {"cn": "这要十英镑。", "en": "This costs ten pounds."}
+  },
+  "镣": {
+    "origin": "Heavy metal 钅 rings for the legs — it means leg-irons.",
+    "word": {"w": "脚镣", "en": "leg-irons, shackles"},
+    "sentence": {"cn": "囚犯戴着脚镣。", "en": "The prisoner wears leg-irons."}
+  },
+  "镫": {
+    "origin": "A metal 钅 ring for the foot on a saddle — it means stirrup.",
+    "word": {"w": "马镫", "en": "stirrup"},
+    "sentence": {"cn": "他踩着马镫。", "en": "He steps on the stirrup."}
+  },
+  "镭": {
+    "origin": "A glowing metal 钅 element — it means radium.",
+    "word": {"w": "镭", "en": "radium"},
+    "sentence": {"cn": "镭会发光。", "en": "Radium glows."}
+  },
+  "镰": {
+    "origin": "A curved metal 钅 blade for cutting crops — it means sickle.",
+    "word": {"w": "镰刀", "en": "sickle"},
+    "sentence": {"cn": "农民用镰刀。", "en": "The farmer uses a sickle."}
+  },
+  "镶": {
+    "origin": "To set a metal 钅 or gem into something — it means to inlay.",
+    "word": {"w": "镶嵌", "en": "to inlay, to set in"},
+    "sentence": {"cn": "戒指镶着宝石。", "en": "The ring is set with a gem."}
+  },
+  "闩": {
+    "origin": "A bar 一 laid across a gate 门 — it means a bolt or latch.",
+    "word": {"w": "门闩", "en": "door bolt"},
+    "sentence": {"cn": "他拉上门闩。", "en": "He slides the door bolt shut."}
+  },
+  "闪": {
+    "origin": "A man 人 glimpsed in a doorway 门 — it means to flash.",
+    "word": {"w": "闪电", "en": "lightning"},
+    "sentence": {"cn": "天上有闪电。", "en": "There is lightning in the sky."}
+  },
+  "闭": {
+    "origin": "A door 门 shut tight — it means to close.",
+    "word": {"w": "关闭", "en": "to close, to shut"},
+    "sentence": {"cn": "请闭上眼睛。", "en": "Please close your eyes."}
+  },
+  "闯": {
+    "origin": "A horse 马 charging through a gate 门 — it means to rush in.",
+    "word": {"w": "闯入", "en": "to break in, to rush in"},
+    "sentence": {"cn": "别闯红灯。", "en": "Don't run the red light."}
+  },
+  "闰": {
+    "origin": "An extra day or month added to a calendar — it means intercalary.",
+    "word": {"w": "闰年", "en": "leap year"},
+    "sentence": {"cn": "今年是闰年。", "en": "This year is a leap year."}
+  }
+}

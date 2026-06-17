@@ -1,0 +1,252 @@
+{
+  "工": {
+    "origin": "像一把工人用的工具，表示做工、工作。",
+    "word": {"w": "工人", "en": "worker"},
+    "sentence": {"cn": "工人在盖房子。", "en": "The workers are building a house."}
+  },
+  "巩": {
+    "origin": "“工”加“凡”，有牢牢固定、加强的意思。",
+    "word": {"w": "巩固", "en": "to consolidate, to strengthen"},
+    "sentence": {"cn": "复习能巩固知识。", "en": "Reviewing helps strengthen what you learn."}
+  },
+  "巫": {
+    "origin": "像一根十字形的法器，指会作法的人。",
+    "word": {"w": "巫师", "en": "wizard, shaman"},
+    "sentence": {"cn": "故事里有一个老巫师。", "en": "There is an old wizard in the story."}
+  },
+  "差": {
+    "origin": "有不一样、不够好的意思。",
+    "word": {"w": "差别", "en": "difference"},
+    "sentence": {"cn": "两个苹果差别不大。", "en": "There is little difference between the two apples."}
+  },
+  "己": {
+    "origin": "弯弯的形状，常用来指自己。",
+    "word": {"w": "自己", "en": "oneself"},
+    "sentence": {"cn": "这件事我自己来做。", "en": "I will do this myself."}
+  },
+  "已": {
+    "origin": "和“己”很像，表示事情已经做完了。",
+    "word": {"w": "已经", "en": "already"},
+    "sentence": {"cn": "太阳已经出来了。", "en": "The sun has already come out."}
+  },
+  "巳": {
+    "origin": "十二地支之一，指上午九点到十一点。",
+    "word": {"w": "巳时", "en": "the hours 9-11 a.m."},
+    "sentence": {"cn": "古人用巳时记时间。", "en": "Ancient people used 'sì' to mark the time."}
+  },
+  "巴": {
+    "origin": "有盼望、紧贴的意思，也用在词的末尾。",
+    "word": {"w": "尾巴", "en": "tail"},
+    "sentence": {"cn": "小狗摇着尾巴。", "en": "The puppy is wagging its tail."}
+  },
+  "巷": {
+    "origin": "指又窄又小的街道。",
+    "word": {"w": "小巷", "en": "alley, lane"},
+    "sentence": {"cn": "他家住在小巷里。", "en": "His home is in a small alley."}
+  },
+  "币": {
+    "origin": "下面是“巾”，指用来买东西的钱。",
+    "word": {"w": "钱币", "en": "coin, currency"},
+    "sentence": {"cn": "我收集了很多钱币。", "en": "I have collected many coins."}
+  },
+  "帅": {
+    "origin": "指军队的统领，也形容样子好看、潇洒。",
+    "word": {"w": "帅气", "en": "handsome, smart"},
+    "sentence": {"cn": "哥哥今天很帅气。", "en": "My older brother looks handsome today."}
+  },
+  "帆": {
+    "origin": "“巾”表示布，指船上挂的布帆。",
+    "word": {"w": "帆船", "en": "sailboat"},
+    "sentence": {"cn": "海上有一只帆船。", "en": "There is a sailboat on the sea."}
+  },
+  "希": {
+    "origin": "有盼望、想要的意思。",
+    "word": {"w": "希望", "en": "to hope; hope"},
+    "sentence": {"cn": "我希望明天是晴天。", "en": "I hope tomorrow is sunny."}
+  },
+  "帐": {
+    "origin": "“巾”表示布，指用布做的帐子。",
+    "word": {"w": "帐篷", "en": "tent"},
+    "sentence": {"cn": "我们在草地上搭帐篷。", "en": "We pitched a tent on the grass."}
+  },
+  "帕": {
+    "origin": "“巾”表示布，指擦手擦脸的小布。",
+    "word": {"w": "手帕", "en": "handkerchief"},
+    "sentence": {"cn": "她用手帕擦汗。", "en": "She wiped her sweat with a handkerchief."}
+  },
+  "帖": {
+    "origin": "“巾”加“占”，指写着字的卡片或通知。",
+    "word": {"w": "请帖", "en": "invitation card"},
+    "sentence": {"cn": "他收到一张请帖。", "en": "He received an invitation card."}
+  },
+  "帧": {
+    "origin": "“巾”表示意思，“贞”提示读音，用来数图画。",
+    "word": {"w": "一帧", "en": "one frame (of a picture)"},
+    "sentence": {"cn": "这是动画里的一帧。", "en": "This is one frame of the animation."}
+  },
+  "席": {
+    "origin": "屋子“广”里铺着草或布的垫子，指座位。",
+    "word": {"w": "座席", "en": "seat"},
+    "sentence": {"cn": "请大家就座席。", "en": "Please everyone take your seats."}
+  },
+  "常": {
+    "origin": "“巾”表示意思，指经常、平常。",
+    "word": {"w": "经常", "en": "often"},
+    "sentence": {"cn": "我经常去图书馆。", "en": "I often go to the library."}
+  },
+  "幂": {
+    "origin": "上面是盖子“冖”，下面是“巾”，指盖东西的布。",
+    "word": {"w": "幂次", "en": "power (math)"},
+    "sentence": {"cn": "这个字读作幂。", "en": "This character is read mì."}
+  },
+  "幕": {
+    "origin": "“巾”表示布，指挂起来的大布帘。",
+    "word": {"w": "幕布", "en": "curtain (stage)"},
+    "sentence": {"cn": "演出前幕布拉开了。", "en": "The curtain opened before the show."}
+  },
+  "幡": {
+    "origin": "“巾”表示布，指挂起来的长条旗子。",
+    "word": {"w": "幡旗", "en": "banner, pennant"},
+    "sentence": {"cn": "庙前挂着幡旗。", "en": "Banners hang in front of the temple."}
+  },
+  "幢": {
+    "origin": "“巾”表示布，指车上挂的帘子，也用来数楼房。",
+    "word": {"w": "一幢", "en": "one (building)"},
+    "sentence": {"cn": "那是一幢高楼。", "en": "That is a tall building."}
+  },
+  "平": {
+    "origin": "像一把水平的尺子，表示又平又稳。",
+    "word": {"w": "平安", "en": "safe and sound"},
+    "sentence": {"cn": "祝你一路平安。", "en": "Wishing you a safe trip."}
+  },
+  "并": {
+    "origin": "像两个人并排站着，有合在一起的意思。",
+    "word": {"w": "并且", "en": "and, moreover"},
+    "sentence": {"cn": "他聪明并且努力。", "en": "He is smart and hardworking."}
+  },
+  "幸": {
+    "origin": "有好运气、幸福的意思。",
+    "word": {"w": "幸福", "en": "happy, happiness"},
+    "sentence": {"cn": "我们一家很幸福。", "en": "Our family is very happy."}
+  },
+  "幺": {
+    "origin": "细小的样子，在口语里也表示数字一。",
+    "word": {"w": "老幺", "en": "the youngest child"},
+    "sentence": {"cn": "他是家里的老幺。", "en": "He is the youngest in the family."}
+  },
+  "幼": {
+    "origin": "“幺”表示小，“力”表示力气，指年纪小的孩子。",
+    "word": {"w": "幼儿", "en": "young child, infant"},
+    "sentence": {"cn": "妹妹上了幼儿园。", "en": "My little sister started kindergarten."}
+  },
+  "庆": {
+    "origin": "屋子“广”里有大“大”事，表示庆祝。",
+    "word": {"w": "庆祝", "en": "to celebrate"},
+    "sentence": {"cn": "我们一起庆祝生日。", "en": "We celebrate the birthday together."}
+  },
+  "序": {
+    "origin": "“广”表示意思，指先后的顺序。",
+    "word": {"w": "顺序", "en": "order, sequence"},
+    "sentence": {"cn": "请按顺序排队。", "en": "Please line up in order."}
+  },
+  "库": {
+    "origin": "屋子“广”里停着“车”，指放东西的仓库。",
+    "word": {"w": "仓库", "en": "warehouse"},
+    "sentence": {"cn": "货物放在仓库里。", "en": "The goods are kept in the warehouse."}
+  },
+  "应": {
+    "origin": "有应该、回答的意思。",
+    "word": {"w": "应该", "en": "should, ought to"},
+    "sentence": {"cn": "我们应该早点睡。", "en": "We should go to bed early."}
+  },
+  "庙": {
+    "origin": "屋子“广”里有“由”，指供奉神佛或祖先的地方。",
+    "word": {"w": "庙会", "en": "temple fair"},
+    "sentence": {"cn": "过年我们去逛庙会。", "en": "We go to the temple fair during the New Year."}
+  },
+  "庚": {
+    "origin": "天干之一，也用来指年龄。",
+    "word": {"w": "年庚", "en": "age, year of birth"},
+    "sentence": {"cn": "这个字读作庚。", "en": "This character is read gēng."}
+  },
+  "府": {
+    "origin": "“广”表示房子，指办公或大户人家的地方。",
+    "word": {"w": "政府", "en": "government"},
+    "sentence": {"cn": "政府盖了新学校。", "en": "The government built a new school."}
+  },
+  "庞": {
+    "origin": "屋子“广”里有“龙”，形容又大又杂。",
+    "word": {"w": "庞大", "en": "huge, enormous"},
+    "sentence": {"cn": "大象的身体很庞大。", "en": "An elephant's body is huge."}
+  },
+  "废": {
+    "origin": "有不要了、停止用的意思。",
+    "word": {"w": "废物", "en": "waste, rubbish"},
+    "sentence": {"cn": "请把废物扔进垃圾桶。", "en": "Please throw the trash into the bin."}
+  },
+  "度": {
+    "origin": "有程度、温度的意思，也指过日子。",
+    "word": {"w": "温度", "en": "temperature"},
+    "sentence": {"cn": "今天温度很高。", "en": "The temperature is high today."}
+  },
+  "庭": {
+    "origin": "“广”加“廷”，指院子，也指法庭。",
+    "word": {"w": "家庭", "en": "family, household"},
+    "sentence": {"cn": "我有一个幸福的家庭。", "en": "I have a happy family."}
+  },
+  "庵": {
+    "origin": "“广”表示房子，指尼姑或和尚住的小庙。",
+    "word": {"w": "尼姑庵", "en": "nunnery"},
+    "sentence": {"cn": "山上有一座小庵。", "en": "There is a small nunnery on the mountain."}
+  },
+  "廉": {
+    "origin": "有清白、不贪，也有便宜的意思。",
+    "word": {"w": "廉价", "en": "cheap, low-priced"},
+    "sentence": {"cn": "这件衣服很廉价。", "en": "This piece of clothing is very cheap."}
+  },
+  "延": {
+    "origin": "有拉长、推迟的意思。",
+    "word": {"w": "延长", "en": "to extend, to prolong"},
+    "sentence": {"cn": "假期延长了三天。", "en": "The holiday was extended by three days."}
+  },
+  "廿": {
+    "origin": "像两个“十”并在一起，表示二十。",
+    "word": {"w": "廿日", "en": "the twentieth day"},
+    "sentence": {"cn": "这个字表示二十，读廿。", "en": "This character means twenty and is read niàn."}
+  },
+  "弃": {
+    "origin": "有扔掉、不要的意思。",
+    "word": {"w": "放弃", "en": "to give up"},
+    "sentence": {"cn": "再难也不要放弃。", "en": "No matter how hard, don't give up."}
+  },
+  "弊": {
+    "origin": "有害处、不好的意思。",
+    "word": {"w": "弊端", "en": "drawback, malpractice"},
+    "sentence": {"cn": "这样做有不少弊端。", "en": "Doing this has many drawbacks."}
+  },
+  "弓": {
+    "origin": "像一把向左拉开的弓。",
+    "word": {"w": "弓箭", "en": "bow and arrow"},
+    "sentence": {"cn": "他拿着弓箭去打猎。", "en": "He went hunting with a bow and arrow."}
+  },
+  "引": {
+    "origin": "“弓”加上一竖，像拉开弓弦，指拉、带领。",
+    "word": {"w": "引导", "en": "to guide, to lead"},
+    "sentence": {"cn": "老师引导我们思考。", "en": "The teacher guides us to think."}
+  },
+  "张": {
+    "origin": "“弓”表示意思，指拉开、展开，也用来数纸，还作姓。",
+    "word": {"w": "一张", "en": "one sheet/piece"},
+    "sentence": {"cn": "给我一张纸。", "en": "Give me a sheet of paper."}
+  },
+  "弦": {
+    "origin": "“弓”加“玄”，指弓上拉的线，也指琴弦。",
+    "word": {"w": "琴弦", "en": "string (of an instrument)"},
+    "sentence": {"cn": "她轻轻拨动琴弦。", "en": "She gently plucks the strings."}
+  },
+  "弧": {
+    "origin": "“弓”加“瓜”，指像弓一样弯弯的线。",
+    "word": {"w": "弧形", "en": "arc shape, curved"},
+    "sentence": {"cn": "彩虹是弧形的。", "en": "A rainbow is arc-shaped."}
+  }
+}

@@ -1,0 +1,252 @@
+{
+ "仨": {
+  "origin": "仨 is a friendly way to say three people, joining 亻 and 三.",
+  "word": {"w": "哥儿仨", "en": "the three brothers"},
+  "sentence": {"cn": "我们仨是好朋友。", "en": "The three of us are good friends."}
+ },
+ "仲": {
+  "origin": "仲 means the middle one, like the middle brother in a family.",
+  "word": {"w": "仲夏", "en": "midsummer"},
+  "sentence": {"cn": "现在是仲夏。", "en": "It is now midsummer."}
+ },
+ "价": {
+  "origin": "价 means price or value, how much something costs.",
+  "word": {"w": "价格", "en": "price"},
+  "sentence": {"cn": "这个价格很便宜。", "en": "This price is very cheap."}
+ },
+ "仿": {
+  "origin": "仿 means to imitate or copy, like a person doing what another does.",
+  "word": {"w": "模仿", "en": "to imitate"},
+  "sentence": {"cn": "他喜欢模仿动物。", "en": "He likes to imitate animals."}
+ },
+ "企": {
+  "origin": "企 shows a person 人 on tiptoe 止, hoping or planning ahead.",
+  "word": {"w": "企鹅", "en": "penguin"},
+  "sentence": {"cn": "企鹅住在很冷的地方。", "en": "Penguins live in very cold places."}
+ },
+ "伊": {
+  "origin": "伊 is an old word for he or she, now mostly seen in names.",
+  "word": {"w": "伊人", "en": "that person (one dear)"},
+  "sentence": {"cn": "伊人在水边。", "en": "That dear one is by the water."}
+ },
+ "伍": {
+  "origin": "伍 pairs a person with five 五, meaning a group or team.",
+  "word": {"w": "队伍", "en": "team, ranks"},
+  "sentence": {"cn": "我们排成一支队伍。", "en": "We line up into a team."}
+ },
+ "伏": {
+  "origin": "伏 shows a person 亻 lying low like a dog 犬; it means to crouch or hide.",
+  "word": {"w": "埋伏", "en": "ambush"},
+  "sentence": {"cn": "他伏在桌子上睡着了。", "en": "He fell asleep slumped on the desk."}
+ },
+ "伐": {
+  "origin": "伐 shows a person and a weapon 戈; it means to cut down or attack.",
+  "word": {"w": "砍伐", "en": "to fell (trees)"},
+  "sentence": {"cn": "工人在伐树。", "en": "The workers are cutting down trees."}
+ },
+ "休": {
+  "origin": "休 shows a person 亻 resting against a tree 木; it means to rest.",
+  "word": {"w": "休息", "en": "to rest"},
+  "sentence": {"cn": "累了就休息一下。", "en": "Rest a bit when you are tired."}
+ },
+ "优": {
+  "origin": "优 means excellent or superior, better than the rest.",
+  "word": {"w": "优秀", "en": "excellent"},
+  "sentence": {"cn": "她是个优秀的学生。", "en": "She is an excellent student."}
+ },
+ "伙": {
+  "origin": "伙 means a companion or group, people gathered round a fire 火.",
+  "word": {"w": "伙伴", "en": "companion, buddy"},
+  "sentence": {"cn": "他是我的好伙伴。", "en": "He is my good buddy."}
+ },
+ "伪": {
+  "origin": "伪 means false or fake, not the real thing.",
+  "word": {"w": "虚伪", "en": "hypocritical, false"},
+  "sentence": {"cn": "这是伪造的签名。", "en": "This is a forged signature."}
+ },
+ "估": {
+  "origin": "估 means to guess or estimate the value of something.",
+  "word": {"w": "估计", "en": "to estimate"},
+  "sentence": {"cn": "我估计他会来。", "en": "I reckon he will come."}
+ },
+ "伴": {
+  "origin": "伴 means a partner or companion who goes along with you.",
+  "word": {"w": "伙伴", "en": "companion"},
+  "sentence": {"cn": "小狗是我的好伴。", "en": "The dog is my good companion."}
+ },
+ "佃": {
+  "origin": "佃 shows a person 亻 working a field 田; it means a tenant farmer.",
+  "word": {"w": "佃农", "en": "tenant farmer"},
+  "sentence": {"cn": "从前他家是佃农。", "en": "In the past his family were tenant farmers."}
+ },
+ "住": {
+  "origin": "住 shows a person 亻 staying in one place; it means to live or stop.",
+  "word": {"w": "住", "en": "to live, to stay"},
+  "sentence": {"cn": "我住在城里。", "en": "I live in the city."}
+ },
+ "余": {
+  "origin": "余 means what is left over, the remainder or surplus.",
+  "word": {"w": "剩余", "en": "surplus, leftover"},
+  "sentence": {"cn": "盘子里还有余饭。", "en": "There is still leftover rice on the plate."}
+ },
+ "佛": {
+  "origin": "佛 means Buddha; the person 亻 part shows it is about a being.",
+  "word": {"w": "佛教", "en": "Buddhism"},
+  "sentence": {"cn": "庙里有一尊佛。", "en": "There is a Buddha statue in the temple."}
+ },
+ "作": {
+  "origin": "作 shows a person 亻 making something; it means to do or make.",
+  "word": {"w": "工作", "en": "work, job"},
+  "sentence": {"cn": "爸爸去工作了。", "en": "Dad went to work."}
+ },
+ "佟": {
+  "origin": "佟 is mainly used as a family name.",
+  "word": {"w": "佟姓", "en": "the surname Tong"},
+  "sentence": {"cn": "他姓佟。", "en": "His surname is Tong."}
+ },
+ "佩": {
+  "origin": "佩 means to wear an ornament; it also means to admire someone.",
+  "word": {"w": "佩服", "en": "to admire"},
+  "sentence": {"cn": "我很佩服他。", "en": "I really admire him."}
+ },
+ "佰": {
+  "origin": "佰 is the formal way to write one hundred (百).",
+  "word": {"w": "佰元", "en": "one hundred yuan"},
+  "sentence": {"cn": "账单上写着叁佰元。", "en": "The bill says three hundred yuan."}
+ },
+ "佳": {
+  "origin": "佳 means good, fine, or beautiful.",
+  "word": {"w": "佳节", "en": "festive day"},
+  "sentence": {"cn": "中秋是个佳节。", "en": "Mid-Autumn is a wonderful festival."}
+ },
+ "侃": {
+  "origin": "侃 means upright and honest, or to chat freely.",
+  "word": {"w": "侃侃而谈", "en": "to talk with ease and confidence"},
+  "sentence": {"cn": "他侃侃而谈。", "en": "He spoke with ease and confidence."}
+ },
+ "侉": {
+  "origin": "侉 means to speak with a heavy accent that sounds different.",
+  "word": {"w": "侉子", "en": "person with an accent"},
+  "sentence": {"cn": "他说话有点侉。", "en": "His speech has a bit of an accent."}
+ },
+ "例": {
+  "origin": "例 means an example or a case used to explain something.",
+  "word": {"w": "例子", "en": "example"},
+  "sentence": {"cn": "老师举了一个例子。", "en": "The teacher gave an example."}
+ },
+ "供": {
+  "origin": "供 shows a person offering with both hands; it means to supply or provide.",
+  "word": {"w": "提供", "en": "to provide"},
+  "sentence": {"cn": "他们供我们吃住。", "en": "They provide us food and lodging."}
+ },
+ "依": {
+  "origin": "依 shows a person 亻 close to clothing 衣; it means to rely on or lean on.",
+  "word": {"w": "依靠", "en": "to rely on"},
+  "sentence": {"cn": "孩子依着妈妈。", "en": "The child leans on its mother."}
+ },
+ "侧": {
+  "origin": "侧 means the side, not the front or back.",
+  "word": {"w": "侧面", "en": "side, profile"},
+  "sentence": {"cn": "门在房子的侧面。", "en": "The door is on the side of the house."}
+ },
+ "促": {
+  "origin": "促 shows a person at your feet 足, urging or hurrying you.",
+  "word": {"w": "促进", "en": "to promote, to advance"},
+  "sentence": {"cn": "运动促进健康。", "en": "Exercise promotes health."}
+ },
+ "俄": {
+  "origin": "俄 means sudden or in a moment; it also stands for Russia (俄国).",
+  "word": {"w": "俄国", "en": "Russia"},
+  "sentence": {"cn": "俄国很大很冷。", "en": "Russia is big and cold."}
+ },
+ "俊": {
+  "origin": "俊 means handsome or talented.",
+  "word": {"w": "英俊", "en": "handsome"},
+  "sentence": {"cn": "这个男孩很英俊。", "en": "This boy is very handsome."}
+ },
+ "俏": {
+  "origin": "俏 means pretty and lively, like a smart-looking person.",
+  "word": {"w": "俏皮", "en": "cute and witty"},
+  "sentence": {"cn": "她长得很俏。", "en": "She looks very pretty."}
+ },
+ "俗": {
+  "origin": "俗 means custom or common, the everyday ways of people.",
+  "word": {"w": "风俗", "en": "custom"},
+  "sentence": {"cn": "各地风俗不同。", "en": "Customs differ from place to place."}
+ },
+ "俘": {
+  "origin": "俘 means a prisoner of war who is captured.",
+  "word": {"w": "俘虏", "en": "prisoner of war"},
+  "sentence": {"cn": "他被敌人俘虏了。", "en": "He was captured by the enemy."}
+ },
+ "保": {
+  "origin": "保 shows a person 亻 holding a child 呆; it means to protect.",
+  "word": {"w": "保护", "en": "to protect"},
+  "sentence": {"cn": "我们要保护动物。", "en": "We must protect animals."}
+ },
+ "俯": {
+  "origin": "俯 means to bow down or look down low.",
+  "word": {"w": "俯视", "en": "to look down at"},
+  "sentence": {"cn": "从山上俯视大海。", "en": "Look down at the sea from the mountain."}
+ },
+ "俱": {
+  "origin": "俱 means all or together, everyone included.",
+  "word": {"w": "俱乐部", "en": "club"},
+  "sentence": {"cn": "他参加了足球俱乐部。", "en": "He joined the soccer club."}
+ },
+ "俺": {
+  "origin": "俺 is a homely way to say I or me in some dialects.",
+  "word": {"w": "俺们", "en": "we, us (dialect)"},
+  "sentence": {"cn": "俺是北方人。", "en": "I am a northerner."}
+ },
+ "倔": {
+  "origin": "倔 shows a person who will not bend 屈; it means stubborn.",
+  "word": {"w": "倔强", "en": "stubborn"},
+  "sentence": {"cn": "这头牛很倔。", "en": "This ox is very stubborn."}
+ },
+ "倘": {
+  "origin": "倘 means if or supposing, used to set up a condition.",
+  "word": {"w": "倘若", "en": "if, supposing"},
+  "sentence": {"cn": "倘若下雨就别去。", "en": "If it rains, then don't go."}
+ },
+ "候": {
+  "origin": "候 means to wait, or a time or season.",
+  "word": {"w": "时候", "en": "time, moment"},
+  "sentence": {"cn": "现在是吃饭的时候。", "en": "Now it is time to eat."}
+ },
+ "倚": {
+  "origin": "倚 means to lean on or rely upon something.",
+  "word": {"w": "倚靠", "en": "to lean on"},
+  "sentence": {"cn": "他倚着墙休息。", "en": "He leans on the wall to rest."}
+ },
+ "倦": {
+  "origin": "倦 shows a curled-up person; it means tired or weary.",
+  "word": {"w": "疲倦", "en": "tired, weary"},
+  "sentence": {"cn": "走了一天我很疲倦。", "en": "After walking all day I am very tired."}
+ },
+ "债": {
+  "origin": "债 means a debt, money one person owes another.",
+  "word": {"w": "债务", "en": "debt"},
+  "sentence": {"cn": "他还清了债务。", "en": "He paid off his debt."}
+ },
+ "值": {
+  "origin": "值 means worth or value, how much something is worth.",
+  "word": {"w": "价值", "en": "value"},
+  "sentence": {"cn": "这本书很有价值。", "en": "This book is very valuable."}
+ },
+ "倾": {
+  "origin": "倾 means to lean over or pour out, tipping to one side.",
+  "word": {"w": "倾斜", "en": "to slant, to tilt"},
+  "sentence": {"cn": "那棵树有点倾斜。", "en": "That tree is a bit tilted."}
+ },
+ "假": {
+  "origin": "假 means fake or false; with another reading it means holiday.",
+  "word": {"w": "假话", "en": "lie, false words"},
+  "sentence": {"cn": "不要说假话。", "en": "Do not tell lies."}
+ },
+ "偈": {
+  "origin": "偈 names a short Buddhist verse or chant.",
+  "word": {"w": "偈语", "en": "Buddhist verse"},
+  "sentence": {"cn": "和尚念了一句偈语。", "en": "The monk recited a Buddhist verse."}
+ }
+}

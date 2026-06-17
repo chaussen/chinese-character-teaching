@@ -1,0 +1,252 @@
+{
+  "科": {
+    "origin": "禾 (grain) beside 斗 (a measuring scoop): sorting grain into kinds, so 科 means a category or branch of study like science.",
+    "word": {"w": "科学", "en": "science"},
+    "sentence": {"cn": "我喜欢上科学课。", "en": "I like science class."}
+  },
+  "秒": {
+    "origin": "禾 (grain) plus 少 (small): a tiny slice of time, one second.",
+    "word": {"w": "秒钟", "en": "second (of time)"},
+    "sentence": {"cn": "等我一秒。", "en": "Wait one second for me."}
+  },
+  "租": {
+    "origin": "禾 (grain) plus 且: long ago people paid rent in grain, so 租 means to rent.",
+    "word": {"w": "出租", "en": "to rent out"},
+    "sentence": {"cn": "我们租了一辆车。", "en": "We rented a car."}
+  },
+  "秦": {
+    "origin": "Sits over 禾 (grain). 秦 is the name of the Qin dynasty, which first united China.",
+    "word": {"w": "秦朝", "en": "Qin dynasty"},
+    "sentence": {"cn": "秦朝很有名。", "en": "The Qin dynasty is very famous."}
+  },
+  "积": {
+    "origin": "禾 (grain) plus 只: piling up grain bit by bit, so 积 means to store up or accumulate.",
+    "word": {"w": "积木", "en": "building blocks"},
+    "sentence": {"cn": "他喜欢玩积木。", "en": "He likes to play with building blocks."}
+  },
+  "移": {
+    "origin": "禾 (grain) plus 多: moving plants to a new spot, so 移 means to move or shift.",
+    "word": {"w": "移动", "en": "to move"},
+    "sentence": {"cn": "请把椅子移一下。", "en": "Please move the chair a bit."}
+  },
+  "稀": {
+    "origin": "禾 (grain) plus 希: when grain grows thinly spread, it is rare or sparse.",
+    "word": {"w": "稀少", "en": "scarce, rare"},
+    "sentence": {"cn": "这种花很稀少。", "en": "This kind of flower is very rare."}
+  },
+  "稍": {
+    "origin": "禾 (grain) plus 肖: 稍 means a little or slightly.",
+    "word": {"w": "稍微", "en": "slightly, a bit"},
+    "sentence": {"cn": "汤稍微有点咸。", "en": "The soup is slightly salty."}
+  },
+  "税": {
+    "origin": "禾 (grain) plus 兑: grain handed over as payment to the state, so 税 means tax.",
+    "word": {"w": "税收", "en": "taxation"},
+    "sentence": {"cn": "大家都要交税。", "en": "Everyone has to pay taxes."}
+  },
+  "稠": {
+    "origin": "禾 (grain) plus 周: grain growing close together, so 稠 means dense or thick.",
+    "word": {"w": "稠密", "en": "dense"},
+    "sentence": {"cn": "这碗粥很稠。", "en": "This bowl of porridge is very thick."}
+  },
+  "稳": {
+    "origin": "禾 (grain) over a steady base: 稳 means steady and stable.",
+    "word": {"w": "稳定", "en": "stable"},
+    "sentence": {"cn": "桌子很稳。", "en": "The table is very steady."}
+  },
+  "稻": {
+    "origin": "禾 (grain) plus 舀: 稻 is the rice plant growing in the field.",
+    "word": {"w": "稻田", "en": "rice paddy"},
+    "sentence": {"cn": "田里种着稻子。", "en": "Rice is planted in the field."}
+  },
+  "稿": {
+    "origin": "禾 (grain) plus 高: 稿 means a draft or manuscript you write.",
+    "word": {"w": "草稿", "en": "rough draft"},
+    "sentence": {"cn": "我在写一篇稿子。", "en": "I am writing a draft."}
+  },
+  "穆": {
+    "origin": "禾 (grain) on the left: 穆 means solemn and majestic, also a family surname.",
+    "word": {"w": "肃穆", "en": "solemn"},
+    "sentence": {"cn": "教室里很肃穆。", "en": "The classroom is very solemn."}
+  },
+  "穗": {
+    "origin": "禾 (grain) plus 惠: 穗 is the ear of grain at the top of the plant.",
+    "word": {"w": "麦穗", "en": "ear of wheat"},
+    "sentence": {"cn": "麦穗黄了。", "en": "The ears of wheat have turned yellow."}
+  },
+  "穴": {
+    "origin": "Looks like the round mouth of a cave. 穴 means a cave or hole.",
+    "word": {"w": "洞穴", "en": "cave"},
+    "sentence": {"cn": "小动物住在洞穴里。", "en": "Little animals live in caves."}
+  },
+  "空": {
+    "origin": "穴 (cave) over 工: an empty cave, so 空 means empty or sky.",
+    "word": {"w": "天空", "en": "sky"},
+    "sentence": {"cn": "天空很蓝。", "en": "The sky is very blue."}
+  },
+  "窃": {
+    "origin": "穴 (hole) plus 切: sneaking through a hole, so 窃 means to steal.",
+    "word": {"w": "盗窃", "en": "theft"},
+    "sentence": {"cn": "盗窃是不对的。", "en": "Stealing is wrong."}
+  },
+  "窑": {
+    "origin": "穴 (cave) over 缶 (pot): a cave-like oven where pots are fired, a kiln.",
+    "word": {"w": "瓷窑", "en": "porcelain kiln"},
+    "sentence": {"cn": "瓷器在窑里烧。", "en": "Porcelain is fired in the kiln."}
+  },
+  "窖": {
+    "origin": "穴 (cave) plus 告: 窖 is a cellar dug into the ground for storage.",
+    "word": {"w": "地窖", "en": "cellar"},
+    "sentence": {"cn": "土豆放在地窖里。", "en": "The potatoes are kept in the cellar."}
+  },
+  "窗": {
+    "origin": "穴 (hole) over 囱: an opening in the wall, so 窗 is a window.",
+    "word": {"w": "窗户", "en": "window"},
+    "sentence": {"cn": "请打开窗户。", "en": "Please open the window."}
+  },
+  "窘": {
+    "origin": "穴 (cave) plus 君: feeling trapped, so 窘 means awkward or embarrassed.",
+    "word": {"w": "窘迫", "en": "embarrassed, hard-pressed"},
+    "sentence": {"cn": "他很窘，脸都红了。", "en": "He was so embarrassed his face turned red."}
+  },
+  "窜": {
+    "origin": "穴 (hole) over 串: a mouse darting out of its hole, so 窜 means to scurry or flee.",
+    "word": {"w": "逃窜", "en": "to flee in disorder"},
+    "sentence": {"cn": "老鼠到处乱窜。", "en": "The mouse scurried everywhere."}
+  },
+  "窝": {
+    "origin": "穴 (cave) plus 呙: a small hollow home, so 窝 means a nest or den.",
+    "word": {"w": "鸟窝", "en": "bird's nest"},
+    "sentence": {"cn": "树上有个鸟窝。", "en": "There is a bird's nest in the tree."}
+  },
+  "窟": {
+    "origin": "穴 (cave) plus 屈: 窟 means a hole or cave.",
+    "word": {"w": "石窟", "en": "rock cave, grotto"},
+    "sentence": {"cn": "我们参观了石窟。", "en": "We visited the rock caves."}
+  },
+  "竖": {
+    "origin": "A person standing 立 straight: 竖 means vertical or to stand upright.",
+    "word": {"w": "竖立", "en": "to stand erect"},
+    "sentence": {"cn": "请写一条竖线。", "en": "Please write a vertical line."}
+  },
+  "竞": {
+    "origin": "立 (stand) over 兄: standing up to a rival, so 竞 means to compete.",
+    "word": {"w": "竞赛", "en": "competition"},
+    "sentence": {"cn": "我参加了竞赛。", "en": "I took part in the competition."}
+  },
+  "竟": {
+    "origin": "音 (sound) over 儿: a song finished at last, so 竟 means finally or unexpectedly.",
+    "word": {"w": "竟然", "en": "unexpectedly"},
+    "sentence": {"cn": "他竟然赢了。", "en": "He unexpectedly won."}
+  },
+  "笋": {
+    "origin": "⺮ (bamboo) over 尹: 笋 is the young bamboo shoot you can eat.",
+    "word": {"w": "竹笋", "en": "bamboo shoot"},
+    "sentence": {"cn": "熊猫爱吃竹笋。", "en": "Pandas love to eat bamboo shoots."}
+  },
+  "笔": {
+    "origin": "⺮ (bamboo) over 毛 (hair): a bamboo rod tipped with hair makes a writing brush, a pen.",
+    "word": {"w": "铅笔", "en": "pencil"},
+    "sentence": {"cn": "我用铅笔写字。", "en": "I write with a pencil."}
+  },
+  "笙": {
+    "origin": "⺮ (bamboo) over 生: 笙 is a reed mouth organ made of bamboo pipes.",
+    "word": {"w": "笙箫", "en": "sheng and xiao (wind instruments)"},
+    "sentence": {"cn": "他会吹笙。", "en": "He can play the sheng."}
+  },
+  "笛": {
+    "origin": "⺮ (bamboo) over 由: 笛 is the bamboo flute.",
+    "word": {"w": "笛子", "en": "flute"},
+    "sentence": {"cn": "她在吹笛子。", "en": "She is playing the flute."}
+  },
+  "符": {
+    "origin": "⺮ (bamboo) over 付: tokens were once split bamboo tallies, so 符 means a sign, mark, or charm.",
+    "word": {"w": "符号", "en": "symbol, sign"},
+    "sentence": {"cn": "这个符号是问号。", "en": "This symbol is a question mark."}
+  },
+  "笨": {
+    "origin": "⺮ (bamboo) over 本: 笨 means clumsy or stupid.",
+    "word": {"w": "笨重", "en": "heavy and clumsy"},
+    "sentence": {"cn": "小熊有点笨。", "en": "The little bear is a bit clumsy."}
+  },
+  "筋": {
+    "origin": "⺮ (bamboo) over 肋 (flesh and strength): tough bamboo-like fibers in the body, so 筋 means muscles or tendons.",
+    "word": {"w": "筋骨", "en": "muscles and bones"},
+    "sentence": {"cn": "运动能强筋骨。", "en": "Exercise strengthens muscles and bones."}
+  },
+  "筐": {
+    "origin": "⺮ (bamboo) over 匡: 筐 is a basket woven from bamboo.",
+    "word": {"w": "竹筐", "en": "bamboo basket"},
+    "sentence": {"cn": "筐里装满了苹果。", "en": "The basket is full of apples."}
+  },
+  "筒": {
+    "origin": "⺮ (bamboo) over 同: a hollow bamboo joint, so 筒 means a tube or cylinder.",
+    "word": {"w": "笔筒", "en": "pen holder"},
+    "sentence": {"cn": "笔放在笔筒里。", "en": "The pens are in the pen holder."}
+  },
+  "策": {
+    "origin": "⺮ (bamboo) over 朿: a bamboo riding whip; also a written plan or strategy.",
+    "word": {"w": "对策", "en": "countermeasure, response plan"},
+    "sentence": {"cn": "我们想出了好对策。", "en": "We thought of a good countermeasure."}
+  },
+  "筛": {
+    "origin": "⺮ (bamboo) over 师: a bamboo mesh for sifting, so 筛 means a sieve or to sift.",
+    "word": {"w": "筛子", "en": "sieve"},
+    "sentence": {"cn": "用筛子筛面粉。", "en": "Use a sieve to sift the flour."}
+  },
+  "筹": {
+    "origin": "⺮ (bamboo) over 寿: bamboo counting sticks, so 筹 means a chip or to plan.",
+    "word": {"w": "筹备", "en": "to prepare, to arrange"},
+    "sentence": {"cn": "我们在筹备晚会。", "en": "We are preparing for the party."}
+  },
+  "签": {
+    "origin": "⺮ (bamboo) over 佥: a slip of bamboo for marking; also to sign your name.",
+    "word": {"w": "签名", "en": "to sign one's name"},
+    "sentence": {"cn": "请在这里签名。", "en": "Please sign your name here."}
+  },
+  "简": {
+    "origin": "⺮ (bamboo) over 间: old books were bamboo slips, so 简 means simple or a letter.",
+    "word": {"w": "简单", "en": "simple"},
+    "sentence": {"cn": "这道题很简单。", "en": "This problem is very simple."}
+  },
+  "箍": {
+    "origin": "⺮ (bamboo) plus 㧜: bamboo bands wrapped tight, so 箍 means a hoop or to bind.",
+    "word": {"w": "箍桶", "en": "to hoop a barrel"},
+    "sentence": {"cn": "木桶外面有铁箍。", "en": "There is an iron hoop around the wooden barrel."}
+  },
+  "箩": {
+    "origin": "⺮ (bamboo) over 罗: 箩 is a large bamboo basket.",
+    "word": {"w": "箩筐", "en": "bamboo basket"},
+    "sentence": {"cn": "箩里装着大米。", "en": "The basket holds rice."}
+  },
+  "箫": {
+    "origin": "⺮ (bamboo) over 肃: 箫 is a vertical bamboo flute.",
+    "word": {"w": "洞箫", "en": "vertical bamboo flute"},
+    "sentence": {"cn": "爷爷会吹箫。", "en": "Grandpa can play the xiao flute."}
+  },
+  "箭": {
+    "origin": "⺮ (bamboo) over 前: arrows were made of bamboo, so 箭 means arrow.",
+    "word": {"w": "弓箭", "en": "bow and arrow"},
+    "sentence": {"cn": "他射出一支箭。", "en": "He shot an arrow."}
+  },
+  "箱": {
+    "origin": "⺮ (bamboo) over 相: a bamboo case, so 箱 means a box or chest.",
+    "word": {"w": "箱子", "en": "box, suitcase"},
+    "sentence": {"cn": "衣服放在箱子里。", "en": "The clothes are in the box."}
+  },
+  "篓": {
+    "origin": "⺮ (bamboo) over 娄: 篓 is a tall bamboo basket.",
+    "word": {"w": "竹篓", "en": "bamboo basket"},
+    "sentence": {"cn": "鱼放进了竹篓。", "en": "The fish were put into the bamboo basket."}
+  },
+  "篦": {
+    "origin": "⺮ (bamboo) over 囟 and 比: a fine bamboo comb, so 篦 means a fine-toothed comb.",
+    "word": {"w": "篦子", "en": "fine-toothed comb"},
+    "sentence": {"cn": "她用篦子梳头。", "en": "She combs her hair with a fine comb."}
+  },
+  "篮": {
+    "origin": "⺮ (bamboo) over 监: a woven bamboo basket, so 篮 means basket, as in basketball.",
+    "word": {"w": "篮球", "en": "basketball"},
+    "sentence": {"cn": "我们一起打篮球。", "en": "We play basketball together."}
+  }
+}

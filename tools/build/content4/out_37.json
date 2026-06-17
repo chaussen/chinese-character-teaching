@@ -1,0 +1,252 @@
+{
+  "轰": {
+    "origin": "Carts 车 rumbling together — it means a loud booming sound.",
+    "word": {"w": "轰隆", "en": "rumble, boom"},
+    "sentence": {"cn": "雷声轰轰响。", "en": "The thunder rumbled loudly."}
+  },
+  "轴": {
+    "origin": "A cart 车 part — the axle that the wheels turn on.",
+    "word": {"w": "车轴", "en": "axle"},
+    "sentence": {"cn": "车轴坏了。", "en": "The axle is broken."}
+  },
+  "轿": {
+    "origin": "A tall carriage 车 carried by people — a sedan-chair.",
+    "word": {"w": "轿车", "en": "car, sedan"},
+    "sentence": {"cn": "爸爸开轿车。", "en": "Dad drives a car."}
+  },
+  "较": {
+    "origin": "A cart 车 set beside another to compare — it means to compare.",
+    "word": {"w": "比较", "en": "to compare; relatively"},
+    "sentence": {"cn": "今天比较冷。", "en": "Today is relatively cold."}
+  },
+  "辅": {
+    "origin": "Something added to a cart 车 to help — it means to assist.",
+    "word": {"w": "辅导", "en": "to coach, to tutor"},
+    "sentence": {"cn": "老师辅导我。", "en": "The teacher tutors me."}
+  },
+  "辆": {
+    "origin": "A measure word for vehicles like carts 车 and cars.",
+    "word": {"w": "一辆车", "en": "one vehicle"},
+    "sentence": {"cn": "我有一辆车。", "en": "I have one car."}
+  },
+  "辈": {
+    "origin": "Rows like cart 车 wheels lining up — it means a generation.",
+    "word": {"w": "长辈", "en": "elders"},
+    "sentence": {"cn": "要尊敬长辈。", "en": "We should respect our elders."}
+  },
+  "辍": {
+    "origin": "A cart 车 that suddenly halts — it means to stop or quit.",
+    "word": {"w": "辍学", "en": "to drop out of school"},
+    "sentence": {"cn": "他辍学了。", "en": "He dropped out of school."}
+  },
+  "辑": {
+    "origin": "To gather things onto a cart 车 — it means to collect or edit.",
+    "word": {"w": "编辑", "en": "to edit; editor"},
+    "sentence": {"cn": "他在编辑书。", "en": "He is editing a book."}
+  },
+  "辕": {
+    "origin": "The long shaft 车 of a cart that an animal pulls.",
+    "word": {"w": "车辕", "en": "cart shaft"},
+    "sentence": {"cn": "马拉着车辕。", "en": "The horse pulls the cart shaft."}
+  },
+  "辖": {
+    "origin": "A pin on a cart 车 wheel that controls it — it means to govern.",
+    "word": {"w": "管辖", "en": "to have jurisdiction over"},
+    "sentence": {"cn": "这里归他管辖。", "en": "This place is under his jurisdiction."}
+  },
+  "辙": {
+    "origin": "The track 车 a cart leaves on the road as it moves.",
+    "word": {"w": "车辙", "en": "wheel track, rut"},
+    "sentence": {"cn": "路上有车辙。", "en": "There are wheel tracks on the road."}
+  },
+  "辣": {
+    "origin": "A sharp, burning taste — like hot peppers.",
+    "word": {"w": "辣椒", "en": "chili pepper"},
+    "sentence": {"cn": "这个菜很辣。", "en": "This dish is very spicy."}
+  },
+  "辨": {
+    "origin": "To separate two things with a knife 刂 — it means to tell apart.",
+    "word": {"w": "分辨", "en": "to distinguish"},
+    "sentence": {"cn": "我分辨不出。", "en": "I can't tell them apart."}
+  },
+  "辩": {
+    "origin": "An exchange of words 讠 between two sides — it means to debate.",
+    "word": {"w": "辩论", "en": "to debate"},
+    "sentence": {"cn": "他们在辩论。", "en": "They are debating."}
+  },
+  "辰": {
+    "origin": "An old word for the early morning hours and the stars.",
+    "word": {"w": "星辰", "en": "stars"},
+    "sentence": {"cn": "天上有星辰。", "en": "There are stars in the sky."}
+  },
+  "辽": {
+    "origin": "To walk 辶 a long way — it means distant and far.",
+    "word": {"w": "辽阔", "en": "vast, wide"},
+    "sentence": {"cn": "草原很辽阔。", "en": "The grassland is vast."}
+  },
+  "迁": {
+    "origin": "To walk 辶 to a new place — it means to move or shift.",
+    "word": {"w": "搬迁", "en": "to move, to relocate"},
+    "sentence": {"cn": "我们要搬迁。", "en": "We are going to relocate."}
+  },
+  "迂": {
+    "origin": "To walk 辶 a winding, roundabout path.",
+    "word": {"w": "迂回", "en": "roundabout, circuitous"},
+    "sentence": {"cn": "这条路很迂回。", "en": "This road is very winding."}
+  },
+  "迈": {
+    "origin": "To take big steps 辶 forward — it means to stride.",
+    "word": {"w": "迈步", "en": "to take a step"},
+    "sentence": {"cn": "他向前迈步。", "en": "He stepped forward."}
+  },
+  "返": {
+    "origin": "To walk 辶 back the way you came — it means to return.",
+    "word": {"w": "返回", "en": "to return, to go back"},
+    "sentence": {"cn": "他返回家里。", "en": "He returned home."}
+  },
+  "违": {
+    "origin": "To walk 辶 against the rules — it means to disobey.",
+    "word": {"w": "违反", "en": "to violate, to break (rules)"},
+    "sentence": {"cn": "不要违反规定。", "en": "Don't break the rules."}
+  },
+  "迫": {
+    "origin": "To press 辶 someone hard — it means to force or compel.",
+    "word": {"w": "迫害", "en": "to persecute"},
+    "sentence": {"cn": "他被迫离开。", "en": "He was forced to leave."}
+  },
+  "迭": {
+    "origin": "To happen 辶 again and again — it means repeatedly.",
+    "word": {"w": "更迭", "en": "to alternate, to replace"},
+    "sentence": {"cn": "四季更迭。", "en": "The four seasons alternate."}
+  },
+  "述": {
+    "origin": "To walk 辶 through a story — it means to tell or state.",
+    "word": {"w": "讲述", "en": "to tell, to narrate"},
+    "sentence": {"cn": "他讲述故事。", "en": "He tells a story."}
+  },
+  "迷": {
+    "origin": "To lose your way 辶 — it means lost or fascinated.",
+    "word": {"w": "迷路", "en": "to get lost"},
+    "sentence": {"cn": "我迷路了。", "en": "I got lost."}
+  },
+  "迸": {
+    "origin": "To suddenly walk 辶 out together — it means to burst out.",
+    "word": {"w": "迸发", "en": "to burst out, to erupt"},
+    "sentence": {"cn": "火花迸发出来。", "en": "Sparks burst out."}
+  },
+  "退": {
+    "origin": "To walk 辶 backwards — it means to retreat or step back.",
+    "word": {"w": "后退", "en": "to retreat, to back up"},
+    "sentence": {"cn": "请向后退。", "en": "Please step back."}
+  },
+  "逃": {
+    "origin": "To run 辶 away from danger — it means to escape.",
+    "word": {"w": "逃跑", "en": "to flee, to run away"},
+    "sentence": {"cn": "小偷逃跑了。", "en": "The thief ran away."}
+  },
+  "逆": {
+    "origin": "To walk 辶 the wrong way — it means to go against.",
+    "word": {"w": "逆风", "en": "against the wind"},
+    "sentence": {"cn": "我们逆风走。", "en": "We walk against the wind."}
+  },
+  "逊": {
+    "origin": "To step 辶 back and yield — it means humble or modest.",
+    "word": {"w": "谦逊", "en": "modest, humble"},
+    "sentence": {"cn": "他很谦逊。", "en": "He is very modest."}
+  },
+  "逐": {
+    "origin": "To walk 辶 after a pig 豕 — it means to chase, step by step.",
+    "word": {"w": "逐渐", "en": "gradually"},
+    "sentence": {"cn": "天逐渐变冷。", "en": "The weather gradually got cold."}
+  },
+  "递": {
+    "origin": "To walk 辶 and pass something along — it means to hand over.",
+    "word": {"w": "传递", "en": "to pass, to deliver"},
+    "sentence": {"cn": "请递给我书。", "en": "Please hand me the book."}
+  },
+  "逗": {
+    "origin": "To walk 辶 over to play — it means to tease or amuse.",
+    "word": {"w": "逗乐", "en": "to amuse, to make laugh"},
+    "sentence": {"cn": "他逗我笑。", "en": "He made me laugh."}
+  },
+  "逞": {
+    "origin": "To walk 辶 and show off — it means to flaunt or indulge.",
+    "word": {"w": "逞强", "en": "to show off one's strength"},
+    "sentence": {"cn": "他喜欢逞强。", "en": "He likes to show off his strength."}
+  },
+  "速": {
+    "origin": "To walk 辶 fast — it means quick or speedy.",
+    "word": {"w": "速度", "en": "speed"},
+    "sentence": {"cn": "车速很快。", "en": "The car's speed is fast."}
+  },
+  "逢": {
+    "origin": "To walk 辶 and run into someone — it means to meet.",
+    "word": {"w": "相逢", "en": "to meet, to come across"},
+    "sentence": {"cn": "我们再次相逢。", "en": "We met again."}
+  },
+  "逮": {
+    "origin": "To chase 辶 and reach — it means to catch or seize.",
+    "word": {"w": "逮捕", "en": "to arrest"},
+    "sentence": {"cn": "警察逮捕了他。", "en": "The police arrested him."}
+  },
+  "逼": {
+    "origin": "To press 辶 close — it means to force or pressure.",
+    "word": {"w": "逼近", "en": "to close in, to approach"},
+    "sentence": {"cn": "敌人逼近了。", "en": "The enemy is closing in."}
+  },
+  "逾": {
+    "origin": "To walk 辶 over a line — it means to exceed or go beyond.",
+    "word": {"w": "逾期", "en": "overdue, past the deadline"},
+    "sentence": {"cn": "书已经逾期了。", "en": "The book is already overdue."}
+  },
+  "遂": {
+    "origin": "To walk 辶 on and get what you want — it means to fulfill.",
+    "word": {"w": "顺遂", "en": "smooth, going as wished"},
+    "sentence": {"cn": "祝你一切顺遂。", "en": "May everything go smoothly for you."}
+  },
+  "遇": {
+    "origin": "To walk 辶 and come upon someone — it means to meet.",
+    "word": {"w": "遇见", "en": "to meet, to run into"},
+    "sentence": {"cn": "我遇见老朋友。", "en": "I ran into an old friend."}
+  },
+  "遏": {
+    "origin": "To walk 辶 up and block — it means to stop or curb.",
+    "word": {"w": "遏制", "en": "to curb, to hold back"},
+    "sentence": {"cn": "要遏制疾病。", "en": "We must curb the disease."}
+  },
+  "遗": {
+    "origin": "To walk 辶 off and leave something valuable behind — to lose.",
+    "word": {"w": "遗失", "en": "to lose (an object)"},
+    "sentence": {"cn": "我遗失了钱包。", "en": "I lost my wallet."}
+  },
+  "遛": {
+    "origin": "To walk 辶 around slowly — it means to stroll.",
+    "word": {"w": "遛狗", "en": "to walk a dog"},
+    "sentence": {"cn": "我去遛狗。", "en": "I'm going to walk the dog."}
+  },
+  "遭": {
+    "origin": "To walk 辶 into trouble — it means to encounter (something bad).",
+    "word": {"w": "遭遇", "en": "to encounter, to meet with"},
+    "sentence": {"cn": "他遭遇困难。", "en": "He met with difficulty."}
+  },
+  "遮": {
+    "origin": "To walk 辶 in front and cover — it means to block or shield.",
+    "word": {"w": "遮挡", "en": "to block, to shelter"},
+    "sentence": {"cn": "大树遮挡阳光。", "en": "The big tree blocks the sunlight."}
+  },
+  "避": {
+    "origin": "To walk 辶 away from danger — it means to avoid.",
+    "word": {"w": "避免", "en": "to avoid"},
+    "sentence": {"cn": "要避免危险。", "en": "We should avoid danger."}
+  },
+  "邀": {
+    "origin": "To walk 辶 out and ask someone over — it means to invite.",
+    "word": {"w": "邀请", "en": "to invite"},
+    "sentence": {"cn": "我邀请你来。", "en": "I invite you to come."}
+  },
+  "邓": {
+    "origin": "A town 阝 by a place — used mostly as a family name.",
+    "word": {"w": "邓小平", "en": "Deng Xiaoping (a name)"},
+    "sentence": {"cn": "他姓邓。", "en": "His surname is Deng."}
+  }
+}

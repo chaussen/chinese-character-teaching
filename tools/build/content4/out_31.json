@@ -1,0 +1,252 @@
+{
+ "肝": {
+  "origin": "The flesh radical ⺼ shows this is a body part; it means liver.",
+  "word": {"w": "肝脏", "en": "liver (organ)"},
+  "sentence": {"cn": "猪肝可以吃。", "en": "Pork liver can be eaten."}
+ },
+ "肠": {
+  "origin": "The flesh radical ⺼ marks a body part; it means intestines.",
+  "word": {"w": "香肠", "en": "sausage"},
+  "sentence": {"cn": "我爱吃香肠。", "en": "I love eating sausages."}
+ },
+ "股": {
+  "origin": "With the flesh radical ⺼, it first meant thigh, and now also means a share or portion.",
+  "word": {"w": "屁股", "en": "bottom, buttocks"},
+  "sentence": {"cn": "他坐着屁股疼。", "en": "His bottom hurts from sitting."}
+ },
+ "肤": {
+  "origin": "The flesh radical ⺼ shows it is part of the body; it means skin.",
+  "word": {"w": "皮肤", "en": "skin"},
+  "sentence": {"cn": "她的皮肤很白。", "en": "Her skin is very fair."}
+ },
+ "肩": {
+  "origin": "A person carrying meat ⺼ home for the family 户; it means shoulder.",
+  "word": {"w": "肩膀", "en": "shoulder"},
+  "sentence": {"cn": "他的肩膀很宽。", "en": "His shoulders are broad."}
+ },
+ "育": {
+  "origin": "Pictures a mother with a baby ⺼; it means to give birth and to raise.",
+  "word": {"w": "教育", "en": "education"},
+  "sentence": {"cn": "老师很会教育人。", "en": "The teacher is good at educating people."}
+ },
+ "肺": {
+  "origin": "The flesh radical ⺼ marks a body organ; it means lungs.",
+  "word": {"w": "肺部", "en": "lungs (area)"},
+  "sentence": {"cn": "深呼吸对肺好。", "en": "Deep breathing is good for the lungs."}
+ },
+ "肾": {
+  "origin": "The flesh radical ⺼ shows it is a body organ; it means kidney.",
+  "word": {"w": "肾脏", "en": "kidney"},
+  "sentence": {"cn": "人有两个肾。", "en": "People have two kidneys."}
+ },
+ "肿": {
+  "origin": "The flesh radical ⺼ marks the body; it means swollen.",
+  "word": {"w": "肿胀", "en": "swelling"},
+  "sentence": {"cn": "我的脚肿了。", "en": "My foot is swollen."}
+ },
+ "胀": {
+  "origin": "The flesh radical ⺼ shows it is about the body feeling full or swollen.",
+  "word": {"w": "肿胀", "en": "swelling"},
+  "sentence": {"cn": "我的肚子有点胀。", "en": "My belly feels a bit bloated."}
+ },
+ "胃": {
+  "origin": "The stomach ⺼ sits behind the belly 田; it means stomach.",
+  "word": {"w": "胃口", "en": "appetite"},
+  "sentence": {"cn": "我今天胃不舒服。", "en": "My stomach feels unwell today."}
+ },
+ "胆": {
+  "origin": "The flesh radical ⺼ marks a body organ; it means gallbladder and also courage.",
+  "word": {"w": "大胆", "en": "bold, daring"},
+  "sentence": {"cn": "他很有胆量。", "en": "He is very brave."}
+ },
+ "胎": {
+  "origin": "The flesh radical ⺼ shows it relates to the body; it means an unborn baby.",
+  "word": {"w": "轮胎", "en": "tire"},
+  "sentence": {"cn": "车的轮胎没气了。", "en": "The car's tire is flat."}
+ },
+ "胖": {
+  "origin": "The flesh radical ⺼ marks the body; it means fat or plump.",
+  "word": {"w": "胖子", "en": "a fat person"},
+  "sentence": {"cn": "这只猫太胖了。", "en": "This cat is too fat."}
+ },
+ "胡": {
+  "origin": "With the meat radical ⺼; here it means doing things carelessly or wildly.",
+  "word": {"w": "胡说", "en": "to talk nonsense"},
+  "sentence": {"cn": "你别胡说。", "en": "Don't talk nonsense."}
+ },
+ "胯": {
+  "origin": "The flesh radical ⺼ marks a body part; it means the hip or groin area.",
+  "word": {"w": "胯部", "en": "hip area"},
+  "sentence": {"cn": "他胯下有只猫。", "en": "There is a cat under his legs."}
+ },
+ "胰": {
+  "origin": "The flesh radical ⺼ shows it is a body organ; it means pancreas.",
+  "word": {"w": "胰腺", "en": "pancreas"},
+  "sentence": {"cn": "胰是身体的器官。", "en": "The pancreas is a body organ."}
+ },
+ "胶": {
+  "origin": "Things that connect 交 like flesh ⺼; it means glue or rubber.",
+  "word": {"w": "胶水", "en": "glue"},
+  "sentence": {"cn": "我用胶水粘纸。", "en": "I use glue to stick paper."}
+ },
+ "胸": {
+  "origin": "The flesh radical ⺼ with 匈 inside the chest; it means chest.",
+  "word": {"w": "胸口", "en": "chest"},
+  "sentence": {"cn": "他胸口有点疼。", "en": "His chest hurts a little."}
+ },
+ "脆": {
+  "origin": "Flesh ⺼ in danger 危; it means crisp or fragile.",
+  "word": {"w": "脆", "en": "crisp"},
+  "sentence": {"cn": "这块饼很脆。", "en": "This cracker is very crisp."}
+ },
+ "脉": {
+  "origin": "Long 永 vessels in the body ⺼; it means pulse or vein.",
+  "word": {"w": "脉搏", "en": "pulse"},
+  "sentence": {"cn": "医生在量脉搏。", "en": "The doctor is taking the pulse."}
+ },
+ "脑": {
+  "origin": "The flesh radical ⺼ marks a body organ; it means brain.",
+  "word": {"w": "大脑", "en": "brain"},
+  "sentence": {"cn": "动脑筋想一想。", "en": "Use your brain and think."}
+ },
+ "脓": {
+  "origin": "The flesh radical ⺼ shows it relates to the body; it means pus.",
+  "word": {"w": "脓水", "en": "pus"},
+  "sentence": {"cn": "伤口流脓了。", "en": "The wound is oozing pus."}
+ },
+ "脱": {
+  "origin": "The flesh radical ⺼ with 兑; it means to take off or to shed.",
+  "word": {"w": "脱衣", "en": "to take off clothes"},
+  "sentence": {"cn": "他脱了外套。", "en": "He took off his coat."}
+ },
+ "脾": {
+  "origin": "The flesh radical ⺼ marks a body organ; it means spleen, and also temper.",
+  "word": {"w": "脾气", "en": "temper"},
+  "sentence": {"cn": "他脾气很好。", "en": "He has a good temper."}
+ },
+ "腊": {
+  "origin": "Meat ⺼ kept for the old year 昔; it means cured meat and the last month.",
+  "word": {"w": "腊肉", "en": "cured meat"},
+  "sentence": {"cn": "奶奶做了腊肉。", "en": "Grandma made cured meat."}
+ },
+ "腋": {
+  "origin": "The flesh radical ⺼ marks a body part; it means armpit.",
+  "word": {"w": "腋下", "en": "underarm"},
+  "sentence": {"cn": "腋下夹着书。", "en": "He holds a book under his arm."}
+ },
+ "腌": {
+  "origin": "Meat ⺼ left 奄 in salt; it means to pickle or to cure.",
+  "word": {"w": "腌菜", "en": "pickled vegetables"},
+  "sentence": {"cn": "妈妈在腌菜。", "en": "Mom is pickling vegetables."}
+ },
+ "腐": {
+  "origin": "With the meat radical 肉; it means to rot or to spoil.",
+  "word": {"w": "豆腐", "en": "tofu"},
+  "sentence": {"cn": "我喜欢吃豆腐。", "en": "I like to eat tofu."}
+ },
+ "腔": {
+  "origin": "The flesh radical ⺼ with 空 (empty); it means a body cavity, like the chest.",
+  "word": {"w": "口腔", "en": "oral cavity, mouth"},
+  "sentence": {"cn": "口腔要保持干净。", "en": "Keep your mouth clean."}
+ },
+ "腕": {
+  "origin": "The flesh radical ⺼ marks a body part; it means wrist.",
+  "word": {"w": "手腕", "en": "wrist"},
+  "sentence": {"cn": "他手腕上有表。", "en": "He has a watch on his wrist."}
+ },
+ "腥": {
+  "origin": "With the meat radical ⺼; it means a fishy smell.",
+  "word": {"w": "腥味", "en": "fishy smell"},
+  "sentence": {"cn": "这鱼有腥味。", "en": "This fish has a fishy smell."}
+ },
+ "腭": {
+  "origin": "The flesh radical ⺼ marks a body part; it means the roof of the mouth, the palate.",
+  "word": {"w": "上腭", "en": "the upper palate"},
+  "sentence": {"cn": "舌头碰到上腭。", "en": "The tongue touches the upper palate."}
+ },
+ "腮": {
+  "origin": "The flesh radical ⺼ marks a body part; it means cheek or jaw.",
+  "word": {"w": "腮帮", "en": "cheek"},
+  "sentence": {"cn": "她的腮红红的。", "en": "Her cheeks are rosy."}
+ },
+ "腱": {
+  "origin": "The flesh radical ⺼ shows it relates to the body; it means tendon.",
+  "word": {"w": "肌腱", "en": "tendon"},
+  "sentence": {"cn": "运动伤了肌腱。", "en": "Exercise hurt the tendon."}
+ },
+ "腹": {
+  "origin": "The flesh radical ⺼ marks a body part; it means belly or abdomen.",
+  "word": {"w": "腹部", "en": "abdomen"},
+  "sentence": {"cn": "他腹部有点疼。", "en": "His belly hurts a bit."}
+ },
+ "腺": {
+  "origin": "The flesh radical ⺼ with 泉 (spring); it means a gland that gives off fluids.",
+  "word": {"w": "汗腺", "en": "sweat gland"},
+  "sentence": {"cn": "汗腺会出汗。", "en": "Sweat glands produce sweat."}
+ },
+ "腻": {
+  "origin": "The flesh radical ⺼ shows it relates to fat; it means greasy or oily.",
+  "word": {"w": "油腻", "en": "greasy"},
+  "sentence": {"cn": "这菜太油腻。", "en": "This dish is too greasy."}
+ },
+ "腾": {
+  "origin": "A horse 马 leaping up; it means to soar, to rise, or to make room.",
+  "word": {"w": "腾飞", "en": "to soar"},
+  "sentence": {"cn": "火箭腾空而起。", "en": "The rocket soared into the sky."}
+ },
+ "膀": {
+  "origin": "Flesh ⺼ beside 旁 the body; it means upper arm or shoulder.",
+  "word": {"w": "肩膀", "en": "shoulder"},
+  "sentence": {"cn": "鸟儿张开翅膀。", "en": "The bird spreads its wings."}
+ },
+ "膈": {
+  "origin": "The flesh radical ⺼ shows it is a body part; it means diaphragm.",
+  "word": {"w": "横膈", "en": "diaphragm"},
+  "sentence": {"cn": "横膈帮我们呼吸。", "en": "The diaphragm helps us breathe."}
+ },
+ "膏": {
+  "origin": "The flesh radical ⺼ at the bottom; it means fat, grease, or a thick paste.",
+  "word": {"w": "牙膏", "en": "toothpaste"},
+  "sentence": {"cn": "我挤了点牙膏。", "en": "I squeezed out some toothpaste."}
+ },
+ "膘": {
+  "origin": "The flesh radical ⺼ shows it relates to the body; it means the fat of an animal.",
+  "word": {"w": "长膘", "en": "to put on fat"},
+  "sentence": {"cn": "这猪长膘了。", "en": "This pig has fattened up."}
+ },
+ "膜": {
+  "origin": "The flesh radical ⺼ shows it is a body part; it means a thin membrane or film.",
+  "word": {"w": "薄膜", "en": "thin film"},
+  "sentence": {"cn": "鸡蛋里有层膜。", "en": "There is a membrane inside the egg."}
+ },
+ "膝": {
+  "origin": "The flesh radical ⺼ marks a body part; it means knee.",
+  "word": {"w": "膝盖", "en": "knee"},
+  "sentence": {"cn": "我摔伤了膝盖。", "en": "I scraped my knee."}
+ },
+ "膻": {
+  "origin": "With the meat radical ⺼; it means the strong smell of mutton.",
+  "word": {"w": "膻味", "en": "muttony smell"},
+  "sentence": {"cn": "羊肉有点膻味。", "en": "Mutton has a strong smell."}
+ },
+ "臀": {
+  "origin": "The flesh radical ⺼ marks a body part; it means buttocks.",
+  "word": {"w": "臀部", "en": "buttocks"},
+  "sentence": {"cn": "他臀部坐疼了。", "en": "His bottom got sore from sitting."}
+ },
+ "臂": {
+  "origin": "The flesh radical ⺼ marks a body part; it means arm.",
+  "word": {"w": "手臂", "en": "arm"},
+  "sentence": {"cn": "他张开手臂。", "en": "He opened his arms wide."}
+ },
+ "臊": {
+  "origin": "With the flesh radical ⺼; here it means shy or embarrassed.",
+  "word": {"w": "害臊", "en": "to feel shy"},
+  "sentence": {"cn": "小妹妹很害臊。", "en": "The little sister is very shy."}
+ },
+ "臣": {
+  "origin": "Pictures a bowing eye, looking down in respect; it means a court official.",
+  "word": {"w": "大臣", "en": "minister, official"},
+  "sentence": {"cn": "国王有很多大臣。", "en": "The king has many ministers."}
+ }
+}

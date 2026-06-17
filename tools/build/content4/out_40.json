@@ -1,0 +1,252 @@
+{
+ "闲": {
+  "origin": "闲 shows a piece of wood 木 inside a door 门, like a bar that keeps you home with nothing to do; it means idle or free.",
+  "word": {"w": "空闲", "en": "free time, leisure"},
+  "sentence": {"cn": "周末我很空闲。", "en": "On weekends I am very free."}
+ },
+ "闷": {
+  "origin": "闷 puts a heart 心 behind a door 门, like a heart shut inside; it means stuffy or bored.",
+  "word": {"w": "闷热", "en": "hot and stuffy"},
+  "sentence": {"cn": "屋子里很闷。", "en": "It is very stuffy in the room."}
+ },
+ "闸": {
+  "origin": "闸 means a floodgate or sluice that opens and closes like a door 门 to control water.",
+  "word": {"w": "水闸", "en": "water gate, sluice"},
+  "sentence": {"cn": "工人打开了水闸。", "en": "The worker opened the sluice gate."}
+ },
+ "闽": {
+  "origin": "闽 is the short name for Fujian province in southeast China.",
+  "word": {"w": "闽南", "en": "southern Fujian"},
+  "sentence": {"cn": "他来自闽南。", "en": "He comes from southern Fujian."}
+ },
+ "阀": {
+  "origin": "阀 means a valve that opens and shuts to control flow; it can also mean a powerful clique.",
+  "word": {"w": "水阀", "en": "water valve"},
+  "sentence": {"cn": "请关上水阀。", "en": "Please close the water valve."}
+ },
+ "阅": {
+  "origin": "阅 means to read or to inspect something carefully.",
+  "word": {"w": "阅读", "en": "to read"},
+  "sentence": {"cn": "我喜欢阅读。", "en": "I like reading."}
+ },
+ "阉": {
+  "origin": "阉 means to castrate an animal; it was also used for palace eunuchs.",
+  "word": {"w": "阉割", "en": "to castrate"},
+  "sentence": {"cn": "农民给猪阉割。", "en": "The farmer castrated the pig."}
+ },
+ "阎": {
+  "origin": "阎 once meant a village gate; today it is mostly a family name, as in 阎王, the king of the underworld.",
+  "word": {"w": "阎王", "en": "King of Hell (in folklore)"},
+  "sentence": {"cn": "故事里有阎王。", "en": "There is the King of Hell in the story."}
+ },
+ "阔": {
+  "origin": "阔 means wide and broad, like a big open space.",
+  "word": {"w": "宽阔", "en": "wide, broad"},
+  "sentence": {"cn": "这条路很宽阔。", "en": "This road is very wide."}
+ },
+ "队": {
+  "origin": "队 shows people 人 gathered by a mound 阝; it means a team or a line.",
+  "word": {"w": "排队", "en": "to line up, to queue"},
+  "sentence": {"cn": "请大家排队。", "en": "Everyone please line up."}
+ },
+ "防": {
+  "origin": "防 means to guard against or protect, like building a wall 阝 to keep danger out.",
+  "word": {"w": "防止", "en": "to prevent"},
+  "sentence": {"cn": "洗手可以防止生病。", "en": "Washing hands can prevent getting sick."}
+ },
+ "阴": {
+  "origin": "阴 is the place 阝 of the moon 月; it means shady, cloudy, or the dark side.",
+  "word": {"w": "阴天", "en": "cloudy day"},
+  "sentence": {"cn": "今天是阴天。", "en": "Today is a cloudy day."}
+ },
+ "阵": {
+  "origin": "阵 pictures a formation 阝 of war chariots 车; it means a battle array or a short burst.",
+  "word": {"w": "一阵", "en": "a burst, a spell (of)"},
+  "sentence": {"cn": "刮来一阵风。", "en": "A gust of wind blew over."}
+ },
+ "阶": {
+  "origin": "阶 means stairs or steps cut into a hillside 阝.",
+  "word": {"w": "台阶", "en": "steps, stairs"},
+  "sentence": {"cn": "他坐在台阶上。", "en": "He sits on the steps."}
+ },
+ "阿": {
+  "origin": "阿 is a friendly prefix put before names and titles, as in 阿姨 (auntie).",
+  "word": {"w": "阿姨", "en": "auntie"},
+  "sentence": {"cn": "阿姨给我糖。", "en": "Auntie gives me candy."}
+ },
+ "陇": {
+  "origin": "陇 is the short name for the Gansu area and its mountains.",
+  "word": {"w": "陇南", "en": "Longnan (a city in Gansu)"},
+  "sentence": {"cn": "他住在陇南。", "en": "He lives in Longnan."}
+ },
+ "陈": {
+  "origin": "陈 means to lay out or display; it is also a very common family name.",
+  "word": {"w": "陈列", "en": "to display, to exhibit"},
+  "sentence": {"cn": "店里陈列着玩具。", "en": "Toys are displayed in the shop."}
+ },
+ "降": {
+  "origin": "降 shows feet coming down a hill 阝; it means to descend or to lower.",
+  "word": {"w": "下降", "en": "to drop, to fall"},
+  "sentence": {"cn": "气温在下降。", "en": "The temperature is dropping."}
+ },
+ "限": {
+  "origin": "限 means a boundary or limit, the line you should not pass.",
+  "word": {"w": "限制", "en": "to limit, restriction"},
+  "sentence": {"cn": "这里有时间限制。", "en": "There is a time limit here."}
+ },
+ "陕": {
+  "origin": "陕 is the short name for Shaanxi province in northwest China.",
+  "word": {"w": "陕西", "en": "Shaanxi province"},
+  "sentence": {"cn": "西安在陕西。", "en": "Xi'an is in Shaanxi."}
+ },
+ "陡": {
+  "origin": "陡 describes a hillside 阝 that is steep and hard to climb.",
+  "word": {"w": "陡峭", "en": "steep"},
+  "sentence": {"cn": "这座山很陡。", "en": "This mountain is very steep."}
+ },
+ "险": {
+  "origin": "险 first meant a narrow mountain pass and now means dangerous or risky.",
+  "word": {"w": "危险", "en": "dangerous"},
+  "sentence": {"cn": "过马路要小心危险。", "en": "Be careful of danger when crossing the road."}
+ },
+ "陪": {
+  "origin": "陪 means to accompany someone and keep them company.",
+  "word": {"w": "陪伴", "en": "to accompany"},
+  "sentence": {"cn": "妈妈陪我看书。", "en": "Mom reads books with me."}
+ },
+ "陶": {
+  "origin": "陶 means pottery and ceramics shaped from clay.",
+  "word": {"w": "陶器", "en": "pottery"},
+  "sentence": {"cn": "这件陶器很漂亮。", "en": "This piece of pottery is very pretty."}
+ },
+ "陷": {
+  "origin": "陷 shows a pit 臽 by a slope 阝; it means to sink in or fall into a trap.",
+  "word": {"w": "陷阱", "en": "trap, pitfall"},
+  "sentence": {"cn": "小心地上的陷阱。", "en": "Watch out for the trap on the ground."}
+ },
+ "隆": {
+  "origin": "隆 means grand and prosperous, or a deep rumbling sound.",
+  "word": {"w": "隆重", "en": "grand, solemn"},
+  "sentence": {"cn": "婚礼很隆重。", "en": "The wedding was very grand."}
+ },
+ "隋": {
+  "origin": "隋 is the name of the Sui dynasty in Chinese history.",
+  "word": {"w": "隋朝", "en": "the Sui dynasty"},
+  "sentence": {"cn": "隋朝很短。", "en": "The Sui dynasty was very short."}
+ },
+ "隐": {
+  "origin": "隐 means to hide or conceal something out of sight.",
+  "word": {"w": "隐藏", "en": "to hide, to conceal"},
+  "sentence": {"cn": "猫隐藏在床下。", "en": "The cat hides under the bed."}
+ },
+ "隔": {
+  "origin": "隔 means to separate or partition, like a wall between two spaces.",
+  "word": {"w": "隔壁", "en": "next door"},
+  "sentence": {"cn": "隔壁住着老师。", "en": "A teacher lives next door."}
+ },
+ "雀": {
+  "origin": "雀 joins small 小 and bird 隹 to mean a sparrow, a tiny bird.",
+  "word": {"w": "麻雀", "en": "sparrow"},
+  "sentence": {"cn": "树上有一只麻雀。", "en": "There is a sparrow in the tree."}
+ },
+ "雁": {
+  "origin": "雁 means a wild goose, the bird that flies south in autumn.",
+  "word": {"w": "大雁", "en": "wild goose"},
+  "sentence": {"cn": "大雁往南飞。", "en": "The wild geese fly south."}
+ },
+ "雅": {
+  "origin": "雅 means elegant, graceful, and refined.",
+  "word": {"w": "优雅", "en": "elegant, graceful"},
+  "sentence": {"cn": "她跳舞很优雅。", "en": "She dances very gracefully."}
+ },
+ "雇": {
+  "origin": "雇 means to hire or employ someone to work.",
+  "word": {"w": "雇用", "en": "to hire, to employ"},
+  "sentence": {"cn": "工厂雇用了很多人。", "en": "The factory hired many people."}
+ },
+ "雌": {
+  "origin": "雌 means female, used for animals and birds.",
+  "word": {"w": "雌性", "en": "female (of animals)"},
+  "sentence": {"cn": "这是一只雌猫。", "en": "This is a female cat."}
+ },
+ "雪": {
+  "origin": "雪 puts rain 雨 on top of a hand sweeping; it means snow, the white winter rain.",
+  "word": {"w": "雪花", "en": "snowflake"},
+  "sentence": {"cn": "冬天下雪了。", "en": "It snowed in winter."}
+ },
+ "雷": {
+  "origin": "雷 is a storm 雨 over the fields 田; it means thunder.",
+  "word": {"w": "打雷", "en": "to thunder"},
+  "sentence": {"cn": "天上打雷了。", "en": "It is thundering in the sky."}
+ },
+ "雾": {
+  "origin": "雾 has rain 雨 on top; it means fog and mist that float in the air.",
+  "word": {"w": "大雾", "en": "thick fog"},
+  "sentence": {"cn": "早上有大雾。", "en": "There is thick fog in the morning."}
+ },
+ "需": {
+  "origin": "需 shows rain 雨 that crops wait for; it means to need or require.",
+  "word": {"w": "需要", "en": "to need"},
+  "sentence": {"cn": "我需要一支笔。", "en": "I need a pen."}
+ },
+ "震": {
+  "origin": "震 has rain 雨 above; it means to shake or quake, like the ground in an earthquake.",
+  "word": {"w": "地震", "en": "earthquake"},
+  "sentence": {"cn": "昨天发生了地震。", "en": "An earthquake happened yesterday."}
+ },
+ "霉": {
+  "origin": "霉 means mold and mildew, the fuzz that grows on damp food.",
+  "word": {"w": "发霉", "en": "to grow mold, to go moldy"},
+  "sentence": {"cn": "面包发霉了。", "en": "The bread has gone moldy."}
+ },
+ "霍": {
+  "origin": "霍 pictures birds 隹 startled by a storm 雨; it means quickly or suddenly, and is a family name.",
+  "word": {"w": "霍乱", "en": "cholera"},
+  "sentence": {"cn": "他姓霍。", "en": "His surname is Huo."}
+ },
+ "霎": {
+  "origin": "霎 has rain 雨 on top; it means a brief moment or a light drizzle.",
+  "word": {"w": "霎时", "en": "in an instant"},
+  "sentence": {"cn": "霎时下起雨来。", "en": "In an instant it began to rain."}
+ },
+ "霜": {
+  "origin": "霜 has rain 雨 on top; it means frost, the white ice on cold mornings.",
+  "word": {"w": "霜冻", "en": "frost"},
+  "sentence": {"cn": "草地上有霜。", "en": "There is frost on the grass."}
+ },
+ "霞": {
+  "origin": "霞 has rain 雨 on top; it means the rosy clouds at sunrise and sunset.",
+  "word": {"w": "晚霞", "en": "evening glow, sunset clouds"},
+  "sentence": {"cn": "晚霞很美。", "en": "The sunset glow is beautiful."}
+ },
+ "霸": {
+  "origin": "霸 means a tyrant or to dominate by force.",
+  "word": {"w": "霸王", "en": "overlord, tyrant"},
+  "sentence": {"cn": "他喜欢看霸王的故事。", "en": "He likes to read stories about the overlord."}
+ },
+ "靓": {
+  "origin": "靓 means pretty and good-looking, often used in southern China.",
+  "word": {"w": "靓丽", "en": "beautiful, pretty"},
+  "sentence": {"cn": "她今天很靓丽。", "en": "She looks very pretty today."}
+ },
+ "非": {
+  "origin": "非 shows two wings spread in opposite ways; it means not or wrong.",
+  "word": {"w": "非常", "en": "very, extremely"},
+  "sentence": {"cn": "今天非常热。", "en": "Today is extremely hot."}
+ },
+ "革": {
+  "origin": "革 pictures a stretched animal hide; it means leather, and also to change or reform.",
+  "word": {"w": "皮革", "en": "leather"},
+  "sentence": {"cn": "这双鞋是皮革做的。", "en": "These shoes are made of leather."}
+ },
+ "靴": {
+  "origin": "靴 has leather 革 on the side; it means boots.",
+  "word": {"w": "靴子", "en": "boots"},
+  "sentence": {"cn": "冬天我穿靴子。", "en": "I wear boots in winter."}
+ },
+ "靶": {
+  "origin": "靶 has leather 革 on the side; it means a target you aim at.",
+  "word": {"w": "靶子", "en": "target"},
+  "sentence": {"cn": "他对准靶子射箭。", "en": "He aims at the target and shoots an arrow."}
+ }
+}

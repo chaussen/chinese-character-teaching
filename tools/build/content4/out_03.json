@@ -1,0 +1,252 @@
+{
+ "偎": {
+  "origin": "偎 means to cuddle up close to someone you love.",
+  "word": {"w": "依偎", "en": "to snuggle up to"},
+  "sentence": {"cn": "小猫偎在妈妈身边。", "en": "The kitten snuggles up to its mother."}
+ },
+ "偏": {
+  "origin": "偏 means slanted or to one side, not in the middle.",
+  "word": {"w": "偏心", "en": "to favor one side"},
+  "sentence": {"cn": "妈妈不会偏心。", "en": "Mom will not play favorites."}
+ },
+ "偕": {
+  "origin": "偕 means together or accompanied by, going along with someone.",
+  "word": {"w": "偕同", "en": "together with"},
+  "sentence": {"cn": "他偕妻子一起来。", "en": "He came together with his wife."}
+ },
+ "健": {
+  "origin": "健 shows a person 亻 who can build 建 things; it means strong and healthy.",
+  "word": {"w": "健康", "en": "healthy"},
+  "sentence": {"cn": "祝你身体健康。", "en": "Wishing you good health."}
+ },
+ "偶": {
+  "origin": "偶 means by chance, or a doll or puppet shaped like a person.",
+  "word": {"w": "偶尔", "en": "occasionally"},
+  "sentence": {"cn": "我偶尔去公园。", "en": "I occasionally go to the park."}
+ },
+ "偷": {
+  "origin": "偷 means to steal, taking what is not yours.",
+  "word": {"w": "小偷", "en": "thief"},
+  "sentence": {"cn": "不要偷别人的东西。", "en": "Do not steal other people's things."}
+ },
+ "偿": {
+  "origin": "偿 means to repay or pay back what is owed.",
+  "word": {"w": "偿还", "en": "to repay"},
+  "sentence": {"cn": "他偿还了借的钱。", "en": "He repaid the money he borrowed."}
+ },
+ "傅": {
+  "origin": "傅 means a teacher or tutor; it is also a common surname.",
+  "word": {"w": "师傅", "en": "master, skilled worker"},
+  "sentence": {"cn": "师傅教我做饭。", "en": "The master teaches me to cook."}
+ },
+ "傍": {
+  "origin": "傍 means beside or close to, near someone's side 旁.",
+  "word": {"w": "傍晚", "en": "dusk, evening"},
+  "sentence": {"cn": "傍晚天就黑了。", "en": "At dusk the sky grows dark."}
+ },
+ "储": {
+  "origin": "储 means to save up or store things for later.",
+  "word": {"w": "储存", "en": "to store"},
+  "sentence": {"cn": "松鼠储存松果。", "en": "Squirrels store pine cones."}
+ },
+ "催": {
+  "origin": "催 means to urge or hurry someone along.",
+  "word": {"w": "催促", "en": "to urge, to hurry"},
+  "sentence": {"cn": "妈妈催我快起床。", "en": "Mom urges me to get up quickly."}
+ },
+ "傲": {
+  "origin": "傲 means proud or haughty, looking down on others.",
+  "word": {"w": "骄傲", "en": "proud, arrogant"},
+  "sentence": {"cn": "我为你感到骄傲。", "en": "I am proud of you."}
+ },
+ "傻": {
+  "origin": "傻 means silly or foolish.",
+  "word": {"w": "傻瓜", "en": "fool, silly person"},
+  "sentence": {"cn": "别做个傻瓜。", "en": "Don't be a fool."}
+ },
+ "僧": {
+  "origin": "僧 means a Buddhist monk.",
+  "word": {"w": "僧人", "en": "monk"},
+  "sentence": {"cn": "山上住着一位僧人。", "en": "A monk lives on the mountain."}
+ },
+ "僵": {
+  "origin": "僵 means stiff and unable to move.",
+  "word": {"w": "僵硬", "en": "stiff, rigid"},
+  "sentence": {"cn": "天冷手都僵了。", "en": "My hands went stiff from the cold."}
+ },
+ "儿": {
+  "origin": "儿 is the simple form of 兒, a picture of a child; it means son or child.",
+  "word": {"w": "儿子", "en": "son"},
+  "sentence": {"cn": "她有一个儿子。", "en": "She has a son."}
+ },
+ "兀": {
+  "origin": "兀 shows a flat top above legs 儿; it means bare or towering.",
+  "word": {"w": "突兀", "en": "abrupt, sudden"},
+  "sentence": {"cn": "山峰显得很突兀。", "en": "The peak looks very abrupt."}
+ },
+ "兄": {
+  "origin": "兄 shows a mouth 口 above legs 儿; it means elder brother who speaks for the young.",
+  "word": {"w": "兄弟", "en": "brothers"},
+  "sentence": {"cn": "他们是亲兄弟。", "en": "They are real brothers."}
+ },
+ "兆": {
+  "origin": "兆 pictures cracks in oracle bones; it means an omen or a trillion.",
+  "word": {"w": "兆头", "en": "omen, sign"},
+  "sentence": {"cn": "这是个好兆头。", "en": "This is a good sign."}
+ },
+ "光": {
+  "origin": "光 shows a person carrying fire; it means light.",
+  "word": {"w": "阳光", "en": "sunlight"},
+  "sentence": {"cn": "阳光很温暖。", "en": "The sunshine is warm."}
+ },
+ "免": {
+  "origin": "免 means to avoid or be excused from something.",
+  "word": {"w": "免费", "en": "free of charge"},
+  "sentence": {"cn": "今天进门免费。", "en": "Entry is free today."}
+ },
+ "兑": {
+  "origin": "兑 means to exchange, like changing money or cashing a check.",
+  "word": {"w": "兑换", "en": "to exchange (money)"},
+  "sentence": {"cn": "我去银行兑换钱。", "en": "I go to the bank to exchange money."}
+ },
+ "党": {
+  "origin": "党 means a political party or group of people.",
+  "word": {"w": "政党", "en": "political party"},
+  "sentence": {"cn": "这个国家有很多政党。", "en": "This country has many political parties."}
+ },
+ "兜": {
+  "origin": "兜 means a pouch or pocket that holds things.",
+  "word": {"w": "兜里", "en": "in the pocket"},
+  "sentence": {"cn": "他把糖放进兜里。", "en": "He put the candy in his pocket."}
+ },
+ "公": {
+  "origin": "公 means fair or public, sharing 八 what was private 厶.",
+  "word": {"w": "公园", "en": "park"},
+  "sentence": {"cn": "我们去公园玩。", "en": "We go to the park to play."}
+ },
+ "兰": {
+  "origin": "兰 pictures an orchid in bloom.",
+  "word": {"w": "兰花", "en": "orchid"},
+  "sentence": {"cn": "桌上有一盆兰花。", "en": "There is a pot of orchids on the table."}
+ },
+ "共": {
+  "origin": "共 shows two hands holding one thing; it means together or total.",
+  "word": {"w": "一共", "en": "in total, altogether"},
+  "sentence": {"cn": "我们一共五个人。", "en": "There are five of us in total."}
+ },
+ "兵": {
+  "origin": "兵 shows hands holding a weapon; it means a soldier.",
+  "word": {"w": "士兵", "en": "soldier"},
+  "sentence": {"cn": "士兵在保护城市。", "en": "The soldiers are protecting the city."}
+ },
+ "其": {
+  "origin": "其 means that or its, pointing to something already mentioned.",
+  "word": {"w": "其中", "en": "among them"},
+  "sentence": {"cn": "我喜欢其中一个。", "en": "I like one of them."}
+ },
+ "兹": {
+  "origin": "兹 means now or here, often used in formal writing.",
+  "word": {"w": "兹定", "en": "it is hereby decided"},
+  "sentence": {"cn": "兹定明天开会。", "en": "It is hereby set that the meeting is tomorrow."}
+ },
+ "兼": {
+  "origin": "兼 pictures a hand holding two grains; it means both at once.",
+  "word": {"w": "兼职", "en": "part-time job"},
+  "sentence": {"cn": "他放学后做兼职。", "en": "He does a part-time job after school."}
+ },
+ "兽": {
+  "origin": "兽 pictures an animal with horns, eyes, and mouth; it means beast.",
+  "word": {"w": "野兽", "en": "wild beast"},
+  "sentence": {"cn": "森林里有野兽。", "en": "There are wild beasts in the forest."}
+ },
+ "冀": {
+  "origin": "冀 means to hope for; it is also the short name for Hebei.",
+  "word": {"w": "希冀", "en": "to hope for"},
+  "sentence": {"cn": "我希冀明天会更好。", "en": "I hope tomorrow will be better."}
+ },
+ "冈": {
+  "origin": "冈 is the simple form of 岡; it means the ridge of a hill.",
+  "word": {"w": "山冈", "en": "hill, ridge"},
+  "sentence": {"cn": "羊群在山冈上吃草。", "en": "The sheep graze on the hill."}
+ },
+ "册": {
+  "origin": "册 pictures bamboo strips tied together to make a book.",
+  "word": {"w": "画册", "en": "picture album"},
+  "sentence": {"cn": "这是一本画册。", "en": "This is a picture album."}
+ },
+ "冒": {
+  "origin": "冒 means to brave or risk, or to give off as in steam.",
+  "word": {"w": "冒险", "en": "adventure, to take a risk"},
+  "sentence": {"cn": "锅里冒着热气。", "en": "Steam rises from the pot."}
+ },
+ "军": {
+  "origin": "军 pictures soldiers around a cart; it means army.",
+  "word": {"w": "军人", "en": "soldier, serviceman"},
+  "sentence": {"cn": "他是一名军人。", "en": "He is a soldier."}
+ },
+ "冠": {
+  "origin": "冠 shows a hand putting a cap on a head; it means crown or hat.",
+  "word": {"w": "冠军", "en": "champion"},
+  "sentence": {"cn": "他得了冠军。", "en": "He won the championship."}
+ },
+ "冤": {
+  "origin": "冤 means a wrong or injustice done to someone.",
+  "word": {"w": "冤枉", "en": "to wrong, to treat unjustly"},
+  "sentence": {"cn": "你冤枉好人了。", "en": "You have wronged an innocent person."}
+ },
+ "冯": {
+  "origin": "冯 is a common Chinese surname.",
+  "word": {"w": "冯姓", "en": "the surname Feng"},
+  "sentence": {"cn": "我的同学姓冯。", "en": "My classmate's surname is Feng."}
+ },
+ "冰": {
+  "origin": "冰 joins the ice radical 冫 with water 水; it means ice.",
+  "word": {"w": "冰水", "en": "ice water"},
+  "sentence": {"cn": "夏天我爱喝冰水。", "en": "In summer I love drinking ice water."}
+ },
+ "况": {
+  "origin": "况 means a situation or condition; it also means moreover.",
+  "word": {"w": "情况", "en": "situation"},
+  "sentence": {"cn": "请说说现在的情况。", "en": "Please tell me the current situation."}
+ },
+ "冶": {
+  "origin": "冶 means to smelt or melt metal to shape it.",
+  "word": {"w": "冶炼", "en": "to smelt"},
+  "sentence": {"cn": "工厂在冶炼钢铁。", "en": "The factory is smelting steel."}
+ },
+ "冻": {
+  "origin": "冻 joins the ice radical 冫 with east 东; it means to freeze.",
+  "word": {"w": "冷冻", "en": "to freeze"},
+  "sentence": {"cn": "鱼放在冰箱里冷冻。", "en": "The fish is frozen in the fridge."}
+ },
+ "净": {
+  "origin": "净 means clean, without any dirt.",
+  "word": {"w": "干净", "en": "clean"},
+  "sentence": {"cn": "把手洗干净。", "en": "Wash your hands clean."}
+ },
+ "凉": {
+  "origin": "凉 joins the ice radical 冫 with 京; it means cool or cold.",
+  "word": {"w": "凉快", "en": "pleasantly cool"},
+  "sentence": {"cn": "树下很凉快。", "en": "It is nice and cool under the tree."}
+ },
+ "减": {
+  "origin": "减 means to take away or subtract, making less.",
+  "word": {"w": "减少", "en": "to reduce"},
+  "sentence": {"cn": "请减少浪费。", "en": "Please reduce waste."}
+ },
+ "凑": {
+  "origin": "凑 means to put together or gather pieces into a whole.",
+  "word": {"w": "凑齐", "en": "to gather complete"},
+  "sentence": {"cn": "我们凑钱买礼物。", "en": "We pooled money to buy a gift."}
+ },
+ "凝": {
+  "origin": "凝 means to freeze solid or gaze fixedly.",
+  "word": {"w": "凝固", "en": "to solidify"},
+  "sentence": {"cn": "水变冷就会凝固。", "en": "Water solidifies when it gets cold."}
+ },
+ "凡": {
+  "origin": "凡 pictures a flat dish; it means ordinary or every.",
+  "word": {"w": "平凡", "en": "ordinary"},
+  "sentence": {"cn": "他过着平凡的生活。", "en": "He lives an ordinary life."}
+ }
+}

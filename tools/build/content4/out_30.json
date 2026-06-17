@@ -1,0 +1,252 @@
+{
+  "绷": {
+    "origin": "纟 (thread) plus 朋: pulling thread taut, so 绷 means to stretch tight or strap.",
+    "word": {"w": "绷带", "en": "bandage"},
+    "sentence": {"cn": "医生给他包绷带。", "en": "The doctor wraps a bandage on him."}
+  },
+  "绸": {
+    "origin": "纟 (thread) plus 周: woven silk, so 绸 means silk cloth or satin.",
+    "word": {"w": "丝绸", "en": "silk"},
+    "sentence": {"cn": "这条裙子是丝绸做的。", "en": "This dress is made of silk."}
+  },
+  "绺": {
+    "origin": "纟 (thread) plus 咎: a small bundle of threads, so 绺 means a skein or lock.",
+    "word": {"w": "一绺", "en": "a lock, a strand"},
+    "sentence": {"cn": "她剪下一绺头发。", "en": "She cut off a lock of hair."}
+  },
+  "绾": {
+    "origin": "纟 (thread) plus 官: tying threads up neatly, so 绾 means to coil or bind up.",
+    "word": {"w": "绾发", "en": "to tie up the hair"},
+    "sentence": {"cn": "她把头发绾起来。", "en": "She tied her hair up."}
+  },
+  "缄": {
+    "origin": "纟 (thread) plus 咸: binding a letter shut, so 缄 means to seal.",
+    "word": {"w": "缄默", "en": "silent, reticent"},
+    "sentence": {"cn": "他一直缄默不语。", "en": "He stayed silent the whole time."}
+  },
+  "缓": {
+    "origin": "纟 (thread) plus 爰: a loosely held thread, so 缓 means slow or to slow down.",
+    "word": {"w": "缓慢", "en": "slow"},
+    "sentence": {"cn": "火车缓慢地开动。", "en": "The train started moving slowly."}
+  },
+  "缕": {
+    "origin": "纟 (thread) plus 娄: a single thin thread, so 缕 means a strand or wisp.",
+    "word": {"w": "一缕", "en": "a wisp, a strand"},
+    "sentence": {"cn": "一缕烟飘上天。", "en": "A wisp of smoke drifted into the sky."}
+  },
+  "编": {
+    "origin": "纟 (thread) plus 扁: weaving threads together, so 编 means to weave, knit, or compile.",
+    "word": {"w": "编织", "en": "to weave, to knit"},
+    "sentence": {"cn": "她会编小篮子。", "en": "She can weave a small basket."}
+  },
+  "缘": {
+    "origin": "纟 (thread) plus 彖: the thread that links people, so 缘 means fate, bond, or reason.",
+    "word": {"w": "缘故", "en": "reason, cause"},
+    "sentence": {"cn": "不知什么缘故，他没来。", "en": "For some reason, he did not come."}
+  },
+  "缚": {
+    "origin": "纟 (thread) plus 尃: using cord to bind, so 缚 means to tie up.",
+    "word": {"w": "束缚", "en": "to bind, to restrain"},
+    "sentence": {"cn": "绳子缚住了箱子。", "en": "The rope tied up the box."}
+  },
+  "缠": {
+    "origin": "纟 (thread) plus 㢆: thread wound around and around, so 缠 means to wrap or entangle.",
+    "word": {"w": "缠绕", "en": "to twine around"},
+    "sentence": {"cn": "藤蔓缠着树。", "en": "The vine twines around the tree."}
+  },
+  "缩": {
+    "origin": "纟 (thread) plus 宿: thread pulling in, so 缩 means to shrink or pull back.",
+    "word": {"w": "缩小", "en": "to shrink, to reduce"},
+    "sentence": {"cn": "毛衣洗后缩小了。", "en": "The sweater shrank after washing."}
+  },
+  "缫": {
+    "origin": "纟 (thread) plus 巢: drawing silk from cocoons, so 缫 means to reel silk.",
+    "word": {"w": "缫丝", "en": "to reel silk"},
+    "sentence": {"cn": "工人在缫丝。", "en": "The workers are reeling silk."}
+  },
+  "缴": {
+    "origin": "纟 (thread) plus 敫: handing in what is owed, so 缴 means to pay or submit.",
+    "word": {"w": "缴费", "en": "to pay a fee"},
+    "sentence": {"cn": "我去缴学费。", "en": "I am going to pay the tuition."}
+  },
+  "缺": {
+    "origin": "缶 (jar) plus 夬: a broken jar with a piece missing, so 缺 means to lack.",
+    "word": {"w": "缺少", "en": "to lack, to be short of"},
+    "sentence": {"cn": "我们缺少时间。", "en": "We are short of time."}
+  },
+  "罐": {
+    "origin": "缶 (jar) plus 雚: 罐 means a jar, jug, or pot.",
+    "word": {"w": "罐头", "en": "canned food"},
+    "sentence": {"cn": "桌上有一个罐子。", "en": "There is a jar on the table."}
+  },
+  "网": {
+    "origin": "Looks like a net stretched on a frame: 网 means net or web.",
+    "word": {"w": "渔网", "en": "fishing net"},
+    "sentence": {"cn": "渔夫撒下渔网。", "en": "The fisherman casts the net."}
+  },
+  "罗": {
+    "origin": "罒 (net) over 夕: a fine net for catching birds, so 罗 means net or to gather.",
+    "word": {"w": "罗列", "en": "to list out, to set out"},
+    "sentence": {"cn": "桌上罗列着水果。", "en": "Fruit is laid out on the table."}
+  },
+  "罚": {
+    "origin": "罒 (net) over words and 刂 (knife): catching wrongdoers, so 罚 means to punish or fine.",
+    "word": {"w": "惩罚", "en": "to punish"},
+    "sentence": {"cn": "做错事会被罚。", "en": "Doing wrong gets you punished."}
+  },
+  "罢": {
+    "origin": "罒 (net) over 去: caught in a net, then let go, so 罢 means to stop or cease.",
+    "word": {"w": "罢工", "en": "to go on strike"},
+    "sentence": {"cn": "我们休息罢了。", "en": "We are just resting, that's all."}
+  },
+  "罩": {
+    "origin": "罒 (net) over 卓: a net-like cover, so 罩 means a cover or to cover over.",
+    "word": {"w": "口罩", "en": "face mask"},
+    "sentence": {"cn": "出门戴上口罩。", "en": "Put on a mask when going out."}
+  },
+  "罪": {
+    "origin": "罒 (net) over 非 (wrong): caught in a net of wrongdoing, so 罪 means crime or sin.",
+    "word": {"w": "犯罪", "en": "to commit a crime"},
+    "sentence": {"cn": "偷东西是犯罪。", "en": "Stealing is a crime."}
+  },
+  "置": {
+    "origin": "罒 (net) over 直: setting things in their place, so 置 means to place or set up.",
+    "word": {"w": "位置", "en": "position, place"},
+    "sentence": {"cn": "请坐回你的位置。", "en": "Please sit back in your seat."}
+  },
+  "署": {
+    "origin": "罒 (net) over 者: an office that organizes people, so 署 means a bureau or to sign.",
+    "word": {"w": "部署", "en": "to deploy, to arrange"},
+    "sentence": {"cn": "他们部署了任务。", "en": "They arranged the tasks."}
+  },
+  "羞": {
+    "origin": "羊 (sheep) plus 丑: 羞 means shy, ashamed, or shame.",
+    "word": {"w": "害羞", "en": "shy, bashful"},
+    "sentence": {"cn": "小妹妹很害羞。", "en": "The little sister is very shy."}
+  },
+  "羽": {
+    "origin": "Two feathers side by side: 羽 means feather or plume.",
+    "word": {"w": "羽毛", "en": "feather"},
+    "sentence": {"cn": "地上有一根羽毛。", "en": "There is a feather on the ground."}
+  },
+  "翁": {
+    "origin": "公 over 羽 (feather): 翁 means an old man.",
+    "word": {"w": "老翁", "en": "old man"},
+    "sentence": {"cn": "河边坐着一位老翁。", "en": "An old man sits by the river."}
+  },
+  "翅": {
+    "origin": "支 plus 羽 (feather): the feathered parts a bird flies with, so 翅 means wings.",
+    "word": {"w": "翅膀", "en": "wing"},
+    "sentence": {"cn": "小鸟拍着翅膀。", "en": "The little bird flaps its wings."}
+  },
+  "翘": {
+    "origin": "尧 plus 羽 (feather): feathers lifting up, so 翘 means to tilt up or stick up.",
+    "word": {"w": "翘起", "en": "to tilt up, to stick up"},
+    "sentence": {"cn": "小猫翘起尾巴。", "en": "The kitten sticks its tail up."}
+  },
+  "翻": {
+    "origin": "番 plus 羽 (wings): flipping like a bird turning over, so 翻 means to turn over or flip.",
+    "word": {"w": "翻书", "en": "to turn the pages of a book"},
+    "sentence": {"cn": "请翻到第十页。", "en": "Please turn to page ten."}
+  },
+  "翼": {
+    "origin": "羽 (feather) over 異: the feathered wings of a bird or plane, so 翼 means wing.",
+    "word": {"w": "机翼", "en": "airplane wing"},
+    "sentence": {"cn": "飞机的机翼很长。", "en": "The airplane's wings are very long."}
+  },
+  "耀": {
+    "origin": "光 (light) plus 翟: a bright shining tail, so 耀 means to shine or dazzle.",
+    "word": {"w": "耀眼", "en": "dazzling, blinding"},
+    "sentence": {"cn": "阳光很耀眼。", "en": "The sunlight is dazzling."}
+  },
+  "耍": {
+    "origin": "而 over 女: 耍 means to play, frolic, or fool around.",
+    "word": {"w": "玩耍", "en": "to play, to have fun"},
+    "sentence": {"cn": "孩子们在院子里玩耍。", "en": "The children are playing in the yard."}
+  },
+  "耐": {
+    "origin": "而 plus 寸: 耐 means to endure or to be able to bear.",
+    "word": {"w": "耐心", "en": "patience"},
+    "sentence": {"cn": "老师很有耐心。", "en": "The teacher is very patient."}
+  },
+  "耕": {
+    "origin": "耒 (plow) plus 井: working the fields with a plow, so 耕 means to plow or farm.",
+    "word": {"w": "耕地", "en": "to plow the land; farmland"},
+    "sentence": {"cn": "农民在田里耕地。", "en": "The farmer plows the field."}
+  },
+  "耗": {
+    "origin": "耒 (plow) plus 毛: 耗 means to use up or consume.",
+    "word": {"w": "消耗", "en": "to consume, to use up"},
+    "sentence": {"cn": "跑步消耗体力。", "en": "Running uses up energy."}
+  },
+  "耙": {
+    "origin": "耒 (plow) plus 巴: a farm tool with teeth, so 耙 means a rake or to rake.",
+    "word": {"w": "耙子", "en": "rake"},
+    "sentence": {"cn": "他用耙子耙草。", "en": "He rakes the grass with a rake."}
+  },
+  "耧": {
+    "origin": "耒 (plow) plus 娄: a tool pulled along to sow seeds, a seed drill.",
+    "word": {"w": "耧车", "en": "seed-drill plow"},
+    "sentence": {"cn": "用耧车播种很快。", "en": "Sowing with a seed drill is fast."}
+  },
+  "耪": {
+    "origin": "耒 (plow) plus 旁: 耪 means to hoe or loosen the soil.",
+    "word": {"w": "耪地", "en": "to hoe the field"},
+    "sentence": {"cn": "爷爷去地里耪地。", "en": "Grandpa goes to hoe the field."}
+  },
+  "耸": {
+    "origin": "从 over 耳 (ear): rising up high, so 耸 means to tower or shrug up.",
+    "word": {"w": "高耸", "en": "to tower, lofty"},
+    "sentence": {"cn": "高楼高耸入云。", "en": "The tall building towers into the clouds."}
+  },
+  "耿": {
+    "origin": "耳 (ear) plus 火 (fire): 耿 means bright, shining, or honest and devoted.",
+    "word": {"w": "耿直", "en": "honest and frank"},
+    "sentence": {"cn": "他为人耿直。", "en": "He is an honest and frank person."}
+  },
+  "聋": {
+    "origin": "龙 over 耳 (ear): ears that cannot hear, so 聋 means deaf.",
+    "word": {"w": "耳聋", "en": "deaf"},
+    "sentence": {"cn": "老爷爷耳朵有点聋。", "en": "The old grandpa is a bit hard of hearing."}
+  },
+  "职": {
+    "origin": "耳 (ear) plus 只: listening and doing one's duty, so 职 means job or duty.",
+    "word": {"w": "职业", "en": "occupation, profession"},
+    "sentence": {"cn": "医生是个好职业。", "en": "Doctor is a good profession."}
+  },
+  "聘": {
+    "origin": "耳 (ear) plus 甹: inviting someone to a post, so 聘 means to hire or engage.",
+    "word": {"w": "招聘", "en": "to recruit, to hire"},
+    "sentence": {"cn": "公司在招聘工人。", "en": "The company is hiring workers."}
+  },
+  "聚": {
+    "origin": "取 over people standing together: 聚 means to gather or assemble.",
+    "word": {"w": "聚会", "en": "gathering, party"},
+    "sentence": {"cn": "周末我们要聚会。", "en": "We are having a get-together this weekend."}
+  },
+  "肆": {
+    "origin": "镸 plus 聿: 肆 means unrestrained or to indulge; it is also the formal form of four.",
+    "word": {"w": "放肆", "en": "wanton, unbridled"},
+    "sentence": {"cn": "他说话太放肆了。", "en": "He speaks far too rudely."}
+  },
+  "肋": {
+    "origin": "⺼ (flesh) plus 力: the curved bones in the chest, so 肋 means ribs.",
+    "word": {"w": "肋骨", "en": "rib bone"},
+    "sentence": {"cn": "人有很多肋骨。", "en": "People have many ribs."}
+  },
+  "肖": {
+    "origin": "Small marks over ⺼ (flesh): looking like someone in the flesh, so 肖 means to resemble.",
+    "word": {"w": "肖像", "en": "portrait"},
+    "sentence": {"cn": "墙上挂着一幅肖像。", "en": "A portrait hangs on the wall."}
+  },
+  "肘": {
+    "origin": "⺼ (flesh) plus 寸: the joint in the middle of the arm, so 肘 means elbow.",
+    "word": {"w": "手肘", "en": "elbow"},
+    "sentence": {"cn": "他撞到了手肘。", "en": "He bumped his elbow."}
+  },
+  "肛": {
+    "origin": "⺼ (flesh) plus 工: a body opening, so 肛 means anus.",
+    "word": {"w": "肛门", "en": "anus"},
+    "sentence": {"cn": "医生检查了肛门。", "en": "The doctor examined the anus."}
+  }
+}

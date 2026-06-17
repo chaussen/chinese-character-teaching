@@ -1,0 +1,252 @@
+{
+ "鞋": {
+  "origin": "鞋 has leather 革 on the side; it means shoes.",
+  "word": {"w": "鞋子", "en": "shoes"},
+  "sentence": {"cn": "我的鞋子是红色的。", "en": "My shoes are red."}
+ },
+ "鞘": {
+  "origin": "鞘 has leather 革 on the side; it means the sheath or scabbard that holds a knife.",
+  "word": {"w": "刀鞘", "en": "knife sheath"},
+  "sentence": {"cn": "他把刀放进刀鞘。", "en": "He puts the knife into its sheath."}
+ },
+ "鞠": {
+  "origin": "鞠 has leather 革 on the side; it means to bow respectfully.",
+  "word": {"w": "鞠躬", "en": "to bow"},
+  "sentence": {"cn": "学生向老师鞠躬。", "en": "The student bows to the teacher."}
+ },
+ "鞣": {
+  "origin": "鞣 joins leather 革 and soft 柔; it means to tan and soften hides into leather.",
+  "word": {"w": "鞣制", "en": "to tan (leather)"},
+  "sentence": {"cn": "工人鞣制皮子。", "en": "The worker tans the hide."}
+ },
+ "鞭": {
+  "origin": "鞭 has leather 革 on the side; it means a whip.",
+  "word": {"w": "鞭子", "en": "whip"},
+  "sentence": {"cn": "他放下了鞭子。", "en": "He put down the whip."}
+ },
+ "韦": {
+  "origin": "韦 once meant tanned leather; today it is mostly used as a family name.",
+  "word": {"w": "韦编", "en": "leather thongs binding bamboo books"},
+  "sentence": {"cn": "他姓韦。", "en": "His surname is Wei."}
+ },
+ "韩": {
+  "origin": "韩 is the short name for Korea, especially South Korea, and is also a family name.",
+  "word": {"w": "韩国", "en": "South Korea"},
+  "sentence": {"cn": "他去过韩国。", "en": "He has been to South Korea."}
+ },
+ "韵": {
+  "origin": "韵 joins sound 音 and even 匀; it means rhyme and a pleasing tone.",
+  "word": {"w": "押韵", "en": "to rhyme"},
+  "sentence": {"cn": "这首诗很押韵。", "en": "This poem rhymes well."}
+ },
+ "页": {
+  "origin": "页 first drew a person's head and now means a page or sheet of paper.",
+  "word": {"w": "一页", "en": "one page"},
+  "sentence": {"cn": "请翻到下一页。", "en": "Please turn to the next page."}
+ },
+ "顷": {
+  "origin": "顷 means a brief moment; it is also a unit for measuring land.",
+  "word": {"w": "顷刻", "en": "in a moment, instantly"},
+  "sentence": {"cn": "顷刻间天黑了。", "en": "In a moment the sky grew dark."}
+ },
+ "项": {
+  "origin": "项 has head 页 on the side; it means the nape of the neck, and also an item.",
+  "word": {"w": "项目", "en": "item, project"},
+  "sentence": {"cn": "这个项目很有趣。", "en": "This project is very interesting."}
+ },
+ "顾": {
+  "origin": "顾 has head 页 on the side; it means to turn the head and look back, or to care for.",
+  "word": {"w": "照顾", "en": "to take care of"},
+  "sentence": {"cn": "姐姐照顾弟弟。", "en": "The older sister takes care of her younger brother."}
+ },
+ "颇": {
+  "origin": "颇 has head 页 on the side; it means rather or quite.",
+  "word": {"w": "颇为", "en": "rather, quite"},
+  "sentence": {"cn": "这本书颇为有趣。", "en": "This book is rather interesting."}
+ },
+ "颈": {
+  "origin": "颈 has head 页 on the side; it means the neck.",
+  "word": {"w": "脖颈", "en": "neck"},
+  "sentence": {"cn": "长颈鹿的颈很长。", "en": "The giraffe's neck is very long."}
+ },
+ "颊": {
+  "origin": "颊 puts head 页 with 夹; it means the cheeks on the sides of the face.",
+  "word": {"w": "脸颊", "en": "cheek"},
+  "sentence": {"cn": "她的脸颊红红的。", "en": "Her cheeks are rosy red."}
+ },
+ "额": {
+  "origin": "额 has head 页 on the side; it means the forehead, and also a fixed amount.",
+  "word": {"w": "额头", "en": "forehead"},
+  "sentence": {"cn": "他的额头很烫。", "en": "His forehead is very hot."}
+ },
+ "颠": {
+  "origin": "颠 has head 页 on the side; it means the very top, or to bump and jolt.",
+  "word": {"w": "颠倒", "en": "to turn upside down"},
+  "sentence": {"cn": "他把书拿颠倒了。", "en": "He held the book upside down."}
+ },
+ "颤": {
+  "origin": "颤 has head 页 on the side; it means to tremble and shiver.",
+  "word": {"w": "颤抖", "en": "to tremble, to shiver"},
+  "sentence": {"cn": "他冷得颤抖。", "en": "He shivered from the cold."}
+ },
+ "飕": {
+  "origin": "飕 has wind 风; it describes a chilly breeze and its whooshing sound.",
+  "word": {"w": "凉飕飕", "en": "chilly, breezy"},
+  "sentence": {"cn": "风吹得凉飕飕的。", "en": "The wind blows chilly and cool."}
+ },
+ "飞": {
+  "origin": "飞 draws a bird flapping its wings; it means to fly.",
+  "word": {"w": "飞机", "en": "airplane"},
+  "sentence": {"cn": "小鸟飞走了。", "en": "The little bird flew away."}
+ },
+ "食": {
+  "origin": "食 shows a dish of food 良 with a lid 人 on top; it means food and to eat.",
+  "word": {"w": "食物", "en": "food"},
+  "sentence": {"cn": "桌上有很多食物。", "en": "There is a lot of food on the table."}
+ },
+ "餐": {
+  "origin": "餐 has food 食 at the bottom; it means a meal or to dine.",
+  "word": {"w": "早餐", "en": "breakfast"},
+  "sentence": {"cn": "我每天吃早餐。", "en": "I eat breakfast every day."}
+ },
+ "饥": {
+  "origin": "饥 has the food radical 饣 on the side; it means hungry.",
+  "word": {"w": "饥饿", "en": "hungry, starving"},
+  "sentence": {"cn": "小狗饥饿地叫着。", "en": "The puppy barks hungrily."}
+ },
+ "饮": {
+  "origin": "饮 has the food radical 饣 on the side; it means to drink.",
+  "word": {"w": "饮料", "en": "drink, beverage"},
+  "sentence": {"cn": "我想喝点饮料。", "en": "I want to drink a beverage."}
+ },
+ "饰": {
+  "origin": "饰 has the food radical 饣 on the side; it means to decorate or adorn.",
+  "word": {"w": "装饰", "en": "to decorate, decoration"},
+  "sentence": {"cn": "我们装饰教室。", "en": "We decorate the classroom."}
+ },
+ "饶": {
+  "origin": "饶 has the food radical 饣 on the side; it means plentiful, and also to forgive.",
+  "word": {"w": "富饶", "en": "rich, abundant"},
+  "sentence": {"cn": "这片土地很富饶。", "en": "This land is very fertile."}
+ },
+ "饷": {
+  "origin": "饷 has the food radical 饣 on the side; it means pay and rations for soldiers.",
+  "word": {"w": "军饷", "en": "soldiers' pay"},
+  "sentence": {"cn": "士兵领到了军饷。", "en": "The soldiers received their pay."}
+ },
+ "饼": {
+  "origin": "饼 has the food radical 饣 on the side; it means a flat cake or biscuit.",
+  "word": {"w": "饼干", "en": "biscuit, cracker"},
+  "sentence": {"cn": "我爱吃饼干。", "en": "I love eating biscuits."}
+ },
+ "馅": {
+  "origin": "馅 shows food 饣 stuffed into a hole 臽; it means the filling inside dumplings or buns.",
+  "word": {"w": "馅儿", "en": "filling, stuffing"},
+  "sentence": {"cn": "这个包子馅儿很多。", "en": "This bun has a lot of filling."}
+ },
+ "馆": {
+  "origin": "馆 joins food 饣 and official 官; it means a public building like a restaurant or library.",
+  "word": {"w": "图书馆", "en": "library"},
+  "sentence": {"cn": "我去图书馆看书。", "en": "I go to the library to read."}
+ },
+ "馊": {
+  "origin": "馊 joins food 饣 and old 叟; it means food that has gone spoiled and sour.",
+  "word": {"w": "馊味", "en": "spoiled smell, sour odor"},
+  "sentence": {"cn": "饭有一股馊味。", "en": "The rice has a spoiled smell."}
+ },
+ "馋": {
+  "origin": "馋 has the food radical 饣 on the side; it means greedy for tasty food.",
+  "word": {"w": "嘴馋", "en": "gluttonous, fond of eating"},
+  "sentence": {"cn": "弟弟很嘴馋。", "en": "Little brother is very fond of snacks."}
+ },
+ "馍": {
+  "origin": "馍 has the food radical 饣 on the side; it means steamed bread.",
+  "word": {"w": "馒馍", "en": "steamed bun"},
+  "sentence": {"cn": "他吃了一个馍。", "en": "He ate a steamed bun."}
+ },
+ "馏": {
+  "origin": "馏 has the food radical 饣 on the side; it means to distill, or to resteam food.",
+  "word": {"w": "蒸馏", "en": "distillation"},
+  "sentence": {"cn": "蒸馏可以净化水。", "en": "Distillation can purify water."}
+ },
+ "馕": {
+  "origin": "馕 has the food radical 饣 on the side; it is naan, a flat baked bread from Xinjiang.",
+  "word": {"w": "烤馕", "en": "baked naan"},
+  "sentence": {"cn": "新疆的烤馕很香。", "en": "Xinjiang's baked naan is very fragrant."}
+ },
+ "驮": {
+  "origin": "驮 shows a big 大 load on a horse 马; it means to carry on the back.",
+  "word": {"w": "驮运", "en": "to transport on an animal's back"},
+  "sentence": {"cn": "马驮着货物。", "en": "The horse carries the goods on its back."}
+ },
+ "驱": {
+  "origin": "驱 has horse 马 on the side; it means to drive forward or chase away.",
+  "word": {"w": "驱赶", "en": "to drive away"},
+  "sentence": {"cn": "他驱赶蚊子。", "en": "He drives away the mosquitoes."}
+ },
+ "驳": {
+  "origin": "驳 has horse 马 on the side; it means mixed in color, and also to refute.",
+  "word": {"w": "反驳", "en": "to refute, to argue back"},
+  "sentence": {"cn": "他反驳了对方。", "en": "He refuted the other side."}
+ },
+ "驴": {
+  "origin": "驴 has horse 马 on the side; it means a donkey.",
+  "word": {"w": "毛驴", "en": "donkey"},
+  "sentence": {"cn": "农夫牵着毛驴。", "en": "The farmer leads the donkey."}
+ },
+ "驶": {
+  "origin": "驶 has horse 马 on the side; it means to drive or steer a vehicle.",
+  "word": {"w": "驾驶", "en": "to drive"},
+  "sentence": {"cn": "爸爸驾驶汽车。", "en": "Dad drives the car."}
+ },
+ "驹": {
+  "origin": "驹 has horse 马 on the side; it means a young colt.",
+  "word": {"w": "马驹", "en": "colt, foal"},
+  "sentence": {"cn": "小马驹跑得快。", "en": "The little colt runs fast."}
+ },
+ "驻": {
+  "origin": "驻 has horse 马 on the side; it means to stop and stay stationed in a place.",
+  "word": {"w": "驻扎", "en": "to be stationed"},
+  "sentence": {"cn": "士兵驻扎在山下。", "en": "The soldiers are stationed at the foot of the mountain."}
+ },
+ "骂": {
+  "origin": "骂 shows two mouths 口口 above a horse 马; it means to scold or curse.",
+  "word": {"w": "责骂", "en": "to scold"},
+  "sentence": {"cn": "妈妈没有责骂我。", "en": "Mom did not scold me."}
+ },
+ "骚": {
+  "origin": "骚 shows a flea 蚤 bothering a horse 马; it means to disturb or harass.",
+  "word": {"w": "骚扰", "en": "to harass, to disturb"},
+  "sentence": {"cn": "请不要骚扰别人。", "en": "Please do not disturb others."}
+ },
+ "骟": {
+  "origin": "骟 has horse 马 on the side; it means to geld or castrate an animal.",
+  "word": {"w": "骟马", "en": "gelded horse"},
+  "sentence": {"cn": "这是一匹骟马。", "en": "This is a gelded horse."}
+ },
+ "骡": {
+  "origin": "骡 has horse 马 on the side; it means a mule, the child of a horse and a donkey.",
+  "word": {"w": "骡子", "en": "mule"},
+  "sentence": {"cn": "骡子很有力气。", "en": "The mule is very strong."}
+ },
+ "骨": {
+  "origin": "骨 shows bone 冎 with flesh ⺼; it means bone.",
+  "word": {"w": "骨头", "en": "bone"},
+  "sentence": {"cn": "小狗在啃骨头。", "en": "The puppy is gnawing a bone."}
+ },
+ "高": {
+  "origin": "高 pictures a tall building; it means tall or high.",
+  "word": {"w": "高大", "en": "tall and big"},
+  "sentence": {"cn": "这棵树很高。", "en": "This tree is very tall."}
+ },
+ "鬼": {
+  "origin": "鬼 draws a figure with a strange head; it means a ghost.",
+  "word": {"w": "鬼怪", "en": "ghosts and monsters"},
+  "sentence": {"cn": "故事里有鬼怪。", "en": "There are ghosts and monsters in the story."}
+ },
+ "魂": {
+  "origin": "魂 joins cloud 云 and ghost 鬼; it means the soul or spirit.",
+  "word": {"w": "灵魂", "en": "soul, spirit"},
+  "sentence": {"cn": "音乐能打动灵魂。", "en": "Music can touch the soul."}
+ }
+}

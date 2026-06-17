@@ -1,0 +1,252 @@
+{
+  "篷": {
+    "origin": "⺮ (bamboo) over 逢: a bamboo-frame cover, so 篷 means an awning or tent canopy.",
+    "word": {"w": "帐篷", "en": "tent"},
+    "sentence": {"cn": "我们在草地上搭帐篷。", "en": "We pitch a tent on the grass."}
+  },
+  "簇": {
+    "origin": "⺮ (bamboo) over 族: things gathered together, so 簇 means a cluster or bunch.",
+    "word": {"w": "花簇", "en": "cluster of flowers"},
+    "sentence": {"cn": "一簇花开了。", "en": "A cluster of flowers has bloomed."}
+  },
+  "簸": {
+    "origin": "⺮ (bamboo) over 其 and 皮: a bamboo tray for tossing grain to clean it, a winnowing pan.",
+    "word": {"w": "簸箕", "en": "dustpan, winnowing basket"},
+    "sentence": {"cn": "她用簸箕装垃圾。", "en": "She uses a dustpan for the trash."}
+  },
+  "米": {
+    "origin": "Looks like scattered grains: 米 means uncooked rice.",
+    "word": {"w": "大米", "en": "rice (uncooked)"},
+    "sentence": {"cn": "我们买了一袋大米。", "en": "We bought a bag of rice."}
+  },
+  "籴": {
+    "origin": "入 (enter) over 米 (grain): bringing grain in, so 籴 means to buy grain.",
+    "word": {"w": "籴米", "en": "to buy rice"},
+    "sentence": {"cn": "他去市场籴米。", "en": "He went to the market to buy rice."}
+  },
+  "粘": {
+    "origin": "米 (rice) plus 占: cooked rice is sticky, so 粘 means to stick or sticky.",
+    "word": {"w": "粘贴", "en": "to paste, to stick"},
+    "sentence": {"cn": "把照片粘在本子上。", "en": "Stick the photo onto the notebook."}
+  },
+  "粟": {
+    "origin": "覀 over 米 (grain): 粟 is millet, a small grain crop.",
+    "word": {"w": "粟米", "en": "millet"},
+    "sentence": {"cn": "古人种粟。", "en": "Ancient people grew millet."}
+  },
+  "粤": {
+    "origin": "Holds 米 inside; 粤 stands for Guangdong and the Cantonese language.",
+    "word": {"w": "粤语", "en": "Cantonese"},
+    "sentence": {"cn": "他会说粤语。", "en": "He can speak Cantonese."}
+  },
+  "粥": {
+    "origin": "米 (rice) between two 弓 shapes like rising steam: 粥 means porridge or congee.",
+    "word": {"w": "稀粥", "en": "thin porridge"},
+    "sentence": {"cn": "早上我喝一碗粥。", "en": "In the morning I have a bowl of porridge."}
+  },
+  "粪": {
+    "origin": "米 (grain) over 共: what is swept away after eating, so 粪 means dung or manure.",
+    "word": {"w": "粪便", "en": "feces, manure"},
+    "sentence": {"cn": "农民用粪肥地。", "en": "The farmer fertilizes the field with manure."}
+  },
+  "粽": {
+    "origin": "米 (rice) plus 宗: 粽 is the sticky-rice dumpling wrapped in leaves.",
+    "word": {"w": "粽子", "en": "zongzi (rice dumpling)"},
+    "sentence": {"cn": "端午节吃粽子。", "en": "We eat zongzi at the Dragon Boat Festival."}
+  },
+  "糊": {
+    "origin": "米 (rice) plus 胡: rice cooked into a paste; 糊 also means muddled or blurry.",
+    "word": {"w": "糊涂", "en": "muddled, confused"},
+    "sentence": {"cn": "我有点糊涂了。", "en": "I am a little confused."}
+  },
+  "糕": {
+    "origin": "米 (rice) plus 羔: 糕 means cake or pastry made from rice flour.",
+    "word": {"w": "蛋糕", "en": "cake"},
+    "sentence": {"cn": "生日有蛋糕。", "en": "There is a cake for the birthday."}
+  },
+  "糖": {
+    "origin": "米 (rice) plus 唐: sweet stuff often made from grain, so 糖 means sugar or candy.",
+    "word": {"w": "糖果", "en": "candy"},
+    "sentence": {"cn": "小孩爱吃糖。", "en": "Children love eating candy."}
+  },
+  "糙": {
+    "origin": "米 (rice) plus 造: unpolished rice feels rough, so 糙 means coarse or rough.",
+    "word": {"w": "粗糙", "en": "rough, coarse"},
+    "sentence": {"cn": "这块木板很粗糙。", "en": "This board is very rough."}
+  },
+  "糜": {
+    "origin": "麻 over 米 (rice): rice boiled soft, so 糜 means rice gruel.",
+    "word": {"w": "糜烂", "en": "rotten, festering"},
+    "sentence": {"cn": "锅里煮着糜粥。", "en": "Gruel is cooking in the pot."}
+  },
+  "糟": {
+    "origin": "米 (grain) plus 曹: leftover mash from brewing, so 糟 means dregs; it also means a mess.",
+    "word": {"w": "糟糕", "en": "terrible, awful"},
+    "sentence": {"cn": "下雨了，真糟糕。", "en": "It is raining, how terrible."}
+  },
+  "糠": {
+    "origin": "米 (rice) plus 康: the dry husk around the grain, so 糠 means bran or chaff.",
+    "word": {"w": "米糠", "en": "rice bran"},
+    "sentence": {"cn": "米糠可以喂鸡。", "en": "Rice bran can feed the chickens."}
+  },
+  "素": {
+    "origin": "Plain silk thread 糸 below: 素 means plain, simple, or vegetarian.",
+    "word": {"w": "朴素", "en": "plain, simple"},
+    "sentence": {"cn": "她穿得很朴素。", "en": "She dresses very plainly."}
+  },
+  "索": {
+    "origin": "A rope (糸) hanging down: 索 means a thick rope or to search for.",
+    "word": {"w": "绳索", "en": "rope, cord"},
+    "sentence": {"cn": "他抓住绳索往上爬。", "en": "He grabbed the rope and climbed up."}
+  },
+  "紧": {
+    "origin": "Silk thread 糸 pulled hard below: 紧 means tight or tense.",
+    "word": {"w": "紧张", "en": "nervous, tense"},
+    "sentence": {"cn": "考试前我很紧张。", "en": "I am nervous before the exam."}
+  },
+  "絮": {
+    "origin": "如 over 糸 (silk): soft fluffy fibers, so 絮 means cotton padding or fluff.",
+    "word": {"w": "棉絮", "en": "cotton wadding"},
+    "sentence": {"cn": "被子里有棉絮。", "en": "There is cotton padding inside the quilt."}
+  },
+  "纠": {
+    "origin": "纟 (thread) plus 丩: threads twisted together, so 纠 means tangled or to correct.",
+    "word": {"w": "纠正", "en": "to correct"},
+    "sentence": {"cn": "老师纠正我的错字。", "en": "The teacher corrects my wrong characters."}
+  },
+  "纤": {
+    "origin": "纟 (thread) plus 千: very thin threads, so 纤 means fine or slender.",
+    "word": {"w": "纤维", "en": "fiber"},
+    "sentence": {"cn": "蔬菜里有纤维。", "en": "There is fiber in vegetables."}
+  },
+  "级": {
+    "origin": "纟 (thread) plus 及: steps measured like knots on a thread, so 级 means level or grade.",
+    "word": {"w": "年级", "en": "grade (in school)"},
+    "sentence": {"cn": "我读三年级。", "en": "I am in the third grade."}
+  },
+  "纯": {
+    "origin": "纟 (thread) plus 屯: silk with nothing added, so 纯 means pure.",
+    "word": {"w": "纯净", "en": "pure, clean"},
+    "sentence": {"cn": "这是纯净水。", "en": "This is pure water."}
+  },
+  "纱": {
+    "origin": "纟 (thread) plus 少: thin loose threads, so 纱 means gauze or yarn.",
+    "word": {"w": "纱布", "en": "gauze"},
+    "sentence": {"cn": "护士用纱布包伤口。", "en": "The nurse wraps the wound with gauze."}
+  },
+  "纳": {
+    "origin": "纟 (thread) plus 内: bringing thread in, so 纳 means to accept or take in.",
+    "word": {"w": "采纳", "en": "to adopt, to accept"},
+    "sentence": {"cn": "老师采纳了我的意见。", "en": "The teacher accepted my suggestion."}
+  },
+  "纵": {
+    "origin": "纟 (thread) plus 从: a thread let loose, so 纵 means to let go or lengthwise.",
+    "word": {"w": "纵横", "en": "vertical and horizontal, crisscross"},
+    "sentence": {"cn": "马路纵横交错。", "en": "The roads crisscross each other."}
+  },
+  "纹": {
+    "origin": "纟 (thread) plus 文 (pattern): thread-like lines, so 纹 means a line or stripe.",
+    "word": {"w": "花纹", "en": "decorative pattern"},
+    "sentence": {"cn": "这块布有漂亮的花纹。", "en": "This cloth has a pretty pattern."}
+  },
+  "纺": {
+    "origin": "纟 (thread) plus 方: making thread, so 纺 means to spin.",
+    "word": {"w": "纺织", "en": "spinning and weaving, textile"},
+    "sentence": {"cn": "奶奶会纺线。", "en": "Grandma can spin thread."}
+  },
+  "纽": {
+    "origin": "纟 (thread) plus 丑: a thread tied into a knot, so 纽 means a button or knot.",
+    "word": {"w": "纽扣", "en": "button"},
+    "sentence": {"cn": "衣服上有五个纽扣。", "en": "There are five buttons on the shirt."}
+  },
+  "组": {
+    "origin": "纟 (thread) plus 且: threads joined together, so 组 means a group or to organize.",
+    "word": {"w": "小组", "en": "small group"},
+    "sentence": {"cn": "我们分成四个小组。", "en": "We split into four small groups."}
+  },
+  "织": {
+    "origin": "纟 (thread) plus 只: working with thread, so 织 means to weave or knit.",
+    "word": {"w": "编织", "en": "to weave, to knit"},
+    "sentence": {"cn": "妈妈在织毛衣。", "en": "Mom is knitting a sweater."}
+  },
+  "绊": {
+    "origin": "纟 (thread) plus 半: thread that trips you up, so 绊 means to trip or stumble.",
+    "word": {"w": "绊倒", "en": "to trip and fall"},
+    "sentence": {"cn": "他被石头绊倒了。", "en": "He tripped over a stone."}
+  },
+  "经": {
+    "origin": "纟 (thread): the lengthwise threads of weaving; 经 also means classic books and to pass through.",
+    "word": {"w": "经过", "en": "to pass by, to go through"},
+    "sentence": {"cn": "我每天经过公园。", "en": "I pass by the park every day."}
+  },
+  "绑": {
+    "origin": "纟 (thread) plus 邦: using cord, so 绑 means to tie or bind.",
+    "word": {"w": "绑带", "en": "binding strap, bandage"},
+    "sentence": {"cn": "请帮我绑鞋带。", "en": "Please help me tie my shoelaces."}
+  },
+  "绒": {
+    "origin": "纟 (thread) plus 戎: soft fine threads, so 绒 means velvet, fluff, or wool.",
+    "word": {"w": "绒毛", "en": "fine fluff, down"},
+    "sentence": {"cn": "小鸭身上有绒毛。", "en": "The duckling has soft down on its body."}
+  },
+  "绕": {
+    "origin": "纟 (thread) plus 尧: winding thread around, so 绕 means to wind or go around.",
+    "word": {"w": "围绕", "en": "to surround, to revolve around"},
+    "sentence": {"cn": "我们绕着操场跑。", "en": "We run around the playground."}
+  },
+  "绗": {
+    "origin": "纟 (thread) plus 行: stitching long lines through cloth, so 绗 means to quilt.",
+    "word": {"w": "绗缝", "en": "to quilt-stitch"},
+    "sentence": {"cn": "奶奶在绗被子。", "en": "Grandma is quilting the blanket."}
+  },
+  "绘": {
+    "origin": "纟 (thread) plus 会: like embroidering a picture, so 绘 means to draw or paint.",
+    "word": {"w": "绘画", "en": "drawing, painting"},
+    "sentence": {"cn": "我喜欢绘画。", "en": "I like to draw."}
+  },
+  "络": {
+    "origin": "纟 (thread) plus 各: a mesh of threads, so 络 means a net or to connect.",
+    "word": {"w": "网络", "en": "network, internet"},
+    "sentence": {"cn": "我用网络查资料。", "en": "I use the internet to look up information."}
+  },
+  "绞": {
+    "origin": "纟 (thread) plus 交: threads crossing, so 绞 means to twist or wring.",
+    "word": {"w": "绞痛", "en": "cramping pain"},
+    "sentence": {"cn": "她绞干了毛巾。", "en": "She wrung the towel dry."}
+  },
+  "绢": {
+    "origin": "纟 (thread) plus 肙: 绢 is a smooth, thin kind of silk.",
+    "word": {"w": "手绢", "en": "handkerchief"},
+    "sentence": {"cn": "她有一块红手绢。", "en": "She has a red handkerchief."}
+  },
+  "绣": {
+    "origin": "纟 (thread) plus 秀: making something beautiful with thread, so 绣 means to embroider.",
+    "word": {"w": "刺绣", "en": "embroidery"},
+    "sentence": {"cn": "她在布上刺绣。", "en": "She is embroidering on the cloth."}
+  },
+  "绪": {
+    "origin": "纟 (thread) plus 者: the loose end of a thread; 绪 means the beginnings or one's mood.",
+    "word": {"w": "情绪", "en": "mood, emotions"},
+    "sentence": {"cn": "他今天情绪很好。", "en": "He is in a good mood today."}
+  },
+  "绱": {
+    "origin": "纟 (thread) plus 尚: sewing the sole onto a shoe, so 绱 means to attach a sole.",
+    "word": {"w": "绱鞋", "en": "to sole a shoe"},
+    "sentence": {"cn": "鞋匠在绱鞋。", "en": "The cobbler is attaching the sole."}
+  },
+  "绲": {
+    "origin": "纟 (thread) plus 昆: a woven band, so 绲 means a cord or sash.",
+    "word": {"w": "绲边", "en": "edge trimming, piping"},
+    "sentence": {"cn": "衣服的绲边很整齐。", "en": "The trim on the clothes is very neat."}
+  },
+  "绳": {
+    "origin": "纟 (thread) plus 黾: many threads twisted thick, so 绳 means rope or cord.",
+    "word": {"w": "绳子", "en": "rope, string"},
+    "sentence": {"cn": "我们用绳子跳绳。", "en": "We jump rope with the rope."}
+  },
+  "维": {
+    "origin": "纟 (thread) plus 隹: threads holding things together, so 维 means to maintain or hold.",
+    "word": {"w": "维护", "en": "to maintain, to safeguard"},
+    "sentence": {"cn": "我们要维护环境。", "en": "We should protect the environment."}
+  }
+}

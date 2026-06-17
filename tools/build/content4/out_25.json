@@ -1,0 +1,252 @@
+{
+ "狱": {
+  "origin": "两条狗（犭和犬）中间夹着说话的言，表示打官司、坐牢的地方。",
+  "word": {"w": "监狱", "en": "prison"},
+  "sentence": {"cn": "坏人被关进监狱。", "en": "The bad guy was put in prison."}
+ },
+ "猛": {
+  "origin": "反犬旁加孟，本指凶猛的狗，引申为又凶又有力。",
+  "word": {"w": "凶猛", "en": "fierce; ferocious"},
+  "sentence": {"cn": "老虎跑得很猛。", "en": "The tiger runs very fiercely."}
+ },
+ "猪": {
+  "origin": "反犬旁表示动物，加上者表声，就是猪。",
+  "word": {"w": "小猪", "en": "piglet"},
+  "sentence": {"cn": "小猪在睡觉。", "en": "The little pig is sleeping."}
+ },
+ "獒": {
+  "origin": "下面的犬是狗，上面的敖表声，指一种又大又凶的狗。",
+  "word": {"w": "藏獒", "en": "Tibetan mastiff"},
+  "sentence": {"cn": "藏獒是很大的狗。", "en": "A Tibetan mastiff is a very big dog."}
+ },
+ "獾": {
+  "origin": "反犬旁表示动物，雚表声，指一种住在洞里的小兽——獾。",
+  "word": {"w": "獾子", "en": "badger"},
+  "sentence": {"cn": "獾住在山里。", "en": "Badgers live in the mountains."}
+ },
+ "玄": {
+  "origin": "像一束染过色的细丝，颜色又深又黑，所以表示深奥神秘。",
+  "word": {"w": "玄关", "en": "entrance hall (of a home)"},
+  "sentence": {"cn": "这个故事很玄。", "en": "This story is very mysterious."}
+ },
+ "玖": {
+  "origin": "王（玉）字旁表示玉石，久表声，指一种像玉的黑色美石。",
+  "word": {"w": "玖瑰", "en": "a fine dark stone (variant of 玫瑰)"},
+  "sentence": {"cn": "玖是一种美石。", "en": "Jiu is a kind of beautiful stone."}
+ },
+ "现": {
+  "origin": "王（玉）旁加见，玉光被看见，表示出现、显现。",
+  "word": {"w": "出现", "en": "to appear"},
+  "sentence": {"cn": "太阳出现了。", "en": "The sun appeared."}
+ },
+ "班": {
+  "origin": "两块玉中间一把刀，像把玉分开，引申为分组、班级。",
+  "word": {"w": "班级", "en": "class (in school)"},
+  "sentence": {"cn": "我们班有很多人。", "en": "Our class has many people."}
+ },
+ "琼": {
+  "origin": "王（玉）旁加京，表示美玉，也用来形容美好的东西。",
+  "word": {"w": "琼浆", "en": "fine nectar; delicious drink"},
+  "sentence": {"cn": "琼是一种美玉。", "en": "Qiong is a kind of fine jade."}
+ },
+ "瓢": {
+  "origin": "瓜字旁表示葫芦，票表声，指用干葫芦做的舀水勺。",
+  "word": {"w": "水瓢", "en": "water ladle (made from a gourd)"},
+  "sentence": {"cn": "妈妈用瓢舀水。", "en": "Mom scoops water with a ladle."}
+ },
+ "瓤": {
+  "origin": "瓜字旁加襄，指瓜果里面软软的果肉。",
+  "word": {"w": "瓜瓤", "en": "the flesh inside a melon"},
+  "sentence": {"cn": "西瓜瓤很甜。", "en": "The watermelon flesh is very sweet."}
+ },
+ "瓦": {
+  "origin": "像两片互相扣住的屋顶瓦片，就是瓦。",
+  "word": {"w": "瓦片", "en": "roof tile"},
+  "sentence": {"cn": "屋顶上有很多瓦。", "en": "There are many tiles on the roof."}
+ },
+ "瓮": {
+  "origin": "上面公表声，下面瓦表示陶器，指一种大肚子的陶罐。",
+  "word": {"w": "水瓮", "en": "large earthen water jar"},
+  "sentence": {"cn": "水瓮里装满了水。", "en": "The earthen jar is full of water."}
+ },
+ "瓶": {
+  "origin": "并表声，瓦表示陶器，指装东西的瓶子。",
+  "word": {"w": "瓶子", "en": "bottle"},
+  "sentence": {"cn": "桌上有一个瓶子。", "en": "There is a bottle on the table."}
+ },
+ "甄": {
+  "origin": "瓦字旁本指制作陶器，引申为仔细辨别、挑选。",
+  "word": {"w": "甄别", "en": "to screen; to distinguish"},
+  "sentence": {"cn": "老师甄别真假。", "en": "The teacher distinguishes true from false."}
+ },
+ "甘": {
+  "origin": "像嘴里含着一样东西，中间一横表示甜味，所以是甜。",
+  "word": {"w": "甘甜", "en": "sweet"},
+  "sentence": {"cn": "泉水又甜又甘。", "en": "The spring water is sweet and refreshing."}
+ },
+ "甚": {
+  "origin": "甘在上面表示过分喜爱，引申为很、非常的意思。",
+  "word": {"w": "甚至", "en": "even (to the point of)"},
+  "sentence": {"cn": "他甚至忘了吃饭。", "en": "He even forgot to eat."}
+ },
+ "甩": {
+  "origin": "像用字少了一笔，多出一个甩出去的钩，表示扔、抛。",
+  "word": {"w": "甩开", "en": "to fling off; to leave behind"},
+  "sentence": {"cn": "他甩了甩手。", "en": "He gave his hands a shake."}
+ },
+ "甭": {
+  "origin": "不和用合在一起，意思就是不用、不必。",
+  "word": {"w": "甭管", "en": "no need to bother (with)"},
+  "sentence": {"cn": "这事你甭管。", "en": "Don't worry about this matter."}
+ },
+ "由": {
+  "origin": "像田里长出一根苗，表示从这里开始，引申为原因、缘由。",
+  "word": {"w": "理由", "en": "reason"},
+  "sentence": {"cn": "他没有理由生气。", "en": "He has no reason to be angry."}
+ },
+ "甲": {
+  "origin": "像种子破壳长出的样子，本指硬壳，引申为盔甲、第一。",
+  "word": {"w": "指甲", "en": "fingernail"},
+  "sentence": {"cn": "我把指甲剪短了。", "en": "I trimmed my fingernails short."}
+ },
+ "申": {
+  "origin": "像一道闪电从天上划下来，后来借用表示说明、报告。",
+  "word": {"w": "申请", "en": "to apply for"},
+  "sentence": {"cn": "他申请了新工作。", "en": "He applied for a new job."}
+ },
+ "畅": {
+  "origin": "申表声，旁边的昜表示舒展，合起来表示通畅、痛快。",
+  "word": {"w": "畅快", "en": "carefree; smooth and happy"},
+  "sentence": {"cn": "今天玩得很畅快。", "en": "We had a great, carefree time today."}
+ },
+ "界": {
+  "origin": "田在上面，介在下面表声，指田地的分界线。",
+  "word": {"w": "世界", "en": "world"},
+  "sentence": {"cn": "世界真大。", "en": "The world is really big."}
+ },
+ "畏": {
+  "origin": "上面像一个戴着可怕面具的头，让人害怕，所以是畏惧。",
+  "word": {"w": "畏惧", "en": "to fear; to dread"},
+  "sentence": {"cn": "他不畏困难。", "en": "He does not fear difficulties."}
+ },
+ "畜": {
+  "origin": "玄表声，下面的田表示养在地里，指家里养的牲畜。",
+  "word": {"w": "牲畜", "en": "livestock"},
+  "sentence": {"cn": "农民养了很多牲畜。", "en": "The farmer raises a lot of livestock."}
+ },
+ "略": {
+  "origin": "田字旁表示土地，各表声，本指巡视田地，引申为大概、省去。",
+  "word": {"w": "大略", "en": "general idea; roughly"},
+  "sentence": {"cn": "他略懂一点中文。", "en": "He knows a little Chinese."}
+ },
+ "畦": {
+  "origin": "田字旁表示菜地，圭表声，指菜园里分成的一块块小地。",
+  "word": {"w": "菜畦", "en": "vegetable plot"},
+  "sentence": {"cn": "菜畦里种着青菜。", "en": "Green vegetables grow in the plot."}
+ },
+ "番": {
+  "origin": "上面像撒下的种子（米），下面是田，表示在田里反复播种，引申为一回、一次。",
+  "word": {"w": "一番", "en": "a turn; a (round of)"},
+  "sentence": {"cn": "他想了一番。", "en": "He thought it over for a while."}
+ },
+ "疃": {
+  "origin": "田字旁表示土地，童表声，指田边的小村子。",
+  "word": {"w": "村疃", "en": "village; hamlet"},
+  "sentence": {"cn": "小疃里很安静。", "en": "The little hamlet is very quiet."}
+ },
+ "疆": {
+  "origin": "弓和土表示守卫，畺表声，合起来指国家的边界。",
+  "word": {"w": "边疆", "en": "frontier; border region"},
+  "sentence": {"cn": "战士守卫边疆。", "en": "The soldiers guard the frontier."}
+ },
+ "疏": {
+  "origin": "走（疋）过没人耕的荒地，所以表示稀、不亲近、疏忽。",
+  "word": {"w": "稀疏", "en": "sparse; thin"},
+  "sentence": {"cn": "树叶变得稀疏。", "en": "The leaves have become sparse."}
+ },
+ "疔": {
+  "origin": "病字旁表示生病，丁表声，指一种小而硬的疮。",
+  "word": {"w": "疔疮", "en": "a boil; furuncle"},
+  "sentence": {"cn": "他脸上长了疔。", "en": "He has a boil on his face."}
+ },
+ "疤": {
+  "origin": "病字旁表示伤病，巴表声，指伤口好了留下的印子。",
+  "word": {"w": "伤疤", "en": "scar"},
+  "sentence": {"cn": "他手上有道疤。", "en": "He has a scar on his hand."}
+ },
+ "疥": {
+  "origin": "病字旁表示皮肤病，介表声，指一种让人发痒的皮肤病。",
+  "word": {"w": "疥疮", "en": "scabies"},
+  "sentence": {"cn": "他得了疥。", "en": "He caught scabies."}
+ },
+ "疮": {
+  "origin": "病字旁表示生病，仓表声，指皮肤上的脓包、烂处。",
+  "word": {"w": "冻疮", "en": "chilblain; frostbite sore"},
+  "sentence": {"cn": "冬天手上生疮。", "en": "In winter, sores form on the hands."}
+ },
+ "疯": {
+  "origin": "病字旁表示生病，风表声，本指受风得病，引申为发疯。",
+  "word": {"w": "疯狂", "en": "crazy; wild"},
+  "sentence": {"cn": "他高兴得发疯。", "en": "He was crazy with joy."}
+ },
+ "疱": {
+  "origin": "病字旁表示皮肤病，包表声，指皮肤上鼓起的小水泡。",
+  "word": {"w": "水疱", "en": "blister"},
+  "sentence": {"cn": "手上起了水疱。", "en": "A blister formed on the hand."}
+ },
+ "疽": {
+  "origin": "病字旁表示生病，且表声，指一种长在皮下的脓肿。",
+  "word": {"w": "痈疽", "en": "ulcer; carbuncle"},
+  "sentence": {"cn": "这种疽很疼。", "en": "This kind of abscess is very painful."}
+ },
+ "疾": {
+  "origin": "病字旁加矢（箭），像被箭射伤，表示疾病，也指快。",
+  "word": {"w": "疾病", "en": "disease; illness"},
+  "sentence": {"cn": "他得了疾病。", "en": "He fell ill with a disease."}
+ },
+ "痂": {
+  "origin": "病字旁表示伤口，加表声，指伤口结成的硬皮。",
+  "word": {"w": "结痂", "en": "to form a scab"},
+  "sentence": {"cn": "伤口结痂了。", "en": "The wound has scabbed over."}
+ },
+ "症": {
+  "origin": "病字旁表示生病，正表声，指病的样子、毛病。",
+  "word": {"w": "症状", "en": "symptom"},
+  "sentence": {"cn": "他有感冒的症状。", "en": "He has cold symptoms."}
+ },
+ "痈": {
+  "origin": "病字旁表示生病，用表声，指一大片红肿的脓疮。",
+  "word": {"w": "痈疮", "en": "carbuncle; sore"},
+  "sentence": {"cn": "背上长了痈。", "en": "A carbuncle grew on his back."}
+ },
+ "痒": {
+  "origin": "病字旁表示皮肤难受，羊表声，指皮肤发痒想抓。",
+  "word": {"w": "痒痒", "en": "itchy"},
+  "sentence": {"cn": "我的胳膊很痒。", "en": "My arm is very itchy."}
+ },
+ "痘": {
+  "origin": "病字旁表示生病，豆表声，指皮肤上像豆子一样的小疱。",
+  "word": {"w": "水痘", "en": "chickenpox"},
+  "sentence": {"cn": "弟弟出水痘了。", "en": "My little brother has chickenpox."}
+ },
+ "痞": {
+  "origin": "病字旁表示生病，否表声，本指肚里胀闷的病，也指无赖。",
+  "word": {"w": "痞子", "en": "ruffian; hooligan"},
+  "sentence": {"cn": "那个痞子很坏。", "en": "That hooligan is very bad."}
+ },
+ "痣": {
+  "origin": "病字旁加志，皮肤上的小标记，就是痣。",
+  "word": {"w": "黑痣", "en": "black mole"},
+  "sentence": {"cn": "她脸上有颗痣。", "en": "She has a mole on her face."}
+ },
+ "痧": {
+  "origin": "病字旁表示生病，沙表声，指中暑或肚子疼一类的病。",
+  "word": {"w": "刮痧", "en": "gua sha (a folk skin-scraping therapy)"},
+  "sentence": {"cn": "奶奶会刮痧。", "en": "Grandma knows how to do gua sha."}
+ },
+ "痰": {
+  "origin": "病字旁表示生病，炎表声，指嗓子里的黏液。",
+  "word": {"w": "吐痰", "en": "to spit (phlegm)"},
+  "sentence": {"cn": "不要随地吐痰。", "en": "Don't spit on the ground."}
+ }
+}

@@ -1,0 +1,177 @@
+{
+ "魏": {
+  "origin": "魏 has ghost 鬼 on the side; it is the name of the Wei kingdom and a family name.",
+  "word": {"w": "魏国", "en": "the state of Wei"},
+  "sentence": {"cn": "魏国在北方。", "en": "The state of Wei was in the north."}
+ },
+ "魔": {
+  "origin": "魔 puts hemp 麻 over ghost 鬼; it means a demon or magic.",
+  "word": {"w": "魔法", "en": "magic"},
+  "sentence": {"cn": "他会变魔法。", "en": "He can do magic."}
+ },
+ "鲁": {
+  "origin": "鲁 joins fish 鱼 and a mouth's words; it means dull or rash, and is the old name for Shandong.",
+  "word": {"w": "鲁莽", "en": "rash, reckless"},
+  "sentence": {"cn": "做事不要鲁莽。", "en": "Do not be rash when doing things."}
+ },
+ "鲍": {
+  "origin": "鲍 has fish 鱼 on the side; it means abalone, and is also a family name.",
+  "word": {"w": "鲍鱼", "en": "abalone"},
+  "sentence": {"cn": "鲍鱼很贵。", "en": "Abalone is very expensive."}
+ },
+ "鲜": {
+  "origin": "鲜 joins fish 鱼 and sheep 羊; it means fresh and tasty.",
+  "word": {"w": "新鲜", "en": "fresh"},
+  "sentence": {"cn": "这些水果很新鲜。", "en": "These fruits are very fresh."}
+ },
+ "鳃": {
+  "origin": "鳃 has fish 鱼 on the side; it means the gills a fish breathes with.",
+  "word": {"w": "鱼鳃", "en": "fish gills"},
+  "sentence": {"cn": "鱼用鱼鳃呼吸。", "en": "Fish breathe with their gills."}
+ },
+ "鳄": {
+  "origin": "鳄 has fish 鱼 on the side; it means a crocodile or alligator.",
+  "word": {"w": "鳄鱼", "en": "crocodile"},
+  "sentence": {"cn": "鳄鱼住在河里。", "en": "Crocodiles live in the river."}
+ },
+ "鳍": {
+  "origin": "鳍 has fish 鱼 on the side; it means a fish's fin.",
+  "word": {"w": "鱼鳍", "en": "fish fin"},
+  "sentence": {"cn": "鱼鳍帮助游泳。", "en": "Fins help the fish swim."}
+ },
+ "鳔": {
+  "origin": "鳔 has fish 鱼 on the side; it means the swim bladder that helps a fish float.",
+  "word": {"w": "鱼鳔", "en": "swim bladder"},
+  "sentence": {"cn": "鱼鳔帮助鱼浮起来。", "en": "The swim bladder helps the fish float."}
+ },
+ "鳖": {
+  "origin": "鳖 has fish 鱼 at the bottom; it means a soft-shelled turtle.",
+  "word": {"w": "甲鳖", "en": "soft-shelled turtle"},
+  "sentence": {"cn": "池塘里有甲鳖。", "en": "There is a soft-shelled turtle in the pond."}
+ },
+ "鳞": {
+  "origin": "鳞 has fish 鱼 on the side; it means the scales on a fish.",
+  "word": {"w": "鱼鳞", "en": "fish scales"},
+  "sentence": {"cn": "鱼身上有鱼鳞。", "en": "There are scales on the fish's body."}
+ },
+ "鸠": {
+  "origin": "鸠 has bird 鸟 on the side; it means a turtledove or pigeon.",
+  "word": {"w": "斑鸠", "en": "turtledove"},
+  "sentence": {"cn": "树上停着斑鸠。", "en": "A turtledove perches in the tree."}
+ },
+ "鸢": {
+  "origin": "鸢 has bird 鸟 at the bottom; it means a kite, a bird of prey.",
+  "word": {"w": "鸢尾", "en": "iris (the flower)"},
+  "sentence": {"cn": "花园里开着鸢尾。", "en": "Irises are blooming in the garden."}
+ },
+ "鸣": {
+  "origin": "鸣 joins mouth 口 and bird 鸟; it means the cry a bird makes.",
+  "word": {"w": "鸣叫", "en": "to chirp, to cry (of birds)"},
+  "sentence": {"cn": "小鸟在鸣叫。", "en": "The little bird is chirping."}
+ },
+ "鸽": {
+  "origin": "鸽 has bird 鸟 on the side; it means a pigeon or dove.",
+  "word": {"w": "鸽子", "en": "pigeon, dove"},
+  "sentence": {"cn": "广场上有很多鸽子。", "en": "There are many pigeons in the square."}
+ },
+ "鹅": {
+  "origin": "鹅 has bird 鸟 on the side; it means a goose.",
+  "word": {"w": "白鹅", "en": "white goose"},
+  "sentence": {"cn": "河边有一只白鹅。", "en": "There is a white goose by the river."}
+ },
+ "鹤": {
+  "origin": "鹤 has bird 鸟 on the side; it means a crane, a tall elegant bird.",
+  "word": {"w": "白鹤", "en": "white crane"},
+  "sentence": {"cn": "白鹤站在水里。", "en": "The white crane stands in the water."}
+ },
+ "鹫": {
+  "origin": "鹫 has bird 鸟 at the bottom; it means a vulture or condor.",
+  "word": {"w": "秃鹫", "en": "vulture"},
+  "sentence": {"cn": "秃鹫在天上飞。", "en": "The vulture flies in the sky."}
+ },
+ "鹰": {
+  "origin": "鹰 has bird 鸟 at the bottom; it means an eagle or hawk.",
+  "word": {"w": "老鹰", "en": "eagle, hawk"},
+  "sentence": {"cn": "老鹰飞得很高。", "en": "The eagle flies very high."}
+ },
+ "鹳": {
+  "origin": "鹳 has bird 鸟 on the side; it means a stork, a tall wading bird.",
+  "word": {"w": "鹳鸟", "en": "stork"},
+  "sentence": {"cn": "鹳鸟在水边找鱼。", "en": "The stork looks for fish by the water."}
+ },
+ "鹿": {
+  "origin": "鹿 draws a deer with antlers, legs, and a tail; it means deer.",
+  "word": {"w": "小鹿", "en": "little deer, fawn"},
+  "sentence": {"cn": "森林里有小鹿。", "en": "There is a little deer in the forest."}
+ },
+ "麝": {
+  "origin": "麝 has deer 鹿 on top; it means the musk deer.",
+  "word": {"w": "麝香", "en": "musk"},
+  "sentence": {"cn": "麝香气味很浓。", "en": "Musk has a very strong scent."}
+ },
+ "麦": {
+  "origin": "麦 pictures grain ready to be harvested; it means wheat.",
+  "word": {"w": "小麦", "en": "wheat"},
+  "sentence": {"cn": "农民种小麦。", "en": "The farmers grow wheat."}
+ },
+ "麻": {
+  "origin": "麻 shows hemp plants 林 under a shed 广; it means hemp, and also numb.",
+  "word": {"w": "麻烦", "en": "trouble, troublesome"},
+  "sentence": {"cn": "这件事很麻烦。", "en": "This matter is very troublesome."}
+ },
+ "黎": {
+  "origin": "黎 means many or numerous; it is also used for dawn, as in 黎明.",
+  "word": {"w": "黎明", "en": "dawn, daybreak"},
+  "sentence": {"cn": "黎明天就亮了。", "en": "At dawn the sky brightens."}
+ },
+ "黏": {
+  "origin": "黏 has millet 黍 on the side; it means sticky.",
+  "word": {"w": "黏液", "en": "sticky liquid, mucus"},
+  "sentence": {"cn": "蜗牛留下黏液。", "en": "The snail leaves behind sticky slime."}
+ },
+ "黔": {
+  "origin": "黔 has black 黑 on the side; it means black, and is the short name for Guizhou.",
+  "word": {"w": "黔南", "en": "southern Guizhou"},
+  "sentence": {"cn": "他住在黔南。", "en": "He lives in southern Guizhou."}
+ },
+ "默": {
+  "origin": "默 shows a dog 犬 in the dark 黑; it means silent and quiet.",
+  "word": {"w": "默默", "en": "silently, quietly"},
+  "sentence": {"cn": "她默默地看书。", "en": "She reads quietly."}
+ },
+ "鼎": {
+  "origin": "鼎 pictures a three-legged bronze cauldron used in ancient times.",
+  "word": {"w": "鼎力", "en": "with all one's strength (formal)"},
+  "sentence": {"cn": "谢谢你的鼎力帮助。", "en": "Thank you for your great help."}
+ },
+ "鼻": {
+  "origin": "鼻 has self 自 on top, which once drew a nose; it means nose.",
+  "word": {"w": "鼻子", "en": "nose"},
+  "sentence": {"cn": "大象的鼻子很长。", "en": "The elephant's nose is very long."}
+ },
+ "鼾": {
+  "origin": "鼾 has nose 鼻 on the side; it means to snore loudly.",
+  "word": {"w": "鼾声", "en": "snoring sound"},
+  "sentence": {"cn": "爷爷的鼾声很大。", "en": "Grandpa's snoring is very loud."}
+ },
+ "齐": {
+  "origin": "齐 shows things grown to the same height; it means even, neat, and together.",
+  "word": {"w": "整齐", "en": "neat, tidy"},
+  "sentence": {"cn": "书架很整齐。", "en": "The bookshelf is very tidy."}
+ },
+ "齿": {
+  "origin": "齿 draws teeth inside the mouth; it means teeth.",
+  "word": {"w": "牙齿", "en": "teeth"},
+  "sentence": {"cn": "我每天刷牙齿。", "en": "I brush my teeth every day."}
+ },
+ "龚": {
+  "origin": "龚 has dragon 龙 on top; it once meant to give, and today is mostly a family name.",
+  "word": {"w": "龚姓", "en": "the surname Gong"},
+  "sentence": {"cn": "她姓龚。", "en": "Her surname is Gong."}
+ },
+ "龟": {
+  "origin": "龟 draws a turtle with its shell and tail; it means turtle or tortoise.",
+  "word": {"w": "乌龟", "en": "turtle, tortoise"},
+  "sentence": {"cn": "乌龟走得很慢。", "en": "The turtle walks very slowly."}
+ }
+}

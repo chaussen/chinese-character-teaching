@@ -1,0 +1,252 @@
+{
+  "妓": {
+    "origin": "由“女”和“支”组成，“支”也提示读音。",
+    "word": {"w": "妓女", "en": "prostitute"},
+    "sentence": {"cn": "这个字里有“女”字旁，读作妓。", "en": "This character has the woman radical and is read jì."}
+  },
+  "妖": {
+    "origin": "“女”表示意思，“夭”提示读音，指奇怪的精怪。",
+    "word": {"w": "妖怪", "en": "monster, demon"},
+    "sentence": {"cn": "故事里有一个大妖怪。", "en": "There is a big monster in the story."}
+  },
+  "妙": {
+    "origin": "“女”加“少”，形容美好又神奇。",
+    "word": {"w": "美妙", "en": "wonderful, marvelous"},
+    "sentence": {"cn": "这首歌真美妙。", "en": "This song is truly wonderful."}
+  },
+  "妞": {
+    "origin": "“女”加“丑”，是对小女孩的亲切叫法。",
+    "word": {"w": "小妞", "en": "little girl"},
+    "sentence": {"cn": "那个小妞很可爱。", "en": "That little girl is very cute."}
+  },
+  "妥": {
+    "origin": "上面是手“爫”，下面是“女”，表示安排得当、稳妥。",
+    "word": {"w": "妥当", "en": "appropriate, proper"},
+    "sentence": {"cn": "事情都办妥了。", "en": "Everything has been settled properly."}
+  },
+  "妾": {
+    "origin": "古时指地位较低的小老婆。",
+    "word": {"w": "妻妾", "en": "wife and concubine"},
+    "sentence": {"cn": "书里讲到古代的妻妾。", "en": "The book talks about wives and concubines in ancient times."}
+  },
+  "姑": {
+    "origin": "“女”加“古”，指爸爸的姐妹，也叫姑姑。",
+    "word": {"w": "姑姑", "en": "father's sister, aunt"},
+    "sentence": {"cn": "我的姑姑很喜欢我。", "en": "My aunt likes me very much."}
+  },
+  "姓": {
+    "origin": "“女”加“生”，指家族传下来的姓氏。",
+    "word": {"w": "姓名", "en": "full name"},
+    "sentence": {"cn": "请写下你的姓名。", "en": "Please write down your full name."}
+  },
+  "委": {
+    "origin": "“禾”加“女”，有交付、托付的意思。",
+    "word": {"w": "委托", "en": "to entrust"},
+    "sentence": {"cn": "他把这件事委托给我。", "en": "He entrusted this matter to me."}
+  },
+  "姚": {
+    "origin": "“女”表示意思，“兆”提示读音，常用作姓。",
+    "word": {"w": "姓姚", "en": "surnamed Yao"},
+    "sentence": {"cn": "我的同学姓姚。", "en": "My classmate's surname is Yao."}
+  },
+  "姜": {
+    "origin": "一种又香又辣的根，做菜常用，也用作姓。",
+    "word": {"w": "生姜", "en": "ginger"},
+    "sentence": {"cn": "妈妈做菜放了生姜。", "en": "Mom put ginger in the dish."}
+  },
+  "姨": {
+    "origin": "“女”加“夷”，指妈妈的姐妹，也叫阿姨。",
+    "word": {"w": "阿姨", "en": "aunt (mother's sister)"},
+    "sentence": {"cn": "阿姨给我买了糖。", "en": "Auntie bought me candy."}
+  },
+  "威": {
+    "origin": "有力量、让人敬畏的样子，叫威风。",
+    "word": {"w": "威风", "en": "impressive, awe-inspiring"},
+    "sentence": {"cn": "大狮子很威风。", "en": "The big lion is very impressive."}
+  },
+  "娃": {
+    "origin": "“女”加“圭”，指小娃娃、小宝宝。",
+    "word": {"w": "娃娃", "en": "baby, doll"},
+    "sentence": {"cn": "妹妹抱着一个娃娃。", "en": "My little sister is holding a doll."}
+  },
+  "娇": {
+    "origin": "“女”表示意思，“乔”提示读音，形容娇嫩可爱。",
+    "word": {"w": "娇气", "en": "delicate, pampered"},
+    "sentence": {"cn": "这朵花很娇嫩。", "en": "This flower is very delicate."}
+  },
+  "娘": {
+    "origin": "“女”加“良”，是对妈妈的称呼。",
+    "word": {"w": "姑娘", "en": "girl, young woman"},
+    "sentence": {"cn": "那个姑娘在唱歌。", "en": "That girl is singing."}
+  },
+  "娶": {
+    "origin": "上面是“取”，下面是“女”，指男子结婚把妻子接回家。",
+    "word": {"w": "娶妻", "en": "to take a wife"},
+    "sentence": {"cn": "叔叔今年要娶媳妇。", "en": "My uncle is getting married this year."}
+  },
+  "娼": {
+    "origin": "“女”表示意思，“昌”提示读音。",
+    "word": {"w": "娼妓", "en": "prostitute"},
+    "sentence": {"cn": "这个字写起来有娼字。", "en": "This word contains the character chāng."}
+  },
+  "婚": {
+    "origin": "“女”加“昏”，指男女结成夫妻。",
+    "word": {"w": "结婚", "en": "to get married"},
+    "sentence": {"cn": "他们明天就要结婚了。", "en": "They are getting married tomorrow."}
+  },
+  "媒": {
+    "origin": "“女”表示意思，“某”提示读音，原指帮人说亲的人。",
+    "word": {"w": "媒人", "en": "matchmaker"},
+    "sentence": {"cn": "媒人帮他们认识。", "en": "The matchmaker helped them get to know each other."}
+  },
+  "媚": {
+    "origin": "“女”加“眉”，形容样子好看、讨人喜欢。",
+    "word": {"w": "妩媚", "en": "charming, lovely"},
+    "sentence": {"cn": "春光很明媚。", "en": "The spring scenery is bright and lovely."}
+  },
+  "嫁": {
+    "origin": "“女”加“家”，指女子结婚到男方家。",
+    "word": {"w": "出嫁", "en": "(of a woman) to marry"},
+    "sentence": {"cn": "姐姐明年要出嫁。", "en": "My older sister will get married next year."}
+  },
+  "嫂": {
+    "origin": "“女”加“叟”，指哥哥的妻子。",
+    "word": {"w": "嫂子", "en": "elder brother's wife"},
+    "sentence": {"cn": "嫂子做的饭很好吃。", "en": "My sister-in-law cooks delicious food."}
+  },
+  "嫌": {
+    "origin": "“女”加“兼”，有不喜欢、嫌弃的意思。",
+    "word": {"w": "嫌弃", "en": "to dislike, to mind"},
+    "sentence": {"cn": "他嫌这碗汤太咸。", "en": "He thinks this soup is too salty."}
+  },
+  "嫖": {
+    "origin": "“女”表示意思，“票”提示读音。",
+    "word": {"w": "嫖客", "en": "patron of a prostitute"},
+    "sentence": {"cn": "这个字读作嫖。", "en": "This character is read piáo."}
+  },
+  "嫩": {
+    "origin": "形容又软又新鲜，刚长出来的样子。",
+    "word": {"w": "嫩绿", "en": "tender green"},
+    "sentence": {"cn": "春天的小草很嫩。", "en": "The grass in spring is very tender."}
+  },
+  "孕": {
+    "origin": "里面有个“子”，表示妈妈肚子里有了小宝宝。",
+    "word": {"w": "怀孕", "en": "to be pregnant"},
+    "sentence": {"cn": "妈妈说她怀孕了。", "en": "Mom said she is pregnant."}
+  },
+  "存": {
+    "origin": "有保留、放着不动的意思。",
+    "word": {"w": "存钱", "en": "to save money"},
+    "sentence": {"cn": "我把零花钱存起来。", "en": "I save up my pocket money."}
+  },
+  "孙": {
+    "origin": "“子”加“小”，指儿女的孩子，是孙子孙女。",
+    "word": {"w": "孙子", "en": "grandson"},
+    "sentence": {"cn": "爷爷很疼他的孙子。", "en": "Grandpa loves his grandson very much."}
+  },
+  "孝": {
+    "origin": "上面像老人，下面是“子”，指孩子敬爱老人。",
+    "word": {"w": "孝顺", "en": "filial, dutiful"},
+    "sentence": {"cn": "他是个孝顺的孩子。", "en": "He is a filial child."}
+  },
+  "孤": {
+    "origin": "“子”加“瓜”，指一个人很孤单。",
+    "word": {"w": "孤单", "en": "lonely, alone"},
+    "sentence": {"cn": "他一个人觉得很孤单。", "en": "He feels very lonely all by himself."}
+  },
+  "孬": {
+    "origin": "“不”加“好”，就是不好的意思。",
+    "word": {"w": "孬种", "en": "coward"},
+    "sentence": {"cn": "这个字是不好的孬。", "en": "This character means 'not good', nāo."}
+  },
+  "孵": {
+    "origin": "“卵”加“孚”，指母鸡趴在蛋上把小鸡孵出来。",
+    "word": {"w": "孵蛋", "en": "to hatch eggs"},
+    "sentence": {"cn": "母鸡在孵小鸡。", "en": "The hen is hatching her chicks."}
+  },
+  "宁": {
+    "origin": "宝盖头“宀”是屋顶，下面是“丁”，表示安静、平安。",
+    "word": {"w": "安宁", "en": "peaceful, tranquil"},
+    "sentence": {"cn": "夜里很安宁。", "en": "The night is very peaceful."}
+  },
+  "宅": {
+    "origin": "宝盖头“宀”表示房子，指住的地方。",
+    "word": {"w": "住宅", "en": "residence, house"},
+    "sentence": {"cn": "这是一座大住宅。", "en": "This is a big house."}
+  },
+  "宇": {
+    "origin": "宝盖头“宀”表示房子，也指广大的空间。",
+    "word": {"w": "宇宙", "en": "universe, cosmos"},
+    "sentence": {"cn": "宇宙非常大。", "en": "The universe is very big."}
+  },
+  "安": {
+    "origin": "屋子“宀”里有个“女”，表示平安、安静。",
+    "word": {"w": "安全", "en": "safe, safety"},
+    "sentence": {"cn": "过马路要注意安全。", "en": "Be careful and stay safe when crossing the road."}
+  },
+  "宋": {
+    "origin": "屋子“宀”里有“木”，是一个朝代的名字，也用作姓。",
+    "word": {"w": "宋朝", "en": "the Song dynasty"},
+    "sentence": {"cn": "老师讲了宋朝的故事。", "en": "The teacher told a story about the Song dynasty."}
+  },
+  "宗": {
+    "origin": "屋子“宀”里有祭台“示”，指祖先和家族。",
+    "word": {"w": "祖宗", "en": "ancestors"},
+    "sentence": {"cn": "我们要记住祖宗。", "en": "We should remember our ancestors."}
+  },
+  "宛": {
+    "origin": "宝盖头“宀”提示意思，有好像、仿佛的意思。",
+    "word": {"w": "宛如", "en": "just like, as if"},
+    "sentence": {"cn": "她唱歌宛如小鸟。", "en": "She sings just like a little bird."}
+  },
+  "宜": {
+    "origin": "屋子“宀”里安排得当，表示合适。",
+    "word": {"w": "适宜", "en": "suitable, appropriate"},
+    "sentence": {"cn": "这里很适宜散步。", "en": "This place is suitable for a walk."}
+  },
+  "宠": {
+    "origin": "屋子“宀”里养着“龙”，表示特别疼爱。",
+    "word": {"w": "宠物", "en": "pet"},
+    "sentence": {"cn": "我家有一只宠物猫。", "en": "My family has a pet cat."}
+  },
+  "审": {
+    "origin": "宝盖头“宀”加“申”，指仔细看、仔细查。",
+    "word": {"w": "审查", "en": "to examine, to review"},
+    "sentence": {"cn": "老师在审查作业。", "en": "The teacher is checking the homework."}
+  },
+  "宣": {
+    "origin": "在屋子里大声告诉大家，叫宣布。",
+    "word": {"w": "宣布", "en": "to announce, to declare"},
+    "sentence": {"cn": "老师宣布放假了。", "en": "The teacher announced a holiday."}
+  },
+  "室": {
+    "origin": "宝盖头“宀”表示房子，指屋子、房间。",
+    "word": {"w": "教室", "en": "classroom"},
+    "sentence": {"cn": "我们在教室里上课。", "en": "We have class in the classroom."}
+  },
+  "宫": {
+    "origin": "宝盖头“宀”下面有相连的房间，指帝王住的大房子。",
+    "word": {"w": "宫殿", "en": "palace"},
+    "sentence": {"cn": "皇帝住在大宫殿里。", "en": "The emperor lives in a great palace."}
+  },
+  "宰": {
+    "origin": "有杀牲口、也有主管的意思。",
+    "word": {"w": "宰杀", "en": "to slaughter"},
+    "sentence": {"cn": "过年要宰一头猪。", "en": "A pig is slaughtered for the New Year."}
+  },
+  "宴": {
+    "origin": "在屋子“宀”里摆酒席请客，叫宴会。",
+    "word": {"w": "宴会", "en": "banquet, feast"},
+    "sentence": {"cn": "他们办了一场宴会。", "en": "They held a banquet."}
+  },
+  "容": {
+    "origin": "有容纳、样子的意思，如容易、笑容。",
+    "word": {"w": "容易", "en": "easy"},
+    "sentence": {"cn": "这道题很容易。", "en": "This problem is very easy."}
+  },
+  "宽": {
+    "origin": "宝盖头“宀”表示空间大，指又宽又大。",
+    "word": {"w": "宽大", "en": "wide, spacious"},
+    "sentence": {"cn": "这条马路又宽又长。", "en": "This road is wide and long."}
+  }
+}

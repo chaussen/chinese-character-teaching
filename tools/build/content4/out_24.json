@@ -1,0 +1,252 @@
+{
+  "焊": {
+    "origin": "Fire 火 with dry 旱 heat; to weld metal together.",
+    "word": {"w": "焊接", "en": "to weld"},
+    "sentence": {"cn": "工人在焊铁管。", "en": "The worker is welding iron pipes."}
+  },
+  "焐": {
+    "origin": "Fire 火 used to warm something up.",
+    "word": {"w": "焐热", "en": "to warm up"},
+    "sentence": {"cn": "用手焐热杯子。", "en": "Warm the cup with your hands."}
+  },
+  "焖": {
+    "origin": "Fire 火 kept shut 闷 in; to cook slowly with a lid.",
+    "word": {"w": "焖饭", "en": "to cook rice (covered)"},
+    "sentence": {"cn": "妈妈在焖米饭。", "en": "Mom is cooking the rice."}
+  },
+  "焗": {
+    "origin": "Fire 火 in a closed 局 space; to bake or roast.",
+    "word": {"w": "焗油", "en": "to deep-condition hair"},
+    "sentence": {"cn": "这是焗烤的菜。", "en": "This is a baked dish."}
+  },
+  "焙": {
+    "origin": "Fire 火 used to gently dry and bake.",
+    "word": {"w": "烘焙", "en": "to bake"},
+    "sentence": {"cn": "她在焙面包。", "en": "She is baking bread."}
+  },
+  "焚": {
+    "origin": "Setting fire 火 to a forest 林; to burn up.",
+    "word": {"w": "焚烧", "en": "to burn, to incinerate"},
+    "sentence": {"cn": "树林被焚烧了。", "en": "The forest was burned down."}
+  },
+  "焦": {
+    "origin": "A bird 隹 over fire 灬; burned and scorched.",
+    "word": {"w": "焦急", "en": "anxious"},
+    "sentence": {"cn": "面包烤焦了。", "en": "The bread got burned."}
+  },
+  "然": {
+    "origin": "Meat over fire 灬; means 'so' or 'thus'.",
+    "word": {"w": "然后", "en": "then, afterward"},
+    "sentence": {"cn": "先洗手然后吃饭。", "en": "Wash your hands first, then eat."}
+  },
+  "煅": {
+    "origin": "Fire 火 used to forge 段 metal; to calcine.",
+    "word": {"w": "煅烧", "en": "to calcine, to roast"},
+    "sentence": {"cn": "石头煅烧后变白。", "en": "The stone turns white after roasting."}
+  },
+  "煎": {
+    "origin": "Fire 灬 under a pan; to fry in a little oil.",
+    "word": {"w": "煎蛋", "en": "fried egg"},
+    "sentence": {"cn": "早上吃煎蛋。", "en": "I eat a fried egg in the morning."}
+  },
+  "煞": {
+    "origin": "Fire 灬 with a fierce look; an evil spirit or 'very'.",
+    "word": {"w": "煞车", "en": "to brake"},
+    "sentence": {"cn": "他煞住了车。", "en": "He braked the car."}
+  },
+  "煤": {
+    "origin": "Fire 火 fuel from the ground; coal.",
+    "word": {"w": "煤炭", "en": "coal"},
+    "sentence": {"cn": "火车烧煤跑。", "en": "The train runs on burning coal."}
+  },
+  "煨": {
+    "origin": "Fire 火 kept low; to simmer slowly.",
+    "word": {"w": "煨汤", "en": "to simmer soup"},
+    "sentence": {"cn": "她在煨鸡汤。", "en": "She is simmering chicken soup."}
+  },
+  "煮": {
+    "origin": "Fire 灬 under the pot; to boil and cook.",
+    "word": {"w": "煮饭", "en": "to cook rice/a meal"},
+    "sentence": {"cn": "我会煮鸡蛋。", "en": "I can boil eggs."}
+  },
+  "煲": {
+    "origin": "Fire 火 cooking slowly in a pot; to boil long.",
+    "word": {"w": "煲汤", "en": "to slow-cook soup"},
+    "sentence": {"cn": "妈妈在煲汤。", "en": "Mom is slow-cooking soup."}
+  },
+  "煳": {
+    "origin": "Fire 火 left too long 胡; food gets burnt.",
+    "word": {"w": "煳了", "en": "got burnt"},
+    "sentence": {"cn": "饼煎煳了。", "en": "The pancake got burnt."}
+  },
+  "煸": {
+    "origin": "Fire 火 with 扁; to dry stir-fry before stewing.",
+    "word": {"w": "干煸", "en": "dry stir-frying"},
+    "sentence": {"cn": "干煸豆角真好吃。", "en": "Dry-fried green beans are delicious."}
+  },
+  "煺": {
+    "origin": "Fire 火 to loosen 退 feathers; to scald and pluck poultry.",
+    "word": {"w": "煺毛", "en": "to scald off feathers/hair"},
+    "sentence": {"cn": "用热水煺鸡毛。", "en": "Use hot water to scald off the chicken feathers."}
+  },
+  "煽": {
+    "origin": "Fire 火 fanned 扇 bigger; to fan flames or stir up.",
+    "word": {"w": "煽风", "en": "to fan up wind/flames"},
+    "sentence": {"cn": "他用扇子煽火。", "en": "He fanned the fire with a fan."}
+  },
+  "熄": {
+    "origin": "Fire 火 brought to rest 息; to put out a flame.",
+    "word": {"w": "熄灭", "en": "to go out, to extinguish"},
+    "sentence": {"cn": "蜡烛熄灭了。", "en": "The candle went out."}
+  },
+  "熏": {
+    "origin": "Smoke from fire 灬 rising up; to smoke food.",
+    "word": {"w": "熏肉", "en": "smoked meat"},
+    "sentence": {"cn": "烟把墙熏黑了。", "en": "The smoke blackened the wall."}
+  },
+  "熔": {
+    "origin": "Fire 火 making metal flow 容; to melt.",
+    "word": {"w": "熔化", "en": "to melt"},
+    "sentence": {"cn": "铁在火里熔化了。", "en": "The iron melted in the fire."}
+  },
+  "熘": {
+    "origin": "Fire 火 with quick 留 cooking; to stir-fry with sauce.",
+    "word": {"w": "醋熘", "en": "vinegar stir-fry"},
+    "sentence": {"cn": "这道菜是熘的。", "en": "This dish is quick stir-fried."}
+  },
+  "熟": {
+    "origin": "Fire 灬 cooking food until done; ripe and familiar.",
+    "word": {"w": "熟悉", "en": "familiar"},
+    "sentence": {"cn": "饭已经熟了。", "en": "The food is already cooked."}
+  },
+  "熨": {
+    "origin": "Heat 火 pressed onto cloth; to iron flat.",
+    "word": {"w": "熨衣服", "en": "to iron clothes"},
+    "sentence": {"cn": "妈妈在熨衣服。", "en": "Mom is ironing clothes."}
+  },
+  "熬": {
+    "origin": "Fire 灬 cooking slowly for a long time; to simmer.",
+    "word": {"w": "熬粥", "en": "to cook porridge"},
+    "sentence": {"cn": "奶奶在熬粥。", "en": "Grandma is cooking porridge."}
+  },
+  "燃": {
+    "origin": "Fire 火 added to 然; to set alight and burn.",
+    "word": {"w": "燃烧", "en": "to burn"},
+    "sentence": {"cn": "火把燃烧起来。", "en": "The torch burst into flames."}
+  },
+  "燎": {
+    "origin": "Fire 火 spreading wide; to set alight.",
+    "word": {"w": "燎原", "en": "to set the plains ablaze"},
+    "sentence": {"cn": "火苗燎着了草。", "en": "The flame set the grass alight."}
+  },
+  "燕": {
+    "origin": "A picture of a swallow with head, wings, and tail 灬.",
+    "word": {"w": "燕子", "en": "swallow (bird)"},
+    "sentence": {"cn": "春天燕子飞回来。", "en": "Swallows fly back in spring."}
+  },
+  "爆": {
+    "origin": "Fire 火 bursting violently 暴; to explode.",
+    "word": {"w": "爆炸", "en": "to explode"},
+    "sentence": {"cn": "气球爆了。", "en": "The balloon popped."}
+  },
+  "爪": {
+    "origin": "A picture of a bird's claws.",
+    "word": {"w": "爪子", "en": "claw, paw"},
+    "sentence": {"cn": "小猫有尖爪子。", "en": "The kitten has sharp claws."}
+  },
+  "爹": {
+    "origin": "Father 父 with 多; a child's word for dad.",
+    "word": {"w": "爹娘", "en": "father and mother"},
+    "sentence": {"cn": "爹带我去玩。", "en": "Dad took me out to play."}
+  },
+  "爽": {
+    "origin": "A person 大 letting in fresh air 爻; crisp and refreshing.",
+    "word": {"w": "凉爽", "en": "cool and refreshing"},
+    "sentence": {"cn": "今天天气很爽。", "en": "The weather is refreshing today."}
+  },
+  "版": {
+    "origin": "A slab 片 used for printing; an edition or version.",
+    "word": {"w": "出版", "en": "to publish"},
+    "sentence": {"cn": "这本书出版了。", "en": "This book has been published."}
+  },
+  "牟": {
+    "origin": "An ox 牛 lowing; also means to seek profit.",
+    "word": {"w": "牟取", "en": "to seek (profit)"},
+    "sentence": {"cn": "他姓牟。", "en": "His surname is Mou."}
+  },
+  "牧": {
+    "origin": "A hand 攵 leading an ox 牛 to graze; to herd.",
+    "word": {"w": "放牧", "en": "to herd, to graze"},
+    "sentence": {"cn": "牧人在山上放牧。", "en": "The herder grazes animals on the hill."}
+  },
+  "物": {
+    "origin": "From ox 牛; means a thing or object.",
+    "word": {"w": "动物", "en": "animal"},
+    "sentence": {"cn": "我喜欢小动物。", "en": "I like small animals."}
+  },
+  "牵": {
+    "origin": "A person leads an ox 牛 by a rope 冖; to pull along.",
+    "word": {"w": "牵手", "en": "to hold hands"},
+    "sentence": {"cn": "妈妈牵着我的手。", "en": "Mom holds my hand."}
+  },
+  "犁": {
+    "origin": "An ox 牛 pulling a tool to turn the soil; a plow.",
+    "word": {"w": "犁地", "en": "to plow the land"},
+    "sentence": {"cn": "农民用牛犁地。", "en": "The farmer plows the land with an ox."}
+  },
+  "犊": {
+    "origin": "A young ox 牛; a calf.",
+    "word": {"w": "牛犊", "en": "calf"},
+    "sentence": {"cn": "小牛犊真可爱。", "en": "The little calf is so cute."}
+  },
+  "犋": {
+    "origin": "An ox 牛 with its gear 具; a team of draft animals.",
+    "word": {"w": "一犋牛", "en": "a team of oxen"},
+    "sentence": {"cn": "田里有一犋牛。", "en": "There is a team of oxen in the field."}
+  },
+  "犟": {
+    "origin": "An ox 牛 that is strong 强 and won't budge; stubborn.",
+    "word": {"w": "犟脾气", "en": "stubborn temper"},
+    "sentence": {"cn": "这头牛很犟。", "en": "This ox is very stubborn."}
+  },
+  "犬": {
+    "origin": "A picture of a dog standing on its side.",
+    "word": {"w": "警犬", "en": "police dog"},
+    "sentence": {"cn": "警犬很聪明。", "en": "Police dogs are very smart."}
+  },
+  "犯": {
+    "origin": "The dog 犭 radical; to break a rule or commit a crime.",
+    "word": {"w": "犯错", "en": "to make a mistake"},
+    "sentence": {"cn": "谁都会犯错。", "en": "Everyone makes mistakes."}
+  },
+  "状": {
+    "origin": "From 犬; the shape, form, or condition of things.",
+    "word": {"w": "形状", "en": "shape"},
+    "sentence": {"cn": "云有各种形状。", "en": "Clouds have all kinds of shapes."}
+  },
+  "犹": {
+    "origin": "The dog 犭 radical; means 'just like' or 'still'.",
+    "word": {"w": "犹豫", "en": "to hesitate"},
+    "sentence": {"cn": "他犹豫了一下。", "en": "He hesitated for a moment."}
+  },
+  "狂": {
+    "origin": "The dog 犭 radical; wild, mad, or crazy.",
+    "word": {"w": "疯狂", "en": "crazy, wild"},
+    "sentence": {"cn": "风刮得很狂。", "en": "The wind is blowing wildly."}
+  },
+  "狄": {
+    "origin": "The animal 犭 radical; an old name for northern peoples.",
+    "word": {"w": "狄仁杰", "en": "Di Renjie (name)"},
+    "sentence": {"cn": "他姓狄。", "en": "His surname is Di."}
+  },
+  "狠": {
+    "origin": "The dog 犭 radical; fierce, cruel, and ruthless.",
+    "word": {"w": "凶狠", "en": "fierce, vicious"},
+    "sentence": {"cn": "那只狗很狠。", "en": "That dog is very fierce."}
+  },
+  "狭": {
+    "origin": "The dog 犭 radical; narrow and cramped.",
+    "word": {"w": "狭窄", "en": "narrow"},
+    "sentence": {"cn": "这条路很狭窄。", "en": "This road is very narrow."}
+  }
+}

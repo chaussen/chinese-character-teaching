@@ -1,0 +1,252 @@
+{
+  "惯": {
+    "origin": "A heart 忄 that does the same thing again and again — a habit.",
+    "word": {"w": "习惯", "en": "habit"},
+    "sentence": {"cn": "他有早起的习惯。", "en": "He has the habit of getting up early."}
+  },
+  "惹": {
+    "origin": "Stirring up the heart 心 of others — to provoke or annoy.",
+    "word": {"w": "惹事", "en": "to stir up trouble"},
+    "sentence": {"cn": "不要去惹他。", "en": "Don't go provoke him."}
+  },
+  "愁": {
+    "origin": "An autumn 秋 heart 心 grows sad — to worry.",
+    "word": {"w": "发愁", "en": "to worry"},
+    "sentence": {"cn": "他在为考试发愁。", "en": "He is worried about the exam."}
+  },
+  "愈": {
+    "origin": "The heart 心 gets better — to heal or recover.",
+    "word": {"w": "痊愈", "en": "to recover fully"},
+    "sentence": {"cn": "他的病痊愈了。", "en": "His illness has fully healed."}
+  },
+  "愚": {
+    "origin": "A slow 禺 heart 心 — foolish or silly.",
+    "word": {"w": "愚蠢", "en": "stupid, foolish"},
+    "sentence": {"cn": "这样做太愚蠢了。", "en": "Doing this is too foolish."}
+  },
+  "感": {
+    "origin": "Something that touches 咸 the heart 心 — to feel.",
+    "word": {"w": "感谢", "en": "to thank"},
+    "sentence": {"cn": "我很感谢你。", "en": "I thank you very much."}
+  },
+  "愣": {
+    "origin": "A heart 忄 caught off guard — dazed or stunned.",
+    "word": {"w": "发愣", "en": "to be in a daze"},
+    "sentence": {"cn": "他坐在那儿发愣。", "en": "He sits there in a daze."}
+  },
+  "愧": {
+    "origin": "A heart 忄 haunted like a ghost 鬼 — ashamed.",
+    "word": {"w": "惭愧", "en": "ashamed"},
+    "sentence": {"cn": "我感到很惭愧。", "en": "I feel very ashamed."}
+  },
+  "慕": {
+    "origin": "A heart ⺗ that longs for something — to admire.",
+    "word": {"w": "羡慕", "en": "to admire, envy"},
+    "sentence": {"cn": "我很羡慕你。", "en": "I really admire you."}
+  },
+  "憋": {
+    "origin": "A heart 心 held tightly inside — to hold back or stifle.",
+    "word": {"w": "憋气", "en": "to hold one's breath"},
+    "sentence": {"cn": "他憋着一口气。", "en": "He is holding his breath."}
+  },
+  "憎": {
+    "origin": "A heart 忄 that turns away again 曾 — to hate.",
+    "word": {"w": "憎恨", "en": "to hate"},
+    "sentence": {"cn": "他憎恨说谎。", "en": "He hates lying."}
+  },
+  "憨": {
+    "origin": "A heart 心 that is simple and honest — silly in a sweet way.",
+    "word": {"w": "憨厚", "en": "simple and honest"},
+    "sentence": {"cn": "他笑得很憨。", "en": "He smiles in a simple, sweet way."}
+  },
+  "懒": {
+    "origin": "A heart 忄 that does not want to move — lazy.",
+    "word": {"w": "懒惰", "en": "lazy"},
+    "sentence": {"cn": "他今天很懒。", "en": "He is very lazy today."}
+  },
+  "戌": {
+    "origin": "One of the twelve earthly branches, linked to the dog hour.",
+    "word": {"w": "戊戌", "en": "a year in the old calendar"},
+    "sentence": {"cn": "今年是戌年。", "en": "This year is the year of Xu."}
+  },
+  "戎": {
+    "origin": "A hand holding a lance 戈 — weapons and war.",
+    "word": {"w": "戎装", "en": "military uniform"},
+    "sentence": {"cn": "他身穿戎装。", "en": "He wears a military uniform."}
+  },
+  "戏": {
+    "origin": "A hand 又 playing with a spear 戈 — a play or game.",
+    "word": {"w": "游戏", "en": "game"},
+    "sentence": {"cn": "我们一起做游戏。", "en": "We play a game together."}
+  },
+  "戒": {
+    "origin": "Two hands 廾 holding up a spear 戈 to warn — to guard against.",
+    "word": {"w": "戒指", "en": "ring (for finger)"},
+    "sentence": {"cn": "她戴着戒指。", "en": "She is wearing a ring."}
+  },
+  "或": {
+    "origin": "Guarding a place 口 with a spear 戈 — 'or, or else'.",
+    "word": {"w": "或者", "en": "or"},
+    "sentence": {"cn": "你吃苹果或者梨。", "en": "You eat an apple or a pear."}
+  },
+  "戗": {
+    "origin": "To prop up something from the side, like a brace.",
+    "word": {"w": "戗风", "en": "against the wind"},
+    "sentence": {"cn": "我们戗风走路。", "en": "We walk against the wind."}
+  },
+  "戚": {
+    "origin": "Sorrow over a brother lost in war 戈 — also means relatives.",
+    "word": {"w": "亲戚", "en": "relatives"},
+    "sentence": {"cn": "他是我的亲戚。", "en": "He is my relative."}
+  },
+  "截": {
+    "origin": "A weapon 戈 cutting something off — to cut or stop.",
+    "word": {"w": "截止", "en": "deadline, to end"},
+    "sentence": {"cn": "报名今天截止。", "en": "Sign-up ends today."}
+  },
+  "戳": {
+    "origin": "To jab with a spear 戈 — to poke or stab.",
+    "word": {"w": "戳穿", "en": "to poke through, expose"},
+    "sentence": {"cn": "他用手指戳我。", "en": "He pokes me with his finger."}
+  },
+  "户": {
+    "origin": "A single door swinging on its hinge — a door or household.",
+    "word": {"w": "门户", "en": "door, gateway"},
+    "sentence": {"cn": "家家户户都开灯。", "en": "Every household turns on its lights."}
+  },
+  "扁": {
+    "origin": "A door-shaped board that is thin and wide — flat.",
+    "word": {"w": "扁平", "en": "flat"},
+    "sentence": {"cn": "盒子被压扁了。", "en": "The box was squashed flat."}
+  },
+  "扇": {
+    "origin": "A feathered 羽 thing shaped like a door 户 — a fan.",
+    "word": {"w": "扇子", "en": "fan"},
+    "sentence": {"cn": "奶奶拿着扇子。", "en": "Grandma is holding a fan."}
+  },
+  "扎": {
+    "origin": "A hand 扌 tying a bundle with string 乚 — to bind or prick.",
+    "word": {"w": "扎针", "en": "to give an injection"},
+    "sentence": {"cn": "护士给我扎针。", "en": "The nurse gives me an injection."}
+  },
+  "扔": {
+    "origin": "Using the hand 扌 to send something away — to throw.",
+    "word": {"w": "扔掉", "en": "to throw away"},
+    "sentence": {"cn": "请把垃圾扔掉。", "en": "Please throw away the trash."}
+  },
+  "托": {
+    "origin": "Using both hands 扌 to hold something up — to support.",
+    "word": {"w": "托起", "en": "to hold up, lift"},
+    "sentence": {"cn": "他用手托着碗。", "en": "He holds up the bowl with his hand."}
+  },
+  "扛": {
+    "origin": "Hard work 工 done by hand 扌 — to carry on the shoulder.",
+    "word": {"w": "扛着", "en": "to carry on the shoulder"},
+    "sentence": {"cn": "他扛着一袋米。", "en": "He carries a bag of rice on his shoulder."}
+  },
+  "扣": {
+    "origin": "A hand 扌 fastening or holding back — to button or detain.",
+    "word": {"w": "扣子", "en": "button"},
+    "sentence": {"cn": "我系上扣子。", "en": "I do up the button."}
+  },
+  "执": {
+    "origin": "A hand 扌 firmly holding something — to grasp or carry out.",
+    "word": {"w": "执行", "en": "to carry out, execute"},
+    "sentence": {"cn": "他认真执行任务。", "en": "He carries out the task seriously."}
+  },
+  "扬": {
+    "origin": "A hand 扌 lifting something into the air — to wave or raise.",
+    "word": {"w": "飞扬", "en": "to fly, flutter up"},
+    "sentence": {"cn": "彩旗迎风飞扬。", "en": "The flags flutter in the wind."}
+  },
+  "扭": {
+    "origin": "A hand 扌 turning something around — to twist.",
+    "word": {"w": "扭转", "en": "to turn around, reverse"},
+    "sentence": {"cn": "他扭过头来。", "en": "He turns his head around."}
+  },
+  "扮": {
+    "origin": "A hand 扌 making someone look different — to dress up.",
+    "word": {"w": "打扮", "en": "to dress up"},
+    "sentence": {"cn": "她打扮得很漂亮。", "en": "She is dressed up beautifully."}
+  },
+  "扯": {
+    "origin": "A hand 扌 pulling hard — to tear or yank.",
+    "word": {"w": "拉扯", "en": "to pull, tug"},
+    "sentence": {"cn": "别扯我的衣服。", "en": "Don't pull my clothes."}
+  },
+  "扰": {
+    "origin": "A hand 扌 poking at someone — to disturb.",
+    "word": {"w": "打扰", "en": "to disturb, bother"},
+    "sentence": {"cn": "对不起，打扰你了。", "en": "Sorry to disturb you."}
+  },
+  "扳": {
+    "origin": "A hand 扌 pulling something back 反 — to pull or pry.",
+    "word": {"w": "扳手", "en": "wrench"},
+    "sentence": {"cn": "他用扳手修车。", "en": "He fixes the car with a wrench."}
+  },
+  "扶": {
+    "origin": "A hand 扌 helping a person stand — to support.",
+    "word": {"w": "扶手", "en": "handrail"},
+    "sentence": {"cn": "我扶着奶奶走。", "en": "I support Grandma as she walks."}
+  },
+  "扼": {
+    "origin": "A hand 扌 gripping tightly — to clutch or grip.",
+    "word": {"w": "扼住", "en": "to grip, seize"},
+    "sentence": {"cn": "他扼住了绳子。", "en": "He grips the rope tightly."}
+  },
+  "承": {
+    "origin": "Hands lifting and holding something up — to bear or accept.",
+    "word": {"w": "承担", "en": "to take on, bear"},
+    "sentence": {"cn": "他愿意承担责任。", "en": "He is willing to take responsibility."}
+  },
+  "技": {
+    "origin": "A skill done with the hand 扌 — ability or technique.",
+    "word": {"w": "技术", "en": "skill, technology"},
+    "sentence": {"cn": "他的技术很好。", "en": "His skill is very good."}
+  },
+  "抄": {
+    "origin": "A hand 扌 copying words down — to copy.",
+    "word": {"w": "抄写", "en": "to copy out"},
+    "sentence": {"cn": "请抄写这句话。", "en": "Please copy out this sentence."}
+  },
+  "抒": {
+    "origin": "A hand 扌 giving 予 out feelings — to express.",
+    "word": {"w": "抒情", "en": "to express feelings"},
+    "sentence": {"cn": "这首歌很抒情。", "en": "This song is full of feeling."}
+  },
+  "抖": {
+    "origin": "A hand 扌 shaking something — to tremble or shake out.",
+    "word": {"w": "发抖", "en": "to tremble, shiver"},
+    "sentence": {"cn": "他冷得发抖。", "en": "He is shivering from the cold."}
+  },
+  "抛": {
+    "origin": "A hand 扌 tossing something far away — to throw or abandon.",
+    "word": {"w": "抛球", "en": "to throw a ball"},
+    "sentence": {"cn": "他把球抛过来。", "en": "He throws the ball over."}
+  },
+  "抠": {
+    "origin": "A hand 扌 picking at something — to dig out with fingers.",
+    "word": {"w": "抠门", "en": "stingy"},
+    "sentence": {"cn": "别抠墙上的画。", "en": "Don't pick at the painting on the wall."}
+  },
+  "抡": {
+    "origin": "A hand 扌 swinging something around — to brandish.",
+    "word": {"w": "抡起", "en": "to swing up"},
+    "sentence": {"cn": "他抡起大锤。", "en": "He swings up the big hammer."}
+  },
+  "抢": {
+    "origin": "A hand 扌 grabbing fast — to snatch or rush.",
+    "word": {"w": "抢答", "en": "to rush to answer"},
+    "sentence": {"cn": "同学们抢着回答。", "en": "The students rush to answer."}
+  },
+  "披": {
+    "origin": "To put on 扌 something over the shoulders like fur 皮 — to drape.",
+    "word": {"w": "披风", "en": "cape, cloak"},
+    "sentence": {"cn": "她披着一件外套。", "en": "She drapes a coat over her shoulders."}
+  },
+  "抬": {
+    "origin": "Hands 扌 lifting something up together — to carry or raise.",
+    "word": {"w": "抬头", "en": "to raise one's head"},
+    "sentence": {"cn": "请抬头看黑板。", "en": "Please raise your head and look at the board."}
+  }
+}

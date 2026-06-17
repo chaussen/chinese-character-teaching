@@ -1,0 +1,252 @@
+{
+  "弱": {
+    "origin": "Two bows 弓 weakened by frost — it means weak or fragile.",
+    "word": {"w": "弱小", "en": "weak and small"},
+    "sentence": {"cn": "小鸟还很弱。", "en": "The little bird is still very weak."}
+  },
+  "弹": {
+    "origin": "A bow 弓 that shoots something out — a bullet or pellet.",
+    "word": {"w": "子弹", "en": "bullet"},
+    "sentence": {"cn": "枪里有子弹。", "en": "There is a bullet in the gun."}
+  },
+  "录": {
+    "origin": "A brush used to write things down and record them.",
+    "word": {"w": "录音", "en": "to record sound"},
+    "sentence": {"cn": "老师在录音。", "en": "The teacher is recording sound."}
+  },
+  "彭": {
+    "origin": "The sound 彡 of a drum 壴 — often used as a family name.",
+    "word": {"w": "彭湃", "en": "surging (used in names)"},
+    "sentence": {"cn": "他姓彭。", "en": "His surname is Peng."}
+  },
+  "役": {
+    "origin": "A person walking 彳 to do hard work — a servant or laborer.",
+    "word": {"w": "战役", "en": "battle, campaign"},
+    "sentence": {"cn": "这是一场大战役。", "en": "This is a big battle."}
+  },
+  "彼": {
+    "origin": "Steps 彳 toward the other side — it means that or the other.",
+    "word": {"w": "彼此", "en": "each other"},
+    "sentence": {"cn": "我们彼此帮助。", "en": "We help each other."}
+  },
+  "征": {
+    "origin": "To step 彳 out straight 正 on a journey — to set out or recruit.",
+    "word": {"w": "出征", "en": "to go out to battle"},
+    "sentence": {"cn": "战士要出征了。", "en": "The soldiers are setting out to battle."}
+  },
+  "径": {
+    "origin": "A small path you walk 彳 along.",
+    "word": {"w": "小径", "en": "small path"},
+    "sentence": {"cn": "山里有一条小径。", "en": "There is a small path in the mountains."}
+  },
+  "待": {
+    "origin": "To wait 彳 at the gate to welcome a guest.",
+    "word": {"w": "等待", "en": "to wait"},
+    "sentence": {"cn": "我在门口等待你。", "en": "I am waiting for you at the door."}
+  },
+  "律": {
+    "origin": "To walk 彳 by the rules — it means law or rule.",
+    "word": {"w": "规律", "en": "rule, pattern"},
+    "sentence": {"cn": "他生活很有规律。", "en": "He lives a very regular life."}
+  },
+  "徐": {
+    "origin": "To walk 彳 slowly and calmly; also a common family name.",
+    "word": {"w": "徐徐", "en": "slowly, gently"},
+    "sentence": {"cn": "风徐徐吹来。", "en": "The wind blows gently."}
+  },
+  "徒": {
+    "origin": "To walk 走 in someone's footsteps 彳 — a student or follower.",
+    "word": {"w": "徒弟", "en": "apprentice, disciple"},
+    "sentence": {"cn": "他有很多徒弟。", "en": "He has many apprentices."}
+  },
+  "循": {
+    "origin": "To walk 彳 step by step, following a path or rule.",
+    "word": {"w": "循环", "en": "to circulate, cycle"},
+    "sentence": {"cn": "水在不停循环。", "en": "The water keeps circulating."}
+  },
+  "微": {
+    "origin": "Something so small you can barely see it — tiny.",
+    "word": {"w": "微笑", "en": "smile"},
+    "sentence": {"cn": "她对我微笑。", "en": "She smiles at me."}
+  },
+  "徽": {
+    "origin": "A small sign or badge worn to show a group — an emblem.",
+    "word": {"w": "国徽", "en": "national emblem"},
+    "sentence": {"cn": "墙上有个国徽。", "en": "There is a national emblem on the wall."}
+  },
+  "忆": {
+    "origin": "The heart 忄 holding on to the past — to remember.",
+    "word": {"w": "回忆", "en": "to recall, memory"},
+    "sentence": {"cn": "我回忆起小时候。", "en": "I recall my childhood."}
+  },
+  "忌": {
+    "origin": "A heart 心 that minds too much — jealous or to avoid.",
+    "word": {"w": "嫉忌", "en": "to envy, jealous"},
+    "sentence": {"cn": "他有点忌妒我。", "en": "He is a little jealous of me."}
+  },
+  "忍": {
+    "origin": "A knife 刃 pressing on the heart 心 — to endure and bear it.",
+    "word": {"w": "忍耐", "en": "to be patient, endure"},
+    "sentence": {"cn": "他忍着不哭。", "en": "He holds back and does not cry."}
+  },
+  "忘": {
+    "origin": "When something is lost 亡 from the heart 心 — to forget.",
+    "word": {"w": "忘记", "en": "to forget"},
+    "sentence": {"cn": "我忘记带书了。", "en": "I forgot to bring my book."}
+  },
+  "忠": {
+    "origin": "A heart 心 that is centered 中 and true — loyal.",
+    "word": {"w": "忠心", "en": "loyalty, devotion"},
+    "sentence": {"cn": "小狗对人很忠心。", "en": "The dog is very loyal to people."}
+  },
+  "忧": {
+    "origin": "A heart 忄 that is heavy and sad — worried.",
+    "word": {"w": "忧愁", "en": "worried, sad"},
+    "sentence": {"cn": "她脸上有些忧愁。", "en": "There is some sadness on her face."}
+  },
+  "忽": {
+    "origin": "A heart 心 that does not 勿 notice — suddenly.",
+    "word": {"w": "忽然", "en": "suddenly"},
+    "sentence": {"cn": "天忽然下雨了。", "en": "It suddenly started to rain."}
+  },
+  "态": {
+    "origin": "How the heart 心 shows itself — one's manner or attitude.",
+    "word": {"w": "态度", "en": "attitude"},
+    "sentence": {"cn": "他的态度很好。", "en": "His attitude is very good."}
+  },
+  "怄": {
+    "origin": "A heart 忄 feeling cross and sulky — annoyed.",
+    "word": {"w": "怄气", "en": "to sulk, be annoyed"},
+    "sentence": {"cn": "弟弟在怄气。", "en": "My little brother is sulking."}
+  },
+  "怒": {
+    "origin": "A heart 心 like a slave 奴 pushed too far — anger.",
+    "word": {"w": "愤怒", "en": "anger, fury"},
+    "sentence": {"cn": "他非常愤怒。", "en": "He is very angry."}
+  },
+  "怔": {
+    "origin": "A heart 忄 frozen in place — startled or stunned.",
+    "word": {"w": "怔住", "en": "to be stunned"},
+    "sentence": {"cn": "他听了怔住了。", "en": "He was stunned when he heard it."}
+  },
+  "思": {
+    "origin": "Using the mind and heart 心 together — to think.",
+    "word": {"w": "思考", "en": "to think, ponder"},
+    "sentence": {"cn": "我在思考问题。", "en": "I am thinking about a problem."}
+  },
+  "怨": {
+    "origin": "A heart 心 full of complaint — to blame or resent.",
+    "word": {"w": "抱怨", "en": "to complain"},
+    "sentence": {"cn": "他总是抱怨。", "en": "He always complains."}
+  },
+  "怪": {
+    "origin": "A heart 忄 that feels something is odd — strange.",
+    "word": {"w": "奇怪", "en": "strange, odd"},
+    "sentence": {"cn": "这件事真奇怪。", "en": "This matter is really strange."}
+  },
+  "怯": {
+    "origin": "A heart 忄 that wants to go 去 away — timid, afraid.",
+    "word": {"w": "胆怯", "en": "timid, cowardly"},
+    "sentence": {"cn": "他有点胆怯。", "en": "He is a little timid."}
+  },
+  "怵": {
+    "origin": "A heart 忄 that shrinks back — fearful.",
+    "word": {"w": "发怵", "en": "to feel nervous, scared"},
+    "sentence": {"cn": "我心里有点发怵。", "en": "I feel a little scared inside."}
+  },
+  "恋": {
+    "origin": "A heart 心 that keeps thinking of someone — love.",
+    "word": {"w": "留恋", "en": "to be reluctant to leave"},
+    "sentence": {"cn": "我很留恋这里。", "en": "I am reluctant to leave this place."}
+  },
+  "恕": {
+    "origin": "To treat others as 如 your own heart 心 — to forgive.",
+    "word": {"w": "饶恕", "en": "to forgive, pardon"},
+    "sentence": {"cn": "请你饶恕他。", "en": "Please forgive him."}
+  },
+  "恨": {
+    "origin": "A heart 忄 that stops 艮 and turns sour — to hate.",
+    "word": {"w": "仇恨", "en": "hatred"},
+    "sentence": {"cn": "他心里没有仇恨。", "en": "There is no hatred in his heart."}
+  },
+  "恩": {
+    "origin": "Kindness 心 that comes from 因 someone — a favor or grace.",
+    "word": {"w": "恩情", "en": "kindness, loving care"},
+    "sentence": {"cn": "我记得他的恩情。", "en": "I remember his kindness."}
+  },
+  "息": {
+    "origin": "Breath passing through the nose 自 and heart 心 — to rest.",
+    "word": {"w": "休息", "en": "to rest"},
+    "sentence": {"cn": "我们坐下休息。", "en": "We sit down to rest."}
+  },
+  "恰": {
+    "origin": "When the heart 忄 fits 合 just right — exactly.",
+    "word": {"w": "恰好", "en": "exactly, just right"},
+    "sentence": {"cn": "你来得恰好。", "en": "You came at exactly the right time."}
+  },
+  "恶": {
+    "origin": "A heart 心 that is ugly inside — bad or evil.",
+    "word": {"w": "恶人", "en": "wicked person"},
+    "sentence": {"cn": "故事里有个恶人。", "en": "There is a bad person in the story."}
+  },
+  "恼": {
+    "origin": "A heart 忄 in a muddle — angry and upset.",
+    "word": {"w": "烦恼", "en": "worry, trouble"},
+    "sentence": {"cn": "他有很多烦恼。", "en": "He has many worries."}
+  },
+  "悉": {
+    "origin": "To sort out 釆 in the mind 心 until you know it well.",
+    "word": {"w": "熟悉", "en": "familiar with"},
+    "sentence": {"cn": "我很熟悉这条路。", "en": "I am very familiar with this road."}
+  },
+  "悔": {
+    "origin": "A heart 忄 that wishes it had not — to regret.",
+    "word": {"w": "后悔", "en": "to regret"},
+    "sentence": {"cn": "我有点后悔了。", "en": "I regret it a little."}
+  },
+  "悟": {
+    "origin": "The mind 忄 suddenly understands — to realize.",
+    "word": {"w": "明悟", "en": "to understand clearly"},
+    "sentence": {"cn": "他终于悟出道理。", "en": "He finally understood the reason."}
+  },
+  "患": {
+    "origin": "Trouble strung 串 through the heart 心 — suffering or illness.",
+    "word": {"w": "患者", "en": "patient (sick person)"},
+    "sentence": {"cn": "医院里有很多患者。", "en": "There are many patients in the hospital."}
+  },
+  "您": {
+    "origin": "You 你 spoken from the heart 心 — a polite way to say 'you'.",
+    "word": {"w": "您好", "en": "hello (polite)"},
+    "sentence": {"cn": "老师，您好。", "en": "Hello, teacher."}
+  },
+  "悬": {
+    "origin": "Something hanging 心 in the air, not settled — to hang or suspend.",
+    "word": {"w": "悬挂", "en": "to hang up, suspend"},
+    "sentence": {"cn": "墙上悬挂着画。", "en": "A painting hangs on the wall."}
+  },
+  "情": {
+    "origin": "The clear 青 feelings of the heart 忄 — emotion.",
+    "word": {"w": "心情", "en": "mood, feeling"},
+    "sentence": {"cn": "今天我心情很好。", "en": "I am in a good mood today."}
+  },
+  "惠": {
+    "origin": "A kind heart 心 that gives — favor and benefit.",
+    "word": {"w": "优惠", "en": "discount, favorable"},
+    "sentence": {"cn": "这家店有优惠。", "en": "This shop has a discount."}
+  },
+  "惦": {
+    "origin": "The mind 忄 keeps a shop 店 of worries — to think of and miss.",
+    "word": {"w": "惦记", "en": "to keep thinking of"},
+    "sentence": {"cn": "妈妈很惦记我。", "en": "Mom keeps thinking about me."}
+  },
+  "惧": {
+    "origin": "A heart 忄 that is afraid — to fear.",
+    "word": {"w": "恐惧", "en": "fear, dread"},
+    "sentence": {"cn": "他心里很恐惧。", "en": "He is very fearful inside."}
+  },
+  "惨": {
+    "origin": "A heart 忄 in deep pain — miserable.",
+    "word": {"w": "悲惨", "en": "miserable, tragic"},
+    "sentence": {"cn": "这个故事很悲惨。", "en": "This story is very tragic."}
+  }
+}

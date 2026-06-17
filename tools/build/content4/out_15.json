@@ -1,0 +1,252 @@
+{
+  "抱": {
+    "origin": "To wrap 包 someone in your arms 扌 — to hug.",
+    "word": {"w": "拥抱", "en": "to embrace, hug"},
+    "sentence": {"cn": "妈妈抱着我。", "en": "Mom is hugging me."}
+  },
+  "抵": {
+    "origin": "A hand 扌 pushing back — to resist or reach.",
+    "word": {"w": "抵达", "en": "to arrive, reach"},
+    "sentence": {"cn": "火车抵达车站。", "en": "The train arrives at the station."}
+  },
+  "抹": {
+    "origin": "A hand 扌 spreading something on — to wipe or apply.",
+    "word": {"w": "涂抹", "en": "to smear, apply"},
+    "sentence": {"cn": "他在面包上抹油。", "en": "He spreads butter on the bread."}
+  },
+  "抻": {
+    "origin": "A hand 扌 stretching something out — to pull longer.",
+    "word": {"w": "抻面", "en": "hand-pulled noodles"},
+    "sentence": {"cn": "师傅在抻面。", "en": "The chef is pulling noodles."}
+  },
+  "押": {
+    "origin": "A hand 扌 holding someone down — to detain or pledge.",
+    "word": {"w": "押金", "en": "deposit"},
+    "sentence": {"cn": "租房要交押金。", "en": "Renting a room needs a deposit."}
+  },
+  "抽": {
+    "origin": "A hand 扌 pulling something out 由 — to draw out.",
+    "word": {"w": "抽屉", "en": "drawer"},
+    "sentence": {"cn": "笔放在抽屉里。", "en": "The pen is in the drawer."}
+  },
+  "抿": {
+    "origin": "A hand 扌 smoothing or pressing gently — to press together.",
+    "word": {"w": "抿嘴", "en": "to press one's lips"},
+    "sentence": {"cn": "她抿着嘴笑。", "en": "She smiles with her lips pressed together."}
+  },
+  "拂": {
+    "origin": "A hand 扌 brushing something away — to whisk off.",
+    "word": {"w": "吹拂", "en": "to blow gently (of wind)"},
+    "sentence": {"cn": "春风轻轻拂面。", "en": "The spring breeze gently brushes my face."}
+  },
+  "拄": {
+    "origin": "A hand 扌 leaning on a main 主 support — to lean on a stick.",
+    "word": {"w": "拄拐", "en": "to walk with a cane"},
+    "sentence": {"cn": "爷爷拄着拐杖。", "en": "Grandpa leans on a cane."}
+  },
+  "拈": {
+    "origin": "Picking something up 占 lightly with the fingers 扌.",
+    "word": {"w": "拈花", "en": "to pick up a flower"},
+    "sentence": {"cn": "她拈起一朵花。", "en": "She picks up a flower with her fingers."}
+  },
+  "拌": {
+    "origin": "A hand 扌 stirring things together — to mix.",
+    "word": {"w": "搅拌", "en": "to stir, mix"},
+    "sentence": {"cn": "请把汤拌一拌。", "en": "Please stir the soup a bit."}
+  },
+  "拎": {
+    "origin": "A hand 扌 carrying something by the handle — to lug.",
+    "word": {"w": "拎着", "en": "to carry in hand"},
+    "sentence": {"cn": "她拎着一个袋子。", "en": "She is carrying a bag in her hand."}
+  },
+  "拐": {
+    "origin": "A hand 扌 leading another away 另 — to turn or to kidnap.",
+    "word": {"w": "拐弯", "en": "to turn a corner"},
+    "sentence": {"cn": "前面拐弯就到了。", "en": "Turn the corner ahead and you're there."}
+  },
+  "拓": {
+    "origin": "A hand 扌 pushing past a stone 石 — to open up or expand.",
+    "word": {"w": "开拓", "en": "to open up, pioneer"},
+    "sentence": {"cn": "他们开拓新路。", "en": "They open up a new road."}
+  },
+  "拖": {
+    "origin": "A hand 扌 dragging something along — to pull or tow.",
+    "word": {"w": "拖地", "en": "to mop the floor"},
+    "sentence": {"cn": "妈妈在拖地。", "en": "Mom is mopping the floor."}
+  },
+  "拗": {
+    "origin": "A hand 扌 pulling against the way things bend — to be stubborn.",
+    "word": {"w": "拗断", "en": "to snap by bending"},
+    "sentence": {"cn": "他把树枝拗断了。", "en": "He snapped the branch by bending it."}
+  },
+  "拘": {
+    "origin": "A hand 扌 holding someone in — to restrain or seize.",
+    "word": {"w": "拘束", "en": "restrained, awkward"},
+    "sentence": {"cn": "他显得有点拘束。", "en": "He seems a little restrained."}
+  },
+  "拙": {
+    "origin": "A hand 扌 that is not skilled — clumsy.",
+    "word": {"w": "笨拙", "en": "clumsy, awkward"},
+    "sentence": {"cn": "他的动作很笨拙。", "en": "His movements are very clumsy."}
+  },
+  "招": {
+    "origin": "A hand 扌 calling 召 someone over — to beckon or recruit.",
+    "word": {"w": "招手", "en": "to wave one's hand"},
+    "sentence": {"cn": "他向我招手。", "en": "He waves his hand at me."}
+  },
+  "拜": {
+    "origin": "Two hands 手 put together in respect — to bow or worship.",
+    "word": {"w": "拜年", "en": "to pay a New Year visit"},
+    "sentence": {"cn": "我们去给爷爷拜年。", "en": "We go to wish Grandpa a happy New Year."}
+  },
+  "拟": {
+    "origin": "A hand 扌 drawing up a plan — to draft or imitate.",
+    "word": {"w": "拟定", "en": "to draw up, draft"},
+    "sentence": {"cn": "老师拟定了计划。", "en": "The teacher drew up a plan."}
+  },
+  "拢": {
+    "origin": "A hand 扌 gathering things together — to bring together.",
+    "word": {"w": "聚拢", "en": "to gather together"},
+    "sentence": {"cn": "大家聚拢过来。", "en": "Everyone gathers together."}
+  },
+  "拣": {
+    "origin": "A hand 扌 picking out the good ones — to choose.",
+    "word": {"w": "挑拣", "en": "to pick and choose"},
+    "sentence": {"cn": "她在拣豆子。", "en": "She is picking out beans."}
+  },
+  "拥": {
+    "origin": "A hand 扌 holding close — to have or to embrace.",
+    "word": {"w": "拥有", "en": "to own, possess"},
+    "sentence": {"cn": "他拥有很多书。", "en": "He owns many books."}
+  },
+  "拦": {
+    "origin": "A hand 扌 put up to stop someone — to block.",
+    "word": {"w": "拦住", "en": "to block, stop"},
+    "sentence": {"cn": "警察拦住了车。", "en": "The police stopped the car."}
+  },
+  "拧": {
+    "origin": "A hand 扌 twisting something tight — to wring or screw.",
+    "word": {"w": "拧开", "en": "to twist open, unscrew"},
+    "sentence": {"cn": "我拧开瓶盖。", "en": "I twist open the bottle cap."}
+  },
+  "拨": {
+    "origin": "A hand 扌 pushing things aside or sending them out — to stir.",
+    "word": {"w": "拨打", "en": "to dial (a phone)"},
+    "sentence": {"cn": "请拨打这个号码。", "en": "Please dial this number."}
+  },
+  "择": {
+    "origin": "A hand 扌 picking out what you want — to choose.",
+    "word": {"w": "选择", "en": "to choose, select"},
+    "sentence": {"cn": "你可以自由选择。", "en": "You can choose freely."}
+  },
+  "括": {
+    "origin": "A hand 扌 gathering things in — to enclose or include.",
+    "word": {"w": "包括", "en": "to include"},
+    "sentence": {"cn": "票价包括早餐。", "en": "The ticket price includes breakfast."}
+  },
+  "拱": {
+    "origin": "Both hands 扌 raised together 共 — to bow with cupped hands.",
+    "word": {"w": "拱手", "en": "to cup one's hands in greeting"},
+    "sentence": {"cn": "他拱手向大家问好。", "en": "He cups his hands to greet everyone."}
+  },
+  "拳": {
+    "origin": "A rolled-up hand 手 — a fist.",
+    "word": {"w": "拳头", "en": "fist"},
+    "sentence": {"cn": "他握紧了拳头。", "en": "He clenches his fist."}
+  },
+  "拴": {
+    "origin": "A hand 扌 tying something so it can't move — to fasten.",
+    "word": {"w": "拴住", "en": "to tie up, fasten"},
+    "sentence": {"cn": "他把狗拴住了。", "en": "He ties up the dog."}
+  },
+  "拷": {
+    "origin": "A hand 扌 questioning someone hard 考 — to interrogate; also to copy data.",
+    "word": {"w": "拷贝", "en": "to copy (data)"},
+    "sentence": {"cn": "请帮我拷贝文件。", "en": "Please help me copy the file."}
+  },
+  "拼": {
+    "origin": "A hand 扌 joining pieces side by side — to put together.",
+    "word": {"w": "拼图", "en": "jigsaw puzzle"},
+    "sentence": {"cn": "我们一起拼图。", "en": "We put together a puzzle."}
+  },
+  "拽": {
+    "origin": "A hand 扌 pulling 曳 something hard — to drag or yank.",
+    "word": {"w": "拽住", "en": "to grab and pull"},
+    "sentence": {"cn": "他拽住我的手。", "en": "He grabs and pulls my hand."}
+  },
+  "持": {
+    "origin": "A hand 扌 holding on firmly — to hold or keep up.",
+    "word": {"w": "坚持", "en": "to persist, keep on"},
+    "sentence": {"cn": "做事要坚持。", "en": "You must persist in doing things."}
+  },
+  "指": {
+    "origin": "A hand 扌 pointing the way — finger or to point.",
+    "word": {"w": "手指", "en": "finger"},
+    "sentence": {"cn": "我的手指受伤了。", "en": "My finger is hurt."}
+  },
+  "按": {
+    "origin": "A hand 扌 pressing down to keep calm 安 — to push or press.",
+    "word": {"w": "按钮", "en": "button (to press)"},
+    "sentence": {"cn": "请按这个按钮。", "en": "Please press this button."}
+  },
+  "挎": {
+    "origin": "A hand 扌 carrying something on the arm — to sling.",
+    "word": {"w": "挎包", "en": "shoulder bag"},
+    "sentence": {"cn": "她挎着一个包。", "en": "She carries a bag on her arm."}
+  },
+  "挟": {
+    "origin": "Something wedged 夹 under the arm 扌 — to hold under the arm.",
+    "word": {"w": "挟持", "en": "to hold hostage, coerce"},
+    "sentence": {"cn": "他挟着一本书。", "en": "He carries a book under his arm."}
+  },
+  "挠": {
+    "origin": "A hand 扌 scratching — to scratch or to yield.",
+    "word": {"w": "挠痒", "en": "to scratch an itch"},
+    "sentence": {"cn": "他在挠头。", "en": "He is scratching his head."}
+  },
+  "挡": {
+    "origin": "A hand 扌 raised at the right time 当 — to block.",
+    "word": {"w": "阻挡", "en": "to block, stop"},
+    "sentence": {"cn": "大树挡住了风。", "en": "The big tree blocks the wind."}
+  },
+  "挣": {
+    "origin": "A hand 扌 fighting 争 to get free — to struggle or earn.",
+    "word": {"w": "挣钱", "en": "to earn money"},
+    "sentence": {"cn": "爸爸努力挣钱。", "en": "Dad works hard to earn money."}
+  },
+  "挤": {
+    "origin": "A hand 扌 pushing into a tight space — to squeeze.",
+    "word": {"w": "拥挤", "en": "crowded"},
+    "sentence": {"cn": "车上很拥挤。", "en": "The bus is very crowded."}
+  },
+  "挥": {
+    "origin": "A hand 扌 directing an army 军 — to wave or command.",
+    "word": {"w": "挥手", "en": "to wave one's hand"},
+    "sentence": {"cn": "他挥手告别。", "en": "He waves goodbye."}
+  },
+  "挨": {
+    "origin": "A hand 扌 reaching right next to something — close by or to suffer.",
+    "word": {"w": "挨着", "en": "next to, close by"},
+    "sentence": {"cn": "我挨着他坐。", "en": "I sit right next to him."}
+  },
+  "挪": {
+    "origin": "A hand 扌 moving something over — to shift.",
+    "word": {"w": "挪动", "en": "to move, shift"},
+    "sentence": {"cn": "请挪动一下椅子。", "en": "Please move the chair a bit."}
+  },
+  "挫": {
+    "origin": "A hand 扌 pushing something down — a setback.",
+    "word": {"w": "挫折", "en": "setback, frustration"},
+    "sentence": {"cn": "他遇到了挫折。", "en": "He ran into a setback."}
+  },
+  "振": {
+    "origin": "A hand 扌 shaking things into action — to rouse or vibrate.",
+    "word": {"w": "振动", "en": "to vibrate"},
+    "sentence": {"cn": "手机在振动。", "en": "The phone is vibrating."}
+  },
+  "挺": {
+    "origin": "A hand 扌 straightening something up — to stand upright; also 'quite'.",
+    "word": {"w": "挺立", "en": "to stand upright"},
+    "sentence": {"cn": "大树挺立在山上。", "en": "The big tree stands upright on the hill."}
+  }
+}

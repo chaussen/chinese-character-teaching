@@ -1,0 +1,252 @@
+{
+ "垮": {
+  "origin": "土 earth plus 夸; when a wall of earth falls down and collapses.",
+  "word": {"w": "垮台", "en": "to collapse, to fall"},
+  "sentence": {"cn": "那堵墙垮了。", "en": "That wall collapsed."}
+ },
+ "埃": {
+  "origin": "土 earth plus 矣; tiny bits of earth floating as dust.",
+  "word": {"w": "尘埃", "en": "dust"},
+  "sentence": {"cn": "桌上有一层尘埃。", "en": "There is a layer of dust on the table."}
+ },
+ "埝": {
+  "origin": "土 earth plus 念; a small earthen dike that holds water.",
+  "word": {"w": "土埝", "en": "earthen dike"},
+  "sentence": {"cn": "田边筑起了埝。", "en": "A dike was built beside the field."}
+ },
+ "埯": {
+  "origin": "土 earth plus 奄; a small pit dug in the soil for planting.",
+  "word": {"w": "埯种", "en": "to sow seeds in small pits"},
+  "sentence": {"cn": "他在地里挖埯。", "en": "He digs small pits in the field."}
+ },
+ "堂": {
+  "origin": "土 earth plus 尚; a big building with a wide floor, a hall.",
+  "word": {"w": "课堂", "en": "classroom"},
+  "sentence": {"cn": "课堂上很安静。", "en": "It is very quiet in the classroom."}
+ },
+ "堆": {
+  "origin": "土 earth plus 隹; a pile of earth or things stacked up.",
+  "word": {"w": "一堆", "en": "a heap, a pile"},
+  "sentence": {"cn": "地上有一堆沙子。", "en": "There is a pile of sand on the ground."}
+ },
+ "堕": {
+  "origin": "土 earth below; to drop down and fall.",
+  "word": {"w": "堕落", "en": "to fall, to sink (morally)"},
+  "sentence": {"cn": "石头堕入河中。", "en": "The stone falls into the river."}
+ },
+ "堡": {
+  "origin": "Earthen 土 walls built to protect 保 people, a fort.",
+  "word": {"w": "城堡", "en": "castle"},
+  "sentence": {"cn": "山上有一座城堡。", "en": "There is a castle on the hill."}
+ },
+ "堤": {
+  "origin": "土 earth plus 是; a wall of earth that holds back river water.",
+  "word": {"w": "河堤", "en": "riverbank, dike"},
+  "sentence": {"cn": "我们在河堤上散步。", "en": "We stroll along the riverbank."}
+ },
+ "堰": {
+  "origin": "土 earth plus 匽; a low earthen dam that stores water.",
+  "word": {"w": "堰塘", "en": "a dammed pond"},
+  "sentence": {"cn": "村里有个堰塘。", "en": "There is a dammed pond in the village."}
+ },
+ "堵": {
+  "origin": "土 earth plus 者; to block something up, like a wall of earth.",
+  "word": {"w": "堵车", "en": "traffic jam"},
+  "sentence": {"cn": "路上堵车了。", "en": "There is a traffic jam on the road."}
+ },
+ "塌": {
+  "origin": "土 earth plus 日羽; when something made of earth falls in.",
+  "word": {"w": "倒塌", "en": "to collapse"},
+  "sentence": {"cn": "老房子塌了。", "en": "The old house collapsed."}
+ },
+ "塑": {
+  "origin": "土 earth plus 朔; to shape soft clay into a model.",
+  "word": {"w": "塑料", "en": "plastic"},
+  "sentence": {"cn": "这个杯子是塑料的。", "en": "This cup is made of plastic."}
+ },
+ "塔": {
+  "origin": "土 earth plus 荅; a tall building that rises up high.",
+  "word": {"w": "宝塔", "en": "pagoda, tower"},
+  "sentence": {"cn": "远处有一座塔。", "en": "There is a tower in the distance."}
+ },
+ "塘": {
+  "origin": "土 earth plus 唐; an earthen bank holding a pool of water.",
+  "word": {"w": "池塘", "en": "pond"},
+  "sentence": {"cn": "池塘里有小鱼。", "en": "There are little fish in the pond."}
+ },
+ "塞": {
+  "origin": "土 earth at the bottom; to stuff or block something up.",
+  "word": {"w": "塞住", "en": "to stop up, to block"},
+  "sentence": {"cn": "他把瓶子塞住了。", "en": "He stoppered the bottle."}
+ },
+ "填": {
+  "origin": "土 earth plus 真; to put earth in until a hole is full.",
+  "word": {"w": "填空", "en": "to fill in the blank"},
+  "sentence": {"cn": "请填上你的名字。", "en": "Please fill in your name."}
+ },
+ "塬": {
+  "origin": "土 earth plus 原; a high, flat tableland of earth.",
+  "word": {"w": "黄土塬", "en": "loess plateau"},
+  "sentence": {"cn": "塬上种着庄稼。", "en": "Crops are grown on the plateau."}
+ },
+ "墓": {
+  "origin": "土 earth plus 莫; a grave made in the earth.",
+  "word": {"w": "坟墓", "en": "grave, tomb"},
+  "sentence": {"cn": "山下有几座墓。", "en": "There are a few graves at the foot of the hill."}
+ },
+ "增": {
+  "origin": "土 earth plus 曾; piling more earth on, to add and increase.",
+  "word": {"w": "增加", "en": "to increase"},
+  "sentence": {"cn": "天气一天天增暖。", "en": "The weather grows warmer day by day."}
+ },
+ "墨": {
+  "origin": "Black 黑 powder from earth 土 makes ink.",
+  "word": {"w": "墨水", "en": "ink"},
+  "sentence": {"cn": "钢笔里没墨水了。", "en": "The pen has run out of ink."}
+ },
+ "墩": {
+  "origin": "土 earth plus 敦; a solid block of earth or stone.",
+  "word": {"w": "桥墩", "en": "bridge pier"},
+  "sentence": {"cn": "河里立着桥墩。", "en": "The bridge piers stand in the river."}
+ },
+ "壁": {
+  "origin": "土 earth plus 辟; a wall made of earth or stone.",
+  "word": {"w": "墙壁", "en": "wall"},
+  "sentence": {"cn": "墙壁上挂着画。", "en": "A picture hangs on the wall."}
+ },
+ "壕": {
+  "origin": "土 earth plus 豪; a ditch dug into the ground.",
+  "word": {"w": "壕沟", "en": "trench, ditch"},
+  "sentence": {"cn": "城外有一道壕沟。", "en": "There is a trench outside the city."}
+ },
+ "士": {
+  "origin": "A person who studies and serves, a scholar or gentleman.",
+  "word": {"w": "战士", "en": "soldier, warrior"},
+  "sentence": {"cn": "战士很勇敢。", "en": "The soldier is very brave."}
+ },
+ "壬": {
+  "origin": "The ninth of the ten heavenly stems used in old counting.",
+  "word": {"w": "壬午", "en": "renwu (a year in the old calendar)"},
+  "sentence": {"cn": "今年是壬年。", "en": "This year is a ren year."}
+ },
+ "壮": {
+  "origin": "丬 plus 士; a strong, sturdy person, full of power.",
+  "word": {"w": "强壮", "en": "strong, sturdy"},
+  "sentence": {"cn": "他长得很壮。", "en": "He is built strong."}
+ },
+ "壳": {
+  "origin": "A hard outer cover; the shell of an egg or a snail.",
+  "word": {"w": "贝壳", "en": "seashell"},
+  "sentence": {"cn": "海边有很多贝壳。", "en": "There are many seashells on the beach."}
+ },
+ "壶": {
+  "origin": "A picture of a jar or pot used to hold water or wine.",
+  "word": {"w": "茶壶", "en": "teapot"},
+  "sentence": {"cn": "茶壶里有热水。", "en": "There is hot water in the teapot."}
+ },
+ "壹": {
+  "origin": "The formal way to write one, used on bank notes and checks.",
+  "word": {"w": "壹元", "en": "one yuan (formal)"},
+  "sentence": {"cn": "这张是壹元。", "en": "This is one yuan."}
+ },
+ "处": {
+  "origin": "To go 夂 somewhere and stay; a place where you live.",
+  "word": {"w": "到处", "en": "everywhere"},
+  "sentence": {"cn": "公园里到处是花。", "en": "There are flowers everywhere in the park."}
+ },
+ "备": {
+  "origin": "To go 夂 to the field 田 and get things ready for harvest.",
+  "word": {"w": "准备", "en": "to prepare"},
+  "sentence": {"cn": "我准备好了。", "en": "I am ready."}
+ },
+ "夕": {
+  "origin": "A picture of a crescent moon; it means evening.",
+  "word": {"w": "夕阳", "en": "the setting sun"},
+  "sentence": {"cn": "夕阳很美。", "en": "The setting sun is beautiful."}
+ },
+ "夯": {
+  "origin": "大 big plus 力 strength; using great strength to pound earth.",
+  "word": {"w": "打夯", "en": "to tamp the ground"},
+  "sentence": {"cn": "工人在打夯。", "en": "The workers are tamping the ground."}
+ },
+ "失": {
+  "origin": "Something slipping 丿 out of a hand 夫; you lose it.",
+  "word": {"w": "失去", "en": "to lose"},
+  "sentence": {"cn": "我失去了一支笔。", "en": "I lost a pen."}
+ },
+ "夸": {
+  "origin": "大 big plus 亏; to say big words, to praise or boast.",
+  "word": {"w": "夸奖", "en": "to praise"},
+  "sentence": {"cn": "老师夸奖我。", "en": "The teacher praises me."}
+ },
+ "夹": {
+  "origin": "A person 夫 squeezed between two others 丷; to hold between.",
+  "word": {"w": "夹子", "en": "clip, clamp"},
+  "sentence": {"cn": "用夹子夹住纸。", "en": "Hold the paper with a clip."}
+ },
+ "夺": {
+  "origin": "A hand 寸 of a big person 大 grabbing; to snatch away.",
+  "word": {"w": "夺走", "en": "to take away by force"},
+  "sentence": {"cn": "他夺走了我的球。", "en": "He snatched away my ball."}
+ },
+ "奉": {
+  "origin": "Two hands holding something up to offer with respect.",
+  "word": {"w": "奉献", "en": "to offer, to devote"},
+  "sentence": {"cn": "他为大家奉献。", "en": "He devotes himself to everyone."}
+ },
+ "奏": {
+  "origin": "Two hands offering up music; to play an instrument.",
+  "word": {"w": "演奏", "en": "to perform music"},
+  "sentence": {"cn": "她在演奏钢琴。", "en": "She is playing the piano."}
+ },
+ "奔": {
+  "origin": "A person 大 running fast through a field of grass 卉.",
+  "word": {"w": "奔跑", "en": "to run fast"},
+  "sentence": {"cn": "马在草原上奔跑。", "en": "The horse runs across the grassland."}
+ },
+ "奕": {
+  "origin": "亦 plus 大; it means grand and full of life and spirit.",
+  "word": {"w": "神采奕奕", "en": "full of vigor"},
+  "sentence": {"cn": "他神采奕奕。", "en": "He is full of energy."}
+ },
+ "奖": {
+  "origin": "Something good given to a great 大 deed; a prize.",
+  "word": {"w": "奖品", "en": "prize, award"},
+  "sentence": {"cn": "我得了一个奖品。", "en": "I won a prize."}
+ },
+ "套": {
+  "origin": "A big 大 person wrapped in a long cloth; a cover or case.",
+  "word": {"w": "手套", "en": "gloves"},
+  "sentence": {"cn": "冬天要戴手套。", "en": "You should wear gloves in winter."}
+ },
+ "奚": {
+  "origin": "An old question word meaning where, what, or why.",
+  "word": {"w": "奚落", "en": "to mock, to taunt"},
+  "sentence": {"cn": "别奚落别人。", "en": "Don't mock others."}
+ },
+ "奥": {
+  "origin": "A person 大 finding a house 宀 full of rice 米; deep and mysterious.",
+  "word": {"w": "奥秘", "en": "mystery, secret"},
+  "sentence": {"cn": "大海藏着奥秘。", "en": "The sea hides many mysteries."}
+ },
+ "奴": {
+  "origin": "A woman 女 working by a master's hand 又; a servant.",
+  "word": {"w": "奴隶", "en": "slave"},
+  "sentence": {"cn": "古时候有奴隶。", "en": "In ancient times there were slaves."}
+ },
+ "奸": {
+  "origin": "女 woman plus 干; it means crafty or dishonest.",
+  "word": {"w": "奸诈", "en": "cunning, treacherous"},
+  "sentence": {"cn": "这个人很奸诈。", "en": "This person is very cunning."}
+ },
+ "妄": {
+  "origin": "亡 plus 女; it means foolish, reckless, or absurd.",
+  "word": {"w": "狂妄", "en": "arrogant, presumptuous"},
+  "sentence": {"cn": "他太狂妄了。", "en": "He is too arrogant."}
+ },
+ "妇": {
+  "origin": "A woman 女 with a broom 彐; it means a married woman.",
+  "word": {"w": "妇女", "en": "woman, married woman"},
+  "sentence": {"cn": "妇女们在跳舞。", "en": "The women are dancing."}
+ }
+}

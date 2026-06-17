@@ -1,0 +1,252 @@
+{
+  "邢": {
+    "origin": "A town 阝 — used as an old place name and a family name.",
+    "word": {"w": "邢台", "en": "Xingtai (a city name)"},
+    "sentence": {"cn": "他姓邢。", "en": "His surname is Xing."}
+  },
+  "邪": {
+    "origin": "Something crooked and not right — it means evil or wicked.",
+    "word": {"w": "邪恶", "en": "evil, wicked"},
+    "sentence": {"cn": "邪恶被打败了。", "en": "Evil was defeated."}
+  },
+  "邮": {
+    "origin": "A post town 阝 where letters pass — it means mail or post.",
+    "word": {"w": "邮票", "en": "postage stamp"},
+    "sentence": {"cn": "我买了邮票。", "en": "I bought a stamp."}
+  },
+  "邵": {
+    "origin": "A town 阝 — used mostly as a family name.",
+    "word": {"w": "邵阳", "en": "Shaoyang (a place name)"},
+    "sentence": {"cn": "他姓邵。", "en": "His surname is Shao."}
+  },
+  "郁": {
+    "origin": "Feelings closed up inside — it means gloomy or lush.",
+    "word": {"w": "忧郁", "en": "melancholy, depressed"},
+    "sentence": {"cn": "他有点忧郁。", "en": "He is a little melancholy."}
+  },
+  "郊": {
+    "origin": "A town 阝 at the city's edge — it means suburbs or outskirts.",
+    "word": {"w": "郊外", "en": "outskirts, countryside"},
+    "sentence": {"cn": "我们去郊外。", "en": "We are going to the outskirts."}
+  },
+  "郎": {
+    "origin": "A man from a good 良 town 阝 — it means a young gentleman.",
+    "word": {"w": "新郎", "en": "bridegroom"},
+    "sentence": {"cn": "新郎很高兴。", "en": "The bridegroom is very happy."}
+  },
+  "郑": {
+    "origin": "An old state and town 阝 — used as a family name.",
+    "word": {"w": "郑重", "en": "solemn, serious"},
+    "sentence": {"cn": "他郑重地说。", "en": "He said it solemnly."}
+  },
+  "郭": {
+    "origin": "The wall around a town 阝 — it means the city's outer edge.",
+    "word": {"w": "城郭", "en": "city wall"},
+    "sentence": {"cn": "古时有城郭。", "en": "In ancient times there were city walls."}
+  },
+  "鄂": {
+    "origin": "A town 阝 — the short name for Hubei province.",
+    "word": {"w": "湖北鄂州", "en": "Ezhou in Hubei (a place)"},
+    "sentence": {"cn": "鄂是湖北。", "en": "E refers to Hubei."}
+  },
+  "酉": {
+    "origin": "A picture of a wine jar — it means wine vessel.",
+    "word": {"w": "酉时", "en": "the hour of the Rooster (5-7pm)"},
+    "sentence": {"cn": "现在是酉时。", "en": "It is now the hour of the Rooster."}
+  },
+  "酊": {
+    "origin": "A wine 酉 word — it means drunk, used in 酩酊.",
+    "word": {"w": "酩酊", "en": "dead drunk"},
+    "sentence": {"cn": "他喝得酩酊。", "en": "He got dead drunk."}
+  },
+  "配": {
+    "origin": "Wine 酉 matched and mixed — it means to pair or blend.",
+    "word": {"w": "配合", "en": "to cooperate, to coordinate"},
+    "sentence": {"cn": "请你配合一下。", "en": "Please cooperate."}
+  },
+  "酒": {
+    "origin": "Water 氵 in a wine jar 酉 — it means wine or alcohol.",
+    "word": {"w": "喝酒", "en": "to drink alcohol"},
+    "sentence": {"cn": "爸爸不喝酒。", "en": "Dad doesn't drink alcohol."}
+  },
+  "酣": {
+    "origin": "To enjoy wine 酉 sweetly 甘 — it means happily and deeply.",
+    "word": {"w": "酣睡", "en": "to sleep soundly"},
+    "sentence": {"cn": "孩子酣睡着。", "en": "The child is sleeping soundly."}
+  },
+  "酥": {
+    "origin": "A food made with grain 禾 — it means crisp or flaky.",
+    "word": {"w": "酥脆", "en": "crispy, crunchy"},
+    "sentence": {"cn": "饼干很酥脆。", "en": "The cookies are crispy."}
+  },
+  "酱": {
+    "origin": "A thick paste made by fermenting 酉 — it means sauce.",
+    "word": {"w": "酱油", "en": "soy sauce"},
+    "sentence": {"cn": "菜里放酱油。", "en": "Put soy sauce in the dish."}
+  },
+  "酶": {
+    "origin": "A wine 酉 chemistry word — it means enzyme.",
+    "word": {"w": "酶", "en": "enzyme"},
+    "sentence": {"cn": "胃里有酶。", "en": "There are enzymes in the stomach."}
+  },
+  "酷": {
+    "origin": "Strong like aged wine 酉 — it means intense, or cool.",
+    "word": {"w": "酷热", "en": "scorching hot"},
+    "sentence": {"cn": "夏天很酷热。", "en": "Summer is scorching hot."}
+  },
+  "酸": {
+    "origin": "Wine 酉 aged too long turns sour — it means sour or acid.",
+    "word": {"w": "酸甜", "en": "sweet and sour"},
+    "sentence": {"cn": "这个橙子很酸。", "en": "This orange is very sour."}
+  },
+  "酽": {
+    "origin": "A drink 酉 that is very strong — it means thick or strong.",
+    "word": {"w": "酽茶", "en": "strong tea"},
+    "sentence": {"cn": "他爱喝酽茶。", "en": "He loves strong tea."}
+  },
+  "酿": {
+    "origin": "To ferment wine 酉 slowly — it means to brew.",
+    "word": {"w": "酿酒", "en": "to brew wine"},
+    "sentence": {"cn": "他们在酿酒。", "en": "They are brewing wine."}
+  },
+  "醇": {
+    "origin": "Wine 酉 worth savoring 享 — it means rich and mellow.",
+    "word": {"w": "醇厚", "en": "rich and mellow"},
+    "sentence": {"cn": "牛奶味道醇厚。", "en": "The milk tastes rich and mellow."}
+  },
+  "醉": {
+    "origin": "When wine 酉 takes over — it means drunk.",
+    "word": {"w": "喝醉", "en": "to get drunk"},
+    "sentence": {"cn": "他喝醉了。", "en": "He got drunk."}
+  },
+  "醋": {
+    "origin": "Wine 酉 gone old 昔 and sour — it means vinegar.",
+    "word": {"w": "醋", "en": "vinegar"},
+    "sentence": {"cn": "面里加点醋。", "en": "Add some vinegar to the noodles."}
+  },
+  "醒": {
+    "origin": "When the wine 酉 wears off — it means to wake up.",
+    "word": {"w": "醒来", "en": "to wake up"},
+    "sentence": {"cn": "我早上醒来。", "en": "I wake up in the morning."}
+  },
+  "醭": {
+    "origin": "A film that grows on old wine 酉 — it means mold scum.",
+    "word": {"w": "白醭", "en": "white mold scum"},
+    "sentence": {"cn": "醋上长了白醭。", "en": "Mold grew on the vinegar."}
+  },
+  "釉": {
+    "origin": "The shiny coating on pottery — it means glaze.",
+    "word": {"w": "釉面", "en": "glazed surface"},
+    "sentence": {"cn": "碗有亮釉面。", "en": "The bowl has a shiny glaze."}
+  },
+  "释": {
+    "origin": "To pick apart and make clear — it means to explain.",
+    "word": {"w": "解释", "en": "to explain"},
+    "sentence": {"cn": "请解释一下。", "en": "Please explain."}
+  },
+  "野": {
+    "origin": "The land 里 outside the village — it means open country.",
+    "word": {"w": "野外", "en": "the wild, outdoors"},
+    "sentence": {"cn": "我们去野外。", "en": "We are going outdoors."}
+  },
+  "针": {
+    "origin": "A thin metal 钅 pin — it means needle.",
+    "word": {"w": "针线", "en": "needle and thread"},
+    "sentence": {"cn": "妈妈用针线。", "en": "Mom uses needle and thread."}
+  },
+  "钉": {
+    "origin": "A metal 钅 spike 丁 — it means nail.",
+    "word": {"w": "钉子", "en": "nail"},
+    "sentence": {"cn": "墙上有钉子。", "en": "There is a nail on the wall."}
+  },
+  "钙": {
+    "origin": "A metal 钅 element — it means calcium.",
+    "word": {"w": "钙片", "en": "calcium tablet"},
+    "sentence": {"cn": "他吃钙片。", "en": "He takes calcium tablets."}
+  },
+  "钛": {
+    "origin": "A metal 钅 element — it means titanium.",
+    "word": {"w": "钛合金", "en": "titanium alloy"},
+    "sentence": {"cn": "这是钛做的。", "en": "This is made of titanium."}
+  },
+  "钝": {
+    "origin": "A metal 钅 blade that won't cut — it means blunt or dull.",
+    "word": {"w": "迟钝", "en": "slow, dull"},
+    "sentence": {"cn": "刀子有点钝。", "en": "The knife is a bit blunt."}
+  },
+  "钞": {
+    "origin": "Metal 钅 money, now paper — it means bank note.",
+    "word": {"w": "钞票", "en": "bank note, paper money"},
+    "sentence": {"cn": "他数着钞票。", "en": "He counts the bank notes."}
+  },
+  "钠": {
+    "origin": "A metal 钅 element — it means sodium.",
+    "word": {"w": "钠", "en": "sodium"},
+    "sentence": {"cn": "盐里有钠。", "en": "There is sodium in salt."}
+  },
+  "钡": {
+    "origin": "A metal 钅 element — it means barium.",
+    "word": {"w": "硫酸钡", "en": "barium sulfate"},
+    "sentence": {"cn": "钡是金属。", "en": "Barium is a metal."}
+  },
+  "钢": {
+    "origin": "Strong, hard metal 钅 — it means steel.",
+    "word": {"w": "钢铁", "en": "steel and iron"},
+    "sentence": {"cn": "桥是钢做的。", "en": "The bridge is made of steel."}
+  },
+  "钨": {
+    "origin": "A metal 钅 element — it means tungsten.",
+    "word": {"w": "钨丝", "en": "tungsten filament"},
+    "sentence": {"cn": "灯泡有钨丝。", "en": "The bulb has a tungsten filament."}
+  },
+  "钩": {
+    "origin": "A bent metal 钅 hook 勾 — it means hook.",
+    "word": {"w": "钩子", "en": "hook"},
+    "sentence": {"cn": "鱼咬了钩子。", "en": "The fish bit the hook."}
+  },
+  "钮": {
+    "origin": "A small metal 钅 knob — it means button.",
+    "word": {"w": "按钮", "en": "button (to press)"},
+    "sentence": {"cn": "请按这个钮。", "en": "Please press this button."}
+  },
+  "钳": {
+    "origin": "A metal 钅 tool that grips — it means pliers or tongs.",
+    "word": {"w": "钳子", "en": "pliers"},
+    "sentence": {"cn": "他用钳子。", "en": "He uses the pliers."}
+  },
+  "钵": {
+    "origin": "A metal 钅 or clay bowl — it means a basin or bowl.",
+    "word": {"w": "饭钵", "en": "rice bowl"},
+    "sentence": {"cn": "桌上有个钵。", "en": "There is a bowl on the table."}
+  },
+  "钹": {
+    "origin": "A round metal 钅 instrument — it means cymbals.",
+    "word": {"w": "铜钹", "en": "bronze cymbals"},
+    "sentence": {"cn": "他敲响铜钹。", "en": "He strikes the bronze cymbals."}
+  },
+  "钾": {
+    "origin": "A metal 钅 element — it means potassium.",
+    "word": {"w": "钾", "en": "potassium"},
+    "sentence": {"cn": "香蕉含钾。", "en": "Bananas contain potassium."}
+  },
+  "铀": {
+    "origin": "A metal 钅 element — it means uranium.",
+    "word": {"w": "铀矿", "en": "uranium ore"},
+    "sentence": {"cn": "铀很危险。", "en": "Uranium is dangerous."}
+  },
+  "铁": {
+    "origin": "A common, strong metal 钅 — it means iron.",
+    "word": {"w": "铁路", "en": "railway"},
+    "sentence": {"cn": "门是铁做的。", "en": "The door is made of iron."}
+  },
+  "铃": {
+    "origin": "A small metal 钅 bell — it means little bell.",
+    "word": {"w": "铃声", "en": "ring, bell sound"},
+    "sentence": {"cn": "门铃响了。", "en": "The doorbell rang."}
+  },
+  "铅": {
+    "origin": "A soft, heavy metal 钅 — it means lead.",
+    "word": {"w": "铅笔", "en": "pencil"},
+    "sentence": {"cn": "我用铅笔写。", "en": "I write with a pencil."}
+  }
+}

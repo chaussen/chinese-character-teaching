@@ -1,0 +1,252 @@
+{
+ "矫": {
+  "origin": "矢是箭，乔表声，本指把箭弄直，引申为纠正、矫正。",
+  "word": {"w": "矫正", "en": "to correct; to straighten"},
+  "sentence": {"cn": "他在矫正牙齿。", "en": "He is getting his teeth straightened."}
+ },
+ "矬": {
+  "origin": "矢是箭，坐表声，口语里形容人个子矮。",
+  "word": {"w": "矬子", "en": "a short person"},
+  "sentence": {"cn": "他长得有点矬。", "en": "He is a bit short."}
+ },
+ "矾": {
+  "origin": "石字旁表示矿物，凡表声，指一种白色的矿石——明矾。",
+  "word": {"w": "明矾", "en": "alum"},
+  "sentence": {"cn": "明矾可以净水。", "en": "Alum can purify water."}
+ },
+ "矿": {
+  "origin": "石字旁表示矿物，广表声，指埋在地下的矿石或矿场。",
+  "word": {"w": "矿石", "en": "ore"},
+  "sentence": {"cn": "山里有铁矿。", "en": "There is iron ore in the mountain."}
+ },
+ "码": {
+  "origin": "石字旁表示成堆的石块，马表声，本指堆叠，引申为数目、号码。",
+  "word": {"w": "号码", "en": "number"},
+  "sentence": {"cn": "请记下电话号码。", "en": "Please write down the phone number."}
+ },
+ "砂": {
+  "origin": "石和少合在一起，表示很多细小的石头，就是砂。",
+  "word": {"w": "砂子", "en": "sand"},
+  "sentence": {"cn": "河边有很多砂。", "en": "There is a lot of sand by the river."}
+ },
+ "砌": {
+  "origin": "石是石头，切表声，表示一块块把石头垒起来。",
+  "word": {"w": "砌墙", "en": "to build a wall (with bricks/stones)"},
+  "sentence": {"cn": "工人在砌墙。", "en": "The workers are building a wall."}
+ },
+ "砖": {
+  "origin": "石字旁表示像石头一样硬，专表声，指盖房用的砖。",
+  "word": {"w": "砖头", "en": "brick"},
+  "sentence": {"cn": "他搬了一块砖。", "en": "He carried a brick."}
+ },
+ "砘": {
+  "origin": "石字旁表示石头做的，屯表声，指一种压地的石头农具。",
+  "word": {"w": "砘子", "en": "a stone soil-pressing roller"},
+  "sentence": {"cn": "农民用砘子压地。", "en": "The farmer presses the soil with a stone roller."}
+ },
+ "砚": {
+  "origin": "石字旁表示石头做的，见表声，指磨墨用的石台。",
+  "word": {"w": "砚台", "en": "inkstone"},
+  "sentence": {"cn": "桌上放着砚台。", "en": "An inkstone sits on the desk."}
+ },
+ "砰": {
+  "origin": "石字旁，平表声，模仿石头撞击发出的响声。",
+  "word": {"w": "砰砰", "en": "bang bang (sound)"},
+  "sentence": {"cn": "门砰地关上了。", "en": "The door slammed shut with a bang."}
+ },
+ "硅": {
+  "origin": "石字旁表示矿物，圭表声，指一种叫硅的元素。",
+  "word": {"w": "硅谷", "en": "Silicon Valley"},
+  "sentence": {"cn": "硅是一种元素。", "en": "Silicon is an element."}
+ },
+ "硌": {
+  "origin": "石字旁表示石头，各表声，指硬东西硌着身体不舒服。",
+  "word": {"w": "硌脚", "en": "to hurt the foot (by something hard)"},
+  "sentence": {"cn": "鞋里有石子硌脚。", "en": "There is a pebble in my shoe hurting my foot."}
+ },
+ "硒": {
+  "origin": "石字旁表示矿物，西表声，指一种叫硒的元素。",
+  "word": {"w": "硒元素", "en": "selenium (element)"},
+  "sentence": {"cn": "硒对身体有用。", "en": "Selenium is useful for the body."}
+ },
+ "硝": {
+  "origin": "石字旁表示矿物，肖表声，指一种白色的矿物——硝。",
+  "word": {"w": "硝石", "en": "saltpeter; niter"},
+  "sentence": {"cn": "硝石是白色的。", "en": "Saltpeter is white."}
+ },
+ "硫": {
+  "origin": "石字旁表示矿物，㐬表声，指一种黄色的元素——硫。",
+  "word": {"w": "硫磺", "en": "sulfur"},
+  "sentence": {"cn": "硫磺是黄色的。", "en": "Sulfur is yellow."}
+ },
+ "硬": {
+  "origin": "石字旁表示像石头一样，更表声，指又结实又坚的。",
+  "word": {"w": "坚硬", "en": "hard; solid"},
+  "sentence": {"cn": "这块石头很硬。", "en": "This stone is very hard."}
+ },
+ "确": {
+  "origin": "石字旁表示像石头一样可靠，角表声，表示真实、确定。",
+  "word": {"w": "确定", "en": "to be sure; certain"},
+  "sentence": {"cn": "我确定他来过。", "en": "I am sure he has been here."}
+ },
+ "硼": {
+  "origin": "石字旁表示矿物，朋表声，指一种叫硼的元素。",
+  "word": {"w": "硼砂", "en": "borax"},
+  "sentence": {"cn": "硼砂是白色的。", "en": "Borax is white."}
+ },
+ "碇": {
+  "origin": "石字旁表示石头做的，定表声，指拴船用的石锚。",
+  "word": {"w": "下碇", "en": "to drop anchor"},
+  "sentence": {"cn": "船下碇停住了。", "en": "The boat dropped anchor and stopped."}
+ },
+ "碍": {
+  "origin": "石字旁表示像石头挡路，表示妨碍、阻挡。",
+  "word": {"w": "妨碍", "en": "to hinder; to obstruct"},
+  "sentence": {"cn": "别碍着别人。", "en": "Don't get in others' way."}
+ },
+ "碎": {
+  "origin": "石字旁表示石头，卒表声，表示石头破成小块，引申为破碎。",
+  "word": {"w": "破碎", "en": "broken; shattered"},
+  "sentence": {"cn": "杯子摔碎了。", "en": "The cup shattered."}
+ },
+ "碑": {
+  "origin": "石字旁表示石头，卑表声，指立起来刻字的石头。",
+  "word": {"w": "石碑", "en": "stone tablet; stele"},
+  "sentence": {"cn": "公园里有块石碑。", "en": "There is a stone tablet in the park."}
+ },
+ "碓": {
+  "origin": "石字旁表示石头做的，隹表声，指舂米用的石臼工具。",
+  "word": {"w": "石碓", "en": "stone pestle (for husking grain)"},
+  "sentence": {"cn": "他用碓舂米。", "en": "He husks rice with a stone pestle."}
+ },
+ "碗": {
+  "origin": "石字旁表示像石头一样硬，宛表声，指吃饭用的碗。",
+  "word": {"w": "饭碗", "en": "rice bowl"},
+  "sentence": {"cn": "桌上有一个碗。", "en": "There is a bowl on the table."}
+ },
+ "碘": {
+  "origin": "石字旁表示矿物元素，典表声，指一种叫碘的元素。",
+  "word": {"w": "碘酒", "en": "iodine tincture"},
+  "sentence": {"cn": "伤口涂点碘酒。", "en": "Apply some iodine to the wound."}
+ },
+ "碟": {
+  "origin": "石字旁表示器皿，枼表声，指又小又平的盘子。",
+  "word": {"w": "碟子", "en": "small plate; saucer"},
+  "sentence": {"cn": "碟子里放着花生。", "en": "There are peanuts on the small plate."}
+ },
+ "碧": {
+  "origin": "上面是玉（珀），下面是石，指像玉一样青绿的美石，引申为青绿色。",
+  "word": {"w": "碧绿", "en": "jade green; emerald green"},
+  "sentence": {"cn": "湖水碧绿。", "en": "The lake water is emerald green."}
+ },
+ "碱": {
+  "origin": "石字旁表示矿物，咸表声，指一种又涩又能去油的矿物——碱。",
+  "word": {"w": "碱水", "en": "alkaline water; lye"},
+  "sentence": {"cn": "这水带点碱。", "en": "This water is a bit alkaline."}
+ },
+ "碳": {
+  "origin": "石字旁表示矿物元素，炭表声，指一种叫碳的元素。",
+  "word": {"w": "碳水", "en": "carbohydrate"},
+  "sentence": {"cn": "碳是常见的元素。", "en": "Carbon is a common element."}
+ },
+ "碴": {
+  "origin": "石字旁表示碎硬的东西，查表声，指碎渣，也指找茬吵架。",
+  "word": {"w": "冰碴", "en": "ice shards; thin ice crust"},
+  "sentence": {"cn": "碗边有个碴。", "en": "There is a chip on the bowl's edge."}
+ },
+ "碾": {
+  "origin": "石字旁表示石头做的，展表声，指用来压碎东西的石滚子。",
+  "word": {"w": "碾子", "en": "stone roller; millstone roller"},
+  "sentence": {"cn": "车轮碾过石子。", "en": "The wheel rolls over the pebbles."}
+ },
+ "磁": {
+  "origin": "石字旁表示矿石，兹表声，指能吸铁的石头，表示磁性。",
+  "word": {"w": "磁铁", "en": "magnet"},
+  "sentence": {"cn": "磁铁能吸铁。", "en": "A magnet can attract iron."}
+ },
+ "磅": {
+  "origin": "石字旁表示石头般的重量，旁表声，指一种重量单位——磅。",
+  "word": {"w": "磅秤", "en": "platform scale"},
+  "sentence": {"cn": "他在磅秤上称体重。", "en": "He weighs himself on the scale."}
+ },
+ "磕": {
+  "origin": "石字旁表示石头，盍表声，表示硬碰硬地撞、敲。",
+  "word": {"w": "磕碰", "en": "to bump; to knock against"},
+  "sentence": {"cn": "他磕到了头。", "en": "He bumped his head."}
+ },
+ "磨": {
+  "origin": "麻表声，下面是石，指用来磨东西的石盘，也指磨碎。",
+  "word": {"w": "磨刀", "en": "to sharpen a knife"},
+  "sentence": {"cn": "爸爸在磨刀。", "en": "Dad is sharpening the knife."}
+ },
+ "磷": {
+  "origin": "石字旁表示矿物元素，粦表声，指一种叫磷的元素。",
+  "word": {"w": "磷火", "en": "phosphorescent light; will-o'-the-wisp"},
+  "sentence": {"cn": "磷是一种元素。", "en": "Phosphorus is an element."}
+ },
+ "礅": {
+  "origin": "石字旁表示石头做的，敦表声，指厚而粗的石块。",
+  "word": {"w": "石礅", "en": "stone block"},
+  "sentence": {"cn": "门口有个石礅。", "en": "There is a stone block at the gate."}
+ },
+ "礼": {
+  "origin": "礻（示）旁表示祭祀，乚表声，本指祭神的仪式，引申为礼貌、礼物。",
+  "word": {"w": "礼物", "en": "gift; present"},
+  "sentence": {"cn": "我收到一份礼物。", "en": "I received a gift."}
+ },
+ "祁": {
+  "origin": "礻（示）旁表示祭祀，阝表声，本与祭祀有关，今多作姓氏、地名。",
+  "word": {"w": "祁连山", "en": "Qilian Mountains"},
+  "sentence": {"cn": "祁连山很高。", "en": "The Qilian Mountains are very high."}
+ },
+ "神": {
+  "origin": "礻（示）旁表示祭祀，申表声，指天上的神、神灵。",
+  "word": {"w": "神话", "en": "myth; mythology"},
+  "sentence": {"cn": "我喜欢听神话。", "en": "I like listening to myths."}
+ },
+ "祥": {
+  "origin": "礻（示）旁表示与神有关，羊表声，指吉利、好运气。",
+  "word": {"w": "吉祥", "en": "auspicious; lucky"},
+  "sentence": {"cn": "祝你吉祥如意。", "en": "Wishing you good luck and happiness."}
+ },
+ "票": {
+  "origin": "上面像火苗，下面是示（祭台），后来借用指纸做的票。",
+  "word": {"w": "车票", "en": "ticket (for transport)"},
+  "sentence": {"cn": "我买了一张车票。", "en": "I bought a ticket."}
+ },
+ "祭": {
+  "origin": "一只手（寸）拿着肉（⺼）放到祭台（示）上，表示祭祀。",
+  "word": {"w": "祭祖", "en": "to worship one's ancestors"},
+  "sentence": {"cn": "他们回家祭祖。", "en": "They went home to honor their ancestors."}
+ },
+ "祸": {
+  "origin": "礻（示）旁表示与神有关，呙表声，指灾难、坏事。",
+  "word": {"w": "灾祸", "en": "disaster; calamity"},
+  "sentence": {"cn": "小心别闯祸。", "en": "Be careful not to cause trouble."}
+ },
+ "禅": {
+  "origin": "礻（示）旁表示和修行有关，单表声，指佛家静坐参悟的禅。",
+  "word": {"w": "禅师", "en": "Zen master"},
+  "sentence": {"cn": "禅师在打坐。", "en": "The Zen master is meditating."}
+ },
+ "福": {
+  "origin": "礻（示）旁表示求神保佑，畐表声，指幸福、好运。",
+  "word": {"w": "幸福", "en": "happiness; happy"},
+  "sentence": {"cn": "一家人很幸福。", "en": "The family is very happy."}
+ },
+ "禽": {
+  "origin": "上面是人，下面是离，本指捕捉鸟兽，引申为鸟类。",
+  "word": {"w": "家禽", "en": "poultry; domestic fowl"},
+  "sentence": {"cn": "鸡是一种家禽。", "en": "A chicken is a kind of poultry."}
+ },
+ "秀": {
+  "origin": "禾是庄稼，下面表示抽穗开花，引申为美好、出众。",
+  "word": {"w": "秀丽", "en": "beautiful; elegant"},
+  "sentence": {"cn": "这里风景秀丽。", "en": "The scenery here is beautiful."}
+ },
+ "秃": {
+  "origin": "上面是禾（像头发），下面是人，表示头上没了头发，就是秃。",
+  "word": {"w": "秃顶", "en": "bald (on top)"},
+  "sentence": {"cn": "这棵树秃了。", "en": "This tree has gone bare."}
+ }
+}

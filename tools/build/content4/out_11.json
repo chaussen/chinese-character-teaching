@@ -1,0 +1,252 @@
+{
+  "宿": {
+    "origin": "屋顶“宀”下有人在休息，指住下、过夜。",
+    "word": {"w": "宿舍", "en": "dormitory"},
+    "sentence": {"cn": "我们住在学校宿舍里。", "en": "We live in the school dormitory."}
+  },
+  "寄": {
+    "origin": "宝盖头“宀”加“奇”，指把东西托人送出去。",
+    "word": {"w": "寄信", "en": "to mail a letter"},
+    "sentence": {"cn": "我给爷爷寄了一封信。", "en": "I mailed a letter to my grandpa."}
+  },
+  "寅": {
+    "origin": "古时计时用的字，是十二地支之一。",
+    "word": {"w": "寅时", "en": "the hours 3-5 a.m."},
+    "sentence": {"cn": "古人用寅时来记时间。", "en": "Ancient people used 'yín' to mark the time."}
+  },
+  "密": {
+    "origin": "“宓”加“山”，指紧紧靠近、不让人知道的秘密。",
+    "word": {"w": "秘密", "en": "secret"},
+    "sentence": {"cn": "这是我们的小秘密。", "en": "This is our little secret."}
+  },
+  "寇": {
+    "origin": "有人闯进屋子“宀”抢东西，指强盗。",
+    "word": {"w": "敌寇", "en": "enemy, invader"},
+    "sentence": {"cn": "古时常有敌寇来犯。", "en": "In ancient times, invaders often attacked."}
+  },
+  "寒": {
+    "origin": "指天气很冷、寒冷。",
+    "word": {"w": "寒冷", "en": "cold, chilly"},
+    "sentence": {"cn": "冬天的天气很寒冷。", "en": "The weather in winter is very cold."}
+  },
+  "寓": {
+    "origin": "宝盖头“宀”加“禺”，指住的地方。",
+    "word": {"w": "公寓", "en": "apartment"},
+    "sentence": {"cn": "他住在一间小公寓里。", "en": "He lives in a small apartment."}
+  },
+  "寡": {
+    "origin": "指少，也指死了丈夫的女人。",
+    "word": {"w": "寡妇", "en": "widow"},
+    "sentence": {"cn": "这个字读作寡。", "en": "This character is read guǎ."}
+  },
+  "寨": {
+    "origin": "用木头围起来的村子或营地，叫山寨。",
+    "word": {"w": "村寨", "en": "village, stockade"},
+    "sentence": {"cn": "山上有一个小村寨。", "en": "There is a small village on the mountain."}
+  },
+  "寺": {
+    "origin": "原指官府，后来多指和尚住的庙。",
+    "word": {"w": "寺庙", "en": "temple"},
+    "sentence": {"cn": "山上有一座古老的寺庙。", "en": "There is an old temple on the mountain."}
+  },
+  "导": {
+    "origin": "有手“寸”指路的意思，表示带路、引导。",
+    "word": {"w": "导游", "en": "tour guide"},
+    "sentence": {"cn": "导游带我们参观。", "en": "The tour guide took us sightseeing."}
+  },
+  "封": {
+    "origin": "右边是手“寸”，指把信口封住，也用来数信。",
+    "word": {"w": "信封", "en": "envelope"},
+    "sentence": {"cn": "他把信放进信封里。", "en": "He put the letter into the envelope."}
+  },
+  "将": {
+    "origin": "有“快要”的意思，也可读作将军的将。",
+    "word": {"w": "将来", "en": "future"},
+    "sentence": {"cn": "我将来想当老师。", "en": "I want to be a teacher in the future."}
+  },
+  "尉": {
+    "origin": "古时的一种武官名称。",
+    "word": {"w": "上尉", "en": "captain (military rank)"},
+    "sentence": {"cn": "他是一名上尉。", "en": "He is a captain."}
+  },
+  "尚": {
+    "origin": "有“还、仍然”的意思，也表示崇尚。",
+    "word": {"w": "尚未", "en": "not yet"},
+    "sentence": {"cn": "作业尚未做完。", "en": "The homework is not yet finished."}
+  },
+  "尝": {
+    "origin": "上面是“尚”，下面像舌头，指用嘴尝味道。",
+    "word": {"w": "品尝", "en": "to taste, to sample"},
+    "sentence": {"cn": "我尝了一口蛋糕。", "en": "I had a taste of the cake."}
+  },
+  "尤": {
+    "origin": "有特别、更加的意思。",
+    "word": {"w": "尤其", "en": "especially"},
+    "sentence": {"cn": "我喜欢水果，尤其是苹果。", "en": "I like fruit, especially apples."}
+  },
+  "尸": {
+    "origin": "像一个人弯腰躺着的样子，指死了的身体。",
+    "word": {"w": "尸体", "en": "corpse, dead body"},
+    "sentence": {"cn": "这个字读作尸。", "en": "This character is read shī."}
+  },
+  "尽": {
+    "origin": "有用完、到头的意思。",
+    "word": {"w": "尽力", "en": "to do one's best"},
+    "sentence": {"cn": "我会尽力做好。", "en": "I will do my best."}
+  },
+  "尿": {
+    "origin": "人弯腰“尸”下面是水“水”，指撒尿。",
+    "word": {"w": "尿尿", "en": "to pee"},
+    "sentence": {"cn": "弟弟要去尿尿。", "en": "My little brother needs to pee."}
+  },
+  "局": {
+    "origin": "指办公的地方，也指棋的一盘。",
+    "word": {"w": "邮局", "en": "post office"},
+    "sentence": {"cn": "妈妈去邮局寄包裹。", "en": "Mom went to the post office to mail a parcel."}
+  },
+  "屁": {
+    "origin": "“尸”表示身体，“比”提示读音，指放屁。",
+    "word": {"w": "放屁", "en": "to fart"},
+    "sentence": {"cn": "小狗放了一个屁。", "en": "The puppy let out a fart."}
+  },
+  "屈": {
+    "origin": "有弯曲、受委屈的意思。",
+    "word": {"w": "委屈", "en": "to feel wronged"},
+    "sentence": {"cn": "他受了委屈就哭了。", "en": "He cried after feeling wronged."}
+  },
+  "屉": {
+    "origin": "指能拉出来放东西的抽屉。",
+    "word": {"w": "抽屉", "en": "drawer"},
+    "sentence": {"cn": "笔放在抽屉里。", "en": "The pen is in the drawer."}
+  },
+  "届": {
+    "origin": "有到了时候、每一次的意思。",
+    "word": {"w": "一届", "en": "one session/term"},
+    "sentence": {"cn": "这是本届运动会。", "en": "This is this year's sports meet."}
+  },
+  "屎": {
+    "origin": "人弯腰“尸”下面是“米”，指大便。",
+    "word": {"w": "拉屎", "en": "to poop"},
+    "sentence": {"cn": "小宝宝拉屎了。", "en": "The baby pooped."}
+  },
+  "屏": {
+    "origin": "原指挡风的东西，现在也指屏幕。",
+    "word": {"w": "屏幕", "en": "screen"},
+    "sentence": {"cn": "电视屏幕很大。", "en": "The TV screen is very big."}
+  },
+  "展": {
+    "origin": "有展开、铺开给人看的意思。",
+    "word": {"w": "展开", "en": "to spread out, to unfold"},
+    "sentence": {"cn": "他把地图展开。", "en": "He spread out the map."}
+  },
+  "屙": {
+    "origin": "“尸”表示身体，指拉屎或撒尿。",
+    "word": {"w": "屙屎", "en": "to defecate"},
+    "sentence": {"cn": "这个字读作屙。", "en": "This character is read ē."}
+  },
+  "属": {
+    "origin": "有归属、隶属的意思，也指生肖属相。",
+    "word": {"w": "属于", "en": "to belong to"},
+    "sentence": {"cn": "这本书属于我。", "en": "This book belongs to me."}
+  },
+  "屠": {
+    "origin": "“尸”加“者”，指杀牲口。",
+    "word": {"w": "屠夫", "en": "butcher"},
+    "sentence": {"cn": "屠夫在切肉。", "en": "The butcher is cutting meat."}
+  },
+  "屡": {
+    "origin": "有一次又一次、经常的意思。",
+    "word": {"w": "屡次", "en": "repeatedly, time and again"},
+    "sentence": {"cn": "他屡次迟到。", "en": "He was late time and again."}
+  },
+  "屯": {
+    "origin": "指小村子，也有聚集、储存的意思。",
+    "word": {"w": "屯子", "en": "village, hamlet"},
+    "sentence": {"cn": "他们住在一个小屯子里。", "en": "They live in a small village."}
+  },
+  "岂": {
+    "origin": "上面是“山”，常用来反问，表示“难道”。",
+    "word": {"w": "岂能", "en": "how could it be"},
+    "sentence": {"cn": "我们岂能放弃。", "en": "How could we give up?"}
+  },
+  "岔": {
+    "origin": "“分”加“山”，指路分开的地方。",
+    "word": {"w": "岔路", "en": "fork in the road"},
+    "sentence": {"cn": "前面有一个岔路口。", "en": "There is a fork in the road ahead."}
+  },
+  "岗": {
+    "origin": "“山”加“冈”，指小山，也指站岗的位置。",
+    "word": {"w": "岗位", "en": "post, position"},
+    "sentence": {"cn": "他坚守在自己的岗位。", "en": "He stays firmly at his post."}
+  },
+  "岩": {
+    "origin": "“山”加“石”，指山上的大石头。",
+    "word": {"w": "岩石", "en": "rock"},
+    "sentence": {"cn": "山上有很多岩石。", "en": "There are many rocks on the mountain."}
+  },
+  "岭": {
+    "origin": "“山”表示意思，“令”提示读音，指山脉、山顶。",
+    "word": {"w": "山岭", "en": "mountain ridge"},
+    "sentence": {"cn": "远处是连绵的山岭。", "en": "In the distance are rolling mountain ridges."}
+  },
+  "岳": {
+    "origin": "上面是“丘”下面是“山”，指高大的山。",
+    "word": {"w": "山岳", "en": "mountains"},
+    "sentence": {"cn": "这里山岳高耸。", "en": "The mountains here rise high."}
+  },
+  "峡": {
+    "origin": "两座“山”中间夹着的地方，叫峡谷。",
+    "word": {"w": "峡谷", "en": "canyon, gorge"},
+    "sentence": {"cn": "河水流过峡谷。", "en": "The river flows through the gorge."}
+  },
+  "峰": {
+    "origin": "“山”表示意思，“夆”提示读音，指山的最高处。",
+    "word": {"w": "山峰", "en": "mountain peak"},
+    "sentence": {"cn": "山峰上盖着白雪。", "en": "The mountain peak is covered with white snow."}
+  },
+  "崇": {
+    "origin": "“山”加“宗”，指高大，也指敬重。",
+    "word": {"w": "崇高", "en": "lofty, noble"},
+    "sentence": {"cn": "这是崇高的理想。", "en": "This is a lofty ideal."}
+  },
+  "崔": {
+    "origin": "“山”加“隹”，形容高大，也常用作姓。",
+    "word": {"w": "姓崔", "en": "surnamed Cui"},
+    "sentence": {"cn": "我的老师姓崔。", "en": "My teacher's surname is Cui."}
+  },
+  "崖": {
+    "origin": "“山”加“厓”，指又高又陡的山边。",
+    "word": {"w": "悬崖", "en": "cliff, precipice"},
+    "sentence": {"cn": "他站在悬崖边上。", "en": "He stands at the edge of the cliff."}
+  },
+  "崩": {
+    "origin": "“山”加“朋”，指山塌下来、裂开。",
+    "word": {"w": "崩塌", "en": "to collapse"},
+    "sentence": {"cn": "大雨让山坡崩塌了。", "en": "The heavy rain made the hillside collapse."}
+  },
+  "嵌": {
+    "origin": "有把东西镶进去的意思。",
+    "word": {"w": "镶嵌", "en": "to inlay, to embed"},
+    "sentence": {"cn": "戒指上镶嵌着宝石。", "en": "A gem is set into the ring."}
+  },
+  "巅": {
+    "origin": "“山”加“颠”，指山的最高顶点。",
+    "word": {"w": "巅峰", "en": "summit, peak"},
+    "sentence": {"cn": "他爬到了山的巅峰。", "en": "He climbed to the summit of the mountain."}
+  },
+  "州": {
+    "origin": "像河“川”中间的小岛，原指水中陆地，后指地方。",
+    "word": {"w": "广州", "en": "Guangzhou (city)"},
+    "sentence": {"cn": "我去过广州。", "en": "I have been to Guangzhou."}
+  },
+  "巡": {
+    "origin": "“辶”表示走动，指来回查看。",
+    "word": {"w": "巡逻", "en": "to patrol"},
+    "sentence": {"cn": "警察在街上巡逻。", "en": "The police are patrolling the streets."}
+  },
+  "巢": {
+    "origin": "像鸟在树“木”上搭的窝，指鸟巢。",
+    "word": {"w": "鸟巢", "en": "bird's nest"},
+    "sentence": {"cn": "树上有一个鸟巢。", "en": "There is a bird's nest in the tree."}
+  }
+}

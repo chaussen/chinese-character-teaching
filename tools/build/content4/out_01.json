@@ -1,0 +1,252 @@
+{
+ "丁": {
+  "origin": "丁 looks like a small nail with a flat top; it also means a grown man.",
+  "word": {"w": "园丁", "en": "gardener"},
+  "sentence": {"cn": "他是一个园丁。", "en": "He is a gardener."}
+ },
+ "丈": {
+  "origin": "丈 means an adult man or husband, and is also an old unit of length.",
+  "word": {"w": "丈夫", "en": "husband"},
+  "sentence": {"cn": "她的丈夫很高。", "en": "Her husband is very tall."}
+ },
+ "丑": {
+  "origin": "丑 means ugly; remember the opposite of pretty.",
+  "word": {"w": "丑陋", "en": "ugly"},
+  "sentence": {"cn": "这只虫子很丑。", "en": "This bug is very ugly."}
+ },
+ "世": {
+  "origin": "世 once pictured leaves on a branch and now means generation or the world.",
+  "word": {"w": "世界", "en": "world"},
+  "sentence": {"cn": "世界很大。", "en": "The world is big."}
+ },
+ "丘": {
+  "origin": "丘 shows the shape of two small hills side by side.",
+  "word": {"w": "山丘", "en": "hill"},
+  "sentence": {"cn": "前面有一座山丘。", "en": "There is a hill ahead."}
+ },
+ "丙": {
+  "origin": "丙 is the third of the ten heavenly stems, used for counting like A, B, C.",
+  "word": {"w": "丙等", "en": "grade C"},
+  "sentence": {"cn": "他考了丙等。", "en": "He got a grade of C."}
+ },
+ "丛": {
+  "origin": "丛 shows many plants 从 growing close together as a bush or cluster.",
+  "word": {"w": "花丛", "en": "cluster of flowers"},
+  "sentence": {"cn": "花丛里有蜜蜂。", "en": "There are bees in the flowers."}
+ },
+ "丝": {
+  "origin": "丝 is the simple form of 絲, showing fine threads of silk.",
+  "word": {"w": "丝绸", "en": "silk"},
+  "sentence": {"cn": "这条丝巾很软。", "en": "This silk scarf is very soft."}
+ },
+ "丸": {
+  "origin": "丸 pictures a hand holding a little round pellet or ball.",
+  "word": {"w": "鱼丸", "en": "fish ball"},
+  "sentence": {"cn": "我爱吃鱼丸。", "en": "I love eating fish balls."}
+ },
+ "丹": {
+  "origin": "丹 shows a red pellet from a mine and means a red color.",
+  "word": {"w": "丹顶鹤", "en": "red-crowned crane"},
+  "sentence": {"cn": "丹顶鹤很美。", "en": "The red-crowned crane is beautiful."}
+ },
+ "为": {
+  "origin": "为 means for or because of, telling why we do something.",
+  "word": {"w": "因为", "en": "because"},
+  "sentence": {"cn": "我为你高兴。", "en": "I am happy for you."}
+ },
+ "主": {
+  "origin": "主 pictures a lamp with a bright flame; it means owner or master.",
+  "word": {"w": "主人", "en": "owner, host"},
+  "sentence": {"cn": "小狗的主人来了。", "en": "The puppy's owner has come."}
+ },
+ "乃": {
+  "origin": "乃 is an old word meaning then or namely.",
+  "word": {"w": "乃至", "en": "and even"},
+  "sentence": {"cn": "失败乃成功之母。", "en": "Failure is the mother of success."}
+ },
+ "乍": {
+  "origin": "乍 means suddenly or at first, as in something happening all at once.",
+  "word": {"w": "乍看", "en": "at first glance"},
+  "sentence": {"cn": "天气乍冷乍热。", "en": "The weather is suddenly cold, suddenly hot."}
+ },
+ "乏": {
+  "origin": "乏 means lacking or tired, as if running out of energy.",
+  "word": {"w": "疲乏", "en": "tired, weary"},
+  "sentence": {"cn": "我今天很疲乏。", "en": "I am very tired today."}
+ },
+ "乐": {
+  "origin": "乐 is the simple form of 樂 and means happy or music.",
+  "word": {"w": "快乐", "en": "happy"},
+  "sentence": {"cn": "祝你生日快乐。", "en": "Happy birthday to you."}
+ },
+ "乒": {
+  "origin": "乒 pictures a ball flying one way; with 乓 it makes ping-pong.",
+  "word": {"w": "乒乓球", "en": "table tennis"},
+  "sentence": {"cn": "我们一起打乒乓球。", "en": "Let's play table tennis together."}
+ },
+ "乓": {
+  "origin": "乓 pictures a ball flying the other way; with 乒 it makes ping-pong.",
+  "word": {"w": "乒乓球", "en": "table tennis"},
+  "sentence": {"cn": "他爱打乒乓球。", "en": "He loves playing table tennis."}
+ },
+ "乔": {
+  "origin": "乔 means tall and lofty, like a person standing on stilts.",
+  "word": {"w": "乔木", "en": "tall tree"},
+  "sentence": {"cn": "公园里有很多乔木。", "en": "There are many tall trees in the park."}
+ },
+ "乖": {
+  "origin": "乖 means well-behaved and obedient, often said to good children.",
+  "word": {"w": "乖巧", "en": "well-behaved, clever"},
+  "sentence": {"cn": "这个孩子真乖。", "en": "This child is so well-behaved."}
+ },
+ "乘": {
+  "origin": "乘 pictures feet climbing up; it means to ride or to multiply.",
+  "word": {"w": "乘车", "en": "to ride a vehicle"},
+  "sentence": {"cn": "我们乘车去学校。", "en": "We take a bus to school."}
+ },
+ "乙": {
+  "origin": "乙 looks like a curving swallow and is the second heavenly stem.",
+  "word": {"w": "乙方", "en": "party B"},
+  "sentence": {"cn": "他在乙班学习。", "en": "He studies in class B."}
+ },
+ "乱": {
+  "origin": "乱 means messy or chaotic, like a tangled mess.",
+  "word": {"w": "混乱", "en": "chaos, disorder"},
+  "sentence": {"cn": "房间太乱了。", "en": "The room is too messy."}
+ },
+ "乳": {
+  "origin": "乳 shows a mother caring for a baby; it means milk or breast.",
+  "word": {"w": "牛乳", "en": "cow's milk"},
+  "sentence": {"cn": "宝宝喝牛乳。", "en": "The baby drinks cow's milk."}
+ },
+ "了": {
+  "origin": "了 looks like a swaddled baby; it marks that something is finished.",
+  "word": {"w": "了解", "en": "to understand"},
+  "sentence": {"cn": "我吃完饭了。", "en": "I have finished eating."}
+ },
+ "予": {
+  "origin": "予 means to give, like handing something to another person.",
+  "word": {"w": "给予", "en": "to give, to grant"},
+  "sentence": {"cn": "老师给予我帮助。", "en": "The teacher gave me help."}
+ },
+ "亏": {
+  "origin": "亏 means to lose or to fall short of what is owed.",
+  "word": {"w": "吃亏", "en": "to suffer a loss"},
+  "sentence": {"cn": "做生意有时会亏。", "en": "In business you sometimes lose money."}
+ },
+ "互": {
+  "origin": "互 pictures two hooks linking together; it means mutually.",
+  "word": {"w": "互相", "en": "mutually, each other"},
+  "sentence": {"cn": "我们互相帮助。", "en": "We help each other."}
+ },
+ "井": {
+  "origin": "井 pictures the wooden frame around a water well.",
+  "word": {"w": "水井", "en": "water well"},
+  "sentence": {"cn": "村里有一口水井。", "en": "There is a well in the village."}
+ },
+ "亚": {
+  "origin": "亚 means second or sub, and is short for Asia (亚洲).",
+  "word": {"w": "亚洲", "en": "Asia"},
+  "sentence": {"cn": "中国在亚洲。", "en": "China is in Asia."}
+ },
+ "亟": {
+  "origin": "亟 means urgently, when something must be done right away.",
+  "word": {"w": "亟待", "en": "urgently awaiting"},
+  "sentence": {"cn": "问题亟待解决。", "en": "The problem urgently needs solving."}
+ },
+ "亢": {
+  "origin": "亢 means high or proud, standing up tall.",
+  "word": {"w": "高亢", "en": "loud and high (voice)"},
+  "sentence": {"cn": "他的歌声很高亢。", "en": "His singing is loud and high."}
+ },
+ "亥": {
+  "origin": "亥 is the last of the twelve earthly branches, linked to the pig.",
+  "word": {"w": "亥时", "en": "the hour of hai (9-11 pm)"},
+  "sentence": {"cn": "亥时是晚上。", "en": "The hour of hai is at night."}
+ },
+ "亦": {
+  "origin": "亦 means also or too, adding one more thing.",
+  "word": {"w": "亦是", "en": "is also"},
+  "sentence": {"cn": "他是学生，我亦是。", "en": "He is a student, and so am I."}
+ },
+ "亩": {
+  "origin": "亩 is a Chinese unit for measuring fields of land.",
+  "word": {"w": "亩产", "en": "yield per mu (of land)"},
+  "sentence": {"cn": "这块地有三亩。", "en": "This plot of land is three mu."}
+ },
+ "享": {
+  "origin": "享 means to enjoy or to share something good.",
+  "word": {"w": "享受", "en": "to enjoy"},
+  "sentence": {"cn": "我们一起享受美食。", "en": "We enjoy the food together."}
+ },
+ "京": {
+  "origin": "京 pictures a tall building on a hill; it means capital city.",
+  "word": {"w": "北京", "en": "Beijing"},
+  "sentence": {"cn": "北京是首都。", "en": "Beijing is the capital."}
+ },
+ "亭": {
+  "origin": "亭 pictures a little open pavilion where people rest.",
+  "word": {"w": "凉亭", "en": "pavilion"},
+  "sentence": {"cn": "公园里有个凉亭。", "en": "There is a pavilion in the park."}
+ },
+ "亮": {
+  "origin": "亮 means bright, like a lit lamp shining.",
+  "word": {"w": "明亮", "en": "bright"},
+  "sentence": {"cn": "教室很明亮。", "en": "The classroom is very bright."}
+ },
+ "亿": {
+  "origin": "亿 means one hundred million, a very large number.",
+  "word": {"w": "亿万", "en": "hundreds of millions"},
+  "sentence": {"cn": "中国有很多亿人。", "en": "China has many hundreds of millions of people."}
+ },
+ "仁": {
+  "origin": "仁 pairs a person 亻 with two 二, meaning kindness between people.",
+  "word": {"w": "仁慈", "en": "kind, benevolent"},
+  "sentence": {"cn": "他是个仁慈的人。", "en": "He is a kind person."}
+ },
+ "仅": {
+  "origin": "仅 means only or merely, just this much and no more.",
+  "word": {"w": "仅仅", "en": "only, merely"},
+  "sentence": {"cn": "我仅有一支笔。", "en": "I have only one pen."}
+ },
+ "仆": {
+  "origin": "仆 means a servant, a person who serves others.",
+  "word": {"w": "仆人", "en": "servant"},
+  "sentence": {"cn": "古时有钱人有仆人。", "en": "In old times rich people had servants."}
+ },
+ "仇": {
+  "origin": "仇 means enemy or hatred between people.",
+  "word": {"w": "仇人", "en": "enemy"},
+  "sentence": {"cn": "他们不是仇人。", "en": "They are not enemies."}
+ },
+ "介": {
+  "origin": "介 pictures a person between two lines; it means to be in between.",
+  "word": {"w": "介绍", "en": "to introduce"},
+  "sentence": {"cn": "我来介绍一下。", "en": "Let me introduce."}
+ },
+ "仓": {
+  "origin": "仓 is the simple form of 倉, a place to store grain.",
+  "word": {"w": "仓库", "en": "warehouse"},
+  "sentence": {"cn": "粮食放在仓库里。", "en": "The grain is kept in the warehouse."}
+ },
+ "仗": {
+  "origin": "仗 means to rely on, or a battle one fights.",
+  "word": {"w": "打仗", "en": "to fight a battle"},
+  "sentence": {"cn": "他们不想打仗。", "en": "They do not want to go to war."}
+ },
+ "仙": {
+  "origin": "仙 pairs a person 亻 with a mountain 山, meaning an immortal who lives in the hills.",
+  "word": {"w": "神仙", "en": "immortal, deity"},
+  "sentence": {"cn": "故事里有神仙。", "en": "There are immortals in the story."}
+ },
+ "仞": {
+  "origin": "仞 is an old unit of length, about the height of a person.",
+  "word": {"w": "千仞", "en": "a great height"},
+  "sentence": {"cn": "山高千仞。", "en": "The mountain is extremely high."}
+ },
+ "仟": {
+  "origin": "仟 is the formal way to write one thousand (千).",
+  "word": {"w": "仟元", "en": "one thousand yuan"},
+  "sentence": {"cn": "票上写着五仟元。", "en": "The receipt says five thousand yuan."}
+ }
+}

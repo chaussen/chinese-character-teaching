@@ -1,0 +1,252 @@
+{
+  "溪": {
+    "origin": "Water 氵 in a small valley; a little stream.",
+    "word": {"w": "小溪", "en": "small stream"},
+    "sentence": {"cn": "山里有条小溪。", "en": "There is a stream in the mountains."}
+  },
+  "溶": {
+    "origin": "Water 氵 holding 容 things; to dissolve.",
+    "word": {"w": "溶化", "en": "to dissolve, to melt"},
+    "sentence": {"cn": "糖在水里溶了。", "en": "The sugar dissolved in the water."}
+  },
+  "溺": {
+    "origin": "Water 氵 covering someone weak 弱; to drown or spoil.",
+    "word": {"w": "溺爱", "en": "to spoil, to dote on"},
+    "sentence": {"cn": "爷爷很溺爱我。", "en": "Grandpa really spoils me."}
+  },
+  "滇": {
+    "origin": "Water 氵 with 真; short name for Yunnan.",
+    "word": {"w": "云南滇", "en": "Yunnan (abbrev. Dian)"},
+    "sentence": {"cn": "滇池很大很美。", "en": "Dianchi Lake is big and beautiful."}
+  },
+  "滑": {
+    "origin": "Water 氵 makes the ground slippery.",
+    "word": {"w": "滑冰", "en": "to skate"},
+    "sentence": {"cn": "地上很滑，小心点。", "en": "The ground is slippery, be careful."}
+  },
+  "滕": {
+    "origin": "Water with 月 and 龹; an old place name and surname.",
+    "word": {"w": "滕州", "en": "Tengzhou (place)"},
+    "sentence": {"cn": "他姓滕。", "en": "His surname is Teng."}
+  },
+  "滗": {
+    "origin": "Water 氵 poured off slowly; to drain liquid away.",
+    "word": {"w": "滗水", "en": "to pour off water"},
+    "sentence": {"cn": "把汤滗出来。", "en": "Pour off the soup."}
+  },
+  "滚": {
+    "origin": "Water 氵 boiling and rolling over.",
+    "word": {"w": "滚动", "en": "to roll"},
+    "sentence": {"cn": "球从坡上滚下来。", "en": "The ball rolled down the slope."}
+  },
+  "满": {
+    "origin": "Water 氵 filling something right up; full.",
+    "word": {"w": "满意", "en": "satisfied"},
+    "sentence": {"cn": "杯子里水满了。", "en": "The cup is full of water."}
+  },
+  "滤": {
+    "origin": "Water 氵 passing through to be cleaned; to filter.",
+    "word": {"w": "过滤", "en": "to filter"},
+    "sentence": {"cn": "用纸把水滤干净。", "en": "Filter the water clean with paper."}
+  },
+  "滥": {
+    "origin": "Water 氵 spilling over too much; to overflow or overuse.",
+    "word": {"w": "泛滥", "en": "to overflow, to flood"},
+    "sentence": {"cn": "河水滥出了堤。", "en": "The river overflowed the bank."}
+  },
+  "滨": {
+    "origin": "Water's 氵 edge where guests 宾 gather; the shore.",
+    "word": {"w": "海滨", "en": "seaside"},
+    "sentence": {"cn": "我们去海滨玩。", "en": "We are going to the seaside."}
+  },
+  "漆": {
+    "origin": "Sap 氵 from the lacquer tree 桼; paint and varnish.",
+    "word": {"w": "油漆", "en": "paint"},
+    "sentence": {"cn": "墙刷上了油漆。", "en": "The wall was painted."}
+  },
+  "漉": {
+    "origin": "Water 氵 dripping through; to strain or filter.",
+    "word": {"w": "湿漉漉", "en": "soaking wet"},
+    "sentence": {"cn": "头发湿漉漉的。", "en": "The hair is soaking wet."}
+  },
+  "漏": {
+    "origin": "Water 氵 dripping out like rain; to leak.",
+    "word": {"w": "漏水", "en": "to leak water"},
+    "sentence": {"cn": "房顶在漏水。", "en": "The roof is leaking."}
+  },
+  "漫": {
+    "origin": "Water 氵 spreading slowly everywhere.",
+    "word": {"w": "漫画", "en": "comics, cartoon"},
+    "sentence": {"cn": "我喜欢看漫画。", "en": "I like reading comics."}
+  },
+  "漱": {
+    "origin": "To swish water 氵 in the mouth; to gargle.",
+    "word": {"w": "漱口", "en": "to rinse the mouth"},
+    "sentence": {"cn": "吃完饭要漱口。", "en": "Rinse your mouth after eating."}
+  },
+  "漾": {
+    "origin": "Water 氵 moving in gentle ripples.",
+    "word": {"w": "荡漾", "en": "to ripple"},
+    "sentence": {"cn": "湖水轻轻漾起来。", "en": "The lake water gently rippled."}
+  },
+  "潘": {
+    "origin": "Water 氵 with 番; a river name and surname.",
+    "word": {"w": "潘多拉", "en": "Pandora"},
+    "sentence": {"cn": "她姓潘。", "en": "Her surname is Pan."}
+  },
+  "潜": {
+    "origin": "Water 氵 hiding things below; to go under, to hide.",
+    "word": {"w": "潜水", "en": "to dive"},
+    "sentence": {"cn": "他会潜水。", "en": "He can dive underwater."}
+  },
+  "潭": {
+    "origin": "Water 氵 in a deep, still pool.",
+    "word": {"w": "水潭", "en": "deep pool"},
+    "sentence": {"cn": "山下有个水潭。", "en": "There is a deep pool below the mountain."}
+  },
+  "潮": {
+    "origin": "Water 氵 rising and falling like the morning 朝; the tide.",
+    "word": {"w": "潮水", "en": "tide"},
+    "sentence": {"cn": "潮水涨上来了。", "en": "The tide is coming in."}
+  },
+  "澄": {
+    "origin": "Water 氵 settled and clear; pure and limpid.",
+    "word": {"w": "澄清", "en": "clear, to clarify"},
+    "sentence": {"cn": "湖水又清又澄。", "en": "The lake water is clear and limpid."}
+  },
+  "澳": {
+    "origin": "Water 氵 with 奥; a deep bay or inlet.",
+    "word": {"w": "澳门", "en": "Macau"},
+    "sentence": {"cn": "我们去澳门玩。", "en": "We are going to Macau."}
+  },
+  "激": {
+    "origin": "Water 氵 striking sharply; to stir up and excite.",
+    "word": {"w": "激动", "en": "excited"},
+    "sentence": {"cn": "他很激动。", "en": "He is very excited."}
+  },
+  "灌": {
+    "origin": "Water 氵 poured onto fields; to irrigate.",
+    "word": {"w": "灌水", "en": "to pour water in"},
+    "sentence": {"cn": "农民给田里灌水。", "en": "The farmer waters the field."}
+  },
+  "灶": {
+    "origin": "Fire 火 over clay 土; a cooking stove.",
+    "word": {"w": "灶台", "en": "stove, cooktop"},
+    "sentence": {"cn": "妈妈在灶上做饭。", "en": "Mom is cooking at the stove."}
+  },
+  "灸": {
+    "origin": "Fire 火 used in medicine to burn and heal.",
+    "word": {"w": "针灸", "en": "acupuncture and moxibustion"},
+    "sentence": {"cn": "医生给他针灸。", "en": "The doctor gives him acupuncture."}
+  },
+  "灾": {
+    "origin": "A house 宀 with fire 火 inside; a disaster.",
+    "word": {"w": "灾难", "en": "disaster"},
+    "sentence": {"cn": "火灾很可怕。", "en": "A fire disaster is very scary."}
+  },
+  "炎": {
+    "origin": "Two fires 火 stacked; blazing hot.",
+    "word": {"w": "炎热", "en": "scorching hot"},
+    "sentence": {"cn": "夏天很炎热。", "en": "Summer is scorching hot."}
+  },
+  "炒": {
+    "origin": "Fire 火 with a few 少 drops of oil; to stir-fry.",
+    "word": {"w": "炒菜", "en": "to stir-fry dishes"},
+    "sentence": {"cn": "妈妈在炒菜。", "en": "Mom is stir-frying vegetables."}
+  },
+  "炕": {
+    "origin": "Fire 火 warming a brick bed in the north.",
+    "word": {"w": "火炕", "en": "heated brick bed"},
+    "sentence": {"cn": "冬天睡在炕上很暖。", "en": "Sleeping on the heated bed is warm in winter."}
+  },
+  "炖": {
+    "origin": "Fire 火 cooking food slowly; to stew.",
+    "word": {"w": "炖肉", "en": "to stew meat"},
+    "sentence": {"cn": "奶奶在炖鸡汤。", "en": "Grandma is stewing chicken soup."}
+  },
+  "炝": {
+    "origin": "Fire 火 with quick 仓; to flash stir-fry.",
+    "word": {"w": "炝锅", "en": "to flash-fry seasonings"},
+    "sentence": {"cn": "先炝锅再放菜。", "en": "Flash-fry the seasonings, then add the vegetables."}
+  },
+  "炭": {
+    "origin": "Burned from the hill's 山 ashes 灰; charcoal.",
+    "word": {"w": "木炭", "en": "charcoal"},
+    "sentence": {"cn": "我们用木炭烤肉。", "en": "We grill meat with charcoal."}
+  },
+  "炮": {
+    "origin": "Fire 火 wrapped 包 up to blast; a cannon.",
+    "word": {"w": "大炮", "en": "cannon"},
+    "sentence": {"cn": "过年放鞭炮。", "en": "We set off firecrackers at New Year."}
+  },
+  "炷": {
+    "origin": "Fire 火 on a main 主 stem; a candle or incense stick.",
+    "word": {"w": "一炷香", "en": "a stick of incense"},
+    "sentence": {"cn": "他点了一炷香。", "en": "He lit a stick of incense."}
+  },
+  "炸": {
+    "origin": "A sudden 乍 flame 火; to explode or deep-fry.",
+    "word": {"w": "爆炸", "en": "to explode"},
+    "sentence": {"cn": "气球炸了。", "en": "The balloon burst."}
+  },
+  "炼": {
+    "origin": "Fire 火 used to refine 柬 metal; to smelt and temper.",
+    "word": {"w": "锻炼", "en": "to exercise, to train"},
+    "sentence": {"cn": "我每天锻炼身体。", "en": "I exercise every day."}
+  },
+  "烂": {
+    "origin": "Fire 火 cooking too long; soft, mushy, or rotten.",
+    "word": {"w": "烂泥", "en": "mud, mire"},
+    "sentence": {"cn": "苹果放烂了。", "en": "The apple went rotten."}
+  },
+  "烈": {
+    "origin": "Fire 灬 burning strong; fierce and intense.",
+    "word": {"w": "强烈", "en": "strong, intense"},
+    "sentence": {"cn": "太阳很强烈。", "en": "The sun is very strong."}
+  },
+  "烘": {
+    "origin": "Fire 火 shared 共 all around; to bake and warm.",
+    "word": {"w": "烘干", "en": "to dry by heat"},
+    "sentence": {"cn": "把衣服烘干。", "en": "Dry the clothes with heat."}
+  },
+  "烙": {
+    "origin": "Fire 火 pressing each 各 mark; to brand or griddle.",
+    "word": {"w": "烙饼", "en": "griddle pancake"},
+    "sentence": {"cn": "奶奶会烙饼。", "en": "Grandma can make griddle pancakes."}
+  },
+  "烛": {
+    "origin": "Fire 火 on top; a burning candle.",
+    "word": {"w": "蜡烛", "en": "candle"},
+    "sentence": {"cn": "生日要点蜡烛。", "en": "We light candles on birthdays."}
+  },
+  "烦": {
+    "origin": "Fire 火 in the head 页; feeling bothered and vexed.",
+    "word": {"w": "麻烦", "en": "trouble, bother"},
+    "sentence": {"cn": "这件事很麻烦。", "en": "This matter is a lot of trouble."}
+  },
+  "烧": {
+    "origin": "Fire 火 rising high 尧; to burn or cook.",
+    "word": {"w": "烧水", "en": "to boil water"},
+    "sentence": {"cn": "妈妈在烧水。", "en": "Mom is boiling water."}
+  },
+  "烩": {
+    "origin": "Fire 火 bringing foods together 会; to braise in sauce.",
+    "word": {"w": "烩饭", "en": "rice braised with sauce"},
+    "sentence": {"cn": "今天吃烩饭。", "en": "We are having braised rice today."}
+  },
+  "烫": {
+    "origin": "Hot soup 汤 over fire 火; scalding hot.",
+    "word": {"w": "烫手", "en": "burning hot to the touch"},
+    "sentence": {"cn": "这碗汤很烫。", "en": "This bowl of soup is very hot."}
+  },
+  "热": {
+    "origin": "Fire 灬 below makes things hot.",
+    "word": {"w": "热水", "en": "hot water"},
+    "sentence": {"cn": "今天天气很热。", "en": "The weather is very hot today."}
+  },
+  "烹": {
+    "origin": "Fire 灬 under the pot; to cook food.",
+    "word": {"w": "烹饪", "en": "cooking, cuisine"},
+    "sentence": {"cn": "爸爸喜欢烹饪。", "en": "Dad likes cooking."}
+  }
+}

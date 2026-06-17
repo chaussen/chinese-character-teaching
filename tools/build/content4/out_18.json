@@ -1,0 +1,252 @@
+{
+ "敌": {
+  "origin": "舌 plus the tap radical 攵 — the one you strike against is your enemy.",
+  "word": { "w": "敌人", "en": "enemy" },
+  "sentence": { "cn": "他们打败了敌人。", "en": "They defeated the enemy." }
+ },
+ "敏": {
+  "origin": "每 plus the tap radical 攵 — quick to act, sharp and nimble.",
+  "word": { "w": "敏捷", "en": "quick, agile" },
+  "sentence": { "cn": "小猫动作很敏捷。", "en": "The cat moves very nimbly." }
+ },
+ "救": {
+  "origin": "求 (to beg) plus the tap radical 攵 — to rush in and help the one who begs.",
+  "word": { "w": "救命", "en": "to save a life; help!" },
+  "sentence": { "cn": "消防员去救人。", "en": "The firefighter went to save people." }
+ },
+ "敖": {
+  "origin": "An old character meaning to wander and play freely about.",
+  "word": { "w": "敖包", "en": "an ovoo (stone cairn)" },
+  "sentence": { "cn": "草原上有个敖包。", "en": "There is an ovoo on the grassland." }
+ },
+ "敛": {
+  "origin": "佥 plus the tap radical 攵 — to gather things in and hold them together.",
+  "word": { "w": "收敛", "en": "to restrain, to hold back" },
+  "sentence": { "cn": "他笑容收敛了。", "en": "His smile faded." }
+ },
+ "敞": {
+  "origin": "尚 plus the tap radical 攵 — wide open and spacious.",
+  "word": { "w": "宽敞", "en": "spacious, roomy" },
+  "sentence": { "cn": "这间教室很宽敞。", "en": "This classroom is very spacious." }
+ },
+ "散": {
+  "origin": "A hand 攵 scattering things apart so they break up and spread.",
+  "word": { "w": "散步", "en": "to take a walk" },
+  "sentence": { "cn": "晚饭后我们去散步。", "en": "After dinner we go for a walk." }
+ },
+ "敲": {
+  "origin": "高 plus the strike radical 攴 — to knock and tap on something.",
+  "word": { "w": "敲门", "en": "to knock on a door" },
+  "sentence": { "cn": "有人在敲门。", "en": "Someone is knocking at the door." }
+ },
+ "整": {
+  "origin": "敕 over 正 (correct) — to put things in correct, neat order.",
+  "word": { "w": "整齐", "en": "neat, tidy" },
+  "sentence": { "cn": "他的房间很整齐。", "en": "His room is very tidy." }
+ },
+ "敷": {
+  "origin": "旉 plus the tap radical 攵 — the hand spreads and applies something on.",
+  "word": { "w": "敷药", "en": "to apply medicine" },
+  "sentence": { "cn": "护士给他敷药。", "en": "The nurse applied medicine to him." }
+ },
+ "文": {
+  "origin": "A picture of crossing lines like a tattoo, standing for writing and language.",
+  "word": { "w": "语文", "en": "language and literature (school subject)" },
+  "sentence": { "cn": "我喜欢上语文课。", "en": "I like the Chinese language class." }
+ },
+ "斋": {
+  "origin": "文 over 而 — a quiet study room, or to fast and keep clean of meat.",
+  "word": { "w": "书斋", "en": "a study (room)" },
+  "sentence": { "cn": "爷爷在书斋看书。", "en": "Grandpa reads in his study." }
+ },
+ "斑": {
+  "origin": "Markings 文 set between two pieces of jade 王 — spots and stripes.",
+  "word": { "w": "斑马", "en": "zebra" },
+  "sentence": { "cn": "动物园里有斑马。", "en": "There are zebras in the zoo." }
+ },
+ "斜": {
+  "origin": "余 plus the measuring-cup 斗 — leaning to one side, slanting.",
+  "word": { "w": "斜坡", "en": "slope" },
+  "sentence": { "cn": "小路有点斜。", "en": "The little path is a bit sloped." }
+ },
+ "斟": {
+  "origin": "甚 plus the measuring-cup 斗 — to pour carefully, weighing how much.",
+  "word": { "w": "斟茶", "en": "to pour tea" },
+  "sentence": { "cn": "他给客人斟茶。", "en": "He poured tea for the guest." }
+ },
+ "斤": {
+  "origin": "A picture of an axe head; it became the unit of weight, a catty.",
+  "word": { "w": "公斤", "en": "kilogram" },
+  "sentence": { "cn": "这袋米五公斤。", "en": "This bag of rice is five kilograms." }
+ },
+ "斩": {
+  "origin": "车 plus the axe 斤 — to chop and cut through with an axe.",
+  "word": { "w": "斩断", "en": "to chop off, to sever" },
+  "sentence": { "cn": "他一刀斩断绳子。", "en": "He cut the rope with one stroke." }
+ },
+ "施": {
+  "origin": "方 plus 㐌 — to give out, to put a plan into action.",
+  "word": { "w": "施工", "en": "to carry out construction" },
+  "sentence": { "cn": "工人在施工。", "en": "The workers are doing construction." }
+ },
+ "旋": {
+  "origin": "A flag 方 with a foot 疋 beneath — turning round and round.",
+  "word": { "w": "旋转", "en": "to spin, to rotate" },
+  "sentence": { "cn": "舞者快速旋转。", "en": "The dancer spins quickly." }
+ },
+ "旗": {
+  "origin": "The flag radical 方 plus 其 — a banner or flag waving in the wind.",
+  "word": { "w": "国旗", "en": "national flag" },
+  "sentence": { "cn": "操场上升起国旗。", "en": "The national flag rises over the field." }
+ },
+ "旦": {
+  "origin": "The sun 日 rising above the horizon line 一 — dawn, the start of a day.",
+  "word": { "w": "元旦", "en": "New Year's Day" },
+  "sentence": { "cn": "元旦放假一天。", "en": "New Year's Day is a one-day holiday." }
+ },
+ "旨": {
+  "origin": "A spoon 匕 over a mouth 日 — the aim or main idea, what is meant.",
+  "word": { "w": "宗旨", "en": "aim, purpose" },
+  "sentence": { "cn": "这是我们的宗旨。", "en": "This is our purpose." }
+ },
+ "旬": {
+  "origin": "A wrap 勹 around the sun 日 — a cycle of ten days.",
+  "word": { "w": "上旬", "en": "first ten days of a month" },
+  "sentence": { "cn": "他下旬回来。", "en": "He will return in the last ten days of the month." }
+ },
+ "旱": {
+  "origin": "The sun 日 over 干 (dry) — long sun with no rain, a drought.",
+  "word": { "w": "干旱", "en": "drought, dry" },
+  "sentence": { "cn": "今年很干旱。", "en": "It is very dry this year." }
+ },
+ "旷": {
+  "origin": "The sun 日 plus 广 (wide) — a wide, open plain under the sky.",
+  "word": { "w": "空旷", "en": "open and empty, vast" },
+  "sentence": { "cn": "草原十分空旷。", "en": "The grassland is very wide and open." }
+ },
+ "旺": {
+  "origin": "The sun 日 plus 王 — bright and full of life, flourishing.",
+  "word": { "w": "兴旺", "en": "prosperous, thriving" },
+  "sentence": { "cn": "花儿长得很旺。", "en": "The flowers are growing vigorously." }
+ },
+ "昂": {
+  "origin": "The sun 日 over 卬 — to lift the head high and rise up.",
+  "word": { "w": "昂首", "en": "to hold one's head high" },
+  "sentence": { "cn": "他昂着头走路。", "en": "He walks with his head held high." }
+ },
+ "昆": {
+  "origin": "The sun 日 over 比 (two side by side) — brothers, and small crawling things.",
+  "word": { "w": "昆虫", "en": "insect" },
+  "sentence": { "cn": "蚂蚁是一种昆虫。", "en": "An ant is a kind of insect." }
+ },
+ "昌": {
+  "origin": "A sun 日 over another sun 曰 — bright and flourishing.",
+  "word": { "w": "繁昌", "en": "prosperous, thriving" },
+  "sentence": { "cn": "城市越来越繁昌。", "en": "The city is growing more and more prosperous." }
+ },
+ "昏": {
+  "origin": "氏 over the sun 日 — the sun sinking low, dusk and dimness.",
+  "word": { "w": "黄昏", "en": "dusk, twilight" },
+  "sentence": { "cn": "黄昏时天变红了。", "en": "At dusk the sky turned red." }
+ },
+ "易": {
+  "origin": "An old picture once read as a lizard; it means easy and to change.",
+  "word": { "w": "容易", "en": "easy" },
+  "sentence": { "cn": "这道题很容易。", "en": "This question is very easy." }
+ },
+ "映": {
+  "origin": "The sun 日 plus 央 — sunlight shining on something and reflecting back.",
+  "word": { "w": "反映", "en": "to reflect, to report" },
+  "sentence": { "cn": "湖水映出蓝天。", "en": "The lake reflects the blue sky." }
+ },
+ "昼": {
+  "origin": "尺 over 旦 — when the sun is up high; the daytime.",
+  "word": { "w": "昼夜", "en": "day and night" },
+  "sentence": { "cn": "他昼夜不停地工作。", "en": "He works day and night without stopping." }
+ },
+ "晃": {
+  "origin": "The sun 日 over 光 (light) — bright and dazzling, or to sway.",
+  "word": { "w": "摇晃", "en": "to sway, to rock" },
+  "sentence": { "cn": "小船在水上摇晃。", "en": "The little boat sways on the water." }
+ },
+ "晋": {
+  "origin": "亚 over the sun 日 — to move forward and advance.",
+  "word": { "w": "晋级", "en": "to advance a level, to be promoted" },
+  "sentence": { "cn": "他顺利晋级了。", "en": "He advanced to the next level smoothly." }
+ },
+ "晌": {
+  "origin": "The sun 日 plus 向 — the time when the sun is high; midday.",
+  "word": { "w": "晌午", "en": "midday, noon" },
+  "sentence": { "cn": "晌午太阳很大。", "en": "At noon the sun is very strong." }
+ },
+ "晒": {
+  "origin": "The sun 日 plus 西 — to leave things in the sun to dry.",
+  "word": { "w": "晒太阳", "en": "to bask in the sun" },
+  "sentence": { "cn": "奶奶在院子里晒衣服。", "en": "Grandma dries clothes in the yard." }
+ },
+ "晕": {
+  "origin": "The sun 日 over 军 — feeling foggy and dizzy.",
+  "word": { "w": "头晕", "en": "dizzy" },
+  "sentence": { "cn": "我有点头晕。", "en": "I feel a little dizzy." }
+ },
+ "普": {
+  "origin": "並 (together) over the sun 日 — everyone under the sun; wide and general.",
+  "word": { "w": "普通", "en": "ordinary, common" },
+  "sentence": { "cn": "这是一个普通的日子。", "en": "This is an ordinary day." }
+ },
+ "晾": {
+  "origin": "The sun 日 plus 京 — to hang things out in the air to dry.",
+  "word": { "w": "晾衣服", "en": "to hang out clothes to dry" },
+  "sentence": { "cn": "妈妈在阳台晾衣服。", "en": "Mom hangs clothes to dry on the balcony." }
+ },
+ "暂": {
+  "origin": "斩 over the sun 日 — lasting only a short time; temporary.",
+  "word": { "w": "暂时", "en": "temporarily, for the moment" },
+  "sentence": { "cn": "我暂时不走。", "en": "I'm not leaving for now." }
+ },
+ "暴": {
+  "origin": "The sun 日 above hands 共 — sudden and fierce, violent.",
+  "word": { "w": "暴雨", "en": "rainstorm, downpour" },
+  "sentence": { "cn": "昨晚下了一场暴雨。", "en": "There was a rainstorm last night." }
+ },
+ "曰": {
+  "origin": "A mouth 口 with a line 一 inside, showing breath — to speak, to say.",
+  "word": { "w": "美其名曰", "en": "to call it grandly" },
+  "sentence": { "cn": "古人曰：读书好。", "en": "The ancients said: reading is good." }
+ },
+ "曹": {
+  "origin": "An old word for a group of officials; also a common family name.",
+  "word": { "w": "曹操", "en": "Cao Cao (a historical figure)" },
+  "sentence": { "cn": "他姓曹。", "en": "His surname is Cao." }
+ },
+ "曾": {
+  "origin": "A picture of a steamer letting off steam; it came to mean once, formerly.",
+  "word": { "w": "曾经", "en": "once, formerly" },
+  "sentence": { "cn": "我曾经去过北京。", "en": "I have once been to Beijing." }
+ },
+ "替": {
+  "origin": "One man 夫 standing in for another over 日 — to replace or stand in.",
+  "word": { "w": "代替", "en": "to replace, to substitute" },
+  "sentence": { "cn": "我替你拿书。", "en": "I'll carry the books for you." }
+ },
+ "望": {
+  "origin": "A person 王 gazing up at the moon 月 — to look far off and to hope.",
+  "word": { "w": "希望", "en": "hope, to hope" },
+  "sentence": { "cn": "我希望明天天晴。", "en": "I hope it will be sunny tomorrow." }
+ },
+ "朱": {
+  "origin": "A line 一 marking the red sap inside a tree 木 — the color vermilion.",
+  "word": { "w": "朱红", "en": "vermilion red" },
+  "sentence": { "cn": "大门是朱红色的。", "en": "The gate is vermilion red." }
+ },
+ "朵": {
+  "origin": "几 over a tree 木 — a flower blooming on a branch; a measure word for flowers.",
+  "word": { "w": "一朵花", "en": "a flower" },
+  "sentence": { "cn": "桌上有一朵花。", "en": "There is a flower on the table." }
+ },
+ "机": {
+  "origin": "The tree/wood radical 木 plus 几 — a thing made of wood; now a machine.",
+  "word": { "w": "飞机", "en": "airplane" },
+  "sentence": { "cn": "飞机在天上飞。", "en": "The airplane flies in the sky." }
+ }
+}

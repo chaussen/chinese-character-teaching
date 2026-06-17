@@ -1,0 +1,252 @@
+{
+  "凤": {
+    "origin": "凤 means phoenix, a beautiful magical bird in Chinese stories.",
+    "word": {"w": "凤凰", "en": "phoenix"},
+    "sentence": {"cn": "凤凰是美丽的鸟。", "en": "The phoenix is a beautiful bird."}
+  },
+  "凫": {
+    "origin": "凫 is a wild duck; it has the bird 鸟 inside it.",
+    "word": {"w": "野凫", "en": "wild duck"},
+    "sentence": {"cn": "水里有一只凫。", "en": "There is a wild duck in the water."}
+  },
+  "凭": {
+    "origin": "凭 means to lean on or to rely on, like resting against a table.",
+    "word": {"w": "凭借", "en": "to rely on"},
+    "sentence": {"cn": "他凭努力成功了。", "en": "He succeeded by relying on hard work."}
+  },
+  "凳": {
+    "origin": "凳 is a stool or bench you sit on.",
+    "word": {"w": "板凳", "en": "stool, bench"},
+    "sentence": {"cn": "我坐在小凳上。", "en": "I sit on the little stool."}
+  },
+  "凶": {
+    "origin": "凶 means fierce or wicked; picture danger trapped in a pit.",
+    "word": {"w": "凶猛", "en": "fierce"},
+    "sentence": {"cn": "那只狗很凶。", "en": "That dog is very fierce."}
+  },
+  "击": {
+    "origin": "击 means to strike or hit, the simplified form of 擊.",
+    "word": {"w": "打击", "en": "to strike, to hit"},
+    "sentence": {"cn": "他用手击鼓。", "en": "He strikes the drum with his hand."}
+  },
+  "函": {
+    "origin": "函 means a letter; imagine a message placed in a box.",
+    "word": {"w": "信函", "en": "letter, correspondence"},
+    "sentence": {"cn": "我收到一封来函。", "en": "I received a letter."}
+  },
+  "凿": {
+    "origin": "凿 is a chisel, a tool that drills holes.",
+    "word": {"w": "凿子", "en": "chisel"},
+    "sentence": {"cn": "他用凿子打孔。", "en": "He drills a hole with a chisel."}
+  },
+  "刁": {
+    "origin": "刁 means tricky or sly, like a cunning person.",
+    "word": {"w": "刁难", "en": "to make things hard for someone"},
+    "sentence": {"cn": "他这个人很刁。", "en": "This person is very sly."}
+  },
+  "刃": {
+    "origin": "刃 is the sharp edge of a knife 刀; the dot marks the blade.",
+    "word": {"w": "刀刃", "en": "knife edge, blade"},
+    "sentence": {"cn": "刀刃很锋利。", "en": "The blade is very sharp."}
+  },
+  "刊": {
+    "origin": "刊 means to publish or a periodical, using the knife radical.",
+    "word": {"w": "报刊", "en": "newspapers and periodicals"},
+    "sentence": {"cn": "这是一本月刊。", "en": "This is a monthly magazine."}
+  },
+  "刑": {
+    "origin": "刑 means punishment or penalty.",
+    "word": {"w": "刑罚", "en": "punishment, penalty"},
+    "sentence": {"cn": "犯法要受刑。", "en": "Breaking the law brings punishment."}
+  },
+  "刘": {
+    "origin": "刘 is a common Chinese family name.",
+    "word": {"w": "姓刘", "en": "surnamed Liu"},
+    "sentence": {"cn": "他姓刘。", "en": "His surname is Liu."}
+  },
+  "则": {
+    "origin": "则 means a rule; imagine laws carved with a knife.",
+    "word": {"w": "规则", "en": "rule"},
+    "sentence": {"cn": "我们要守规则。", "en": "We must follow the rules."}
+  },
+  "删": {
+    "origin": "删 means to delete, like cutting passages out of a book 册.",
+    "word": {"w": "删除", "en": "to delete"},
+    "sentence": {"cn": "请删掉这句话。", "en": "Please delete this sentence."}
+  },
+  "判": {
+    "origin": "判 means to judge or decide, with the knife radical.",
+    "word": {"w": "判断", "en": "to judge, judgment"},
+    "sentence": {"cn": "老师来判对错。", "en": "The teacher judges right and wrong."}
+  },
+  "刨": {
+    "origin": "刨 is a carpenter's plane that shaves wood smooth.",
+    "word": {"w": "刨子", "en": "carpenter's plane"},
+    "sentence": {"cn": "他用刨子刨木头。", "en": "He planes the wood with a plane."}
+  },
+  "刮": {
+    "origin": "刮 means to scrape or to shave with a blade.",
+    "word": {"w": "刮风", "en": "to be windy"},
+    "sentence": {"cn": "今天刮大风。", "en": "It is very windy today."}
+  },
+  "刷": {
+    "origin": "刷 means to brush, picture wiping with a cloth 巾.",
+    "word": {"w": "刷牙", "en": "to brush teeth"},
+    "sentence": {"cn": "我每天刷牙。", "en": "I brush my teeth every day."}
+  },
+  "刹": {
+    "origin": "刹 means to brake or stop; it also names a temple.",
+    "word": {"w": "刹车", "en": "to brake"},
+    "sentence": {"cn": "司机马上刹车。", "en": "The driver brakes at once."}
+  },
+  "刺": {
+    "origin": "刺 means to stab or a thorn, with the knife radical.",
+    "word": {"w": "刺猬", "en": "hedgehog"},
+    "sentence": {"cn": "玫瑰上有刺。", "en": "There are thorns on the rose."}
+  },
+  "剁": {
+    "origin": "剁 means to chop by pounding, like mincing food.",
+    "word": {"w": "剁碎", "en": "to chop up"},
+    "sentence": {"cn": "妈妈剁肉馅。", "en": "Mom chops the meat filling."}
+  },
+  "剂": {
+    "origin": "剂 means a dose, often of medicine.",
+    "word": {"w": "药剂", "en": "medicine, dose"},
+    "sentence": {"cn": "他吃了一剂药。", "en": "He took a dose of medicine."}
+  },
+  "剃": {
+    "origin": "剃 means to shave with a blade.",
+    "word": {"w": "剃头", "en": "to have a haircut"},
+    "sentence": {"cn": "爸爸去剃头。", "en": "Dad goes to get a haircut."}
+  },
+  "削": {
+    "origin": "削 means to pare or peel with a knife.",
+    "word": {"w": "削皮", "en": "to peel"},
+    "sentence": {"cn": "我削苹果皮。", "en": "I peel the apple skin."}
+  },
+  "剐": {
+    "origin": "剐 means to cut or scrape away.",
+    "word": {"w": "剐蹭", "en": "to scrape (a car)"},
+    "sentence": {"cn": "他的车被剐了。", "en": "His car got scraped."}
+  },
+  "剑": {
+    "origin": "剑 is a sword, a long double-edged blade.",
+    "word": {"w": "宝剑", "en": "precious sword"},
+    "sentence": {"cn": "他手里拿着剑。", "en": "He holds a sword in his hand."}
+  },
+  "剔": {
+    "origin": "剔 means to pick out, like removing bones from fish.",
+    "word": {"w": "挑剔", "en": "to be picky"},
+    "sentence": {"cn": "她把鱼刺剔出来。", "en": "She picks out the fish bones."}
+  },
+  "剖": {
+    "origin": "剖 means to cut open or dissect.",
+    "word": {"w": "解剖", "en": "to dissect"},
+    "sentence": {"cn": "医生剖开西瓜。", "en": "The doctor cuts open the watermelon."}
+  },
+  "剜": {
+    "origin": "剜 means to scoop or gouge out with a blade.",
+    "word": {"w": "剜肉", "en": "to cut out flesh"},
+    "sentence": {"cn": "他剜出烂的部分。", "en": "He cuts out the rotten part."}
+  },
+  "剥": {
+    "origin": "剥 means to peel or strip off a skin.",
+    "word": {"w": "剥皮", "en": "to peel"},
+    "sentence": {"cn": "我剥香蕉吃。", "en": "I peel a banana to eat."}
+  },
+  "剧": {
+    "origin": "剧 means a play or drama.",
+    "word": {"w": "戏剧", "en": "drama, theater"},
+    "sentence": {"cn": "我们去看戏剧。", "en": "We go to see a play."}
+  },
+  "剪": {
+    "origin": "剪 means scissors or to cut, with the knife 刀 below.",
+    "word": {"w": "剪刀", "en": "scissors"},
+    "sentence": {"cn": "她用剪刀剪纸。", "en": "She cuts paper with scissors."}
+  },
+  "副": {
+    "origin": "副 means deputy or a set; it can also count pairs.",
+    "word": {"w": "一副", "en": "a pair, a set"},
+    "sentence": {"cn": "他戴一副眼镜。", "en": "He wears a pair of glasses."}
+  },
+  "割": {
+    "origin": "割 means to cut or divide with a knife.",
+    "word": {"w": "割草", "en": "to cut grass"},
+    "sentence": {"cn": "农民在割麦子。", "en": "The farmers are cutting wheat."}
+  },
+  "剿": {
+    "origin": "剿 means to wipe out or destroy.",
+    "word": {"w": "围剿", "en": "to encircle and wipe out"},
+    "sentence": {"cn": "军队去剿匪。", "en": "The army goes to wipe out the bandits."}
+  },
+  "劁": {
+    "origin": "劁 means to castrate or neuter an animal.",
+    "word": {"w": "劁猪", "en": "to castrate a pig"},
+    "sentence": {"cn": "他会劁猪。", "en": "He can castrate pigs."}
+  },
+  "劈": {
+    "origin": "劈 means to chop or split apart with a blade.",
+    "word": {"w": "劈柴", "en": "to chop firewood"},
+    "sentence": {"cn": "爷爷在劈柴。", "en": "Grandpa is chopping firewood."}
+  },
+  "劐": {
+    "origin": "劐 means to slit or cut open.",
+    "word": {"w": "劐口", "en": "to make a cut"},
+    "sentence": {"cn": "他在布上劐了一刀。", "en": "He made a cut in the cloth."}
+  },
+  "劣": {
+    "origin": "劣 means poor or inferior; less 少 strength 力 makes it weak.",
+    "word": {"w": "恶劣", "en": "bad, terrible"},
+    "sentence": {"cn": "天气很恶劣。", "en": "The weather is very bad."}
+  },
+  "劫": {
+    "origin": "劫 means to rob or a disaster.",
+    "word": {"w": "抢劫", "en": "to rob"},
+    "sentence": {"cn": "坏人想抢劫。", "en": "The bad guy wants to rob."}
+  },
+  "势": {
+    "origin": "势 means power or momentum.",
+    "word": {"w": "势力", "en": "power, influence"},
+    "sentence": {"cn": "水势很大。", "en": "The water force is strong."}
+  },
+  "勒": {
+    "origin": "勒 means to strangle or pull tight with a strap.",
+    "word": {"w": "勒紧", "en": "to tighten"},
+    "sentence": {"cn": "他把绳子勒紧。", "en": "He pulls the rope tight."}
+  },
+  "勾": {
+    "origin": "勾 means to hook or to draw a check mark.",
+    "word": {"w": "勾住", "en": "to hook onto"},
+    "sentence": {"cn": "请在对的旁边打勾。", "en": "Please put a check mark next to the right one."}
+  },
+  "勿": {
+    "origin": "勿 means do not; it is a polite way to say must not.",
+    "word": {"w": "请勿", "en": "please do not"},
+    "sentence": {"cn": "请勿大声说话。", "en": "Please do not talk loudly."}
+  },
+  "匀": {
+    "origin": "匀 means even or to divide equally.",
+    "word": {"w": "均匀", "en": "even, uniform"},
+    "sentence": {"cn": "把糖分得很匀。", "en": "Divide the candy evenly."}
+  },
+  "包": {
+    "origin": "包 means to wrap or a bag, like swaddling a baby.",
+    "word": {"w": "书包", "en": "schoolbag"},
+    "sentence": {"cn": "我背着书包。", "en": "I carry a schoolbag on my back."}
+  },
+  "化": {
+    "origin": "化 means to change or transform.",
+    "word": {"w": "变化", "en": "change"},
+    "sentence": {"cn": "天气变化很快。", "en": "The weather changes quickly."}
+  },
+  "匠": {
+    "origin": "匠 is a craftsman, picture a tool 斤 in a box 匚.",
+    "word": {"w": "木匠", "en": "carpenter"},
+    "sentence": {"cn": "木匠做桌子。", "en": "The carpenter makes a table."}
+  },
+  "匡": {
+    "origin": "匡 means to correct or assist; it is also a surname.",
+    "word": {"w": "匡正", "en": "to correct"},
+    "sentence": {"cn": "我们要匡正错误。", "en": "We must correct the mistake."}
+  }
+}

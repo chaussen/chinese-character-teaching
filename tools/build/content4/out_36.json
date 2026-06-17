@@ -1,0 +1,252 @@
+{
+ "赎": {
+  "origin": "赎 has the shell 贝 for money and means to redeem or ransom.",
+  "word": {"w": "赎金", "en": "ransom"},
+  "sentence": {"cn": "他们要赎金。", "en": "They want a ransom."}
+ },
+ "赏": {
+  "origin": "赏 has the shell 贝 for money and means to reward or to admire.",
+  "word": {"w": "奖赏", "en": "reward"},
+  "sentence": {"cn": "老师赏了他一颗星。", "en": "The teacher rewarded him a star."}
+ },
+ "赐": {
+  "origin": "赐 has the shell 贝 for money and means to bestow or grant.",
+  "word": {"w": "赏赐", "en": "to bestow; grant"},
+  "sentence": {"cn": "国王赐他一匹马。", "en": "The king granted him a horse."}
+ },
+ "赔": {
+  "origin": "赔 has the shell 贝 for money and means to compensate or to lose money.",
+  "word": {"w": "赔偿", "en": "to compensate"},
+  "sentence": {"cn": "他赔了不少钱。", "en": "He lost quite a lot of money."}
+ },
+ "赖": {
+  "origin": "赖 means to rely on, or to deny and not admit something.",
+  "word": {"w": "依赖", "en": "to depend on"},
+  "sentence": {"cn": "小孩依赖父母。", "en": "Children depend on their parents."}
+ },
+ "赚": {
+  "origin": "赚 has the shell 贝 for money and means to earn or make a profit.",
+  "word": {"w": "赚钱", "en": "to make money"},
+  "sentence": {"cn": "他想多赚钱。", "en": "He wants to earn more money."}
+ },
+ "赠": {
+  "origin": "赠 has the shell 贝 for money and means to give a gift.",
+  "word": {"w": "赠送", "en": "to give as a gift"},
+  "sentence": {"cn": "他赠送我一本书。", "en": "He gave me a book as a gift."}
+ },
+ "赣": {
+  "origin": "赣 is the short name for Jiangxi province and a river there.",
+  "word": {"w": "赣江", "en": "Gan River"},
+  "sentence": {"cn": "赣江很长。", "en": "The Gan River is very long."}
+ },
+ "赤": {
+  "origin": "赤 pictures a person glowing by a fire 火; it means red or bare.",
+  "word": {"w": "赤色", "en": "red"},
+  "sentence": {"cn": "他赤着脚走路。", "en": "He walks with bare feet."}
+ },
+ "赫": {
+  "origin": "赫 is two red 赤 together, meaning bright and dazzling.",
+  "word": {"w": "显赫", "en": "illustrious"},
+  "sentence": {"cn": "他家很显赫。", "en": "His family is very illustrious."}
+ },
+ "赴": {
+  "origin": "赴 has the walk radical 走 and means to go to or to attend.",
+  "word": {"w": "赴约", "en": "to keep an appointment"},
+  "sentence": {"cn": "他去赴约了。", "en": "He went to keep the appointment."}
+ },
+ "赵": {
+  "origin": "赵 has the walk radical 走 and is a very common family name.",
+  "word": {"w": "赵先生", "en": "Mr. Zhao"},
+  "sentence": {"cn": "赵老师来了。", "en": "Teacher Zhao has arrived."}
+ },
+ "起": {
+  "origin": "起 has the walk radical 走 and means to rise or to get up.",
+  "word": {"w": "起来", "en": "to get up"},
+  "sentence": {"cn": "我早上六点起床。", "en": "I get up at six in the morning."}
+ },
+ "趁": {
+  "origin": "趁 has the walk radical 走 and means to take advantage of a chance.",
+  "word": {"w": "趁机", "en": "to seize the chance"},
+  "sentence": {"cn": "趁现在快走吧。", "en": "Let's go now while we can."}
+ },
+ "趋": {
+  "origin": "趋 has the walk radical 走 and means to hurry toward.",
+  "word": {"w": "趋势", "en": "trend; tendency"},
+  "sentence": {"cn": "天气有变冷的趋势。", "en": "The weather tends to be getting colder."}
+ },
+ "趟": {
+  "origin": "趟 has the walk radical 走 and is used to count trips or times.",
+  "word": {"w": "一趟", "en": "one trip"},
+  "sentence": {"cn": "我去了一趟商店。", "en": "I made a trip to the store."}
+ },
+ "趣": {
+  "origin": "趣 has the walk radical 走 and means interest or fun.",
+  "word": {"w": "有趣", "en": "interesting"},
+  "sentence": {"cn": "这个故事很有趣。", "en": "This story is very interesting."}
+ },
+ "趴": {
+  "origin": "趴 has the foot radical 足 and means to lie face down.",
+  "word": {"w": "趴下", "en": "to lie down on one's front"},
+  "sentence": {"cn": "他趴在桌上睡觉。", "en": "He lies on the desk to sleep."}
+ },
+ "趸": {
+  "origin": "趸 has the foot radical 足 and means to buy or sell wholesale.",
+  "word": {"w": "趸卖", "en": "to sell wholesale"},
+  "sentence": {"cn": "他趸了一批货。", "en": "He bought a batch of goods wholesale."}
+ },
+ "跃": {
+  "origin": "跃 has the foot radical 足 and means to leap or jump.",
+  "word": {"w": "跳跃", "en": "to jump; leap"},
+  "sentence": {"cn": "小鹿在草地上跃。", "en": "The little deer leaps on the grass."}
+ },
+ "跋": {
+  "origin": "跋 has the foot radical 足 and means to trek over difficult ground.",
+  "word": {"w": "跋涉", "en": "to trek"},
+  "sentence": {"cn": "他们长途跋涉。", "en": "They trekked a long way."}
+ },
+ "跌": {
+  "origin": "跌 means the foot 足 loses its hold 失, so to fall down.",
+  "word": {"w": "跌倒", "en": "to fall down"},
+  "sentence": {"cn": "他跌倒了。", "en": "He fell down."}
+ },
+ "跛": {
+  "origin": "跛 has the foot radical 足 and means lame, walking unevenly.",
+  "word": {"w": "跛脚", "en": "lame"},
+  "sentence": {"cn": "那只狗跛着脚。", "en": "That dog is limping."}
+ },
+ "距": {
+  "origin": "距 has the foot radical 足 and means distance or gap.",
+  "word": {"w": "距离", "en": "distance"},
+  "sentence": {"cn": "两地距离很远。", "en": "The two places are far apart."}
+ },
+ "跤": {
+  "origin": "跤 has the foot radical 足 and means a tumble or fall.",
+  "word": {"w": "摔跤", "en": "to wrestle; fall over"},
+  "sentence": {"cn": "他摔了一跤。", "en": "He took a tumble."}
+ },
+ "跨": {
+  "origin": "跨 has the foot radical 足 and means to step over or straddle.",
+  "word": {"w": "跨过", "en": "to step over"},
+  "sentence": {"cn": "他跨过水沟。", "en": "He stepped over the ditch."}
+ },
+ "跷": {
+  "origin": "跷 has the foot radical 足 and means to stand on tiptoe or to raise.",
+  "word": {"w": "跷脚", "en": "to raise a foot"},
+  "sentence": {"cn": "他跷起脚来。", "en": "He raised his foot."}
+ },
+ "跺": {
+  "origin": "跺 has the foot radical 足 and means to stamp the feet.",
+  "word": {"w": "跺脚", "en": "to stamp the feet"},
+  "sentence": {"cn": "他生气地跺脚。", "en": "He stamped his feet in anger."}
+ },
+ "踏": {
+  "origin": "踏 has the foot radical 足 and means to step on or tread.",
+  "word": {"w": "踏步", "en": "to mark time; step"},
+  "sentence": {"cn": "请不要踏草坪。", "en": "Please do not step on the lawn."}
+ },
+ "踝": {
+  "origin": "踝 has the foot radical 足 and means the ankle.",
+  "word": {"w": "脚踝", "en": "ankle"},
+  "sentence": {"cn": "我的脚踝疼。", "en": "My ankle hurts."}
+ },
+ "踩": {
+  "origin": "踩 has the foot radical 足 and means to step on.",
+  "word": {"w": "踩到", "en": "to step on"},
+  "sentence": {"cn": "我踩到一块石头。", "en": "I stepped on a stone."}
+ },
+ "踮": {
+  "origin": "踮 has the foot radical 足 and means to stand on tiptoe.",
+  "word": {"w": "踮脚", "en": "to stand on tiptoe"},
+  "sentence": {"cn": "她踮脚看黑板。", "en": "She tiptoes to see the blackboard."}
+ },
+ "踱": {
+  "origin": "踱 has the foot radical 足 and means to pace slowly.",
+  "word": {"w": "踱步", "en": "to pace"},
+  "sentence": {"cn": "他在院里踱步。", "en": "He paces in the yard."}
+ },
+ "踹": {
+  "origin": "踹 has the foot radical 足 and means to kick or trample.",
+  "word": {"w": "踹门", "en": "to kick a door"},
+  "sentence": {"cn": "他一脚踹开门。", "en": "He kicked the door open."}
+ },
+ "蹄": {
+  "origin": "蹄 has the foot radical 足 and means a hoof.",
+  "word": {"w": "马蹄", "en": "horse's hoof"},
+  "sentence": {"cn": "马蹄声很响。", "en": "The sound of the horse's hooves is loud."}
+ },
+ "蹈": {
+  "origin": "蹈 has the foot radical 足 and means to stamp or to dance.",
+  "word": {"w": "舞蹈", "en": "dance"},
+  "sentence": {"cn": "她在学舞蹈。", "en": "She is learning dance."}
+ },
+ "蹑": {
+  "origin": "蹑 has the foot radical 足 and means to walk softly on tiptoe.",
+  "word": {"w": "蹑手蹑脚", "en": "to walk on tiptoe"},
+  "sentence": {"cn": "他蹑手蹑脚地走。", "en": "He walks softly on tiptoe."}
+ },
+ "蹦": {
+  "origin": "蹦 has the foot radical 足 and means to bounce or hop.",
+  "word": {"w": "蹦跳", "en": "to bounce and jump"},
+  "sentence": {"cn": "小孩高兴地蹦。", "en": "The child bounces happily."}
+ },
+ "蹬": {
+  "origin": "蹬 has the foot radical 足 and means to step or pedal hard.",
+  "word": {"w": "蹬车", "en": "to pedal a bike"},
+  "sentence": {"cn": "他用力蹬车。", "en": "He pedals the bike hard."}
+ },
+ "蹭": {
+  "origin": "蹭 has the foot radical 足 and means to shuffle or rub along.",
+  "word": {"w": "蹭来蹭去", "en": "to shuffle around"},
+  "sentence": {"cn": "小猫在我腿上蹭。", "en": "The kitten rubs against my leg."}
+ },
+ "蹲": {
+  "origin": "蹲 has the foot radical 足 and means to squat or crouch.",
+  "word": {"w": "蹲下", "en": "to squat down"},
+  "sentence": {"cn": "他蹲下来系鞋带。", "en": "He squats down to tie his shoes."}
+ },
+ "蹼": {
+  "origin": "蹼 has the foot radical 足 and means webbed feet, like a duck's.",
+  "word": {"w": "脚蹼", "en": "swim fins; webbed feet"},
+  "sentence": {"cn": "鸭子有脚蹼。", "en": "Ducks have webbed feet."}
+ },
+ "蹿": {
+  "origin": "蹿 has the foot radical 足 and means to spring up or dart.",
+  "word": {"w": "蹿跳", "en": "to leap"},
+  "sentence": {"cn": "猫一下蹿上墙。", "en": "The cat sprang up the wall in one go."}
+ },
+ "躬": {
+  "origin": "躬 means to bend the body 身 like a bow 弓, so to bow.",
+  "word": {"w": "鞠躬", "en": "to bow"},
+  "sentence": {"cn": "他向老师鞠躬。", "en": "He bows to the teacher."}
+ },
+ "躲": {
+  "origin": "躲 has the body radical 身 and means to hide or to dodge.",
+  "word": {"w": "躲藏", "en": "to hide"},
+  "sentence": {"cn": "他躲在门后。", "en": "He is hiding behind the door."}
+ },
+ "轧": {
+  "origin": "轧 has the cart radical 车 and means to roll over or crush.",
+  "word": {"w": "轧路", "en": "to roll a road flat"},
+  "sentence": {"cn": "车子轧过石头。", "en": "The car rolled over the stone."}
+ },
+ "轨": {
+  "origin": "轨 has the cart radical 车 and means a track or rail.",
+  "word": {"w": "轨道", "en": "track; rail"},
+  "sentence": {"cn": "火车在轨道上跑。", "en": "The train runs on the tracks."}
+ },
+ "转": {
+  "origin": "转 has the cart radical 车; read zhuǎn it means to turn or change.",
+  "word": {"w": "转身", "en": "to turn around"},
+  "sentence": {"cn": "他转身就走。", "en": "He turned around and left."}
+ },
+ "轮": {
+  "origin": "轮 has the cart radical 车 and means a wheel.",
+  "word": {"w": "车轮", "en": "wheel"},
+  "sentence": {"cn": "车轮坏了。", "en": "The wheel is broken."}
+ },
+ "软": {
+  "origin": "软 has the cart radical 车 and means soft and flexible.",
+  "word": {"w": "柔软", "en": "soft"},
+  "sentence": {"cn": "这枕头很软。", "en": "This pillow is very soft."}
+ }
+}

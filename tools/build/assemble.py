@@ -35,7 +35,7 @@ def build_seg(cn):
 
 merged={}
 errors=[]
-for f in sorted(glob.glob('tools/build/content/out_*.json')+glob.glob('tools/build/content2/out_*.json')+glob.glob('tools/build/content3/out_*.json')):
+for f in sorted(glob.glob('tools/build/content*/out_*.json')):
     data=json.load(open(f,encoding='utf-8'))
     for ch,v in data.items():
         if len(ch)!=1: errors.append((f,ch,"bad key")); continue
@@ -62,10 +62,20 @@ ce=open('learn/content-extra.js',encoding='utf-8').read()
 body=ce[ce.index('window.CONTENT_EXTRA = ')+len('window.CONTENT_EXTRA = '):].rstrip().rstrip(';')
 existing=json.loads(body)
 print("existing pilot entries:",len(existing))
-added=0
+added=0; updated=0
 for ch,e in merged.items():
-    existing[ch]=e; added+=1
-print("added",added,"new entries; total now",len(existing))
+    if ch in existing:
+        # merge field-by-field so a partial out_* (e.g. only a sentence) never
+        # clobbers fields the existing entry already carries.
+        cur=existing[ch]
+        for k,val in e.items():
+            if k=="struct" and cur.get("struct") and not DICT.get(ch,{}).get('decomposition'):
+                continue  # keep a previously-known struct over a "single" guess
+            cur[k]=val
+        updated+=1
+    else:
+        existing[ch]=e; added+=1
+print("added",added,"new entries; updated",updated,"; total now",len(existing))
 
 HEADER=ce[:ce.index('window.CONTENT_EXTRA')]
 open('learn/content-extra.js','w',encoding='utf-8').write(

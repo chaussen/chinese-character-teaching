@@ -1,0 +1,252 @@
+{
+ "臧": {
+  "origin": "Made with 臣 (official); it is an old word meaning good or proper, and a surname.",
+  "word": {"w": "臧否", "en": "to judge good and bad"},
+  "sentence": {"cn": "臧是一个姓。", "en": "Zang is a surname."}
+ },
+ "自": {
+  "origin": "A picture of a nose; in China people point to their nose to mean self.",
+  "word": {"w": "自己", "en": "oneself"},
+  "sentence": {"cn": "我自己来。", "en": "I'll do it myself."}
+ },
+ "臭": {
+  "origin": "The nose 自 above a dog 犬 sniffing; it means stinky.",
+  "word": {"w": "臭味", "en": "bad smell"},
+  "sentence": {"cn": "垃圾很臭。", "en": "The trash smells bad."}
+ },
+ "至": {
+  "origin": "Pictures a bird coming down to the ground 土; it means to reach or arrive.",
+  "word": {"w": "至今", "en": "until now"},
+  "sentence": {"cn": "我至今还记得。", "en": "I still remember it to this day."}
+ },
+ "致": {
+  "origin": "Reaching 至 with action 攵; it means to send or to cause.",
+  "word": {"w": "一致", "en": "consistent, in agreement"},
+  "sentence": {"cn": "大家意见一致。", "en": "Everyone is in agreement."}
+ },
+ "臼": {
+  "origin": "A picture of a mortar used to grind grain; it means mortar.",
+  "word": {"w": "石臼", "en": "stone mortar"},
+  "sentence": {"cn": "石臼能舂米。", "en": "A stone mortar can pound rice."}
+ },
+ "舀": {
+  "origin": "A hand 爫 reaching into a container 臼; it means to scoop or ladle.",
+  "word": {"w": "舀水", "en": "to scoop water"},
+  "sentence": {"cn": "他舀了一碗汤。", "en": "He ladled out a bowl of soup."}
+ },
+ "舂": {
+  "origin": "Hands pounding inside a mortar 臼; it means to pound grain.",
+  "word": {"w": "舂米", "en": "to husk rice"},
+  "sentence": {"cn": "奶奶在舂米。", "en": "Grandma is pounding rice."}
+ },
+ "舅": {
+  "origin": "Made with 男 (man); it means mother's brother, an uncle.",
+  "word": {"w": "舅舅", "en": "maternal uncle"},
+  "sentence": {"cn": "舅舅来我家了。", "en": "My uncle came to my house."}
+ },
+ "舌": {
+  "origin": "A tongue sticking out of a mouth 口; it means tongue.",
+  "word": {"w": "舌头", "en": "tongue"},
+  "sentence": {"cn": "他伸出舌头。", "en": "He stuck out his tongue."}
+ },
+ "舒": {
+  "origin": "Made with 舍 (house); it means relaxed and comfortable.",
+  "word": {"w": "舒服", "en": "comfortable"},
+  "sentence": {"cn": "这床很舒服。", "en": "This bed is very comfortable."}
+ },
+ "舔": {
+  "origin": "The tongue radical 舌; it means to lick.",
+  "word": {"w": "舔", "en": "to lick"},
+  "sentence": {"cn": "小狗舔我的手。", "en": "The puppy licks my hand."}
+ },
+ "般": {
+  "origin": "A pole 殳 turning a boat 舟; it came to mean kind, sort, or manner.",
+  "word": {"w": "一般", "en": "ordinary, generally"},
+  "sentence": {"cn": "他一般八点起床。", "en": "He usually gets up at eight."}
+ },
+ "舰": {
+  "origin": "The boat radical 舟; it means a warship.",
+  "word": {"w": "军舰", "en": "warship"},
+  "sentence": {"cn": "海上有一艘军舰。", "en": "There is a warship at sea."}
+ },
+ "舱": {
+  "origin": "A storeroom 仓 on a boat 舟; it means a cabin or ship's hold.",
+  "word": {"w": "船舱", "en": "ship's cabin"},
+  "sentence": {"cn": "船舱里很暖和。", "en": "It is warm inside the cabin."}
+ },
+ "舵": {
+  "origin": "The boat radical 舟; it means a rudder that steers a ship.",
+  "word": {"w": "船舵", "en": "ship's rudder"},
+  "sentence": {"cn": "他在掌舵。", "en": "He is steering the boat."}
+ },
+ "舷": {
+  "origin": "The boat radical 舟; it means the side of a ship.",
+  "word": {"w": "船舷", "en": "ship's side"},
+  "sentence": {"cn": "他站在船舷边。", "en": "He stands at the side of the ship."}
+ },
+ "艇": {
+  "origin": "The boat radical 舟; it means a small light boat.",
+  "word": {"w": "小艇", "en": "small boat"},
+  "sentence": {"cn": "湖上有一只小艇。", "en": "There is a small boat on the lake."}
+ },
+ "良": {
+  "origin": "An old character that means good, fine, or kind.",
+  "word": {"w": "善良", "en": "kind-hearted"},
+  "sentence": {"cn": "她很善良。", "en": "She is very kind."}
+ },
+ "色": {
+  "origin": "Shows a person ⺈ and 巴; it means color.",
+  "word": {"w": "颜色", "en": "color"},
+  "sentence": {"cn": "我喜欢红色。", "en": "I like the color red."}
+ },
+ "艳": {
+  "origin": "Lush 丰 and full of color 色; it means bright and beautiful.",
+  "word": {"w": "鲜艳", "en": "bright-colored"},
+  "sentence": {"cn": "花儿很鲜艳。", "en": "The flowers are bright and colorful."}
+ },
+ "艾": {
+  "origin": "The grass radical 艹; it is the name of a plant, mugwort.",
+  "word": {"w": "艾草", "en": "mugwort"},
+  "sentence": {"cn": "门上挂着艾草。", "en": "Mugwort hangs on the door."}
+ },
+ "芦": {
+  "origin": "The grass radical 艹; it means reed.",
+  "word": {"w": "芦苇", "en": "reed"},
+  "sentence": {"cn": "河边长满芦苇。", "en": "Reeds grow all along the river."}
+ },
+ "芯": {
+  "origin": "The heart 心 of a plant 艹; it means the core or center.",
+  "word": {"w": "笔芯", "en": "pen refill, lead"},
+  "sentence": {"cn": "铅笔芯断了。", "en": "The pencil lead broke."}
+ },
+ "苏": {
+  "origin": "The grass radical 艹; it means to revive or wake up, and is a place name.",
+  "word": {"w": "苏醒", "en": "to wake up, to revive"},
+  "sentence": {"cn": "他慢慢苏醒了。", "en": "He slowly came to."}
+ },
+ "苑": {
+  "origin": "The grass radical 艹; it means a garden or park.",
+  "word": {"w": "花苑", "en": "flower garden"},
+  "sentence": {"cn": "花苑里有很多花。", "en": "There are many flowers in the garden."}
+ },
+ "苞": {
+  "origin": "A flower 艹 wrapped up 包; it means a flower bud.",
+  "word": {"w": "花苞", "en": "flower bud"},
+  "sentence": {"cn": "树上有花苞。", "en": "There are flower buds on the tree."}
+ },
+ "若": {
+  "origin": "An old character meaning if, or like.",
+  "word": {"w": "如若", "en": "if"},
+  "sentence": {"cn": "若下雨就回家。", "en": "If it rains, we go home."}
+ },
+ "苫": {
+  "origin": "The grass radical 艹; it means a straw mat used to cover things.",
+  "word": {"w": "草苫", "en": "straw mat"},
+  "sentence": {"cn": "用草苫盖住粮食。", "en": "Cover the grain with a straw mat."}
+ },
+ "范": {
+  "origin": "The grass radical 艹; it means a model or example, and is a surname.",
+  "word": {"w": "范本", "en": "model, sample copy"},
+  "sentence": {"cn": "这是写字的范本。", "en": "This is a writing model."}
+ },
+ "茅": {
+  "origin": "The grass radical 艹; it means a kind of tall grass, thatch.",
+  "word": {"w": "茅草", "en": "thatch grass"},
+  "sentence": {"cn": "屋顶铺着茅草。", "en": "The roof is covered with thatch."}
+ },
+ "茎": {
+  "origin": "The grass radical 艹; it means the stem of a plant.",
+  "word": {"w": "花茎", "en": "flower stem"},
+  "sentence": {"cn": "花茎又细又长。", "en": "The flower stem is thin and long."}
+ },
+ "茧": {
+  "origin": "A silk shell 艹 spun by a worm 虫; it means cocoon.",
+  "word": {"w": "蚕茧", "en": "silkworm cocoon"},
+  "sentence": {"cn": "蚕宝宝结茧了。", "en": "The silkworm has spun a cocoon."}
+ },
+ "茬": {
+  "origin": "The grass radical 艹; it means a crop stubble, or a turn of something.",
+  "word": {"w": "茬子", "en": "stubble"},
+  "sentence": {"cn": "地里留着麦茬。", "en": "Wheat stubble is left in the field."}
+ },
+ "茹": {
+  "origin": "The grass radical 艹; an old word meaning to eat vegetables.",
+  "word": {"w": "茹素", "en": "to eat vegetarian food"},
+  "sentence": {"cn": "奶奶常年茹素。", "en": "Grandma eats vegetarian all year."}
+ },
+ "荆": {
+  "origin": "A thorny plant 艹 with blades 刂; it means brambles or thorns.",
+  "word": {"w": "荆棘", "en": "thorns, brambles"},
+  "sentence": {"cn": "山路上长满荆棘。", "en": "The mountain path is full of thorns."}
+ },
+ "荒": {
+  "origin": "The grass radical 艹; it means wild, barren, or wasteland.",
+  "word": {"w": "荒地", "en": "wasteland"},
+  "sentence": {"cn": "这是一片荒地。", "en": "This is a stretch of wasteland."}
+ },
+ "荚": {
+  "origin": "The grass radical 艹; it means a seed pod.",
+  "word": {"w": "豆荚", "en": "bean pod"},
+  "sentence": {"cn": "豆荚里有豆子。", "en": "There are beans inside the pod."}
+ },
+ "荡": {
+  "origin": "Water 汤 sweeping over plants 艹; it means to sway or to rinse.",
+  "word": {"w": "荡秋千", "en": "to swing"},
+  "sentence": {"cn": "小船在水上荡。", "en": "The little boat sways on the water."}
+ },
+ "荤": {
+  "origin": "The grass radical 艹; it means meat dishes, the opposite of vegetarian.",
+  "word": {"w": "荤菜", "en": "meat dish"},
+  "sentence": {"cn": "桌上有一道荤菜。", "en": "There is a meat dish on the table."}
+ },
+ "荷": {
+  "origin": "The grass radical 艹; it means lotus.",
+  "word": {"w": "荷花", "en": "lotus flower"},
+  "sentence": {"cn": "池塘里开满荷花。", "en": "The pond is full of lotus blossoms."}
+ },
+ "荻": {
+  "origin": "The grass radical 艹; it means a kind of reed grass.",
+  "word": {"w": "荻草", "en": "reed grass"},
+  "sentence": {"cn": "河边长着荻草。", "en": "Reed grass grows by the river."}
+ },
+ "莫": {
+  "origin": "An old character meaning do not, or none.",
+  "word": {"w": "莫名", "en": "inexplicable"},
+  "sentence": {"cn": "请莫大声说话。", "en": "Please do not speak loudly."}
+ },
+ "莲": {
+  "origin": "The grass radical 艹; it means lotus.",
+  "word": {"w": "莲花", "en": "lotus flower"},
+  "sentence": {"cn": "莲花真好看。", "en": "The lotus flower is so pretty."}
+ },
+ "获": {
+  "origin": "An old character meaning to catch or to gain.",
+  "word": {"w": "收获", "en": "harvest, gains"},
+  "sentence": {"cn": "今年收获很多。", "en": "There was a big harvest this year."}
+ },
+ "菊": {
+  "origin": "The grass radical 艹; it means chrysanthemum.",
+  "word": {"w": "菊花", "en": "chrysanthemum"},
+  "sentence": {"cn": "秋天菊花开了。", "en": "Chrysanthemums bloom in autumn."}
+ },
+ "菌": {
+  "origin": "The grass radical 艹; it means fungus, mushroom, or germ.",
+  "word": {"w": "细菌", "en": "bacteria, germs"},
+  "sentence": {"cn": "洗手能去细菌。", "en": "Washing hands removes germs."}
+ },
+ "菱": {
+  "origin": "The grass radical 艹; it means water caltrop, a pond plant.",
+  "word": {"w": "菱角", "en": "water caltrop"},
+  "sentence": {"cn": "菱角长在水里。", "en": "Water caltrops grow in the water."}
+ },
+ "萍": {
+  "origin": "The grass radical 艹 with water; it means duckweed floating on ponds.",
+  "word": {"w": "浮萍", "en": "duckweed"},
+  "sentence": {"cn": "水面飘着浮萍。", "en": "Duckweed floats on the water."}
+ },
+ "萤": {
+  "origin": "An insect 虫 that glows; it means firefly.",
+  "word": {"w": "萤火虫", "en": "firefly"},
+  "sentence": {"cn": "夏夜有萤火虫。", "en": "There are fireflies on summer nights."}
+ }
+}

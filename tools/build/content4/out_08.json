@@ -1,0 +1,252 @@
+{
+ "嘎": {
+  "origin": "口 mouth plus 戛; the short, sharp cackling sound of a duck.",
+  "word": {"w": "嘎嘎", "en": "quack-quack, cackle"},
+  "sentence": {"cn": "鸭子嘎嘎叫。", "en": "The duck goes quack-quack."}
+ },
+ "嘘": {
+  "origin": "口 mouth plus 虚; the soft sound you blow out to say be quiet.",
+  "word": {"w": "嘘寒问暖", "en": "to show warm care"},
+  "sentence": {"cn": "嘘，别出声。", "en": "Shh, don't make a sound."}
+ },
+ "嘛": {
+  "origin": "口 mouth plus 麻; a soft word added at the end of a sentence.",
+  "word": {"w": "嘛", "en": "(a sentence-final particle)"},
+  "sentence": {"cn": "这事很简单嘛。", "en": "This thing is really simple, you know."}
+ },
+ "嘞": {
+  "origin": "口 mouth plus 勒; a friendly word added at the end of a sentence.",
+  "word": {"w": "好嘞", "en": "okay! sure!"},
+  "sentence": {"cn": "好嘞，马上来。", "en": "Sure, coming right away."}
+ },
+ "嘟": {
+  "origin": "口 mouth plus 都; the toot sound a horn makes.",
+  "word": {"w": "嘟嘟", "en": "toot-toot (horn sound)"},
+  "sentence": {"cn": "汽车嘟嘟响。", "en": "The car goes toot-toot."}
+ },
+ "嘣": {
+  "origin": "口 mouth plus 崩; the bang or pop sound of something bursting.",
+  "word": {"w": "嘣", "en": "bang, pop"},
+  "sentence": {"cn": "气球嘣的一声破了。", "en": "The balloon popped with a bang."}
+ },
+ "嘬": {
+  "origin": "口 mouth plus 最; to suck or lap with the mouth.",
+  "word": {"w": "嘬奶", "en": "to suckle milk"},
+  "sentence": {"cn": "小猫嘬着奶。", "en": "The kitten is suckling milk."}
+ },
+ "嘭": {
+  "origin": "口 mouth plus 彭; the loud bang of a door or crash.",
+  "word": {"w": "嘭", "en": "bang (crash sound)"},
+  "sentence": {"cn": "门嘭地关上了。", "en": "The door slammed with a bang."}
+ },
+ "嘹": {
+  "origin": "口 mouth plus 尞; a clear, ringing sound like a bell.",
+  "word": {"w": "嘹亮", "en": "loud and clear"},
+  "sentence": {"cn": "号声很嘹亮。", "en": "The horn sounds loud and clear."}
+ },
+ "嘻": {
+  "origin": "口 mouth plus 喜 happy; the sound of a happy giggle.",
+  "word": {"w": "嘻嘻", "en": "hee-hee (giggling)"},
+  "sentence": {"cn": "她嘻嘻地笑。", "en": "She giggles hee-hee."}
+ },
+ "嘿": {
+  "origin": "口 mouth plus 黑; the sound hey you use to call someone.",
+  "word": {"w": "嘿嘿", "en": "heh-heh (chuckle)"},
+  "sentence": {"cn": "嘿，你等等我。", "en": "Hey, wait for me."}
+ },
+ "噌": {
+  "origin": "口 mouth plus 曾; the quick swish sound of fast movement.",
+  "word": {"w": "噌", "en": "swish (a quick sound)"},
+  "sentence": {"cn": "他噌地站了起来。", "en": "He shot up to his feet in a flash."}
+ },
+ "噎": {
+  "origin": "口 mouth plus 壹; when food gets stuck and you choke.",
+  "word": {"w": "噎住", "en": "to be choked"},
+  "sentence": {"cn": "吃饭太快会噎住。", "en": "Eating too fast can make you choke."}
+ },
+ "噔": {
+  "origin": "口 mouth plus 登; the thud sound of footsteps or a thump.",
+  "word": {"w": "噔噔", "en": "thud-thud (footstep sound)"},
+  "sentence": {"cn": "他噔噔地跑下楼。", "en": "He ran downstairs with thudding steps."}
+ },
+ "噗": {
+  "origin": "口 mouth plus 菐; the puff sound of air or a giggle bursting out.",
+  "word": {"w": "噗", "en": "puff, pfft"},
+  "sentence": {"cn": "她噗地笑了出来。", "en": "She burst out laughing with a pfft."}
+ },
+ "噙": {
+  "origin": "口 mouth plus 禽; to hold something gently in the mouth.",
+  "word": {"w": "噙着泪", "en": "with tears in the eyes"},
+  "sentence": {"cn": "他眼里噙着泪。", "en": "He has tears in his eyes."}
+ },
+ "噢": {
+  "origin": "口 mouth plus 奥; the sound oh you make when you understand.",
+  "word": {"w": "噢", "en": "oh (I see)"},
+  "sentence": {"cn": "噢，原来如此。", "en": "Oh, so that's how it is."}
+ },
+ "噫": {
+  "origin": "口 mouth plus 意; a little sound of surprise from the mouth.",
+  "word": {"w": "噫", "en": "oh! (exclamation of surprise)"},
+  "sentence": {"cn": "噫，这是怎么回事。", "en": "Huh, what is going on here."}
+ },
+ "嚎": {
+  "origin": "口 mouth plus 豪; to cry out very loudly.",
+  "word": {"w": "嚎啕大哭", "en": "to wail loudly"},
+  "sentence": {"cn": "孩子嚎啕大哭。", "en": "The child wails loudly."}
+ },
+ "嚓": {
+  "origin": "口 mouth plus 察; the cracking or scratching sound.",
+  "word": {"w": "咔嚓", "en": "click, snap (cracking sound)"},
+  "sentence": {"cn": "树枝咔嚓断了。", "en": "The branch snapped with a crack."}
+ },
+ "嚯": {
+  "origin": "口 mouth plus 霍; a sound of surprise from the mouth.",
+  "word": {"w": "嚯", "en": "wow! (exclamation)"},
+  "sentence": {"cn": "嚯，这条鱼真大。", "en": "Wow, this fish is so big."}
+ },
+ "嚷": {
+  "origin": "口 mouth plus 襄; to shout out loudly with the mouth.",
+  "word": {"w": "嚷嚷", "en": "to shout, to make a racket"},
+  "sentence": {"cn": "别大声嚷嚷。", "en": "Don't shout so loudly."}
+ },
+ "嚼": {
+  "origin": "口 mouth plus 爵; to chew food with the mouth.",
+  "word": {"w": "咀嚼", "en": "to chew"},
+  "sentence": {"cn": "吃饭要慢慢嚼。", "en": "Chew your food slowly when you eat."}
+ },
+ "囊": {
+  "origin": "A big bag that holds many things inside.",
+  "word": {"w": "口袋囊", "en": "pocket, sack"},
+  "sentence": {"cn": "他背着一个大囊。", "en": "He carries a big sack on his back."}
+ },
+ "囚": {
+  "origin": "A person 人 shut inside a box 囗 is a prisoner.",
+  "word": {"w": "囚犯", "en": "prisoner"},
+  "sentence": {"cn": "囚犯被关起来了。", "en": "The prisoner is locked up."}
+ },
+ "因": {
+  "origin": "Something big 大 inside a frame 囗; it points to the reason for things.",
+  "word": {"w": "因为", "en": "because"},
+  "sentence": {"cn": "因为下雨，我没去。", "en": "Because it rained, I didn't go."}
+ },
+ "团": {
+  "origin": "Many people and talent 才 gathered in one place 囗 form a group.",
+  "word": {"w": "团结", "en": "to unite"},
+  "sentence": {"cn": "大家团结在一起。", "en": "Everyone unites together."}
+ },
+ "囤": {
+  "origin": "An enclosure 囗 with 屯 inside; a basket to store grain.",
+  "word": {"w": "囤粮", "en": "to store up grain"},
+  "sentence": {"cn": "农民囤了很多粮。", "en": "The farmer stored up a lot of grain."}
+ },
+ "固": {
+  "origin": "Something old 古 inside walls 囗 stays firm and solid.",
+  "word": {"w": "牢固", "en": "firm, sturdy"},
+  "sentence": {"cn": "这座桥很牢固。", "en": "This bridge is very sturdy."}
+ },
+ "圈": {
+  "origin": "A round shape inside 囗; a circle or ring.",
+  "word": {"w": "圆圈", "en": "circle"},
+  "sentence": {"cn": "请画一个圈。", "en": "Please draw a circle."}
+ },
+ "圣": {
+  "origin": "Simplified from 聖; someone wise and holy who listens and speaks well.",
+  "word": {"w": "圣人", "en": "a sage, a holy person"},
+  "sentence": {"cn": "他被称为圣人。", "en": "He is called a sage."}
+ },
+ "圩": {
+  "origin": "土 earth plus 于; an earthen dike that holds back water.",
+  "word": {"w": "圩堤", "en": "dike, embankment"},
+  "sentence": {"cn": "村边有一道圩。", "en": "There is a dike beside the village."}
+ },
+ "场": {
+  "origin": "土 earth plus 勿; a flat piece of open ground.",
+  "word": {"w": "广场", "en": "square, plaza"},
+  "sentence": {"cn": "我们在广场玩。", "en": "We play in the square."}
+ },
+ "均": {
+  "origin": "土 earth plus 匀; spreading earth out so it is even and equal.",
+  "word": {"w": "平均", "en": "average, even"},
+  "sentence": {"cn": "把糖平均分开。", "en": "Divide the candy evenly."}
+ },
+ "坎": {
+  "origin": "土 earth plus 欠; a dip or pit in the ground.",
+  "word": {"w": "坎坷", "en": "bumpy, rough"},
+  "sentence": {"cn": "这条路有个坎。", "en": "This road has a bump."}
+ },
+ "坑": {
+  "origin": "土 earth plus 亢; a hole dug into the ground.",
+  "word": {"w": "水坑", "en": "puddle, pit of water"},
+  "sentence": {"cn": "路上有个大坑。", "en": "There is a big hole in the road."}
+ },
+ "坛": {
+  "origin": "土 earth plus 云; a raised earthen platform used for ceremonies.",
+  "word": {"w": "花坛", "en": "flower bed"},
+  "sentence": {"cn": "花坛里开满了花。", "en": "The flower bed is full of blooms."}
+ },
+ "坝": {
+  "origin": "土 earth plus 贝; an earthen wall that holds back water.",
+  "word": {"w": "大坝", "en": "dam"},
+  "sentence": {"cn": "河上有一座大坝。", "en": "There is a big dam on the river."}
+ },
+ "坟": {
+  "origin": "土 earth plus 文; a mound of earth that is a grave.",
+  "word": {"w": "坟墓", "en": "grave, tomb"},
+  "sentence": {"cn": "山上有一座坟。", "en": "There is a grave on the hill."}
+ },
+ "坠": {
+  "origin": "土 earth below; something heavy falling down to the ground.",
+  "word": {"w": "坠落", "en": "to fall, to drop"},
+  "sentence": {"cn": "苹果从树上坠下。", "en": "The apple drops from the tree."}
+ },
+ "坡": {
+  "origin": "土 earth plus 皮; a slanted piece of ground, a slope.",
+  "word": {"w": "山坡", "en": "hillside, slope"},
+  "sentence": {"cn": "羊在山坡上吃草。", "en": "The sheep graze on the hillside."}
+ },
+ "坪": {
+  "origin": "土 earth plus 平 flat; a flat, level piece of ground.",
+  "word": {"w": "草坪", "en": "lawn"},
+  "sentence": {"cn": "我们在草坪上跑。", "en": "We run on the lawn."}
+ },
+ "坯": {
+  "origin": "土 earth plus 丕; soft clay or an unbaked brick made of earth.",
+  "word": {"w": "土坯", "en": "an earthen brick"},
+  "sentence": {"cn": "墙是用土坯砌的。", "en": "The wall is built from earthen bricks."}
+ },
+ "垃": {
+  "origin": "土 earth plus 立; the character for trash, used in 垃圾.",
+  "word": {"w": "垃圾", "en": "rubbish, garbage"},
+  "sentence": {"cn": "请把垃圾扔掉。", "en": "Please throw away the garbage."}
+ },
+ "垄": {
+  "origin": "土 earth plus 龙; a raised ridge of earth in a field.",
+  "word": {"w": "田垄", "en": "field ridge"},
+  "sentence": {"cn": "田里有一道道垄。", "en": "There are rows of ridges in the field."}
+ },
+ "型": {
+  "origin": "土 earth plus 刑; a mold made of earth that shapes a model.",
+  "word": {"w": "模型", "en": "model"},
+  "sentence": {"cn": "他做了一个飞机模型。", "en": "He made a model airplane."}
+ },
+ "垒": {
+  "origin": "Piling earth 土 up again and again to build a wall.",
+  "word": {"w": "垒墙", "en": "to build up a wall"},
+  "sentence": {"cn": "工人在垒石头。", "en": "The workers are stacking stones."}
+ },
+ "垢": {
+  "origin": "土 earth plus 后; dirt and grime, like bits of earth.",
+  "word": {"w": "污垢", "en": "dirt, grime"},
+  "sentence": {"cn": "手上有很多污垢。", "en": "There is a lot of dirt on the hands."}
+ },
+ "垧": {
+  "origin": "土 earth plus 向; an old unit for measuring land area.",
+  "word": {"w": "一垧地", "en": "one unit of farmland"},
+  "sentence": {"cn": "他家有十垧地。", "en": "His family has ten units of land."}
+ },
+ "垫": {
+  "origin": "土 earth plus 执; something soft you put under to pad or cushion.",
+  "word": {"w": "垫子", "en": "cushion, mat"},
+  "sentence": {"cn": "椅子上有个垫子。", "en": "There is a cushion on the chair."}
+ }
+}

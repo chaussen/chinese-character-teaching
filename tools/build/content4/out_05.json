@@ -1,0 +1,252 @@
+{
+  "匪": {
+    "origin": "匪 means bandit or robber.",
+    "word": {"w": "土匪", "en": "bandit"},
+    "sentence": {"cn": "山里有土匪。", "en": "There are bandits in the mountains."}
+  },
+  "匾": {
+    "origin": "匾 is a flat board or tablet, often hung as a sign.",
+    "word": {"w": "匾额", "en": "horizontal tablet, plaque"},
+    "sentence": {"cn": "门上挂着一块匾。", "en": "A plaque hangs above the door."}
+  },
+  "卅": {
+    "origin": "卅 means thirty; it looks like three tally marks joined together.",
+    "word": {"w": "卅年", "en": "thirty years"},
+    "sentence": {"cn": "他已经卅岁了。", "en": "He is already thirty years old."}
+  },
+  "卒": {
+    "origin": "卒 means a soldier, a foot soldier in armor.",
+    "word": {"w": "士卒", "en": "soldiers"},
+    "sentence": {"cn": "他是一名小卒。", "en": "He is a common soldier."}
+  },
+  "卓": {
+    "origin": "卓 means outstanding or lofty.",
+    "word": {"w": "卓越", "en": "outstanding, excellent"},
+    "sentence": {"cn": "她的成绩很卓越。", "en": "Her results are outstanding."}
+  },
+  "博": {
+    "origin": "博 means wide or abundant in knowledge.",
+    "word": {"w": "博物馆", "en": "museum"},
+    "sentence": {"cn": "我们去博物馆。", "en": "We go to the museum."}
+  },
+  "卜": {
+    "origin": "卜 means divination; it looks like a crack on an oracle bone.",
+    "word": {"w": "占卜", "en": "to divine, fortune-telling"},
+    "sentence": {"cn": "古人用龟壳占卜。", "en": "Ancient people divined with turtle shells."}
+  },
+  "占": {
+    "origin": "占 means to occupy or to take up space.",
+    "word": {"w": "占用", "en": "to occupy, to take up"},
+    "sentence": {"cn": "他占了我的座位。", "en": "He took my seat."}
+  },
+  "卡": {
+    "origin": "卡 means a card; picture it stuck between up 上 and down 下.",
+    "word": {"w": "卡片", "en": "card"},
+    "sentence": {"cn": "我有一张卡片。", "en": "I have a card."}
+  },
+  "卢": {
+    "origin": "卢 is a common Chinese family name.",
+    "word": {"w": "姓卢", "en": "surnamed Lu"},
+    "sentence": {"cn": "她姓卢。", "en": "Her surname is Lu."}
+  },
+  "卤": {
+    "origin": "卤 means brine; it can mean to stew food in salty sauce.",
+    "word": {"w": "卤蛋", "en": "soy-stewed egg"},
+    "sentence": {"cn": "我爱吃卤蛋。", "en": "I love eating stewed eggs."}
+  },
+  "卦": {
+    "origin": "卦 names the symbols used in fortune-telling.",
+    "word": {"w": "八卦", "en": "the eight trigrams; gossip"},
+    "sentence": {"cn": "他在算一卦。", "en": "He is telling a fortune."}
+  },
+  "卧": {
+    "origin": "卧 means to lie down or recline.",
+    "word": {"w": "卧室", "en": "bedroom"},
+    "sentence": {"cn": "我的卧室很干净。", "en": "My bedroom is very clean."}
+  },
+  "卫": {
+    "origin": "卫 means to guard or protect.",
+    "word": {"w": "保卫", "en": "to defend, to protect"},
+    "sentence": {"cn": "士兵保卫家园。", "en": "The soldiers defend their homeland."}
+  },
+  "卯": {
+    "origin": "卯 is the fourth Earthly Branch, used in old timekeeping.",
+    "word": {"w": "卯时", "en": "the hour of the rabbit (5-7 am)"},
+    "sentence": {"cn": "古人卯时起床。", "en": "Ancient people rose at dawn."}
+  },
+  "印": {
+    "origin": "印 means to print or a stamp, like a hand pressing a seal.",
+    "word": {"w": "打印", "en": "to print"},
+    "sentence": {"cn": "请帮我打印。", "en": "Please help me print it."}
+  },
+  "危": {
+    "origin": "危 means dangerous, like a person at the edge of a cliff.",
+    "word": {"w": "危险", "en": "danger, dangerous"},
+    "sentence": {"cn": "过马路要小心危险。", "en": "Watch out for danger when crossing the road."}
+  },
+  "即": {
+    "origin": "即 means at once or right away.",
+    "word": {"w": "立即", "en": "immediately"},
+    "sentence": {"cn": "我们立即出发。", "en": "We set off immediately."}
+  },
+  "卵": {
+    "origin": "卵 means an egg; it pictures two ovaries holding eggs.",
+    "word": {"w": "鸟卵", "en": "bird egg"},
+    "sentence": {"cn": "鸟在窝里下卵。", "en": "The bird lays eggs in the nest."}
+  },
+  "卷": {
+    "origin": "卷 means to roll up, like a curled scroll.",
+    "word": {"w": "卷起", "en": "to roll up"},
+    "sentence": {"cn": "他把画卷起来。", "en": "He rolls up the painting."}
+  },
+  "卸": {
+    "origin": "卸 means to unload or take off.",
+    "word": {"w": "卸货", "en": "to unload goods"},
+    "sentence": {"cn": "工人在卸货。", "en": "The workers are unloading goods."}
+  },
+  "卿": {
+    "origin": "卿 means a high official or noble in old times.",
+    "word": {"w": "公卿", "en": "high officials"},
+    "sentence": {"cn": "他是朝中大卿。", "en": "He is a high official at court."}
+  },
+  "厂": {
+    "origin": "厂 means a factory; it also pictures a cliff overhang.",
+    "word": {"w": "工厂", "en": "factory"},
+    "sentence": {"cn": "爸爸在工厂工作。", "en": "Dad works in a factory."}
+  },
+  "历": {
+    "origin": "历 means to experience or a calendar.",
+    "word": {"w": "历史", "en": "history"},
+    "sentence": {"cn": "我喜欢学历史。", "en": "I like studying history."}
+  },
+  "厉": {
+    "origin": "厉 means strict or severe.",
+    "word": {"w": "厉害", "en": "amazing, fierce"},
+    "sentence": {"cn": "他跑得很厉害。", "en": "He runs amazingly fast."}
+  },
+  "压": {
+    "origin": "压 means to press down, like weight crushing soil.",
+    "word": {"w": "压力", "en": "pressure"},
+    "sentence": {"cn": "石头压住纸。", "en": "The stone presses down the paper."}
+  },
+  "厌": {
+    "origin": "厌 means to dislike or be tired of something.",
+    "word": {"w": "讨厌", "en": "to dislike, annoying"},
+    "sentence": {"cn": "我讨厌下雨。", "en": "I dislike the rain."}
+  },
+  "厘": {
+    "origin": "厘 means one hundredth, a tiny unit of measure.",
+    "word": {"w": "厘米", "en": "centimeter"},
+    "sentence": {"cn": "这条线长五厘米。", "en": "This line is five centimeters long."}
+  },
+  "厚": {
+    "origin": "厚 means thick or generous.",
+    "word": {"w": "厚厚", "en": "thick"},
+    "sentence": {"cn": "这本书很厚。", "en": "This book is very thick."}
+  },
+  "原": {
+    "origin": "原 means the source or original.",
+    "word": {"w": "原来", "en": "originally, it turns out"},
+    "sentence": {"cn": "原来是你呀。", "en": "Oh, it turns out to be you."}
+  },
+  "县": {
+    "origin": "县 means a county, a small district of land.",
+    "word": {"w": "县城", "en": "county town"},
+    "sentence": {"cn": "我家在小县城。", "en": "My home is in a small county town."}
+  },
+  "叁": {
+    "origin": "叁 is the formal form of three, used on checks to prevent fraud.",
+    "word": {"w": "叁元", "en": "three yuan (formal)"},
+    "sentence": {"cn": "支票上写叁元。", "en": "The check is written for three yuan."}
+  },
+  "叉": {
+    "origin": "叉 means a fork, like a hand grasping with crossed fingers.",
+    "word": {"w": "叉子", "en": "fork"},
+    "sentence": {"cn": "我用叉子吃面。", "en": "I eat noodles with a fork."}
+  },
+  "双": {
+    "origin": "双 means a pair, two hands 又 side by side.",
+    "word": {"w": "一双", "en": "a pair"},
+    "sentence": {"cn": "我买了一双鞋。", "en": "I bought a pair of shoes."}
+  },
+  "叔": {
+    "origin": "叔 means uncle, a father's younger brother.",
+    "word": {"w": "叔叔", "en": "uncle"},
+    "sentence": {"cn": "叔叔来我家玩。", "en": "Uncle comes to my home to play."}
+  },
+  "叙": {
+    "origin": "叙 means to tell or narrate.",
+    "word": {"w": "叙述", "en": "to narrate"},
+    "sentence": {"cn": "他叙述了那件事。", "en": "He narrated that event."}
+  },
+  "叠": {
+    "origin": "叠 means to fold or stack up.",
+    "word": {"w": "叠被子", "en": "to fold the quilt"},
+    "sentence": {"cn": "我每天叠被子。", "en": "I fold my quilt every day."}
+  },
+  "叩": {
+    "origin": "叩 means to knock or to kowtow.",
+    "word": {"w": "叩门", "en": "to knock on a door"},
+    "sentence": {"cn": "他轻轻叩门。", "en": "He knocks softly on the door."}
+  },
+  "召": {
+    "origin": "召 means to summon or call together.",
+    "word": {"w": "召开", "en": "to convene (a meeting)"},
+    "sentence": {"cn": "老师召集同学。", "en": "The teacher gathers the students."}
+  },
+  "叭": {
+    "origin": "叭 imitates the sound of a horn or trumpet.",
+    "word": {"w": "喇叭", "en": "horn, trumpet"},
+    "sentence": {"cn": "汽车按喇叭。", "en": "The car honks its horn."}
+  },
+  "叮": {
+    "origin": "叮 means to urge, or the sound of a small bell or sting.",
+    "word": {"w": "叮嘱", "en": "to urge, to exhort"},
+    "sentence": {"cn": "妈妈叮嘱我小心。", "en": "Mom urges me to be careful."}
+  },
+  "台": {
+    "origin": "台 means a platform or stage.",
+    "word": {"w": "舞台", "en": "stage"},
+    "sentence": {"cn": "她站在舞台上。", "en": "She stands on the stage."}
+  },
+  "史": {
+    "origin": "史 means history or record, like a hand writing it down.",
+    "word": {"w": "历史", "en": "history"},
+    "sentence": {"cn": "这是一段历史。", "en": "This is a piece of history."}
+  },
+  "叹": {
+    "origin": "叹 means to sigh, breath leaving the mouth 口.",
+    "word": {"w": "叹气", "en": "to sigh"},
+    "sentence": {"cn": "他难过地叹气。", "en": "He sighs sadly."}
+  },
+  "叼": {
+    "origin": "叼 means to hold something in the mouth.",
+    "word": {"w": "叼住", "en": "to hold in the mouth"},
+    "sentence": {"cn": "小狗叼着骨头。", "en": "The puppy holds a bone in its mouth."}
+  },
+  "吁": {
+    "origin": "吁 is an exclamation, like a sigh of alas.",
+    "word": {"w": "呼吁", "en": "to call on, to appeal"},
+    "sentence": {"cn": "大家呼吁保护环境。", "en": "Everyone calls for protecting the environment."}
+  },
+  "吉": {
+    "origin": "吉 means lucky or auspicious.",
+    "word": {"w": "吉祥", "en": "auspicious, lucky"},
+    "sentence": {"cn": "祝你吉祥如意。", "en": "Wishing you luck and happiness."}
+  },
+  "吊": {
+    "origin": "吊 means to hang something up.",
+    "word": {"w": "吊灯", "en": "hanging lamp, chandelier"},
+    "sentence": {"cn": "天花板上吊着灯。", "en": "A lamp hangs from the ceiling."}
+  },
+  "同": {
+    "origin": "同 means same or together, sharing one voice 口.",
+    "word": {"w": "同学", "en": "classmate"},
+    "sentence": {"cn": "他是我的同学。", "en": "He is my classmate."}
+  },
+  "吐": {
+    "origin": "吐 means to spit out or vomit from the mouth 口.",
+    "word": {"w": "吐出", "en": "to spit out"},
+    "sentence": {"cn": "他把核吐出来。", "en": "He spits out the seed."}
+  }
+}

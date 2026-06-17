@@ -1,0 +1,252 @@
+{
+ "痴": {
+  "origin": "病字旁表示心里像生了病，知表声，指傻、呆。",
+  "word": {"w": "痴心", "en": "infatuation; devotion"},
+  "sentence": {"cn": "他看书看痴了。", "en": "He read so intently he was lost in it."}
+ },
+ "瘤": {
+  "origin": "病字旁表示生病，留表声，指身上长出的肉疙瘩。",
+  "word": {"w": "肿瘤", "en": "tumor"},
+  "sentence": {"cn": "医生检查肿瘤。", "en": "The doctor examines the tumor."}
+ },
+ "瘦": {
+  "origin": "病字旁表示身体，叟表声，指人或动物又瘦又干。",
+  "word": {"w": "瘦小", "en": "thin and small"},
+  "sentence": {"cn": "这只猫很瘦。", "en": "This cat is very thin."}
+ },
+ "瘪": {
+  "origin": "病字旁表示干瘪，里面表示凹下去，指东西不饱满、扁了。",
+  "word": {"w": "干瘪", "en": "shriveled; dried up"},
+  "sentence": {"cn": "皮球瘪了。", "en": "The ball has gone flat."}
+ },
+ "瘫": {
+  "origin": "病字旁表示生病，难表声，指身体不能动，瘫痪。",
+  "word": {"w": "瘫痪", "en": "paralysis"},
+  "sentence": {"cn": "他的腿瘫了。", "en": "His legs are paralyzed."}
+ },
+ "瘸": {
+  "origin": "病字旁表示腿脚有病，指走路一拐一拐的。",
+  "word": {"w": "瘸腿", "en": "lame leg"},
+  "sentence": {"cn": "小狗瘸了一条腿。", "en": "The puppy has gone lame in one leg."}
+ },
+ "瘾": {
+  "origin": "病字旁表示像病一样，隐表声，指戒不掉的强烈嗜好。",
+  "word": {"w": "上瘾", "en": "to become addicted"},
+  "sentence": {"cn": "打游戏会上瘾。", "en": "Playing games can be addictive."}
+ },
+ "癌": {
+  "origin": "病字旁表示重病，嵒（岩）表声，指一种很难治的病——癌。",
+  "word": {"w": "癌症", "en": "cancer"},
+  "sentence": {"cn": "他得了癌症。", "en": "He has cancer."}
+ },
+ "癍": {
+  "origin": "病字旁表示皮肤病，斑表声，指皮肤上的斑点。",
+  "word": {"w": "黑癍", "en": "dark skin spots"},
+  "sentence": {"cn": "脸上有些癍。", "en": "There are some spots on the face."}
+ },
+ "癣": {
+  "origin": "病字旁表示皮肤病，鲜表声，指一种会传染的皮肤病。",
+  "word": {"w": "牛皮癣", "en": "psoriasis"},
+  "sentence": {"cn": "他得了癣。", "en": "He has ringworm."}
+ },
+ "癸": {
+  "origin": "古代天干的第十位，排在最后一个，记作癸。",
+  "word": {"w": "癸水", "en": "the tenth heavenly stem (associated with water)"},
+  "sentence": {"cn": "癸是天干的最后一个。", "en": "Gui is the last of the heavenly stems."}
+ },
+ "登": {
+  "origin": "上面是两只脚（癶），下面豆是台阶，表示一步步往上爬。",
+  "word": {"w": "登山", "en": "to climb a mountain"},
+  "sentence": {"cn": "我们一起去登山。", "en": "Let's go climb the mountain together."}
+ },
+ "皖": {
+  "origin": "白字旁，完表声，是安徽省的简称。",
+  "word": {"w": "安皖", "en": "Anhui (province)"},
+  "sentence": {"cn": "他家在皖南。", "en": "His home is in southern Anhui."}
+ },
+ "皱": {
+  "origin": "皮字旁表示皮肤，刍表声，指皮肤或布上的褶子。",
+  "word": {"w": "皱纹", "en": "wrinkle"},
+  "sentence": {"cn": "奶奶脸上有皱纹。", "en": "Grandma has wrinkles on her face."}
+ },
+ "皴": {
+  "origin": "皮字旁表示皮肤，夋表声，指皮肤被冻得开裂。",
+  "word": {"w": "皴裂", "en": "chapped; cracked (skin)"},
+  "sentence": {"cn": "冬天手会皴。", "en": "Hands get chapped in winter."}
+ },
+ "盅": {
+  "origin": "中表声，下面的皿是器皿，指小小的杯子或碗。",
+  "word": {"w": "酒盅", "en": "small wine cup"},
+  "sentence": {"cn": "桌上有个茶盅。", "en": "There is a small tea cup on the table."}
+ },
+ "盆": {
+  "origin": "分表声，下面的皿是器皿，指口大底小的盆子。",
+  "word": {"w": "花盆", "en": "flowerpot"},
+  "sentence": {"cn": "窗台上有个花盆。", "en": "There is a flowerpot on the windowsill."}
+ },
+ "盈": {
+  "origin": "下面的皿是器皿，东西多到要满出来，表示充满。",
+  "word": {"w": "盈满", "en": "brimming; full"},
+  "sentence": {"cn": "他笑容盈满脸。", "en": "His face was full of smiles."}
+ },
+ "益": {
+  "origin": "皿是器皿，上面水满了溢出来，表示增多、好处。",
+  "word": {"w": "有益", "en": "beneficial"},
+  "sentence": {"cn": "读书对人有益。", "en": "Reading is good for people."}
+ },
+ "盏": {
+  "origin": "戋表示小，皿是器皿，指小小的灯或杯，也作灯的量词。",
+  "word": {"w": "一盏灯", "en": "a lamp (measure word use)"},
+  "sentence": {"cn": "屋里点着一盏灯。", "en": "A lamp is lit in the room."}
+ },
+ "盐": {
+  "origin": "下面的皿是器皿，里面装着又咸又白的东西——盐。",
+  "word": {"w": "食盐", "en": "table salt"},
+  "sentence": {"cn": "汤里放点盐。", "en": "Add a little salt to the soup."}
+ },
+ "监": {
+  "origin": "古人低头照着盛水的器皿（皿）看自己，引申为看管、监督。",
+  "word": {"w": "监督", "en": "to supervise"},
+  "sentence": {"cn": "老师监督考试。", "en": "The teacher supervises the exam."}
+ },
+ "盒": {
+  "origin": "合表声，下面的皿是器皿，指带盖子的小盒子。",
+  "word": {"w": "盒子", "en": "box"},
+  "sentence": {"cn": "我有一个铅笔盒。", "en": "I have a pencil box."}
+ },
+ "盔": {
+  "origin": "下面的皿是器皿，指像碗一样扣在头上的帽子。",
+  "word": {"w": "头盔", "en": "helmet"},
+  "sentence": {"cn": "骑车要戴头盔。", "en": "Wear a helmet when riding a bike."}
+ },
+ "盖": {
+  "origin": "下面是器皿，上面像一个盖子盖在上面，表示遮盖。",
+  "word": {"w": "盖子", "en": "lid; cover"},
+  "sentence": {"cn": "请盖上锅盖。", "en": "Please put the lid on the pot."}
+ },
+ "盗": {
+  "origin": "下面是器皿，上面像人流口水想要，表示偷、抢。",
+  "word": {"w": "盗贼", "en": "thief; robber"},
+  "sentence": {"cn": "盗贼被抓住了。", "en": "The thief was caught."}
+ },
+ "盘": {
+  "origin": "下面的皿是器皿，指又大又平的盘子。",
+  "word": {"w": "盘子", "en": "plate; dish"},
+  "sentence": {"cn": "盘子里有水果。", "en": "There is fruit on the plate."}
+ },
+ "盛": {
+  "origin": "下面的皿是器皿，本指把东西装进器皿，引申为兴旺、茂盛。",
+  "word": {"w": "茂盛", "en": "lush; flourishing"},
+  "sentence": {"cn": "花开得很盛。", "en": "The flowers are blooming abundantly."}
+ },
+ "盟": {
+  "origin": "下面的皿是盛祭品的器皿，古人对天起誓结盟，表示联合。",
+  "word": {"w": "联盟", "en": "alliance; league"},
+  "sentence": {"cn": "两国结成联盟。", "en": "The two countries formed an alliance."}
+ },
+ "盯": {
+  "origin": "目是眼睛，丁表声，表示眼睛紧紧地看着。",
+  "word": {"w": "盯着", "en": "to stare at; to fix one's gaze on"},
+  "sentence": {"cn": "猫盯着小鱼。", "en": "The cat stares at the little fish."}
+ },
+ "直": {
+  "origin": "上面有眼睛（目），表示眼睛看得正、看得直。",
+  "word": {"w": "直线", "en": "straight line"},
+  "sentence": {"cn": "请画一条直线。", "en": "Please draw a straight line."}
+ },
+ "相": {
+  "origin": "木和目合在一起，像用眼睛看树，表示互相、彼此。",
+  "word": {"w": "相同", "en": "the same; identical"},
+  "sentence": {"cn": "我们的想法相同。", "en": "Our ideas are the same."}
+ },
+ "盾": {
+  "origin": "一只眼睛（目）藏在挡牌后面，表示打仗用的盾牌。",
+  "word": {"w": "盾牌", "en": "shield"},
+  "sentence": {"cn": "战士举起盾牌。", "en": "The soldier raises his shield."}
+ },
+ "眉": {
+  "origin": "下面是眼睛（目），上面像眼睛上方的毛，表示眉毛。",
+  "word": {"w": "眉毛", "en": "eyebrow"},
+  "sentence": {"cn": "他的眉毛很浓。", "en": "His eyebrows are very thick."}
+ },
+ "眍": {
+  "origin": "目是眼睛，区表声，指眼睛往里凹陷的样子。",
+  "word": {"w": "眍眼", "en": "sunken eyes"},
+  "sentence": {"cn": "他累得眼睛眍了。", "en": "He is so tired his eyes are sunken."}
+ },
+ "眨": {
+  "origin": "目是眼睛，乏表声，表示眼睛一开一合，眨眼。",
+  "word": {"w": "眨眼", "en": "to blink"},
+  "sentence": {"cn": "她眨了眨眼睛。", "en": "She blinked her eyes."}
+ },
+ "眯": {
+  "origin": "目是眼睛，米表声，表示把眼睛眯成一条缝。",
+  "word": {"w": "眯眼", "en": "to squint"},
+  "sentence": {"cn": "阳光太亮，他眯着眼。", "en": "The sun is too bright, so he squints."}
+ },
+ "睁": {
+  "origin": "目是眼睛，争表声，表示把眼睛张开。",
+  "word": {"w": "睁开", "en": "to open (one's eyes)"},
+  "sentence": {"cn": "他睁开了眼睛。", "en": "He opened his eyes."}
+ },
+ "睬": {
+  "origin": "目是眼睛，采表声，表示用眼神回应、理会别人。",
+  "word": {"w": "理睬", "en": "to pay attention to; to acknowledge"},
+  "sentence": {"cn": "他不理睬我。", "en": "He ignores me."}
+ },
+ "睹": {
+  "origin": "目是眼睛，者表声，表示亲眼看见。",
+  "word": {"w": "目睹", "en": "to witness with one's own eyes"},
+  "sentence": {"cn": "我亲眼目睹了。", "en": "I saw it with my own eyes."}
+ },
+ "瞄": {
+  "origin": "目是眼睛，苗表声，表示用眼睛对准目标。",
+  "word": {"w": "瞄准", "en": "to take aim"},
+  "sentence": {"cn": "他瞄准了靶子。", "en": "He took aim at the target."}
+ },
+ "瞅": {
+  "origin": "目是眼睛，秋表声，口语里表示看一看。",
+  "word": {"w": "瞅见", "en": "to catch sight of"},
+  "sentence": {"cn": "你瞅瞅这个。", "en": "Take a look at this."}
+ },
+ "瞎": {
+  "origin": "目是眼睛，害表声，眼睛坏了看不见，就是瞎。",
+  "word": {"w": "瞎子", "en": "a blind person"},
+  "sentence": {"cn": "别瞎说。", "en": "Don't talk nonsense."}
+ },
+ "瞒": {
+  "origin": "目是眼睛，表示遮住别人的眼，就是隐瞒、欺骗。",
+  "word": {"w": "隐瞒", "en": "to conceal; to hide (the truth)"},
+  "sentence": {"cn": "他瞒着大家。", "en": "He kept it hidden from everyone."}
+ },
+ "瞟": {
+  "origin": "目是眼睛，票表声，表示斜着眼快看一下。",
+  "word": {"w": "瞟一眼", "en": "to glance sideways"},
+  "sentence": {"cn": "他瞟了我一眼。", "en": "He shot me a sidelong glance."}
+ },
+ "瞥": {
+  "origin": "下面是眼睛（目），表示眼睛很快地扫过，看一眼。",
+  "word": {"w": "一瞥", "en": "a glimpse; a quick glance"},
+  "sentence": {"cn": "我瞥了一眼。", "en": "I took a quick glance."}
+ },
+ "瞧": {
+  "origin": "目是眼睛，焦表声，口语里表示看。",
+  "word": {"w": "瞧见", "en": "to see; to catch sight of"},
+  "sentence": {"cn": "你瞧，下雨了。", "en": "Look, it's raining."}
+ },
+ "瞪": {
+  "origin": "目是眼睛，登表声，表示把眼睛睁得大大地看。",
+  "word": {"w": "瞪眼", "en": "to glare; to stare wide-eyed"},
+  "sentence": {"cn": "他生气地瞪着我。", "en": "He glares at me angrily."}
+ },
+ "瞻": {
+  "origin": "目是眼睛，詹表声，表示抬头往前或往上看。",
+  "word": {"w": "瞻仰", "en": "to look up to with reverence"},
+  "sentence": {"cn": "大家瞻仰英雄像。", "en": "Everyone gazes up at the hero's statue."}
+ },
+ "矛": {
+  "origin": "像一支长长的、尖头朝上的兵器，就是矛。",
+  "word": {"w": "长矛", "en": "spear; lance"},
+  "sentence": {"cn": "士兵拿着长矛。", "en": "The soldier holds a long spear."}
+ }
+}

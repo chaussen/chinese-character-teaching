@@ -1,0 +1,252 @@
+{
+  "吕": {
+    "origin": "吕 shows two mouths 口 stacked, like notes in harmony; it is also a surname.",
+    "word": {"w": "姓吕", "en": "surnamed Lü"},
+    "sentence": {"cn": "他姓吕。", "en": "His surname is Lü."}
+  },
+  "君": {
+    "origin": "君 means a ruler or a respectful word for a gentleman.",
+    "word": {"w": "君子", "en": "gentleman, person of virtue"},
+    "sentence": {"cn": "他是一位君子。", "en": "He is a man of virtue."}
+  },
+  "吞": {
+    "origin": "吞 means to swallow whole.",
+    "word": {"w": "吞下", "en": "to swallow"},
+    "sentence": {"cn": "他一口吞下药。", "en": "He swallows the pill in one gulp."}
+  },
+  "吠": {
+    "origin": "吠 is the sound a dog 犬 makes with its mouth 口.",
+    "word": {"w": "狂吠", "en": "to bark wildly"},
+    "sentence": {"cn": "狗对陌生人吠。", "en": "The dog barks at strangers."}
+  },
+  "吣": {
+    "origin": "吣 means to vomit, with the mouth radical 口.",
+    "word": {"w": "吣血", "en": "to spit blood (figurative)"},
+    "sentence": {"cn": "他难受得想吣。", "en": "He feels so sick he wants to throw up."}
+  },
+  "否": {
+    "origin": "否 means no or not.",
+    "word": {"w": "是否", "en": "whether or not"},
+    "sentence": {"cn": "我不知道他是否来。", "en": "I don't know whether he is coming."}
+  },
+  "吨": {
+    "origin": "吨 means a ton, a unit of weight.",
+    "word": {"w": "一吨", "en": "one ton"},
+    "sentence": {"cn": "这块石头有一吨。", "en": "This rock weighs a ton."}
+  },
+  "含": {
+    "origin": "含 means to hold in the mouth or to contain.",
+    "word": {"w": "含有", "en": "to contain"},
+    "sentence": {"cn": "牛奶含有钙。", "en": "Milk contains calcium."}
+  },
+  "吭": {
+    "origin": "吭 means the throat, or to utter a sound.",
+    "word": {"w": "吭声", "en": "to make a sound, to speak up"},
+    "sentence": {"cn": "他一声不吭。", "en": "He did not make a sound."}
+  },
+  "吮": {
+    "origin": "吮 means to suck with the mouth 口.",
+    "word": {"w": "吮吸", "en": "to suck"},
+    "sentence": {"cn": "宝宝吮手指。", "en": "The baby sucks its finger."}
+  },
+  "启": {
+    "origin": "启 means to open or to begin, like opening a door 户.",
+    "word": {"w": "开启", "en": "to open, to start"},
+    "sentence": {"cn": "请开启电脑。", "en": "Please turn on the computer."}
+  },
+  "吱": {
+    "origin": "吱 imitates a small chirp or squeak.",
+    "word": {"w": "吱吱", "en": "squeak squeak"},
+    "sentence": {"cn": "老鼠吱吱叫。", "en": "The mouse squeaks."}
+  },
+  "吴": {
+    "origin": "吴 is the name of an old state and a common surname.",
+    "word": {"w": "姓吴", "en": "surnamed Wu"},
+    "sentence": {"cn": "老师姓吴。", "en": "The teacher's surname is Wu."}
+  },
+  "吵": {
+    "origin": "吵 means to be noisy or to quarrel.",
+    "word": {"w": "吵架", "en": "to quarrel"},
+    "sentence": {"cn": "他们又吵架了。", "en": "They quarreled again."}
+  },
+  "吸": {
+    "origin": "吸 means to inhale or suck in through the mouth 口.",
+    "word": {"w": "呼吸", "en": "to breathe"},
+    "sentence": {"cn": "深深吸一口气。", "en": "Take a deep breath in."}
+  },
+  "吹": {
+    "origin": "吹 means to blow with the mouth 口.",
+    "word": {"w": "吹风", "en": "to blow in the wind"},
+    "sentence": {"cn": "风吹动树叶。", "en": "The wind blows the leaves."}
+  },
+  "吻": {
+    "origin": "吻 means to kiss.",
+    "word": {"w": "亲吻", "en": "to kiss"},
+    "sentence": {"cn": "妈妈吻了宝宝。", "en": "Mom kissed the baby."}
+  },
+  "吼": {
+    "origin": "吼 means to roar or shout loudly.",
+    "word": {"w": "吼叫", "en": "to roar"},
+    "sentence": {"cn": "狮子大声吼。", "en": "The lion roars loudly."}
+  },
+  "吾": {
+    "origin": "吾 is an old word for I or me.",
+    "word": {"w": "吾辈", "en": "we, our generation"},
+    "sentence": {"cn": "吾爱读书。", "en": "I love to read."}
+  },
+  "呆": {
+    "origin": "呆 means dull or to stay still, like someone with wooden speech.",
+    "word": {"w": "发呆", "en": "to be in a daze"},
+    "sentence": {"cn": "他坐着发呆。", "en": "He sits there in a daze."}
+  },
+  "呈": {
+    "origin": "呈 means to present or to show.",
+    "word": {"w": "呈现", "en": "to present, to show"},
+    "sentence": {"cn": "天空呈现红色。", "en": "The sky shows a red color."}
+  },
+  "告": {
+    "origin": "告 means to tell or announce.",
+    "word": {"w": "告诉", "en": "to tell"},
+    "sentence": {"cn": "请告诉我答案。", "en": "Please tell me the answer."}
+  },
+  "呕": {
+    "origin": "呕 means to vomit, with the mouth radical 口.",
+    "word": {"w": "呕吐", "en": "to vomit"},
+    "sentence": {"cn": "他坐车呕吐了。", "en": "He vomited from riding in the car."}
+  },
+  "呗": {
+    "origin": "呗 is a casual ending word that softens a statement.",
+    "word": {"w": "好呗", "en": "fine then"},
+    "sentence": {"cn": "不行就算了呗。", "en": "If it does not work, then forget it."}
+  },
+  "呛": {
+    "origin": "呛 means to choke on water, food, or smoke.",
+    "word": {"w": "呛水", "en": "to choke on water"},
+    "sentence": {"cn": "他喝水呛着了。", "en": "He choked while drinking water."}
+  },
+  "呜": {
+    "origin": "呜 imitates the sound of sobbing or a horn.",
+    "word": {"w": "呜咽", "en": "to sob"},
+    "sentence": {"cn": "她呜呜地哭。", "en": "She cries with sobs."}
+  },
+  "呦": {
+    "origin": "呦 imitates a soft cry, or shows surprise.",
+    "word": {"w": "呦呵", "en": "oh! (surprise)"},
+    "sentence": {"cn": "呦，你来啦。", "en": "Oh, you've come."}
+  },
+  "呱": {
+    "origin": "呱 imitates a baby's cry or a frog's croak.",
+    "word": {"w": "呱呱", "en": "croak, wail (sound)"},
+    "sentence": {"cn": "青蛙呱呱叫。", "en": "The frog croaks."}
+  },
+  "味": {
+    "origin": "味 means taste or flavor, sensed by the mouth 口.",
+    "word": {"w": "味道", "en": "taste, flavor"},
+    "sentence": {"cn": "这道菜味道好。", "en": "This dish tastes good."}
+  },
+  "呵": {
+    "origin": "呵 means to scold, or the sound of laughing.",
+    "word": {"w": "呵护", "en": "to cherish, to care for"},
+    "sentence": {"cn": "妈妈呵护着我。", "en": "Mom lovingly cares for me."}
+  },
+  "呸": {
+    "origin": "呸 is the sound of spitting in disgust.",
+    "word": {"w": "呸的一声", "en": "a spitting sound"},
+    "sentence": {"cn": "他呸了一声。", "en": "He spat in disgust."}
+  },
+  "呼": {
+    "origin": "呼 means to breathe out or to call, from the mouth 口.",
+    "word": {"w": "呼叫", "en": "to call out"},
+    "sentence": {"cn": "他大声呼叫。", "en": "He calls out loudly."}
+  },
+  "命": {
+    "origin": "命 means life, or an order given by mouth 口.",
+    "word": {"w": "生命", "en": "life"},
+    "sentence": {"cn": "我们要爱护生命。", "en": "We must cherish life."}
+  },
+  "咂": {
+    "origin": "咂 means to smack the lips or sip and taste.",
+    "word": {"w": "咂嘴", "en": "to smack one's lips"},
+    "sentence": {"cn": "他咂嘴说真香。", "en": "He smacks his lips and says it smells great."}
+  },
+  "咋": {
+    "origin": "咋 is a casual word meaning how or why.",
+    "word": {"w": "咋办", "en": "what to do"},
+    "sentence": {"cn": "我不知道咋办。", "en": "I don't know what to do."}
+  },
+  "咏": {
+    "origin": "咏 means to chant or sing, from the mouth 口.",
+    "word": {"w": "歌咏", "en": "to sing"},
+    "sentence": {"cn": "他在咏诗。", "en": "He is chanting a poem."}
+  },
+  "咒": {
+    "origin": "咒 means a curse or a chant.",
+    "word": {"w": "咒语", "en": "spell, incantation"},
+    "sentence": {"cn": "巫师念咒语。", "en": "The wizard chants a spell."}
+  },
+  "咔": {
+    "origin": "咔 imitates a clicking or snapping sound.",
+    "word": {"w": "咔嚓", "en": "click, snap (sound)"},
+    "sentence": {"cn": "相机咔的一声。", "en": "The camera goes click."}
+  },
+  "咕": {
+    "origin": "咕 imitates a rumbling or muttering sound.",
+    "word": {"w": "咕咚", "en": "thud, gulp (sound)"},
+    "sentence": {"cn": "肚子咕咕叫。", "en": "My stomach is rumbling."}
+  },
+  "咚": {
+    "origin": "咚 imitates a thumping or knocking sound.",
+    "word": {"w": "咚咚", "en": "thump thump (sound)"},
+    "sentence": {"cn": "鼓声咚咚响。", "en": "The drum goes thump thump."}
+  },
+  "咝": {
+    "origin": "咝 imitates a hissing sound.",
+    "word": {"w": "咝咝", "en": "hiss (sound)"},
+    "sentence": {"cn": "蛇发出咝咝声。", "en": "The snake makes a hissing sound."}
+  },
+  "咣": {
+    "origin": "咣 imitates a loud crash or bang.",
+    "word": {"w": "咣当", "en": "clang, crash (sound)"},
+    "sentence": {"cn": "门咣的一声关上。", "en": "The door slams shut with a bang."}
+  },
+  "咦": {
+    "origin": "咦 is a sound showing surprise.",
+    "word": {"w": "咦呀", "en": "huh? (surprise)"},
+    "sentence": {"cn": "咦，钥匙不见了。", "en": "Huh, the key is gone."}
+  },
+  "咧": {
+    "origin": "咧 means to grin or pull the mouth wide.",
+    "word": {"w": "咧嘴", "en": "to grin"},
+    "sentence": {"cn": "他咧嘴笑了。", "en": "He grinned widely."}
+  },
+  "咩": {
+    "origin": "咩 is the sound a sheep 羊 makes with its mouth 口.",
+    "word": {"w": "咩咩", "en": "baa baa (sheep sound)"},
+    "sentence": {"cn": "小羊咩咩叫。", "en": "The little lamb goes baa baa."}
+  },
+  "咬": {
+    "origin": "咬 means to bite with the mouth 口.",
+    "word": {"w": "咬住", "en": "to bite onto"},
+    "sentence": {"cn": "小狗咬住玩具。", "en": "The puppy bites the toy."}
+  },
+  "咯": {
+    "origin": "咯 is a casual ending word, or imitates a cluck.",
+    "word": {"w": "好咯", "en": "okay then"},
+    "sentence": {"cn": "我先走咯。", "en": "I'll go ahead then."}
+  },
+  "咱": {
+    "origin": "咱 means we or us (including the listener).",
+    "word": {"w": "咱们", "en": "we, us"},
+    "sentence": {"cn": "咱们一起走吧。", "en": "Let's go together."}
+  },
+  "咳": {
+    "origin": "咳 means to cough, from the mouth 口.",
+    "word": {"w": "咳嗽", "en": "to cough"},
+    "sentence": {"cn": "他感冒咳嗽了。", "en": "He caught a cold and is coughing."}
+  },
+  "咸": {
+    "origin": "咸 means salty in taste.",
+    "word": {"w": "咸味", "en": "salty taste"},
+    "sentence": {"cn": "这汤太咸了。", "en": "This soup is too salty."}
+  }
+}
