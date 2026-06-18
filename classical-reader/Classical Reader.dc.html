@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400;1,6..72,500&family=Noto+Serif+SC:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600&display=swap" rel="stylesheet" />
+<style>
+  html,body{margin:0;height:100%;background:#EFE7D6;}
+  *{box-sizing:border-box;}
+  ::selection{background:rgba(178,58,43,.16);}
+  @keyframes wyIn{from{opacity:0;transform:translateY(8px);}to{opacity:1;transform:none;}}
+  .wy-scroll::-webkit-scrollbar{height:9px;width:9px;}
+  .wy-scroll::-webkit-scrollbar-thumb{background:#D9CDB4;border-radius:9px;}
+  ruby{ruby-align:center;}
+</style>
+</helmet>
+
+<div style="height:100vh;display:flex;flex-direction:column;overflow:hidden;background:#EFE7D6;color:#221D16;font-family:'Manrope',system-ui,sans-serif;-webkit-font-smoothing:antialiased;">
+
+  <!-- ───────── TOP BAR ───────── -->
+  <div style="display:flex;align-items:center;gap:16px;padding:0 clamp(16px,3vw,34px);height:60px;flex-shrink:0;background:rgba(251,246,236,.9);backdrop-filter:saturate(150%) blur(12px);-webkit-backdrop-filter:saturate(150%) blur(12px);border-bottom:1px solid #E2D8C2;">
+    <sc-if value="{{ isReader }}" hint-placeholder-val="{{ false }}">
+      <button onClick="{{ goHome }}" style="display:inline-flex;align-items:center;gap:8px;font-family:'Manrope',sans-serif;font-weight:600;font-size:14px;color:#5B5142;padding:8px 15px 8px 11px;border:1px solid #E2D8C2;background:#FBF6EC;border-radius:999px;cursor:pointer;" style-hover="border-color:#D9B3AC;color:#B23A2B;">
+        <span style="font-size:17px;line-height:1;transform:translateY(-1px);">←</span> 文库
+      </button>
+    </sc-if>
+    <sc-if value="{{ isHome }}" hint-placeholder-val="{{ true }}">
+      <div style="display:flex;align-items:center;gap:11px;">
+        <span style="width:34px;height:34px;border-radius:9px;background:#B23A2B;color:#fff;display:inline-flex;align-items:center;justify-content:center;font-family:'Noto Serif SC',serif;font-weight:700;font-size:19px;box-shadow:0 10px 20px -10px rgba(178,58,43,.7);">文</span>
+        <span style="font-family:'Noto Serif SC',serif;font-weight:600;font-size:18px;letter-spacing:.04em;">文言</span>
+      </div>
+    </sc-if>
+    <span style="flex:1;"></span>
+    <sc-if value="{{ isReader }}" hint-placeholder-val="{{ false }}">
+      <span style="font-family:'Noto Serif SC',serif;font-weight:600;font-size:16px;color:#221D16;">{{ tHeaderTitle }}<span style="color:#938976;font-weight:400;font-size:13.5px;margin-left:10px;">{{ tMeta }}</span></span>
+      <span style="flex:1;"></span>
+    </sc-if>
+    <span style="font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#A99C84;">Casey Chinese School</span>
+  </div>
+
+  <!-- ═════════════════════ HOME ═════════════════════ -->
+  <sc-if value="{{ isHome }}" hint-placeholder-val="{{ true }}">
+  <div class="wy-scroll" style="flex:1;overflow-y:auto;animation:wyIn .34s cubic-bezier(.22,.61,.36,1);">
+    <div style="max-width:1080px;margin:0 auto;width:100%;padding:clamp(26px,4vw,52px) clamp(20px,4vw,44px) 64px;">
+
+      <!-- hero -->
+      <div style="margin-bottom:clamp(30px,4vw,46px);">
+        <div style="text-transform:uppercase;letter-spacing:.2em;font-size:11px;font-weight:700;color:#B23A2B;display:flex;align-items:center;gap:9px;">
+          <span style="width:6px;height:6px;border-radius:50%;background:#B23A2B;"></span>文言文精读 · Close Reading
+        </div>
+        <h1 style="font-family:'Noto Serif SC',serif;font-weight:600;font-size:clamp(30px,4.6vw,50px);line-height:1.14;letter-spacing:-.01em;margin:16px 0 14px;max-width:18ch;">读古文，<span style="color:#B23A2B;">见其字</span>，亦见其心。</h1>
+        <p style="font-family:'Newsreader',serif;font-size:clamp(17px,2vw,20px);line-height:1.6;color:#5B5142;max-width:56ch;margin:0;">Read the classics as they were written — bare vertical columns. Then turn on pinyin, a clear modern paraphrase, and an idiomatic English reading whenever you want a hand. Built for readers chasing the 字, the 音, and the 成语 behind the line.</p>
+      </div>
+
+      <!-- section head -->
+      <div style="display:flex;align-items:baseline;justify-content:space-between;gap:16px;margin-bottom:18px;flex-wrap:wrap;border-top:1px solid #E2D8C2;padding-top:24px;">
+        <h2 style="font-family:'Noto Serif SC',serif;font-weight:600;font-size:clamp(20px,2.6vw,26px);margin:0;">短篇 <span style="color:#938976;font-weight:400;font-size:.7em;font-family:'Newsreader',serif;font-style:italic;">Short Classics</span></h2>
+        <span style="font-size:13px;color:#938976;font-weight:600;">为母语级学习者 · for near-native readers</span>
+      </div>
+
+      <!-- FEATURED card -->
+      <button onClick="{{ featured.onOpen }}" style="width:100%;text-align:left;display:flex;gap:clamp(20px,3vw,38px);align-items:stretch;background:#FBF6EC;border:1px solid #E2D8C2;border-radius:20px;padding:clamp(20px,2.6vw,30px);cursor:pointer;transition:.2s;box-shadow:0 1px 0 rgba(34,29,22,.02);margin-bottom:18px;" style-hover="border-color:#D9B3AC;transform:translateY(-3px);box-shadow:0 28px 50px -34px rgba(178,58,43,.55);">
+        <div style="flex-shrink:0;width:clamp(116px,15vw,156px);background:#F6EEDD;border:1px solid #E6DCC6;border-radius:14px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;padding:22px 10px;">
+          <div style="writing-mode:vertical-rl;text-orientation:upright;font-family:'Noto Serif SC',serif;font-weight:600;font-size:clamp(26px,3vw,34px);letter-spacing:3px;color:#221D16;">陋室铭</div>
+          <div style="width:42px;height:42px;border-radius:8px;background:#B23A2B;color:#fff;display:flex;align-items:center;justify-content:center;font-family:'Noto Serif SC',serif;font-weight:700;font-size:24px;box-shadow:0 8px 16px -8px rgba(178,58,43,.8);">刘</div>
+        </div>
+        <div style="flex:1;min-width:0;display:flex;flex-direction:column;">
+          <div style="font-family:'Manrope',sans-serif;font-size:12.5px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#B23A2B;">唐 · 刘禹锡</div>
+          <div style="display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin:6px 0 10px;">
+            <span style="font-family:'Noto Serif SC',serif;font-weight:600;font-size:clamp(26px,3.4vw,36px);letter-spacing:.02em;">陋室铭</span>
+            <span style="font-family:'Newsreader',serif;font-style:italic;font-size:clamp(16px,1.9vw,20px);color:#938976;">Inscription for a Humble Room</span>
+          </div>
+          <p style="font-family:'Newsreader',serif;font-size:clamp(16px,1.9vw,19px);line-height:1.55;color:#5B5142;margin:0 0 16px;max-width:48ch;">The room is plain; the man who lives in it is not. Eighty-one rhymed characters that turn a cramped exile's lodging into a statement of character.</p>
+          <div style="display:flex;gap:9px;flex-wrap:wrap;margin-top:auto;align-items:center;">
+            <span style="font-size:12px;font-weight:600;color:#7A6F5C;background:#F0E8D6;border:1px solid #E6DCC6;border-radius:999px;padding:5px 12px;">铭 · inscription</span>
+            <span style="font-size:12px;font-weight:600;color:#7A6F5C;background:#F0E8D6;border:1px solid #E6DCC6;border-radius:999px;padding:5px 12px;">81 字</span>
+            <span style="font-size:12px;font-weight:600;color:#7A6F5C;background:#F0E8D6;border:1px solid #E6DCC6;border-radius:999px;padding:5px 12px;">骈句 · 押韵</span>
+            <span style="flex:1;"></span>
+            <span style="font-family:'Manrope',sans-serif;font-weight:700;font-size:14px;color:#B23A2B;">开始精读 →</span>
+          </div>
+        </div>
+      </button>
+
+      <!-- MORE grid -->
+      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:16px;">
+        <sc-for list="{{ moreTexts }}" as="m" hint-placeholder-count="6">
+          <button onClick="{{ m.onOpen }}" style="{{ m.cardStyle }}">
+            <div style="display:flex;align-items:flex-start;gap:15px;">
+              <div style="{{ m.sealStyle }}">{{ m.seal }}</div>
+              <div style="flex:1;min-width:0;">
+                <div style="font-family:'Manrope',sans-serif;font-size:11.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:{{ m.metaColor }};">{{ m.meta }}</div>
+                <div style="display:flex;align-items:baseline;gap:9px;flex-wrap:wrap;margin-top:4px;">
+                  <span style="font-family:'Noto Serif SC',serif;font-weight:600;font-size:22px;color:#221D16;">{{ m.title }}</span>
+                  <span style="font-family:'Newsreader',serif;font-style:italic;font-size:14.5px;color:#A99C84;">{{ m.titleEn }}</span>
+                </div>
+              </div>
+            </div>
+            <p style="font-family:'Newsreader',serif;font-size:15.5px;line-height:1.5;color:#5B5142;margin:14px 0 0;flex:1;">{{ m.hook }}</p>
+            <div style="display:flex;align-items:center;gap:8px;margin-top:14px;flex-wrap:wrap;">
+              <sc-if value="{{ m.idiomShow }}" hint-placeholder-val="{{ false }}">
+                <span style="font-family:'Noto Serif SC',serif;font-size:12.5px;font-weight:600;color:#B23A2B;background:rgba(178,58,43,.09);border:1px solid #E9CFC8;border-radius:999px;padding:4px 11px;">成语 · {{ m.idiom }}</span>
+              </sc-if>
+              <span style="font-size:11.5px;font-weight:600;color:#938976;">{{ m.tag }}</span>
+              <span style="flex:1;"></span>
+              <span style="{{ m.ctaStyle }}">{{ m.cta }}</span>
+            </div>
+          </button>
+        </sc-for>
+      </div>
+
+      <p style="text-align:center;font-size:13px;color:#A99C84;margin:34px 0 0;font-family:'Newsreader',serif;font-style:italic;">More texts each week — 寓言、史传、诸子，多含成语与典故.</p>
+
+    </div>
+  </div>
+  </sc-if>
+
+  <!-- ═════════════════════ READER ═════════════════════ -->
+  <sc-if value="{{ isReader }}" hint-placeholder-val="{{ false }}">
+  <div style="flex:1;display:flex;flex-direction:column;overflow:hidden;animation:wyIn .34s cubic-bezier(.22,.61,.36,1);">
+
+    <!-- sub-bar -->
+    <div style="display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap;padding:12px clamp(18px,3.4vw,40px);flex-shrink:0;border-bottom:1px solid #E2D8C2;background:#F4ECDA;">
+      <div style="display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;">
+        <span style="font-family:'Noto Serif SC',serif;font-weight:600;font-size:clamp(20px,2.4vw,26px);">{{ tHeaderTitle }}</span>
+        <span style="font-family:'Newsreader',serif;font-style:italic;font-size:15px;color:#938976;">{{ tTitleEn }}</span>
+      </div>
+      <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;">
+        <button onClick="{{ togglePy }}" style="{{ styPy }}">拼音<span style="opacity:.62;font-weight:600;margin-left:6px;">{{ pyLabel }}</span></button>
+        <div style="display:inline-flex;background:#EAE0CB;border:1px solid #E2D8C2;border-radius:999px;padding:3px;gap:2px;">
+          <button onClick="{{ setRead }}" style="{{ styRead }}">通读<span style="opacity:.65;font-weight:500;margin-left:5px;">Read</span></button>
+          <button onClick="{{ setStudy }}" style="{{ styStudy }}">精读<span style="opacity:.65;font-weight:500;margin-left:5px;">Study</span></button>
+          <button onClick="{{ setRecite }}" style="{{ styRecite }}">背诵<span style="opacity:.65;font-weight:500;margin-left:5px;">Recite</span></button>
+        </div>
+      </div>
+    </div>
+
+    <!-- main two-pane -->
+    <div class="wy-scroll" style="flex:1;overflow:auto;display:flex;flex-wrap:wrap;align-items:stretch;gap:clamp(18px,2.4vw,32px);padding:clamp(18px,3vw,36px);">
+
+      <!-- LEFT: vertical artifact -->
+      <div style="flex:1 1 480px;min-width:300px;display:flex;flex-direction:column;">
+        <div class="wy-scroll" style="flex:1;background:#F6EEDD;border:1px solid #E6DCC6;border-radius:16px;padding:clamp(22px,3vw,40px);display:flex;flex-direction:row-reverse;justify-content:flex-start;gap:clamp(20px,3vw,40px);align-items:flex-start;overflow-x:auto;box-shadow:inset 0 1px 0 rgba(255,255,255,.5);">
+          <div style="flex-shrink:0;display:flex;flex-direction:column;align-items:center;gap:18px;padding-top:4px;">
+            <div style="writing-mode:vertical-rl;text-orientation:upright;display:flex;gap:14px;">
+              <span style="font-family:'Noto Serif SC',serif;font-weight:600;font-size:clamp(22px,2.6vw,30px);letter-spacing:4px;color:#221D16;">{{ tHeaderTitle }}</span>
+              <span style="font-family:'Noto Serif SC',serif;font-weight:400;font-size:14px;letter-spacing:3px;color:#938976;">{{ tColophon }}</span>
+            </div>
+            <div style="width:46px;height:46px;border-radius:8px;background:#B23A2B;color:#fff;display:flex;align-items:center;justify-content:center;font-family:'Noto Serif SC',serif;font-weight:700;font-size:26px;box-shadow:0 8px 18px -8px rgba(178,58,43,.8);">{{ tSeal }}</div>
+          </div>
+          <div style="writing-mode:vertical-rl;text-orientation:upright;height:min(62vh,560px);font-family:'Noto Serif SC',serif;font-weight:500;font-size:clamp(22px,2.4vw,28px);line-height:2.5;letter-spacing:2px;color:#221D16;">
+            <sc-for list="{{ clauseViews }}" as="c" hint-placeholder-count="9"><span onClick="{{ c.onClick }}" style="{{ c.style }}"><sc-for list="{{ c.chars }}" as="ch" hint-placeholder-count="6"><ruby style="{{ ch.ruby }}">{{ ch.ch }}<rt style="{{ ch.rt }}">{{ ch.py }}</rt></ruby></sc-for></span></sc-for>
+          </div>
+        </div>
+        <div style="font-size:12.5px;color:#A99C84;text-align:center;margin-top:11px;font-family:'Newsreader',serif;font-style:italic;">{{ leftHint }}</div>
+      </div>
+
+      <!-- RIGHT: study panel -->
+      <div style="flex:1 1 360px;min-width:300px;max-width:560px;display:flex;flex-direction:column;gap:14px;">
+
+        <!-- CONTEXT (read) -->
+        <sc-if value="{{ showContext }}" hint-placeholder-val="{{ false }}">
+          <div style="background:#FBF6EC;border:1px solid #E2D8C2;border-radius:16px;padding:clamp(20px,2.4vw,28px);">
+            <span style="display:inline-block;font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;font-weight:800;color:#B23A2B;background:rgba(178,58,43,.1);border-radius:7px;padding:3px 9px;">题解 · The Piece</span>
+            <p style="font-family:'Noto Serif SC',serif;font-size:16px;line-height:1.85;color:#3A332A;margin:14px 0 0;">{{ introCn }}</p>
+            <p style="font-family:'Newsreader',serif;font-size:16.5px;line-height:1.62;color:#6B6256;margin:12px 0 0;">{{ introEn }}</p>
+          </div>
+          <div style="background:#FBF6EC;border:1px solid #E2D8C2;border-radius:16px;padding:clamp(20px,2.4vw,28px);">
+            <span style="display:inline-block;font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;font-weight:800;color:#B23A2B;background:rgba(178,58,43,.1);border-radius:7px;padding:3px 9px;">主旨 · Heart of it</span>
+            <p style="font-family:'Noto Serif SC',serif;font-size:16px;line-height:1.85;color:#3A332A;margin:14px 0 0;">{{ themeCn }}</p>
+            <p style="font-family:'Newsreader',serif;font-size:16.5px;line-height:1.62;color:#6B6256;margin:12px 0 0;">{{ themeEn }}</p>
+          </div>
+          <div style="background:#FBF6EC;border:1px solid #E2D8C2;border-radius:16px;padding:clamp(20px,2.4vw,28px);">
+            <span style="display:inline-block;font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;font-weight:800;color:#B23A2B;background:rgba(178,58,43,.1);border-radius:7px;padding:3px 9px;">读法 · How it works</span>
+            <p style="font-family:'Noto Serif SC',serif;font-size:16px;line-height:1.85;color:#3A332A;margin:14px 0 0;">{{ craftCn }}</p>
+            <p style="font-family:'Newsreader',serif;font-size:16.5px;line-height:1.62;color:#6B6256;margin:12px 0 0;">{{ craftEn }}</p>
+            <div style="display:flex;align-items:center;gap:10px;margin-top:18px;padding-top:16px;border-top:1px solid #EDE3CE;">
+              <span style="width:38px;height:38px;border-radius:8px;background:#EFE7D6;border:1px solid #E2D8C2;color:#B23A2B;display:flex;align-items:center;justify-content:center;font-family:'Noto Serif SC',serif;font-weight:700;font-size:20px;">{{ tSeal }}</span>
+              <div style="line-height:1.3;">
+                <div style="font-family:'Noto Serif SC',serif;font-weight:600;font-size:15px;">{{ tAuthor }} <span style="color:#A99C84;font-weight:400;font-size:13px;">{{ tDates }}</span></div>
+                <div style="font-size:12.5px;color:#938976;">{{ tMeta }}</div>
+              </div>
+              <span style="flex:1;"></span>
+              <span style="font-size:12.5px;color:#B23A2B;font-weight:600;font-family:'Newsreader',serif;font-style:italic;">tap a line to hear it ◔</span>
+            </div>
+          </div>
+        </sc-if>
+
+        <!-- CLAUSE (study) -->
+        <sc-if value="{{ showClause }}" hint-placeholder-val="{{ true }}">
+          <div style="background:#FBF6EC;border:1px solid #E2D8C2;border-radius:16px;padding:clamp(20px,2.4vw,28px);">
+            <div style="display:flex;align-items:center;justify-content:space-between;gap:10px;">
+              <span style="display:inline-block;font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;font-weight:800;color:#B23A2B;background:rgba(178,58,43,.1);border-radius:7px;padding:3px 9px;">原句 · {{ clPos }}</span>
+              <button onClick="{{ speakClause }}" style="width:38px;height:38px;border-radius:999px;background:rgba(178,58,43,.1);border:1px solid #E9C7C1;color:#B23A2B;display:inline-flex;align-items:center;justify-content:center;font-size:17px;cursor:pointer;" style-hover="background:#B23A2B;color:#fff;">♪</button>
+            </div>
+            <div style="font-family:'Noto Serif SC',serif;font-weight:600;font-size:clamp(23px,2.9vw,29px);line-height:2.15;color:#221D16;margin:16px 0 0;"><sc-for list="{{ studyChars }}" as="ch" hint-placeholder-count="8"><ruby style="{{ ch.ruby }}">{{ ch.ch }}<rt style="{{ ch.rt }}">{{ ch.py }}</rt></ruby></sc-for></div>
+            <sc-if value="{{ pyOn }}" hint-placeholder-val="{{ true }}">
+              <div style="display:flex;flex-wrap:wrap;gap:13px;margin-top:18px;padding-top:14px;border-top:1px solid #EDE3CE;">
+                <span style="display:inline-flex;align-items:center;gap:6px;font-size:11.5px;font-weight:600;color:#7A6F5C;"><i style="width:9px;height:9px;border-radius:2px;background:#B26B00;display:inline-block;"></i>多音 context</span>
+                <span style="display:inline-flex;align-items:center;gap:6px;font-size:11.5px;font-weight:600;color:#7A6F5C;"><i style="width:9px;height:9px;border-radius:2px;background:#2C6E63;display:inline-block;"></i>生僻 rare</span>
+                <span style="display:inline-flex;align-items:center;gap:6px;font-size:11.5px;font-weight:600;color:#7A6F5C;"><i style="width:9px;height:9px;border-radius:2px;background:#B23A2B;display:inline-block;"></i>通假·借字 loan</span>
+                <span style="display:inline-flex;align-items:center;gap:6px;font-size:11.5px;font-weight:600;color:#7A6F5C;"><i style="width:13px;height:0;border-bottom:2px dotted #8A7F6B;display:inline-block;"></i>连读 atomic</span>
+              </div>
+            </sc-if>
+          </div>
+
+          <sc-if value="{{ clHasIdiom }}" hint-placeholder-val="{{ false }}">
+            <div style="background:#F7EFDC;border:1px solid #E6D6B0;border-radius:16px;padding:clamp(18px,2.2vw,24px);">
+              <div style="display:flex;align-items:center;gap:9px;margin-bottom:12px;">
+                <span style="width:24px;height:24px;border-radius:6px;background:#B26B00;color:#fff;display:inline-flex;align-items:center;justify-content:center;font-family:'Noto Serif SC',serif;font-weight:600;font-size:13px;">语</span>
+                <span style="font-size:11px;letter-spacing:.12em;text-transform:uppercase;font-weight:700;color:#9B7B2E;">成语 · idiom born here</span>
+              </div>
+              <div style="display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;">
+                <span style="font-family:'Noto Serif SC',serif;font-weight:600;font-size:24px;color:#7A5410;letter-spacing:1px;">{{ idiomZh }}</span>
+                <span style="font-family:'Manrope',sans-serif;font-size:14px;font-weight:600;color:#B08948;">{{ idiomPy }}</span>
+              </div>
+              <p style="font-family:'Newsreader',serif;font-size:16.5px;line-height:1.6;color:#6B5A38;margin:10px 0 0;">{{ idiomEn }}</p>
+            </div>
+          </sc-if>
+
+          <div style="background:#FBF6EC;border:1px solid #E2D8C2;border-radius:16px;padding:clamp(18px,2.2vw,24px);">
+            <div style="display:flex;align-items:center;gap:9px;margin-bottom:10px;">
+              <span style="width:24px;height:24px;border-radius:6px;background:#B23A2B;color:#fff;display:inline-flex;align-items:center;justify-content:center;font-family:'Noto Serif SC',serif;font-weight:600;font-size:13px;">今</span>
+              <span style="font-size:11px;letter-spacing:.12em;text-transform:uppercase;font-weight:700;color:#938976;">现代文 · in plain Chinese</span>
+            </div>
+            <p style="font-family:'Noto Serif SC',serif;font-size:17.5px;line-height:1.8;color:#3A332A;margin:0;">{{ clToday }}</p>
+            <div style="display:flex;align-items:center;gap:9px;margin:18px 0 10px;padding-top:16px;border-top:1px solid #EDE3CE;">
+              <span style="width:24px;height:24px;border-radius:6px;background:#2E3A44;color:#fff;display:inline-flex;align-items:center;justify-content:center;font-family:'Manrope',sans-serif;font-weight:700;font-size:10px;">EN</span>
+              <span style="font-size:11px;letter-spacing:.12em;text-transform:uppercase;font-weight:700;color:#938976;">idiomatic English</span>
+            </div>
+            <p style="font-family:'Newsreader',serif;font-size:18px;line-height:1.62;color:#3A332A;margin:0;">{{ clEn }}</p>
+          </div>
+
+          <div style="background:#FBF6EC;border:1px solid #E2D8C2;border-radius:16px;padding:clamp(18px,2.2vw,24px);">
+            <span style="display:inline-block;font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;font-weight:800;color:#B23A2B;background:rgba(178,58,43,.1);border-radius:7px;padding:3px 9px;margin-bottom:8px;">字词 · Words that shift</span>
+            <div style="display:flex;flex-direction:column;gap:0;">
+              <sc-for list="{{ clNotes }}" as="n" hint-placeholder-count="3">
+                <div style="display:flex;gap:15px;padding:13px 0;border-top:1px solid #EDE3CE;align-items:baseline;">
+                  <div style="flex-shrink:0;min-width:2.4em;text-align:center;">
+                    <div style="font-family:'Noto Serif SC',serif;font-weight:600;font-size:22px;color:#B23A2B;line-height:1.1;">{{ n.w }}</div>
+                    <div style="font-family:'Manrope',sans-serif;font-size:11px;font-weight:600;color:#B0857A;margin-top:3px;">{{ n.py }}</div>
+                  </div>
+                  <div style="flex:1;min-width:0;">
+                    <div style="font-family:'Noto Serif SC',serif;font-size:15px;line-height:1.6;color:#3A332A;">{{ n.cn }}</div>
+                    <div style="font-family:'Newsreader',serif;font-style:italic;font-size:15px;line-height:1.5;color:#8A7F6B;margin-top:2px;">{{ n.en }}</div>
+                  </div>
+                </div>
+              </sc-for>
+            </div>
+          </div>
+          <div style="font-size:12.5px;color:#A99C84;text-align:center;font-family:'Newsreader',serif;font-style:italic;">{{ clNav }}</div>
+        </sc-if>
+
+        <!-- RECITE -->
+        <sc-if value="{{ showRecite }}" hint-placeholder-val="{{ false }}">
+          <div style="background:#FBF6EC;border:1px solid #E2D8C2;border-radius:16px;padding:clamp(20px,2.4vw,28px);">
+            <div style="display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:14px;">
+              <span style="display:inline-block;font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;font-weight:800;color:#B23A2B;background:rgba(178,58,43,.1);border-radius:7px;padding:3px 9px;">背诵 · Recall</span>
+              <span style="font-family:'Newsreader',serif;font-style:italic;font-size:14px;color:#938976;">{{ recDone }} / {{ recTotal }} revealed</span>
+            </div>
+            <div style="height:8px;border-radius:999px;background:#EAE0CB;overflow:hidden;">
+              <i style="{{ recBarStyle }}"></i>
+            </div>
+          </div>
+
+          <sc-if value="{{ recCueOn }}" hint-placeholder-val="{{ true }}">
+            <div style="background:#FBF6EC;border:1px solid #E2D8C2;border-radius:16px;padding:clamp(20px,2.4vw,28px);">
+              <span style="display:inline-block;font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;font-weight:800;color:#938976;margin-bottom:12px;">提示 · the next line means…</span>
+              <p style="font-family:'Noto Serif SC',serif;font-size:18px;line-height:1.8;color:#3A332A;margin:0;">{{ recCueToday }}</p>
+              <p style="font-family:'Newsreader',serif;font-size:17px;line-height:1.6;color:#8A7F6B;margin:12px 0 0;">{{ recCueEn }}</p>
+              <p style="font-size:13px;color:#B23A2B;font-weight:600;margin:18px 0 0;font-family:'Newsreader',serif;font-style:italic;">Recall the 文言, then tap the covered line on the left to check.</p>
+            </div>
+          </sc-if>
+          <sc-if value="{{ recDoneAll }}" hint-placeholder-val="{{ false }}">
+            <div style="background:#FBF6EC;border:1px solid #E2D8C2;border-radius:16px;padding:clamp(22px,2.6vw,30px);text-align:center;">
+              <div style="font-family:'Noto Serif SC',serif;font-size:30px;color:#B23A2B;">✦</div>
+              <p style="font-family:'Noto Serif SC',serif;font-size:19px;margin:8px 0 4px;">全篇通背</p>
+              <p style="font-family:'Newsreader',serif;font-style:italic;color:#8A7F6B;margin:0;">Every line recalled. The whole piece is yours.</p>
+            </div>
+          </sc-if>
+
+          <div style="display:flex;gap:10px;">
+            <button onClick="{{ revealAll }}" style="flex:1;border:1px solid #E2D8C2;background:#FBF6EC;color:#5B5142;font-family:'Manrope',sans-serif;font-weight:600;font-size:14px;padding:12px;border-radius:12px;cursor:pointer;" style-hover="border-color:#D9B3AC;color:#B23A2B;">全部显示 Show all</button>
+            <button onClick="{{ resetRecite }}" style="flex:1;border:1px solid #B23A2B;background:#B23A2B;color:#fff;font-family:'Manrope',sans-serif;font-weight:600;font-size:14px;padding:12px;border-radius:12px;cursor:pointer;" style-hover="filter:brightness(.94);">重来 Reset</button>
+          </div>
+        </sc-if>
+
+      </div>
+    </div>
+  </div>
+  </sc-if>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  state = { screen:'home', textId:'louver', mode:'study', sel:0, revealed:{}, pyOn:true };
+
+  DATA = {
+    louver: {
+      title:'陋室铭', titleEn:'Inscription for a Humble Room',
+      dynasty:'唐', author:'刘禹锡', dates:'772–842', genre:'铭', count:'81', seal:'刘',
+      colophon:'唐 · 刘禹锡',
+      introCn:'「铭」原是刻在器物上自警或颂功的短文，多用骈句，讲究对仗与押韵。刘禹锡贬官和州，被县令一再刁难、住所越换越小，他索性写下此文，刻石立于门前。',
+      introEn:'A ming was once a short text carved in stone to caution or to commend, cast in balanced parallel couplets. Banished to Hezhou and bullied into ever-smaller lodgings, Liu Yuxi answered with this piece and had it cut into stone by his door.',
+      themeCn:'托物言志，安贫乐道——使陋室不陋的，是居者的德行，而非屋子的大小。',
+      themeEn:'Virtue, not square footage, makes a home: an emblem-essay in praise of plain living and a clear conscience.',
+      craftCn:'全篇以骈句、押韵一气呵成（名·灵·馨·青·丁·经·形·亭）；先以山水起兴，再写景、写人、写事，末引诸葛、扬雄，并以孔子之问收束，反问留韵。',
+      craftEn:'Almost entirely rhymed parallel couplets: it opens by analogy with mountain and river, moves through scene, company and pastime, then closes on two famous hermits and a question from Confucius — leaving the echo to finish the thought.',
+      lines:[
+        { zh:'山不在高，有仙则名。', py:'shān bù zài gāo yǒu xiān zé míng', today:'山不在于高，有神仙居住就会出名。', en:'A mountain is famed not for its height, but for the immortal who dwells on it.', notes:[ {w:'名', py:'míng', cn:'出名（名词用作动词）', en:'to become famous — a noun used as a verb'}, {w:'则', py:'zé', cn:'就、便', en:'then; and so'} ] },
+        { zh:'水不在深，有龙则灵。', py:'shuǐ bù zài shēn yǒu lóng zé líng', today:'水不在于深，有蛟龙栖息就显灵气。', en:'A river is hallowed not for its depth, but for the dragon that stirs in it.', notes:[ {w:'灵', py:'líng', cn:'显灵、有灵气（名词用作动词）', en:'to turn numinous — noun used as a verb'} ] },
+        { zh:'斯是陋室，惟吾德馨。', py:'sī shì lòu shì wéi wú dé xīn', marks:{7:'rare'}, today:'这是间简陋的屋子，只因我的品德高尚，就不觉得简陋了。', en:'This may be a humble room, yet the fragrance of my virtue fills it.', notes:[ {w:'斯', py:'sī', cn:'这、此', en:'this'}, {w:'惟', py:'wéi', cn:'只、仅', en:'only'}, {w:'德馨', py:'dé xīn', cn:'品德高尚（馨：香气远播，喻德行美好；生僻字，读 xīn）', en:'the far-carrying fragrance of virtue (馨, a rare graph, read xīn)'} ] },
+        { zh:'苔痕上阶绿，草色入帘青。', py:'tái hén shàng jiē lǜ cǎo sè rù lián qīng', today:'苔藓蔓上台阶，一片碧绿；草色映入门帘，满室青葱。', en:'Moss climbs green up the stone steps; the green of the grass seeps in through the blind.', notes:[ {w:'上', py:'shàng', cn:'蔓延而上（名词用作动词）', en:'to creep up — noun used as a verb'}, {w:'入', py:'rù', cn:'映入', en:'to enter; to be reflected into'} ] },
+        { zh:'谈笑有鸿儒，往来无白丁。', py:'tán xiào yǒu hóng rú wǎng lái wú bái dīng', marks:{3:'phrase',4:'phrase',8:'phrase',9:'phrase'}, today:'在这里谈笑的都是博学之士，来往的没有不学无术的人。', en:'Those who talk and laugh here are learned scholars; among the comings and goings, not one untutored soul.', notes:[ {w:'鸿儒', py:'hóng rú', cn:'学识渊博的人（鸿：大）。两字一组，宜连读', en:'a great scholar — read as one unit'}, {w:'白丁', py:'bái dīng', cn:'没有功名学问的平民。两字一组，宜连读', en:'a commoner without learning — read as one unit'} ] },
+        { zh:'可以调素琴，阅金经。', py:'kě yǐ tiáo sù qín yuè jīn jīng', marks:{2:'duo'}, today:'可以弹奏不加装饰的古琴，阅读佛经。', en:'Here one may tune a plain zither, or read the gilded sutras.', notes:[ {w:'调', py:'tiáo', cn:'弹奏。此处读 tiáo，不读 diào（多音字）', en:'to play / tune — read tiáo here, not diào'}, {w:'素琴', py:'sù qín', cn:'不加装饰的琴', en:'an unadorned zither'}, {w:'金经', py:'jīn jīng', cn:'用泥金书写的佛经', en:'gold-lettered Buddhist scriptures'} ] },
+        { zh:'无丝竹之乱耳，无案牍之劳形。', py:'wú sī zhú zhī luàn ěr wú àn dú zhī láo xíng', marks:{7:'phrase',8:'rare'}, today:'没有嘈杂的音乐扰乱双耳，没有官府的公文使身体劳累。', en:'No din of strings and pipes to jar the ear, no stacks of official paper to wear out the body.', notes:[ {w:'丝竹', py:'sī zhú', cn:'弦乐与管乐，借指世俗的乐声', en:'strings and pipes — worldly music'}, {w:'之', py:'zhī', cn:'用在主谓之间，取消句子独立性，不译', en:'a particle nominalising the clause; left untranslated'}, {w:'案牍', py:'àn dú', cn:'官府的公文（牍为生僻字，读 dú）', en:'official documents (牍, rare, read dú)'}, {w:'劳形', py:'láo xíng', cn:'使身体劳累', en:'to weary the body'} ] },
+        { zh:'南阳诸葛庐，西蜀子云亭。', py:'nán yáng zhū gě lú xī shǔ zǐ yún tíng', marks:{3:'duo'}, today:'它好比南阳诸葛亮的草庐，西蜀扬子云的亭子。', en:'It is the thatched hut of Zhuge Liang at Nanyang, the pavilion of Yang Ziyun in western Shu.', notes:[ {w:'诸葛', py:'zhū gě', cn:'复姓。葛此处读 gě，不读 gé（多音字）', en:'a compound surname — 葛 read gě here, not gé'}, {w:'子云亭', py:'zǐ yún tíng', cn:'西汉扬雄（字子云）的居所', en:'the studio of Yang Xiong (styled Ziyun)'} ] },
+        { zh:'孔子云：何陋之有？', py:'kǒng zǐ yún hé lòu zhī yǒu', today:'孔子说：「有什么简陋的呢？」', en:'As Confucius said: "What humbleness is there in this?"', notes:[ {w:'云', py:'yún', cn:'说', en:'to say'}, {w:'何陋之有', py:'hé lòu zhī yǒu', cn:'即「有何陋」，宾语前置；之，宾语前置的标志，不译', en:'inverted from 有何陋 (object-fronting); 之 marks the fronted object, untranslated'} ] }
+      ]
+    },
+    lotus: {
+      title:'爱莲说', titleEn:'On the Love of the Lotus',
+      dynasty:'北宋', author:'周敦颐', dates:'1017–1073', genre:'说', count:'119', seal:'周',
+      colophon:'宋 · 周敦颐',
+      introCn:'「说」是古代的一种论说文体，常借一物来讲道理。周敦颐以三种花自寓心志，借莲花来表明自己的为人。',
+      introEn:'A shuo is a discursive essay that argues through a single image. Zhou Dunyi reads his own character into three flowers, and gives his heart to the lotus.',
+      themeCn:'借物喻人：菊为隐者，牡丹为富贵者，莲为君子。作者独爱莲，自况在浊世中持守的高洁。',
+      themeEn:'Flowers as characters: the chrysanthemum a recluse, the peony a grandee, the lotus a gentleman. The writer loves the lotus alone — his emblem of integrity kept in a murky world.',
+      craftCn:'以「爱」字贯通全篇，三花对比反衬，层层铺垫，最后以三句感叹收束，意味深长。',
+      craftEn:'The single word "love" runs through the whole; three flowers set one another off, and the piece ends on three sighs that carry far.',
+      lines:[
+        { zh:'水陆草木之花，可爱者甚蕃。', py:'shuǐ lù cǎo mù zhī huā kě ài zhě shèn fán', marks:{10:'loan'}, today:'水里、陆上各种草木的花，值得喜爱的非常多。', en:'Among the flowers of every plant and tree, on water and on land, a great many are worth loving.', notes:[ {w:'之', py:'zhī', cn:'的', en:'of (attributive particle)'}, {w:'蕃', py:'fán', cn:'通「繁」，多。此处借作「繁」，读 fán，非读 fān/bō', en:'a loan for 繁 "abundant" — read fán here, not fān/bō'} ] },
+        { zh:'晋陶渊明独爱菊。', py:'jìn táo yuān míng dú ài jú', today:'晋代的陶渊明只喜爱菊花。', en:'In the Jin dynasty, Tao Yuanming loved the chrysanthemum above all.', notes:[ {w:'独', py:'dú', cn:'只、唯独', en:'only; alone'} ] },
+        { zh:'自李唐来，世人甚爱牡丹。', py:'zì lǐ táng lái shì rén shèn ài mǔ dān', marks:{8:'phrase',9:'phrase'}, today:'从李氏唐朝以来，世上的人都很喜爱牡丹。', en:'Ever since the Tang, the world has been greatly enamoured of the peony.', notes:[ {w:'李唐', py:'lǐ táng', cn:'唐朝（皇室姓李，故称）', en:'the Tang (its imperial house surnamed Li)'}, {w:'牡丹', py:'mǔ dān', cn:'花名，两字一组连读', en:'peony — read as one unit'} ] },
+        { zh:'予独爱莲之出淤泥而不染，濯清涟而不妖，', py:'yú dú ài lián zhī chū yū ní ér bù rǎn zhuó qīng lián ér bù yāo', marks:{0:'duo',6:'rare',11:'rare'}, idiom:{ zh:'出淤泥而不染', py:'chū yū ní ér bù rǎn', en:'to rise untainted from the mud — to keep one\u2019s integrity in corrupt surroundings.' }, today:'我却唯独喜爱莲——它从淤泥里长出却不被沾染，在清水里洗过却不显妖艳，', en:'But I, for my part, love the lotus alone: how it rises from the mud yet takes no stain, bathes in clear ripples yet flaunts no charm,', notes:[ {w:'予', py:'yú', cn:'我。作「我」讲时读 yú，不读 yǔ（多音字）', en:'I / me — read yú in this sense, not yǔ'}, {w:'之', py:'zhī', cn:'用在主谓之间，取消独立性，不译', en:'nominalising particle, untranslated'}, {w:'濯', py:'zhuó', cn:'洗（生僻字，读 zhuó）', en:'to wash (rare, read zhuó)'}, {w:'妖', py:'yāo', cn:'妖艳', en:'seductive; garish'} ] },
+        { zh:'中通外直，不蔓不枝，', py:'zhōng tōng wài zhí bù màn bù zhī', marks:{5:'duo'}, today:'茎内部贯通，外形笔直，不生藤蔓，不长枝节，', en:'hollow within and straight without, neither trailing in runners nor branching into twigs,', notes:[ {w:'蔓', py:'màn', cn:'生藤蔓（名词作动词）。此处读 màn，不读 wàn/mán', en:'to put out runners — read màn here, not wàn/mán'}, {w:'枝', py:'zhī', cn:'长枝节（名词用作动词）', en:'to put out branches — noun as verb'} ] },
+        { zh:'香远益清，亭亭净植，可远观而不可亵玩焉。', py:'xiāng yuǎn yì qīng tíng tíng jìng zhí kě yuǎn guān ér bù kě xiè wàn yān', marks:{14:'rare',15:'phrase'}, today:'香气越远越清芬，洁净地挺立着，只能远远观赏，却不能轻慢地玩弄。', en:'its fragrance the purer for carrying far, standing tall and immaculate — to be admired from a distance, never toyed with up close.', notes:[ {w:'益', py:'yì', cn:'更加', en:'the more'}, {w:'亭亭', py:'tíng tíng', cn:'高耸挺立的样子', en:'erect and graceful'}, {w:'亵玩', py:'xiè wàn', cn:'轻慢地玩弄（亵为生僻字，读 xiè）', en:'to handle irreverently (亵, rare, read xiè)'}, {w:'焉', py:'yān', cn:'句末语气词', en:'a final particle'} ] },
+        { zh:'予谓菊，花之隐逸者也；牡丹，花之富贵者也；莲，花之君子者也。', py:'yú wèi jú huā zhī yǐn yì zhě yě mǔ dān huā zhī fù guì zhě yě lián huā zhī jūn zǐ zhě yě', marks:{0:'duo'}, today:'我认为：菊是花里的隐士，牡丹是花里的富贵者，莲是花里的君子。', en:'To my mind, the chrysanthemum is the recluse among flowers; the peony, the grandee; and the lotus, the gentleman.', notes:[ {w:'谓', py:'wèi', cn:'认为', en:'to deem; to call'}, {w:'隐逸者', py:'yǐn yì zhě', cn:'隐居避世的人', en:'a recluse'}, {w:'……者也', py:'zhě yě', cn:'判断句式（「……是……」）', en:'a classical predication: "is the one who…"'} ] },
+        { zh:'噫！菊之爱，陶后鲜有闻。', py:'yī jú zhī ài táo hòu xiǎn yǒu wén', marks:{0:'rare',6:'duo'}, today:'唉！对菊花的喜爱，陶渊明以后就很少听说了。', en:'Ah! Love of the chrysanthemum — seldom heard of since Tao\'s day.', notes:[ {w:'噫', py:'yī', cn:'叹词，相当于「唉」（生僻字，读 yī）', en:'alas — interjection (rare, read yī)'}, {w:'鲜', py:'xiǎn', cn:'少。此处读 xiǎn，不读 xiān（多音字）', en:'seldom / few — read xiǎn here, not xiān'} ] },
+        { zh:'莲之爱，同予者何人？', py:'lián zhī ài tóng yú zhě hé rén', marks:{4:'duo'}, today:'对莲花的喜爱，像我这样的还有谁呢？', en:'Love of the lotus — who else shares it with me?', notes:[ {w:'同予者', py:'tóng yú zhě', cn:'和我一样的人（予读 yú）', en:'those who are like me (予 read yú)'} ] },
+        { zh:'牡丹之爱，宜乎众矣。', py:'mǔ dān zhī ài yí hū zhòng yǐ', marks:{0:'phrase',1:'phrase'}, today:'对牡丹的喜爱，当然是人数众多了。', en:'But love of the peony — fit indeed for the crowd.', notes:[ {w:'宜乎', py:'yí hū', cn:'当然、无怪', en:'fittingly; no wonder'}, {w:'矣', py:'yǐ', cn:'句末语气词', en:'a final particle (force of "indeed")'} ] }
+      ]
+    }
+  };
+
+  LOCKED = [
+    { title:'守株待兔', titleEn:'Waiting by the Stump', meta:'战国 · 《韩非子》', seal:'韩', idiom:'守株待兔', hook:'A farmer sees a hare bolt into a tree-stump and break its neck. He drops the plough and waits for the next one. It never comes.', tag:'寓言 · 39 字' },
+    { title:'刻舟求剑', titleEn:'Notching the Boat', meta:'战国 · 《吕氏春秋》', seal:'吕', idiom:'刻舟求剑', hook:'A man drops his sword over the side of a moving boat and cuts a mark on the rail — then dives where the mark is to look for it.', tag:'寓言 · 53 字' },
+    { title:'自相矛盾', titleEn:'Spear Meets Shield', meta:'战国 · 《韩非子》', seal:'韩', idiom:'自相矛盾', hook:'A peddler swears his spear pierces anything and his shield stops anything — until a bystander asks what happens when the two meet.', tag:'寓言 · 67 字' },
+    { title:'狐假虎威', titleEn:'The Fox and the Tiger', meta:'西汉 · 《战国策》', seal:'狐', idiom:'狐假虎威', hook:'A fox tells the tiger Heaven made it king of beasts — walk behind me and watch. The animals flee the tiger, and the fox takes the credit.', tag:'寓言 · 借字「假」jiǎ' },
+    { title:'画蛇添足', titleEn:'Legs on a Snake', meta:'西汉 · 《战国策》', seal:'蛇', idiom:'画蛇添足', hook:'First to finish drawing a snake wins the wine. The leader, far ahead, adds feet to show off — and hands the prize to the man who simply stopped.', tag:'寓言 · 49 字' }
+  ];
+
+  cur(){ return this.DATA[this.state.textId]; }
+  openText(id){ this.setState({ screen:'reader', textId:id, mode:'study', sel:0, revealed:{} }); }
+  goHome(){ this.setState({ screen:'home' }); }
+  togglePy(){ this.setState(s=>({ pyOn:!s.pyOn })); }
+
+  setMode(m){
+    if(m==='recite'){ this.setState({ mode:m, sel:null, revealed:{} }); }
+    else if(m==='study'){ this.setState({ mode:m, sel:(this.state.sel==null?0:this.state.sel) }); }
+    else { this.setState({ mode:m }); }
+  }
+
+  speak(text){
+    try{
+      if(!('speechSynthesis' in window)) return;
+      const u=new SpeechSynthesisUtterance(text.replace(/[「」？，。！；：、]/g,' '));
+      u.lang='zh-CN'; u.rate=0.78; u.pitch=1;
+      window.speechSynthesis.cancel(); window.speechSynthesis.speak(u);
+    }catch(e){}
+  }
+
+  clickClause(i){
+    const m=this.state.mode;
+    if(m==='read'){ this.speak(this.cur().lines[i].zh); }
+    else if(m==='recite'){ this.setState(s=>({ revealed:{...s.revealed, [i]:true} })); }
+    else { this.setState({ sel:i }); }
+  }
+
+  revealAll(){ const t=this.cur(); const r={}; t.lines.forEach((_,i)=>{ r[i]=true; }); this.setState({ revealed:r }); }
+  resetRecite(){ this.setState({ revealed:{} }); }
+
+  markColor(mk){ return mk==='duo'?'#B26B00':mk==='rare'?'#2C6E63':mk==='loan'?'#B23A2B':mk==='phrase'?'#8A7F6B':''; }
+
+  // split a line into aligned character tokens {ch, py, mark, isPunct}
+  tokens(line){
+    const han=/[\u4e00-\u9fff]/;
+    const syls=(line.py||'').split(/\s+/).filter(Boolean);
+    const marks=line.marks||{};
+    const out=[]; let k=0;
+    for(const ch of (line.zh||'')){
+      if(han.test(ch)){ out.push({ ch, py:syls[k]||'', mark:marks[k]||'', isPunct:false }); k++; }
+      else { out.push({ ch, py:'', mark:'', isPunct:true }); }
+    }
+    return out;
+  }
+
+  buildArtifactChars(line, showPy, masked){
+    return this.tokens(line).map(tk=>{
+      const col=this.markColor(tk.mark);
+      return {
+        ch: tk.ch,
+        py: (showPy && !masked && !tk.isPunct) ? tk.py : '',
+        ruby: { color: masked ? 'transparent' : (col || 'inherit') },
+        rt: { fontFamily:"'Manrope',sans-serif", fontSize:'10px', fontWeight:600, letterSpacing:'0', color: masked ? 'transparent' : (col || '#A89A80') }
+      };
+    });
+  }
+
+  buildStudyChars(line, showPy){
+    return this.tokens(line).map(tk=>{
+      const col=this.markColor(tk.mark);
+      return {
+        ch: tk.ch,
+        py: (showPy && !tk.isPunct) ? tk.py : '',
+        ruby: { color: tk.mark ? col : '#221D16', margin: tk.isPunct ? '0' : '0 1px', borderBottom: tk.mark ? ('2px dotted '+col) : 'none', paddingBottom:'1px' },
+        rt: { fontFamily:"'Manrope',sans-serif", fontSize:'12.5px', fontWeight:600, letterSpacing:'.01em', color: col || '#A38C73', paddingBottom:'3px' }
+      };
+    });
+  }
+
+  renderVals(){
+    const s=this.state, t=this.cur();
+    const isHome=s.screen==='home', isReader=s.screen==='reader';
+    const mode=s.mode, lines=t?t.lines:[];
+    const showPy = s.pyOn!==false;
+
+    const clauseViews=lines.map((ln,i)=>{
+      const masked = mode==='recite' && !s.revealed[i];
+      const selected = s.sel===i;
+      const style={ cursor:'pointer', padding:'1px 2px', borderRadius:'5px', transition:'background .18s ease', WebkitTapHighlightColor:'transparent' };
+      if(masked){ style.background='rgba(34,29,22,.14)'; style.color='transparent'; style.boxShadow='inset 0 0 0 1px rgba(34,29,22,.05)'; style.borderRadius='3px'; }
+      else if(selected && mode==='study'){ style.background='rgba(178,58,43,.12)'; }
+      return { onClick:()=>this.clickClause(i), style, chars:this.buildArtifactChars(ln, showPy, masked) };
+    });
+
+    const base={ border:'none', cursor:'pointer', fontFamily:"'Manrope',sans-serif", fontWeight:600, fontSize:'13.5px', padding:'8px 16px', borderRadius:'999px', transition:'.15s', whiteSpace:'nowrap' };
+    const seg=(on)=> on
+      ? {...base, background:'#B23A2B', color:'#fff', boxShadow:'0 6px 14px -8px rgba(178,58,43,.85)'}
+      : {...base, background:'transparent', color:'#6E6452'};
+    const styPy = showPy
+      ? {...base, background:'#FBF6EC', color:'#B23A2B', border:'1px solid #E9C7C1'}
+      : {...base, background:'transparent', color:'#8A7F6B', border:'1px solid #DCD0B8'};
+
+    const sel=(s.sel==null?0:s.sel);
+    const cl=lines[sel] || {today:'',en:'',zh:'',notes:[]};
+    const studyChars=this.buildStudyChars(cl, showPy);
+
+    let targetIdx=-1;
+    for(let i=0;i<lines.length;i++){ if(!s.revealed[i]){ targetIdx=i; break; } }
+    const recDone=lines.filter((_,i)=>s.revealed[i]).length;
+    const recTotal=lines.length;
+    const recPct=recTotal? Math.round(recDone/recTotal*100):0;
+    const cue=targetIdx>=0? lines[targetIdx]:null;
+
+    const moreTexts=[ this._mt('lotus', this.DATA.lotus), ...this.LOCKED.map(x=>this._mtLocked(x)) ];
+
+    return {
+      isHome, isReader,
+      tHeaderTitle: t?('《'+t.title+'》'):'',
+      tTitleEn: t?t.titleEn:'',
+      tMeta: t?(t.dynasty+' · '+t.author+' · '+t.genre+' · '+t.count+' 字'):'',
+      tColophon: t?t.colophon:'',
+      tSeal: t?t.seal:'', tAuthor:t?t.author:'', tDates:t?t.dates:'',
+
+      goHome:()=>this.goHome(),
+      featured:{ onOpen:()=>this.openText('louver') },
+      moreTexts,
+
+      clauseViews,
+      pyOn:showPy, togglePy:()=>this.togglePy(), styPy, pyLabel: showPy?'On':'Off',
+      leftHint: mode==='read' ? '点击任一句可朗读 · tap any line to hear it read aloud'
+              : mode==='study' ? '点击竖排原文，逐字注音 · tap a column to study it, character by character'
+              : '点击被遮住的句子以揭示 · tap a covered line to reveal it',
+
+      setRead:()=>this.setMode('read'), setStudy:()=>this.setMode('study'), setRecite:()=>this.setMode('recite'),
+      styRead:seg(mode==='read'), styStudy:seg(mode==='study'), styRecite:seg(mode==='recite'),
+      showContext: mode==='read', showClause: mode==='study', showRecite: mode==='recite',
+
+      introCn:t?t.introCn:'', introEn:t?t.introEn:'',
+      themeCn:t?t.themeCn:'', themeEn:t?t.themeEn:'',
+      craftCn:t?t.craftCn:'', craftEn:t?t.craftEn:'',
+
+      studyChars,
+      clToday:cl.today, clEn:cl.en, clNotes:cl.notes||[],
+      clHasIdiom: !!cl.idiom, idiomZh: cl.idiom?cl.idiom.zh:'', idiomPy: cl.idiom?cl.idiom.py:'', idiomEn: cl.idiom?cl.idiom.en:'',
+      clPos:'第 '+(sel+1)+' 句 / 共 '+lines.length,
+      clNav:'第 '+(sel+1)+' 句，共 '+lines.length+' 句 · use the lines on the left to move through',
+      speakClause:()=>this.speak(cl.zh),
+
+      recDone, recTotal, recPct,
+      recBarStyle:{ display:'block', height:'100%', width:recPct+'%', background:'#B23A2B', borderRadius:'999px', transition:'width .4s cubic-bezier(.22,.61,.36,1)' },
+      recCueOn: cue!=null, recDoneAll: cue==null && recTotal>0,
+      recCueToday: cue?cue.today:'', recCueEn: cue?cue.en:'',
+      revealAll:()=>this.revealAll(), resetRecite:()=>this.resetRecite()
+    };
+  }
+
+  _mt(id,d){
+    return {
+      id, title:d.title, titleEn:d.titleEn, meta:d.dynasty+' · '+d.author, seal:d.seal,
+      hook:'Out of the mud, and not one stain. Zhou Dunyi sorts three flowers into recluse, grandee, and gentleman — and loves the lotus alone.',
+      tag:d.genre+' · '+d.count+' 字',
+      idiom:'出淤泥而不染', idiomShow:true,
+      metaColor:'#B23A2B',
+      onOpen:()=>this.openText(id),
+      cardStyle:'text-align:left;display:flex;flex-direction:column;background:#FBF6EC;border:1px solid #E2D8C2;border-radius:18px;padding:22px;cursor:pointer;transition:.18s;min-height:184px;',
+      sealStyle:'flex-shrink:0;width:46px;height:46px;border-radius:9px;background:#B23A2B;color:#fff;display:flex;align-items:center;justify-content:center;font-family:\'Noto Serif SC\',serif;font-weight:700;font-size:25px;box-shadow:0 8px 16px -8px rgba(178,58,43,.8);',
+      ctaStyle:'font-family:\'Manrope\',sans-serif;font-weight:700;font-size:13.5px;color:#B23A2B;',
+      cta:'进入 →'
+    };
+  }
+  _mtLocked(x){
+    return {
+      id:null, title:x.title, titleEn:x.titleEn, meta:x.meta, seal:x.seal, hook:x.hook, tag:x.tag,
+      idiom:x.idiom, idiomShow:true,
+      metaColor:'#A99C84',
+      onOpen:()=>{},
+      cardStyle:'text-align:left;display:flex;flex-direction:column;background:#F3ECDB;border:1px dashed #DCD0B8;border-radius:18px;padding:22px;cursor:default;min-height:184px;opacity:.82;',
+      sealStyle:'flex-shrink:0;width:46px;height:46px;border-radius:9px;background:#E4DAC4;color:#A99C84;display:flex;align-items:center;justify-content:center;font-family:\'Noto Serif SC\',serif;font-weight:700;font-size:25px;',
+      ctaStyle:'font-family:\'Manrope\',sans-serif;font-weight:700;font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;color:#A99C84;',
+      cta:'即将上线 Coming'
+    };
+  }
+}
+</script>
+</body>
+</html>

@@ -75,6 +75,7 @@
     }
     .card.studio .glyph{background:#FBE9E6; color:var(--red);}
     .card.maker  .glyph{background:#EAF1F2; color:#3E7C8C;}
+    .card.reader .glyph{background:#F4EBDA; color:#B23A2B; font-family:"Noto Serif SC",serif;}
     .card h3{font-size:21px; font-weight:800; letter-spacing:-.2px;}
     .card h3 .zh{font-weight:600; color:var(--ink-soft); font-size:16px; margin-left:6px;}
     .card .desc{color:var(--ink-soft); font-size:15px; margin:10px 0 18px; flex:1;}
@@ -86,8 +87,10 @@
       border-radius:13px; color:#fff; background:var(--red); transition:background .15s ease;
     }
     .card.maker .go{background:#3E7C8C;}
+    .card.reader .go{background:#B23A2B;}
     .go:hover{background:var(--red-deep);}
     .card.maker .go:hover{background:#326576;}
+    .card.reader .go:hover{background:#9E382F;}
     .go .ar{transition:transform .15s ease;}
     .go:hover .ar{transform:translateX(3px);}
     .note{font-size:12.5px; color:var(--ink-soft); margin-top:12px;}
@@ -114,9 +117,10 @@
       <section class="hero">
         <span class="eyebrow"><span class="dot"></span>Free · in your browser</span>
         <h2>Learn to <em>write</em> Chinese characters, the way they're built.</h2>
-        <p>Two classroom-grown tools for our students and families. Watch each character grow
-          stroke by stroke, trace it, and practise — or print beautiful 米字格 practice sheets at home.
-          <span class="zh">一起学写字。</span></p>
+        <p>Three classroom-grown tools for our students and families. Watch each character grow
+          stroke by stroke, trace it, and practise; print beautiful 米字格 practice sheets at home;
+          or close-read the classics, character by character.
+          <span class="zh">一起学写字、读古文。</span></p>
       </section>
     </header>
   </div>
@@ -141,6 +145,17 @@
         <ul><li>米字格 Cards</li><li>Flashcards</li><li>Vector PDF</li></ul>
         <a class="go" href="cardmaker/">Open Card Maker <span class="ar">→</span></a>
         <p class="note">No sign-in needed — great for printing practice at home.</p>
+      </article>
+
+      <article class="card reader">
+        <div class="glyph zh">文</div>
+        <h3>Classical Reader<span class="zh">文言</span></h3>
+        <p class="desc">Close-read classical Chinese (文言文). Bare vertical columns, then tap a line
+          for per-character pinyin, a plain modern paraphrase, an idiomatic English reading, the 字词
+          that shift meaning, and the 成语 born in the line.</p>
+        <ul><li>通读·精读·背诵</li><li>语法着色</li><li>成语 Idioms</li></ul>
+        <a class="go" href="reader/">Open Classical Reader <span class="ar">→</span></a>
+        <p class="note">For near-native readers — built for 字, 音, and 成语.</p>
       </article>
     </section>
   </div>
