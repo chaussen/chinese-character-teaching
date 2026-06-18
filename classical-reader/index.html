@@ -603,16 +603,27 @@ function studyPanel(t, showPy){
 function charPanel(line, sel, showPy){
   const data=(CHARS[state.textId]||[])[sel]||[];
   const toks=tokens(line).filter(tk=>!tk.isPunct);
-  const rows=toks.map((tk,i)=>{
+  /* Collapse exact duplicates within the line (same character AND same gloss —
+   * e.g. the repeated 之 / 也 / 者 particles) into one row carrying an ×N count.
+   * Distinct senses of the same glyph (亭 in 亭亭, etc.) keep separate rows. */
+  const seen=new Map(); const uniq=[];
+  toks.forEach((tk,i)=>{
     const info=data[i]||{};
+    const key=tk.ch+'␟'+(info.cn||'');
+    if(seen.has(key)){ seen.get(key).count++; }
+    else{ const row={tk,info,count:1}; seen.set(key,row); uniq.push(row); }
+  });
+  const rows=uniq.map(({tk,info,count})=>{
     const col=catColor(tk.cat);
     const role = (tk.cat && CATS[tk.cat])
       ? `<span style="display:inline-block;font-size:10px;font-weight:700;color:${col};background:${col}1A;border:1px solid ${col}55;border-radius:5px;padding:1px 7px;margin-left:8px;vertical-align:middle;white-space:nowrap;">${esc(CATS[tk.cat].cn)}</span>`
       : '';
+    const times = count>1 ? `<div style="font-size:10px;font-weight:700;color:#A99C84;margin-top:2px;">×${count}</div>` : '';
     return `<div style="display:flex;gap:14px;padding:12px 0;border-top:1px solid #EDE3CE;align-items:baseline;">
         <div style="flex-shrink:0;width:2.1em;text-align:center;">
           <div style="font-family:'Noto Serif SC',serif;font-weight:600;font-size:26px;line-height:1.05;color:${col||'#221D16'};">${esc(tk.ch)}</div>
           ${showPy?`<div style="font-size:11.5px;font-weight:600;margin-top:4px;color:${col||'#B0857A'};">${esc(tk.py)}</div>`:''}
+          ${times}
         </div>
         <div style="flex:1;min-width:0;">
           <div style="font-family:'Noto Serif SC',serif;font-size:15.5px;line-height:1.7;color:#3A332A;">${autoGloss(esc(info.cn||''))}${role}</div>
