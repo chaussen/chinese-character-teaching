@@ -39,6 +39,8 @@
     .wy-ghost:hover{border-color:#D9B3AC !important;color:#B23A2B !important;}
     .wy-solid:hover{filter:brightness(.94);}
     .wy-clause{transition:background .18s ease;-webkit-tap-highlight-color:transparent;}
+    .wy-tile{-webkit-tap-highlight-color:transparent;}
+    .wy-tile:hover{border-color:#D9B3AC !important;transform:translateY(-1px);}
   </style>
 </head>
 <body>
@@ -428,25 +430,26 @@ function legendHtml(){
 }
 
 /* ────────────────────────────  STATE  ──────────────────────────── */
-const state = { screen:'home', textId:'louver', mode:'study', sel:0, revealed:{}, pyOn:true };
+const state = { screen:'home', textId:'louver', mode:'study', sel:0, charSel:0, revealed:{}, pyOn:true };
 const cur = () => DATA[state.textId];
 
 function setState(patch){ Object.assign(state, patch); render(); }
 
-function openText(id){ if(!DATA[id]) return; setState({ screen:'reader', textId:id, mode:'study', sel:0, revealed:{} }); }
+function openText(id){ if(!DATA[id]) return; setState({ screen:'reader', textId:id, mode:'study', sel:0, charSel:0, revealed:{} }); }
 function goHome(){ setState({ screen:'home' }); }
 function togglePy(){ setState({ pyOn:!state.pyOn }); }
 function setMode(m){
   if(m==='recite')      setState({ mode:m, sel:null, revealed:{} });
-  else if(m==='study')  setState({ mode:m, sel:(state.sel==null?0:state.sel) });
+  else if(m==='study')  setState({ mode:m, sel:(state.sel==null?0:state.sel), charSel:0 });
   else                  setState({ mode:m });
 }
 function clickClause(i){
   const m=state.mode;
   if(m==='read')        speak(cur().lines[i].zh);
   else if(m==='recite') setState({ revealed:{...state.revealed, [i]:true} });
-  else                  setState({ sel:i });
+  else                  setState({ sel:i, charSel:0 });
 }
+function clickChar(i){ setState({ charSel:i }); }
 function revealAll(){ const r={}; cur().lines.forEach((_,i)=>r[i]=true); setState({ revealed:r }); }
 function resetRecite(){ setState({ revealed:{} }); }
 
@@ -762,14 +765,17 @@ function studyPanel(t, showPy){
     <div style="font-size:12.5px;color:#A99C84;text-align:center;font-family:'Newsreader',serif;font-style:italic;">第 ${sel+1} 句，共 ${t.lines.length} 句 · 点左侧竖排可换句 · tap the columns on the left to move through</div>`;
 }
 
-/* The 逐字 breakdown — every Han character of the line, one row each, coloured
- * by its grammatical role.  Aligned to CHARS[textId][lineIndex]. */
+/* The 逐字 breakdown.  A one-row-per-character list grows unmanageably long on
+ * longer lines (the 24-character predication in 《爱莲说》, etc.) and buries the
+ * modern paraphrase below it.  Instead the characters sit in a compact, colour-
+ * coded grid of tappable tiles (one tap = the whole line at a glance, whatever
+ * its length); the tapped tile opens its full gloss in the detail slot beneath.
+ * Tiles are coloured by grammatical role and aligned to CHARS[textId][lineIndex];
+ * exact duplicates (the repeated 之 / 也 / 者 particles) collapse to one tile
+ * carrying an ×N count, while distinct senses of a glyph (亭 in 亭亭) stay apart. */
 function charPanel(line, sel, showPy){
   const data=(CHARS[state.textId]||[])[sel]||[];
   const toks=tokens(line).filter(tk=>!tk.isPunct);
-  /* Collapse exact duplicates within the line (same character AND same gloss —
-   * e.g. the repeated 之 / 也 / 者 particles) into one row carrying an ×N count.
-   * Distinct senses of the same glyph (亭 in 亭亭, etc.) keep separate rows. */
   const seen=new Map(); const uniq=[];
   toks.forEach((tk,i)=>{
     const info=data[i]||{};
@@ -777,27 +783,54 @@ function charPanel(line, sel, showPy){
     if(seen.has(key)){ seen.get(key).count++; }
     else{ const row={tk,info,count:1}; seen.set(key,row); uniq.push(row); }
   });
-  const rows=uniq.map(({tk,info,count})=>{
-    const col=catColor(tk.cat);
-    const role = (tk.cat && CATS[tk.cat])
-      ? `<span style="display:inline-block;font-size:10px;font-weight:700;color:${col};background:${col}1A;border:1px solid ${col}55;border-radius:5px;padding:1px 7px;margin-left:8px;vertical-align:middle;white-space:nowrap;">${esc(CATS[tk.cat].cn)}</span>`
-      : '';
-    const times = count>1 ? `<div style="font-size:10px;font-weight:700;color:#A99C84;margin-top:2px;">×${count}</div>` : '';
-    return `<div style="display:flex;gap:14px;padding:12px 0;border-top:1px solid #EDE3CE;align-items:baseline;">
-        <div style="flex-shrink:0;width:2.1em;text-align:center;">
-          <div style="font-family:'Noto Serif SC',serif;font-weight:600;font-size:26px;line-height:1.05;color:${col||'#221D16'};">${esc(tk.ch)}</div>
-          ${showPy?`<div style="font-size:11.5px;font-weight:600;margin-top:4px;color:${col||'#B0857A'};">${esc(tk.py)}</div>`:''}
-          ${times}
-        </div>
-        <div style="flex:1;min-width:0;">
-          <div style="font-family:'Noto Serif SC',serif;font-size:15.5px;line-height:1.7;color:#3A332A;">${autoGloss(esc(info.cn||''))}${role}</div>
-          ${info.en?`<div style="font-family:'Newsreader',serif;font-size:14.5px;line-height:1.5;color:#8A7F6B;margin-top:3px;">${esc(info.en)}</div>`:''}
-        </div>
-      </div>`;
+
+  const head=`<div style="display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;margin-bottom:14px;">
+      <span style="display:inline-block;font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;font-weight:800;color:#B23A2B;background:rgba(178,58,43,.1);border-radius:7px;padding:3px 9px;">逐字 · character by character</span>
+      ${uniq.length?'<span style="font-size:12px;color:#A99C84;font-family:\'Newsreader\',serif;font-style:italic;">点字看解释 · tap a character</span>':''}
+    </div>`;
+
+  if(!uniq.length){
+    return `<div style="background:#FBF6EC;border:1px solid #E2D8C2;border-radius:16px;padding:clamp(18px,2.2vw,24px);">
+      ${head}<p style="font-family:'Newsreader',serif;font-style:italic;color:#A99C84;margin:0;">—</p></div>`;
+  }
+
+  const ci=Math.min(Math.max(state.charSel||0,0), uniq.length-1);
+  const tiles=uniq.map(({tk,count},i)=>{
+    const col=catColor(tk.cat)||'#221D16';
+    const active=i===ci;
+    const times=count>1?`<span style="font-size:9.5px;font-weight:700;color:#A99C84;line-height:1;">×${count}</span>`:'';
+    const box=active
+      ? `background:${col}1A;border-color:${col};box-shadow:inset 0 0 0 1px ${col};`
+      : `background:#F3EBD9;border-color:#E6DCC6;`;
+    return `<button data-action="char:${i}" class="wy-tile" style="display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;min-width:46px;padding:8px 7px;border:1.5px solid;border-radius:11px;cursor:pointer;transition:.14s;${box}">
+        <span style="font-family:'Noto Serif SC',serif;font-weight:600;font-size:23px;line-height:1.02;color:${col};">${esc(tk.ch)}</span>
+        ${showPy?`<span style="font-size:11px;font-weight:600;line-height:1;color:#8A7F6B;">${esc(tk.py)}</span>`:''}
+        ${times}
+      </button>`;
   }).join('');
+
+  const {tk,info,count}=uniq[ci];
+  const col=catColor(tk.cat)||'#221D16';
+  const role=(tk.cat && CATS[tk.cat])
+    ? `<span style="display:inline-block;font-size:10px;font-weight:700;color:${col};background:${col}1A;border:1px solid ${col}55;border-radius:5px;padding:1px 7px;white-space:nowrap;">${esc(CATS[tk.cat].cn)}</span>`
+    : '';
+  const times=count>1?`<span style="font-size:11px;font-weight:700;color:#A99C84;">×${count}</span>`:'';
+  const detail=`<div style="display:flex;gap:15px;align-items:baseline;margin-top:16px;padding-top:15px;border-top:1px solid #EDE3CE;">
+      <div style="flex-shrink:0;width:2.1em;text-align:center;">
+        <div style="font-family:'Noto Serif SC',serif;font-weight:600;font-size:30px;line-height:1.02;color:${col};">${esc(tk.ch)}</div>
+        <div style="font-size:12px;font-weight:600;margin-top:4px;color:#B0857A;">${esc(tk.py)}</div>
+      </div>
+      <div style="flex:1;min-width:0;">
+        ${(role||times)?`<div style="display:flex;align-items:center;gap:8px;margin-bottom:6px;">${role}${times}</div>`:''}
+        <div style="font-family:'Noto Serif SC',serif;font-size:16px;line-height:1.7;color:#3A332A;">${autoGloss(esc(info.cn||''))}</div>
+        ${info.en?`<div style="font-family:'Newsreader',serif;font-size:15px;line-height:1.55;color:#8A7F6B;margin-top:4px;">${esc(info.en)}</div>`:''}
+      </div>
+    </div>`;
+
   return `<div style="background:#FBF6EC;border:1px solid #E2D8C2;border-radius:16px;padding:clamp(18px,2.2vw,24px);">
-      <span style="display:inline-block;font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;font-weight:800;color:#B23A2B;background:rgba(178,58,43,.1);border-radius:7px;padding:3px 9px;margin-bottom:4px;">逐字 · character by character</span>
-      <div>${rows||'<p style="font-family:\'Newsreader\',serif;font-style:italic;color:#A99C84;margin:8px 0 0;">—</p>'}</div>
+      ${head}
+      <div style="display:flex;flex-wrap:wrap;gap:8px;">${tiles}</div>
+      ${detail}
     </div>`;
 }
 
@@ -862,6 +895,7 @@ document.getElementById('app').addEventListener('click', e=>{
   else if(a.startsWith('open:')) openText(a.slice(5));
   else if(a.startsWith('mode:')) setMode(a.slice(5));
   else if(a.startsWith('clause:')) clickClause(parseInt(a.slice(7),10));
+  else if(a.startsWith('char:')) clickChar(parseInt(a.slice(5),10));
 });
 
 /* Dismiss tooltips on any outside click, scroll, resize or Escape. */
