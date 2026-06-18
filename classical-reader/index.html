@@ -90,6 +90,8 @@ const DATA = {
     titlePy:'Ài Lián Shuō',
     dynasty:'北宋', author:'周敦颐', authorPy:'Zhōu Dūnyí', dates:'1017–1073', genre:'说', count:'119', seal:'周',
     colophon:'宋 · 周敦颐',
+    idiom:'出淤泥而不染',
+    hook:'Out of the mud, and not one stain. Zhou Dunyi sorts three flowers into recluse, grandee, and gentleman — and loves the lotus alone.',
     introCn:'「说」是古代的一种论说文体，常借一物来讲道理。周敦颐以三种花自寓心志，借莲花来表明自己的为人。',
     introEn:'A shuo is a discursive essay that argues through a single image. Zhou Dunyi reads his own character into three flowers, and gives his heart to the lotus.',
     themeCn:'借物喻人：菊为隐者，牡丹为富贵者，莲为君子。作者独爱莲，自况在浊世中持守的高洁。',
@@ -107,6 +109,108 @@ const DATA = {
       { zh:'噫！菊之爱，陶后鲜有闻。', py:'yī jú zhī ài táo hòu xiǎn yǒu wén', cats:{2:'aux',4:'name'}, today:'唉！对菊花的喜爱，陶渊明以后就很少听说了。', en:'Ah! Love of the chrysanthemum — seldom heard of since Tao\'s day.', notes:[ {w:'噫', py:'yī', reading:'rare', cn:'叹词，相当于「唉」（生僻字，读 yī）', en:'alas — interjection (rare, read yī)'}, {w:'鲜', py:'xiǎn', reading:'duo', cn:'少。此处读 xiǎn，不读 xiān（多音字）', en:'seldom / few — read xiǎn here, not xiān'} ] },
       { zh:'莲之爱，同予者何人？', py:'lián zhī ài tóng yú zhě hé rén', cats:{1:'aux',4:'pron',5:'aux',6:'pron'}, today:'对莲花的喜爱，像我这样的还有谁呢？', en:'Love of the lotus — who else shares it with me?', notes:[ {w:'同予者', py:'tóng yú zhě', reading:'duo', cn:'和我一样的人（予读 yú）', en:'those who are like me (予 read yú)'} ] },
       { zh:'牡丹之爱，宜乎众矣。', py:'mǔ dān zhī ài yí hū zhòng yǐ', cats:{2:'aux',5:'aux',7:'aux'}, today:'对牡丹的喜爱，当然是人数众多了。', en:'But love of the peony — fit indeed for the crowd.', notes:[ {w:'宜乎', py:'yí hū', cn:'当然、无怪', en:'fittingly; no wonder'}, {w:'矣', py:'yǐ', cn:'句末语气词', en:'a final particle (force of "indeed")'} ] }
+    ]
+  },
+  stump: {
+    title:'守株待兔', titleEn:'Waiting by the Stump',
+    titlePy:'Shǒu Zhū Dài Tù',
+    dynasty:'战国', author:'韩非', authorPy:'Hán Fēi', dates:'约前280–前233', genre:'寓言', count:'39', seal:'韩',
+    colophon:'战国 · 《韩非子》',
+    idiom:'守株待兔',
+    hook:'A farmer sees a hare bolt into a tree-stump and break its neck. He drops the plough and waits for the next one. It never comes.',
+    introCn:'《韩非子·五蠹》中的寓言。韩非用它讽刺那些不知变通、想守着旧经验坐享其成的人——他主张治国要因时而变，不能死抱先王的老办法不放。',
+    introEn:'A fable from the “Five Vermin” chapter of the Hanfeizi. Han Fei tells it to mock those who cling to a lucky accident and expect it to come again — his real target is the ruler who governs by the worn-out methods of the ancient kings instead of changing with the times.',
+    themeCn:'把偶然当作必然，守着旧经验等待好运，终究一无所得，还沦为笑柄。',
+    themeEn:'Mistaking a fluke for a rule: sit guarding one stroke of luck and wait for it to repeat, and you end with nothing — and a whole state laughing at you.',
+    craftCn:'极简的叙事——一个动作接一个动作（触、折、释、守、冀），不加评论，让结局自己说话；末句一转，由「物」写到「人」，点出讽意。',
+    craftEn:'Bare narration: one verb after another — the hare strikes the stump, snaps its neck; the farmer drops his plough, keeps watch, hopes — with no comment, letting the ending speak. The last clause turns from the event to the man, and the satire lands.',
+    lines:[
+      { zh:'宋人有耕者。', py:'sòng rén yǒu gēng zhě', cats:{0:'place',4:'aux'}, today:'宋国有一个种田的人。', en:'In the state of Song there was a man who farmed his fields.', notes:[ {w:'宋', py:'sòng', cn:'宋国，周代诸侯国', en:'the state of Song'}, {w:'者', py:'zhě', cn:'……的人。「耕者」即种田的人', en:'the one who…; 耕者 = a farmer'} ] },
+      { zh:'田中有株。', py:'tián zhōng yǒu zhū', cats:{}, today:'田地里有一个树桩。', en:'In the middle of his field stood a tree-stump.', notes:[ {w:'株', py:'zhū', cn:'露出地面的树桩、树根', en:'a tree-stump left in the ground'} ] },
+      { zh:'兔走触株，折颈而死。', py:'tù zǒu chù zhū zhé jǐng ér sǐ', cats:{6:'aux'}, today:'一只兔子跑过来，撞在树桩上，折断脖子死了。', en:'A hare came bolting across, ran headlong into the stump, snapped its neck and died.', notes:[ {w:'走', py:'zǒu', cn:'跑。文言里「走」是跑，不是慢慢走', en:'to run — in 文言 走 means “run,” not “walk”'}, {w:'触', py:'chù', cn:'撞、碰', en:'to crash into'}, {w:'而', py:'ér', cn:'连词，「就、于是」', en:'and so; thereupon'} ] },
+      { zh:'因释其耒而守株，', py:'yīn shì qí lěi ér shǒu zhū', cats:{2:'pron',4:'aux'}, idiom:{ zh:'守株待兔', py:'shǒu zhū dài tù', en:'“to guard the stump, waiting for a hare” — to trust to a lucky fluke and wait idly for it to repeat, instead of working for what you want.' }, today:'于是他放下手里的农具，守在树桩旁边，', en:'So he laid down his plough and took up watch by the stump,', notes:[ {w:'因', py:'yīn', cn:'于是、就', en:'thereupon; so'}, {w:'释', py:'shì', cn:'放下', en:'to set down'}, {w:'耒', py:'lěi', reading:'rare', cn:'古代翻土的农具（生僻字，读 lěi）', en:'an ancient ploughing tool (rare, read lěi)'}, {w:'其', py:'qí', cn:'他的', en:'his'} ] },
+      { zh:'冀复得兔。', py:'jì fù dé tù', cats:{}, today:'希望再捡到撞死的兔子。', en:'hoping to come by another hare the same way.', notes:[ {w:'冀', py:'jì', cn:'希望', en:'to hope'}, {w:'复', py:'fù', cn:'再、又', en:'again'} ] },
+      { zh:'兔不可复得，而身为宋国笑。', py:'tù bù kě fù dé ér shēn wéi sòng guó xiào', cats:{5:'aux',7:'aux',8:'place',9:'place'}, today:'兔子再也没等到，他自己却被宋国人笑话。', en:'No second hare ever came — and the man himself became the laughing-stock of the whole state of Song.', notes:[ {w:'身', py:'shēn', cn:'自身、自己', en:'oneself'}, {w:'为', py:'wéi', reading:'duo', cn:'被。表被动，此处读 wéi，不读 wèi', en:'by — marks the passive; read wéi here, not wèi'}, {w:'笑', py:'xiào', cn:'耻笑、嘲笑', en:'to laugh at; to mock'} ] }
+    ]
+  },
+  boat: {
+    title:'刻舟求剑', titleEn:'Notching the Boat',
+    titlePy:'Kè Zhōu Qiú Jiàn',
+    dynasty:'战国', author:'吕不韦', authorPy:'Lǚ Bùwéi', dates:'？–前235', genre:'寓言', count:'53', seal:'吕',
+    colophon:'战国 · 《吕氏春秋》',
+    idiom:'刻舟求剑',
+    hook:'A man drops his sword over the side of a moving boat and cuts a mark on the rail — then dives where the mark is to look for it.',
+    introCn:'《吕氏春秋·察今》里的寓言，用来说明「时代变了，办法也要跟着变」。船在动，剑落水的位置早已不在刻记号的地方——拿旧办法应付新情况，正像在移动的船上照着记号下水找剑。',
+    introEn:'A fable from the “Examining the Present” chapter of the Lüshi Chunqiu, told to argue that methods must change as the times do. The boat has moved; the sword no longer lies where the notch was cut — to meet new circumstances with old rules is exactly this man diving by his mark on a drifting boat.',
+    themeCn:'情况已经变化，却仍守着旧办法、旧标准，必然徒劳无功。',
+    themeEn:'When circumstances have already moved on, clinging to the old method and the old marker can only end in wasted effort.',
+    craftCn:'先叙事，后议论：船行剑止的对照点出谬误，再以「不亦惑乎」的反问收束，讽刺味十足。',
+    craftEn:'Story first, comment after: the contrast of a moving boat and a motionless sword exposes the error, and the closing rhetorical question — “is this not muddle-headed?” — drives the mockery home.',
+    lines:[
+      { zh:'楚人有涉江者，', py:'chǔ rén yǒu shè jiāng zhě', cats:{0:'place',5:'aux'}, today:'楚国有个渡江的人，', en:'A man of Chu was crossing a river by boat,', notes:[ {w:'涉', py:'shè', cn:'徒步渡水，这里指渡江', en:'to wade / cross water'}, {w:'者', py:'zhě', cn:'……的人', en:'the one who…'} ] },
+      { zh:'其剑自舟中坠于水，', py:'qí jiàn zì zhōu zhōng zhuì yú shuǐ', cats:{0:'pron',6:'aux'}, today:'他的剑从船上掉进了水里，', en:'when his sword slipped from the boat and dropped into the water.', notes:[ {w:'自', py:'zì', cn:'从', en:'from'}, {w:'坠', py:'zhuì', cn:'落下、掉下', en:'to fall; to drop'}, {w:'于', py:'yú', cn:'到、进', en:'into'} ] },
+      { zh:'遽契其舟，曰：', py:'jù qì qí zhōu yuē', cats:{2:'pron'}, idiom:{ zh:'刻舟求剑', py:'kè zhōu qiú jiàn', en:'“to notch the boat to find the sword” — to cling to a fixed rule when the situation has already moved on.' }, today:'他急忙在船边刻了个记号，说：', en:'At once he cut a notch in the side of the boat and said,', notes:[ {w:'遽', py:'jù', reading:'rare', cn:'急忙、立刻（生僻字，读 jù）', en:'hurriedly; at once (rare, read jù)'}, {w:'契', py:'qì', reading:'duo', cn:'刻。此处读 qì，指刻记号', en:'to carve a notch — read qì here'} ] },
+      { zh:'是吾剑之所从坠。', py:'shì wú jiàn zhī suǒ cóng zhuì', cats:{0:'pron',1:'pron',3:'aux',4:'aux'}, today:'这儿是我的剑掉下去的地方。', en:'"This is the spot from which my sword fell."', notes:[ {w:'是', py:'shì', cn:'这（指示代词）', en:'this'}, {w:'吾', py:'wú', cn:'我的', en:'my'}, {w:'所从坠', py:'suǒ cóng zhuì', cn:'掉下去的地方（「所」加动词，指处所）', en:'the place it fell from (所 + verb marks a location)'} ] },
+      { zh:'舟止，', py:'zhōu zhǐ', cats:{}, today:'船停了，', en:'When the boat came to rest,', notes:[ {w:'止', py:'zhǐ', cn:'停、停下', en:'to stop'} ] },
+      { zh:'从其所契者入水求之。', py:'cóng qí suǒ qì zhě rù shuǐ qiú zhī', cats:{1:'pron',2:'aux',4:'aux',8:'pron'}, today:'他就从刻着记号的地方下水去找剑。', en:'he lowered himself into the water to look for the sword at the place where his notch was.', notes:[ {w:'所契者', py:'suǒ qì zhě', cn:'刻记号的地方', en:'the place where the notch was cut'}, {w:'求', py:'qiú', cn:'寻找', en:'to look for'}, {w:'之', py:'zhī', cn:'它，指剑', en:'it — the sword'} ] },
+      { zh:'舟已行矣，而剑不行，', py:'zhōu yǐ xíng yǐ ér jiàn bù xíng', cats:{3:'aux',4:'aux'}, today:'船已经走了，剑却没有跟着走，', en:'But the boat had moved on, while the sword had not,', notes:[ {w:'已', py:'yǐ', cn:'已经', en:'already'}, {w:'行', py:'xíng', cn:'行进、移动', en:'to move along'}, {w:'矣', py:'yǐ', cn:'句末语气词「了」', en:'a final particle, “now / already”'}, {w:'而', py:'ér', cn:'却（转折）', en:'yet; but'} ] },
+      { zh:'求剑若此，不亦惑乎？', py:'qiú jiàn ruò cǐ bù yì huò hū', cats:{3:'pron',5:'aux',7:'aux'}, today:'像这样找剑，不是很糊涂吗？', en:'To hunt for a sword like this — is it not muddle-headed?', notes:[ {w:'若', py:'ruò', cn:'像、如同', en:'like; as'}, {w:'不亦……乎', py:'bù yì … hū', cn:'文言反问句式「不是……吗」', en:'a classical rhetorical frame: “is this not…?”'}, {w:'惑', py:'huò', cn:'糊涂、不明事理', en:'muddle-headed; confused'} ] }
+    ]
+  },
+  spearshield: {
+    title:'自相矛盾', titleEn:'Spear Meets Shield',
+    titlePy:'Zì Xiāng Máo Dùn',
+    dynasty:'战国', author:'韩非', authorPy:'Hán Fēi', dates:'约前280–前233', genre:'寓言', count:'53', seal:'韩',
+    colophon:'战国 · 《韩非子》',
+    idiom:'自相矛盾',
+    hook:'A peddler swears his spear pierces anything and his shield stops anything — until a bystander asks what happens when the two meet.',
+    introCn:'《韩非子·难一》中的寓言。韩非借卖矛与盾的楚人，说明前后主张如果互相抵触，就站不住脚——他用来批评同时推崇「尧舜」与「法治」的人，因为二者不能两立。',
+    introEn:'A fable from the Hanfeizi (“Objections, Part One”). Han Fei uses the peddler hawking both spear and shield to show that claims which contradict one another cannot both stand — his target is the thinker who praises the sage-kings Yao and Shun and the rule of law in one breath, when the two cannot be reconciled.',
+    themeCn:'言行或主张前后抵触，就无法自圆其说。',
+    themeEn:'When your own words clash with one another, there is no way to make them hold together.',
+    craftCn:'用一问点破：先让卖者把话说满（莫能陷、无不陷），再借旁人一句反问，让他「弗能应」，矛盾不攻自破。',
+    craftEn:'One question undoes him: the seller is let boast to the hilt — nothing can pierce it; it pierces everything — then a bystander’s single question leaves him with no answer, and the contradiction collapses on its own.',
+    lines:[
+      { zh:'楚人有鬻盾与矛者，', py:'chǔ rén yǒu yù dùn yǔ máo zhě', cats:{0:'place',5:'aux',7:'aux'}, today:'楚国有个卖盾和矛的人，', en:'A man of Chu was selling shields and spears,', notes:[ {w:'鬻', py:'yù', reading:'rare', cn:'卖（生僻字，读 yù）', en:'to sell (rare, read yù)'}, {w:'与', py:'yǔ', cn:'和、跟', en:'and'}, {w:'者', py:'zhě', cn:'……的人', en:'the one who…'} ] },
+      { zh:'誉之曰：', py:'yù zhī yuē', cats:{1:'pron'}, today:'他夸耀自己的盾说：', en:'and he praised his wares, saying,', notes:[ {w:'誉', py:'yù', cn:'称赞、夸耀', en:'to praise; to boast of'}, {w:'之', py:'zhī', cn:'它，指盾', en:'it — the shield'} ] },
+      { zh:'吾盾之坚，物莫能陷也。', py:'wú dùn zhī jiān wù mò néng xiàn yě', cats:{0:'pron',2:'aux',5:'aux',8:'aux'}, today:'我的盾非常坚固，没有什么东西能刺穿它。', en:'"My shields are so hard that nothing in the world can pierce them."', notes:[ {w:'吾', py:'wú', cn:'我的', en:'my'}, {w:'之', py:'zhī', cn:'用在主谓之间，取消独立性，不译', en:'a nominalising particle; untranslated'}, {w:'莫', py:'mò', cn:'没有什么（东西）', en:'nothing; none'}, {w:'陷', py:'xiàn', cn:'刺穿、攻破', en:'to pierce; to breach'} ] },
+      { zh:'又誉其矛曰：', py:'yòu yù qí máo yuē', cats:{2:'pron'}, today:'他又夸耀自己的矛说：', en:'Then he praised his spears, saying,', notes:[ {w:'又', py:'yòu', cn:'又、再一次', en:'again'}, {w:'其', py:'qí', cn:'他的', en:'his'} ] },
+      { zh:'吾矛之利，于物无不陷也。', py:'wú máo zhī lì yú wù wú bù xiàn yě', cats:{0:'pron',2:'aux',4:'aux',9:'aux'}, today:'我的矛非常锋利，对什么东西都能刺穿。', en:'"My spears are so sharp that there is nothing they will not pierce."', notes:[ {w:'利', py:'lì', cn:'锋利', en:'sharp'}, {w:'于', py:'yú', cn:'对于、对', en:'as for; against'}, {w:'无不', py:'wú bù', cn:'没有不、全都', en:'there is nothing that does not'} ] },
+      { zh:'或曰：', py:'huò yuē', cats:{0:'pron'}, today:'有人问：', en:'Someone asked,', notes:[ {w:'或', py:'huò', cn:'有人（代词）', en:'someone'} ] },
+      { zh:'以子之矛陷子之盾，何如？', py:'yǐ zǐ zhī máo xiàn zǐ zhī dùn hé rú', cats:{0:'aux',1:'pron',2:'aux',5:'pron',6:'aux',8:'pron'}, idiom:{ zh:'自相矛盾', py:'zì xiāng máo dùn', en:'“one’s own spear against one’s own shield” — to contradict oneself; to hold two claims that cannot both be true.' }, today:'用您的矛去刺您的盾，会怎么样呢？', en:'"What about using your own spear to pierce your own shield — how would that turn out?"', notes:[ {w:'以', py:'yǐ', cn:'用、拿', en:'with; using'}, {w:'子', py:'zǐ', cn:'您（对人的尊称）', en:'you (a respectful address)'}, {w:'何如', py:'hé rú', cn:'怎么样', en:'how about it?'} ] },
+      { zh:'其人弗能应也。', py:'qí rén fú néng yìng yě', cats:{0:'pron',2:'aux',5:'aux'}, today:'那个人没法回答。', en:'The man had no answer to give.', notes:[ {w:'其人', py:'qí rén', cn:'那个人', en:'that man'}, {w:'弗', py:'fú', cn:'不', en:'not'}, {w:'应', py:'yìng', cn:'回答、应答', en:'to answer; to respond'} ] }
+    ]
+  },
+  snake: {
+    title:'画蛇添足', titleEn:'Legs on a Snake',
+    titlePy:'Huà Shé Tiān Zú',
+    dynasty:'西汉', author:'刘向', authorPy:'Liú Xiàng', dates:'前77–前6', genre:'寓言', count:'95', seal:'蛇',
+    colophon:'汉 · 刘向 辑《战国策》',
+    idiom:'画蛇添足',
+    hook:'First to finish drawing a snake wins the wine. The leader, far ahead, adds feet to show off — and hands the prize to the man who simply stopped.',
+    introCn:'出自《战国策·齐策二》。谋士陈轸用这个故事劝阻楚将昭阳：已经打了胜仗，再贪功进攻，就像给蛇画上脚，多此一举，反而可能丢掉到手的功劳。',
+    introEn:'From the “Strategies of Qi” in the Zhanguo Ce (Intrigues of the Warring States). The strategist Chen Zhen tells it to talk the Chu general Zhao Yang out of pressing on after a victory already won: to fight for more is to draw legs on a snake — a needless flourish that can cost you what your hand already holds.',
+    themeCn:'做多余的事，非但无益，反而坏事——蛇本已画成，添上脚反而弄巧成拙。',
+    themeEn:'Do the superfluous thing and you don’t just waste effort — you spoil what was done: the snake was finished; the added feet lost the wine.',
+    craftCn:'一场「先成者饮酒」的比赛，把抽象的道理变成生动的场景；抢先者因得意添足而落败，对比鲜明，结句点明教训。',
+    craftEn:'A simple contest — “first to finish drinks” — turns an abstract point into a scene you can watch; the man in the lead loses by gilding his work, and the closing line names the lesson.',
+    lines:[
+      { zh:'楚有祠者，', py:'chǔ yǒu cí zhě', cats:{0:'place',3:'aux'}, today:'楚国有个主持祭祀的人，', en:'In Chu a man who had held a sacrifice', notes:[ {w:'祠', py:'cí', cn:'祭祀；这里指主持祭祀的人', en:'a sacrifice; here, the man who offered it'}, {w:'者', py:'zhě', cn:'……的人', en:'the one who…'} ] },
+      { zh:'赐其舍人卮酒。', py:'cì qí shè rén zhī jiǔ', cats:{1:'pron'}, today:'赏给他的门客一壶酒。', en:'gave his retainers a pot of wine.', notes:[ {w:'赐', py:'cì', cn:'赏给、赐予', en:'to bestow'}, {w:'舍人', py:'shè rén', reading:'phrase', cn:'门客、随从，两字一组', en:'a retainer; read as one unit'}, {w:'卮', py:'zhī', reading:'rare', cn:'古代盛酒的器皿（生僻字，读 zhī）', en:'an ancient wine-vessel (rare, read zhī)'} ] },
+      { zh:'舍人相谓曰：', py:'shè rén xiāng wèi yuē', cats:{}, today:'门客们互相商量说：', en:'The retainers said to one another,', notes:[ {w:'相', py:'xiāng', cn:'互相', en:'one another'}, {w:'谓', py:'wèi', cn:'说、告诉', en:'to say (to)'} ] },
+      { zh:'数人饮之不足，', py:'shù rén yǐn zhī bù zú', cats:{3:'pron'}, today:'几个人一起喝这壶酒不够，', en:'"For several of us to drink it, there isn\'t enough;', notes:[ {w:'数', py:'shù', reading:'duo', cn:'几、若干。此处读 shù，不读 shǔ', en:'several — read shù here, not shǔ'}, {w:'之', py:'zhī', cn:'它，指那壶酒', en:'it — the wine'}, {w:'足', py:'zú', cn:'够、足够', en:'enough'} ] },
+      { zh:'一人饮之有余。', py:'yī rén yǐn zhī yǒu yú', cats:{3:'pron'}, today:'一个人喝却绰绰有余。', en:'but for one man to drink it, there\'s more than enough.', notes:[ {w:'之', py:'zhī', cn:'它，指酒', en:'it — the wine'}, {w:'余', py:'yú', cn:'剩余。「有余」即喝不完', en:'surplus; 有余 = more than enough'} ] },
+      { zh:'请画地为蛇，先成者饮酒。', py:'qǐng huà dì wéi shé xiān chéng zhě yǐn jiǔ', cats:{7:'aux'}, today:'请大家在地上画蛇，先画好的人喝酒。', en:'Let\'s each draw a snake on the ground, and whoever finishes first drinks the wine."', notes:[ {w:'请', py:'qǐng', cn:'请（让我们）', en:'let us'}, {w:'为', py:'wéi', reading:'duo', cn:'画成、作。此处读 wéi', en:'to make / form — read wéi here'}, {w:'者', py:'zhě', cn:'……的人。「先成者」即先画好的人', en:'the one who…; 先成者 = whoever finishes first'} ] },
+      { zh:'一人蛇先成，', py:'yī rén shé xiān chéng', cats:{}, today:'有一个人最先画好了蛇，', en:'One man finished his snake first.', notes:[ {w:'先', py:'xiān', cn:'最先、先', en:'first'}, {w:'成', py:'chéng', cn:'完成、画好', en:'to finish'} ] },
+      { zh:'引酒且饮之，', py:'yǐn jiǔ qiě yǐn zhī', cats:{4:'pron'}, today:'他拿过酒壶正要喝，', en:'He drew the wine-pot to him and was about to drink,', notes:[ {w:'引', py:'yǐn', cn:'拿过来、取过来', en:'to draw / pull over'}, {w:'且', py:'qiě', cn:'将要、正要', en:'about to'}, {w:'之', py:'zhī', cn:'它，指酒', en:'it — the wine'} ] },
+      { zh:'乃左手持卮，右手画蛇，', py:'nǎi zuǒ shǒu chí zhī yòu shǒu huà shé', cats:{0:'aux'}, today:'就左手拿着酒壶，右手又画起蛇来，', en:'when, holding the pot in his left hand, with his right he went on drawing the snake,', notes:[ {w:'乃', py:'nǎi', cn:'于是、就', en:'thereupon; then'}, {w:'持', py:'chí', cn:'拿着、握着', en:'to hold'}, {w:'卮', py:'zhī', reading:'rare', cn:'酒器（生僻字，读 zhī）', en:'the wine-vessel (rare, read zhī)'} ] },
+      { zh:'曰：「吾能为之足。」', py:'yuē wú néng wèi zhī zú', cats:{1:'pron',4:'pron'}, today:'说：「我还能给它添上脚呢。」', en:'saying, "I can even give it feet."', notes:[ {w:'吾', py:'wú', cn:'我', en:'I'}, {w:'为', py:'wèi', reading:'duo', cn:'替、给。「为之足」即给它添脚，此处读 wèi', en:'for; to give to — read wèi here'}, {w:'之', py:'zhī', cn:'它，指蛇', en:'it — the snake'} ] },
+      { zh:'未成，一人之蛇成，', py:'wèi chéng yī rén zhī shé chéng', cats:{4:'aux'}, today:'脚还没画完，另一个人的蛇已经画好了，', en:'Before he had finished, another man\'s snake was done.', notes:[ {w:'未', py:'wèi', cn:'还没有', en:'not yet'}, {w:'之', py:'zhī', cn:'的', en:'of (attributive)'} ] },
+      { zh:'夺其卮曰：', py:'duó qí zhī yuē', cats:{1:'pron'}, today:'那人夺过他的酒壶说：', en:'That man snatched away the wine-pot and said,', notes:[ {w:'夺', py:'duó', cn:'抢、夺取', en:'to snatch away'}, {w:'其', py:'qí', cn:'他的', en:'his'}, {w:'卮', py:'zhī', reading:'rare', cn:'酒器（生僻字，读 zhī）', en:'the wine-vessel (rare, read zhī)'} ] },
+      { zh:'蛇固无足，', py:'shé gù wú zú', cats:{}, today:'蛇本来就没有脚，', en:'"A snake never had feet —', notes:[ {w:'固', py:'gù', cn:'本来、原本', en:'in the first place; by nature'}, {w:'无', py:'wú', cn:'没有', en:'to have no'} ] },
+      { zh:'子安能为之足？', py:'zǐ ān néng wèi zhī zú', cats:{0:'pron',4:'pron'}, today:'你怎么能给它添上脚呢？', en:'how can you give it feet?"', notes:[ {w:'子', py:'zǐ', cn:'你', en:'you'}, {w:'安', py:'ān', cn:'怎么、哪里（表反问）', en:'how (rhetorical)'}, {w:'为', py:'wèi', reading:'duo', cn:'替、给，读 wèi', en:'for; to give to — read wèi'} ] },
+      { zh:'遂饮其酒。', py:'suì yǐn qí jiǔ', cats:{2:'pron'}, today:'于是就把那壶酒喝了。', en:'And he drank the wine.', notes:[ {w:'遂', py:'suì', cn:'于是、就', en:'thereupon'}, {w:'其', py:'qí', cn:'那（壶）', en:'that'} ] },
+      { zh:'为蛇足者，终亡其酒。', py:'wéi shé zú zhě zhōng wáng qí jiǔ', cats:{3:'aux',6:'pron'}, today:'那个给蛇画脚的人，最终失去了到手的酒。', en:'The man who drew feet on the snake lost his wine in the end.', notes:[ {w:'为', py:'wéi', reading:'duo', cn:'画、作，读 wéi', en:'to draw / make — read wéi'}, {w:'蛇足', py:'shé zú', cn:'给蛇画的脚，比喻多余的东西', en:'a snake’s “feet” — something superfluous'}, {w:'终', py:'zhōng', cn:'最终、终于', en:'in the end'}, {w:'亡', py:'wáng', cn:'丢失、失去（不是「死亡」）', en:'to lose (not “to die”)'} ] }
     ]
   }
 };
@@ -139,17 +243,71 @@ const CHARS = {
     [{c:'噫',cn:'叹词，相当于「唉」。少见的字，读 yī。',en:'an interjection, “Ah / Alas.” An uncommon character, read yī.'},{c:'菊',cn:'菊花。',en:'the chrysanthemum.'},{c:'之',cn:'的；「菊之爱」即对菊花的喜爱（宾语提前）。',en:'of; 菊之爱 = love of the chrysanthemum (object fronted).'},{c:'爱',cn:'喜爱。',en:'love.'},{c:'陶',cn:'指陶渊明。',en:'Tao Yuanming.'},{c:'后',cn:'以后。「陶后」即陶渊明之后。',en:'after; 陶后 = after Tao’s time.'},{c:'鲜',cn:'少、很少。这里读 xiǎn，不读 xiān。',en:'seldom; few. Read xiǎn here, not xiān.'},{c:'有',cn:'有。',en:'there is.'},{c:'闻',cn:'听说。',en:'to be heard of.'}],
     [{c:'莲',cn:'莲花。',en:'the lotus.'},{c:'之',cn:'的；「莲之爱」即对莲的喜爱。',en:'of; 莲之爱 = love of the lotus.'},{c:'爱',cn:'喜爱。',en:'love.'},{c:'同',cn:'跟……一样、相同。',en:'the same as; like.'},{c:'予',cn:'我。',en:'me.'},{c:'者',cn:'……的人；「同予者」即和我一样的人。',en:'the one who…; 同予者 = those like me.'},{c:'何',cn:'什么、哪。',en:'what; which.'},{c:'人',cn:'人。「何人」即还有谁。',en:'person; 何人 = who else.'}],
     [{c:'牡',cn:'「牡丹」首字。',en:'first character of “peony.”'},{c:'丹',cn:'牡丹。',en:'the peony.'},{c:'之',cn:'的；「牡丹之爱」即对牡丹的喜爱。',en:'of; 牡丹之爱 = love of the peony.'},{c:'爱',cn:'喜爱。',en:'love.'},{c:'宜',cn:'应当、当然。',en:'fitting; surely.'},{c:'乎',cn:'语气词。「宜乎」即「当然」。',en:'a particle; 宜乎 = “fittingly,” “no wonder.”'},{c:'众',cn:'多、人多。',en:'many; the crowd.'},{c:'矣',cn:'句末语气词，表「了」。',en:'a final particle, the force of “indeed / now.”'}]
+  ],
+  stump: [
+    [{c:'宋',cn:'宋国，周代诸侯国之一。',en:'the state of Song.'},{c:'人',cn:'人。「宋人」即宋国的人。',en:'a person; 宋人 = a man of Song.'},{c:'有',cn:'有。',en:'there was.'},{c:'耕',cn:'耕田、种地。',en:'to plough; to farm.'},{c:'者',cn:'……的人。「耕者」即种田的人。',en:'the one who…; 耕者 = a farmer.'}],
+    [{c:'田',cn:'田地。',en:'a field.'},{c:'中',cn:'中间、里面。',en:'in; amid.'},{c:'有',cn:'有。',en:'there was.'},{c:'株',cn:'露出地面的树桩、树根。',en:'a tree-stump left in the ground.'}],
+    [{c:'兔',cn:'兔子。',en:'a hare.'},{c:'走',cn:'跑。文言里「走」是跑，不是慢慢走。',en:'to run — in 文言 走 means “run,” not “walk.”'},{c:'触',cn:'撞、碰。',en:'to hit; to crash into.'},{c:'株',cn:'树桩。',en:'the stump.'},{c:'折',cn:'折断。',en:'to snap; to break.'},{c:'颈',cn:'脖子。',en:'the neck.'},{c:'而',cn:'连词，「就、于是」。',en:'and so; thereupon.'},{c:'死',cn:'死。',en:'to die.'}],
+    [{c:'因',cn:'于是、就。',en:'thereupon; so.'},{c:'释',cn:'放下。',en:'to set down; to release.'},{c:'其',cn:'他的。',en:'his.'},{c:'耒',cn:'古代翻土的农具，像木叉。少见的字，读 lěi。',en:'an ancient ploughing tool. An uncommon character, read lěi.'},{c:'而',cn:'连词，表顺承。',en:'and (then).'},{c:'守',cn:'守候、看守。',en:'to keep watch; to guard.'},{c:'株',cn:'树桩。',en:'the stump.'}],
+    [{c:'冀',cn:'希望。',en:'to hope.'},{c:'复',cn:'再、又。',en:'again.'},{c:'得',cn:'得到、捡到。',en:'to get; to come by.'},{c:'兔',cn:'兔子。',en:'a hare.'}],
+    [{c:'兔',cn:'兔子。',en:'a hare.'},{c:'不',cn:'不。',en:'not.'},{c:'可',cn:'能、可以。',en:'can.'},{c:'复',cn:'再、又。',en:'again.'},{c:'得',cn:'得到。「不可复得」即再也得不到。',en:'to get; 不可复得 = could never be got again.'},{c:'而',cn:'却、可是（转折）。',en:'yet; but.'},{c:'身',cn:'自身、自己。',en:'oneself.'},{c:'为',cn:'被。表被动，这里读 wéi。',en:'by — marks the passive, read wéi here.'},{c:'宋',cn:'宋国。',en:'the state of Song.'},{c:'国',cn:'国；「宋国」即宋国（人）。',en:'state; 宋国 = (the people of) Song.'},{c:'笑',cn:'耻笑、嘲笑。',en:'to laugh at; to mock.'}]
+  ],
+  boat: [
+    [{c:'楚',cn:'楚国，战国时南方大国。',en:'the state of Chu.'},{c:'人',cn:'人。「楚人」即楚国人。',en:'a man of Chu.'},{c:'有',cn:'有。',en:'there was.'},{c:'涉',cn:'徒步渡水，这里指渡江。',en:'to wade / cross water.'},{c:'江',cn:'大河、江。',en:'a river.'},{c:'者',cn:'……的人。「涉江者」即渡江的人。',en:'the one who…; 涉江者 = a man crossing the river.'}],
+    [{c:'其',cn:'他的。',en:'his.'},{c:'剑',cn:'剑。',en:'a sword.'},{c:'自',cn:'从。',en:'from.'},{c:'舟',cn:'船。',en:'a boat.'},{c:'中',cn:'里、上。「舟中」即船上。',en:'in; 舟中 = aboard the boat.'},{c:'坠',cn:'落下、掉下。',en:'to fall; to drop.'},{c:'于',cn:'到、进。',en:'into.'},{c:'水',cn:'水里。',en:'the water.'}],
+    [{c:'遽',cn:'急忙、立刻。少见的字，读 jù。',en:'hurriedly; at once. An uncommon character, read jù.'},{c:'契',cn:'刻。这里读 qì，指刻记号。',en:'to carve a notch — read qì here.'},{c:'其',cn:'他的、那。',en:'his; the.'},{c:'舟',cn:'船。',en:'the boat.'},{c:'曰',cn:'说。',en:'to say.'}],
+    [{c:'是',cn:'这（指示代词）。',en:'this.'},{c:'吾',cn:'我的。',en:'my.'},{c:'剑',cn:'剑。',en:'sword.'},{c:'之',cn:'的（结构助词）。',en:'of (attributive).'},{c:'所',cn:'「所」加动词，指处所，相当于「……的地方」。',en:'with the verb that follows, marks a place: “where…”.'},{c:'从',cn:'从（这里）。',en:'from (here).'},{c:'坠',cn:'掉下去。「所从坠」即掉下去的地方。',en:'fell; 所从坠 = the place it fell from.'}],
+    [{c:'舟',cn:'船。',en:'the boat.'},{c:'止',cn:'停止、停下。',en:'to stop.'}],
+    [{c:'从',cn:'从（某处）。',en:'from.'},{c:'其',cn:'他、那。',en:'his; the.'},{c:'所',cn:'「所……者」指……的地方。',en:'in 所…者, marks the place that…'},{c:'契',cn:'刻、刻的记号。',en:'the notch he cut.'},{c:'者',cn:'……的地方。「所契者」即刻记号的地方。',en:'the place that…; 所契者 = where the notch was.'},{c:'入',cn:'进入、下到。',en:'to enter; to lower into.'},{c:'水',cn:'水里。',en:'the water.'},{c:'求',cn:'寻找。',en:'to look for.'},{c:'之',cn:'它，指剑。',en:'it — the sword.'}],
+    [{c:'舟',cn:'船。',en:'the boat.'},{c:'已',cn:'已经。',en:'already.'},{c:'行',cn:'行进、移动。',en:'to move along.'},{c:'矣',cn:'句末语气词，相当于「了」。',en:'a final particle, “now / already.”'},{c:'而',cn:'却、可是（转折）。',en:'yet; but.'},{c:'剑',cn:'剑。',en:'the sword.'},{c:'不',cn:'不、没有。',en:'not.'},{c:'行',cn:'移动。「剑不行」即剑没有跟着动。',en:'to move; 剑不行 = the sword had not moved.'}],
+    [{c:'求',cn:'寻找。',en:'to seek.'},{c:'剑',cn:'剑。',en:'a sword.'},{c:'若',cn:'像、如同。',en:'like; as.'},{c:'此',cn:'这样、这。',en:'this; thus.'},{c:'不',cn:'不。',en:'not.'},{c:'亦',cn:'也。「不亦……乎」是反问句式。',en:'also; 不亦…乎 forms a rhetorical question.'},{c:'惑',cn:'糊涂、不明事理。',en:'muddle-headed; confused.'},{c:'乎',cn:'句末疑问语气词，「吗、呢」。',en:'a final question particle.'}]
+  ],
+  spearshield: [
+    [{c:'楚',cn:'楚国。',en:'the state of Chu.'},{c:'人',cn:'人。「楚人」即楚国人。',en:'a man of Chu.'},{c:'有',cn:'有。',en:'there was.'},{c:'鬻',cn:'卖。少见的字，读 yù。',en:'to sell. An uncommon character, read yù.'},{c:'盾',cn:'盾牌。',en:'a shield.'},{c:'与',cn:'和、跟。',en:'and.'},{c:'矛',cn:'长矛。',en:'a spear.'},{c:'者',cn:'……的人。「鬻……者」即卖……的人。',en:'the one who…; 鬻…者 = one who sells…'}],
+    [{c:'誉',cn:'称赞、夸耀。',en:'to praise; to boast of.'},{c:'之',cn:'它，指盾。',en:'it — the shield.'},{c:'曰',cn:'说。',en:'to say.'}],
+    [{c:'吾',cn:'我的。',en:'my.'},{c:'盾',cn:'盾牌。',en:'shield.'},{c:'之',cn:'用在主谓之间，取消独立性，不译。',en:'a nominalising particle; left untranslated.'},{c:'坚',cn:'坚固。',en:'hard; solid.'},{c:'物',cn:'东西、事物。',en:'a thing.'},{c:'莫',cn:'没有什么（东西）。',en:'nothing; none.'},{c:'能',cn:'能、能够。',en:'can.'},{c:'陷',cn:'刺穿、攻破。',en:'to pierce; to breach.'},{c:'也',cn:'句末语气词。',en:'a final particle.'}],
+    [{c:'又',cn:'又、再一次。',en:'again.'},{c:'誉',cn:'夸耀。',en:'to boast of.'},{c:'其',cn:'他的。',en:'his.'},{c:'矛',cn:'矛。',en:'spear.'},{c:'曰',cn:'说。',en:'to say.'}],
+    [{c:'吾',cn:'我的。',en:'my.'},{c:'矛',cn:'矛。',en:'spear.'},{c:'之',cn:'主谓之间，不译。',en:'a nominalising particle, untranslated.'},{c:'利',cn:'锋利。',en:'sharp.'},{c:'于',cn:'对于、对。',en:'as for; against.'},{c:'物',cn:'东西。',en:'things.'},{c:'无',cn:'没有。',en:'there is no…'},{c:'不',cn:'不。「无不」即没有不、全都。',en:'not; 无不 = there is nothing that does not.'},{c:'陷',cn:'刺穿。',en:'to pierce.'},{c:'也',cn:'句末语气词。',en:'a final particle.'}],
+    [{c:'或',cn:'有人（代词）。',en:'someone.'},{c:'曰',cn:'说、问。',en:'to say; to ask.'}],
+    [{c:'以',cn:'用、拿。',en:'with; using.'},{c:'子',cn:'您，对人的尊称。',en:'you (a respectful address).'},{c:'之',cn:'的。',en:'of (attributive).'},{c:'矛',cn:'矛。',en:'spear.'},{c:'陷',cn:'刺穿。',en:'to pierce.'},{c:'子',cn:'您。',en:'your.'},{c:'之',cn:'的。',en:'of.'},{c:'盾',cn:'盾。',en:'shield.'},{c:'何',cn:'怎么、什么。',en:'how; what.'},{c:'如',cn:'「何如」即「怎么样」。',en:'何如 = “how about it?”'}],
+    [{c:'其',cn:'那、那个。',en:'that.'},{c:'人',cn:'人。「其人」即那个人。',en:'man; 其人 = that man.'},{c:'弗',cn:'不。',en:'not.'},{c:'能',cn:'能、能够。',en:'can; be able to.'},{c:'应',cn:'回答、应答。',en:'to answer; to respond.'},{c:'也',cn:'句末语气词。',en:'a final particle.'}]
+  ],
+  snake: [
+    [{c:'楚',cn:'楚国。',en:'the state of Chu.'},{c:'有',cn:'有。',en:'there was.'},{c:'祠',cn:'祭祀；这里指主持祭祀的人。',en:'a sacrifice; here, one who offers it.'},{c:'者',cn:'……的人。',en:'the one who…'}],
+    [{c:'赐',cn:'赏给、赐予。',en:'to bestow; to give.'},{c:'其',cn:'他的。',en:'his.'},{c:'舍',cn:'「舍人」首字。',en:'first character of 舍人.'},{c:'人',cn:'「舍人」即门客、随从。',en:'舍人 = a retainer; a hanger-on.'},{c:'卮',cn:'古代盛酒的器皿。少见的字，读 zhī。',en:'an ancient wine-vessel. An uncommon character, read zhī.'},{c:'酒',cn:'酒。「卮酒」即一壶酒。',en:'wine; 卮酒 = a pot of wine.'}],
+    [{c:'舍',cn:'「舍人」首字。',en:'first character of 舍人.'},{c:'人',cn:'「舍人」即门客。',en:'舍人 = the retainers.'},{c:'相',cn:'互相。',en:'one another.'},{c:'谓',cn:'说、告诉。',en:'to say (to).'},{c:'曰',cn:'说。',en:'saying.'}],
+    [{c:'数',cn:'几、若干。这里读 shù。',en:'several; a number of. Read shù here.'},{c:'人',cn:'人。「数人」即几个人。',en:'people; 数人 = several men.'},{c:'饮',cn:'喝。',en:'to drink.'},{c:'之',cn:'它，指那壶酒。',en:'it — the wine.'},{c:'不',cn:'不。',en:'not.'},{c:'足',cn:'够、足够。',en:'enough.'}],
+    [{c:'一',cn:'一个。',en:'one.'},{c:'人',cn:'人。',en:'man.'},{c:'饮',cn:'喝。',en:'to drink.'},{c:'之',cn:'它，指酒。',en:'it — the wine.'},{c:'有',cn:'有。',en:'there is.'},{c:'余',cn:'剩余。「有余」即喝不完、还有多。',en:'surplus; 有余 = more than enough.'}],
+    [{c:'请',cn:'请、让（我们）。',en:'let (us); please.'},{c:'画',cn:'画。',en:'to draw.'},{c:'地',cn:'地上。',en:'on the ground.'},{c:'为',cn:'画成、作。这里读 wéi。',en:'to make / form — read wéi here.'},{c:'蛇',cn:'蛇。',en:'a snake.'},{c:'先',cn:'最先、先。',en:'first.'},{c:'成',cn:'完成、画好。',en:'to finish.'},{c:'者',cn:'……的人。「先成者」即先画好的人。',en:'the one who…; 先成者 = whoever finishes first.'},{c:'饮',cn:'喝。',en:'drinks.'},{c:'酒',cn:'酒。',en:'the wine.'}],
+    [{c:'一',cn:'一个。',en:'one.'},{c:'人',cn:'人。',en:'man.'},{c:'蛇',cn:'蛇。',en:'his snake.'},{c:'先',cn:'最先。',en:'first.'},{c:'成',cn:'画好、完成。',en:'finished.'}],
+    [{c:'引',cn:'拿过来、取过来。',en:'to draw / pull over.'},{c:'酒',cn:'酒（壶）。',en:'the wine-pot.'},{c:'且',cn:'将要、正要。',en:'about to.'},{c:'饮',cn:'喝。',en:'to drink.'},{c:'之',cn:'它，指酒。',en:'it — the wine.'}],
+    [{c:'乃',cn:'于是、就。',en:'thereupon; then.'},{c:'左',cn:'左。',en:'left.'},{c:'手',cn:'手。「左手」即左手。',en:'hand; 左手 = the left hand.'},{c:'持',cn:'拿着、握着。',en:'to hold.'},{c:'卮',cn:'酒器。',en:'the wine-vessel.'},{c:'右',cn:'右。',en:'right.'},{c:'手',cn:'手。「右手」即右手。',en:'hand; 右手 = the right hand.'},{c:'画',cn:'画。',en:'to draw.'},{c:'蛇',cn:'蛇。',en:'the snake.'}],
+    [{c:'曰',cn:'说。',en:'saying.'},{c:'吾',cn:'我。',en:'I.'},{c:'能',cn:'能、能够。',en:'can.'},{c:'为',cn:'替、给。「为之足」即给它添脚，这里读 wèi。',en:'for; to give to — read wèi here.'},{c:'之',cn:'它，指蛇。',en:'it — the snake.'},{c:'足',cn:'脚。这里指给蛇画脚。',en:'feet — here, to draw feet on it.'}],
+    [{c:'未',cn:'还没有。',en:'not yet.'},{c:'成',cn:'完成。',en:'finished.'},{c:'一',cn:'另一、一个。',en:'another; one.'},{c:'人',cn:'人。「一人」即另一个人。',en:'man; here, another man.'},{c:'之',cn:'的。',en:'of (attributive).'},{c:'蛇',cn:'蛇。',en:'snake.'},{c:'成',cn:'画好、完成。',en:'was done.'}],
+    [{c:'夺',cn:'抢、夺取。',en:'to snatch away.'},{c:'其',cn:'他的。',en:'his.'},{c:'卮',cn:'酒器。',en:'the wine-vessel.'},{c:'曰',cn:'说。',en:'saying.'}],
+    [{c:'蛇',cn:'蛇。',en:'a snake.'},{c:'固',cn:'本来、原本。',en:'in the first place; by nature.'},{c:'无',cn:'没有。',en:'has no.'},{c:'足',cn:'脚。',en:'feet.'}],
+    [{c:'子',cn:'你。',en:'you.'},{c:'安',cn:'怎么、哪里。表反问。',en:'how; on what grounds (rhetorical).'},{c:'能',cn:'能、能够。',en:'can.'},{c:'为',cn:'替、给。读 wèi。',en:'for; to give to — read wèi.'},{c:'之',cn:'它，指蛇。',en:'it — the snake.'},{c:'足',cn:'脚。',en:'feet.'}],
+    [{c:'遂',cn:'于是、就。',en:'thereupon.'},{c:'饮',cn:'喝。',en:'to drink.'},{c:'其',cn:'那（壶）。',en:'that.'},{c:'酒',cn:'酒。',en:'the wine.'}],
+    [{c:'为',cn:'画、作。读 wéi。',en:'to draw / make — read wéi.'},{c:'蛇',cn:'蛇。',en:'a snake.'},{c:'足',cn:'脚。「蛇足」即给蛇画的脚，比喻多余的东西。',en:'feet; 蛇足 = a snake’s “feet,” i.e. something superfluous.'},{c:'者',cn:'……的人。',en:'the one who…'},{c:'终',cn:'最终、终于。',en:'in the end.'},{c:'亡',cn:'丢失、失去（不是「死亡」）。',en:'to lose (not “to die”).'},{c:'其',cn:'那、他的。',en:'his; that.'},{c:'酒',cn:'酒。',en:'the wine.'}]
   ]
 };
 
 /* Coming-soon library — these are data, not code (§5: add a text = add a row).
  * Bias toward 成语-rich 寓言 / 史传 (§6). */
 const LOCKED = [
-  { title:'守株待兔', titleEn:'Waiting by the Stump', meta:'战国 · 《韩非子》', seal:'韩', idiom:'守株待兔', hook:'A farmer sees a hare bolt into a tree-stump and break its neck. He drops the plough and waits for the next one. It never comes.', tag:'寓言 · 39 字' },
-  { title:'刻舟求剑', titleEn:'Notching the Boat', meta:'战国 · 《吕氏春秋》', seal:'吕', idiom:'刻舟求剑', hook:'A man drops his sword over the side of a moving boat and cuts a mark on the rail — then dives where the mark is to look for it.', tag:'寓言 · 53 字' },
-  { title:'自相矛盾', titleEn:'Spear Meets Shield', meta:'战国 · 《韩非子》', seal:'韩', idiom:'自相矛盾', hook:'A peddler swears his spear pierces anything and his shield stops anything — until a bystander asks what happens when the two meet.', tag:'寓言 · 67 字' },
   { title:'狐假虎威', titleEn:'The Fox and the Tiger', meta:'西汉 · 《战国策》', seal:'狐', idiom:'狐假虎威', hook:'A fox tells the tiger Heaven made it king of beasts — walk behind me and watch. The animals flee the tiger, and the fox takes the credit.', tag:'寓言 · 借字「假」jiǎ' },
-  { title:'画蛇添足', titleEn:'Legs on a Snake', meta:'西汉 · 《战国策》', seal:'蛇', idiom:'画蛇添足', hook:'First to finish drawing a snake wins the wine. The leader, far ahead, adds feet to show off — and hands the prize to the man who simply stopped.', tag:'寓言 · 49 字' }
+  { title:'揠苗助长', titleEn:'Pulling Up the Sprouts', meta:'战国 · 《孟子》', seal:'孟', idiom:'揠苗助长', hook:'Impatient that his rice grows so slowly, a man tugs every shoot up a little to “help.” By evening he\'s exhausted; by morning every plant has withered.', tag:'寓言 · 《孟子》' },
+  { title:'滥竽充数', titleEn:'Faking the Flute', meta:'战国 · 《韩非子》', seal:'竽', idiom:'滥竽充数', hook:'A man who cannot play the yu joins the king\'s three-hundred-piece ensemble and draws his salary — until a new king wants to hear each player alone.', tag:'寓言 · 借「滥」làn' },
+  { title:'塞翁失马', titleEn:'The Old Man’s Horse', meta:'西汉 · 《淮南子》', seal:'塞', idiom:'塞翁失马', hook:'An old man’s horse runs off; neighbours pity him — how do you know it isn\'t luck? It returns leading a finer horse. Fortune and disaster keep trading places.', tag:'寓言 · 福祸相倚' },
+  { title:'愚公移山', titleEn:'The Foolish Old Man Moves the Mountains', meta:'战国 · 《列子》', seal:'愚', idiom:'愚公移山', hook:'A ninety-year-old sets his family to dig away two mountains that block his door. Mocked for it, he answers: my sons will have sons, but the mountains will not grow.', tag:'寓言 · 《列子》' },
+  { title:'杞人忧天', titleEn:'The Man of Qi Fears the Sky', meta:'战国 · 《列子》', seal:'杞', idiom:'杞人忧天', hook:'A man of Qi frets that the sky might fall and the earth give way, and can neither eat nor sleep for dread of it.', tag:'寓言 · 《列子》' },
+  { title:'邯郸学步', titleEn:'Learning the Handan Walk', meta:'战国 · 《庄子》', seal:'庄', idiom:'邯郸学步', hook:'A youth goes to Handan to learn its elegant gait, never masters it, and forgets his own — so he crawls home on hands and knees.', tag:'寓言 · 《庄子》' },
+  { title:'朝三暮四', titleEn:'Three at Dawn, Four at Dusk', meta:'战国 · 《庄子》', seal:'狙', idiom:'朝三暮四', hook:'A monkey-keeper offers three nuts at dawn and four at dusk; the monkeys rage. Four at dawn and three at dusk? They are delighted. The total never changed.', tag:'寓言 · 《庄子》' },
+  { title:'望洋兴叹', titleEn:'Gazing at the Ocean and Sighing', meta:'战国 · 《庄子》', seal:'河', idiom:'望洋兴叹', hook:'The River God, proud of his flood, follows the current to the sea, sees no end to the water, and sighs at the vast Ocean God at how small he himself is.', tag:'寓言 · 《庄子·秋水》' },
+  { title:'庖丁解牛', titleEn:'The Cook Carves an Ox', meta:'战国 · 《庄子》', seal:'庖', idiom:'游刃有余', hook:'For nineteen years a cook carves oxen on a single blade, his knife sliding through the natural seams; he no longer sees the ox, only the Way.', tag:'寓言 · 游刃有余' },
+  { title:'缘木求鱼', titleEn:'Climbing a Tree for Fish', meta:'战国 · 《孟子》', seal:'孟', idiom:'缘木求鱼', hook:'To chase your ambition by the wrong means, Mencius tells the king, is to climb a tree in search of fish — you will never get it that way.', tag:'比喻 · 《孟子》' },
+  { title:'三人成虎', titleEn:'Three Men Make a Tiger', meta:'西汉 · 《战国策》', seal:'虎', idiom:'三人成虎', hook:'One man says a tiger walks the market — you doubt it. Two say it — you waver. Three, and you believe it. A lie, often enough repeated, hardens into truth.', tag:'史传 · 《战国策》' },
+  { title:'鹬蚌相争', titleEn:'The Snipe and the Clam', meta:'西汉 · 《战国策》', seal:'蚌', idiom:'鹬蚌相争', hook:'A snipe pecks a clam; the clam clamps the snipe’s beak. Neither will let go — and the passing fisherman pockets them both.', tag:'寓言 · 渔翁得利' }
 ];
 
 /* ────────────────────────────  GRAMMAR ROLES (§1b)  ──────────────────────── */
@@ -168,6 +326,7 @@ const TERMS = {
   // —— literary forms & devices ——
   '铭':{py:'míng',cn:'刻在器物或碑石上的文字，多用韵语，用来自警或颂德。',en:'an inscription cut into stone or bronze — usually rhymed — to caution oneself or praise virtue.'},
   '说':{py:'shuō',cn:'古代一种论说文体，借一事一物来发表见解、说明道理。',en:'a classical essay form that argues a point through a single thing or event.'},
+  '寓言':{py:'yù yán',cn:'借一个简短的小故事来寄托道理或教训的文体，盛行于先秦诸子。',en:'a fable — a short invented story that carries a moral, a staple of the pre-Qin philosophers.'},
   '骈句':{py:'pián jù',cn:'两两相对、字数相等、结构相称的句子，是骈文的基本单位。',en:'parallel couplets — paired lines of equal length and matching structure.'},
   '押韵':{py:'yā yùn',cn:'句末用韵母相同或相近的字，使诵读时声音回环和谐。',en:'rhyme — ending lines on like-sounding syllables so the piece chimes when read aloud.'},
   '对仗':{py:'duì zhàng',cn:'上下句词性相对、意义相关或相反，形成整齐的对偶。',en:'antithetical parallelism — matching the parts of speech and sense of two lines.'},
@@ -366,7 +525,14 @@ function topBar(){
 
 function homeScreen(){
   const f=DATA.louver;
-  const moreCards = [ liveCard('lotus', DATA.lotus), ...LOCKED.map(lockedCard) ].join('');
+  const moreCards = [
+    liveCard('lotus', DATA.lotus),
+    liveCard('stump', DATA.stump),
+    liveCard('boat', DATA.boat),
+    liveCard('spearshield', DATA.spearshield),
+    liveCard('snake', DATA.snake),
+    ...LOCKED.map(lockedCard)
+  ].join('');
   return `<div class="wy-scroll" style="flex:1;overflow-y:auto;animation:wyIn .34s cubic-bezier(.22,.61,.36,1);">
     <div style="max-width:1080px;margin:0 auto;width:100%;padding:clamp(26px,4vw,52px) clamp(20px,4vw,44px) 64px;">
 
@@ -410,9 +576,7 @@ function homeScreen(){
 }
 
 function liveCard(id,d){
-  const hook = id==='lotus'
-    ? 'Out of the mud, and not one stain. Zhou Dunyi sorts three flowers into recluse, grandee, and gentleman — and loves the lotus alone.'
-    : esc(d.intro||'');
+  const hook = esc(d.hook || d.intro || '');
   return `<button data-action="open:${id}" class="wy-card" style="text-align:left;display:flex;flex-direction:column;background:#FBF6EC;border:1px solid #E2D8C2;border-radius:18px;padding:22px;cursor:pointer;min-height:184px;">
     <div style="display:flex;align-items:flex-start;gap:15px;">
       <div style="flex-shrink:0;width:46px;height:46px;border-radius:9px;background:#B23A2B;color:#fff;display:flex;align-items:center;justify-content:center;font-family:'Noto Serif SC',serif;font-weight:700;font-size:25px;${SEAL_GRAD}">${esc(d.seal)}</div>
@@ -426,7 +590,7 @@ function liveCard(id,d){
     </div>
     <p style="font-family:'Newsreader',serif;font-size:15.5px;line-height:1.5;color:#5B5142;margin:14px 0 0;flex:1;">${hook}</p>
     <div style="display:flex;align-items:center;gap:8px;margin-top:14px;flex-wrap:wrap;">
-      <span style="font-family:'Noto Serif SC',serif;font-size:12.5px;font-weight:600;color:#B23A2B;background:rgba(178,58,43,.09);border:1px solid #E9CFC8;border-radius:999px;padding:4px 11px;">成语 · 出淤泥而不染</span>
+      <span style="font-family:'Noto Serif SC',serif;font-size:12.5px;font-weight:600;color:#B23A2B;background:rgba(178,58,43,.09);border:1px solid #E9CFC8;border-radius:999px;padding:4px 11px;">成语 · ${esc(d.idiom||'')}</span>
       <span style="font-size:11.5px;font-weight:600;color:#938976;">${gloss(esc(d.genre),d.genre)} · ${esc(d.count)} 字</span>
       <span style="flex:1;"></span>
       <span style="font-weight:700;font-size:13.5px;color:#B23A2B;">进入 →</span>
