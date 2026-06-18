@@ -81,8 +81,8 @@ const DATA = {
       { zh:'谈笑有鸿儒，往来无白丁。', py:'tán xiào yǒu hóng rú wǎng lái wú bái dīng', cats:{}, today:'在这里谈笑的都是博学之士，来往的没有不学无术的人。', en:'Those who talk and laugh here are learned scholars; among the comings and goings, not one untutored soul.', notes:[ {w:'鸿儒', py:'hóng rú', reading:'phrase', cn:'学识渊博的人（鸿：大）。两字一组，宜连读', en:'a great scholar — read as one unit'}, {w:'白丁', py:'bái dīng', reading:'phrase', cn:'没有功名学问的平民。两字一组，宜连读', en:'a commoner without learning — read as one unit'} ] },
       { zh:'可以调素琴，阅金经。', py:'kě yǐ tiáo sù qín yuè jīn jīng', cats:{}, today:'可以弹奏不加装饰的古琴，阅读佛经。', en:'Here one may tune a plain zither, or read the gilded sutras.', notes:[ {w:'调', py:'tiáo', reading:'duo', cn:'弹奏。此处读 tiáo，不读 diào（多音字）', en:'to play / tune — read tiáo here, not diào'}, {w:'素琴', py:'sù qín', cn:'不加装饰的琴', en:'an unadorned zither'}, {w:'金经', py:'jīn jīng', cn:'用泥金书写的佛经', en:'gold-lettered Buddhist scriptures'} ] },
       { zh:'无丝竹之乱耳，无案牍之劳形。', py:'wú sī zhú zhī luàn ěr wú àn dú zhī láo xíng', cats:{3:'aux',4:'flex',9:'aux',10:'flex'}, today:'没有嘈杂的音乐扰乱双耳，没有官府的公文使身体劳累。', en:'No din of strings and pipes to jar the ear, no stacks of official paper to wear out the body.', notes:[ {w:'丝竹', py:'sī zhú', cn:'弦乐与管乐，借指世俗的乐声', en:'strings and pipes — worldly music'}, {w:'之', py:'zhī', cn:'用在主谓之间，取消句子独立性，不译', en:'a particle nominalising the clause; left untranslated'}, {w:'案牍', py:'àn dú', reading:'rare', cn:'官府的公文（牍为生僻字，读 dú）', en:'official documents (牍, rare, read dú)'}, {w:'劳形', py:'láo xíng', cn:'使身体劳累（劳：使动用法）', en:'to weary the body (劳 in causative use)'} ] },
-      { zh:'南阳诸葛庐，西蜀子云亭。', py:'nán yáng zhū gě lú xī shǔ zǐ yún tíng', cats:{0:'place',1:'place',2:'name',3:'name',5:'place',6:'place',7:'name',8:'name'}, today:'它好比南阳诸葛亮的草庐，西蜀扬子云的亭子。', en:'It is the thatched hut of Zhuge Liang at Nanyang, the pavilion of Yang Ziyun in western Shu.', notes:[ {w:'诸葛', py:'zhū gě', reading:'duo', cn:'复姓。葛此处读 gě，不读 gé（多音字）', en:'a compound surname — 葛 read gě here, not gé'}, {w:'子云亭', py:'zǐ yún tíng', cn:'西汉扬雄（字子云）的居所', en:'the studio of Yang Xiong (styled Ziyun)'} ] },
-      { zh:'孔子云：何陋之有？', py:'kǒng zǐ yún hé lòu zhī yǒu', cats:{0:'name',1:'name',3:'pron',5:'aux'}, today:'孔子说：「有什么简陋的呢？」', en:'As Confucius said: "What humbleness is there in this?"', notes:[ {w:'云', py:'yún', cn:'说', en:'to say'}, {w:'何陋之有', py:'hé lòu zhī yǒu', cn:'即「有何陋」，宾语前置；之，宾语前置的标志，不译', en:'inverted from 有何陋 (object-fronting); 之 marks the fronted object, untranslated'} ] }
+      { zh:'南阳诸葛庐，西蜀子云亭。', py:'nán yáng zhū gě lú xī shǔ zǐ yún tíng', cats:{0:'place',1:'place',2:'name',3:'name',5:'place',6:'place',7:'name',8:'name'}, allusion:{ title:'诸葛庐 · 子云亭', cn:'诸葛亮出山辅佐刘备前，曾在南阳隆中结草庐躬耕；扬雄（字子云）在西蜀的住所也十分朴素。两人都身居陋室而德才盖世——作者以他们自比，正是要说明「陋室不陋」。', en:'Before he was called to serve Liu Bei, Zhuge Liang farmed and lived in a thatched hut at Nanyang; Yang Xiong (styled Ziyun) kept an equally plain studio in western Shu. Both were men of towering gifts in humble rooms — Liu Yuxi measures his own lodging against theirs.' }, today:'它好比南阳诸葛亮的草庐，西蜀扬子云的亭子。', en:'It is the thatched hut of Zhuge Liang at Nanyang, the pavilion of Yang Ziyun in western Shu.', notes:[ {w:'诸葛', py:'zhū gě', reading:'duo', cn:'复姓。葛此处读 gě，不读 gé（多音字）', en:'a compound surname — 葛 read gě here, not gé'}, {w:'子云亭', py:'zǐ yún tíng', cn:'西汉扬雄（字子云）的居所', en:'the studio of Yang Xiong (styled Ziyun)'} ] },
+      { zh:'孔子云：何陋之有？', py:'kǒng zǐ yún hé lòu zhī yǒu', cats:{0:'name',1:'name',3:'pron',5:'aux'}, allusion:{ title:'《论语》· 何陋之有', cn:'语出《论语·子罕》：孔子想搬到东方九夷之地去住，有人说那里简陋，孔子答：「君子居之，何陋之有？」——有德的君子住在哪里，哪里就不简陋。作者只引后半句，把自己接续到这一传统上。', en:'From the Analects (9.14): told the eastern tribes’ land was crude, Confucius replied, “With a gentleman dwelling there, what crudeness could there be?” Liu quotes only the tail of the line, quietly placing himself in that lineage.' }, today:'孔子说：「有什么简陋的呢？」', en:'As Confucius said: "What humbleness is there in this?"', notes:[ {w:'云', py:'yún', cn:'说', en:'to say'}, {w:'何陋之有', py:'hé lòu zhī yǒu', cn:'即「有何陋」，宾语前置；之，宾语前置的标志，不译', en:'inverted from 有何陋 (object-fronting); 之 marks the fronted object, untranslated'} ] }
     ]
   },
   lotus: {
@@ -98,8 +98,8 @@ const DATA = {
     craftEn:'The single word "love" runs through the whole; three flowers set one another off, and the piece ends on three sighs that carry far.',
     lines:[
       { zh:'水陆草木之花，可爱者甚蕃。', py:'shuǐ lù cǎo mù zhī huā kě ài zhě shèn fán', cats:{4:'aux',8:'aux'}, today:'水里、陆上各种草木的花，值得喜爱的非常多。', en:'Among the flowers of every plant and tree, on water and on land, a great many are worth loving.', notes:[ {w:'之', py:'zhī', cn:'的', en:'of (attributive particle)'}, {w:'蕃', py:'fán', reading:'loan', cn:'通「繁」，多。此处借作「繁」，读 fán，非读 fān/bō', en:'a loan for 繁 "abundant" — read fán here, not fān/bō'} ] },
-      { zh:'晋陶渊明独爱菊。', py:'jìn táo yuān míng dú ài jú', cats:{0:'place',1:'name',2:'name',3:'name',4:'aux'}, today:'晋代的陶渊明只喜爱菊花。', en:'In the Jin dynasty, Tao Yuanming loved the chrysanthemum above all.', notes:[ {w:'独', py:'dú', cn:'只、唯独', en:'only; alone'} ] },
-      { zh:'自李唐来，世人甚爱牡丹。', py:'zì lǐ táng lái shì rén shèn ài mǔ dān', cats:{0:'aux',1:'place',2:'place'}, today:'从李氏唐朝以来，世上的人都很喜爱牡丹。', en:'Ever since the Tang, the world has been greatly enamoured of the peony.', notes:[ {w:'李唐', py:'lǐ táng', cn:'唐朝（皇室姓李，故称）', en:'the Tang (its imperial house surnamed Li)'}, {w:'牡丹', py:'mǔ dān', reading:'phrase', cn:'花名，两字一组连读', en:'peony — read as one unit'} ] },
+      { zh:'晋陶渊明独爱菊。', py:'jìn táo yuān míng dú ài jú', cats:{0:'place',1:'name',2:'name',3:'name',4:'aux'}, allusion:{ title:'陶渊明 · 采菊东篱', cn:'陶渊明是东晋诗人，辞官归隐田园，名句「采菊东篱下，悠然见南山」传诵千古。菊花从此成为隐士、高洁的象征。作者借他点出「菊—隐者」的对应。', en:'Tao Yuanming, the Eastern-Jin poet, quit office for a hermit’s life — “plucking chrysanthemums by the eastern hedge, I gaze at the southern hills.” Ever after, the flower stood for the recluse, the pairing Zhou draws on here.' }, today:'晋代的陶渊明只喜爱菊花。', en:'In the Jin dynasty, Tao Yuanming loved the chrysanthemum above all.', notes:[ {w:'独', py:'dú', cn:'只、唯独', en:'only; alone'} ] },
+      { zh:'自李唐来，世人甚爱牡丹。', py:'zì lǐ táng lái shì rén shèn ài mǔ dān', cats:{0:'aux',1:'place',2:'place'}, allusion:{ title:'唐人 · 尚牡丹', cn:'唐代盛行赏牡丹，京城长安富贵人家以名贵牡丹一掷千金，「花开时节动京城」。牡丹遂成富贵荣华的象征。作者借此衬出世人追名逐利、慕求荣华的风气。', en:'Tang society was mad for the peony — in the capital Chang’an a single prize plant could change hands for a fortune, and “when it bloomed it stirred the whole city.” So the flower came to stand for wealth and rank, the worldly craving Zhou sets against the lotus.' }, today:'从李氏唐朝以来，世上的人都很喜爱牡丹。', en:'Ever since the Tang, the world has been greatly enamoured of the peony.', notes:[ {w:'李唐', py:'lǐ táng', cn:'唐朝（皇室姓李，故称）', en:'the Tang (its imperial house surnamed Li)'}, {w:'牡丹', py:'mǔ dān', reading:'phrase', cn:'花名，两字一组连读', en:'peony — read as one unit'} ] },
       { zh:'予独爱莲之出淤泥而不染，濯清涟而不妖，', py:'yú dú ài lián zhī chū yū ní ér bù rǎn zhuó qīng lián ér bù yāo', cats:{0:'pron',1:'aux',4:'aux',8:'aux',14:'aux'}, idiom:{ zh:'出淤泥而不染', py:'chū yū ní ér bù rǎn', en:'to rise untainted from the mud — to keep one’s integrity in corrupt surroundings.' }, today:'我却唯独喜爱莲——它从淤泥里长出却不被沾染，在清水里洗过却不显妖艳，', en:'But I, for my part, love the lotus alone: how it rises from the mud yet takes no stain, bathes in clear ripples yet flaunts no charm,', notes:[ {w:'予', py:'yú', reading:'duo', cn:'我。作「我」讲时读 yú，不读 yǔ（多音字）', en:'I / me — read yú in this sense, not yǔ'}, {w:'之', py:'zhī', cn:'用在主谓之间，取消独立性，不译', en:'nominalising particle, untranslated'}, {w:'濯', py:'zhuó', reading:'rare', cn:'洗（生僻字，读 zhuó）', en:'to wash (rare, read zhuó)'}, {w:'妖', py:'yāo', cn:'妖艳', en:'seductive; garish'} ] },
       { zh:'中通外直，不蔓不枝，', py:'zhōng tōng wài zhí bù màn bù zhī', cats:{5:'flex',7:'flex'}, today:'茎内部贯通，外形笔直，不生藤蔓，不长枝节，', en:'hollow within and straight without, neither trailing in runners nor branching into twigs,', notes:[ {w:'蔓', py:'màn', reading:'duo', cn:'生藤蔓（名词作动词）。此处读 màn，不读 wàn/mán', en:'to put out runners — read màn here, not wàn/mán'}, {w:'枝', py:'zhī', cn:'长枝节（名词用作动词）', en:'to put out branches — noun as verb'} ] },
       { zh:'香远益清，亭亭净植，可远观而不可亵玩焉。', py:'xiāng yuǎn yì qīng tíng tíng jìng zhí kě yuǎn guān ér bù kě xiè wàn yān', cats:{2:'aux',11:'aux',16:'aux'}, today:'香气越远越清芬，洁净地挺立着，只能远远观赏，却不能轻慢地玩弄。', en:'its fragrance the purer for carrying far, standing tall and immaculate — to be admired from a distance, never toyed with up close.', notes:[ {w:'益', py:'yì', cn:'更加', en:'the more'}, {w:'亭亭', py:'tíng tíng', cn:'高耸挺立的样子', en:'erect and graceful'}, {w:'亵玩', py:'xiè wàn', reading:'rare', cn:'轻慢地玩弄（亵为生僻字，读 xiè）', en:'to handle irreverently (亵, rare, read xiè)'}, {w:'焉', py:'yān', cn:'句末语气词', en:'a final particle'} ] },
@@ -136,6 +136,124 @@ const READING = {
   loan:   { label:'通假 loan',    color:'#B23A2B' },
   phrase: { label:'连读 atomic',  color:'#8A7F6B' }
 };
+
+/* ──────────────────  GLOSSARY · DYNASTIES (beginner tooltips)  ─────────────
+ * Plain-language definitions for the terminology and reign-dates the texts
+ * lean on.  Surfaced as tap / hover popovers anchored to the term itself —
+ * never a separate page, so the reader never loses their place (§feedback). */
+const TERMS = {
+  // —— literary forms & devices ——
+  '铭':{py:'míng',cn:'刻在器物或碑石上的文字，多用韵语，用来自警或颂德。',en:'an inscription cut into stone or bronze — usually rhymed — to caution oneself or praise virtue.'},
+  '说':{py:'shuō',cn:'古代一种论说文体，借一事一物来发表见解、说明道理。',en:'a classical essay form that argues a point through a single thing or event.'},
+  '骈句':{py:'pián jù',cn:'两两相对、字数相等、结构相称的句子，是骈文的基本单位。',en:'parallel couplets — paired lines of equal length and matching structure.'},
+  '押韵':{py:'yā yùn',cn:'句末用韵母相同或相近的字，使诵读时声音回环和谐。',en:'rhyme — ending lines on like-sounding syllables so the piece chimes when read aloud.'},
+  '对仗':{py:'duì zhàng',cn:'上下句词性相对、意义相关或相反，形成整齐的对偶。',en:'antithetical parallelism — matching the parts of speech and sense of two lines.'},
+  '托物言志':{py:'tuō wù yán zhì',cn:'借描写某一事物，来寄托、表达作者的志向或情操。',en:'lodging one’s ideals in an object — speaking of a thing to speak of oneself.'},
+  '借物喻人':{py:'jiè wù yù rén',cn:'用一种事物来比喻、象征某一类人。',en:'figuring a kind of person through a thing.'},
+  '安贫乐道':{py:'ān pín lè dào',cn:'安于清贫的生活，以坚守信念、原则为乐。',en:'content in poverty, taking joy in holding to one’s principles.'},
+  '起兴':{py:'qǐ xìng',cn:'先说别的事物，用来引出要写的主题；《诗经》常用的手法。',en:'the xìng opening — beginning with one image to lead into the true subject.'},
+  '典故':{py:'diǎn gù',cn:'引用古书里的故事或词句，用来含蓄地表情达意。',en:'an allusion — a story or phrase from an older text, used to say something obliquely.'},
+  '词类活用':{py:'cí lèi huó yòng',cn:'文言中一个词临时改变词性来用，如名词用作动词。',en:'word-class shift — a word used, for the moment, as a different part of speech.'},
+  '名词用作动词':{py:'míng cí zuò dòng cí',cn:'名词临时当动词用，是词类活用的一种，如「名」＝出名。',en:'a noun pressed into service as a verb — one kind of word-class shift (名 = “to become famous”).'},
+  '名词作动词':{py:'míng cí zuò dòng cí',cn:'名词临时当动词用，是词类活用的一种。',en:'a noun pressed into service as a verb — one kind of word-class shift.'},
+  '使动用法':{py:'shǐ dòng yòng fǎ',cn:'谓语表示「使宾语怎么样」，如「劳形」＝「使身体劳累」。',en:'causative use — the verb means “make the object do / become” (劳形 = “weary the body”).'},
+  '宾语前置':{py:'bīn yǔ qián zhì',cn:'文言里把宾语提到动词前面，如「何陋之有」＝「有何陋」。',en:'object-fronting — the object moved ahead of the verb (何陋之有 = 有何陋).'},
+  '判断句':{py:'pàn duàn jù',cn:'表示「甲是乙」的句子，文言常用「……者……也」。',en:'a predication “A is B,” classically framed as …者…也.'},
+  // —— reading-accuracy terms (explain the note chips) ——
+  '多音字':{py:'duō yīn zì',cn:'一个字有几种读音，意思常随读音不同，要看上下文定音。',en:'a multi-reading character — its sound, and often its sense, depends on context.'},
+  '生僻字':{py:'shēng pì zì',cn:'不常见、容易读错的字。',en:'a rare, easily-mispronounced character.'},
+  '通假字':{py:'tōng jiǎ zì',cn:'古人借用音同或音近的字代替本字，如「蕃」通「繁」。',en:'a loan graph — the text borrows a like-sounding character for another (蕃 stands in for 繁).'},
+  '连读':{py:'lián dú',cn:'两字一组、意义不可拆开的词，要连在一起读。',en:'read as one unit — a two-character word that should not be split.'},
+  // —— dynasties (reign dates + a one-line placement) ——
+  '唐':{py:'Táng',span:'618–907',cn:'中国历史上最强盛、文化最繁荣的朝代之一。',en:'one of China’s most powerful and culturally brilliant dynasties.'},
+  '李唐':{py:'Lǐ Táng',span:'618–907',cn:'即唐朝；因皇室姓李，故又称「李唐」。',en:'the Tang — the “house of Li,” after its imperial surname.'},
+  '北宋':{py:'Běi Sòng',span:'960–1127',cn:'宋朝前期，建都汴京（今开封），文治极盛。',en:'the first half of the Song, capital at Bianjing (Kaifeng); a high point of scholar-culture.'},
+  '战国':{py:'Zhàn Guó',span:'前475–前221 BCE',cn:'诸侯争雄、百家争鸣的时代。',en:'the Warring States — rival kingdoms and a hundred schools of thought.'},
+  '西汉':{py:'Xī Hàn',span:'前202–公元8 · 202 BCE–8 CE',cn:'汉朝前期，建都长安。',en:'the Western Han, capital at Chang’an.'},
+  '晋':{py:'Jìn',span:'266–420',cn:'汉之后的王朝，分西晋与东晋。',en:'the Jin, after the Han; later split into Western and Eastern Jin.'}
+};
+/* note.reading flag → glossary key (so a hazard chip can explain itself). */
+const READING_TERM = { duo:'多音字', rare:'生僻字', loan:'通假字', phrase:'连读' };
+/* Multi-char terms safe to auto-scan inside prose.  Single chars (铭/说/唐)
+ * are glossed explicitly instead, so we never wrap them mid-word. */
+const AUTO_KEYS = ['名词用作动词','名词作动词','托物言志','借物喻人','安贫乐道',
+  '词类活用','使动用法','宾语前置','判断句','骈句','押韵','对仗','起兴','典故',
+  '北宋','战国','西汉'].sort((a,b)=>b.length-a.length);
+
+/* ──────────────────  TERM RENDER + POPOVER ENGINE  ────────────────── */
+const TERM_STYLE='border-bottom:1px dashed #C2A98F;cursor:help;-webkit-tap-highlight-color:transparent;';
+function gloss(label,key){
+  if(!TERMS[key]) return label;
+  return `<span class="wy-term" data-gloss="${esc(key)}" style="${TERM_STYLE}">${label}</span>`;
+}
+/* Wrap known multi-char terms inside an ALREADY-escaped string.  The scanner
+ * advances past whatever it inserts, so it never re-matches its own markup. */
+function autoGloss(s){
+  let out='', i=0;
+  outer: while(i<s.length){
+    for(const k of AUTO_KEYS){
+      if(s.startsWith(k,i)){ out+=gloss(esc(k),k); i+=k.length; continue outer; }
+    }
+    out+=s[i++];
+  }
+  return out;
+}
+/* Dynasty label with inline pinyin (opt) + a tooltip carrying the reign dates. */
+function dyn(name,opts){
+  const t=TERMS[name];
+  const label=(opts&&opts.py&&t)
+    ? `${esc(name)} <span style="font-weight:600;opacity:.72;">${esc(t.py)}</span>`
+    : esc(name);
+  return gloss(label,name);
+}
+
+let popEl=null;
+function popNode(){
+  if(!popEl){
+    popEl=document.createElement('div');
+    popEl.id='wy-pop';
+    popEl.style.cssText='position:fixed;z-index:90;max-width:min(340px,92vw);background:#FBF6EC;'
+      +'border:1px solid #E2D8C2;border-radius:14px;box-shadow:0 26px 54px -22px rgba(34,29,22,.5);'
+      +'padding:15px 17px;display:none;animation:wyIn .16s ease;';
+    popEl.addEventListener('click',e=>e.stopPropagation());
+    document.body.appendChild(popEl);
+  }
+  return popEl;
+}
+function hidePop(){ if(popEl) popEl.style.display='none'; }
+function showPopAt(anchor,html){
+  const p=popNode(); p.innerHTML=html; p.style.display='block';
+  const r=anchor.getBoundingClientRect(), pw=p.offsetWidth, ph=p.offsetHeight, gap=8, m=10;
+  let left=Math.max(m, Math.min(r.left+r.width/2-pw/2, window.innerWidth-pw-m));
+  let top=r.bottom+gap;
+  if(top+ph>window.innerHeight-m) top=Math.max(m, r.top-gap-ph);
+  p.style.left=left+'px'; p.style.top=top+'px';
+}
+function termHtml(key){
+  const t=TERMS[key]; if(!t) return '';
+  const span=t.span?`<span style="font-size:11.5px;font-weight:700;color:#fff;background:#B23A2B;border-radius:6px;padding:2px 8px;">${esc(t.span)}</span>`:'';
+  return `<div style="display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;margin-bottom:9px;">
+      <span style="font-family:'Noto Serif SC',serif;font-weight:600;font-size:20px;color:#221D16;">${esc(key)}</span>
+      <span style="font-size:13px;font-weight:600;color:#B0857A;">${esc(t.py)}</span>${span}
+    </div>
+    <p style="font-family:'Noto Serif SC',serif;font-size:14.5px;line-height:1.7;color:#3A332A;margin:0;">${esc(t.cn)}</p>
+    <p style="font-family:'Newsreader',serif;font-size:14.5px;line-height:1.55;color:#7A6F5C;margin:8px 0 0;">${esc(t.en)}</p>`;
+}
+function legendHtml(){
+  const role=Object.values(CATS).map(d=>`<div style="display:flex;align-items:center;gap:9px;">
+      <i style="width:12px;height:12px;border-radius:3px;background:${d.color};flex-shrink:0;"></i>
+      <span style="font-size:13px;color:#3A332A;"><b style="font-family:'Noto Serif SC',serif;">${d.tag}</b> ${esc(d.cn)} · <span style="color:#8A7F6B;">${esc(d.en)}</span></span>
+    </div>`).join('');
+  const read=Object.values(READING).map(d=>`<div style="display:flex;align-items:center;gap:9px;">
+      <i style="width:12px;height:12px;border-radius:3px;background:${d.color};flex-shrink:0;"></i>
+      <span style="font-size:13px;color:#3A332A;">${esc(d.label)}</span>
+    </div>`).join('');
+  return `<div style="margin-bottom:7px;font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;font-weight:800;color:#B23A2B;">字色 · grammar role</div>
+    <div style="display:flex;flex-direction:column;gap:8px;">${role}</div>
+    <div style="margin:15px 0 7px;font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;font-weight:800;color:#2C6E63;">注记 · reading hazard</div>
+    <div style="display:flex;flex-direction:column;gap:8px;">${read}</div>
+    <p style="font-size:12px;color:#A99C84;margin:13px 0 0;font-family:'Newsreader',serif;font-style:italic;">字的颜色＝语法角色；注记是读音提示，不改字色。Colour marks the grammar role; hazards are reading notes, not colours.</p>`;
+}
 
 /* ────────────────────────────  STATE  ──────────────────────────── */
 const state = { screen:'home', textId:'louver', mode:'study', sel:0, revealed:{}, pyOn:true };
@@ -225,7 +343,7 @@ function topBar(){
     ? `<button data-action="goHome" class="wy-back" style="display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:14px;color:#5B5142;padding:8px 15px 8px 11px;border:1px solid #E2D8C2;background:#FBF6EC;border-radius:999px;cursor:pointer;"><span style="font-size:17px;line-height:1;transform:translateY(-1px);">←</span> 文库</button>`
     : `<div style="display:flex;align-items:center;gap:11px;"><span style="width:34px;height:34px;border-radius:9px;background:#B23A2B;color:#fff;display:inline-flex;align-items:center;justify-content:center;font-family:'Noto Serif SC',serif;font-weight:700;font-size:19px;box-shadow:0 10px 20px -10px rgba(178,58,43,.7);">文</span><span style="font-family:'Noto Serif SC',serif;font-weight:600;font-size:18px;letter-spacing:.04em;">文言</span></div>`;
   const mid = isReader
-    ? `<span style="font-family:'Noto Serif SC',serif;font-weight:600;font-size:16px;color:#221D16;">《${esc(t.title)}》<span style="color:#938976;font-weight:400;font-size:13.5px;margin-left:10px;">${esc(t.dynasty)} · ${esc(t.author)} · ${esc(t.genre)} · ${esc(t.count)} 字</span></span><span style="flex:1;"></span>`
+    ? `<span style="font-family:'Noto Serif SC',serif;font-weight:600;font-size:16px;color:#221D16;">《${esc(t.title)}》<span style="color:#938976;font-weight:400;font-size:13.5px;margin-left:10px;">${dyn(t.dynasty,{py:1})} · ${esc(t.author)} · ${gloss(esc(t.genre),t.genre)} · ${esc(t.count)} 字</span></span><span style="flex:1;"></span>`
     : `<span style="flex:1;"></span>`;
   return `<div style="display:flex;align-items:center;gap:16px;padding:0 clamp(16px,3vw,34px);height:60px;flex-shrink:0;background:rgba(251,246,236,.9);backdrop-filter:saturate(150%) blur(12px);-webkit-backdrop-filter:saturate(150%) blur(12px);border-bottom:1px solid #E2D8C2;">
     ${left}<span style="flex:1;"></span>${mid}
@@ -256,16 +374,16 @@ function homeScreen(){
           <div style="width:42px;height:42px;border-radius:8px;background:#B23A2B;color:#fff;display:flex;align-items:center;justify-content:center;font-family:'Noto Serif SC',serif;font-weight:700;font-size:24px;${SEAL_GRAD}">${esc(f.seal)}</div>
         </div>
         <div style="flex:1;min-width:0;display:flex;flex-direction:column;">
-          <div style="font-size:12.5px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#B23A2B;">${esc(f.dynasty)} · ${esc(f.author)}</div>
+          <div style="font-size:12.5px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#B23A2B;">${dyn(f.dynasty,{py:1})} · ${esc(f.author)}</div>
           <div style="display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin:6px 0 10px;">
             <span style="font-family:'Noto Serif SC',serif;font-weight:600;font-size:clamp(26px,3.4vw,36px);letter-spacing:.02em;">${esc(f.title)}</span>
             <span style="font-family:'Newsreader',serif;font-style:italic;font-size:clamp(16px,1.9vw,20px);color:#938976;">${esc(f.titleEn)}</span>
           </div>
           <p style="font-family:'Newsreader',serif;font-size:clamp(16px,1.9vw,19px);line-height:1.55;color:#5B5142;margin:0 0 16px;max-width:48ch;">The room is plain; the man who lives in it is not. Eighty-one rhymed characters that turn a cramped exile's lodging into a statement of character.</p>
           <div style="display:flex;gap:9px;flex-wrap:wrap;margin-top:auto;align-items:center;">
-            <span style="font-size:12px;font-weight:600;color:#7A6F5C;background:#F0E8D6;border:1px solid #E6DCC6;border-radius:999px;padding:5px 12px;">铭 · inscription</span>
+            <span style="font-size:12px;font-weight:600;color:#7A6F5C;background:#F0E8D6;border:1px solid #E6DCC6;border-radius:999px;padding:5px 12px;">${gloss('铭','铭')} · inscription</span>
             <span style="font-size:12px;font-weight:600;color:#7A6F5C;background:#F0E8D6;border:1px solid #E6DCC6;border-radius:999px;padding:5px 12px;">81 字</span>
-            <span style="font-size:12px;font-weight:600;color:#7A6F5C;background:#F0E8D6;border:1px solid #E6DCC6;border-radius:999px;padding:5px 12px;">骈句 · 押韵</span>
+            <span style="font-size:12px;font-weight:600;color:#7A6F5C;background:#F0E8D6;border:1px solid #E6DCC6;border-radius:999px;padding:5px 12px;">${gloss('骈句','骈句')} · ${gloss('押韵','押韵')}</span>
             <span style="flex:1;"></span>
             <span style="font-weight:700;font-size:14px;color:#B23A2B;">开始精读 →</span>
           </div>
@@ -287,7 +405,7 @@ function liveCard(id,d){
     <div style="display:flex;align-items:flex-start;gap:15px;">
       <div style="flex-shrink:0;width:46px;height:46px;border-radius:9px;background:#B23A2B;color:#fff;display:flex;align-items:center;justify-content:center;font-family:'Noto Serif SC',serif;font-weight:700;font-size:25px;${SEAL_GRAD}">${esc(d.seal)}</div>
       <div style="flex:1;min-width:0;">
-        <div style="font-size:11.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#B23A2B;">${esc(d.dynasty)} · ${esc(d.author)}</div>
+        <div style="font-size:11.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#B23A2B;">${dyn(d.dynasty,{py:1})} · ${esc(d.author)}</div>
         <div style="display:flex;align-items:baseline;gap:9px;flex-wrap:wrap;margin-top:4px;">
           <span style="font-family:'Noto Serif SC',serif;font-weight:600;font-size:22px;color:#221D16;">${esc(d.title)}</span>
           <span style="font-family:'Newsreader',serif;font-style:italic;font-size:14.5px;color:#A99C84;">${esc(d.titleEn)}</span>
@@ -297,7 +415,7 @@ function liveCard(id,d){
     <p style="font-family:'Newsreader',serif;font-size:15.5px;line-height:1.5;color:#5B5142;margin:14px 0 0;flex:1;">${hook}</p>
     <div style="display:flex;align-items:center;gap:8px;margin-top:14px;flex-wrap:wrap;">
       <span style="font-family:'Noto Serif SC',serif;font-size:12.5px;font-weight:600;color:#B23A2B;background:rgba(178,58,43,.09);border:1px solid #E9CFC8;border-radius:999px;padding:4px 11px;">成语 · 出淤泥而不染</span>
-      <span style="font-size:11.5px;font-weight:600;color:#938976;">${esc(d.genre)} · ${esc(d.count)} 字</span>
+      <span style="font-size:11.5px;font-weight:600;color:#938976;">${gloss(esc(d.genre),d.genre)} · ${esc(d.count)} 字</span>
       <span style="flex:1;"></span>
       <span style="font-weight:700;font-size:13.5px;color:#B23A2B;">进入 →</span>
     </div>
@@ -308,7 +426,7 @@ function lockedCard(x){
     <div style="display:flex;align-items:flex-start;gap:15px;">
       <div style="flex-shrink:0;width:46px;height:46px;border-radius:9px;background:#E4DAC4;color:#A99C84;display:flex;align-items:center;justify-content:center;font-family:'Noto Serif SC',serif;font-weight:700;font-size:25px;">${esc(x.seal)}</div>
       <div style="flex:1;min-width:0;">
-        <div style="font-size:11.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#A99C84;">${esc(x.meta)}</div>
+        <div style="font-size:11.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#A99C84;">${autoGloss(esc(x.meta))}</div>
         <div style="display:flex;align-items:baseline;gap:9px;flex-wrap:wrap;margin-top:4px;">
           <span style="font-family:'Noto Serif SC',serif;font-weight:600;font-size:22px;color:#221D16;">${esc(x.title)}</span>
           <span style="font-family:'Newsreader',serif;font-style:italic;font-size:14.5px;color:#A99C84;">${esc(x.titleEn)}</span>
@@ -340,6 +458,7 @@ function readerScreen(){
     </div>
     <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;">
       <button data-action="togglePy" style="${styPy}">拼音<span style="opacity:.62;font-weight:600;margin-left:6px;">${showPy?'On':'Off'}</span></button>
+      <button data-legend="1" style="${segBase}background:transparent;color:#6E6452;border:1px solid #DCD0B8;">图例<span style="opacity:.62;font-weight:500;margin-left:6px;">Legend</span></button>
       <div style="display:inline-flex;background:#EAE0CB;border:1px solid #E2D8C2;border-radius:999px;padding:3px;gap:2px;">
         <button data-action="mode:read"   style="${seg(mode==='read')}">通读<span style="opacity:.65;font-weight:500;margin-left:5px;">Read</span></button>
         <button data-action="mode:study"  style="${seg(mode==='study')}">精读<span style="opacity:.65;font-weight:500;margin-left:5px;">Study</span></button>
@@ -393,21 +512,22 @@ function readerScreen(){
   </div>`;
 }
 
-function ctxCard(tag, cn, en){
+/* cn arrives ALREADY escaped + glossed (so terms in the prose are tappable). */
+function ctxCard(tag, cnHtml, en){
   return `<div style="background:#FBF6EC;border:1px solid #E2D8C2;border-radius:16px;padding:clamp(20px,2.4vw,28px);">
     <span style="display:inline-block;font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;font-weight:800;color:#B23A2B;background:rgba(178,58,43,.1);border-radius:7px;padding:3px 9px;">${tag}</span>
-    <p style="font-family:'Noto Serif SC',serif;font-size:16px;line-height:1.85;color:#3A332A;margin:14px 0 0;">${esc(cn)}</p>
+    <p style="font-family:'Noto Serif SC',serif;font-size:16px;line-height:1.85;color:#3A332A;margin:14px 0 0;">${cnHtml}</p>
     <p style="font-family:'Newsreader',serif;font-size:16.5px;line-height:1.62;color:#6B6256;margin:12px 0 0;">${esc(en)}</p>`;
 }
 function contextPanel(t){
-  return ctxCard('题解 · The Piece', t.introCn, t.introEn)+`</div>`
-       + ctxCard('主旨 · Heart of it', t.themeCn, t.themeEn)+`</div>`
-       + ctxCard('读法 · How it works', t.craftCn, t.craftEn)
+  return ctxCard('题解 · The Piece', autoGloss(esc(t.introCn)), t.introEn)+`</div>`
+       + ctxCard('主旨 · Heart of it', autoGloss(esc(t.themeCn)), t.themeEn)+`</div>`
+       + ctxCard('读法 · How it works', autoGloss(esc(t.craftCn)), t.craftEn)
        + `<div style="display:flex;align-items:center;gap:10px;margin-top:18px;padding-top:16px;border-top:1px solid #EDE3CE;">
             <span style="width:38px;height:38px;border-radius:8px;background:#EFE7D6;border:1px solid #E2D8C2;color:#B23A2B;display:flex;align-items:center;justify-content:center;font-family:'Noto Serif SC',serif;font-weight:700;font-size:20px;">${esc(t.seal)}</span>
             <div style="line-height:1.3;">
               <div style="font-family:'Noto Serif SC',serif;font-weight:600;font-size:15px;">${esc(t.author)} <span style="color:#A99C84;font-weight:400;font-size:13px;">${esc(t.dates)}</span></div>
-              <div style="font-size:12.5px;color:#938976;">${esc(t.authorPy||'')} · ${esc(t.dynasty)} · ${esc(t.genre)}</div>
+              <div style="font-size:12.5px;color:#938976;">${esc(t.authorPy||'')} · ${dyn(t.dynasty,{py:1})} · ${gloss(esc(t.genre),t.genre)}</div>
             </div>
             <span style="flex:1;"></span>
             <span style="font-size:12.5px;color:#B23A2B;font-weight:600;font-family:'Newsreader',serif;font-style:italic;">tap a line to hear it ◔</span>
@@ -430,16 +550,27 @@ function studyPanel(t, showPy){
       <p style="font-family:'Newsreader',serif;font-size:16.5px;line-height:1.6;color:#6B5A38;margin:10px 0 0;">${esc(cl.idiom.en)}</p>
     </div>` : '';
 
+  const allu = cl.allusion ? `<div style="background:#F3EEF7;border:1px solid #DED2E6;border-radius:16px;padding:clamp(18px,2.2vw,24px);">
+      <div style="display:flex;align-items:center;gap:9px;margin-bottom:12px;">
+        <span style="width:24px;height:24px;border-radius:6px;background:#6C5AA6;color:#fff;display:inline-flex;align-items:center;justify-content:center;font-family:'Noto Serif SC',serif;font-weight:600;font-size:13px;">典</span>
+        <span style="font-size:11px;letter-spacing:.12em;text-transform:uppercase;font-weight:700;color:#6C5AA6;">${gloss('典故','典故')} · the story behind the line</span>
+      </div>
+      ${cl.allusion.title?`<div style="font-family:'Noto Serif SC',serif;font-weight:600;font-size:18px;color:#3A2F4A;margin-bottom:9px;">${esc(cl.allusion.title)}</div>`:''}
+      <p style="font-family:'Noto Serif SC',serif;font-size:15.5px;line-height:1.8;color:#3A332A;margin:0;">${esc(cl.allusion.cn)}</p>
+      <p style="font-family:'Newsreader',serif;font-size:15.5px;line-height:1.6;color:#6B6256;margin:10px 0 0;">${esc(cl.allusion.en)}</p>
+    </div>` : '';
+
   const notes=(cl.notes||[]).map(n=>{
+    const rk = n.reading && READING_TERM[n.reading];
     const rd = n.reading && READING[n.reading]
-      ? `<span style="display:inline-block;font-size:10px;font-weight:700;letter-spacing:.04em;color:#fff;background:${READING[n.reading].color};border-radius:5px;padding:2px 7px;margin-left:8px;vertical-align:middle;">${READING[n.reading].label}</span>` : '';
+      ? `<span class="wy-term" data-gloss="${esc(rk)}" style="display:inline-block;font-size:10px;font-weight:700;letter-spacing:.04em;color:#fff;background:${READING[n.reading].color};border-radius:5px;padding:2px 7px;margin-left:8px;vertical-align:middle;cursor:help;-webkit-tap-highlight-color:transparent;">${READING[n.reading].label}</span>` : '';
     return `<div style="display:flex;gap:15px;padding:13px 0;border-top:1px solid #EDE3CE;align-items:baseline;">
       <div style="flex-shrink:0;min-width:2.4em;text-align:center;">
         <div style="font-family:'Noto Serif SC',serif;font-weight:600;font-size:22px;color:#B23A2B;line-height:1.1;">${esc(n.w)}</div>
         <div style="font-size:11px;font-weight:600;color:#B0857A;margin-top:3px;">${esc(n.py)}</div>
       </div>
       <div style="flex:1;min-width:0;">
-        <div style="font-family:'Noto Serif SC',serif;font-size:15px;line-height:1.6;color:#3A332A;">${esc(n.cn)}${rd}</div>
+        <div style="font-family:'Noto Serif SC',serif;font-size:15px;line-height:1.6;color:#3A332A;">${autoGloss(esc(n.cn))}${rd}</div>
         <div style="font-family:'Newsreader',serif;font-style:italic;font-size:15px;line-height:1.5;color:#8A7F6B;margin-top:2px;">${esc(n.en)}</div>
       </div>
     </div>`;
@@ -454,6 +585,7 @@ function studyPanel(t, showPy){
       ${legend?`<div style="display:flex;flex-wrap:wrap;gap:13px;margin-top:18px;padding-top:14px;border-top:1px solid #EDE3CE;">${legend}</div>`:''}
     </div>
     ${idiom}
+    ${allu}
     <div style="background:#FBF6EC;border:1px solid #E2D8C2;border-radius:16px;padding:clamp(18px,2.2vw,24px);">
       <div style="display:flex;align-items:center;gap:9px;margin-bottom:10px;">
         <span style="width:24px;height:24px;border-radius:6px;background:#B23A2B;color:#fff;display:inline-flex;align-items:center;justify-content:center;font-family:'Noto Serif SC',serif;font-weight:600;font-size:13px;">今</span>
@@ -512,14 +644,19 @@ function recitePanel(t){
 
 /* ────────────────────────────  MOUNT  ──────────────────────────── */
 function render(){
+  hidePop();
   const body = state.screen==='home' ? homeScreen() : readerScreen();
   document.getElementById('app').innerHTML =
     `<div style="height:100vh;display:flex;flex-direction:column;overflow:hidden;background:#EFE7D6;">${topBar()}${body}</div>`;
 }
 
 document.getElementById('app').addEventListener('click', e=>{
+  const term=e.target.closest('[data-gloss]');
+  if(term){ e.stopPropagation(); showPopAt(term, termHtml(term.getAttribute('data-gloss'))); return; }
+  const leg=e.target.closest('[data-legend]');
+  if(leg){ e.stopPropagation(); showPopAt(leg, legendHtml()); return; }
   const el=e.target.closest('[data-action]');
-  if(!el) return;
+  if(!el){ hidePop(); return; }
   const a=el.getAttribute('data-action');
   if(a==='goHome') goHome();
   else if(a==='togglePy') togglePy();
@@ -530,6 +667,12 @@ document.getElementById('app').addEventListener('click', e=>{
   else if(a.startsWith('mode:')) setMode(a.slice(5));
   else if(a.startsWith('clause:')) clickClause(parseInt(a.slice(7),10));
 });
+
+/* Dismiss tooltips on any outside click, scroll, resize or Escape. */
+document.addEventListener('click', hidePop);
+window.addEventListener('scroll', hidePop, true);
+window.addEventListener('resize', hidePop);
+document.addEventListener('keydown', e=>{ if(e.key==='Escape') hidePop(); });
 
 /* Dev guard for the alignment contract: one syllable per Han glyph (§3). */
 function validate(){
