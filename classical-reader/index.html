@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
   <meta name="theme-color" content="#B23A2B" />
   <title>文言 · Classical Reader · Casey Chinese School</title>
-  <meta name="description" content="Close-read classical Chinese (文言文): bare vertical columns, tap for pinyin, a plain modern paraphrase, an idiomatic English reading, the 字词 that shift, and the 成语 born in the line." />
+  <meta name="description" content="Close-read classical Chinese (文言文): bare vertical columns, tap for pinyin, a plain modern paraphrase, an English reading, a word-by-word gloss of every character, and the 成语 and 典故 behind the line." />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -111,6 +111,37 @@ const DATA = {
   }
 };
 
+/* ────────────────────────────  PER-CHARACTER GLOSS  ────────────────────────
+ * The heart of 精读: EVERY Han character of every line, explained — meaning in
+ * context, base sense, and grammatical job — for a true beginner.  Indexed
+ * [textId][lineIndex] → array aligned 1:1 with the Han characters of `zh`
+ * (same order as the pinyin syllables).  `c` is carried for self-validation. */
+const CHARS = {
+  louver: [
+    [{c:'山',cn:'山，山岭。',en:'a mountain.'},{c:'不',cn:'不（否定词）。',en:'not.'},{c:'在',cn:'在于、取决于。',en:'lies in; depends on.'},{c:'高',cn:'高，指山的高度。',en:'height; being tall.'},{c:'有',cn:'有、存在。',en:'there is.'},{c:'仙',cn:'神仙、仙人。',en:'an immortal.'},{c:'则',cn:'就、便（连词）。',en:'then; and so.'},{c:'名',cn:'出名、有名。本是名词「名声」，这里当动词用。',en:'to become famous — the noun “fame” used as a verb.'}],
+    [{c:'水',cn:'水，江河之水。',en:'water; a river.'},{c:'不',cn:'不。',en:'not.'},{c:'在',cn:'在于。',en:'lies in.'},{c:'深',cn:'深，指水的深度。',en:'depth; being deep.'},{c:'有',cn:'有。',en:'there is.'},{c:'龙',cn:'蛟龙，古人想象中的神物。',en:'a dragon, a numinous creature.'},{c:'则',cn:'就、便。',en:'then.'},{c:'灵',cn:'显灵、有灵气。名词「灵气」当动词用。',en:'to turn numinous — the noun “spirit” used as a verb.'}],
+    [{c:'斯',cn:'这、此（指示代词）。',en:'this.'},{c:'是',cn:'是。',en:'is.'},{c:'陋',cn:'简陋、狭小。',en:'humble; cramped.'},{c:'室',cn:'屋子、房间。',en:'a room.'},{c:'惟',cn:'只、仅。',en:'only.'},{c:'吾',cn:'我、我的。',en:'I; my.'},{c:'德',cn:'品德、德行。',en:'virtue; moral character.'},{c:'馨',cn:'香气远播，这里比喻德行美好。是个不常见的字，读 xīn。',en:'a fragrance that carries far — here a figure for fine virtue. An uncommon character, read xīn.'}],
+    [{c:'苔',cn:'青苔、苔藓。',en:'moss.'},{c:'痕',cn:'痕迹；「苔痕」即苔藓蔓延的痕迹。',en:'a trace; 苔痕 = the creeping marks of moss.'},{c:'上',cn:'蔓延而上。本是方位词，这里当动词用。',en:'to creep up — a position word used as a verb.'},{c:'阶',cn:'台阶。',en:'the stone steps.'},{c:'绿',cn:'绿色、一片碧绿。',en:'green.'},{c:'草',cn:'青草。',en:'grass.'},{c:'色',cn:'颜色；「草色」即草的青翠。',en:'colour; 草色 = the green of the grass.'},{c:'入',cn:'映入、透入。',en:'to enter; to seep in.'},{c:'帘',cn:'门帘、窗帘。',en:'the blind; the curtain.'},{c:'青',cn:'青绿色。',en:'green-blue; verdant.'}],
+    [{c:'谈',cn:'谈话、交谈。',en:'to talk.'},{c:'笑',cn:'说笑、欢笑。',en:'to laugh.'},{c:'有',cn:'有。',en:'there are.'},{c:'鸿',cn:'大；「鸿儒」之「鸿」形容学问大。',en:'great; in 鸿儒 it means “of great learning.”'},{c:'儒',cn:'读书人、学者。「鸿儒」连起来即学识渊博的人。',en:'a scholar; 鸿儒 together = a deeply learned man.'},{c:'往',cn:'去。',en:'to go.'},{c:'来',cn:'来；「往来」指交往的人。',en:'to come; 往来 = those who come and go.'},{c:'无',cn:'没有。',en:'there is no.'},{c:'白',cn:'白；「白丁」之「白」指没有功名。',en:'plain; in 白丁 it means “without rank.”'},{c:'丁',cn:'成年男子、平民。「白丁」即没学问的平民。',en:'a commoner; 白丁 = an unlettered common man.'}],
+    [{c:'可',cn:'可以。',en:'can; may.'},{c:'以',cn:'「可以」连用，即能够。',en:'with 可 forms 可以, “to be able to.”'},{c:'调',cn:'弹奏、调弄（琴）。这个字有两个读音，这里读 tiáo，不读 diào。',en:'to play / tune (a zither). The character has two readings; here tiáo, not diào.'},{c:'素',cn:'朴素、不加装饰。',en:'plain; unadorned.'},{c:'琴',cn:'古琴。',en:'a zither (qin).'},{c:'阅',cn:'阅读、看。',en:'to read.'},{c:'金',cn:'泥金；「金经」即用金粉书写的经书。',en:'gold; 金经 = sutras written in gold.'},{c:'经',cn:'经书，这里指佛经。',en:'scripture; here a Buddhist sutra.'}],
+    [{c:'无',cn:'没有。',en:'there is no.'},{c:'丝',cn:'弦乐器（如琴瑟）。',en:'stringed instruments.'},{c:'竹',cn:'管乐器（如箫笛）。「丝竹」合指音乐。',en:'wind instruments; 丝竹 = music.'},{c:'之',cn:'用在主谓之间，取消句子独立性，不必译出。',en:'a particle between subject and verb; left untranslated.'},{c:'乱',cn:'扰乱、使……烦乱。',en:'to disturb; to jar.'},{c:'耳',cn:'耳朵。',en:'the ear.'},{c:'无',cn:'没有。',en:'there is no.'},{c:'案',cn:'几案、桌子。',en:'a desk.'},{c:'牍',cn:'古代写字的木简；「案牍」指官府公文。少见的字，读 dú。',en:'writing tablets; 案牍 = official documents. An uncommon character, read dú.'},{c:'之',cn:'主谓之间，不译。',en:'nominalising particle, untranslated.'},{c:'劳',cn:'使……劳累（使……怎么样的用法）。',en:'to weary — “make (the body) toil.”'},{c:'形',cn:'形体、身体。',en:'the body.'}],
+    [{c:'南',cn:'「南阳」的首字。',en:'first character of the place-name Nanyang.'},{c:'阳',cn:'南阳，地名（今河南南阳），诸葛亮曾在此耕读。',en:'Nanyang, a place (modern Henan) where Zhuge Liang once farmed and studied.'},{c:'诸',cn:'复姓「诸葛」的首字。',en:'first character of the surname Zhuge.'},{c:'葛',cn:'「诸葛」即诸葛亮。葛此处读 gě，不读 gé。',en:'in 诸葛 (Zhuge Liang); read gě here, not gé.'},{c:'庐',cn:'草庐、简陋的房子。',en:'a thatched hut.'},{c:'西',cn:'「西蜀」之「西」，方位。',en:'“western” in 西蜀.'},{c:'蜀',cn:'蜀地，今四川一带。',en:'Shu, around modern Sichuan.'},{c:'子',cn:'「子云」首字，扬雄的字。',en:'part of “Ziyun,” Yang Xiong’s style-name.'},{c:'云',cn:'「子云」次字；扬雄字子云。',en:'second character of “Ziyun” (Yang Xiong).'},{c:'亭',cn:'亭子、小屋。',en:'a pavilion.'}],
+    [{c:'孔',cn:'孔子之姓。',en:'the surname of Confucius.'},{c:'子',cn:'对人的尊称；「孔子」即对孔丘的尊称。',en:'an honorific “Master”; 孔子 = Master Kong (Confucius).'},{c:'云',cn:'说。',en:'to say.'},{c:'何',cn:'什么（疑问代词）。',en:'what.'},{c:'陋',cn:'简陋。',en:'humble; crude.'},{c:'之',cn:'宾语前置的标志，无义，不译。',en:'a marker that fronts the object; untranslated.'},{c:'有',cn:'有；「何陋之有」即「有何陋」——有什么简陋呢。',en:'to have; 何陋之有 = 有何陋, “what crudeness is there?”'}]
+  ],
+  lotus: [
+    [{c:'水',cn:'水中。',en:'on the water.'},{c:'陆',cn:'陆地。',en:'on land.'},{c:'草',cn:'草本植物。',en:'herbs; grasses.'},{c:'木',cn:'木本植物、树。「草木」泛指植物。',en:'trees; 草木 = all plants.'},{c:'之',cn:'的（结构助词）。',en:'of (attributive).'},{c:'花',cn:'花。',en:'flowers.'},{c:'可',cn:'值得、可以。',en:'worth; able to.'},{c:'爱',cn:'喜爱。「可爱」即值得喜爱。',en:'to love; 可爱 = worth loving.'},{c:'者',cn:'……的（人或物）；「可爱者」即值得喜爱的花。',en:'the one(s) that…; 可爱者 = those worth loving.'},{c:'甚',cn:'很、非常。',en:'very.'},{c:'蕃',cn:'多、繁盛。是「繁」的借字，读 fán。',en:'many; abundant. A loan-character for 繁, read fán.'}],
+    [{c:'晋',cn:'晋代（朝代），这里指东晋。',en:'the Jin dynasty (here the Eastern Jin).'},{c:'陶',cn:'陶渊明之姓。',en:'surname of Tao Yuanming.'},{c:'渊',cn:'「渊明」之名。',en:'part of his given name, Yuanming.'},{c:'明',cn:'「渊明」之名；陶渊明是东晋著名隐士诗人。',en:'part of the name; Tao Yuanming, a famed Eastern-Jin recluse-poet.'},{c:'独',cn:'只、唯独。',en:'only; alone.'},{c:'爱',cn:'喜爱。',en:'to love.'},{c:'菊',cn:'菊花。',en:'the chrysanthemum.'}],
+    [{c:'自',cn:'从、自从。',en:'since; from.'},{c:'李',cn:'唐朝皇室姓李，故称「李唐」。',en:'the Tang house was surnamed Li, hence 李唐.'},{c:'唐',cn:'唐朝。「李唐」即唐朝。',en:'the Tang; 李唐 = the Tang dynasty.'},{c:'来',cn:'以来。「自……来」即「从……以来」。',en:'since; 自…来 = “ever since.”'},{c:'世',cn:'世间、世上。',en:'the world.'},{c:'人',cn:'人。「世人」即世上的人。',en:'people; 世人 = people of the world.'},{c:'甚',cn:'很、非常。',en:'greatly.'},{c:'爱',cn:'喜爱。',en:'to love.'},{c:'牡',cn:'「牡丹」首字。',en:'first character of “peony.”'},{c:'丹',cn:'牡丹，唐代被视为富贵之花。',en:'the peony, seen in Tang times as the flower of wealth.'}],
+    [{c:'予',cn:'我。作「我」讲时读 yú。',en:'I; me (read yú in this sense).'},{c:'独',cn:'唯独、只。',en:'only; alone.'},{c:'爱',cn:'喜爱。',en:'to love.'},{c:'莲',cn:'莲花、荷花。',en:'the lotus.'},{c:'之',cn:'用在主谓之间，取消独立性，不译。',en:'nominalising particle, untranslated.'},{c:'出',cn:'长出、生出。',en:'to emerge; to grow out of.'},{c:'淤',cn:'淤积的污泥；「淤泥」首字。',en:'silt; first character of 淤泥 (sludge).'},{c:'泥',cn:'泥；「淤泥」即水底污泥。',en:'mud; 淤泥 = sludge at the bottom.'},{c:'而',cn:'却、但（表转折）。',en:'yet; but.'},{c:'不',cn:'不。',en:'not.'},{c:'染',cn:'沾染、被污染。',en:'to be stained.'},{c:'濯',cn:'洗涤。少见的字，读 zhuó。',en:'to wash. An uncommon character, read zhuó.'},{c:'清',cn:'清澈的。',en:'clear.'},{c:'涟',cn:'水的波纹；「清涟」即清澈的水波。',en:'ripples; 清涟 = clear rippling water.'},{c:'而',cn:'却（转折）。',en:'yet.'},{c:'不',cn:'不。',en:'not.'},{c:'妖',cn:'妖艳、过分艳丽。',en:'seductive; garishly pretty.'}],
+    [{c:'中',cn:'内部、里面（指莲茎）。',en:'the inside (of the stalk).'},{c:'通',cn:'贯通、中空畅通。',en:'hollow; running through.'},{c:'外',cn:'外面、外形。',en:'the outside.'},{c:'直',cn:'笔直。',en:'straight.'},{c:'不',cn:'不。',en:'not.'},{c:'蔓',cn:'生藤蔓。名词当动词用，这里读 màn。',en:'to put out runners — a noun used as a verb, read màn.'},{c:'不',cn:'不。',en:'not.'},{c:'枝',cn:'长枝节。名词当动词用。',en:'to put out branches — a noun used as a verb.'}],
+    [{c:'香',cn:'香气。',en:'fragrance.'},{c:'远',cn:'远、传得远。',en:'far; carrying far.'},{c:'益',cn:'更加。',en:'the more.'},{c:'清',cn:'清香、清芬。',en:'pure; clean-scented.'},{c:'亭',cn:'「亭亭」叠用，形容高耸挺立。',en:'in 亭亭, “tall and erect.”'},{c:'亭',cn:'「亭亭」次字。',en:'the second 亭 of 亭亭.'},{c:'净',cn:'洁净。',en:'clean; immaculate.'},{c:'植',cn:'立、直立。',en:'to stand.'},{c:'可',cn:'可以。',en:'may; can.'},{c:'远',cn:'远远地。',en:'from afar.'},{c:'观',cn:'观赏。',en:'to admire; to view.'},{c:'而',cn:'却、但。',en:'but; yet.'},{c:'不',cn:'不。',en:'not.'},{c:'可',cn:'可以。',en:'may.'},{c:'亵',cn:'轻慢、不庄重。少见的字，读 xiè。',en:'to treat with disrespect. An uncommon character, read xiè.'},{c:'玩',cn:'玩弄。「亵玩」即轻慢地玩弄。',en:'to toy with; 亵玩 = to handle irreverently.'},{c:'焉',cn:'句末语气词，无实义。',en:'a final particle, no real meaning.'}],
+    [{c:'予',cn:'我。',en:'I.'},{c:'谓',cn:'认为、说。',en:'to deem; to say.'},{c:'菊',cn:'菊花。',en:'the chrysanthemum.'},{c:'花',cn:'花。',en:'flowers.'},{c:'之',cn:'的；这里相当于「花里的」。',en:'of; here “among flowers.”'},{c:'隐',cn:'隐居。',en:'to live in seclusion.'},{c:'逸',cn:'避世、安闲。「隐逸」即隐居。',en:'to withdraw; 隐逸 = reclusion.'},{c:'者',cn:'……的人。',en:'the one who…'},{c:'也',cn:'句末语气词，表判断「是……」。',en:'a final particle marking a judgment (“is…”).'},{c:'牡',cn:'「牡丹」首字。',en:'first character of “peony.”'},{c:'丹',cn:'牡丹。',en:'the peony.'},{c:'花',cn:'花。',en:'flowers.'},{c:'之',cn:'的、花里的。',en:'among.'},{c:'富',cn:'富有。',en:'rich.'},{c:'贵',cn:'显贵。「富贵」即荣华富贵。',en:'honoured; 富贵 = wealth and station.'},{c:'者',cn:'……的人。',en:'the one who…'},{c:'也',cn:'判断语气词。',en:'judgment particle.'},{c:'莲',cn:'莲花。',en:'the lotus.'},{c:'花',cn:'花。',en:'flowers.'},{c:'之',cn:'的、花里的。',en:'among.'},{c:'君',cn:'「君子」首字。',en:'first character of 君子.'},{c:'子',cn:'「君子」即品德高尚的人。',en:'君子 = a person of noble character; a gentleman.'},{c:'者',cn:'……的人。',en:'the one who…'},{c:'也',cn:'判断语气词。',en:'judgment particle.'}],
+    [{c:'噫',cn:'叹词，相当于「唉」。少见的字，读 yī。',en:'an interjection, “Ah / Alas.” An uncommon character, read yī.'},{c:'菊',cn:'菊花。',en:'the chrysanthemum.'},{c:'之',cn:'的；「菊之爱」即对菊花的喜爱（宾语提前）。',en:'of; 菊之爱 = love of the chrysanthemum (object fronted).'},{c:'爱',cn:'喜爱。',en:'love.'},{c:'陶',cn:'指陶渊明。',en:'Tao Yuanming.'},{c:'后',cn:'以后。「陶后」即陶渊明之后。',en:'after; 陶后 = after Tao’s time.'},{c:'鲜',cn:'少、很少。这里读 xiǎn，不读 xiān。',en:'seldom; few. Read xiǎn here, not xiān.'},{c:'有',cn:'有。',en:'there is.'},{c:'闻',cn:'听说。',en:'to be heard of.'}],
+    [{c:'莲',cn:'莲花。',en:'the lotus.'},{c:'之',cn:'的；「莲之爱」即对莲的喜爱。',en:'of; 莲之爱 = love of the lotus.'},{c:'爱',cn:'喜爱。',en:'love.'},{c:'同',cn:'跟……一样、相同。',en:'the same as; like.'},{c:'予',cn:'我。',en:'me.'},{c:'者',cn:'……的人；「同予者」即和我一样的人。',en:'the one who…; 同予者 = those like me.'},{c:'何',cn:'什么、哪。',en:'what; which.'},{c:'人',cn:'人。「何人」即还有谁。',en:'person; 何人 = who else.'}],
+    [{c:'牡',cn:'「牡丹」首字。',en:'first character of “peony.”'},{c:'丹',cn:'牡丹。',en:'the peony.'},{c:'之',cn:'的；「牡丹之爱」即对牡丹的喜爱。',en:'of; 牡丹之爱 = love of the peony.'},{c:'爱',cn:'喜爱。',en:'love.'},{c:'宜',cn:'应当、当然。',en:'fitting; surely.'},{c:'乎',cn:'语气词。「宜乎」即「当然」。',en:'a particle; 宜乎 = “fittingly,” “no wonder.”'},{c:'众',cn:'多、人多。',en:'many; the crowd.'},{c:'矣',cn:'句末语气词，表「了」。',en:'a final particle, the force of “indeed / now.”'}]
+  ]
+};
+
 /* Coming-soon library — these are data, not code (§5: add a text = add a row).
  * Bias toward 成语-rich 寓言 / 史传 (§6). */
 const LOCKED = [
@@ -129,14 +160,6 @@ const CATS = {
   name:  { tag:'名', cn:'人名',       en:'person',                  color:'#4E7D4E' },
   place: { tag:'地', cn:'地名·朝代',  en:'place / dynasty',         color:'#2C7A70' }
 };
-/* Reading-accuracy chips (§1c) — shown on notes, never as a glyph colour. */
-const READING = {
-  duo:    { label:'多音 context', color:'#B26B00' },
-  rare:   { label:'生僻 rare',    color:'#2C6E63' },
-  loan:   { label:'通假 loan',    color:'#B23A2B' },
-  phrase: { label:'连读 atomic',  color:'#8A7F6B' }
-};
-
 /* ──────────────────  GLOSSARY · DYNASTIES (beginner tooltips)  ─────────────
  * Plain-language definitions for the terminology and reign-dates the texts
  * lean on.  Surfaced as tap / hover popovers anchored to the term itself —
@@ -159,11 +182,6 @@ const TERMS = {
   '使动用法':{py:'shǐ dòng yòng fǎ',cn:'谓语表示「使宾语怎么样」，如「劳形」＝「使身体劳累」。',en:'causative use — the verb means “make the object do / become” (劳形 = “weary the body”).'},
   '宾语前置':{py:'bīn yǔ qián zhì',cn:'文言里把宾语提到动词前面，如「何陋之有」＝「有何陋」。',en:'object-fronting — the object moved ahead of the verb (何陋之有 = 有何陋).'},
   '判断句':{py:'pàn duàn jù',cn:'表示「甲是乙」的句子，文言常用「……者……也」。',en:'a predication “A is B,” classically framed as …者…也.'},
-  // —— reading-accuracy terms (explain the note chips) ——
-  '多音字':{py:'duō yīn zì',cn:'一个字有几种读音，意思常随读音不同，要看上下文定音。',en:'a multi-reading character — its sound, and often its sense, depends on context.'},
-  '生僻字':{py:'shēng pì zì',cn:'不常见、容易读错的字。',en:'a rare, easily-mispronounced character.'},
-  '通假字':{py:'tōng jiǎ zì',cn:'古人借用音同或音近的字代替本字，如「蕃」通「繁」。',en:'a loan graph — the text borrows a like-sounding character for another (蕃 stands in for 繁).'},
-  '连读':{py:'lián dú',cn:'两字一组、意义不可拆开的词，要连在一起读。',en:'read as one unit — a two-character word that should not be split.'},
   // —— dynasties (reign dates + a one-line placement) ——
   '唐':{py:'Táng',span:'618–907',cn:'中国历史上最强盛、文化最繁荣的朝代之一。',en:'one of China’s most powerful and culturally brilliant dynasties.'},
   '李唐':{py:'Lǐ Táng',span:'618–907',cn:'即唐朝；因皇室姓李，故又称「李唐」。',en:'the Tang — the “house of Li,” after its imperial surname.'},
@@ -172,8 +190,6 @@ const TERMS = {
   '西汉':{py:'Xī Hàn',span:'前202–公元8 · 202 BCE–8 CE',cn:'汉朝前期，建都长安。',en:'the Western Han, capital at Chang’an.'},
   '晋':{py:'Jìn',span:'266–420',cn:'汉之后的王朝，分西晋与东晋。',en:'the Jin, after the Han; later split into Western and Eastern Jin.'}
 };
-/* note.reading flag → glossary key (so a hazard chip can explain itself). */
-const READING_TERM = { duo:'多音字', rare:'生僻字', loan:'通假字', phrase:'连读' };
 /* Multi-char terms safe to auto-scan inside prose.  Single chars (铭/说/唐)
  * are glossed explicitly instead, so we never wrap them mid-word. */
 const AUTO_KEYS = ['名词用作动词','名词作动词','托物言志','借物喻人','安贫乐道',
@@ -181,10 +197,13 @@ const AUTO_KEYS = ['名词用作动词','名词作动词','托物言志','借物
   '北宋','战国','西汉'].sort((a,b)=>b.length-a.length);
 
 /* ──────────────────  TERM RENDER + POPOVER ENGINE  ────────────────── */
-const TERM_STYLE='border-bottom:1px dashed #C2A98F;cursor:help;-webkit-tap-highlight-color:transparent;';
-function gloss(label,key){
+/* Tappable term: teal dotted underline so a beginner sees there's more to read.
+ * `plain` (dynasties in coloured kickers) keeps the surrounding ink colour. */
+const TERM_STYLE='color:#2C6E63;border-bottom:1px dotted #2C6E63;cursor:help;-webkit-tap-highlight-color:transparent;';
+const TERM_STYLE_PLAIN='border-bottom:1px dotted currentColor;cursor:help;-webkit-tap-highlight-color:transparent;';
+function gloss(label,key,plain){
   if(!TERMS[key]) return label;
-  return `<span class="wy-term" data-gloss="${esc(key)}" style="${TERM_STYLE}">${label}</span>`;
+  return `<span class="wy-term" data-gloss="${esc(key)}" style="${plain?TERM_STYLE_PLAIN:TERM_STYLE}">${label}</span>`;
 }
 /* Wrap known multi-char terms inside an ALREADY-escaped string.  The scanner
  * advances past whatever it inserts, so it never re-matches its own markup. */
@@ -204,7 +223,7 @@ function dyn(name,opts){
   const label=(opts&&opts.py&&t)
     ? `${esc(name)} <span style="font-weight:600;opacity:.72;">${esc(t.py)}</span>`
     : esc(name);
-  return gloss(label,name);
+  return gloss(label,name,true);
 }
 
 let popEl=null;
@@ -240,19 +259,13 @@ function termHtml(key){
     <p style="font-family:'Newsreader',serif;font-size:14.5px;line-height:1.55;color:#7A6F5C;margin:8px 0 0;">${esc(t.en)}</p>`;
 }
 function legendHtml(){
-  const role=Object.values(CATS).map(d=>`<div style="display:flex;align-items:center;gap:9px;">
-      <i style="width:12px;height:12px;border-radius:3px;background:${d.color};flex-shrink:0;"></i>
-      <span style="font-size:13px;color:#3A332A;"><b style="font-family:'Noto Serif SC',serif;">${d.tag}</b> ${esc(d.cn)} · <span style="color:#8A7F6B;">${esc(d.en)}</span></span>
+  const role=Object.values(CATS).map(d=>`<div style="display:flex;align-items:baseline;gap:9px;">
+      <i style="width:12px;height:12px;border-radius:3px;background:${d.color};flex-shrink:0;transform:translateY(2px);"></i>
+      <span style="font-size:13px;color:#3A332A;">${esc(d.cn)} · <span style="color:#8A7F6B;">${esc(d.en)}</span></span>
     </div>`).join('');
-  const read=Object.values(READING).map(d=>`<div style="display:flex;align-items:center;gap:9px;">
-      <i style="width:12px;height:12px;border-radius:3px;background:${d.color};flex-shrink:0;"></i>
-      <span style="font-size:13px;color:#3A332A;">${esc(d.label)}</span>
-    </div>`).join('');
-  return `<div style="margin-bottom:7px;font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;font-weight:800;color:#B23A2B;">字色 · grammar role</div>
-    <div style="display:flex;flex-direction:column;gap:8px;">${role}</div>
-    <div style="margin:15px 0 7px;font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;font-weight:800;color:#2C6E63;">注记 · reading hazard</div>
-    <div style="display:flex;flex-direction:column;gap:8px;">${read}</div>
-    <p style="font-size:12px;color:#A99C84;margin:13px 0 0;font-family:'Newsreader',serif;font-style:italic;">字的颜色＝语法角色；注记是读音提示，不改字色。Colour marks the grammar role; hazards are reading notes, not colours.</p>`;
+  return `<div style="margin-bottom:8px;font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;font-weight:800;color:#B23A2B;">字色 · what the colours mean</div>
+    <div style="display:flex;flex-direction:column;gap:9px;">${role}</div>
+    <p style="font-size:12px;color:#A99C84;margin:13px 0 0;font-family:'Newsreader',serif;font-style:italic;">原文里字的颜色＝它在句中的语法角色。A character's colour shows the grammatical job it does in the line.</p>`;
 }
 
 /* ────────────────────────────  STATE  ──────────────────────────── */
@@ -330,7 +343,7 @@ function legendFor(line){
   const seen=new Set(Object.values(line.cats||{}));
   return [...seen].filter(c=>CATS[c]).map(c=>{
     const d=CATS[c];
-    return `<span style="display:inline-flex;align-items:center;gap:6px;font-size:11.5px;font-weight:600;color:#7A6F5C;"><i style="width:9px;height:9px;border-radius:2px;background:${d.color};display:inline-block;"></i>${d.tag} ${esc(d.cn)} · ${esc(d.en)}</span>`;
+    return `<span style="display:inline-flex;align-items:center;gap:6px;font-size:11.5px;font-weight:600;color:#7A6F5C;"><i style="width:9px;height:9px;border-radius:2px;background:${d.color};display:inline-block;"></i>${esc(d.cn)} · ${esc(d.en)}</span>`;
   }).join('');
 }
 
@@ -360,12 +373,11 @@ function homeScreen(){
       <div style="margin-bottom:clamp(30px,4vw,46px);">
         <div style="text-transform:uppercase;letter-spacing:.2em;font-size:11px;font-weight:700;color:#B23A2B;display:flex;align-items:center;gap:9px;"><span style="width:6px;height:6px;border-radius:50%;background:#B23A2B;"></span>文言文精读 · Close Reading</div>
         <h1 style="font-family:'Noto Serif SC',serif;font-weight:600;font-size:clamp(30px,4.6vw,50px);line-height:1.14;letter-spacing:-.01em;margin:16px 0 14px;max-width:18ch;">读古文，<span style="color:#B23A2B;">见其字</span>，亦见其心。</h1>
-        <p style="font-family:'Newsreader',serif;font-size:clamp(17px,2vw,20px);line-height:1.6;color:#5B5142;max-width:56ch;margin:0;">Read the classics as they were written — bare vertical columns. Then turn on pinyin, a clear modern paraphrase, and an idiomatic English reading whenever you want a hand. Built for readers chasing the 字, the 音, and the 成语 behind the line.</p>
+        <p style="font-family:'Newsreader',serif;font-size:clamp(17px,2vw,20px);line-height:1.6;color:#5B5142;max-width:56ch;margin:0;">Read the classics as they were written — bare vertical columns. Then turn on pinyin, a plain modern paraphrase, an English reading, and a word-by-word gloss of every character whenever you want a hand. Built for readers chasing the 字, the 音, and the 成语 behind the line.</p>
       </div>
 
       <div style="display:flex;align-items:baseline;justify-content:space-between;gap:16px;margin-bottom:18px;flex-wrap:wrap;border-top:1px solid #E2D8C2;padding-top:24px;">
         <h2 style="font-family:'Noto Serif SC',serif;font-weight:600;font-size:clamp(20px,2.6vw,26px);margin:0;">短篇 <span style="color:#938976;font-weight:400;font-size:.7em;font-family:'Newsreader',serif;font-style:italic;">Short Classics</span></h2>
-        <span style="font-size:13px;color:#938976;font-weight:600;">为母语级学习者 · for near-native readers</span>
       </div>
 
       <button data-action="open:louver" class="wy-feat" style="width:100%;text-align:left;display:flex;gap:clamp(20px,3vw,38px);align-items:stretch;background:#FBF6EC;border:1px solid #E2D8C2;border-radius:20px;padding:clamp(20px,2.6vw,30px);cursor:pointer;box-shadow:0 1px 0 rgba(34,29,22,.02);margin-bottom:18px;">
@@ -560,22 +572,6 @@ function studyPanel(t, showPy){
       <p style="font-family:'Newsreader',serif;font-size:15.5px;line-height:1.6;color:#6B6256;margin:10px 0 0;">${esc(cl.allusion.en)}</p>
     </div>` : '';
 
-  const notes=(cl.notes||[]).map(n=>{
-    const rk = n.reading && READING_TERM[n.reading];
-    const rd = n.reading && READING[n.reading]
-      ? `<span class="wy-term" data-gloss="${esc(rk)}" style="display:inline-block;font-size:10px;font-weight:700;letter-spacing:.04em;color:#fff;background:${READING[n.reading].color};border-radius:5px;padding:2px 7px;margin-left:8px;vertical-align:middle;cursor:help;-webkit-tap-highlight-color:transparent;">${READING[n.reading].label}</span>` : '';
-    return `<div style="display:flex;gap:15px;padding:13px 0;border-top:1px solid #EDE3CE;align-items:baseline;">
-      <div style="flex-shrink:0;min-width:2.4em;text-align:center;">
-        <div style="font-family:'Noto Serif SC',serif;font-weight:600;font-size:22px;color:#B23A2B;line-height:1.1;">${esc(n.w)}</div>
-        <div style="font-size:11px;font-weight:600;color:#B0857A;margin-top:3px;">${esc(n.py)}</div>
-      </div>
-      <div style="flex:1;min-width:0;">
-        <div style="font-family:'Noto Serif SC',serif;font-size:15px;line-height:1.6;color:#3A332A;">${autoGloss(esc(n.cn))}${rd}</div>
-        <div style="font-family:'Newsreader',serif;font-style:italic;font-size:15px;line-height:1.5;color:#8A7F6B;margin-top:2px;">${esc(n.en)}</div>
-      </div>
-    </div>`;
-  }).join('');
-
   return `<div style="background:#FBF6EC;border:1px solid #E2D8C2;border-radius:16px;padding:clamp(20px,2.4vw,28px);">
       <div style="display:flex;align-items:center;justify-content:space-between;gap:10px;">
         <span style="display:inline-block;font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;font-weight:800;color:#B23A2B;background:rgba(178,58,43,.1);border-radius:7px;padding:3px 9px;">原句 · 第 ${sel+1} 句 / 共 ${t.lines.length}</span>
@@ -584,25 +580,50 @@ function studyPanel(t, showPy){
       <div style="font-family:'Noto Serif SC',serif;font-weight:600;font-size:clamp(23px,2.9vw,29px);line-height:2.15;color:#221D16;margin:16px 0 0;">${studyChars(cl,showPy)}</div>
       ${legend?`<div style="display:flex;flex-wrap:wrap;gap:13px;margin-top:18px;padding-top:14px;border-top:1px solid #EDE3CE;">${legend}</div>`:''}
     </div>
-    ${idiom}
-    ${allu}
+    ${charPanel(cl, sel, showPy)}
     <div style="background:#FBF6EC;border:1px solid #E2D8C2;border-radius:16px;padding:clamp(18px,2.2vw,24px);">
       <div style="display:flex;align-items:center;gap:9px;margin-bottom:10px;">
         <span style="width:24px;height:24px;border-radius:6px;background:#B23A2B;color:#fff;display:inline-flex;align-items:center;justify-content:center;font-family:'Noto Serif SC',serif;font-weight:600;font-size:13px;">今</span>
-        <span style="font-size:11px;letter-spacing:.12em;text-transform:uppercase;font-weight:700;color:#938976;">现代文 · in plain Chinese</span>
+        <span style="font-size:11px;letter-spacing:.12em;text-transform:uppercase;font-weight:700;color:#938976;">现代文 · 读懂整句</span>
       </div>
       <p style="font-family:'Noto Serif SC',serif;font-size:17.5px;line-height:1.8;color:#3A332A;margin:0;">${esc(cl.today)}</p>
       <div style="display:flex;align-items:center;gap:9px;margin:18px 0 10px;padding-top:16px;border-top:1px solid #EDE3CE;">
         <span style="width:24px;height:24px;border-radius:6px;background:#2E3A44;color:#fff;display:inline-flex;align-items:center;justify-content:center;font-weight:700;font-size:10px;">EN</span>
-        <span style="font-size:11px;letter-spacing:.12em;text-transform:uppercase;font-weight:700;color:#938976;">idiomatic English</span>
+        <span style="font-size:11px;letter-spacing:.12em;text-transform:uppercase;font-weight:700;color:#938976;">英文 · English</span>
       </div>
       <p style="font-family:'Newsreader',serif;font-size:18px;line-height:1.62;color:#3A332A;margin:0;">${esc(cl.en)}</p>
     </div>
-    <div style="background:#FBF6EC;border:1px solid #E2D8C2;border-radius:16px;padding:clamp(18px,2.2vw,24px);">
-      <span style="display:inline-block;font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;font-weight:800;color:#B23A2B;background:rgba(178,58,43,.1);border-radius:7px;padding:3px 9px;margin-bottom:8px;">字词 · Words that shift</span>
-      <div>${notes||'<p style="font-family:\'Newsreader\',serif;font-style:italic;color:#A99C84;margin:8px 0 0;">No tricky words in this line.</p>'}</div>
-    </div>
-    <div style="font-size:12.5px;color:#A99C84;text-align:center;font-family:'Newsreader',serif;font-style:italic;">第 ${sel+1} 句，共 ${t.lines.length} 句 · use the lines on the left to move through</div>`;
+    ${idiom}
+    ${allu}
+    <div style="font-size:12.5px;color:#A99C84;text-align:center;font-family:'Newsreader',serif;font-style:italic;">第 ${sel+1} 句，共 ${t.lines.length} 句 · 点左侧竖排可换句 · tap the columns on the left to move through</div>`;
+}
+
+/* The 逐字 breakdown — every Han character of the line, one row each, coloured
+ * by its grammatical role.  Aligned to CHARS[textId][lineIndex]. */
+function charPanel(line, sel, showPy){
+  const data=(CHARS[state.textId]||[])[sel]||[];
+  const toks=tokens(line).filter(tk=>!tk.isPunct);
+  const rows=toks.map((tk,i)=>{
+    const info=data[i]||{};
+    const col=catColor(tk.cat);
+    const role = (tk.cat && CATS[tk.cat])
+      ? `<span style="display:inline-block;font-size:10px;font-weight:700;color:${col};background:${col}1A;border:1px solid ${col}55;border-radius:5px;padding:1px 7px;margin-left:8px;vertical-align:middle;white-space:nowrap;">${esc(CATS[tk.cat].cn)}</span>`
+      : '';
+    return `<div style="display:flex;gap:14px;padding:12px 0;border-top:1px solid #EDE3CE;align-items:baseline;">
+        <div style="flex-shrink:0;width:2.1em;text-align:center;">
+          <div style="font-family:'Noto Serif SC',serif;font-weight:600;font-size:26px;line-height:1.05;color:${col||'#221D16'};">${esc(tk.ch)}</div>
+          ${showPy?`<div style="font-size:11.5px;font-weight:600;margin-top:4px;color:${col||'#B0857A'};">${esc(tk.py)}</div>`:''}
+        </div>
+        <div style="flex:1;min-width:0;">
+          <div style="font-family:'Noto Serif SC',serif;font-size:15.5px;line-height:1.7;color:#3A332A;">${autoGloss(esc(info.cn||''))}${role}</div>
+          ${info.en?`<div style="font-family:'Newsreader',serif;font-size:14.5px;line-height:1.5;color:#8A7F6B;margin-top:3px;">${esc(info.en)}</div>`:''}
+        </div>
+      </div>`;
+  }).join('');
+  return `<div style="background:#FBF6EC;border:1px solid #E2D8C2;border-radius:16px;padding:clamp(18px,2.2vw,24px);">
+      <span style="display:inline-block;font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;font-weight:800;color:#B23A2B;background:rgba(178,58,43,.1);border-radius:7px;padding:3px 9px;margin-bottom:4px;">逐字 · character by character</span>
+      <div>${rows||'<p style="font-family:\'Newsreader\',serif;font-style:italic;color:#A99C84;margin:8px 0 0;">—</p>'}</div>
+    </div>`;
 }
 
 function recitePanel(t){
@@ -679,13 +700,20 @@ function validate(){
   let bad=0;
   for(const id in DATA){
     DATA[id].lines.forEach((ln,i)=>{
-      const han=[...(ln.zh||'')].filter(c=>HAN.test(c)).length;
+      const hanChars=[...(ln.zh||'')].filter(c=>HAN.test(c));
+      const han=hanChars.length;
       const syl=(ln.py||'').split(/\s+/).filter(Boolean).length;
       if(han!==syl){ bad++; console.warn(`[reader] alignment mismatch ${id} line ${i}: ${han} Han vs ${syl} pinyin — "${ln.zh}"`); }
       for(const k in (ln.cats||{})){ if(+k>=han) console.warn(`[reader] cat index out of range ${id} line ${i}: ${k}`); }
+      const cd=(CHARS[id]||[])[i];
+      if(!cd){ bad++; console.warn(`[reader] missing per-char gloss ${id} line ${i}`); }
+      else{
+        if(cd.length!==han){ bad++; console.warn(`[reader] char-gloss count ${id} line ${i}: ${cd.length} vs ${han} Han`); }
+        cd.forEach((e,j)=>{ if(e.c && e.c!==hanChars[j]) console.warn(`[reader] char-gloss mismatch ${id} line ${i} pos ${j}: "${e.c}" vs "${hanChars[j]}"`); });
+      }
     });
   }
-  if(!bad) console.info('[reader] pinyin alignment OK for all lines');
+  if(!bad) console.info('[reader] pinyin + per-char alignment OK for all lines');
 }
 
 validate();
