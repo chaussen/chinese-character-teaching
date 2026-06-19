@@ -296,31 +296,36 @@
 
   // draw the base map onto the <canvas> and place HTML pins by real coordinates
   function mountMap(p) {
-    const box = app.querySelector('.mapbox[data-map]'); if (!box || !window.HISTORY_GEO) return;
+    const box = app.querySelector('.mapbox[data-map]'); if (!box) return;
     const cv = box.querySelector('canvas.mapcv'); if (!cv) return;
     const W = box.clientWidth, H = box.clientHeight; if (!W || !H) return;
     const dpr = Math.min(window.devicePixelRatio || 1, 2);
     cv.width = W * dpr; cv.height = H * dpr; cv.style.width = W + 'px'; cv.style.height = H + 'px';
     const ctx = cv.getContext('2d'); ctx.setTransform(dpr, 0, 0, dpr, 0, 0); ctx.clearRect(0, 0, W, H);
 
-    const G = window.HISTORY_GEO, R = G.rivers;
+    // Projection + pin placement never depend on the basemap data — if HISTORY_GEO
+    // is missing (e.g. geo.js failed to load) the route still draws and pins still
+    // land at their real coordinates rather than collapsing to the top-left corner.
     const proj = buildProj(p.map.points, W, H);
-    strokePolys(ctx, proj, G.provinces, '#DBD2BF', 1);          // 今省界 · 淡
-    strokePolys(ctx, proj, R.chang, '#A9C2CE', 2.1);            // 长江
-    strokePolys(ctx, proj, R.huang, '#C8B891', 2.1);            // 黄河 · 含沙色
-    strokePolys(ctx, proj, R.huai, '#A9C2CE', 1.7);             // 淮河
+    const G = window.HISTORY_GEO;
+    if (G) {
+      const R = G.rivers;
+      strokePolys(ctx, proj, G.provinces, '#DBD2BF', 1);        // 今省界 · 淡
+      strokePolys(ctx, proj, R.chang, '#A9C2CE', 2.1);          // 长江
+      strokePolys(ctx, proj, R.huang, '#C8B891', 2.1);          // 黄河 · 含沙色
+      strokePolys(ctx, proj, R.huai, '#A9C2CE', 1.7);           // 淮河
+      labelRiver(ctx, proj, R.huang, '黄河', '#B49E6C', W, H);
+      labelRiver(ctx, proj, R.chang, '长江', '#7FA0AE', W, H);
+      labelRiver(ctx, proj, R.huai, '淮河', '#7FA0AE', W, H);
+    }
 
     // 行踪路线（按时序）
     const byId = {}; p.map.points.forEach(pt => byId[pt.id] = pt);
-    const rp = p.map.route.map(id => byId[id]).filter(Boolean);
+    const rp = (p.map.route || []).map(id => byId[id]).filter(Boolean);
     ctx.strokeStyle = '#8A7F66'; ctx.lineWidth = 1.8; ctx.setLineDash([5, 4]); ctx.lineJoin = 'round';
     ctx.beginPath();
     rp.forEach((pt, i) => { const [x, y] = proj(pt.ll[0], pt.ll[1]); i ? ctx.lineTo(x, y) : ctx.moveTo(x, y); });
     ctx.stroke(); ctx.setLineDash([]);
-
-    labelRiver(ctx, proj, R.huang, '黄河', '#B49E6C', W, H);
-    labelRiver(ctx, proj, R.chang, '长江', '#7FA0AE', W, H);
-    labelRiver(ctx, proj, R.huai, '淮河', '#7FA0AE', W, H);
 
     box.querySelectorAll('.pin').forEach(pin => {
       const ll = pin.getAttribute('data-ll').split(',').map(Number);

@@ -73,8 +73,8 @@ jobs:
           # Classical Reader  ->  /reader/   (single self-contained HTML file)
           cp "classical-reader/index.html" "$SITE/reader/index.html"
 
-          # 史案 History KG Reader  ->  /history/   (self-contained: html + app.js + data.js)
-          cp history-reader/index.html history-reader/app.js history-reader/data.js "$SITE/history/"
+          # 史案 History KG Reader  ->  /history/   (self-contained: html + geo.js + app.js + data.js)
+          cp history-reader/index.html history-reader/geo.js history-reader/app.js history-reader/data.js "$SITE/history/"
 
           # Skip Jekyll processing of the artifact.
           touch "$SITE/.nojekyll"
