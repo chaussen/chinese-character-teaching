@@ -76,6 +76,7 @@
     .card.studio .glyph{background:#FBE9E6; color:var(--red);}
     .card.maker  .glyph{background:#EAF1F2; color:#3E7C8C;}
     .card.reader .glyph{background:#F4EBDA; color:#B23A2B; font-family:"Noto Serif SC",serif;}
+    .card.history .glyph{background:#EDE6F0; color:#6C5AA6; font-family:"Noto Serif SC",serif;}
     .card h3{font-size:21px; font-weight:800; letter-spacing:-.2px;}
     .card h3 .zh{font-weight:600; color:var(--ink-soft); font-size:16px; margin-left:6px;}
     .card .desc{color:var(--ink-soft); font-size:15px; margin:10px 0 18px; flex:1;}
@@ -88,9 +89,11 @@
     }
     .card.maker .go{background:#3E7C8C;}
     .card.reader .go{background:#B23A2B;}
+    .card.history .go{background:#6C5AA6;}
     .go:hover{background:var(--red-deep);}
     .card.maker .go:hover{background:#326576;}
     .card.reader .go:hover{background:#9E382F;}
+    .card.history .go:hover{background:#574790;}
     .go .ar{transition:transform .15s ease;}
     .go:hover .ar{transform:translateX(3px);}
     .note{font-size:12.5px; color:var(--ink-soft); margin-top:12px;}
@@ -156,6 +159,17 @@
         <ul><li>通读·精读·背诵</li><li>语法着色</li><li>成语 Idioms</li></ul>
         <a class="go" href="reader/">Open Classical Reader <span class="ar">→</span></a>
         <p class="note">For near-native readers — built for 字, 音, and 成语.</p>
+      </article>
+
+      <article class="card history">
+        <div class="glyph zh">史</div>
+        <h3>History Reader<span class="zh">史案</span></h3>
+        <p class="desc">Read the dynastic histories as a knowledge graph. Keep the 正史 text primary,
+          then tap a 专名 or 虚词 to decode it — people, places, offices, eras, grammar — with maps,
+          relationship graphs, career timelines, and a 专名库 that grows as you read.</p>
+        <ul><li>知识层·语言层</li><li>地图·关系·时间轴</li><li>溯源·互见</li></ul>
+        <a class="go" href="history/">Open History Reader <span class="ar">→</span></a>
+        <p class="note">For 准专业 readers of 文言 history — 一段《侯景传》起步.</p>
       </article>
     </section>
   </div>

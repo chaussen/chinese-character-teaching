@@ -4,6 +4,7 @@
 #   /studio/     Character Studio learning app (studio.html + learn/ + audio/)
 #   /cardmaker/  Card Maker web app           (built from cardmaker/)
 #   /reader/     Classical Reader app         (classical-reader/index.html, self-contained)
+#   /history/    史案 History KG Reader        (history-reader/, self-contained)
 #
 # One-time setup (repo owner): Settings -> Pages -> "Build and deployment" ->
 # Source: "GitHub Actions". For the custom domain, also add the DNS record and
@@ -20,6 +21,7 @@ on:
       - "cardmaker/**"
       - "landing/**"
       - "classical-reader/index.html"
+      - "history-reader/**"
       - ".github/workflows/deploy-pages.yml"
   workflow_dispatch:
 
@@ -55,7 +57,7 @@ jobs:
           set -euo pipefail
           SITE="_site"
           rm -rf "$SITE"
-          mkdir -p "$SITE/studio" "$SITE/cardmaker" "$SITE/reader"
+          mkdir -p "$SITE/studio" "$SITE/cardmaker" "$SITE/reader" "$SITE/history"
 
           # Landing / hub  ->  /
           cp -r landing/. "$SITE"/
@@ -70,6 +72,9 @@ jobs:
 
           # Classical Reader  ->  /reader/   (single self-contained HTML file)
           cp "classical-reader/index.html" "$SITE/reader/index.html"
+
+          # 史案 History KG Reader  ->  /history/   (self-contained: html + app.js + data.js)
+          cp history-reader/index.html history-reader/app.js history-reader/data.js "$SITE/history/"
 
           # Skip Jekyll processing of the artifact.
           touch "$SITE/.nojekyll"

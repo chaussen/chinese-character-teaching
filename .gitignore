@@ -1,5 +1,9 @@
 __pycache__
 generated
+
+# Claude Code — machine-local permissions (project skills under .claude/skills/
+# ARE tracked); this file is per-machine and should not be committed.
+.claude/settings.local.json
 characters
 characters_pinyin_backup
 practice

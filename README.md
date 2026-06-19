@@ -17,6 +17,7 @@ A static site is assembled and published by GitHub Actions
 | `/studio/`    | Character Studio learning app    | `studio.html` + `learn/` + `audio/` |
 | `/cardmaker/` | Card Maker web app               | built from `cardmaker/` |
 | `/reader/`    | Classical Reader                 | `classical-reader/index.html` |
+| `/history/`   | 史案 History KG Reader            | `history-reader/` |
 
 To work on the Studio locally, serve the repo root and open `studio.html`
 (it loads its engine and data from `learn/` and clips from `audio/`).
@@ -29,6 +30,7 @@ studio.html               # Character Studio shell (served at /studio/)
 learn/                    # Character Studio engine + data (vanilla JS)
 audio/                    # edge-tts recordings (char / word / sentence)
 classical-reader/         # Classical Reader app (index.html) + design source
+history-reader/           # 史案 history knowledge-graph reader (served at /history/)
 tools/                    # content build pipeline + audio generator
 
 cardmaker/                # ← the card maker (TypeScript): CLI + web app
