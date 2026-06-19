@@ -314,11 +314,12 @@ const LOCKED = [
 
 /* ────────────────────────────  GRAMMAR ROLES (§1b)  ──────────────────────── */
 const CATS = {
-  aux:   { tag:'助', cn:'助词·虚词', en:'particle / function word', color:'#3F6B8C' },
-  pron:  { tag:'代', cn:'代词',       en:'pronoun',                 color:'#6C5AA6' },
-  flex:  { tag:'活', cn:'活用',       en:'word-class shift',        color:'#B0772A' },
-  name:  { tag:'名', cn:'人名',       en:'person',                  color:'#4E7D4E' },
-  place: { tag:'地', cn:'地名·朝代',  en:'place / dynasty',         color:'#2C7A70' }
+  aux:      { tag:'助', cn:'助词·虚词',   en:'particle / function word', color:'#3F6B8C' },
+  pron:     { tag:'代', cn:'代词',         en:'pronoun',                  color:'#6C5AA6' },
+  flex:     { tag:'活', cn:'活用',         en:'word-class shift',         color:'#B0772A' },
+  name:     { tag:'名', cn:'人名',         en:'person',                   color:'#4E7D4E' },
+  place:    { tag:'地', cn:'地名·朝代',    en:'place / dynasty',          color:'#2C7A70' },
+  position: { tag:'职', cn:'官职·职位',    en:'official position',        color:'#9C5B3C' }
 };
 /* ──────────────────  GLOSSARY · DYNASTIES (beginner tooltips)  ─────────────
  * Plain-language definitions for the terminology and reign-dates the texts
@@ -344,18 +345,39 @@ const TERMS = {
   '宾语前置':{py:'bīn yǔ qián zhì',cn:'文言里把宾语提到动词前面，如「何陋之有」＝「有何陋」。',en:'object-fronting — the object moved ahead of the verb (何陋之有 = 有何陋).'},
   '判断句':{py:'pàn duàn jù',cn:'表示「甲是乙」的句子，文言常用「……者……也」。',en:'a predication “A is B,” classically framed as …者…也.'},
   // —— dynasties (reign dates + a one-line placement) ——
-  '唐':{py:'Táng',span:'618–907',cn:'中国历史上最强盛、文化最繁荣的朝代之一。',en:'one of China’s most powerful and culturally brilliant dynasties.'},
-  '李唐':{py:'Lǐ Táng',span:'618–907',cn:'即唐朝；因皇室姓李，故又称「李唐」。',en:'the Tang — the “house of Li,” after its imperial surname.'},
-  '北宋':{py:'Běi Sòng',span:'960–1127',cn:'宋朝前期，建都汴京（今开封），文治极盛。',en:'the first half of the Song, capital at Bianjing (Kaifeng); a high point of scholar-culture.'},
-  '战国':{py:'Zhàn Guó',span:'前475–前221 BCE',cn:'诸侯争雄、百家争鸣的时代。',en:'the Warring States — rival kingdoms and a hundred schools of thought.'},
-  '西汉':{py:'Xī Hàn',span:'前202–公元8 · 202 BCE–8 CE',cn:'汉朝前期，建都长安。',en:'the Western Han, capital at Chang’an.'},
-  '晋':{py:'Jìn',span:'266–420',cn:'汉之后的王朝，分西晋与东晋。',en:'the Jin, after the Han; later split into Western and Eastern Jin.'}
+  '唐':{py:'Táng',span:'618–907',cn:'中国历史上最强盛、文化最繁荣的朝代之一。',en:'one of China’s most powerful and culturally brilliant dynasties.',modern:'建都长安，即今陕西省西安市。',modernEn:'Capital at Chang’an — modern Xi’an, Shaanxi province.'},
+  '李唐':{py:'Lǐ Táng',span:'618–907',cn:'即唐朝；因皇室姓李，故又称「李唐」。',en:'the Tang — the “house of Li,” after its imperial surname.',modern:'建都长安，即今陕西省西安市。',modernEn:'Capital at Chang’an — modern Xi’an, Shaanxi province.'},
+  '北宋':{py:'Běi Sòng',span:'960–1127',cn:'宋朝前期，建都汴京（今开封），文治极盛。',en:'the first half of the Song, capital at Bianjing (Kaifeng); a high point of scholar-culture.',modern:'建都汴京，即今河南省开封市。',modernEn:'Capital at Bianjing — modern Kaifeng, Henan province.'},
+  '战国':{py:'Zhàn Guó',span:'前475–前221 BCE',cn:'诸侯争雄、百家争鸣的时代。',en:'the Warring States — rival kingdoms and a hundred schools of thought.',modern:'七雄疆域大致覆盖今陕西、河南、河北、山东、湖北、湖南、四川一带。',modernEn:'Between them, the seven rival states covered roughly modern Shaanxi, Henan, Hebei, Shandong, Hubei, Hunan and Sichuan.'},
+  '西汉':{py:'Xī Hàn',span:'前202–公元8 · 202 BCE–8 CE',cn:'汉朝前期，建都长安。',en:'the Western Han, capital at Chang’an.',modern:'建都长安，即今陕西省西安市。',modernEn:'Capital at Chang’an — modern Xi’an, Shaanxi province.'},
+  '晋':{py:'Jìn',span:'266–420',cn:'汉之后的王朝，分西晋与东晋。',en:'the Jin, after the Han; later split into Western and Eastern Jin.',modern:'西晋建都洛阳（今河南洛阳），东晋建都建康（今江苏南京）。',modernEn:'The Western Jin’s capital was Luoyang (modern Luoyang, Henan); the Eastern Jin’s was Jiankang (modern Nanjing, Jiangsu).'},
+  '东晋':{py:'Dōng Jìn',span:'317–420',cn:'晋室南渡后在江南重建的政权，建康为都。',en:'the Jin court re-established south of the Yangtze after fleeing the north, capital at Jiankang.',modern:'建都建康，即今江苏省南京市。',modernEn:'Capital at Jiankang — modern Nanjing, Jiangsu province.'},
+  '长安':{py:'Cháng’ān',cn:'汉、唐等多个朝代的都城，是古代中国最重要的都城之一。',en:'the capital of the Han, Tang and several other dynasties — one of ancient China’s most important capital cities.',modern:'今陕西省西安市。',modernEn:'Modern Xi’an, Shaanxi province.'},
+  '和州':{py:'Hézhōu',cn:'地名，刘禹锡被贬至此任职，《陋室铭》即写于此地。',en:'a place-name — Liu Yuxi was banished here, and wrote the Ming during his posting.',modern:'今安徽省马鞍山市和县一带。',modernEn:'Roughly modern He County, Ma’anshan, Anhui province.'},
+  // —— place names (within the texts themselves) ——
+  '南阳':{py:'Nányáng',cn:'地名，诸葛亮出仕前曾在此结庵耕读。',en:'a place-name — Zhuge Liang farmed and studied here in seclusion before entering office.',modern:'今河南省南阳市，地名沿用至今。',modernEn:'Modern Nanyang, Henan province — the name has carried straight through to today.'},
+  '西蜀':{py:'Xī Shǔ',cn:'蜀地，「西」是相对中原而言的方位。',en:'the Shu region, named "western" relative to the central plains.',modern:'今四川省一带。',modernEn:'Roughly modern Sichuan province.'},
+  '楚':{py:'Chǔ',cn:'战国七雄之一，疆域横跨长江中下游，是南方最强大的诸侯国。',en:'one of the seven major Warring States powers, spanning the middle and lower Yangtze — the dominant southern state.',modern:'核心地域约在今湖北、湖南，全盛时延伸至河南南部、安徽、江苏、上海一带。',modernEn:'Core territory in modern Hubei and Hunan; at its height it reached into southern Henan, Anhui, Jiangsu and Shanghai.'},
+  '宋':{py:'Sòng',cn:'周代诸侯国，国都商丘（不是后来的宋朝）。',en:'a Zhou-era vassal state, capital at Shangqiu — not to be confused with the later Song dynasty.',modern:'国都商丘，即今河南省商丘市。',modernEn:'Its capital Shangqiu is modern Shangqiu, Henan province.'},
+  '宋国':{py:'Sòng Guó',cn:'即「宋」，周代诸侯国，国都商丘。',en:'the state of Song — a Zhou-era vassal state, capital at Shangqiu.',modern:'今河南省商丘市一带。',modernEn:'Roughly modern Shangqiu, Henan province.'},
+  // —— person names ——
+  '诸葛':{py:'Zhūgě',span:'181–234',cn:'指诸葛亮，三国蜀汉丞相，著名政治家、军事家，出仕前曾在南阳隆中结庵耕读。',en:'short for Zhuge Liang, chancellor of Shu Han during the Three Kingdoms — a celebrated statesman and strategist who farmed in seclusion at Nanyang before entering office.'},
+  '诸葛亮':{py:'Zhūgě Liàng',span:'181–234',cn:'三国蜀汉丞相，著名政治家、军事家，刘备三顾茅庐请他出山相助。',en:'chancellor of Shu Han during the Three Kingdoms — a renowned statesman and strategist whom Liu Bei famously called on three times to win his service.'},
+  '子云':{py:'Zǐyún',span:'前53–18',cn:'扬雄的字。西汉学者、辞赋家，著有《太玄》《法言》，晚年在西蜀的居所十分简朴。',en:'the courtesy name of Yang Xiong, a Western Han scholar and rhapsody-writer known for spare, simple living in his western-Shu studio.'},
+  '扬雄':{py:'Yáng Xióng',span:'前53–18',cn:'西汉学者、辞赋家，字子云，著有《太玄》《法言》。',en:'a Western Han scholar and rhapsody-writer, courtesy-named Ziyun.'},
+  '孔子':{py:'Kǒngzǐ',span:'前551–前479',cn:'即孔丘，春秋时鲁国人，儒家学派的创始人。',en:'Kong Qiu, of the state of Lu during the Spring-and-Autumn period — founder of the Confucian school.'},
+  '陶渊明':{py:'Táo Yuānmíng',span:'365–427',cn:'东晋诗人，曾任彭泽县令，后辞官归隐田园，是田园诗的代表作家。',en:'an Eastern-Jin poet who briefly served as magistrate of Pengze before resigning to farm — the foremost voice of "fields and gardens" poetry.'},
+  '陶':{py:'Táo',span:'365–427',cn:'指陶渊明，东晋诗人，曾任彭泽县令，后辞官归隐田园，是田园诗的代表作家。',en:'short for Tao Yuanming, an Eastern-Jin poet who briefly served as magistrate of Pengze before resigning to farm — the foremost voice of "fields and gardens" poetry.'},
+  '刘备':{py:'Liú Bèi',span:'161–223',cn:'三国时蜀汉的建立者，曾三顾茅庐请诸葛亮出山相助。',en:'founder of Shu Han during the Three Kingdoms, who famously called on Zhuge Liang three times to win his service.'},
+  // —— official positions (modern-government counterparts) ——
+  '县令':{py:'xiànlìng',cn:'一县的最高行政长官，主管一县的政务、司法、赋税等。',en:'the chief administrative officer of a county — in charge of local governance, justice and taxation.',modern:'大致相当于今天的县长或县委书记。',modernEn:'Roughly equivalent to a county head (县长) or county Party secretary today.'}
 };
-/* Multi-char terms safe to auto-scan inside prose.  Single chars (铭/说/唐)
+/* Multi-char terms safe to auto-scan inside prose.  Single chars (铭/说/唐/楚/宋)
  * are glossed explicitly instead, so we never wrap them mid-word. */
 const AUTO_KEYS = ['名词用作动词','名词作动词','托物言志','借物喻人','安贫乐道',
   '词类活用','使动用法','宾语前置','判断句','骈句','押韵','对仗','起兴','典故',
-  '北宋','战国','西汉'].sort((a,b)=>b.length-a.length);
+  '北宋','战国','西汉','东晋','长安','和州','宋国','南阳','西蜀',
+  '诸葛亮','诸葛','扬雄','子云','孔子','陶渊明','刘备','县令'].sort((a,b)=>b.length-a.length);
 
 /* ──────────────────  TERM RENDER + POPOVER ENGINE  ────────────────── */
 /* Tappable term: teal dotted underline so a beginner sees there's more to read.
@@ -412,12 +434,18 @@ function showPopAt(anchor,html){
 function termHtml(key){
   const t=TERMS[key]; if(!t) return '';
   const span=t.span?`<span style="font-size:11.5px;font-weight:700;color:#fff;background:#B23A2B;border-radius:6px;padding:2px 8px;">${esc(t.span)}</span>`:'';
+  const modern = t.modern ? `<div style="margin-top:11px;padding-top:11px;border-top:1px solid #EDE3CE;">
+      <span style="display:inline-block;font-size:10px;letter-spacing:.12em;text-transform:uppercase;font-weight:800;color:#938976;margin-bottom:5px;">今 · today</span>
+      <p style="font-family:'Noto Serif SC',serif;font-size:13.5px;line-height:1.6;color:#3A332A;margin:0;">${esc(t.modern)}</p>
+      ${t.modernEn?`<p style="font-family:'Newsreader',serif;font-size:13px;line-height:1.5;color:#8A7F6B;margin:5px 0 0;">${esc(t.modernEn)}</p>`:''}
+    </div>` : '';
   return `<div style="display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;margin-bottom:9px;">
       <span style="font-family:'Noto Serif SC',serif;font-weight:600;font-size:20px;color:#221D16;">${esc(key)}</span>
       <span style="font-size:13px;font-weight:600;color:#B0857A;">${esc(t.py)}</span>${span}
     </div>
     <p style="font-family:'Noto Serif SC',serif;font-size:14.5px;line-height:1.7;color:#3A332A;margin:0;">${esc(t.cn)}</p>
-    <p style="font-family:'Newsreader',serif;font-size:14.5px;line-height:1.55;color:#7A6F5C;margin:8px 0 0;">${esc(t.en)}</p>`;
+    <p style="font-family:'Newsreader',serif;font-size:14.5px;line-height:1.55;color:#7A6F5C;margin:8px 0 0;">${esc(t.en)}</p>
+    ${modern}`;
 }
 function legendHtml(){
   const role=Object.values(CATS).map(d=>`<div style="display:flex;align-items:baseline;gap:9px;">
@@ -482,23 +510,48 @@ const catColor = c => (CATS[c] ? CATS[c].color : '');
 function esc(s){ return String(s==null?'':s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
 function styleStr(o){ return Object.entries(o).map(([k,v])=>k.replace(/[A-Z]/g,m=>'-'+m.toLowerCase())+':'+v).join(';'); }
 
+/* name / place / position runs (consecutive Han glyphs sharing one of these
+ * cats) double as entity glossary entries when TERMS has a matching key —
+ * e.g. 南阳 → "modern Nanyang, Henan", 诸葛 → who Zhuge Liang was, 县令 →
+ * the modern-government counterpart of a county magistrate (§ entity detail). */
+const ENTITY_CATS = new Set(['name','place','position']);
+function wrapEntity(html, key){
+  return TERMS[key] ? `<span data-gloss="${esc(key)}" style="cursor:help;-webkit-tap-highlight-color:transparent;">${html}</span>` : html;
+}
+function runsOf(toks, renderTok){
+  let out='', i=0;
+  while(i<toks.length){
+    const tk=toks[i];
+    if(!tk.isPunct && ENTITY_CATS.has(tk.cat)){
+      let j=i+1;
+      while(j<toks.length && toks[j].cat===tk.cat) j++;
+      const run=toks.slice(i,j);
+      out += wrapEntity(run.map(renderTok).join(''), run.map(r=>r.ch).join(''));
+      i=j;
+    } else { out+=renderTok(tk); i++; }
+  }
+  return out;
+}
 function artifactChars(line, showPy, masked){
-  return tokens(line).map(tk=>{
+  const renderTok = tk=>{
     const col=catColor(tk.cat);
     const ruby={ color: masked ? 'transparent' : (col||'inherit'), borderBottom: (!masked&&col)?('2px solid '+col):'none' };
     const rt={ fontFamily:"'Manrope',sans-serif", fontSize:'10px', fontWeight:600, letterSpacing:'0', color: masked ? 'transparent' : (col||'#A89A80') };
     const py=(showPy && !masked && !tk.isPunct) ? tk.py : '';
     return `<ruby style="${styleStr(ruby)}">${esc(tk.ch)}<rt style="${styleStr(rt)}">${esc(py)}</rt></ruby>`;
-  }).join('');
+  };
+  const toks=tokens(line);
+  return masked ? toks.map(renderTok).join('') : runsOf(toks, renderTok);
 }
 function studyChars(line, showPy){
-  return tokens(line).map(tk=>{
+  const renderTok = tk=>{
     const col=catColor(tk.cat);
     const ruby={ color: tk.cat?col:'#221D16', margin: tk.isPunct?'0':'0 1px', borderBottom: tk.cat?('2px solid '+col):'none', paddingBottom:'1px' };
     const rt={ fontFamily:"'Manrope',sans-serif", fontSize:'12.5px', fontWeight:600, letterSpacing:'.01em', color: col||'#A38C73', paddingBottom:'3px' };
     const py=(showPy && !tk.isPunct) ? tk.py : '';
     return `<ruby style="${styleStr(ruby)}">${esc(tk.ch)}<rt style="${styleStr(rt)}">${esc(py)}</rt></ruby>`;
-  }).join('');
+  };
+  return runsOf(tokens(line), renderTok);
 }
 /* Which grammar roles actually appear in this line — drives a compact legend. */
 function legendFor(line){
@@ -736,7 +789,7 @@ function studyPanel(t, showPy){
         <span style="font-size:11px;letter-spacing:.12em;text-transform:uppercase;font-weight:700;color:#6C5AA6;">${gloss('典故','典故')} · the story behind the line</span>
       </div>
       ${cl.allusion.title?`<div style="font-family:'Noto Serif SC',serif;font-weight:600;font-size:18px;color:#3A2F4A;margin-bottom:9px;">${esc(cl.allusion.title)}</div>`:''}
-      <p style="font-family:'Noto Serif SC',serif;font-size:15.5px;line-height:1.8;color:#3A332A;margin:0;">${esc(cl.allusion.cn)}</p>
+      <p style="font-family:'Noto Serif SC',serif;font-size:15.5px;line-height:1.8;color:#3A332A;margin:0;">${autoGloss(esc(cl.allusion.cn))}</p>
       <p style="font-family:'Newsreader',serif;font-size:15.5px;line-height:1.6;color:#6B6256;margin:10px 0 0;">${esc(cl.allusion.en)}</p>
     </div>` : '';
 
