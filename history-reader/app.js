@@ -28,10 +28,22 @@
     try { localStorage.setItem(LIB_KEY, JSON.stringify([...set])); } catch (e) {}
   }
 
+  // ── persist the current view (passage + tab) so a refresh doesn't snap back
+  //    to the first passage. (sel is transient and intentionally not persisted.) ──
+  const VIEW_KEY = 'shi.view.v1';
+  function loadView() {
+    try { return JSON.parse(localStorage.getItem(VIEW_KEY) || '{}') || {}; }
+    catch (e) { return {}; }
+  }
+  function saveView() {
+    try { localStorage.setItem(VIEW_KEY, JSON.stringify({ pid: state.pid, tab: state.tab })); } catch (e) {}
+  }
+  const _view = loadView();
+
   const state = {
-    pid: PASSAGES[0].id,
+    pid: (_view.pid && PASSAGES.some(p => p.id === _view.pid)) ? _view.pid : PASSAGES[0].id,
     sel: null,
-    tab: 'notes',
+    tab: _view.tab || 'notes',
     depth: 'brief',
     langOn: true, knowOn: true, srcOn: true,
     font: 21,
@@ -168,7 +180,7 @@
 
     return `
     <div class="text-pane sc" data-scroll="text">
-      <div class="text-inner">
+      <div class="text-inner" style="${PASSAGE_ANIM}">
         <div class="title-row">
           <span class="title-seal">${esc(p.seal)}</span>
           <div>
@@ -504,8 +516,16 @@
   }
 
   // ════════════════════════════ render ════════════════════════════
+  // The shiIn entrance animation should play only when the passage actually
+  // changes — not on every selection/toggle (that replays it over the whole
+  // text column and flashes the page). Gate it, like the classical-reader fix.
+  const SHI_IN = 'animation:shiIn .35s ease;';
+  let PASSAGE_ANIM = SHI_IN, _lastPid = null;
   function render() {
     const p = cur();
+    PASSAGE_ANIM = (state.pid !== _lastPid) ? SHI_IN : '';
+    _lastPid = state.pid;
+    saveView();
     // a passage may not offer the active tab (e.g. no career timeline) — fall back
     if (!availTabs(p).some(([k]) => k === state.tab)) state.tab = 'notes';
     // preserve scroll positions across full re-render

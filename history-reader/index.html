@@ -88,7 +88,10 @@
 
     /* left text pane */
     .text-pane{flex:1 1 0;min-width:0;overflow-y:auto;padding:clamp(22px,3.5vw,48px) clamp(18px,4vw,56px);}
-    .text-inner{max-width:600px;margin:0 auto;animation:shiIn .35s ease;}
+    /* shiIn is applied inline (PASSAGE_ANIM) only on an actual passage change —
+       NOT on every re-render, or selecting a word would replay it over the whole
+       text column and flash the page like a turn. */
+    .text-inner{max-width:600px;margin:0 auto;}
     .title-row{display:flex;align-items:center;gap:14px;margin-bottom:8px;}
     .title-seal{
       width:46px;height:46px;border-radius:10px;background:var(--accent);color:#fff;flex-shrink:0;
