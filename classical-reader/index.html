@@ -447,7 +447,7 @@ function clickClause(i){
   const m=state.mode;
   if(m==='read')        speak(cur().lines[i].zh);
   else if(m==='recite') setState({ revealed:{...state.revealed, [i]:true} });
-  else                  setState({ sel:i, charSel:0 });
+  else                  setState({ sel:i, charSel:0, _centerClause:i });
 }
 function clickChar(i){ setState({ charSel:i }); }
 function revealAll(){ const r={}; cur().lines.forEach((_,i)=>r[i]=true); setState({ revealed:r }); }
@@ -653,13 +653,14 @@ function readerScreen(){
     let style='cursor:pointer;padding:1px 2px;border-radius:5px;';
     if(masked) style+='background:rgba(34,29,22,.14);color:transparent;box-shadow:inset 0 0 0 1px rgba(34,29,22,.05);border-radius:3px;';
     else if(selected && mode==='study') style+='background:rgba(178,58,43,.12);';
-    return `<span data-action="clause:${i}" class="wy-clause" style="${style}">${artifactChars(ln,showPy,masked)}</span>`;
+    const idAttr = (selected && mode==='study') ? ' id="wy-sel-clause"' : '';
+    return `<span data-action="clause:${i}" class="wy-clause"${idAttr} style="${style}">${artifactChars(ln,showPy,masked)}</span>`;
   }).join('');
   const leftHint = mode==='read' ? '点击任一句可朗读 · tap any line to hear it read aloud'
                  : mode==='study' ? '点击竖排原文，逐字注音 · tap a column to study it, character by character'
                  : '点击被遮住的句子以揭示 · tap a covered line to reveal it';
   const left=`<div style="flex:1 1 480px;min-width:300px;display:flex;flex-direction:column;">
-    <div class="wy-scroll" style="flex:1;background:#F6EEDD;border:1px solid #E6DCC6;border-radius:16px;padding:clamp(22px,3vw,40px);display:flex;flex-direction:row-reverse;justify-content:flex-start;gap:clamp(20px,3vw,40px);align-items:flex-start;overflow-x:auto;box-shadow:inset 0 1px 0 rgba(255,255,255,.5);">
+    <div class="wy-scroll" data-scroll="artifact" style="flex:1;background:#F6EEDD;border:1px solid #E6DCC6;border-radius:16px;padding:clamp(22px,3vw,40px);display:flex;flex-direction:row-reverse;justify-content:flex-start;gap:clamp(20px,3vw,40px);align-items:flex-start;overflow-x:auto;box-shadow:inset 0 1px 0 rgba(255,255,255,.5);">
       <div style="flex-shrink:0;display:flex;flex-direction:column;align-items:center;gap:18px;padding-top:4px;">
         <div style="writing-mode:vertical-rl;text-orientation:upright;display:flex;gap:14px;">
           <span style="font-family:'Noto Serif SC',serif;font-weight:600;font-size:clamp(22px,2.6vw,30px);letter-spacing:4px;color:#221D16;">${esc(t.title)}</span>
@@ -684,7 +685,7 @@ function readerScreen(){
 
   return `<div style="flex:1;display:flex;flex-direction:column;overflow:hidden;animation:wyIn .34s cubic-bezier(.22,.61,.36,1);">
     ${subBar}
-    <div class="wy-scroll" style="flex:1;overflow:auto;display:flex;flex-wrap:wrap;align-items:stretch;gap:clamp(18px,2.4vw,32px);padding:clamp(18px,3vw,36px);">
+    <div class="wy-scroll" data-scroll="main" style="flex:1;overflow:auto;display:flex;flex-wrap:wrap;align-items:stretch;gap:clamp(18px,2.4vw,32px);padding:clamp(18px,3vw,36px);">
       ${left}
       <div style="flex:1 1 360px;min-width:300px;max-width:560px;display:flex;flex-direction:column;gap:14px;">${right}</div>
     </div>
@@ -872,11 +873,35 @@ function recitePanel(t){
 }
 
 /* ────────────────────────────  MOUNT  ──────────────────────────── */
+/* `render()` rebuilds the whole #app innerHTML on every state change, which
+ * destroys and recreates the scrollable containers — wiping their scroll
+ * position. Tag a container `data-scroll="<key>"` to have its scrollTop /
+ * scrollLeft carried across the rebuild. */
 function render(){
   hidePop();
+  const saved={};
+  document.querySelectorAll('#app [data-scroll]').forEach(el=>{
+    saved[el.getAttribute('data-scroll')]={ top:el.scrollTop, left:el.scrollLeft };
+  });
+
   const body = state.screen==='home' ? homeScreen() : readerScreen();
   document.getElementById('app').innerHTML =
     `<div style="height:100vh;display:flex;flex-direction:column;overflow:hidden;background:#EFE7D6;">${topBar()}${body}</div>`;
+
+  document.querySelectorAll('#app [data-scroll]').forEach(el=>{
+    const s=saved[el.getAttribute('data-scroll')];
+    if(s){ el.scrollTop=s.top; el.scrollLeft=s.left; }
+  });
+
+  if(state._centerClause!=null){
+    const container=document.querySelector('#app [data-scroll="artifact"]');
+    const target=document.getElementById('wy-sel-clause');
+    if(container && target){
+      const cr=container.getBoundingClientRect(), tr=target.getBoundingClientRect();
+      container.scrollLeft += (tr.left+tr.width/2) - (cr.left+cr.width/2);
+    }
+    state._centerClause=null;
+  }
 }
 
 document.getElementById('app').addEventListener('click', e=>{
