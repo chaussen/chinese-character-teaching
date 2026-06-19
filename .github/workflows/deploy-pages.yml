@@ -1,7 +1,7 @@
 # Builds and publishes the whole public site to GitHub Pages:
 #
 #   /            landing / hub                (landing/)
-#   /studio/     Character Studio learning app (Character Studio.html + learn/ + audio/)
+#   /studio/     Character Studio learning app (studio.html + learn/ + audio/)
 #   /cardmaker/  Card Maker web app           (built from cardmaker/)
 #   /reader/     Classical Reader app         (classical-reader/index.html, self-contained)
 #
@@ -14,7 +14,7 @@ on:
   push:
     branches: [master]
     paths:
-      - "Character Studio.html"
+      - "studio.html"
       - "learn/**"
       - "audio/**"
       - "cardmaker/**"
@@ -61,7 +61,7 @@ jobs:
           cp -r landing/. "$SITE"/
 
           # Character Studio  ->  /studio/   (relative asset paths, self-contained)
-          cp "Character Studio.html" "$SITE/studio/index.html"
+          cp studio.html "$SITE/studio/index.html"
           cp -r learn  "$SITE/studio/learn"
           cp -r audio  "$SITE/studio/audio"
 

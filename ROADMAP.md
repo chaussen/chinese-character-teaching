@@ -14,7 +14,7 @@ The whole thing is a **static site published to GitHub Pages via GitHub Actions*
 | URL path | Content | Source |
 |---|---|---|
 | `/`          | Landing / hub (advertising face) | `landing/index.html` |
-| `/studio/`   | Character Studio learning app    | `Character Studio.html` + `learn/` + `audio/` |
+| `/studio/`   | Character Studio learning app    | `studio.html` + `learn/` + `audio/` |
 | `/cardmaker/`| Card Maker web app               | built from `cardmaker/` (`npm run web:build`) |
 
 - **Pages Source must be "GitHub Actions"** (Settings → Pages). The legacy Jekyll
@@ -84,9 +84,6 @@ weak characters per student/class. Grows naturally from the Phase 2 schema.
 - **`learn/explorer.js` still uses `element.animate()` for stroke-dashoffset** —
   the same WAAPI/Firefox gap fixed in `app.js` via `tweenDash`. If the standalone
   character-explorer page is still used, port it to `tweenDash` too.
-- **Remove the legacy Jekyll files** `index.md` and `_config.yml` now that Pages
-  serves via Actions — they only matter if Source ever reverts to "branch", and
-  removing them prevents the generic welcome page from ever resurfacing.
 - **Recogniser, further hardening:** position tolerance now scales with stroke
   length (fixes dense characters like 雨). A stronger version would make the box
   *neighbour-aware* — tolerance ≈ half the distance to the nearest other stroke's
@@ -102,9 +99,9 @@ weak characters per student/class. Grows naturally from the Phase 2 schema.
 
 ## Quick reference
 
-- Deploy: push to `master` touching `landing/`, `Character Studio.html`, `learn/`,
+- Deploy: push to `master` touching `landing/`, `studio.html`, `learn/`,
   `audio/`, `cardmaker/`, or the workflow → Actions builds + deploys.
-- Local studio test: serve the repo root and open `Character Studio.html`
+- Local studio test: serve the repo root and open `studio.html`
   (everything is relative-pathed).
 - Bump `studio.css?v=YYYYMMDD` (and the `?v=` on changed scripts) after edits —
   browsers cache hard.

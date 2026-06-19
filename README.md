@@ -1,16 +1,36 @@
 # Chinese Character Teaching Tools
 
-Tools for teaching Chinese characters: print-ready handwriting practice cards
-(米字格 + pinyin), vocab flashcards, stroke-order diagrams, a Kahoot quiz-sheet
-generator, and a matching game.
+Tools and web apps for teaching Chinese characters: a browser learning app, a
+classical-text reader, print-ready handwriting practice cards (米字格 + pinyin),
+vocab flashcards, stroke-order diagrams, a Kahoot quiz-sheet generator, and a
+matching game.
 
-The **card maker** has been rewritten as a TypeScript project (`cardmaker/`) that
-emits vector PDFs and runs both as a CLI and a zero-install web app. The Kahoot
-processor and matching game remain small Python tools.
+## Public site (GitHub Pages)
+
+A static site is assembled and published by GitHub Actions
+(`.github/workflows/deploy-pages.yml`). Pages source must be **"GitHub Actions"**
+(the legacy Jekyll "deploy from a branch" path is off).
+
+| URL path      | Content                          | Source |
+|---------------|----------------------------------|--------|
+| `/`           | Landing / hub                    | `landing/` |
+| `/studio/`    | Character Studio learning app    | `studio.html` + `learn/` + `audio/` |
+| `/cardmaker/` | Card Maker web app               | built from `cardmaker/` |
+| `/reader/`    | Classical Reader                 | `classical-reader/index.html` |
+
+To work on the Studio locally, serve the repo root and open `studio.html`
+(it loads its engine and data from `learn/` and clips from `audio/`).
 
 ## Repository layout
 
 ```
+landing/                  # public landing / hub page (served at /)
+studio.html               # Character Studio shell (served at /studio/)
+learn/                    # Character Studio engine + data (vanilla JS)
+audio/                    # edge-tts recordings (char / word / sentence)
+classical-reader/         # Classical Reader app (index.html) + design source
+tools/                    # content build pipeline + audio generator
+
 cardmaker/                # ← the card maker (TypeScript): CLI + web app
 ├── src/core/               framework-agnostic engine (pinyin, layouts, vector PDF)
 ├── src/cli.ts              Node CLI (single / --file / --batch)

@@ -1,7 +1,7 @@
 # Character Studio — Handoff & Build Tracker
 
 Engineering + content handoff for the classroom character app.
-**Main file:** `Character Studio.html` · **Code/data:** `learn/`. Updated 2026-06-16.
+**Main file:** `studio.html` · **Code/data:** `learn/`. Updated 2026-06-16.
 
 This document is written for **Claude Code** to take the app forward (real audio,
 content authoring, more books). Read it fully before changing anything.
@@ -28,7 +28,7 @@ Everything on Home is grouped **Series → Book → Lesson → Character**.
 
 | File | Role |
 |---|---|
-| `Character Studio.html` | shell: all views + script tags. CSS cache-bust `studio.css?v=YYYYMMDD`. |
+| `studio.html` | shell: all views + script tags. CSS cache-bust `studio.css?v=YYYYMMDD`. |
 | `learn/studio.css` | all styles. |
 | `learn/app.js` | engine: lock, routing, Home(series)/Units/Deck/**Learn**, the stroke **writer**, finger-trace, `CHAR_INDEX`, Library/series resolver, **audio (file → TTS)**. Exposes `window.STUDIO`. |
 | `learn/exercises.js` | Exercise **Hub** + session controller + MCQ/match/order/listen/word/fill. `window.Exercises`. |
