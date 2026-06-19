@@ -247,12 +247,90 @@
       <div class="ladder">${bars}</div>`;
   }
 
+  // ── geographic projection (real lng/lat → mapbox pixels) ──
+  // Equirectangular fit with a cos(lat) correction so shapes stay true; the
+  // window auto-zooms to each passage's points (with a min span so a tight
+  // cluster still shows river/province context), preserving aspect inside the box.
+  function buildProj(points, W, H) {
+    const lats = points.map(p => p.ll[1]);
+    const latC = (Math.min(...lats) + Math.max(...lats)) / 2;
+    const k = Math.cos(latC * Math.PI / 180);          // lng compression at this latitude
+    const xs = points.map(p => p.ll[0] * k);
+    const ys = points.map(p => -p.ll[1]);              // y grows southward
+    let cx = (Math.min(...xs) + Math.max(...xs)) / 2;
+    let cy = (Math.min(...ys) + Math.max(...ys)) / 2;
+    let spanX = Math.max(Math.max(...xs) - Math.min(...xs), 3.6 * k); // ≥ ~3.6° lng
+    let spanY = Math.max(Math.max(...ys) - Math.min(...ys), 3.0);     // ≥ 3° lat
+    spanX *= 1.35; spanY *= 1.35;                       // breathing room around the route
+    const minX = cx - spanX / 2, minY = cy - spanY / 2;
+    const margin = 22;
+    const sc = Math.min((W - 2 * margin) / spanX, (H - 2 * margin) / spanY);
+    const offX = (W - spanX * sc) / 2, offY = (H - spanY * sc) / 2;
+    return (lng, lat) => [offX + (lng * k - minX) * sc, offY + (-lat - minY) * sc];
+  }
+
+  function strokePolys(ctx, proj, polys, color, width) {
+    ctx.strokeStyle = color; ctx.lineWidth = width;
+    ctx.lineJoin = 'round'; ctx.lineCap = 'round';
+    polys.forEach(line => {
+      ctx.beginPath();
+      line.forEach((pt, i) => { const [x, y] = proj(pt[0], pt[1]); i ? ctx.lineTo(x, y) : ctx.moveTo(x, y); });
+      ctx.stroke();
+    });
+  }
+
+  function labelRiver(ctx, proj, segs, name, color, W, H) {
+    let best = null, bestd = Infinity; const cx = W * 0.5, cy = H * 0.42;
+    segs.forEach(line => line.forEach(pt => {
+      const [x, y] = proj(pt[0], pt[1]);
+      if (x > 24 && x < W - 24 && y > 16 && y < H - 16) {
+        const d = (x - cx) ** 2 + (y - cy) ** 2; if (d < bestd) { bestd = d; best = [x, y]; }
+      }
+    }));
+    if (!best) return;
+    ctx.font = '600 12px "Noto Serif SC", serif'; ctx.textBaseline = 'middle';
+    ctx.lineWidth = 3; ctx.strokeStyle = 'rgba(246,241,230,0.9)';
+    ctx.strokeText(name, best[0] + 5, best[1] - 7);
+    ctx.fillStyle = color; ctx.fillText(name, best[0] + 5, best[1] - 7);
+  }
+
+  // draw the base map onto the <canvas> and place HTML pins by real coordinates
+  function mountMap(p) {
+    const box = app.querySelector('.mapbox[data-map]'); if (!box || !window.HISTORY_GEO) return;
+    const cv = box.querySelector('canvas.mapcv'); if (!cv) return;
+    const W = box.clientWidth, H = box.clientHeight; if (!W || !H) return;
+    const dpr = Math.min(window.devicePixelRatio || 1, 2);
+    cv.width = W * dpr; cv.height = H * dpr; cv.style.width = W + 'px'; cv.style.height = H + 'px';
+    const ctx = cv.getContext('2d'); ctx.setTransform(dpr, 0, 0, dpr, 0, 0); ctx.clearRect(0, 0, W, H);
+
+    const G = window.HISTORY_GEO, R = G.rivers;
+    const proj = buildProj(p.map.points, W, H);
+    strokePolys(ctx, proj, G.provinces, '#DBD2BF', 1);          // 今省界 · 淡
+    strokePolys(ctx, proj, R.chang, '#A9C2CE', 2.1);            // 长江
+    strokePolys(ctx, proj, R.huang, '#C8B891', 2.1);            // 黄河 · 含沙色
+    strokePolys(ctx, proj, R.huai, '#A9C2CE', 1.7);             // 淮河
+
+    // 行踪路线（按时序）
+    const byId = {}; p.map.points.forEach(pt => byId[pt.id] = pt);
+    const rp = p.map.route.map(id => byId[id]).filter(Boolean);
+    ctx.strokeStyle = '#8A7F66'; ctx.lineWidth = 1.8; ctx.setLineDash([5, 4]); ctx.lineJoin = 'round';
+    ctx.beginPath();
+    rp.forEach((pt, i) => { const [x, y] = proj(pt.ll[0], pt.ll[1]); i ? ctx.lineTo(x, y) : ctx.moveTo(x, y); });
+    ctx.stroke(); ctx.setLineDash([]);
+
+    labelRiver(ctx, proj, R.huang, '黄河', '#B49E6C', W, H);
+    labelRiver(ctx, proj, R.chang, '长江', '#7FA0AE', W, H);
+    labelRiver(ctx, proj, R.huai, '淮河', '#7FA0AE', W, H);
+
+    box.querySelectorAll('.pin').forEach(pin => {
+      const ll = pin.getAttribute('data-ll').split(',').map(Number);
+      const [x, y] = proj(ll[0], ll[1]);
+      pin.style.left = x + 'px'; pin.style.top = y + 'px';
+    });
+  }
+
   function viewMap(p) {
     const M = p.map;
-    const byId = {}; M.points.forEach(pt => byId[pt.id] = pt);
-    const routePts = M.route.map(id => byId[id]).filter(Boolean)
-      .map(pt => `${pt.xy[0]},${pt.xy[1]}`).join(' ');
-
     const pins = M.points.map(pt => {
       const e = ENTITIES[pt.id];
       const sel = state.sel && (state.sel.id === pt.id || (pt.ref && state.sel.id === pt.ref));
@@ -262,7 +340,7 @@
       const target = pt.ref || (ENTITIES[pt.id] ? pt.id : '');
       const w = e ? e.w : pt.id;
       return `
-        <div class="pin" style="left:${pt.xy[0]}%;top:${pt.xy[1]}%;z-index:${sel ? 3 : 2};" data-act="selTerm" data-id="${esc(target)}">
+        <div class="pin" data-ll="${pt.ll[0]},${pt.ll[1]}" style="z-index:${sel ? 3 : 2};" data-act="selTerm" data-id="${esc(target)}">
           <span class="dot" style="${dot}">${pt.order}</span>
           <span class="lab" style="${lab}">${esc(w)}<span class="mod"> ${esc(pt.mod)}</span></span>
         </div>`;
@@ -276,14 +354,10 @@
 
     return `
       <div class="view-h">地理视图 · ${esc(p.subject)}行迹</div>
-      <div class="view-sub">图层：行踪路线</div>
-      <div class="mapbox">
-        <svg viewBox="0 0 100 100" preserveAspectRatio="none" style="position:absolute;inset:0;width:100%;height:100%;">
-          <path d="M2 40 Q 18 38 30 46 T 56 52 T 80 60 T 100 64" fill="none" stroke="#C9C0AB" stroke-width="0.8" stroke-dasharray="2 2" vector-effect="non-scaling-stroke"></path>
-          <path d="M78 8 Q 70 30 62 44 T 60 78 T 70 100" fill="none" stroke="#C9C0AB" stroke-width="0.8" stroke-dasharray="2 2" vector-effect="non-scaling-stroke"></path>
-          <polyline points="${routePts}" fill="none" stroke="#8A7F66" stroke-width="1.6" stroke-dasharray="3 2.4" vector-effect="non-scaling-stroke"></polyline>
-        </svg>
-        <span class="stub">[ 真实底图待接入 · 县级坐标 ]</span>
+      <div class="view-sub">真实经纬度底图 · 图层：水系 / 今省界 / 行踪路线</div>
+      <div class="mapbox" data-map="1">
+        <canvas class="mapcv"></canvas>
+        <span class="stub">底图：黄河·淮河·长江 + 今省界（淡）</span>
         ${pins}
       </div>
       <div class="map-cap">${esc(M.caption)}</div>
@@ -441,7 +515,17 @@
     app.querySelectorAll('[data-scroll]').forEach(el => {
       const v = saved[el.getAttribute('data-scroll')]; if (v != null) el.scrollTop = v;
     });
+
+    if (state.tab === 'map') mountMap(p);
   }
+
+  // keep the canvas base map crisp / pins registered when the panel resizes
+  let mapRAF = 0;
+  window.addEventListener('resize', () => {
+    if (state.tab !== 'map') return;
+    cancelAnimationFrame(mapRAF);
+    mapRAF = requestAnimationFrame(() => mountMap(cur()));
+  });
 
   function setState(patch) { Object.assign(state, patch); render(); }
 

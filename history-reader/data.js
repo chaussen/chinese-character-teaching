@@ -352,16 +352,16 @@
       '«wuding5»，歡卒，景懼禍，遂以河南十三州來降。«liangwu»納⟨zhi2⟩，封«henanwang»、«dajiangjun»，使持節。'
     ],
 
-    // 地理视图 · 行迹。xy = 示意坐标(0–100)，非真实地理；route = 按时序连线的点 id。
-    // alt:true = 学界存疑的地点。production → 县级经纬度 + 真实路线。
+    // 地理视图 · 行迹。ll = [经度, 纬度] 县级真实坐标；底图(geo.js)按经纬度投影。
+    // alt:true = 学界存疑的地点。route = 按时序连线的点 id。
     map: {
-      caption: '侯景行迹示意 · 北朝中后期 · 底图待接入真实地理坐标（县级精度）',
+      caption: '侯景行迹 · 北朝中后期 · 县级经纬度底图（黄河/淮河/长江 + 今省界）',
       points: [
-        { id: 'shuofang', order: 1, xy: [24, 17], mod: '今内蒙古杭锦旗', note: '籍贯 · 起点（一说雁门）' },
-        { id: 'yanmen',   order: 1, xy: [37, 27], mod: '今山西代县',     note: '一说籍贯 · 学界存疑', alt: true },
-        { id: 'dingzhou', order: 2, xy: [57, 29], mod: '今河北定州',     note: '528 擢定州刺史' },
-        { id: 'henan',    order: 3, xy: [50, 47], mod: '黄河以南十三州',  note: '530s 专制河南 · 拥众十万' },
-        { id: 'jiankang', order: 4, xy: [67, 65], mod: '今江苏南京',     note: '547 举河南降梁所向 · 后陷台城', ref: 'liangwu' }
+        { id: 'shuofang', order: 1, ll: [107.15, 39.83], mod: '今内蒙古杭锦旗', note: '籍贯 · 起点（一说雁门）' },
+        { id: 'yanmen',   order: 1, ll: [112.96, 39.07], mod: '今山西代县',     note: '一说籍贯 · 学界存疑', alt: true },
+        { id: 'dingzhou', order: 2, ll: [114.99, 38.52], mod: '今河北定州',     note: '528 擢定州刺史' },
+        { id: 'henan',    order: 3, ll: [114.30, 34.40], mod: '黄河以南十三州',  note: '530s 专制河南 · 拥众十万' },
+        { id: 'jiankang', order: 4, ll: [118.79, 32.06], mod: '今江苏南京',     note: '547 举河南降梁所向 · 后陷台城', ref: 'liangwu' }
       ],
       route: ['shuofang', 'dingzhou', 'henan', 'jiankang']
     },
@@ -412,12 +412,12 @@
       '«yuanying|元英»見橋絕，脫身遁去。'
     ],
     map: {
-      caption: '韋叡赴援钟离行迹示意 · 天监五年(506) · 底图待接入真实地理坐标（县级精度）',
+      caption: '韋叡赴援钟离行迹 · 天监五年(506) · 县级经纬度底图（钟离在淮河之滨）',
       points: [
-        { id: 'duling',       order: 1, xy: [16, 16], mod: '今陕西西安东南',   note: '京兆杜陵 · 韦氏郡望、起点' },
-        { id: 'hefei',        order: 2, xy: [52, 46], mod: '今安徽合肥',       note: '自合肥径道驰援' },
-        { id: 'zhongli',      order: 3, xy: [70, 40], mod: '今安徽凤阳东北',   note: '钟离之战 · 解围' },
-        { id: 'shaoyangzhou', order: 3, xy: [74, 50], mod: '钟离城外淮中沙洲', note: '邵阳洲 · 火船焚桥决战' }
+        { id: 'duling',       order: 1, ll: [109.00, 34.18], mod: '今陕西西安东南',   note: '京兆杜陵 · 韦氏郡望、起点' },
+        { id: 'hefei',        order: 2, ll: [117.28, 31.86], mod: '今安徽合肥',       note: '自合肥径道驰援' },
+        { id: 'zhongli',      order: 3, ll: [117.62, 32.95], mod: '今安徽凤阳东北',   note: '钟离之战 · 解围' },
+        { id: 'shaoyangzhou', order: 3, ll: [117.72, 32.99], mod: '钟离城外淮中沙洲', note: '邵阳洲 · 火船焚桥决战' }
       ],
       route: ['duling', 'hefei', 'zhongli']
     },
@@ -450,11 +450,11 @@
       '若孤軍獨往，城不時立，必見狼狽。今得待衆軍同進，始大捷矣。」'
     ],
     map: {
-      caption: '曹景宗钟离之役行迹示意 · 天监五年(506) · 底图待接入真实地理坐标（县级精度）',
+      caption: '曹景宗钟离之役行迹 · 天监五年(506) · 县级经纬度底图（淮上诸洲）',
       points: [
-        { id: 'xinye',      order: 1, xy: [34, 20], mod: '今河南新野',     note: '籍贯 · 新野将门' },
-        { id: 'zhongli',    order: 2, xy: [68, 46], mod: '今安徽凤阳东北', note: '都督众军援钟离' },
-        { id: 'daorenzhou', order: 2, xy: [72, 56], mod: '钟离左近淮中洲', note: '顿兵道人洲，待众军齐进' }
+        { id: 'xinye',      order: 1, ll: [112.36, 32.52], mod: '今河南新野',     note: '籍贯 · 新野将门' },
+        { id: 'zhongli',    order: 2, ll: [117.62, 32.95], mod: '今安徽凤阳东北', note: '都督众军援钟离' },
+        { id: 'daorenzhou', order: 2, ll: [117.85, 33.02], mod: '钟离左近淮中洲', note: '顿兵道人洲，待众军齐进' }
       ],
       route: ['xinye', 'zhongli']
     },
