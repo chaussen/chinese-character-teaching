@@ -53,19 +53,23 @@
   function orderedTerms(p) {
     const seen = new Set(), out = [];
     for (const str of p.lines) {
-      const re = /«([a-z0-9]+)»/g; let m;
+      const re = /«([a-z0-9_]+)(?:\|[^»]*)?»/g; let m;
       while ((m = re.exec(str))) { if (!seen.has(m[1])) { seen.add(m[1]); out.push(m[1]); } }
     }
     return out;
   }
 
-  // split a line into plain / «term» / ⟨lang⟩ segments
+  // split a line into plain / «term» / ⟨lang⟩ segments.
+  // Markers carry an optional surface override — «id|高祖» / ⟨id|surface⟩ — so one
+  // registry entity (canonical 梁武帝) can appear under different names across texts
+  // (高祖 here) while still resolving to the same id (this is the mention model).
   function parseLine(str) {
-    const segs = []; let last = 0; const re = /«([a-z0-9]+)»|⟨([a-z0-9]+)⟩/g; let m;
+    const segs = []; let last = 0;
+    const re = /«([a-z0-9_]+)(?:\|([^»]*))?»|⟨([a-z0-9_]+)(?:\|([^⟩]*))?⟩/g; let m;
     while ((m = re.exec(str))) {
       if (m.index > last) segs.push({ text: str.slice(last, m.index) });
-      if (m[1]) segs.push({ text: (ENTITIES[m[1]] || {}).w || m[1], term: m[1] });
-      else segs.push({ text: (LANG[m[2]] || {}).w || m[2], lang: m[2] });
+      if (m[1]) segs.push({ text: m[2] || (ENTITIES[m[1]] || {}).w || m[1], term: m[1] });
+      else segs.push({ text: m[4] || (LANG[m[3]] || {}).w || m[3], lang: m[3] });
       last = re.lastIndex;
     }
     if (last < str.length) segs.push({ text: str.slice(last) });
@@ -95,7 +99,10 @@
         <span class="seal">史</span>
         <div>
           <div class="t1">史案 · 史书知识图谱阅读器</div>
-          <div class="t2">《${esc(p.title)}》${esc(p.sub)}</div>
+          <div class="t2">${PASSAGES.length > 1
+            ? `<select class="picker" data-act="passage">${PASSAGES.map(pp =>
+                `<option value="${pp.id}"${pp.id === state.pid ? ' selected' : ''}>《${esc(pp.title)}》${esc(pp.sub)}</option>`).join('')}</select>`
+            : `《${esc(p.title)}》${esc(p.sub)}`}</div>
         </div>
       </div>
       <span class="spacer"></span>
@@ -178,9 +185,17 @@
   }
 
   // ── right panel ──
+  // which tabs a passage offers (notes/lib always; the graphic views need their data)
+  function availTabs(p) {
+    return TABS.filter(([k]) =>
+      k === 'notes' || k === 'lib' ? true :
+      k === 'map' ? !!p.map :
+      k === 'rel' ? !!p.rel :
+      (k === 'timeline' || k === 'rise') ? !!(p.rise && p.rise.length) : true);
+  }
   function viewTabs(p) {
     const n = orderedTerms(p).length;
-    return `<div class="tabs sc">` + TABS.map(([k, label]) => {
+    return `<div class="tabs sc">` + availTabs(p).map(([k, label]) => {
       const count = k === 'notes' ? `<span class="n">${n}</span>` : '';
       return `<button class="tab ${state.tab === k ? 'on' : ''}" data-act="tab" data-id="${k}">${label}${count}</button>`;
     }).join('') + `</div>`;
@@ -412,6 +427,8 @@
   // ════════════════════════════ render ════════════════════════════
   function render() {
     const p = cur();
+    // a passage may not offer the active tab (e.g. no career timeline) — fall back
+    if (!availTabs(p).some(([k]) => k === state.tab)) state.tab = 'notes';
     // preserve scroll positions across full re-render
     const saved = {};
     app.querySelectorAll('[data-scroll]').forEach(el => saved[el.getAttribute('data-scroll')] = el.scrollTop);
@@ -452,12 +469,26 @@
     }
   });
 
+  // merge a passage's terms into the persistent 专名库 (accumulates across reads)
+  function mergeLib(p) {
+    let changed = false;
+    orderedTerms(p).forEach(id => { if (!state.lib.has(id)) { state.lib.add(id); changed = true; } });
+    if (changed) saveLib(state.lib);
+  }
+
+  // passage switch (corpus nav): reset selection/tab, accrue the new passage's terms
+  app.addEventListener('change', e => {
+    const el = e.target.closest('select[data-act="passage"]'); if (!el) return;
+    if (PASSAGES.some(p => p.id === el.value)) {
+      state.pid = el.value;
+      mergeLib(cur());
+      setState({ sel: null, tab: 'notes' });
+    }
+  });
+
   // ── boot: merge this passage's terms into the persistent 专名库 ──
   (function boot() {
-    const ids = orderedTerms(cur());
-    let changed = false;
-    ids.forEach(id => { if (!state.lib.has(id)) { state.lib.add(id); changed = true; } });
-    if (changed) saveLib(state.lib);
+    mergeLib(cur());
     render();
   })();
 })();
