@@ -1,0 +1,36 @@
+{
+  "CATS": {
+    "person": {
+      "label": "人物",
+      "color": "#B23A2B",
+      "deco": "solid"
+    },
+    "place": {
+      "label": "地名",
+      "color": "#2C7A70",
+      "deco": "wavy"
+    },
+    "office": {
+      "label": "官职",
+      "color": "#3F6B8C",
+      "deco": "double"
+    },
+    "era": {
+      "label": "年号",
+      "color": "#B26B00",
+      "deco": "dotted"
+    },
+    "rank": {
+      "label": "爵位",
+      "color": "#6C5AA6",
+      "deco": "dashed"
+    }
+  },
+  "LANG_ROLES": {
+    "句式": "#B23A2B",
+    "副词": "#3F6B8C",
+    "活用": "#B0772A",
+    "代词": "#6C5AA6",
+    "介词": "#2C7A70"
+  }
+}

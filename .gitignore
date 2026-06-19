@@ -16,3 +16,7 @@ practice
 tools/build/dictionary.txt
 tools/build/*.txt
 tools/build/common_pool.json
+
+# 史案 content pipeline — transient ingest artifacts (regenerable; data.js is the build output)
+history-reader/build/input/*.residue.md
+history-reader/build/input/*.skel.json
