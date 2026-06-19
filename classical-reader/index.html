@@ -628,7 +628,7 @@ function homeScreen(){
     liveCard('snake', DATA.snake),
     ...LOCKED.map(lockedCard)
   ].join('');
-  return `<div class="wy-scroll" style="flex:1;overflow-y:auto;animation:wyIn .34s cubic-bezier(.22,.61,.36,1);">
+  return `<div class="wy-scroll" style="flex:1;overflow-y:auto;${SCREEN_ANIM}">
     <div style="max-width:1080px;margin:0 auto;width:100%;padding:clamp(26px,4vw,52px) clamp(20px,4vw,44px) 64px;">
 
       <div style="margin-bottom:clamp(30px,4vw,46px);">
@@ -775,7 +775,7 @@ function readerScreen(){
   else if(mode==='study')  right=studyPanel(t, showPy);
   else                     right=recitePanel(t);
 
-  return `<div style="flex:1;display:flex;flex-direction:column;overflow:hidden;animation:wyIn .34s cubic-bezier(.22,.61,.36,1);">
+  return `<div style="flex:1;display:flex;flex-direction:column;overflow:hidden;${SCREEN_ANIM}">
     ${subBar}
     <div class="wy-scroll" data-scroll="main" style="flex:1;overflow:auto;display:flex;flex-wrap:wrap;align-items:stretch;gap:clamp(18px,2.4vw,32px);padding:clamp(18px,3vw,36px);">
       ${left}
@@ -988,8 +988,16 @@ function recitePanel(t){
  * destroys and recreates the scrollable containers — wiping their scroll
  * position. Tag a container `data-scroll="<key>"` to have its scrollTop /
  * scrollLeft carried across the rebuild. */
+/* The wyIn entrance animation should play only when we actually move between
+ * screens (home ↔ reader) — not on every in-screen state change. Re-running it
+ * when you tap a clause or character made the whole page flash as if it were
+ * turning. Gate it on a screen change. */
+const WY_IN='animation:wyIn .34s cubic-bezier(.22,.61,.36,1);';
+let SCREEN_ANIM='', _lastScreen=null;
 function render(){
   hidePop();
+  SCREEN_ANIM = (state.screen!==_lastScreen) ? WY_IN : '';
+  _lastScreen = state.screen;
   const saved={};
   document.querySelectorAll('#app [data-scroll]').forEach(el=>{
     saved[el.getAttribute('data-scroll')]={ top:el.scrollTop, left:el.scrollLeft };
