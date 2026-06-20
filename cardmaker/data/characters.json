@@ -150,5 +150,117 @@
 "看见": {
 "pinyin": "kànjiàn",
 "english": "to see; to catch sight of"
+},
+"的": {
+"pinyin": "de",
+"english": "expressing possession"
+},
+"家": {
+"pinyin": "jiā",
+"english": "home; family; classifier for families or businesses; noun suffix for a specialist in some activity, such as a musician or revolutionary, corresponding to English -ist, -er, -ary or -ia"
+},
+"这": {
+"pinyin": "zhè",
+"english": "this; these"
+},
+"有": {
+"pinyin": "yǒu",
+"english": "to have; there is; there are; to exist; to be"
+},
+"和": {
+"pinyin": "hé",
+"english": "and; harmonious"
+},
+"爷爷": {
+"pinyin": "yéye",
+"english": "(coll.) father's father; paternal grandfather"
+},
+"奶奶": {
+"pinyin": "nǎinai",
+"english": "(informal) grandma (paternal grandmother)"
+},
+"爸爸": {
+"pinyin": "bàba",
+"english": "(informal) father"
+},
+"妈妈": {
+"pinyin": "māma",
+"english": "mama; mommy; mother"
+},
+"放": {
+"pinyin": "fàng",
+"english": "to put; to place; to release; to free; to let go; to let out; to set off (fireworks)"
+},
+"回": {
+"pinyin": "huí",
+"english": "go back; return"
+},
+"到": {
+"pinyin": "dào",
+"english": "to (a place); until (a time); up to; to go; to arrive; (verb complement denoting completion or result of an action)"
+},
+"给": {
+"pinyin": "gěi",
+"english": "to supply; to provide"
+},
+"完": {
+"pinyin": "wán",
+"english": "to finish; to be over; whole; complete; entire"
+},
+"把": {
+"pinyin": "bǎ",
+"english": "sentence structure; handle"
+},
+"放学": {
+"pinyin": "fàngxué",
+"english": "to dismiss students at the end of the school day"
+},
+"回家": {
+"pinyin": "huíjiā",
+"english": "to return home"
+},
+"大家": {
+"pinyin": "dàjiā",
+"english": "everyone"
+},
+"唱歌": {
+"pinyin": "chànggē",
+"english": "to sing a song"
+},
+"国家": {
+"pinyin": "guójiā",
+"english": "country; nation; state"
+},
+"这样": {
+"pinyin": "zhèyàng",
+"english": "this kind of; so; this way; like this; such"
+},
+"只有": {
+"pinyin": "zhǐyǒu",
+"english": "only"
+},
+"和平": {
+"pinyin": "hépíng",
+"english": "peace; peaceful"
+},
+"开放": {
+"pinyin": "kāifàng",
+"english": "to be open (to the public); to be open-minded; unconstrained in one's sexuality"
+},
+"回答": {
+"pinyin": "huídá",
+"english": "to reply; to answer; the answer"
+},
+"得到": {
+"pinyin": "dédào",
+"english": "to get; to obtain; to receive"
+},
+"完全": {
+"pinyin": "wánquán",
+"english": "complete; whole; totally; entirely"
+},
+"完成": {
+"pinyin": "wánchéng",
+"english": "to complete; to accomplish"
 }
 }

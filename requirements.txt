@@ -5,4 +5,4 @@
 #   pip install -r requirements.txt
 
 XlsxWriter        # kahoot: write .xlsx question sheets
-pinyin            # kahoot: cedict translations
+pypinyin          # kahoot: fallback pinyin for words missing a curated glossary entry

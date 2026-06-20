@@ -41,8 +41,9 @@ cardmaker/                # ← the card maker (TypeScript): CLI + web app
 └── fonts/                  bundled char + pinyin fonts
 
 chinese_tools/            # the remaining Python tool (one package)
-├── kahoot/                 build Kahoot question spreadsheets (CSV/XLSX)
-└── data/                   curated pinyin/English readings + tone decoder
+├── kahoot/                 build Kahoot bulk-import .xlsx quizzes from JSON lessons
+│   └── lessons/              lesson vocabulary lists (JSON; see schema in README below)
+└── data/                   numbered-pinyin tone decoder (glossary lives in cardmaker/data/)
 
 worksheets/               # ready-to-print PDFs + their source character lists
 tests/                    # pytest suite (Python side)
@@ -66,14 +67,34 @@ npm run web:dev                                         # the web app, locally
 See [`worksheets/README.md`](worksheets/README.md) for the ready-made Year 1–6
 PDFs and how to regenerate them.
 
-### Kahoot processor — `chinese_tools.kahoot.processor`
+### Kahoot quiz generator — `chinese_tools.kahoot`
 
-Builds Kahoot question spreadsheets in bulk, so you don't enter questions one by
-one on the website.
+Builds Kahoot bulk-import quiz spreadsheets from a JSON lesson vocabulary list, so
+you don't enter questions one by one on the website. Each item's pinyin + English
+meaning comes from the curated glossary the card maker also uses
+(`cardmaker/data/characters.json`) — anything missing from it still gets a
+computed pinyin reading (via `pypinyin`) but no English meaning, with a warning
+so the gap gets noticed. Generation is deterministic (seeded), the correct
+answer's column is actually randomized per question (the old script always put
+it in column 1), and output goes straight to `.xlsx` — Kahoot's importer
+rejects a plain `.csv`.
 
 ```bash
 pip install -r requirements.txt   # Python tools (Kahoot)
+
+# one lesson -> one quiz
+python -m chinese_tools.kahoot generate \
+  chinese_tools/kahoot/lessons/lesson10_huayuan.json -o out/lesson10.xlsx
+
+# pool several lessons into one combined/shuffled quiz
+python -m chinese_tools.kahoot mix lessons/*.json -o out/mixed.xlsx --count 20
 ```
+
+A lesson file is JSON: `title`, `mode` (`hanzi_to_meaning` / `hanzi_to_pinyin` /
+`pinyin_to_meaning`), a `question_template` containing `{prompt}`, the `items`
+list, and optional `choices` (2-4, default 4), `time_limit` (one of Kahoot's
+allowed values, default 20), and `seed`. See
+`chinese_tools/kahoot/lessons/lesson10_huayuan.json` for a worked example.
 
 ## Tests
 
