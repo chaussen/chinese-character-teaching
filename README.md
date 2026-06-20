@@ -10,13 +10,14 @@ A static site is assembled and published by GitHub Actions
 (`.github/workflows/deploy-pages.yml`). Pages source must be **"GitHub Actions"**
 (the legacy Jekyll "deploy from a branch" path is off).
 
-| URL path      | Content                          | Source |
-|---------------|----------------------------------|--------|
-| `/`           | Landing / hub                    | `landing/` |
-| `/studio/`    | Character Studio learning app    | `studio.html` + `learn/` + `audio/` |
-| `/cardmaker/` | Card Maker web app               | built from `cardmaker/` |
-| `/reader/`    | Classical Reader                 | `classical-reader/index.html` |
-| `/history/`   | 史案 History KG Reader            | `history-reader/` |
+| URL path                | Content                          | Source |
+|--------------------------|----------------------------------|--------|
+| `/`                      | Landing / hub                    | `landing/` |
+| `/character/`            | Character Studio learning app    | `studio.html` + `learn/` + `audio/` |
+| `/classical-literature/` | Classical Reader                 | `classical-reader/index.html` |
+| `/history/`              | 史案 History KG Reader            | `history-reader/` |
+| `/tools/cardmaker/`      | Card Maker web app (hidden, not linked from landing) | built from `cardmaker/` |
+| `/tools/kahoot/`         | Kahoot tool info page (hidden, not linked from landing) | `chinese_tools/kahoot/web/index.html` |
 
 To work on the Studio locally, serve the repo root and open `studio.html`
 (it loads its engine and data from `learn/` and clips from `audio/`).
@@ -25,10 +26,10 @@ To work on the Studio locally, serve the repo root and open `studio.html`
 
 ```
 landing/                  # public landing / hub page (served at /)
-studio.html               # Character Studio shell (served at /studio/)
+studio.html               # Character Studio shell (served at /character/)
 learn/                    # Character Studio engine + data (vanilla JS)
 audio/                    # edge-tts recordings (char / word / sentence)
-classical-reader/         # Classical Reader app (index.html) + design source
+classical-reader/         # Classical Reader app (index.html) + design source (served at /classical-literature/)
 history-reader/           # 史案 history knowledge-graph reader (served at /history/)
 tools/                    # content build pipeline + audio generator
 

@@ -1,10 +1,13 @@
 # Builds and publishes the whole public site to GitHub Pages:
 #
-#   /            landing / hub                (landing/)
-#   /studio/     Character Studio learning app (studio.html + learn/ + audio/)
-#   /cardmaker/  Card Maker web app           (built from cardmaker/)
-#   /reader/     Classical Reader app         (classical-reader/index.html, self-contained)
-#   /history/    史案 History KG Reader        (history-reader/, self-contained)
+#   /                       landing / hub          (landing/) — links only the 3 learning apps
+#   /character/             Character Studio       (studio.html + learn/ + audio/)
+#   /classical-literature/  Classical Reader       (classical-reader/index.html, self-contained)
+#   /history/               史案 History KG Reader  (history-reader/, self-contained)
+#
+#   /tools/cardmaker/       Card Maker web app     (built from cardmaker/) — disabled (WIP block),
+#   /tools/kahoot/          Kahoot tool info page  (chinese_tools/kahoot/web/) — not linked from
+#                           landing; reachable only by anyone who already knows the URL.
 #
 # One-time setup (repo owner): Settings -> Pages -> "Build and deployment" ->
 # Source: "GitHub Actions". For the custom domain, also add the DNS record and
@@ -19,6 +22,7 @@ on:
       - "learn/**"
       - "audio/**"
       - "cardmaker/**"
+      - "chinese_tools/kahoot/web/**"
       - "landing/**"
       - "classical-reader/index.html"
       - "history-reader/**"
@@ -57,24 +61,28 @@ jobs:
           set -euo pipefail
           SITE="_site"
           rm -rf "$SITE"
-          mkdir -p "$SITE/studio" "$SITE/cardmaker" "$SITE/reader" "$SITE/history"
+          mkdir -p "$SITE/character" "$SITE/classical-literature" "$SITE/history" "$SITE/tools/cardmaker" "$SITE/tools/kahoot"
 
           # Landing / hub  ->  /
           cp -r landing/. "$SITE"/
 
-          # Character Studio  ->  /studio/   (relative asset paths, self-contained)
-          cp studio.html "$SITE/studio/index.html"
-          cp -r learn  "$SITE/studio/learn"
-          cp -r audio  "$SITE/studio/audio"
+          # Character Studio  ->  /character/   (relative asset paths, self-contained)
+          cp studio.html "$SITE/character/index.html"
+          cp -r learn  "$SITE/character/learn"
+          cp -r audio  "$SITE/character/audio"
 
-          # Card Maker  ->  /cardmaker/   (vite built with relative base)
-          cp -r cardmaker/dist-web/. "$SITE/cardmaker/"
-
-          # Classical Reader  ->  /reader/   (single self-contained HTML file)
-          cp "classical-reader/index.html" "$SITE/reader/index.html"
+          # Classical Reader  ->  /classical-literature/   (single self-contained HTML file)
+          cp "classical-reader/index.html" "$SITE/classical-literature/index.html"
 
           # 史案 History KG Reader  ->  /history/   (self-contained: html + geo.js + app.js + data.js)
           cp history-reader/index.html history-reader/geo.js history-reader/app.js history-reader/data.js "$SITE/history/"
+
+          # Card Maker  ->  /tools/cardmaker/   (vite built with relative base; WIP block is the
+          # entry, the real app at app.html is reachable only if you know the URL)
+          cp -r cardmaker/dist-web/. "$SITE/tools/cardmaker/"
+
+          # Kahoot tool  ->  /tools/kahoot/   (info page only — the tool itself is a local CLI)
+          cp chinese_tools/kahoot/web/index.html "$SITE/tools/kahoot/index.html"
 
           # Skip Jekyll processing of the artifact.
           touch "$SITE/.nojekyll"

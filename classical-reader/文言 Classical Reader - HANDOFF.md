@@ -3,7 +3,7 @@
 A learning module for **classic Chinese literature (文言文)** aimed at **near-native / advanced** learners.
 Design language is shared with the suite's entry point (top bar, Casey Chinese School branding, coral/paper palette) but the product is otherwise **standalone** — treat content, schema, and learning system as its own thing.
 
-> **Shipped app:** `index.html` — a self-contained vanilla HTML/CSS/JS port of the prototype, deployed to **`/reader/`** by `.github/workflows/deploy-pages.yml` and linked from the landing hub. No build step, no framework, no external deps; the content (`DATA`/`LOCKED`) is inline. Open it directly in a browser.
+> **Shipped app:** `index.html` — a self-contained vanilla HTML/CSS/JS port of the prototype, deployed to **`/classical-literature/`** by `.github/workflows/deploy-pages.yml` and linked from the landing hub. No build step, no framework, no external deps; the content (`DATA`/`LOCKED`) is inline. Open it directly in a browser.
 >
 > The port applies the **v2 wireframe corrections**: on-screen colour = **grammar role** (`cats`, §1b), reading hazards (`duo`/`rare`/`loan`/`phrase`) are **note chips, not glyph colours** (§1c), and artifact pinyin reads **horizontally & upright** (the `.artifact rt` rule). A `validate()` guard logs any line where Han-glyph count ≠ pinyin-syllable count, or any `cats` index out of range.
 >
