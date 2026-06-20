@@ -2,8 +2,8 @@
 
 A rewrite of the Chinese character practice-card maker as a **TypeScript**
 engine that emits **vector** PDFs (KB-sized, crisp, real glyphs) instead of the
-old multi-megabyte rasters. One engine drives a Node CLI today and a zero-install
-web app (in progress).
+old multi-megabyte rasters. One engine drives a Node CLI and a zero-install
+web app, both built on the shared TypeScript core.
 
 Each character sits in a 米字格 (solid border, dashed cross + diagonals) with its
 pinyin on top in a 四线三格 four-line guide.
@@ -65,9 +65,9 @@ npm run web:dev    # local dev server
 npm run web:build  # -> dist-web/ (static, deployable anywhere)
 ```
 
-The app is client-side only. It deploys to GitHub Pages via
-`.github/workflows/deploy-cardmaker.yml` — enable it once under
-**repo Settings → Pages → Source: GitHub Actions**.
+The app is client-side only. It deploys to GitHub Pages (under `/tools/cardmaker/`,
+unlinked from the main site) as part of the monorepo-wide
+`.github/workflows/deploy-pages.yml` build.
 
 ## Develop
 
