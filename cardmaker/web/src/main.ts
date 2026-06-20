@@ -21,23 +21,21 @@ async function loadStrokes(char: string): Promise<StrokeData | null> {
 const $ = <T extends HTMLElement>(id: string): T => document.getElementById(id) as T;
 
 const els = {
+  form: $<HTMLFormElement>("cardForm"),
   chars: $<HTMLTextAreaElement>("chars"),
   layout: $<HTMLSelectElement>("layout"),
   cols: $<HTMLInputElement>("cols"),
+  colsField: $<HTMLDivElement>("colsField"),
   margin: $<HTMLInputElement>("margin"),
   trace: $<HTMLInputElement>("trace"),
+  traceField: $<HTMLDivElement>("traceField"),
   title: $<HTMLInputElement>("title"),
   charfont: $<HTMLInputElement>("charfont"),
-  generate: $<HTMLButtonElement>("generate"),
   download: $<HTMLButtonElement>("download"),
-  status: $<HTMLDivElement>("status"),
-  meta: $<HTMLSpanElement>("meta"),
-  frame: $<HTMLIFrameElement>("frame"),
+  status: $<HTMLParagraphElement>("status"),
 };
 
 let assetsPromise: Promise<Assets> | null = null;
-let currentUrl: string | null = null;
-let currentBlob: Blob | null = null;
 let customCharFont: Uint8Array | null = null;
 
 async function loadAssets(): Promise<Assets> {
@@ -72,20 +70,32 @@ function readConfig(): Config {
   };
 }
 
-function setStatus(msg: string, warn = false): void {
+function setStatus(msg: string, level: "info" | "warn" | "error" = "info"): void {
   els.status.textContent = msg;
-  els.status.classList.toggle("warn", warn);
+  els.status.classList.toggle("warn", level === "warn");
+  els.status.classList.toggle("error", level === "error");
 }
 
-async function generate(): Promise<void> {
+// Each layout only uses a subset of the page-setup fields; hide the rest so the
+// form doesn't present knobs that have no effect for the current choice.
+function syncFieldVisibility(): void {
+  const layout = els.layout.value;
+  els.colsField.hidden = !(layout === "grid" || layout === "vocab");
+  els.traceField.hidden = !(layout === "big" || layout === "grid");
+}
+
+async function downloadCards(): Promise<void> {
   const isVocab = els.layout.value === "vocab";
   const { entries, dropped } = isVocab ? parseWords(els.chars.value) : parseEntries(els.chars.value);
   if (!entries.length) {
-    setStatus("Enter at least one Chinese character.", true);
+    setStatus("Enter at least one Chinese character.", "error");
+    els.chars.focus();
     return;
   }
-  els.generate.disabled = true;
-  setStatus("Rendering…");
+
+  els.download.disabled = true;
+  els.download.setAttribute("aria-busy", "true");
+  setStatus("Rendering PDF…");
   try {
     const base = await loadAssets();
     const assets = customCharFont ? { ...base, charFont: customCharFont } : base;
@@ -93,43 +103,33 @@ async function generate(): Promise<void> {
     const bytes = await buildPdf(entries, cfg, assets);
     const blob = new Blob([bytes as BlobPart], { type: "application/pdf" });
 
-    if (currentUrl) URL.revokeObjectURL(currentUrl);
-    currentUrl = URL.createObjectURL(blob);
-    currentBlob = blob;
-    els.frame.src = currentUrl;
-    els.download.disabled = false;
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = (els.title.value.trim() || "character_cards").replace(/\s+/g, "_") + ".pdf";
+    a.click();
+    URL.revokeObjectURL(url);
 
     const kb = (blob.size / 1024).toFixed(0);
-    els.meta.textContent = `${entries.length} characters · ${cfg.layout} · ${kb} KB`;
-    setStatus(dropped.length ? `Skipped ${dropped.length} unsupported character(s): ${dropped.join("")}` : "Ready.", dropped.length > 0);
+    const summary = `Downloaded ${entries.length} character${entries.length === 1 ? "" : "s"} · ${cfg.layout} layout · ${kb} KB.`;
+    setStatus(dropped.length ? `${summary} Skipped unsupported: ${dropped.join("")}` : summary, dropped.length ? "warn" : "info");
   } catch (err) {
     console.error(err);
-    setStatus(`Render failed: ${(err as Error).message}`, true);
+    setStatus(`Could not generate the PDF: ${(err as Error).message}`, "error");
   } finally {
-    els.generate.disabled = false;
+    els.download.disabled = false;
+    els.download.removeAttribute("aria-busy");
   }
 }
 
-function download(): void {
-  if (!currentBlob) return;
-  const a = document.createElement("a");
-  a.href = URL.createObjectURL(currentBlob);
-  a.download = (els.title.value.trim() || "character_cards").replace(/\s+/g, "_") + ".pdf";
-  a.click();
-  URL.revokeObjectURL(a.href);
-}
-
-els.generate.addEventListener("click", generate);
-els.download.addEventListener("click", download);
+els.form.addEventListener("submit", (e) => {
+  e.preventDefault();
+  void downloadCards();
+});
 els.charfont.addEventListener("change", async () => {
   const file = els.charfont.files?.[0];
   customCharFont = file ? new Uint8Array(await file.arrayBuffer()) : null;
-  generate();
 });
-els.layout.addEventListener("change", () => {
-  els.cols.disabled = els.layout.value === "big";
-});
+els.layout.addEventListener("change", syncFieldVisibility);
 
-// First render on load.
-els.cols.disabled = els.layout.value === "big";
-generate();
+syncFieldVisibility();
