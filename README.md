@@ -2,8 +2,7 @@
 
 Tools and web apps for teaching Chinese characters: a browser learning app, a
 classical-text reader, print-ready handwriting practice cards (米字格 + pinyin),
-vocab flashcards, stroke-order diagrams, a Kahoot quiz-sheet generator, and a
-matching game.
+vocab flashcards, stroke-order diagrams, and a Kahoot quiz-sheet generator.
 
 ## Public site (GitHub Pages)
 
@@ -40,12 +39,9 @@ cardmaker/                # ← the card maker (TypeScript): CLI + web app
 ├── data/characters.json    curated pinyin + English
 └── fonts/                  bundled char + pinyin fonts
 
-chinese_tools/            # the remaining Python tools (one package)
+chinese_tools/            # the remaining Python tool (one package)
 ├── kahoot/                 build Kahoot question spreadsheets (CSV/XLSX)
-├── game/matching_game.py   pygame character-matching game
-├── data/                   curated pinyin/English readings + tone decoder
-├── settings.py             shared settings (game)
-└── paths.py                filesystem paths
+└── data/                   curated pinyin/English readings + tone decoder
 
 worksheets/               # ready-to-print PDFs + their source character lists
 tests/                    # pytest suite (Python side)
@@ -74,12 +70,8 @@ PDFs and how to regenerate them.
 Builds Kahoot question spreadsheets in bulk, so you don't enter questions one by
 one on the website.
 
-### Matching game — `chinese_tools.game.matching_game`
-
-A pygame memory-matching game over generated character images.
-
 ```bash
-pip install -r requirements.txt   # Python tools (Kahoot + game)
+pip install -r requirements.txt   # Python tools (Kahoot)
 ```
 
 ## Tests
@@ -91,5 +83,4 @@ pytest -q                  # Python tools
 
 ## Credits
 
-By [John Ni](mailto:chaussen@gmail.com). The matching game is based on
-[Memory_Match](https://github.com/ncarmine/Memory_Match).
+By [John Ni](mailto:chaussen@gmail.com).

@@ -1,4 +1,4 @@
-# Python dependencies for the remaining Python tools (Kahoot processor + game).
+# Python dependencies for the remaining Python tool (Kahoot processor).
 #
 # The card maker is now a TypeScript project — see cardmaker/ (no Python needed).
 #
@@ -6,5 +6,3 @@
 
 XlsxWriter        # kahoot: write .xlsx question sheets
 pinyin            # kahoot: cedict translations
-pygame            # matching game
-Pillow            # matching game: render character images
