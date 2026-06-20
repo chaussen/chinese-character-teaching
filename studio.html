@@ -11,22 +11,29 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Newsreader:ital,wght@0,400;0,500;1,400;1,500&family=Noto+Sans+SC:wght@400;500;600;700&family=Noto+Serif+SC:wght@400;500;600;700&display=swap" rel="stylesheet" />
 
-  <link rel="stylesheet" href="learn/studio.css?v=20260617" />
+  <link rel="stylesheet" href="learn/studio.css?v=20260620" />
+  <!-- Phase 2 backend (Cloudflare Worker + D1) — see backend/README.md to deploy,
+       then replace this placeholder with the real Worker URL. -->
+  <script>window.STUDIO_API_BASE = "https://studio-api.YOUR-SUBDOMAIN.workers.dev";</script>
 </head>
 <body>
 <div id="app">
 
-  <!-- ═════════ LOCK ═════════ -->
+  <!-- ═════════ LOCK / LOGIN ═════════ -->
   <section class="view" id="view-lock">
     <div class="lock">
       <div class="lock__logo zh">写</div>
       <h1 class="lock__name">Character Studio</h1>
       <div class="lock__zh">学写字 · Casey Chinese School</div>
-      <div class="dots" id="lock-dots">
-        <span class="d"></span><span class="d"></span><span class="d"></span><span class="d"></span>
-      </div>
-      <div class="keypad" id="keypad"></div>
-      <p class="lock__hint">Enter the class code to begin</p>
+
+      <form class="authform" id="auth-form">
+        <input class="authform__input" id="auth-username" type="text" autocomplete="username" placeholder="Username" required maxlength="32" />
+        <input class="authform__input" id="auth-password" type="password" autocomplete="current-password" placeholder="Password" required minlength="6" />
+        <input class="authform__input" id="auth-class" type="text" autocomplete="off" placeholder="Class (sign up only)" maxlength="64" />
+        <p class="authform__error" id="auth-error"></p>
+        <button class="authform__btn" id="auth-submit" type="submit">Log in</button>
+        <button class="authform__link" id="auth-toggle" type="button">Need an account? Sign up</button>
+      </form>
     </div>
   </section>
 

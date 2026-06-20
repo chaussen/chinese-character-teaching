@@ -4,8 +4,7 @@
 (function () {
   "use strict";
   var DATA = (window.APP_DATA && window.APP_DATA.bands) || [];
-  var CLASS_CODE = "2580";
-  var LS = "ccs-studio-v1", SS = "ccs-studio-unlock";
+  var LS = "ccs-studio-v1";
   var reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
   function $(s, r) { return (r || document).querySelector(s); }
@@ -72,7 +71,7 @@
   // ───────── persistence ─────────
   var store = { mastery:{}, learn:{ rainbow:true, numbers:true, speed:1, pinyin:true }, last:null };
   try { var s = JSON.parse(localStorage.getItem(LS)); if (s) store = Object.assign(store, s), store.learn = Object.assign({ rainbow:true, numbers:true, speed:1, pinyin:true }, s.learn||{}); } catch(e){}
-  function save(){ try{ localStorage.setItem(LS, JSON.stringify(store)); }catch(e){} }
+  function save(){ try{ localStorage.setItem(LS, JSON.stringify(store)); }catch(e){} schedulePush(); }
   function keyOf(band, ch){ return band + ":" + ch; }
   function isKnown(band, ch){ return !!store.mastery[keyOf(band,ch)]; }
   function masteredCount(bandId, unit){
@@ -169,46 +168,73 @@
     $all(".view").forEach(function(v){ v.classList.toggle("is-active", v.id === "view-"+name); });
   }
 
-  // ═════════ LOCK ═════════
-  var entered = "";
-  function renderDots(){
-    $all("#lock-dots .d").forEach(function(d,i){ d.classList.toggle("on", i < entered.length); });
+  // ═════════ AUTH (Cloudflare Worker + D1 backend — see backend/README.md) ═════════
+  var API_BASE = window.STUDIO_API_BASE || "";
+  function api(path, opts){
+    opts = opts || {};
+    return fetch(API_BASE + path, Object.assign({ credentials:"include", headers:{ "Content-Type":"application/json" } }, opts))
+      .then(function(r){ return r.json().catch(function(){ return {}; }).then(function(body){ return { ok:r.ok, status:r.status, body:body }; }); });
   }
-  function pressKey(k){
-    var lock = $(".lock"); lock.classList.remove("bad");
-    if (k === "del"){ entered = entered.slice(0,-1); renderDots(); return; }
-    if (entered.length >= 4) return;
-    entered += k; renderDots();
-    if (entered.length === 4){
-      setTimeout(function(){
-        if (entered === CLASS_CODE){ try{ sessionStorage.setItem(SS,"1"); }catch(e){} enterApp(); }
-        else { lock.classList.add("bad"); navigator.vibrate && navigator.vibrate(120); setTimeout(function(){ entered=""; renderDots(); }, 380); }
-      }, 140);
-    }
+  var session = null; // { username, class_name, role }
+  var pushTimer = null;
+  function schedulePush(){
+    if (!session || !API_BASE) return;
+    clearTimeout(pushTimer);
+    pushTimer = setTimeout(function(){
+      api("/api/progress", { method:"PUT", body: JSON.stringify({ data: { mastery:store.mastery, learn:store.learn, last:store.last } }) });
+    }, 800);
   }
-  function buildKeypad(){
-    var pad = $("#keypad");
-    var keys = ["1","2","3","4","5","6","7","8","9","clear","0","del"];
-    pad.innerHTML = keys.map(function(k){
-      if (k==="clear") return '<button class="key ghost" data-k="clear">Clear</button>';
-      if (k==="del") return '<button class="key ghost" data-k="del">⌫</button>';
-      return '<button class="key" data-k="'+k+'">'+k+'</button>';
-    }).join("");
-    pad.addEventListener("click", function(e){
-      var btn = e.target.closest("[data-k]"); if (!btn) return;
-      var k = btn.dataset.k;
-      if (k==="clear"){ entered=""; renderDots(); $(".lock").classList.remove("bad"); }
-      else pressKey(k);
+
+  function setAuthError(msg){ var e=$("#auth-error"); if(e) e.textContent = msg || ""; }
+  function setAuthMode(signup){
+    var form = $("#auth-form"); if(!form) return;
+    form.classList.toggle("is-signup", signup);
+    $("#auth-submit").textContent = signup ? "Sign up" : "Log in";
+    $("#auth-toggle").textContent = signup ? "Have an account? Log in" : "Need an account? Sign up";
+    setAuthError("");
+  }
+  function bindAuth(){
+    var form = $("#auth-form"); if(!form) return;
+    $("#auth-toggle").addEventListener("click", function(){ setAuthMode(!form.classList.contains("is-signup")); });
+    form.addEventListener("submit", function(e){
+      e.preventDefault();
+      var username = $("#auth-username").value.trim();
+      var password = $("#auth-password").value;
+      var className = $("#auth-class").value.trim();
+      var signup = form.classList.contains("is-signup");
+      var btn = $("#auth-submit"); btn.disabled = true; setAuthError("");
+      api(signup ? "/api/signup" : "/api/login", {
+        method:"POST",
+        body: JSON.stringify(signup ? { username:username, password:password, class_name:className } : { username:username, password:password })
+      }).then(function(res){
+        btn.disabled = false;
+        if (!res.ok){ setAuthError(res.body.error || "Something went wrong."); return; }
+        session = res.body;
+        afterLogin();
+      }).catch(function(){ btn.disabled = false; setAuthError("Couldn't reach the server — check your connection."); });
     });
-    document.addEventListener("keydown", function(e){
-      if (!$("#view-lock").classList.contains("is-active")) return;
-      if (/[0-9]/.test(e.key)) pressKey(e.key);
-      else if (e.key === "Backspace") pressKey("del");
+  }
+
+  function afterLogin(){
+    api("/api/progress").then(function(res){
+      if (res.ok && res.body.data){
+        var d = res.body.data;
+        if (d.mastery) store.mastery = d.mastery;
+        if (d.learn) store.learn = Object.assign(store.learn, d.learn);
+        if (d.last) store.last = d.last;
+        save();
+      }
+      enterApp();
     });
   }
 
   function enterApp(){ applyAccent(null); buildHome(); showView("home"); }
-  function lockApp(){ entered=""; renderDots(); try{ sessionStorage.removeItem(SS); }catch(e){} showView("lock"); }
+  function lockApp(){
+    session = null;
+    if (API_BASE) api("/api/logout", { method:"POST" });
+    var form = $("#auth-form"); if(form) form.reset();
+    setAuthError(""); showView("lock");
+  }
 
   // ═════════ HOME (series → books) ═════════
   function ruby(pairs){ return pairs.map(function(p){ return "<ruby>"+p[0]+"<rt>"+p[1]+"</rt></ruby>"; }).join(""); }
@@ -623,11 +649,16 @@
 
   // ═════════ INIT ═════════
   function init(){
-    buildKeypad(); renderDots(); bindTrace(); buildGenBand(); buildGenThemes();
+    bindAuth(); bindTrace(); buildGenBand(); buildGenThemes();
     buildIndex(); buildLibrary();
-    // lock or enter
-    var unlocked=false; try{ unlocked = sessionStorage.getItem(SS)==="1"; }catch(e){}
-    if (unlocked) enterApp(); else showView("lock");
+    // resume an existing session (cookie), else show the login/signup form
+    if (API_BASE){
+      api("/api/me").then(function(res){
+        if (res.ok){ session = res.body; afterLogin(); } else showView("lock");
+      }).catch(function(){ showView("lock"); });
+    } else {
+      showView("lock");
+    }
 
     // nav buttons
     $("#home-lock").addEventListener("click", lockApp);

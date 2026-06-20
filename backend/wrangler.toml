@@ -1,0 +1,16 @@
+name = "studio-api"
+main = "src/index.js"
+compatibility_date = "2024-09-01"
+
+# Free tier (Workers Free + D1 Free) is far more than this school needs.
+
+[[d1_databases]]
+binding = "DB"
+database_name = "studio-db"
+database_id = "REPLACE_WITH_D1_DATABASE_ID"
+
+# Set with: wrangler secret put ALLOWED_ORIGIN
+# (the Pages origin the frontend is served from, e.g. https://studio.caseychinese.org
+#  or https://chaussen.github.io — no trailing slash, no wildcard.)
+#
+# Also set: wrangler secret put SESSION_TTL_DAYS   (optional, defaults to 30 if unset)

@@ -44,28 +44,32 @@ only enable once DNS resolves.
 
 ---
 
-## Phase 2 — real accounts + saved progress (the main next build)
+## Phase 2 — real accounts + saved progress (IN PROGRESS)
 
-Goal decided with the school: **one codebase, two access tiers** — a public
-**taster** (open, for advertising/SEO; e.g. one book/lesson unlocked) and the
-full app behind a **real login**. Students use it at school *and* home, ~4–5
-classes × up to 15 (Prep–Y8), growing.
+Goal decided with the school: real username/password accounts replacing the
+client-side passcode, with per-student progress saved server-side. Students
+use it at school *and* home, ~4–5 classes × up to 15 (Prep–Y8), growing.
 
-- **Keep the frontend static on Pages.** Add a free backend — **Supabase**
-  (Postgres + Auth + row-level security; free tier far exceeds this scale) or
-  Firebase — for:
-  - real authentication (username + password, or class-code + name) that replaces
-    the client-side passcode as the *actual* gate;
-  - **per-student progress/results saved server-side** (so home practice counts
-    and is visible to teachers).
+**Built (this session):** the backend is a **Cloudflare Worker + D1** (the
+school already has a Cloudflare account, so we went with that instead of
+Supabase/Firebase) — see `backend/README.md` for the one-time deploy steps
+(needs the account owner's login; not something an agent can do unattended).
+Frontend stays static on Pages; `studio.html`'s lock screen is now a
+username/password login/signup form (`learn/app.js`), syncing progress
+(`mastery`/`learn`/`last`) to `/api/progress` instead of localStorage-only.
+
 - **Don't** move lesson data behind the API just to "protect" it — the content
   isn't secret IP, and all of `learn/*.js` is downloadable from a static host
   regardless. An account gate is enough to keep outsiders out of the guided
   experience.
 - **Children's data duty of care:** collect the minimum (a username — avoid full
-  real names if possible — class, progress), pick an appropriate data region
-  (EU/AU), and get parent consent at signup. Today the app stores nothing
-  personal; preserve that discipline.
+  real names if possible — class, progress). The backend stores only a
+  username, a PBKDF2-hashed password, an optional class name, and progress
+  JSON — no other PII. Still TODO: pick/confirm the D1 data region and decide
+  on a parent-consent step at signup before this goes live with real students.
+- Not done yet: the public "taster" tier (open advertising sample) mentioned
+  in earlier planning — out of scope for this pass, login is now required for
+  any access. Revisit if the school still wants an open sample for SEO.
 - Why not Cloudflare Access (the other free real-gate): free tier caps at 50
   seats and gives no progress tracking — already too small and the wrong tool.
 

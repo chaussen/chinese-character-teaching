@@ -73,18 +73,20 @@ body.no-pinyin ruby rt{visibility:hidden;}
 .lock__name{font-family:var(--serif);font-size:34px;font-weight:500;letter-spacing:-.02em;margin:0 0 4px;}
 .lock__zh{font-family:var(--zh);font-size:17px;color:var(--ink-soft);letter-spacing:.06em;margin-bottom:30px;}
 .lock__hint{font-size:14px;color:var(--ink-mute);margin-top:4px;}
-.dots{display:flex;gap:16px;justify-content:center;margin:0 auto 30px;height:18px;}
-.dots .d{width:16px;height:16px;border-radius:50%;border:2px solid var(--accent-soft);transition:.18s;}
-.dots .d.on{background:var(--accent);border-color:var(--accent);}
-.lock.bad .dots{animation:shake .42s;}
-.lock.bad .dots .d{border-color:#D6453B;}
-@keyframes shake{0%,100%{transform:translateX(0);}20%{transform:translateX(-9px);}40%{transform:translateX(8px);}60%{transform:translateX(-6px);}80%{transform:translateX(4px);}}
-.keypad{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;max-width:300px;margin:0 auto;}
-.key{aspect-ratio:1.35/1;border-radius:16px;background:var(--paper);border:1px solid var(--line);
-  font-size:26px;font-weight:600;color:var(--ink);transition:.12s;display:flex;align-items:center;justify-content:center;}
-.key:active{transform:scale(.95);background:var(--accent-tint);border-color:var(--accent-soft);}
-.key.ghost{background:transparent;border-color:transparent;font-size:18px;color:var(--ink-mute);}
-.key.ghost:active{background:var(--line-soft);}
+
+.authform{display:flex;flex-direction:column;gap:12px;max-width:320px;margin:0 auto;text-align:left;}
+.authform__input{font-family:inherit;font-size:16px;padding:13px 16px;border-radius:12px;
+  border:1px solid var(--line);background:var(--paper);color:var(--ink);width:100%;box-sizing:border-box;}
+.authform__input:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 3px var(--accent-tint);}
+.authform__input[type="text"][id="auth-class"]{display:none;}
+.authform.is-signup .authform__input[id="auth-class"]{display:block;}
+.authform__btn{font-family:inherit;font-size:16px;font-weight:700;color:#fff;background:var(--accent);
+  border:none;border-radius:12px;padding:13px 16px;cursor:pointer;transition:.12s;}
+.authform__btn:active{transform:scale(.97);}
+.authform__link{font-family:inherit;font-size:13px;color:var(--ink-mute);background:none;border:none;
+  text-decoration:underline;cursor:pointer;padding:4px;align-self:center;}
+.authform__error{font-size:13px;color:#D6453B;margin:0;min-height:1px;text-align:center;}
+.authform__btn[disabled]{opacity:.6;cursor:default;}
 
 /* ───────── HOME (band picker) ───────── */
 .home-hero{margin-bottom:clamp(20px,3vw,34px);}
