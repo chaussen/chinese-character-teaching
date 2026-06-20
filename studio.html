@@ -4,7 +4,31 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, maximum-scale=1" />
   <meta name="theme-color" content="#C2473C" />
-  <title>Character Studio · 学写字</title>
+  <title>Character Studio — Learn to Write Chinese Characters Stroke by Stroke | 学写字</title>
+  <meta name="description" content="Free interactive tool for learning to write Chinese characters: watch real stroke order, trace each character, and practise with audio — built for school and home study, Prep to Year 8." />
+  <meta name="keywords" content="learn Chinese characters, Mandarin stroke order, Chinese character writing practice, 学写字, hanzi practice for kids, Chinese school homework" />
+  <link rel="canonical" href="https://chaussen.github.io/chinese-character-teaching/character/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Character Studio — Learn to Write Chinese Characters" />
+  <meta property="og:description" content="Watch real stroke order, trace each character, and practise with audio — a free interactive Chinese character writing tool for school and home study." />
+  <meta property="og:url" content="https://chaussen.github.io/chinese-character-teaching/character/" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Character Studio — Learn to Write Chinese Characters" />
+  <meta name="twitter:description" content="Watch real stroke order, trace each character, and practise with audio — a free interactive Chinese character writing tool." />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LearningResource",
+    "name": "Character Studio",
+    "alternateName": "学写字",
+    "description": "Interactive tool for learning to write Chinese characters with animated stroke order, tracing practice, and audio.",
+    "learningResourceType": "Interactive learning app",
+    "educationalLevel": "Prep to Year 8",
+    "inLanguage": ["en", "zh"],
+    "isAccessibleForFree": true,
+    "provider": { "@type": "EducationalOrganization", "name": "Casey Chinese School" }
+  }
+  </script>
 
   <!-- Fonts (graceful fallback to system fonts when offline — see studio.css stacks) -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -25,20 +49,31 @@
       <div class="lock__logo zh">写</div>
       <h1 class="lock__name">Character Studio</h1>
       <div class="lock__zh">学写字 · Casey Chinese School</div>
+      <p class="lock__pitch">Learn to write Chinese characters stroke by stroke: watch, trace, and
+        practise each one with real audio — free, in your browser.</p>
 
       <form class="authform" id="auth-form">
         <input class="authform__input" id="auth-username" type="text" autocomplete="username" placeholder="Username" required maxlength="32" />
         <input class="authform__input" id="auth-password" type="password" autocomplete="current-password" placeholder="Password" required minlength="6" />
         <input class="authform__input" id="auth-class" type="text" autocomplete="off" placeholder="Class (sign up only)" maxlength="64" />
+        <label class="authform__consent" id="auth-consent-row">
+          <input type="checkbox" id="auth-consent" />
+          I am this student's parent/guardian and I consent to creating this account
+          and storing their learning progress.
+        </label>
         <p class="authform__error" id="auth-error"></p>
         <button class="authform__btn" id="auth-submit" type="submit">Log in</button>
         <button class="authform__link" id="auth-toggle" type="button">Need an account? Sign up</button>
       </form>
+      <button class="authform__link" id="auth-taster" type="button">Just exploring? Try the free taster — no account needed</button>
     </div>
   </section>
 
   <!-- ═════════ HOME (series → books) ═════════ -->
   <section class="view" id="view-home">
+    <div class="taster-banner" id="taster-banner" hidden>
+      Free taster — Book 1 only, nothing is saved. <button id="taster-signup-btn" type="button">Sign up to unlock everything</button>
+    </div>
     <header class="topbar">
       <span class="ttl">Character Studio <span class="zh">学写字</span></span>
       <span class="spacer"></span>

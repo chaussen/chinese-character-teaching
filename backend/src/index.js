@@ -110,6 +110,9 @@ async function handleSignup(request, env) {
   if (typeof password !== "string" || password.length < 6) {
     return json({ error: "Password must be at least 6 characters." }, 400);
   }
+  if (body.parent_consent !== true) {
+    return json({ error: "A parent or guardian must consent before creating a student account." }, 400);
+  }
 
   const existing = await env.DB.prepare("SELECT id FROM users WHERE username = ?").bind(username).first();
   if (existing) return json({ error: "That username is already taken." }, 409);
@@ -117,7 +120,7 @@ async function handleSignup(request, env) {
   const salt = randomHex(16);
   const hash = await hashPassword(password, salt);
   const inserted = await env.DB.prepare(
-    "INSERT INTO users (username, password_hash, salt, class_name) VALUES (?, ?, ?, ?) RETURNING id"
+    "INSERT INTO users (username, password_hash, salt, class_name, parent_consent_at) VALUES (?, ?, ?, ?, datetime('now')) RETURNING id"
   )
     .bind(username, hash, salt, className)
     .first();

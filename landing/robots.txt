@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://chaussen.github.io/chinese-character-teaching/sitemap.xml

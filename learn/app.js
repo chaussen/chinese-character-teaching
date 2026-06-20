@@ -196,16 +196,23 @@
   function bindAuth(){
     var form = $("#auth-form"); if(!form) return;
     $("#auth-toggle").addEventListener("click", function(){ setAuthMode(!form.classList.contains("is-signup")); });
+    var tasterBtn = $("#auth-taster"); if (tasterBtn) tasterBtn.addEventListener("click", enterTaster);
     form.addEventListener("submit", function(e){
       e.preventDefault();
       var username = $("#auth-username").value.trim();
       var password = $("#auth-password").value;
       var className = $("#auth-class").value.trim();
       var signup = form.classList.contains("is-signup");
+      if (signup && !$("#auth-consent").checked){
+        setAuthError("A parent or guardian needs to tick the consent box to create a student account.");
+        return;
+      }
       var btn = $("#auth-submit"); btn.disabled = true; setAuthError("");
       api(signup ? "/api/signup" : "/api/login", {
         method:"POST",
-        body: JSON.stringify(signup ? { username:username, password:password, class_name:className } : { username:username, password:password })
+        body: JSON.stringify(signup
+          ? { username:username, password:password, class_name:className, parent_consent:true }
+          : { username:username, password:password })
       }).then(function(res){
         btn.disabled = false;
         if (!res.ok){ setAuthError(res.body.error || "Something went wrong."); return; }
@@ -228,9 +235,23 @@
     });
   }
 
-  function enterApp(){ applyAccent(null); buildHome(); showView("home"); }
+  // ── free taster (no account, no progress saved) — book 1 only, for SEO/advertising ──
+  var taster = false;
+  function tasterBandId(){ return DATA[0] && DATA[0].id; }
+  function enterTaster(){ taster = true; enterApp(); }
+  function tasterLocked(bandId){
+    if (!taster) return false;
+    return bandId !== tasterBandId();
+  }
+  function showTasterPrompt(){
+    taster = false;
+    setAuthMode(true);
+    showView("lock");
+  }
+
+  function enterApp(){ applyAccent(null); buildHome(); showView("home"); var b=$("#taster-banner"); if(b) b.hidden = !taster; }
   function lockApp(){
-    session = null;
+    session = null; taster = false;
     if (API_BASE) api("/api/logout", { method:"POST" });
     var form = $("#auth-form"); if(form) form.reset();
     setAuthError(""); showView("lock");
@@ -240,7 +261,8 @@
   function ruby(pairs){ return pairs.map(function(p){ return "<ruby>"+p[0]+"<rt>"+p[1]+"</rt></ruby>"; }).join(""); }
   function bookCard(b){
     var done = masteredCount(b.id), pct = b.total?Math.round(done/b.total*100):0;
-    return '<button class="bookcard" data-band="'+b.id+'" style="--bc:'+b.accent+';--bc-soft:'+b.accentSoft+';--bc-tint:'+b.tint+'">'+
+    var locked = tasterLocked(b.id);
+    return '<button class="bookcard'+(locked?' is-locked':'')+'" data-band="'+b.id+'" style="--bc:'+b.accent+';--bc-soft:'+b.accentSoft+';--bc-tint:'+b.tint+'">'+
       '<div class="bookcard__pig"><span class="g zh">'+b.glyph+'</span><span class="nm">'+esc(b.pigmentName)+'</span></div>'+
       '<div class="bookcard__body">'+
         '<div class="bookcard__ey">'+esc(b.eyebrow)+'</div>'+
@@ -249,13 +271,14 @@
           '<span class="bookcard__cnt"><b>'+done+'</b> / '+b.total+' learned · '+b.unitsLen+' '+b.unitWord+'</span>'+
           '<span class="bar"><i style="width:'+pct+'%"></i></span>'+
         '</div>'+
-      '</div><div class="bookcard__arrow">→</div></button>';
+      '</div><div class="bookcard__arrow">'+(locked?'🔒':'→')+'</div></button>';
   }
   // a theme group card (extension learning) — same shell as a book card, but it
   // deep-links into one General theme and tracks that theme's own progress.
   function themeCard(t){
     var done = masteredCount('GEN', t.n), pct = t.total?Math.round(done/t.total*100):0;
-    return '<button class="bookcard themecard" data-band="GEN" data-unit="'+t.n+'" style="--bc:'+t.accent+';--bc-soft:'+t.accentSoft+';--bc-tint:'+t.tint+'">'+
+    var locked = tasterLocked('GEN');
+    return '<button class="bookcard themecard'+(locked?' is-locked':'')+'" data-band="GEN" data-unit="'+t.n+'" style="--bc:'+t.accent+';--bc-soft:'+t.accentSoft+';--bc-tint:'+t.tint+'">'+
       '<div class="bookcard__pig"><span class="g zh">'+t.glyph+'</span><span class="nm">'+t.total+' 字</span></div>'+
       '<div class="bookcard__body">'+
         '<div class="bookcard__ey">Theme · 主题</div>'+
@@ -264,7 +287,7 @@
           '<span class="bookcard__cnt"><b>'+done+'</b> / '+t.total+' learned</span>'+
           '<span class="bar"><i style="width:'+pct+'%"></i></span>'+
         '</div>'+
-      '</div><div class="bookcard__arrow">→</div></button>';
+      '</div><div class="bookcard__arrow">'+(locked?'🔒':'→')+'</div></button>';
   }
   function buildHome(){
     var host = $("#home-sections");
@@ -276,6 +299,7 @@
         '<div class="bookgrid">'+ cards +'</div></section>';
     }).join("");
     $all(".bookcard", host).forEach(function(c){ c.addEventListener("click", function(){
+      if (c.classList.contains("is-locked")){ showTasterPrompt(); return; }
       if (c.dataset.unit) openGenTheme(+c.dataset.unit); else openBand(c.dataset.band);
     }); });
     var tot=0, done=0; DATA.forEach(function(b){ tot+=b.total; done+=masteredCount(b.id); });
@@ -662,6 +686,7 @@
 
     // nav buttons
     $("#home-lock").addEventListener("click", lockApp);
+    var tasterSignupBtn = $("#taster-signup-btn"); if (tasterSignupBtn) tasterSignupBtn.addEventListener("click", showTasterPrompt);
     $("#units-back").addEventListener("click", function(){ applyAccent(null); buildHome(); showView("home"); });
     $("#deck-back").addEventListener("click", function(){ openBand(nav.band); });
     $("#learn-back").addEventListener("click", function(){ openUnit(nav.band, nav.unit); });

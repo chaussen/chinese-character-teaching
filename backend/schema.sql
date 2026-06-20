@@ -2,13 +2,14 @@
 -- Apply with: wrangler d1 execute studio-db --remote --file=./schema.sql
 
 CREATE TABLE IF NOT EXISTS users (
-  id            INTEGER PRIMARY KEY AUTOINCREMENT,
-  username      TEXT UNIQUE NOT NULL,
-  password_hash TEXT NOT NULL,
-  salt          TEXT NOT NULL,
-  class_name    TEXT,
-  role          TEXT NOT NULL DEFAULT 'student',
-  created_at    TEXT NOT NULL DEFAULT (datetime('now'))
+  id                INTEGER PRIMARY KEY AUTOINCREMENT,
+  username          TEXT UNIQUE NOT NULL,
+  password_hash     TEXT NOT NULL,
+  salt              TEXT NOT NULL,
+  class_name        TEXT,
+  role              TEXT NOT NULL DEFAULT 'student',
+  parent_consent_at TEXT NOT NULL,
+  created_at        TEXT NOT NULL DEFAULT (datetime('now'))
 );
 
 CREATE TABLE IF NOT EXISTS sessions (
