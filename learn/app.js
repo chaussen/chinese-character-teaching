@@ -169,6 +169,10 @@
   }
 
   // ═════════ AUTH (Cloudflare Worker + D1 backend — see backend/README.md) ═════════
+  // Parked: STUDIO_ACCOUNTS_ENABLED is set in studio.html <head>. While false, login
+  // is skipped entirely and "quick entry" opens the app with full access, saving
+  // progress to this device only (same as the pre-accounts behaviour).
+  var ACCOUNTS_ENABLED = !!window.STUDIO_ACCOUNTS_ENABLED;
   var API_BASE = window.STUDIO_API_BASE || "";
   function api(path, opts){
     opts = opts || {};
@@ -178,7 +182,7 @@
   var session = null; // { username, class_name, role }
   var pushTimer = null;
   function schedulePush(){
-    if (!session || !API_BASE) return;
+    if (!ACCOUNTS_ENABLED || !session || !API_BASE) return;
     clearTimeout(pushTimer);
     pushTimer = setTimeout(function(){
       api("/api/progress", { method:"PUT", body: JSON.stringify({ data: { mastery:store.mastery, learn:store.learn, last:store.last } }) });
@@ -249,10 +253,13 @@
     showView("lock");
   }
 
+  // ── quick entry (accounts parked) — full access, no taster limits, local-only progress ──
+  function enterGuestFull(){ taster = false; enterApp(); }
+
   function enterApp(){ applyAccent(null); buildHome(); showView("home"); var b=$("#taster-banner"); if(b) b.hidden = !taster; }
   function lockApp(){
     session = null; taster = false;
-    if (API_BASE) api("/api/logout", { method:"POST" });
+    if (ACCOUNTS_ENABLED && API_BASE) api("/api/logout", { method:"POST" });
     var form = $("#auth-form"); if(form) form.reset();
     setAuthError(""); showView("lock");
   }
@@ -675,8 +682,13 @@
   function init(){
     bindAuth(); bindTrace(); buildGenBand(); buildGenThemes();
     buildIndex(); buildLibrary();
-    // resume an existing session (cookie), else show the login/signup form
-    if (API_BASE){
+    var quickEntryBtn = $("#quick-entry"); if (quickEntryBtn) quickEntryBtn.addEventListener("click", enterGuestFull);
+    // accounts parked: skip login/session resume entirely, straight to the lock
+    // view's quick-entry button (see STUDIO_ACCOUNTS_ENABLED in studio.html)
+    if (!ACCOUNTS_ENABLED){
+      showView("lock");
+    } else if (API_BASE){
+      // resume an existing session (cookie), else show the login/signup form
       api("/api/me").then(function(res){
         if (res.ok){ session = res.body; afterLogin(); } else showView("lock");
       }).catch(function(){ showView("lock"); });

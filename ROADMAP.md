@@ -44,13 +44,23 @@ only enable once DNS resolves.
 
 ---
 
-## Phase 2 — real accounts + saved progress (IN PROGRESS)
+## Phase 2 — real accounts + saved progress (PAUSED 2026-07-24)
 
 Goal decided with the school: real username/password accounts replacing the
 client-side passcode, with per-student progress saved server-side. Students
 use it at school *and* home, ~4–5 classes × up to 15 (Prep–Y8), growing.
 
-**Built (this session):** the backend is a **Cloudflare Worker + D1** (the
+**Paused so the class can start using the app now:** the Cloudflare deploy
+isn't finished, and login must not block usage in the meantime. Set
+`window.STUDIO_ACCOUNTS_ENABLED = false` in `studio.html` (already done) —
+the lock screen then skips login entirely and shows a single "quick entry"
+button giving full access, with progress saved to `localStorage` on that
+device only (the old pre-Phase-2 behaviour). All the login/signup UI and
+`learn/app.js` auth code are still there, untouched, behind the flag — once
+`backend/README.md`'s deploy steps are done and `STUDIO_API_BASE` points at
+the real Worker, flip the flag back to `true` to resume the migration.
+
+**Built (earlier session):** the backend is a **Cloudflare Worker + D1** (the
 school already has a Cloudflare account, so we went with that instead of
 Supabase/Firebase) — see `backend/README.md` for the one-time deploy steps
 (needs the account owner's login; not something an agent can do unattended).

@@ -35,10 +35,20 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Newsreader:ital,wght@0,400;0,500;1,400;1,500&family=Noto+Sans+SC:wght@400;500;600;700&family=Noto+Serif+SC:wght@400;500;600;700&display=swap" rel="stylesheet" />
 
-  <link rel="stylesheet" href="learn/studio.css?v=20260620" />
+  <link rel="stylesheet" href="learn/studio.css?v=20260724" />
   <!-- Phase 2 backend (Cloudflare Worker + D1) — see backend/README.md to deploy,
        then replace this placeholder with the real Worker URL. -->
   <script>window.STUDIO_API_BASE = "https://studio-api.YOUR-SUBDOMAIN.workers.dev";</script>
+  <!-- Accounts are PARKED for now: the Cloudflare migration isn't finished, and we
+       don't want a half-deployed backend blocking the class from using the app.
+       Flip this to true (once STUDIO_API_BASE above is a real, deployed Worker) to
+       bring back login/signup. While false, the lock screen skips the login form
+       entirely and shows a single "quick entry" button — full access, progress
+       saved to this device only (see ROADMAP.md Phase 2). -->
+  <script>
+    window.STUDIO_ACCOUNTS_ENABLED = false;
+    document.documentElement.classList.toggle("accounts-off", !window.STUDIO_ACCOUNTS_ENABLED);
+  </script>
 </head>
 <body>
 <div id="app">
@@ -51,6 +61,11 @@
       <div class="lock__zh">学写字 · Casey Chinese School</div>
       <p class="lock__pitch">Learn to write Chinese characters stroke by stroke: watch, trace, and
         practise each one with real audio — free, in your browser.</p>
+
+      <div class="authform" id="quick-entry-block">
+        <button class="authform__btn" id="quick-entry" type="button">Enter Character Studio →</button>
+        <p class="lock__hint">Accounts are paused for now — full access, progress is saved on this device only.</p>
+      </div>
 
       <form class="authform" id="auth-form">
         <input class="authform__input" id="auth-username" type="text" autocomplete="username" placeholder="Username" required maxlength="32" />
@@ -268,7 +283,7 @@
 <script src="learn/library-chars.js"></script>
 <script src="learn/library-data.js"></script>
 <!-- ───── engine + exercise modules ───── -->
-<script src="learn/app.js?v=20260616"></script>
+<script src="learn/app.js?v=20260724"></script>
 <script src="learn/exercises-draw.js?v=20260616"></script>
 <script src="learn/exercises.js?v=20260616"></script>
 </body>
