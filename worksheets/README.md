@@ -9,6 +9,7 @@ in a 四线三格 four-line guide.
 | List | PDF | Notes |
 |------|-----|-------|
 | `yr1_chars.txt` … `yr6_chars.txt` | `yrN_character_cards.pdf` | Year 1–6 character lists |
+| `yr6_worksheet.html` | `yr6_worksheet.pdf` | Year 6 mixed-question review worksheet (dictation, word-building, cloze, antonyms, sentence order, reading comprehension) + answer key. Vocabulary is restricted to the cumulative 暨南《中文》Book 1 – Year 6 character list (`learn/library-data.js`, books `ZW1`/`G2`–`G6`), cross-checked against `learn/content-extra.js` word/sentence data. Regenerate the PDF after editing the HTML with a headless-Chromium print (`page.pdf()` via Playwright) — see the html file's inline `@page`/print CSS for layout. |
 
 Each PDF uses the **big** layout: two large characters per A4 portrait page,
 each rotated 90° ("lying down"). Cut along the dashed middle line and turn each
