@@ -1,0 +1,41 @@
+# A pinned recipe. Same file + same seed => byte-identical worksheet, forever.
+#
+# Book 9, lesson 3, PLUS a review mix pulled back from books 7 & 8 — the class
+# may not have finished book 9 yet, and characters from finished books get
+# rusty. `data` merges all three book files into one corpus so `review.books`
+# can actually reach book 7/8 lessons.
+#
+# `minutes: 45` (not a hand-picked `sections:` list) lets the real duration
+# planner (zhw.build.plan_for_minutes) fill the sheet to size from actually
+# generated, measured sections — the fix for "not enough for 45 minutes".
+# It reserves its last 30% for production work (use_the_word, scramble, ...)
+# so recognition drills can't eat the whole class and leave nothing written.
+id: b9l3-review-mix
+title: 《中文》第九册　第三课　练习（含七、八册复习字）
+data:
+  - data/book9.json
+  - data/book7.json
+  - data/book8.json
+seed: 20260731
+minutes: 45
+strict: false            # true = build fails if any untaught character appears
+# book9.json has no teacher-supplied stroke counts at all (unlike books 7/8,
+# which got theirs from the teaching-reference PDFs) — without `derived` here,
+# stroke_count is skipped outright for this lesson's own characters instead of
+# blending them in at enrichment quality. Re-audit once book 9 gets real
+# textbook stroke counts, then drop this back to the default tiers.
+allow: [verified, authored, open, derived]
+
+scope:
+  book: 9
+  lessons: [3]
+  vocabulary: cumulative   # lesson | book | cumulative
+  review:
+    books: [7, 8]          # earlier finished books to pull review characters from
+    ratio: 0.35             # ~35% of the character-drill pool is review material
+    tier: write             # mix in 四会字 (write-tier) review characters
+
+layout:
+  density: ""              # "" | compact | spacious
+  answer_key: true
+  school_line: "本校 · 内部使用 Internal use"

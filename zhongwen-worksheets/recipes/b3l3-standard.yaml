@@ -1,0 +1,36 @@
+# A pinned recipe. Same file + same seed => byte-identical worksheet, forever.
+id: b3l3-standard
+title: 《中文》第三册　第三课　练习
+data: data/zhongwen.json
+out: out/b3l3-standard.html
+seed: 20260726
+strict: false            # true = build fails if any untaught character appears
+
+scope:
+  book: 3
+  lessons: [3]
+  vocabulary: cumulative   # lesson | book | cumulative
+
+layout:
+  density: ""              # "" | compact | spacious
+  answer_key: true
+  school_line: "本校 · 内部使用 Internal use"
+
+sections:
+  - {type: heading, zh: "一、字", en: "Characters"}
+  - {type: trace,          count: 6, params: {boxes: 6, faded: 2, stroke_order: true}}
+  - {type: stroke_count,   count: 8}
+  - {type: radical_id,     count: 6}
+  - {type: heading, zh: "二、音", en: "Pinyin"}
+  - {type: pinyin_write,   count: 8}
+  - {type: pinyin_read,    count: 6}
+  - {type: pinyin_match,   count: 6}
+  - {type: heading, zh: "三、词", en: "Vocabulary"}
+  - {type: make_words,     count: 6, params: {per_char: 2}}
+  - {type: gloss_match,    count: 6}
+  - {type: antonym,        count: 4}
+  - {type: heading, zh: "四、句", en: "Sentences"}
+  - {type: cloze,          count: 5}
+  - {type: scramble,       count: 4}
+  - {type: heading, zh: "五、玩一玩", en: "Puzzle"}
+  - {type: word_search,    count: 6, params: {size: 9}}

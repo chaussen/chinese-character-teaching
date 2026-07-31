@@ -1,0 +1,4347 @@
+{
+  "meta": {
+    "series": "《中文》(修订版) 暨南大学华文学院 / 中国国务院侨务办公室",
+    "book": 8,
+    "source": "Auto-parsed from 中文教学参考第8册 per-lesson PDFs (中国华文教育网, http://old.hwjyw.com/fj/jcxz/zwjxck/8/N.pdf) via tools/fetch_book.py. words + passage + read-char pinyin are NOT populated -- they require the scanned main-textbook back matter (https://www.culture-oushi.com/files/zw8.pdf), which needs a vision/manual pass same as book 9. See per-lesson notes for any write-char count mismatches that need a manual check. 词语(vocabulary) added from 中文·第八册主教材 own 音序生词表 back matter (culture-oushi.com/files/zw8.pdf, p.132-133), vision-transcribed; no English gloss authored yet."
+  },
+  "lessons": [
+    {
+      "book": 8,
+      "lesson": 1,
+      "title": "开学典礼",
+      "chars": [
+        {
+          "char": "议",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "讠",
+          "decomposition": "",
+          "stroke_count": 5,
+          "components": []
+        },
+        {
+          "char": "席",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "广",
+          "decomposition": "",
+          "stroke_count": 10,
+          "components": []
+        },
+        {
+          "char": "烈",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "灬",
+          "decomposition": "",
+          "stroke_count": 10,
+          "components": []
+        },
+        {
+          "char": "互",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "一",
+          "decomposition": "",
+          "stroke_count": 4,
+          "components": []
+        },
+        {
+          "char": "宣",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "宀",
+          "decomposition": "",
+          "stroke_count": 9,
+          "components": []
+        },
+        {
+          "char": "掌",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "",
+          "decomposition": "",
+          "stroke_count": 12,
+          "components": []
+        },
+        {
+          "char": "介",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "人",
+          "decomposition": "",
+          "stroke_count": 4,
+          "components": []
+        },
+        {
+          "char": "绍",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "纟",
+          "decomposition": "",
+          "stroke_count": 8,
+          "components": []
+        },
+        {
+          "char": "咱",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "口",
+          "decomposition": "",
+          "stroke_count": 9,
+          "components": []
+        },
+        {
+          "char": "贸",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "贝",
+          "decomposition": "",
+          "stroke_count": 9,
+          "components": []
+        },
+        {
+          "char": "益",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "皿",
+          "decomposition": "",
+          "stroke_count": 10,
+          "components": []
+        },
+        {
+          "char": "社",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "礻",
+          "decomposition": "",
+          "stroke_count": 7,
+          "components": []
+        },
+        {
+          "char": "蹈",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "足",
+          "decomposition": "",
+          "stroke_count": 17,
+          "components": []
+        },
+        {
+          "char": "朗",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "月",
+          "decomposition": "",
+          "stroke_count": 10,
+          "components": []
+        },
+        {
+          "char": "诵",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "讠",
+          "decomposition": "",
+          "stroke_count": 9,
+          "components": []
+        },
+        {
+          "char": "普",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "日",
+          "decomposition": "",
+          "stroke_count": 12,
+          "components": []
+        },
+        {
+          "char": "赢",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "亠",
+          "decomposition": "",
+          "stroke_count": 17,
+          "components": []
+        },
+        {
+          "char": "台",
+          "tier": "read",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "",
+          "decomposition": "",
+          "stroke_count": 0,
+          "components": []
+        },
+        {
+          "char": "频",
+          "tier": "read",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "",
+          "decomposition": "",
+          "stroke_count": 0,
+          "components": []
+        },
+        {
+          "char": "鞠",
+          "tier": "read",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "",
+          "decomposition": "",
+          "stroke_count": 0,
+          "components": []
+        },
+        {
+          "char": "躬",
+          "tier": "read",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "",
+          "decomposition": "",
+          "stroke_count": 0,
+          "components": []
+        }
+      ],
+      "words": [
+        {
+          "word": "标准",
+          "pinyin": "biāozhǔn",
+          "gloss": "",
+          "measure_for": ""
+        },
+        {
+          "word": "代表",
+          "pinyin": "dàibiǎo",
+          "gloss": "",
+          "measure_for": ""
+        },
+        {
+          "word": "发言",
+          "pinyin": "fāyán",
+          "gloss": "",
+          "measure_for": ""
+        },
+        {
+          "word": "互相",
+          "pinyin": "hùxiāng",
+          "gloss": "",
+          "measure_for": ""
+        },
+        {
+          "word": "会场",
+          "pinyin": "huìchǎng",
+          "gloss": "",
+          "measure_for": ""
+        },
+        {
+          "word": "讲话",
+          "pinyin": "jiǎnghuà",
+          "gloss": "",
+          "measure_for": ""
+        },
+        {
+          "word": "教育",
+          "pinyin": "jiàoyù",
+          "gloss": "",
+          "measure_for": ""
+        },
+        {
+          "word": "介绍",
+          "pinyin": "jièshào",
+          "gloss": "",
+          "measure_for": ""
+        },
+        {
+          "word": "敬礼",
+          "pinyin": "jìnglǐ",
+          "gloss": "",
+          "measure_for": ""
+        },
+        {
+          "word": "热烈",
+          "pinyin": "rèliè",
+          "gloss": "",
+          "measure_for": ""
+        },
+        {
+          "word": "社会",
+          "pinyin": "shèhuì",
+          "gloss": "",
+          "measure_for": ""
+        },
+        {
+          "word": "首先",
+          "pinyin": "shǒuxiān",
+          "gloss": "",
+          "measure_for": ""
+        },
+        {
+          "word": "说明",
+          "pinyin": "shuōmíng",
+          "gloss": "",
+          "measure_for": ""
+        },
+        {
+          "word": "问好",
+          "pinyin": "wènhǎo",
+          "gloss": "",
+          "measure_for": ""
+        },
+        {
+          "word": "握手",
+          "pinyin": "wòshǒu",
+          "gloss": "",
+          "measure_for": ""
+        },
+        {
+          "word": "先后",
+          "pinyin": "xiānhòu",
+          "gloss": "",
+          "measure_for": ""
+        },
+        {
+          "word": "宣布",
+          "pinyin": "xuānbù",
+          "gloss": "",
+          "measure_for": ""
+        },
+        {
+          "word": "咱们",
+          "pinyin": "zánmen",
+          "gloss": "",
+          "measure_for": ""
+        }
+      ],
+      "patterns": [],
+      "sentences": [
+        "学校只有四五十名学生。",
+        "中文的用处越来越大。5援"
+      ],
+      "passage": "",
+      "antonyms": [],
+      "measures": [],
+      "cloze": [],
+      "truefalse": [],
+      "comprehension": []
+    },
+    {
+      "book": 8,
+      "lesson": 2,
+      "title": "一堂有趣的中文课",
+      "chars": [
+        {
+          "char": "台",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "厶",
+          "decomposition": "",
+          "stroke_count": 5,
+          "components": []
+        },
+        {
+          "char": "赵",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "走",
+          "decomposition": "",
+          "stroke_count": 9,
+          "components": []
+        },
+        {
+          "char": "板",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "木",
+          "decomposition": "",
+          "stroke_count": 8,
+          "components": []
+        },
+        {
+          "char": "瘦",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "疒",
+          "decomposition": "",
+          "stroke_count": 14,
+          "components": []
+        },
+        {
+          "char": "鬼",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "鬼",
+          "decomposition": "",
+          "stroke_count": 9,
+          "components": []
+        },
+        {
+          "char": "脸",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "月",
+          "decomposition": "",
+          "stroke_count": 11,
+          "components": []
+        },
+        {
+          "char": "咳",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "口",
+          "decomposition": "",
+          "stroke_count": 9,
+          "components": []
+        },
+        {
+          "char": "嗽",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "口",
+          "decomposition": "",
+          "stroke_count": 14,
+          "components": []
+        },
+        {
+          "char": "紧",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "系",
+          "decomposition": "",
+          "stroke_count": 10,
+          "components": []
+        },
+        {
+          "char": "姓",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "女",
+          "decomposition": "",
+          "stroke_count": 8,
+          "components": []
+        },
+        {
+          "char": "刘",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "刂",
+          "decomposition": "",
+          "stroke_count": 6,
+          "components": []
+        },
+        {
+          "char": "希",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "巾",
+          "decomposition": "",
+          "stroke_count": 7,
+          "components": []
+        },
+        {
+          "char": "舌",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "舌",
+          "decomposition": "",
+          "stroke_count": 6,
+          "components": []
+        },
+        {
+          "char": "轮",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "车",
+          "decomposition": "",
+          "stroke_count": 8,
+          "components": []
+        },
+        {
+          "char": "幸",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "土",
+          "decomposition": "",
+          "stroke_count": 8,
+          "components": []
+        },
+        {
+          "char": "贝",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "贝",
+          "decomposition": "",
+          "stroke_count": 4,
+          "components": []
+        },
+        {
+          "char": "福",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "礻",
+          "decomposition": "",
+          "stroke_count": 13,
+          "components": []
+        },
+        {
+          "char": "胞",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "月",
+          "decomposition": "",
+          "stroke_count": 9,
+          "components": []
+        },
+        {
+          "char": "详",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "讠",
+          "decomposition": "",
+          "stroke_count": 8,
+          "components": []
+        },
+        {
+          "char": "胎",
+          "tier": "read",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "",
+          "decomposition": "",
+          "stroke_count": 0,
+          "components": []
+        },
+        {
+          "char": "本",
+          "tier": "read",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "",
+          "decomposition": "",
+          "stroke_count": 0,
+          "components": []
+        },
+        {
+          "char": "课",
+          "tier": "read",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "",
+          "decomposition": "",
+          "stroke_count": 0,
+          "components": []
+        },
+        {
+          "char": "学",
+          "tier": "read",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "",
+          "decomposition": "",
+          "stroke_count": 0,
+          "components": []
+        },
+        {
+          "char": "习",
+          "tier": "read",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "",
+          "decomposition": "",
+          "stroke_count": 0,
+          "components": []
+        },
+        {
+          "char": "部",
+          "tier": "read",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "",
+          "decomposition": "",
+          "stroke_count": 0,
+          "components": []
+        },
+        {
+          "char": "首",
+          "tier": "read",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "",
+          "decomposition": "",
+          "stroke_count": 0,
+          "components": []
+        },
+        {
+          "char": "要",
+          "tier": "read",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "",
+          "decomposition": "",
+          "stroke_count": 0,
+          "components": []
+        },
+        {
+          "char": "求",
+          "tier": "read",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "",
+          "decomposition": "",
+          "stroke_count": 0,
+          "components": []
+        },
+        {
+          "char": "会",
+          "tier": "read",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "",
+          "decomposition": "",
+          "stroke_count": 0,
+          "components": []
+        },
+        {
+          "char": "认",
+          "tier": "read",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "",
+          "decomposition": "",
+          "stroke_count": 0,
+          "components": []
+        },
+        {
+          "char": "写",
+          "tier": "read",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "",
+          "decomposition": "",
+          "stroke_count": 0,
+          "components": []
+        }
+      ],
+      "words": [
+        {
+          "word": "成长",
+          "pinyin": "chéngzhǎng",
+          "gloss": "",
+          "measure_for": ""
+        },
+        {
+          "word": "个子",
+          "pinyin": "gèzi",
+          "gloss": "",
+          "measure_for": ""
+        },
+        {
+          "word": "鼓掌",
+          "pinyin": "gǔzhǎng",
+          "gloss": "",
+          "measure_for": ""
+        },
+        {
+          "word": "黑板",
+          "pinyin": "hēibǎn",
+          "gloss": "",
+          "measure_for": ""
+        },
+        {
+          "word": "回忆",
+          "pinyin": "huíyì",
+          "gloss": "",
+          "measure_for": ""
+        },
+        {
+          "word": "紧张",
+          "pinyin": "jǐnzhāng",
+          "gloss": "",
+          "measure_for": ""
+        },
+        {
+          "word": "咳嗽",
+          "pinyin": "késou",
+          "gloss": "",
+          "measure_for": ""
+        },
+        {
+          "word": "上课",
+          "pinyin": "shàngkè",
+          "gloss": "",
+          "measure_for": ""
+        },
+        {
+          "word": "舌头",
+          "pinyin": "shétou",
+          "gloss": "",
+          "measure_for": ""
+        },
+        {
+          "word": "希望",
+          "pinyin": "xīwàng",
+          "gloss": "",
+          "measure_for": ""
+        },
+        {
+          "word": "下课",
+          "pinyin": "xiàkè",
+          "gloss": "",
+          "measure_for": ""
+        },
+        {
+          "word": "幸福",
+          "pinyin": "xìngfú",
+          "gloss": "",
+          "measure_for": ""
+        },
+        {
+          "word": "意义",
+          "pinyin": "yìyì",
+          "gloss": "",
+          "measure_for": ""
+        },
+        {
+          "word": "自我",
+          "pinyin": "zìwǒ",
+          "gloss": "",
+          "measure_for": ""
+        },
+        {
+          "word": "总结",
+          "pinyin": "zǒngjié",
+          "gloss": "",
+          "measure_for": ""
+        }
+      ],
+      "patterns": [],
+      "sentences": [
+        "我们班三分之一的同学是新同学。",
+        "我们心急地走上讲台。"
+      ],
+      "passage": "",
+      "antonyms": [],
+      "measures": [],
+      "cloze": [],
+      "truefalse": [],
+      "comprehension": []
+    },
+    {
+      "book": 8,
+      "lesson": 3,
+      "title": "一场篮球赛",
+      "chars": [
+        {
+          "char": "篮",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "篮",
+          "decomposition": "",
+          "stroke_count": 16,
+          "components": []
+        },
+        {
+          "char": "乒",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "",
+          "decomposition": "",
+          "stroke_count": 6,
+          "components": []
+        },
+        {
+          "char": "乓",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "",
+          "decomposition": "",
+          "stroke_count": 6,
+          "components": []
+        },
+        {
+          "char": "排",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "扌",
+          "decomposition": "",
+          "stroke_count": 11,
+          "components": []
+        },
+        {
+          "char": "组",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "纟",
+          "decomposition": "",
+          "stroke_count": 8,
+          "components": []
+        },
+        {
+          "char": "织",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "纟",
+          "decomposition": "",
+          "stroke_count": 8,
+          "components": []
+        },
+        {
+          "char": "参",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "厶",
+          "decomposition": "",
+          "stroke_count": 8,
+          "components": []
+        },
+        {
+          "char": "判",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "刂",
+          "decomposition": "",
+          "stroke_count": 7,
+          "components": []
+        },
+        {
+          "char": "犯",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "犭",
+          "decomposition": "",
+          "stroke_count": 5,
+          "components": []
+        },
+        {
+          "char": "规",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "见",
+          "decomposition": "",
+          "stroke_count": 8,
+          "components": []
+        },
+        {
+          "char": "兴",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "八",
+          "decomposition": "",
+          "stroke_count": 6,
+          "components": []
+        },
+        {
+          "char": "奋",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "大",
+          "decomposition": "",
+          "stroke_count": 8,
+          "components": []
+        },
+        {
+          "char": "攻",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "工",
+          "decomposition": "",
+          "stroke_count": 7,
+          "components": []
+        },
+        {
+          "char": "防",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "阝",
+          "decomposition": "",
+          "stroke_count": 6,
+          "components": []
+        },
+        {
+          "char": "众",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "人",
+          "decomposition": "",
+          "stroke_count": 6,
+          "components": []
+        },
+        {
+          "char": "配",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "酉",
+          "decomposition": "",
+          "stroke_count": 10,
+          "components": []
+        },
+        {
+          "char": "输",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "车",
+          "decomposition": "",
+          "stroke_count": 13,
+          "components": []
+        },
+        {
+          "char": "拼",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "扌",
+          "decomposition": "",
+          "stroke_count": 9,
+          "components": []
+        },
+        {
+          "char": "裁",
+          "tier": "read",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "",
+          "decomposition": "",
+          "stroke_count": 0,
+          "components": []
+        },
+        {
+          "char": "替",
+          "tier": "read",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "",
+          "decomposition": "",
+          "stroke_count": 0,
+          "components": []
+        },
+        {
+          "char": "暂",
+          "tier": "read",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "",
+          "decomposition": "",
+          "stroke_count": 0,
+          "components": []
+        },
+        {
+          "char": "哨",
+          "tier": "read",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "",
+          "decomposition": "",
+          "stroke_count": 0,
+          "components": []
+        },
+        {
+          "char": "援",
+          "tier": "read",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "",
+          "decomposition": "",
+          "stroke_count": 0,
+          "components": []
+        }
+      ],
+      "words": [
+        {
+          "word": "比赛",
+          "pinyin": "bǐsài",
+          "gloss": "",
+          "measure_for": ""
+        },
+        {
+          "word": "观众",
+          "pinyin": "guānzhòng",
+          "gloss": "",
+          "measure_for": ""
+        },
+        {
+          "word": "活动",
+          "pinyin": "huódòng",
+          "gloss": "",
+          "measure_for": ""
+        },
+        {
+          "word": "激烈",
+          "pinyin": "jīliè",
+          "gloss": "",
+          "measure_for": ""
+        },
+        {
+          "word": "精彩",
+          "pinyin": "jīngcǎi",
+          "gloss": "",
+          "measure_for": ""
+        },
+        {
+          "word": "篮球",
+          "pinyin": "lánqiú",
+          "gloss": "",
+          "measure_for": ""
+        },
+        {
+          "word": "年级",
+          "pinyin": "niánjí",
+          "gloss": "",
+          "measure_for": ""
+        },
+        {
+          "word": "排球",
+          "pinyin": "páiqiú",
+          "gloss": "",
+          "measure_for": ""
+        },
+        {
+          "word": "判断",
+          "pinyin": "pànduàn",
+          "gloss": "",
+          "measure_for": ""
+        },
+        {
+          "word": "全体",
+          "pinyin": "quántǐ",
+          "gloss": "",
+          "measure_for": ""
+        },
+        {
+          "word": "仍然",
+          "pinyin": "réngrán",
+          "gloss": "",
+          "measure_for": ""
+        },
+        {
+          "word": "同时",
+          "pinyin": "tóngshí",
+          "gloss": "",
+          "measure_for": ""
+        },
+        {
+          "word": "兴奋",
+          "pinyin": "xīngfèn",
+          "gloss": "",
+          "measure_for": ""
+        },
+        {
+          "word": "运动",
+          "pinyin": "yùndòng",
+          "gloss": "",
+          "measure_for": ""
+        },
+        {
+          "word": "运动员",
+          "pinyin": "yùndòngyuán",
+          "gloss": "",
+          "measure_for": ""
+        },
+        {
+          "word": "准确",
+          "pinyin": "zhǔnquè",
+          "gloss": "",
+          "measure_for": ""
+        },
+        {
+          "word": "足球",
+          "pinyin": "zúqiú",
+          "gloss": "",
+          "measure_for": ""
+        },
+        {
+          "word": "组织",
+          "pinyin": "zǔzhī",
+          "gloss": "",
+          "measure_for": ""
+        }
+      ],
+      "patterns": [],
+      "sentences": [
+        "不管是篮球还是排球，我都喜欢。",
+        "这场篮球比赛真是太精彩了。"
+      ],
+      "passage": "",
+      "antonyms": [],
+      "measures": [],
+      "cloze": [],
+      "truefalse": [],
+      "comprehension": []
+    },
+    {
+      "book": 8,
+      "lesson": 4,
+      "title": "农夫和蛇",
+      "chars": [
+        {
+          "char": "蛇",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "虫",
+          "decomposition": "",
+          "stroke_count": 11,
+          "components": []
+        },
+        {
+          "char": "厚",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "厂",
+          "decomposition": "",
+          "stroke_count": 9,
+          "components": []
+        },
+        {
+          "char": "冻",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "冫",
+          "decomposition": "",
+          "stroke_count": 7,
+          "components": []
+        },
+        {
+          "char": "硬",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "石",
+          "decomposition": "",
+          "stroke_count": 12,
+          "components": []
+        },
+        {
+          "char": "捡",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "扌",
+          "decomposition": "",
+          "stroke_count": 10,
+          "components": []
+        },
+        {
+          "char": "咬",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "口",
+          "decomposition": "",
+          "stroke_count": 9,
+          "components": []
+        },
+        {
+          "char": "转",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "车",
+          "decomposition": "",
+          "stroke_count": 8,
+          "components": []
+        },
+        {
+          "char": "怀",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "忄",
+          "decomposition": "",
+          "stroke_count": 7,
+          "components": []
+        },
+        {
+          "char": "醒",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "酉",
+          "decomposition": "",
+          "stroke_count": 16,
+          "components": []
+        },
+        {
+          "char": "舒",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "人",
+          "decomposition": "",
+          "stroke_count": 12,
+          "components": []
+        },
+        {
+          "char": "狠",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "犭",
+          "decomposition": "",
+          "stroke_count": 9,
+          "components": []
+        },
+        {
+          "char": "剧",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "刂",
+          "decomposition": "",
+          "stroke_count": 10,
+          "components": []
+        },
+        {
+          "char": "扣",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "扌",
+          "decomposition": "",
+          "stroke_count": 6,
+          "components": []
+        },
+        {
+          "char": "摔",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "扌",
+          "decomposition": "",
+          "stroke_count": 14,
+          "components": []
+        },
+        {
+          "char": "模",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "木",
+          "decomposition": "",
+          "stroke_count": 14,
+          "components": []
+        },
+        {
+          "char": "糊",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "米",
+          "decomposition": "",
+          "stroke_count": 15,
+          "components": []
+        },
+        {
+          "char": "中",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "丨",
+          "decomposition": "",
+          "stroke_count": 4,
+          "components": []
+        },
+        {
+          "char": "僵",
+          "tier": "read",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "",
+          "decomposition": "",
+          "stroke_count": 0,
+          "components": []
+        }
+      ],
+      "words": [
+        {
+          "word": "跟前",
+          "pinyin": "gēnqián",
+          "gloss": "",
+          "measure_for": ""
+        },
+        {
+          "word": "寒冷",
+          "pinyin": "hánlěng",
+          "gloss": "",
+          "measure_for": ""
+        },
+        {
+          "word": "看来",
+          "pinyin": "kànlái",
+          "gloss": "",
+          "measure_for": ""
+        },
+        {
+          "word": "如果",
+          "pinyin": "rúguǒ",
+          "gloss": "",
+          "measure_for": ""
+        },
+        {
+          "word": "舒服",
+          "pinyin": "shūfu",
+          "gloss": "",
+          "measure_for": ""
+        },
+        {
+          "word": "温暖",
+          "pinyin": "wēnnuǎn",
+          "gloss": "",
+          "measure_for": ""
+        },
+        {
+          "word": "一切",
+          "pinyin": "yíqiè",
+          "gloss": "",
+          "measure_for": ""
+        }
+      ],
+      "patterns": [],
+      "sentences": [
+        "他把蛇捡起来放进怀里。",
+        "他觉得眼前的一切都变得模糊起来。5."
+      ],
+      "passage": "",
+      "antonyms": [],
+      "measures": [],
+      "cloze": [],
+      "truefalse": [],
+      "comprehension": []
+    },
+    {
+      "book": 8,
+      "lesson": 5,
+      "title": "三个和尚",
+      "chars": [
+        {
+          "char": "庙",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "广",
+          "decomposition": "",
+          "stroke_count": 8,
+          "components": []
+        },
+        {
+          "char": "挑",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "扌",
+          "decomposition": "",
+          "stroke_count": 9,
+          "components": []
+        },
+        {
+          "char": "胖",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "月",
+          "decomposition": "",
+          "stroke_count": 9,
+          "components": []
+        },
+        {
+          "char": "澡",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "氵",
+          "decomposition": "",
+          "stroke_count": 16,
+          "components": []
+        },
+        {
+          "char": "桶",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "木",
+          "decomposition": "",
+          "stroke_count": 11,
+          "components": []
+        },
+        {
+          "char": "鼠",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "鼠",
+          "decomposition": "",
+          "stroke_count": 13,
+          "components": []
+        },
+        {
+          "char": "管",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "",
+          "decomposition": "",
+          "stroke_count": 14,
+          "components": []
+        },
+        {
+          "char": "蜡",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "虫",
+          "decomposition": "",
+          "stroke_count": 14,
+          "components": []
+        },
+        {
+          "char": "烛",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "火",
+          "decomposition": "",
+          "stroke_count": 10,
+          "components": []
+        },
+        {
+          "char": "倒",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "亻",
+          "decomposition": "",
+          "stroke_count": 10,
+          "components": []
+        },
+        {
+          "char": "保",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "亻",
+          "decomposition": "",
+          "stroke_count": 9,
+          "components": []
+        },
+        {
+          "char": "协",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "十",
+          "decomposition": "",
+          "stroke_count": 6,
+          "components": []
+        },
+        {
+          "char": "刮",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "刂",
+          "decomposition": "",
+          "stroke_count": 8,
+          "components": []
+        },
+        {
+          "char": "缺",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "缶",
+          "decomposition": "",
+          "stroke_count": 10,
+          "components": []
+        },
+        {
+          "char": "当",
+          "tier": "read",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "",
+          "decomposition": "",
+          "stroke_count": 0,
+          "components": []
+        },
+        {
+          "char": "伽",
+          "tier": "read",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "",
+          "decomposition": "",
+          "stroke_count": 0,
+          "components": []
+        },
+        {
+          "char": "倮",
+          "tier": "read",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "",
+          "decomposition": "",
+          "stroke_count": 0,
+          "components": []
+        },
+        {
+          "char": "本",
+          "tier": "read",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "",
+          "decomposition": "",
+          "stroke_count": 0,
+          "components": []
+        },
+        {
+          "char": "课",
+          "tier": "read",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "",
+          "decomposition": "",
+          "stroke_count": 0,
+          "components": []
+        },
+        {
+          "char": "学",
+          "tier": "read",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "",
+          "decomposition": "",
+          "stroke_count": 0,
+          "components": []
+        },
+        {
+          "char": "习",
+          "tier": "read",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "",
+          "decomposition": "",
+          "stroke_count": 0,
+          "components": []
+        },
+        {
+          "char": "部",
+          "tier": "read",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "",
+          "decomposition": "",
+          "stroke_count": 0,
+          "components": []
+        },
+        {
+          "char": "首",
+          "tier": "read",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "",
+          "decomposition": "",
+          "stroke_count": 0,
+          "components": []
+        },
+        {
+          "char": "缶",
+          "tier": "read",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "",
+          "decomposition": "",
+          "stroke_count": 0,
+          "components": []
+        },
+        {
+          "char": "要",
+          "tier": "read",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "",
+          "decomposition": "",
+          "stroke_count": 0,
+          "components": []
+        },
+        {
+          "char": "求",
+          "tier": "read",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "",
+          "decomposition": "",
+          "stroke_count": 0,
+          "components": []
+        },
+        {
+          "char": "会",
+          "tier": "read",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "",
+          "decomposition": "",
+          "stroke_count": 0,
+          "components": []
+        },
+        {
+          "char": "认",
+          "tier": "read",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "",
+          "decomposition": "",
+          "stroke_count": 0,
+          "components": []
+        },
+        {
+          "char": "用",
+          "tier": "read",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "",
+          "decomposition": "",
+          "stroke_count": 0,
+          "components": []
+        },
+        {
+          "char": "词",
+          "tier": "read",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "",
+          "decomposition": "",
+          "stroke_count": 0,
+          "components": []
+        },
+        {
+          "char": "语",
+          "tier": "read",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "",
+          "decomposition": "",
+          "stroke_count": 0,
+          "components": []
+        },
+        {
+          "char": "能",
+          "tier": "read",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "",
+          "decomposition": "",
+          "stroke_count": 0,
+          "components": []
+        },
+        {
+          "char": "理",
+          "tier": "read",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "",
+          "decomposition": "",
+          "stroke_count": 0,
+          "components": []
+        },
+        {
+          "char": "解",
+          "tier": "read",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "",
+          "decomposition": "",
+          "stroke_count": 0,
+          "components": []
+        },
+        {
+          "char": "运",
+          "tier": "read",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "",
+          "decomposition": "",
+          "stroke_count": 0,
+          "components": []
+        },
+        {
+          "char": "重",
+          "tier": "read",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "",
+          "decomposition": "",
+          "stroke_count": 0,
+          "components": []
+        },
+        {
+          "char": "点",
+          "tier": "read",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "",
+          "decomposition": "",
+          "stroke_count": 0,
+          "components": []
+        },
+        {
+          "char": "的",
+          "tier": "read",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "",
+          "decomposition": "",
+          "stroke_count": 0,
+          "components": []
+        },
+        {
+          "char": "句",
+          "tier": "read",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "",
+          "decomposition": "",
+          "stroke_count": 0,
+          "components": []
+        },
+        {
+          "char": "子",
+          "tier": "read",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "",
+          "decomposition": "",
+          "stroke_count": 0,
+          "components": []
+        },
+        {
+          "char": "每",
+          "tier": "read",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "",
+          "decomposition": "",
+          "stroke_count": 0,
+          "components": []
+        },
+        {
+          "char": "天",
+          "tier": "read",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "",
+          "decomposition": "",
+          "stroke_count": 0,
+          "components": []
+        },
+        {
+          "char": "都",
+          "tier": "read",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "",
+          "decomposition": "",
+          "stroke_count": 0,
+          "components": []
+        },
+        {
+          "char": "是",
+          "tier": "read",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "",
+          "decomposition": "",
+          "stroke_count": 0,
+          "components": []
+        },
+        {
+          "char": "我",
+          "tier": "read",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "",
+          "decomposition": "",
+          "stroke_count": 0,
+          "components": []
+        },
+        {
+          "char": "去",
+          "tier": "read",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "",
+          "decomposition": "",
+          "stroke_count": 0,
+          "components": []
+        },
+        {
+          "char": "水",
+          "tier": "read",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "",
+          "decomposition": "",
+          "stroke_count": 0,
+          "components": []
+        },
+        {
+          "char": "给",
+          "tier": "read",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "",
+          "decomposition": "",
+          "stroke_count": 0,
+          "components": []
+        },
+        {
+          "char": "他",
+          "tier": "read",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "",
+          "decomposition": "",
+          "stroke_count": 0,
+          "components": []
+        },
+        {
+          "char": "喝",
+          "tier": "read",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "",
+          "decomposition": "",
+          "stroke_count": 0,
+          "components": []
+        },
+        {
+          "char": "这",
+          "tier": "read",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "",
+          "decomposition": "",
+          "stroke_count": 0,
+          "components": []
+        },
+        {
+          "char": "可",
+          "tier": "read",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "",
+          "decomposition": "",
+          "stroke_count": 0,
+          "components": []
+        },
+        {
+          "char": "不",
+          "tier": "read",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "",
+          "decomposition": "",
+          "stroke_count": 0,
+          "components": []
+        },
+        {
+          "char": "行",
+          "tier": "read",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "",
+          "decomposition": "",
+          "stroke_count": 0,
+          "components": []
+        },
+        {
+          "char": "里",
+          "tier": "read",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "",
+          "decomposition": "",
+          "stroke_count": 0,
+          "components": []
+        },
+        {
+          "char": "一",
+          "tier": "read",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "",
+          "decomposition": "",
+          "stroke_count": 0,
+          "components": []
+        },
+        {
+          "char": "儿",
+          "tier": "read",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "",
+          "decomposition": "",
+          "stroke_count": 0,
+          "components": []
+        },
+        {
+          "char": "也",
+          "tier": "read",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "",
+          "decomposition": "",
+          "stroke_count": 0,
+          "components": []
+        },
+        {
+          "char": "没",
+          "tier": "read",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "",
+          "decomposition": "",
+          "stroke_count": 0,
+          "components": []
+        },
+        {
+          "char": "有",
+          "tier": "read",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "",
+          "decomposition": "",
+          "stroke_count": 0,
+          "components": []
+        },
+        {
+          "char": "了",
+          "tier": "read",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "",
+          "decomposition": "",
+          "stroke_count": 0,
+          "components": []
+        },
+        {
+          "char": "流",
+          "tier": "read",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "",
+          "decomposition": "",
+          "stroke_count": 0,
+          "components": []
+        },
+        {
+          "char": "利",
+          "tier": "read",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "",
+          "decomposition": "",
+          "stroke_count": 0,
+          "components": []
+        },
+        {
+          "char": "地",
+          "tier": "read",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "",
+          "decomposition": "",
+          "stroke_count": 0,
+          "components": []
+        },
+        {
+          "char": "朗",
+          "tier": "read",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "",
+          "decomposition": "",
+          "stroke_count": 0,
+          "components": []
+        },
+        {
+          "char": "读",
+          "tier": "read",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "",
+          "decomposition": "",
+          "stroke_count": 0,
+          "components": []
+        },
+        {
+          "char": "文",
+          "tier": "read",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "",
+          "decomposition": "",
+          "stroke_count": 0,
+          "components": []
+        },
+        {
+          "char": "讲",
+          "tier": "read",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "",
+          "decomposition": "",
+          "stroke_count": 0,
+          "components": []
+        },
+        {
+          "char": "述",
+          "tier": "read",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "",
+          "decomposition": "",
+          "stroke_count": 0,
+          "components": []
+        },
+        {
+          "char": "内",
+          "tier": "read",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "",
+          "decomposition": "",
+          "stroke_count": 0,
+          "components": []
+        },
+        {
+          "char": "容",
+          "tier": "read",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "",
+          "decomposition": "",
+          "stroke_count": 0,
+          "components": []
+        }
+      ],
+      "words": [
+        {
+          "word": "不管",
+          "pinyin": "bùguǎn",
+          "gloss": "",
+          "measure_for": ""
+        },
+        {
+          "word": "好不容易",
+          "pinyin": "hǎoburóngyì",
+          "gloss": "",
+          "measure_for": ""
+        },
+        {
+          "word": "团结",
+          "pinyin": "tuánjié",
+          "gloss": "",
+          "measure_for": ""
+        },
+        {
+          "word": "洗澡",
+          "pinyin": "xǐzǎo",
+          "gloss": "",
+          "measure_for": ""
+        },
+        {
+          "word": "一块儿",
+          "pinyin": "yíkuàir",
+          "gloss": "",
+          "measure_for": ""
+        },
+        {
+          "word": "战胜",
+          "pinyin": "zhànshèng",
+          "gloss": "",
+          "measure_for": ""
+        }
+      ],
+      "patterns": [],
+      "sentences": [
+        "每天都是我去挑水给他喝，这可不行！",
+        "庙里一点儿水也没有了。6.能"
+      ],
+      "passage": "",
+      "antonyms": [],
+      "measures": [],
+      "cloze": [],
+      "truefalse": [],
+      "comprehension": []
+    },
+    {
+      "book": 8,
+      "lesson": 6,
+      "title": "成语故事",
+      "chars": [
+        {
+          "char": "矛",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "矛",
+          "decomposition": "",
+          "stroke_count": 5,
+          "components": []
+        },
+        {
+          "char": "盾",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "目",
+          "decomposition": "",
+          "stroke_count": 9,
+          "components": []
+        },
+        {
+          "char": "兵",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "八",
+          "decomposition": "",
+          "stroke_count": 7,
+          "components": []
+        },
+        {
+          "char": "器",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "口",
+          "decomposition": "",
+          "stroke_count": 16,
+          "components": []
+        },
+        {
+          "char": "持",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "扌",
+          "decomposition": "",
+          "stroke_count": 9,
+          "components": []
+        },
+        {
+          "char": "刺",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "刂",
+          "decomposition": "",
+          "stroke_count": 8,
+          "components": []
+        },
+        {
+          "char": "坚",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "土",
+          "decomposition": "",
+          "stroke_count": 7,
+          "components": []
+        },
+        {
+          "char": "固",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "囗",
+          "decomposition": "",
+          "stroke_count": 8,
+          "components": []
+        },
+        {
+          "char": "傻",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "亻",
+          "decomposition": "",
+          "stroke_count": 13,
+          "components": []
+        },
+        {
+          "char": "填",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "土",
+          "decomposition": "",
+          "stroke_count": 13,
+          "components": []
+        },
+        {
+          "char": "浪",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "氵",
+          "decomposition": "",
+          "stroke_count": 10,
+          "components": []
+        },
+        {
+          "char": "昏",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "日",
+          "decomposition": "",
+          "stroke_count": 8,
+          "components": []
+        },
+        {
+          "char": "淹",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "氵",
+          "decomposition": "",
+          "stroke_count": 11,
+          "components": []
+        },
+        {
+          "char": "恨",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "忄",
+          "decomposition": "",
+          "stroke_count": 9,
+          "components": []
+        },
+        {
+          "char": "尽",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "尸",
+          "decomposition": "",
+          "stroke_count": 6,
+          "components": []
+        },
+        {
+          "char": "锋",
+          "tier": "read",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "",
+          "decomposition": "",
+          "stroke_count": 0,
+          "components": []
+        },
+        {
+          "char": "炎",
+          "tier": "read",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "",
+          "decomposition": "",
+          "stroke_count": 0,
+          "components": []
+        },
+        {
+          "char": "掀",
+          "tier": "read",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "",
+          "decomposition": "",
+          "stroke_count": 0,
+          "components": []
+        },
+        {
+          "char": "枝",
+          "tier": "read",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "",
+          "decomposition": "",
+          "stroke_count": 0,
+          "components": []
+        },
+        {
+          "char": "援",
+          "tier": "read",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "",
+          "decomposition": "",
+          "stroke_count": 0,
+          "components": []
+        },
+        {
+          "char": "本",
+          "tier": "read",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "",
+          "decomposition": "",
+          "stroke_count": 0,
+          "components": []
+        },
+        {
+          "char": "课",
+          "tier": "read",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "",
+          "decomposition": "",
+          "stroke_count": 0,
+          "components": []
+        },
+        {
+          "char": "学",
+          "tier": "read",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "",
+          "decomposition": "",
+          "stroke_count": 0,
+          "components": []
+        },
+        {
+          "char": "习",
+          "tier": "read",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "",
+          "decomposition": "",
+          "stroke_count": 0,
+          "components": []
+        },
+        {
+          "char": "部",
+          "tier": "read",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "",
+          "decomposition": "",
+          "stroke_count": 0,
+          "components": []
+        },
+        {
+          "char": "首",
+          "tier": "read",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "",
+          "decomposition": "",
+          "stroke_count": 0,
+          "components": []
+        },
+        {
+          "char": "斗",
+          "tier": "read",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "",
+          "decomposition": "",
+          "stroke_count": 0,
+          "components": []
+        },
+        {
+          "char": "要",
+          "tier": "read",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "",
+          "decomposition": "",
+          "stroke_count": 0,
+          "components": []
+        },
+        {
+          "char": "求",
+          "tier": "read",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "",
+          "decomposition": "",
+          "stroke_count": 0,
+          "components": []
+        },
+        {
+          "char": "会",
+          "tier": "read",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "",
+          "decomposition": "",
+          "stroke_count": 0,
+          "components": []
+        },
+        {
+          "char": "认",
+          "tier": "read",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "",
+          "decomposition": "",
+          "stroke_count": 0,
+          "components": []
+        },
+        {
+          "char": "用",
+          "tier": "read",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "",
+          "decomposition": "",
+          "stroke_count": 0,
+          "components": []
+        }
+      ],
+      "words": [
+        {
+          "word": "到底",
+          "pinyin": "dàodǐ",
+          "gloss": "",
+          "measure_for": ""
+        },
+        {
+          "word": "奋斗",
+          "pinyin": "fèndòu",
+          "gloss": "",
+          "measure_for": ""
+        },
+        {
+          "word": "坚持",
+          "pinyin": "jiānchí",
+          "gloss": "",
+          "measure_for": ""
+        },
+        {
+          "word": "尽管",
+          "pinyin": "jǐnguǎn",
+          "gloss": "",
+          "measure_for": ""
+        },
+        {
+          "word": "矛盾",
+          "pinyin": "máodùn",
+          "gloss": "",
+          "measure_for": ""
+        },
+        {
+          "word": "女儿",
+          "pinyin": "nǚ'ér",
+          "gloss": "",
+          "measure_for": ""
+        },
+        {
+          "word": "如何",
+          "pinyin": "rúhé",
+          "gloss": "",
+          "measure_for": ""
+        }
+      ],
+      "patterns": [],
+      "sentences": [
+        "卖兵器的人听了十分得意，于是又举起一块厚厚的盾牌来叫卖。",
+        "我非把大海填平不可。6."
+      ],
+      "passage": "",
+      "antonyms": [],
+      "measures": [],
+      "cloze": [],
+      "truefalse": [],
+      "comprehension": []
+    },
+    {
+      "book": 8,
+      "lesson": 7,
+      "title": "珠穆朗玛峰",
+      "chars": [
+        {
+          "char": "藏",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "艹",
+          "decomposition": "",
+          "stroke_count": 17,
+          "components": []
+        },
+        {
+          "char": "挺",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "扌",
+          "decomposition": "",
+          "stroke_count": 9,
+          "components": []
+        },
+        {
+          "char": "洁",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "氵",
+          "decomposition": "",
+          "stroke_count": 9,
+          "components": []
+        },
+        {
+          "char": "纯",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "纟",
+          "decomposition": "",
+          "stroke_count": 7,
+          "components": []
+        },
+        {
+          "char": "闪",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "门",
+          "decomposition": "",
+          "stroke_count": 5,
+          "components": []
+        },
+        {
+          "char": "夺",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "大",
+          "decomposition": "",
+          "stroke_count": 6,
+          "components": []
+        },
+        {
+          "char": "雾",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "雨",
+          "decomposition": "",
+          "stroke_count": 13,
+          "components": []
+        },
+        {
+          "char": "秘",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "禾",
+          "decomposition": "",
+          "stroke_count": 10,
+          "components": []
+        },
+        {
+          "char": "测",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "氵",
+          "decomposition": "",
+          "stroke_count": 9,
+          "components": []
+        },
+        {
+          "char": "仅",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "亻",
+          "decomposition": "",
+          "stroke_count": 4,
+          "components": []
+        },
+        {
+          "char": "纷",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "纟",
+          "decomposition": "",
+          "stroke_count": 7,
+          "components": []
+        },
+        {
+          "char": "探",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "扌",
+          "decomposition": "",
+          "stroke_count": 11,
+          "components": []
+        },
+        {
+          "char": "坡",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "土",
+          "decomposition": "",
+          "stroke_count": 8,
+          "components": []
+        },
+        {
+          "char": "页",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "页",
+          "decomposition": "",
+          "stroke_count": 6,
+          "components": []
+        },
+        {
+          "char": "录",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "",
+          "decomposition": "",
+          "stroke_count": 8,
+          "components": []
+        },
+        {
+          "char": "穆",
+          "tier": "read",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "",
+          "decomposition": "",
+          "stroke_count": 0,
+          "components": []
+        },
+        {
+          "char": "玛",
+          "tier": "read",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "",
+          "decomposition": "",
+          "stroke_count": 0,
+          "components": []
+        },
+        {
+          "char": "耸",
+          "tier": "read",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "",
+          "decomposition": "",
+          "stroke_count": 0,
+          "components": []
+        },
+        {
+          "char": "莫",
+          "tier": "read",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "",
+          "decomposition": "",
+          "stroke_count": 0,
+          "components": []
+        },
+        {
+          "char": "寺",
+          "tier": "read",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "",
+          "decomposition": "",
+          "stroke_count": 0,
+          "components": []
+        },
+        {
+          "char": "本",
+          "tier": "read",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "",
+          "decomposition": "",
+          "stroke_count": 0,
+          "components": []
+        },
+        {
+          "char": "课",
+          "tier": "read",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "",
+          "decomposition": "",
+          "stroke_count": 0,
+          "components": []
+        },
+        {
+          "char": "学",
+          "tier": "read",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "",
+          "decomposition": "",
+          "stroke_count": 0,
+          "components": []
+        },
+        {
+          "char": "习",
+          "tier": "read",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "",
+          "decomposition": "",
+          "stroke_count": 0,
+          "components": []
+        },
+        {
+          "char": "部",
+          "tier": "read",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "",
+          "decomposition": "",
+          "stroke_count": 0,
+          "components": []
+        },
+        {
+          "char": "首",
+          "tier": "read",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "",
+          "decomposition": "",
+          "stroke_count": 0,
+          "components": []
+        },
+        {
+          "char": "要",
+          "tier": "read",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "",
+          "decomposition": "",
+          "stroke_count": 0,
+          "components": []
+        },
+        {
+          "char": "求",
+          "tier": "read",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "",
+          "decomposition": "",
+          "stroke_count": 0,
+          "components": []
+        },
+        {
+          "char": "会",
+          "tier": "read",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "",
+          "decomposition": "",
+          "stroke_count": 0,
+          "components": []
+        },
+        {
+          "char": "认",
+          "tier": "read",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "",
+          "decomposition": "",
+          "stroke_count": 0,
+          "components": []
+        },
+        {
+          "char": "用",
+          "tier": "read",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "",
+          "decomposition": "",
+          "stroke_count": 0,
+          "components": []
+        }
+      ],
+      "words": [
+        {
+          "word": "表达",
+          "pinyin": "biǎodá",
+          "gloss": "",
+          "measure_for": ""
+        },
+        {
+          "word": "不仅",
+          "pinyin": "bùjǐn",
+          "gloss": "",
+          "measure_for": ""
+        },
+        {
+          "word": "纷纷",
+          "pinyin": "fēnfēn",
+          "gloss": "",
+          "measure_for": ""
+        },
+        {
+          "word": "高原",
+          "pinyin": "gāoyuán",
+          "gloss": "",
+          "measure_for": ""
+        },
+        {
+          "word": "年代",
+          "pinyin": "niándài",
+          "gloss": "",
+          "measure_for": ""
+        },
+        {
+          "word": "人类",
+          "pinyin": "rénlèi",
+          "gloss": "",
+          "measure_for": ""
+        },
+        {
+          "word": "西南",
+          "pinyin": "xīnán",
+          "gloss": "",
+          "measure_for": ""
+        },
+        {
+          "word": "以来",
+          "pinyin": "yǐlái",
+          "gloss": "",
+          "measure_for": ""
+        },
+        {
+          "word": "自从",
+          "pinyin": "zìcóng",
+          "gloss": "",
+          "measure_for": ""
+        },
+        {
+          "word": "尊敬",
+          "pinyin": "zūnjìng",
+          "gloss": "",
+          "measure_for": ""
+        }
+      ],
+      "patterns": [],
+      "sentences": [
+        "刮风下雪的时候，峰顶飘动着层层云雾，使人感到神秘莫测。",
+        "自从19世纪20年代以来，很多国家派人来这里探险、登山。6.能"
+      ],
+      "passage": "",
+      "antonyms": [],
+      "measures": [],
+      "cloze": [],
+      "truefalse": [],
+      "comprehension": []
+    },
+    {
+      "book": 8,
+      "lesson": 8,
+      "title": "蝙蝠和雷达",
+      "chars": [
+        {
+          "char": "启",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "户",
+          "decomposition": "",
+          "stroke_count": 7,
+          "components": []
+        },
+        {
+          "char": "避",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "辶",
+          "decomposition": "",
+          "stroke_count": 16,
+          "components": []
+        },
+        {
+          "char": "绳",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "纟",
+          "decomposition": "",
+          "stroke_count": 11,
+          "components": []
+        },
+        {
+          "char": "系",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "",
+          "decomposition": "",
+          "stroke_count": 7,
+          "components": []
+        },
+        {
+          "char": "蒙",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "艹",
+          "decomposition": "",
+          "stroke_count": 13,
+          "components": []
+        },
+        {
+          "char": "堵",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "土",
+          "decomposition": "",
+          "stroke_count": 11,
+          "components": []
+        },
+        {
+          "char": "乱",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "",
+          "decomposition": "",
+          "stroke_count": 7,
+          "components": []
+        },
+        {
+          "char": "揭",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "扌",
+          "decomposition": "",
+          "stroke_count": 12,
+          "components": []
+        },
+        {
+          "char": "波",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "氵",
+          "decomposition": "",
+          "stroke_count": 8,
+          "components": []
+        },
+        {
+          "char": "推",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "扌",
+          "decomposition": "",
+          "stroke_count": 11,
+          "components": []
+        },
+        {
+          "char": "障",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "阝",
+          "decomposition": "",
+          "stroke_count": 13,
+          "components": []
+        },
+        {
+          "char": "碍",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "石",
+          "decomposition": "",
+          "stroke_count": 13,
+          "components": []
+        },
+        {
+          "char": "驾",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "马",
+          "decomposition": "",
+          "stroke_count": 8,
+          "components": []
+        },
+        {
+          "char": "驶",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "马",
+          "decomposition": "",
+          "stroke_count": 8,
+          "components": []
+        },
+        {
+          "char": "蝙",
+          "tier": "read",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "",
+          "decomposition": "",
+          "stroke_count": 0,
+          "components": []
+        },
+        {
+          "char": "蝠",
+          "tier": "read",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "",
+          "decomposition": "",
+          "stroke_count": 0,
+          "components": []
+        },
+        {
+          "char": "荧",
+          "tier": "read",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "",
+          "decomposition": "",
+          "stroke_count": 0,
+          "components": []
+        },
+        {
+          "char": "屏",
+          "tier": "read",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "",
+          "decomposition": "",
+          "stroke_count": 0,
+          "components": []
+        }
+      ],
+      "words": [
+        {
+          "word": "波浪",
+          "pinyin": "bōlàng",
+          "gloss": "",
+          "measure_for": ""
+        },
+        {
+          "word": "反复",
+          "pinyin": "fǎnfù",
+          "gloss": "",
+          "measure_for": ""
+        },
+        {
+          "word": "工具",
+          "pinyin": "gōngjù",
+          "gloss": "",
+          "measure_for": ""
+        },
+        {
+          "word": "秘密",
+          "pinyin": "mìmì",
+          "gloss": "",
+          "measure_for": ""
+        },
+        {
+          "word": "相当",
+          "pinyin": "xiāngdāng",
+          "gloss": "",
+          "measure_for": ""
+        },
+        {
+          "word": "原因",
+          "pinyin": "yuányīn",
+          "gloss": "",
+          "measure_for": ""
+        },
+        {
+          "word": "证明",
+          "pinyin": "zhèngmíng",
+          "gloss": "",
+          "measure_for": ""
+        },
+        {
+          "word": "钟头",
+          "pinyin": "zhōngtóu",
+          "gloss": "",
+          "measure_for": ""
+        }
+      ],
+      "patterns": [],
+      "sentences": [
+        "它一个铃也没碰响。",
+        "经过反复研究，这个秘密揭开了。5."
+      ],
+      "passage": "",
+      "antonyms": [],
+      "measures": [],
+      "cloze": [],
+      "truefalse": [],
+      "comprehension": []
+    },
+    {
+      "book": 8,
+      "lesson": 9,
+      "title": "古诗二首",
+      "chars": [
+        {
+          "char": "唐",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "广",
+          "decomposition": "",
+          "stroke_count": 10,
+          "components": []
+        },
+        {
+          "char": "杜",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "木",
+          "decomposition": "",
+          "stroke_count": 7,
+          "components": []
+        },
+        {
+          "char": "牧",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "牛",
+          "decomposition": "",
+          "stroke_count": 8,
+          "components": []
+        },
+        {
+          "char": "欲",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "欠",
+          "decomposition": "",
+          "stroke_count": 11,
+          "components": []
+        },
+        {
+          "char": "魂",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "鬼",
+          "decomposition": "",
+          "stroke_count": 13,
+          "components": []
+        },
+        {
+          "char": "枫",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "木",
+          "decomposition": "",
+          "stroke_count": 8,
+          "components": []
+        },
+        {
+          "char": "泊",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "氵",
+          "decomposition": "",
+          "stroke_count": 8,
+          "components": []
+        },
+        {
+          "char": "霜",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "雨",
+          "decomposition": "",
+          "stroke_count": 17,
+          "components": []
+        },
+        {
+          "char": "渔",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "氵",
+          "decomposition": "",
+          "stroke_count": 11,
+          "components": []
+        },
+        {
+          "char": "愁",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "心",
+          "decomposition": "",
+          "stroke_count": 13,
+          "components": []
+        },
+        {
+          "char": "苏",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "艹",
+          "decomposition": "",
+          "stroke_count": 7,
+          "components": []
+        },
+        {
+          "char": "寺",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "土",
+          "decomposition": "",
+          "stroke_count": 6,
+          "components": []
+        },
+        {
+          "char": "杏",
+          "tier": "read",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "",
+          "decomposition": "",
+          "stroke_count": 0,
+          "components": []
+        }
+      ],
+      "words": [],
+      "patterns": [],
+      "sentences": [],
+      "passage": "",
+      "antonyms": [],
+      "measures": [],
+      "cloze": [],
+      "truefalse": [],
+      "comprehension": []
+    },
+    {
+      "book": 8,
+      "lesson": 10,
+      "title": "徐悲鸿的故事",
+      "chars": [
+        {
+          "char": "基",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "土",
+          "decomposition": "",
+          "stroke_count": 11,
+          "components": []
+        },
+        {
+          "char": "础",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "石",
+          "decomposition": "",
+          "stroke_count": 10,
+          "components": []
+        },
+        {
+          "char": "博",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "十",
+          "decomposition": "",
+          "stroke_count": 12,
+          "components": []
+        },
+        {
+          "char": "奔",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "大",
+          "decomposition": "",
+          "stroke_count": 8,
+          "components": []
+        },
+        {
+          "char": "幅",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "巾",
+          "decomposition": "",
+          "stroke_count": 12,
+          "components": []
+        },
+        {
+          "char": "蹄",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "",
+          "decomposition": "",
+          "stroke_count": 16,
+          "components": []
+        },
+        {
+          "char": "逼",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "辶",
+          "decomposition": "",
+          "stroke_count": 12,
+          "components": []
+        },
+        {
+          "char": "巧",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "工",
+          "decomposition": "",
+          "stroke_count": 5,
+          "components": []
+        },
+        {
+          "char": "曾",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "丷",
+          "decomposition": "",
+          "stroke_count": 12,
+          "components": []
+        },
+        {
+          "char": "优",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "亻",
+          "decomposition": "",
+          "stroke_count": 6,
+          "components": []
+        },
+        {
+          "char": "秀",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "禾",
+          "decomposition": "",
+          "stroke_count": 7,
+          "components": []
+        },
+        {
+          "char": "愧",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "忄",
+          "decomposition": "",
+          "stroke_count": 12,
+          "components": []
+        }
+      ],
+      "words": [
+        {
+          "word": "基础",
+          "pinyin": "jīchǔ",
+          "gloss": "",
+          "measure_for": ""
+        },
+        {
+          "word": "优秀",
+          "pinyin": "yōuxiù",
+          "gloss": "",
+          "measure_for": ""
+        }
+      ],
+      "patterns": [],
+      "sentences": [
+        "他白天或者去学校上课，或者去博物馆临摹名画。",
+        "他无论画马，还是画狮子，都画得那么逼真，那么传神！5援"
+      ],
+      "passage": "",
+      "antonyms": [],
+      "measures": [],
+      "cloze": [],
+      "truefalse": [],
+      "comprehension": []
+    },
+    {
+      "book": 8,
+      "lesson": 11,
+      "title": "郑和远航",
+      "chars": [
+        {
+          "char": "率",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "亠",
+          "decomposition": "",
+          "stroke_count": 11,
+          "components": []
+        },
+        {
+          "char": "渡",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "氵",
+          "decomposition": "",
+          "stroke_count": 12,
+          "components": []
+        },
+        {
+          "char": "洲",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "氵",
+          "decomposition": "",
+          "stroke_count": 9,
+          "components": []
+        },
+        {
+          "char": "艘",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "舟",
+          "decomposition": "",
+          "stroke_count": 15,
+          "components": []
+        },
+        {
+          "char": "吨",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "口",
+          "decomposition": "",
+          "stroke_count": 7,
+          "components": []
+        },
+        {
+          "char": "货",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "贝",
+          "decomposition": "",
+          "stroke_count": 8,
+          "components": []
+        },
+        {
+          "char": "乘",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "丿",
+          "decomposition": "",
+          "stroke_count": 10,
+          "components": []
+        },
+        {
+          "char": "披",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "扌",
+          "decomposition": "",
+          "stroke_count": 8,
+          "components": []
+        },
+        {
+          "char": "绕",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "纟",
+          "decomposition": "",
+          "stroke_count": 9,
+          "components": []
+        },
+        {
+          "char": "访",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "讠",
+          "decomposition": "",
+          "stroke_count": 6,
+          "components": []
+        },
+        {
+          "char": "返",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "辶",
+          "decomposition": "",
+          "stroke_count": 7,
+          "components": []
+        },
+        {
+          "char": "谊",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "讠",
+          "decomposition": "",
+          "stroke_count": 10,
+          "components": []
+        },
+        {
+          "char": "丝",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "一",
+          "decomposition": "",
+          "stroke_count": 5,
+          "components": []
+        },
+        {
+          "char": "赠",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "贝",
+          "decomposition": "",
+          "stroke_count": 16,
+          "components": []
+        },
+        {
+          "char": "促",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "亻",
+          "decomposition": "",
+          "stroke_count": 9,
+          "components": []
+        },
+        {
+          "char": "绩",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "纟",
+          "decomposition": "",
+          "stroke_count": 11,
+          "components": []
+        },
+        {
+          "char": "郑",
+          "tier": "read",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "",
+          "decomposition": "",
+          "stroke_count": 0,
+          "components": []
+        },
+        {
+          "char": "印",
+          "tier": "read",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "",
+          "decomposition": "",
+          "stroke_count": 0,
+          "components": []
+        },
+        {
+          "char": "斯",
+          "tier": "read",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "",
+          "decomposition": "",
+          "stroke_count": 0,
+          "components": []
+        },
+        {
+          "char": "湾",
+          "tier": "read",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "",
+          "decomposition": "",
+          "stroke_count": 0,
+          "components": []
+        },
+        {
+          "char": "州",
+          "tier": "read",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "",
+          "decomposition": "",
+          "stroke_count": 0,
+          "components": []
+        },
+        {
+          "char": "甲",
+          "tier": "read",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "",
+          "decomposition": "",
+          "stroke_count": 0,
+          "components": []
+        },
+        {
+          "char": "峡",
+          "tier": "read",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "",
+          "decomposition": "",
+          "stroke_count": 0,
+          "components": []
+        },
+        {
+          "char": "绸",
+          "tier": "read",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "",
+          "decomposition": "",
+          "stroke_count": 0,
+          "components": []
+        },
+        {
+          "char": "欧",
+          "tier": "read",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "",
+          "decomposition": "",
+          "stroke_count": 0,
+          "components": []
+        },
+        {
+          "char": "援",
+          "tier": "read",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "",
+          "decomposition": "",
+          "stroke_count": 0,
+          "components": []
+        }
+      ],
+      "words": [
+        {
+          "word": "从而",
+          "pinyin": "cóngér",
+          "gloss": "",
+          "measure_for": ""
+        },
+        {
+          "word": "促进",
+          "pinyin": "cùjìn",
+          "gloss": "",
+          "measure_for": ""
+        },
+        {
+          "word": "交流",
+          "pinyin": "jiāoliú",
+          "gloss": "",
+          "measure_for": ""
+        },
+        {
+          "word": "哪怕",
+          "pinyin": "nǎpà",
+          "gloss": "",
+          "measure_for": ""
+        },
+        {
+          "word": "率领",
+          "pinyin": "shuàilǐng",
+          "gloss": "",
+          "measure_for": ""
+        },
+        {
+          "word": "文化",
+          "pinyin": "wénhuà",
+          "gloss": "",
+          "measure_for": ""
+        },
+        {
+          "word": "以及",
+          "pinyin": "yǐjí",
+          "gloss": "",
+          "measure_for": ""
+        },
+        {
+          "word": "友好",
+          "pinyin": "yǒuhǎo",
+          "gloss": "",
+          "measure_for": ""
+        }
+      ],
+      "patterns": [],
+      "sentences": [
+        "哪怕风浪再大，他们都能战胜困难。",
+        "郑和把中国人民的友好情谊以及中国的丝绸、火药和造纸术等带到了海外。5援能"
+      ],
+      "passage": "",
+      "antonyms": [],
+      "measures": [],
+      "cloze": [],
+      "truefalse": [],
+      "comprehension": []
+    },
+    {
+      "book": 8,
+      "lesson": 12,
+      "title": "达尔文",
+      "chars": [
+        {
+          "char": "尔",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "小",
+          "decomposition": "",
+          "stroke_count": 5,
+          "components": []
+        },
+        {
+          "char": "盛",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "皿",
+          "decomposition": "",
+          "stroke_count": 11,
+          "components": []
+        },
+        {
+          "char": "惹",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "心",
+          "decomposition": "",
+          "stroke_count": 12,
+          "components": []
+        },
+        {
+          "char": "述",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "辶",
+          "decomposition": "",
+          "stroke_count": 8,
+          "components": []
+        },
+        {
+          "char": "蝴",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "虫",
+          "decomposition": "",
+          "stroke_count": 15,
+          "components": []
+        },
+        {
+          "char": "蝶",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "虫",
+          "decomposition": "",
+          "stroke_count": 15,
+          "components": []
+        },
+        {
+          "char": "甲",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "丨",
+          "decomposition": "",
+          "stroke_count": 5,
+          "components": []
+        },
+        {
+          "char": "植",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "木",
+          "decomposition": "",
+          "stroke_count": 12,
+          "components": []
+        },
+        {
+          "char": "阅",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "门",
+          "decomposition": "",
+          "stroke_count": 10,
+          "components": []
+        },
+        {
+          "char": "描",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "扌",
+          "decomposition": "",
+          "stroke_count": 11,
+          "components": []
+        },
+        {
+          "char": "源",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "氵",
+          "decomposition": "",
+          "stroke_count": 13,
+          "components": []
+        },
+        {
+          "char": "奥",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "大",
+          "decomposition": "",
+          "stroke_count": 12,
+          "components": []
+        },
+        {
+          "char": "律",
+          "tier": "write",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "彳",
+          "decomposition": "",
+          "stroke_count": 9,
+          "components": []
+        },
+        {
+          "char": "玫",
+          "tier": "read",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "",
+          "decomposition": "",
+          "stroke_count": 0,
+          "components": []
+        },
+        {
+          "char": "瑰",
+          "tier": "read",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "",
+          "decomposition": "",
+          "stroke_count": 0,
+          "components": []
+        },
+        {
+          "char": "昆",
+          "tier": "read",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "",
+          "decomposition": "",
+          "stroke_count": 0,
+          "components": []
+        },
+        {
+          "char": "艳",
+          "tier": "read",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "",
+          "decomposition": "",
+          "stroke_count": 0,
+          "components": []
+        },
+        {
+          "char": "援",
+          "tier": "read",
+          "pinyin": "",
+          "gloss": "",
+          "words": [],
+          "radical": "",
+          "decomposition": "",
+          "stroke_count": 0,
+          "components": []
+        }
+      ],
+      "words": [
+        {
+          "word": "不过",
+          "pinyin": "búguò",
+          "gloss": "",
+          "measure_for": ""
+        },
+        {
+          "word": "当地",
+          "pinyin": "dāngdì",
+          "gloss": "",
+          "measure_for": ""
+        },
+        {
+          "word": "规律",
+          "pinyin": "guīlǜ",
+          "gloss": "",
+          "measure_for": ""
+        },
+        {
+          "word": "进化",
+          "pinyin": "jìnhuà",
+          "gloss": "",
+          "measure_for": ""
+        },
+        {
+          "word": "科学",
+          "pinyin": "kēxué",
+          "gloss": "",
+          "measure_for": ""
+        },
+        {
+          "word": "描写",
+          "pinyin": "miáoxiě",
+          "gloss": "",
+          "measure_for": ""
+        },
+        {
+          "word": "生物",
+          "pinyin": "shēngwù",
+          "gloss": "",
+          "measure_for": ""
+        },
+        {
+          "word": "阅读",
+          "pinyin": "yuèdú",
+          "gloss": "",
+          "measure_for": ""
+        },
+        {
+          "word": "钻研",
+          "pinyin": "zuānyán",
+          "gloss": "",
+          "measure_for": ""
+        }
+      ],
+      "patterns": [],
+      "sentences": [
+        "哪知道花没摘到，手倒被刺破了。",
+        "玫瑰花是好看，不过有刺。5援能"
+      ],
+      "passage": "",
+      "antonyms": [],
+      "measures": [],
+      "cloze": [],
+      "truefalse": [],
+      "comprehension": []
+    }
+  ]
+}

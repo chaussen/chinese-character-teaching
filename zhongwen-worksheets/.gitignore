@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# generated worksheet output — regenerate via `python -m zhw.build ...`
+out/
+
+# makemeahanzi stroke/radical data — regenerate via ./fetch_data.sh
+vendor/
+
+# tools/fetch_book.py's HTTP cache for the teaching-reference PDFs
+cache/

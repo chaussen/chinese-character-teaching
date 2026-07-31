@@ -1,0 +1,772 @@
+{
+  "meta": {
+    "series": "《中文》(修订版) 暨南大学华文学院 / 中国国务院侨务办公室",
+    "WARNING": "SAMPLE DATA ONLY — these lessons are illustrative, not the official 生字表. Replace with real ingested lesson data before classroom use.",
+    "enrichment_credit": "Radical / decomposition / stroke data: makemeahanzi (CC BY 4.0)"
+  },
+  "lessons": [
+    {
+      "book": 3,
+      "lesson": 1,
+      "title": "我的家",
+      "chars": [
+        {
+          "char": "家",
+          "tier": "write",
+          "pinyin": "jiā",
+          "gloss": "home; family"
+        },
+        {
+          "char": "爸",
+          "tier": "write",
+          "pinyin": "bà",
+          "gloss": "dad"
+        },
+        {
+          "char": "妈",
+          "tier": "write",
+          "pinyin": "mā",
+          "gloss": "mum"
+        },
+        {
+          "char": "哥",
+          "tier": "write",
+          "pinyin": "gē",
+          "gloss": "elder brother"
+        },
+        {
+          "char": "姐",
+          "tier": "write",
+          "pinyin": "jiě",
+          "gloss": "elder sister"
+        },
+        {
+          "char": "弟",
+          "tier": "write",
+          "pinyin": "dì",
+          "gloss": "younger brother"
+        },
+        {
+          "char": "妹",
+          "tier": "write",
+          "pinyin": "mèi",
+          "gloss": "younger sister"
+        },
+        {
+          "char": "有",
+          "tier": "write",
+          "pinyin": "yǒu",
+          "gloss": "to have"
+        },
+        {
+          "char": "我",
+          "tier": "read",
+          "pinyin": "wǒ",
+          "gloss": "I; me"
+        },
+        {
+          "char": "的",
+          "tier": "read",
+          "pinyin": "de",
+          "gloss": "(possessive)"
+        },
+        {
+          "char": "是",
+          "tier": "read",
+          "pinyin": "shì",
+          "gloss": "to be"
+        },
+        {
+          "char": "个",
+          "tier": "read",
+          "pinyin": "gè",
+          "gloss": "(measure word)"
+        },
+        {
+          "char": "人",
+          "tier": "read",
+          "pinyin": "rén",
+          "gloss": "person"
+        },
+        {
+          "char": "五",
+          "tier": "read",
+          "pinyin": "wǔ",
+          "gloss": "five"
+        },
+        {
+          "char": "和",
+          "tier": "read",
+          "pinyin": "hé",
+          "gloss": "and"
+        }
+      ],
+      "words": [
+        {
+          "word": "爸爸",
+          "pinyin": "bàba",
+          "gloss": "dad"
+        },
+        {
+          "word": "妈妈",
+          "pinyin": "māma",
+          "gloss": "mum"
+        },
+        {
+          "word": "哥哥",
+          "pinyin": "gēge",
+          "gloss": "elder brother"
+        },
+        {
+          "word": "姐姐",
+          "pinyin": "jiějie",
+          "gloss": "elder sister"
+        },
+        {
+          "word": "弟弟",
+          "pinyin": "dìdi",
+          "gloss": "younger brother"
+        },
+        {
+          "word": "妹妹",
+          "pinyin": "mèimei",
+          "gloss": "younger sister"
+        },
+        {
+          "word": "我家",
+          "pinyin": "wǒ jiā",
+          "gloss": "my home"
+        }
+      ],
+      "patterns": [
+        "我家有……个人。"
+      ],
+      "sentences": [
+        "我家有五个人。",
+        "这是我的爸爸。",
+        "我有一个弟弟。",
+        "姐姐和妹妹是我的姐妹。"
+      ],
+      "measures": [
+        [
+          "个",
+          "人"
+        ]
+      ],
+      "cloze": [
+        [
+          "这是我的＿＿。",
+          "爸爸"
+        ],
+        [
+          "＿＿和妹妹是我的姐妹。",
+          "姐姐"
+        ]
+      ]
+    },
+    {
+      "book": 3,
+      "lesson": 2,
+      "title": "学校",
+      "chars": [
+        {
+          "char": "学",
+          "tier": "write",
+          "pinyin": "xué",
+          "gloss": "to study"
+        },
+        {
+          "char": "校",
+          "tier": "write",
+          "pinyin": "xiào",
+          "gloss": "school"
+        },
+        {
+          "char": "老",
+          "tier": "write",
+          "pinyin": "lǎo",
+          "gloss": "old"
+        },
+        {
+          "char": "师",
+          "tier": "write",
+          "pinyin": "shī",
+          "gloss": "teacher"
+        },
+        {
+          "char": "同",
+          "tier": "write",
+          "pinyin": "tóng",
+          "gloss": "same"
+        },
+        {
+          "char": "书",
+          "tier": "write",
+          "pinyin": "shū",
+          "gloss": "book"
+        },
+        {
+          "char": "本",
+          "tier": "write",
+          "pinyin": "běn",
+          "gloss": "(measure) volume"
+        },
+        {
+          "char": "上",
+          "tier": "write",
+          "pinyin": "shàng",
+          "gloss": "up; to attend"
+        },
+        {
+          "char": "去",
+          "tier": "read",
+          "pinyin": "qù",
+          "gloss": "to go"
+        },
+        {
+          "char": "一",
+          "tier": "read",
+          "pinyin": "yī",
+          "gloss": "one"
+        },
+        {
+          "char": "这",
+          "tier": "read",
+          "pinyin": "zhè",
+          "gloss": "this"
+        },
+        {
+          "char": "那",
+          "tier": "read",
+          "pinyin": "nà",
+          "gloss": "that"
+        },
+        {
+          "char": "很",
+          "tier": "read",
+          "pinyin": "hěn",
+          "gloss": "very"
+        }
+      ],
+      "words": [
+        {
+          "word": "学校",
+          "pinyin": "xuéxiào",
+          "gloss": "school"
+        },
+        {
+          "word": "老师",
+          "pinyin": "lǎoshī",
+          "gloss": "teacher"
+        },
+        {
+          "word": "同学",
+          "pinyin": "tóngxué",
+          "gloss": "classmate"
+        },
+        {
+          "word": "上学",
+          "pinyin": "shàngxué",
+          "gloss": "to go to school"
+        },
+        {
+          "word": "课本",
+          "pinyin": "kèběn",
+          "gloss": "textbook"
+        },
+        {
+          "word": "学生",
+          "pinyin": "xuéshēng",
+          "gloss": "student"
+        }
+      ],
+      "patterns": [
+        "……是我的……。"
+      ],
+      "sentences": [
+        "我去学校上学。",
+        "老师有一本书。",
+        "他是我的同学。",
+        "这本书很好。"
+      ],
+      "measures": [
+        [
+          "本",
+          "书"
+        ],
+        [
+          "个",
+          "同学"
+        ]
+      ],
+      "cloze": [
+        [
+          "我去＿＿上学。",
+          "学校"
+        ],
+        [
+          "他是我的＿＿。",
+          "同学"
+        ],
+        [
+          "＿＿有一本书。",
+          "老师"
+        ]
+      ]
+    },
+    {
+      "book": 3,
+      "lesson": 3,
+      "title": "公园",
+      "chars": [
+        {
+          "char": "公",
+          "tier": "write",
+          "pinyin": "gōng",
+          "gloss": "public"
+        },
+        {
+          "char": "园",
+          "tier": "write",
+          "pinyin": "yuán",
+          "gloss": "garden; park"
+        },
+        {
+          "char": "花",
+          "tier": "write",
+          "pinyin": "huā",
+          "gloss": "flower"
+        },
+        {
+          "char": "草",
+          "tier": "write",
+          "pinyin": "cǎo",
+          "gloss": "grass"
+        },
+        {
+          "char": "树",
+          "tier": "write",
+          "pinyin": "shù",
+          "gloss": "tree"
+        },
+        {
+          "char": "木",
+          "tier": "write",
+          "pinyin": "mù",
+          "gloss": "wood"
+        },
+        {
+          "char": "大",
+          "tier": "write",
+          "pinyin": "dà",
+          "gloss": "big"
+        },
+        {
+          "char": "小",
+          "tier": "write",
+          "pinyin": "xiǎo",
+          "gloss": "small"
+        },
+        {
+          "char": "里",
+          "tier": "read",
+          "pinyin": "lǐ",
+          "gloss": "inside"
+        },
+        {
+          "char": "下",
+          "tier": "read",
+          "pinyin": "xià",
+          "gloss": "under"
+        },
+        {
+          "char": "在",
+          "tier": "read",
+          "pinyin": "zài",
+          "gloss": "at; in"
+        },
+        {
+          "char": "也",
+          "tier": "read",
+          "pinyin": "yě",
+          "gloss": "also"
+        },
+        {
+          "char": "们",
+          "tier": "read",
+          "pinyin": "men",
+          "gloss": "(plural)"
+        },
+        {
+          "char": "高",
+          "tier": "read",
+          "pinyin": "gāo",
+          "gloss": "tall"
+        },
+        {
+          "char": "兴",
+          "tier": "read",
+          "pinyin": "xìng",
+          "gloss": "mood; interest"
+        },
+        {
+          "char": "几",
+          "tier": "read",
+          "pinyin": "jǐ",
+          "gloss": "how many"
+        },
+        {
+          "char": "哪",
+          "tier": "read",
+          "pinyin": "nǎ",
+          "gloss": "which; where"
+        },
+        {
+          "char": "什",
+          "tier": "read",
+          "pinyin": "shén",
+          "gloss": "what (in 什么)"
+        },
+        {
+          "char": "么",
+          "tier": "read",
+          "pinyin": "me",
+          "gloss": "(in 什么)"
+        }
+      ],
+      "words": [
+        {
+          "word": "公园",
+          "pinyin": "gōngyuán",
+          "gloss": "park"
+        },
+        {
+          "word": "花草",
+          "pinyin": "huācǎo",
+          "gloss": "flowers and grass"
+        },
+        {
+          "word": "大树",
+          "pinyin": "dàshù",
+          "gloss": "big tree"
+        },
+        {
+          "word": "小花",
+          "pinyin": "xiǎohuā",
+          "gloss": "little flower"
+        },
+        {
+          "word": "树木",
+          "pinyin": "shùmù",
+          "gloss": "trees"
+        },
+        {
+          "word": "高兴",
+          "pinyin": "gāoxìng",
+          "gloss": "happy"
+        },
+        {
+          "word": "我们",
+          "pinyin": "wǒmen",
+          "gloss": "we; us"
+        },
+        {
+          "word": "什么",
+          "pinyin": "shénme",
+          "gloss": "what"
+        },
+        {
+          "word": "哪里",
+          "pinyin": "nǎlǐ",
+          "gloss": "where"
+        }
+      ],
+      "patterns": [
+        "……里有……。"
+      ],
+      "sentences": [
+        "公园里有大树。",
+        "我们去公园。",
+        "小花很小。",
+        "我和哥哥在大树下。"
+      ],
+      "antonyms": [
+        [
+          "大",
+          "小"
+        ],
+        [
+          "上",
+          "下"
+        ]
+      ],
+      "measures": [
+        [
+          "个",
+          "公园"
+        ]
+      ],
+      "passage": "我家有五个人。我们去公园。公园里有大树，也有小花和草。我和哥哥在大树下。妹妹很小，妈妈在小花那里。我们很高兴。",
+      "cloze": [
+        [
+          "公园里有大＿＿。",
+          "树"
+        ],
+        [
+          "小＿＿很小。",
+          "花"
+        ]
+      ],
+      "truefalse": [
+        [
+          "公园里有大树。",
+          true
+        ],
+        [
+          "我家有三个人。",
+          false
+        ],
+        [
+          "我和哥哥在大树下。",
+          true
+        ],
+        [
+          "妹妹很高。",
+          false
+        ],
+        [
+          "公园里也有小花和草。",
+          true
+        ],
+        [
+          "妈妈在大树那里。",
+          false
+        ]
+      ],
+      "comprehension": [
+        [
+          "我家有几个人？",
+          "五个人。"
+        ],
+        [
+          "我们去哪里？",
+          "去公园。"
+        ],
+        [
+          "公园里有什么？",
+          "有大树、小花和草。"
+        ]
+      ]
+    },
+    {
+      "book": 3,
+      "lesson": 4,
+      "title": "买东西",
+      "chars": [
+        {
+          "char": "买",
+          "tier": "write",
+          "pinyin": "mǎi",
+          "gloss": "to buy",
+          "stroke_count": 6
+        },
+        {
+          "char": "卖",
+          "tier": "write",
+          "pinyin": "mài",
+          "gloss": "to sell",
+          "stroke_count": 8
+        },
+        {
+          "char": "东",
+          "tier": "write",
+          "pinyin": "dōng",
+          "gloss": "east",
+          "stroke_count": 5
+        },
+        {
+          "char": "西",
+          "tier": "write",
+          "pinyin": "xī",
+          "gloss": "west",
+          "stroke_count": 6
+        },
+        {
+          "char": "钱",
+          "tier": "write",
+          "pinyin": "qián",
+          "gloss": "money",
+          "stroke_count": 10
+        },
+        {
+          "char": "元",
+          "tier": "write",
+          "pinyin": "yuán",
+          "gloss": "dollar; yuan",
+          "stroke_count": 4
+        },
+        {
+          "char": "棵",
+          "tier": "write",
+          "pinyin": "kē",
+          "gloss": "(measure) plants",
+          "stroke_count": 12
+        },
+        {
+          "char": "朵",
+          "tier": "write",
+          "pinyin": "duǒ",
+          "gloss": "(measure) flowers",
+          "stroke_count": 6
+        },
+        {
+          "char": "只",
+          "tier": "read",
+          "pinyin": "zhī",
+          "gloss": "(measure) animals",
+          "stroke_count": 5
+        },
+        {
+          "char": "手",
+          "tier": "read",
+          "pinyin": "shǒu",
+          "gloss": "hand",
+          "stroke_count": 4
+        },
+        {
+          "char": "多",
+          "tier": "read",
+          "pinyin": "duō",
+          "gloss": "many",
+          "stroke_count": 6
+        },
+        {
+          "char": "少",
+          "tier": "read",
+          "pinyin": "shǎo",
+          "gloss": "few",
+          "stroke_count": 4
+        },
+        {
+          "char": "两",
+          "tier": "read",
+          "pinyin": "liǎng",
+          "gloss": "two",
+          "stroke_count": 7
+        },
+        {
+          "char": "他",
+          "tier": "read",
+          "pinyin": "tā",
+          "gloss": "he; him",
+          "stroke_count": 5
+        }
+      ],
+      "words": [
+        {
+          "word": "东西",
+          "pinyin": "dōngxi",
+          "gloss": "thing"
+        },
+        {
+          "word": "买卖",
+          "pinyin": "mǎimai",
+          "gloss": "trade"
+        },
+        {
+          "word": "多少",
+          "pinyin": "duōshao",
+          "gloss": "how many"
+        },
+        {
+          "word": "花钱",
+          "pinyin": "huāqián",
+          "gloss": "to spend money"
+        },
+        {
+          "word": "两个",
+          "pinyin": "liǎng gè",
+          "gloss": "two (of something)"
+        },
+        {
+          "word": "小手",
+          "pinyin": "xiǎoshǒu",
+          "gloss": "little hand"
+        }
+      ],
+      "patterns": [
+        "……多少钱？"
+      ],
+      "sentences": [
+        "这个东西多少钱？",
+        "我买两个。",
+        "他去公园买花。",
+        "妈妈的手很小。"
+      ],
+      "antonyms": [
+        [
+          "买",
+          "卖"
+        ],
+        [
+          "多",
+          "少"
+        ],
+        [
+          "东",
+          "西"
+        ]
+      ],
+      "measures": [
+        [
+          "棵",
+          "树"
+        ],
+        [
+          "朵",
+          "花"
+        ],
+        [
+          "本",
+          "书"
+        ],
+        [
+          "个",
+          "人"
+        ],
+        [
+          "只",
+          "手"
+        ]
+      ],
+      "cloze": [
+        [
+          "这个＿＿多少钱？",
+          "东西"
+        ],
+        [
+          "妈妈的＿＿很小。",
+          "手"
+        ]
+      ],
+      "truefalse": [
+        [
+          "他去公园买花。",
+          true
+        ],
+        [
+          "我买三个。",
+          false
+        ],
+        [
+          "妈妈的手很小。",
+          true
+        ],
+        [
+          "东西很多钱。",
+          false
+        ]
+      ]
+    }
+  ]
+}

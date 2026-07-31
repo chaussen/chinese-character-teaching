@@ -1,0 +1,34 @@
+# A pinned recipe. Same file + same seed => byte-identical worksheet, forever.
+#
+# Book 9, lesson 8, PLUS a review mix pulled back from books 7 & 8 — see
+# recipes/b9l3-review.yaml for the rationale, and for why `minutes: 45`
+# replaces a hand-picked `sections:` list.
+id: b9l8-review-mix
+title: 《中文》第九册　第八课　练习（含七、八册复习字）
+data:
+  - data/book9.json
+  - data/book7.json
+  - data/book8.json
+seed: 20260731
+minutes: 45
+strict: false
+# book9.json has no teacher-supplied stroke counts at all (unlike books 7/8,
+# which got theirs from the teaching-reference PDFs) — without `derived` here,
+# stroke_count is skipped outright for this lesson's own characters instead of
+# blending them in at enrichment quality. Re-audit once book 9 gets real
+# textbook stroke counts, then drop this back to the default tiers.
+allow: [verified, authored, open, derived]
+
+scope:
+  book: 9
+  lessons: [8]
+  vocabulary: cumulative
+  review:
+    books: [7, 8]
+    ratio: 0.35
+    tier: write
+
+layout:
+  density: ""
+  answer_key: true
+  school_line: "本校 · 内部使用 Internal use"

@@ -1,0 +1,2 @@
+pypinyin>=0.53
+PyYAML>=6.0
