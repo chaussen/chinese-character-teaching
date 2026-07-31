@@ -2,7 +2,8 @@
 
 Tools and web apps for teaching Chinese characters: a browser learning app, a
 classical-text reader, print-ready handwriting practice cards (米字格 + pinyin),
-vocab flashcards, stroke-order diagrams, and a Kahoot quiz-sheet generator.
+vocab flashcards, stroke-order diagrams, a full classroom worksheet generator,
+and a Kahoot quiz-sheet generator.
 
 ## Public site (GitHub Pages)
 
@@ -18,6 +19,7 @@ A static site is assembled and published by GitHub Actions
 | `/history/`              | 史案 History KG Reader            | `history-reader/` |
 | `/tools/cardmaker/`      | Card Maker web app (hidden, not linked from landing) | built from `cardmaker/` |
 | `/tools/kahoot/`         | Kahoot tool info page (hidden, not linked from landing) | `chinese_tools/kahoot/web/index.html` |
+| `/tools/worksheet-maker/` | Worksheet Maker web app (hidden, not linked from landing) | `worksheet-maker/` + `zhongwen-worksheets/zhw` + `data/` (runs in-browser via Pyodide) |
 
 To work on the Studio locally, serve the repo root and open `studio.html`
 (it loads its engine and data from `learn/` and clips from `audio/`).
@@ -47,6 +49,18 @@ chinese_tools/            # the remaining Python tool (one package)
 
 worksheets/               # ready-to-print PDFs + their source character lists
 tests/                    # pytest suite (Python side)
+
+zhongwen-worksheets/      # ← the worksheet maker (Python): CLI + question bank + recipes
+├── zhw/                    model, ingest, enrich, render, validate, build, qbank/
+├── data/                   per-book corpus JSON (book7/8/9.json) + timing.json
+├── recipes/                pinned worksheet definitions
+└── webapi.py (in zhw/)     JSON-in/JSON-out glue used by worksheet-maker/app.js
+
+worksheet-maker/          # web app shell (served at /tools/worksheet-maker/,
+                          # hidden — not linked from landing): runs
+                          # zhongwen-worksheets/zhw client-side via Pyodide —
+                          # no server. index.html + app.js are committed; py/
+                          # and data/ are a deploy-time copy (gitignored).
 ```
 
 ## Tools
@@ -66,6 +80,25 @@ npm run web:dev                                         # the web app, locally
 
 See [`worksheets/README.md`](worksheets/README.md) for the ready-made Year 1–6
 PDFs and how to regenerate them.
+
+### Worksheet maker — `zhongwen-worksheets/` (Python) + `worksheet-maker/` (web)
+
+Builds a full 《中文》 classroom drill sheet from a book/lesson: trace, pinyin,
+vocabulary, sentence, reading and puzzle questions, sized to a target class
+length, with a checked answer key — plus an optional "review mix" that blends
+in already-taught characters from earlier books so a sheet isn't 100% brand
+new material. See [`zhongwen-worksheets/README.md`](zhongwen-worksheets/README.md)
+for the full CLI/recipe reference.
+
+```bash
+cd zhongwen-worksheets && pip install -r requirements.txt
+python -m zhw.build --recipe recipes/b9l3-review.yaml
+```
+
+The same generator runs **in the browser, no server**, at
+`/tools/worksheet-maker/` (hidden, not linked from landing) —
+`worksheet-maker/app.js` loads Pyodide, writes `zhongwen-worksheets/zhw` and its
+data straight into the in-browser filesystem, and calls `zhw.webapi` directly.
 
 ### Kahoot quiz generator — `chinese_tools.kahoot`
 

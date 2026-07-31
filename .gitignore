@@ -24,3 +24,9 @@ history-reader/build/input/*.skel.json
 # backend (Cloudflare Worker)
 backend/node_modules/
 backend/.wrangler/
+
+# Worksheet Maker — py/ and data/ are a deploy-time copy of
+# zhongwen-worksheets/zhw and zhongwen-worksheets/data/*.json (see
+# deploy-pages.yml); kept out of git so there's one source of truth.
+worksheet-maker/py/
+worksheet-maker/data/

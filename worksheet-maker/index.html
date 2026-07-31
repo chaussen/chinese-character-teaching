@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#A87C1D" />
+  <title>Worksheet Maker · 练习卷生成器</title>
+  <meta name="description" content="Generate print-ready 《中文》 classroom worksheets in your browser — trace, pinyin, vocabulary, sentence and puzzle drills, built to a target class length, with an answer key. Runs entirely client-side." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Noto+Serif+SC:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <style>
+    :root{
+      --amber:#A87C1D; --amber-deep:#8A6414; --ink:#2A2622; --ink-soft:#6F6760;
+      --paper:#FBF6EF; --card:#FFFFFF; --line:#ECE2D6;
+    }
+    *{box-sizing:border-box; margin:0; padding:0;}
+    html{-webkit-text-size-adjust:100%}
+    body{
+      font-family:Manrope,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+      color:var(--ink); background:var(--paper); line-height:1.5;
+      -webkit-font-smoothing:antialiased; height:100vh; display:flex; flex-direction:column;
+      overflow:hidden;
+    }
+    .zh{font-family:"Noto Serif SC","Noto Sans SC",serif;}
+    a{color:inherit}
+
+    header.top{
+      display:flex; align-items:center; gap:14px; padding:12px 20px;
+      border-bottom:1px solid var(--line); background:var(--card); flex:none;
+    }
+    .logo{
+      width:34px; height:34px; border-radius:10px; display:grid; place-items:center;
+      background:linear-gradient(150deg,var(--amber),var(--amber-deep));
+      color:#fff; font-family:"Noto Serif SC",serif; font-size:18px; font-weight:700; flex:none;
+    }
+    header.top h1{font-size:16.5px; font-weight:800; letter-spacing:-.2px;}
+    header.top .sub{font-size:12.5px; color:var(--ink-soft); font-weight:500;}
+    header.top .spacer{flex:1;}
+    #boot-status{
+      font-size:12.5px; color:var(--ink-soft); font-weight:600;
+      display:flex; align-items:center; gap:8px;
+    }
+    .spinner{
+      width:13px; height:13px; border-radius:50%; border:2px solid var(--line);
+      border-top-color:var(--amber); animation:spin .8s linear infinite; flex:none;
+    }
+    @keyframes spin{to{transform:rotate(360deg)}}
+
+    main{flex:1; display:flex; min-height:0;}
+
+    .panel{
+      width:400px; flex:none; overflow-y:auto; padding:20px 22px 40px;
+      border-right:1px solid var(--line); background:var(--card);
+    }
+    .panel fieldset{border:0; padding:0; margin:0 0 22px;}
+    .panel legend{
+      font-size:12px; font-weight:800; text-transform:uppercase; letter-spacing:.06em;
+      color:var(--amber-deep); margin-bottom:10px; padding:0;
+    }
+    .field{margin-bottom:14px;}
+    .field label{display:block; font-size:13.5px; font-weight:700; margin-bottom:5px;}
+    .field .hint{font-size:12px; color:var(--ink-soft); margin-top:4px;}
+    select, input[type=number]{
+      width:100%; padding:9px 10px; border:1px solid var(--line); border-radius:9px;
+      font:inherit; font-size:14px; background:#fff; color:var(--ink);
+    }
+    input[type=range]{width:100%;}
+    .row2{display:grid; grid-template-columns:1fr 1fr; gap:10px;}
+    .checks{display:flex; flex-wrap:wrap; gap:6px;}
+    .chk{
+      display:inline-flex; align-items:center; gap:6px; font-size:13px; font-weight:600;
+      padding:6px 10px; border:1px solid var(--line); border-radius:999px; cursor:pointer;
+      background:var(--paper); user-select:none;
+    }
+    .chk input{margin:0;}
+    .chk:has(input:checked){background:#FBF0DC; border-color:#E3C583; color:var(--amber-deep);}
+    .toggle-row{display:flex; align-items:center; gap:8px; font-size:13.5px; font-weight:700;}
+    .ratio-val{font-variant-numeric:tabular-nums; color:var(--amber-deep); font-weight:800;}
+    .note{
+      font-size:12px; color:var(--ink-soft); background:var(--paper); border:1px solid var(--line);
+      border-radius:10px; padding:9px 11px; margin-top:8px;
+    }
+    .review-block, .minutes-block{
+      border:1px solid var(--line); border-radius:12px; padding:12px 13px; margin-top:8px;
+      background:var(--paper);
+    }
+    .review-block[data-off] > *:not(.toggle-row){display:none;}
+
+    #generate-btn{
+      width:100%; padding:13px 16px; border:0; border-radius:12px; font:inherit;
+      font-size:15px; font-weight:800; color:#fff; background:var(--amber); cursor:pointer;
+      transition:background .15s ease;
+    }
+    #generate-btn:hover:not(:disabled){background:var(--amber-deep);}
+    #generate-btn:disabled{background:#D8CBAE; cursor:not-allowed;}
+    #error-box{
+      display:none; margin-top:12px; padding:11px 13px; border-radius:10px; font-size:13px;
+      background:#FBE9E6; color:#9E382F; border:1px solid #EFC7C0; white-space:pre-wrap;
+    }
+
+    .preview{flex:1; display:flex; flex-direction:column; min-width:0; background:#e8e2d5;}
+    .preview-bar{
+      display:flex; align-items:center; gap:10px; padding:10px 16px; background:var(--card);
+      border-bottom:1px solid var(--line); flex:none; flex-wrap:wrap;
+    }
+    .preview-bar button{
+      font:inherit; font-size:13px; font-weight:700; padding:8px 14px; border-radius:9px;
+      border:1px solid var(--line); background:#fff; color:var(--ink); cursor:pointer;
+    }
+    .preview-bar button:hover:not(:disabled){border-color:#cbbd9a; background:var(--paper);}
+    .preview-bar button:disabled{color:#B8AFA2; cursor:not-allowed;}
+    #report-line{font-size:12.5px; color:var(--ink-soft); flex:1; min-width:200px;}
+    #report-line b{color:var(--ink);}
+    .preview iframe{flex:1; width:100%; border:0; background:#fff;}
+    .empty-state{
+      flex:1; display:flex; align-items:center; justify-content:center; flex-direction:column;
+      gap:10px; color:var(--ink-soft); text-align:center; padding:40px;
+    }
+    .empty-state .zh{font-size:40px; color:#D8CBAE;}
+
+    details#diag{margin-top:6px;}
+    details#diag summary{font-size:12px; font-weight:700; color:var(--amber-deep); cursor:pointer;}
+    details#diag .diag-body{font-size:12px; color:var(--ink-soft); margin-top:6px; line-height:1.6;}
+
+    @media (max-width: 860px){
+      main{flex-direction:column;}
+      .panel{width:100%; max-height:52vh; border-right:0; border-bottom:1px solid var(--line);}
+    }
+  </style>
+</head>
+<body>
+  <header class="top">
+    <div class="logo zh">题</div>
+    <div>
+      <h1>Worksheet Maker <span class="zh" style="font-weight:600;color:var(--ink-soft)">练习卷生成器</span></h1>
+      <div class="sub">《中文》(修订版) classroom drill sheets — generated in your browser</div>
+    </div>
+    <span class="spacer"></span>
+    <span id="boot-status"><span class="spinner"></span> Loading…</span>
+  </header>
+
+  <main>
+    <section class="panel" id="panel">
+      <fieldset>
+        <legend>Lesson</legend>
+        <div class="field">
+          <label for="book-select">Book <span class="zh">册</span></label>
+          <select id="book-select" disabled></select>
+        </div>
+        <div class="field">
+          <label>Lessons <span class="zh">课</span></label>
+          <div class="checks" id="lesson-checks"></div>
+          <p class="hint">Pick one or more lessons to practise. Question material is drawn from these.</p>
+        </div>
+        <div class="field">
+          <label for="vocab-select">Known-vocabulary window</label>
+          <select id="vocab-select">
+            <option value="cumulative" selected>Cumulative — everything up to this lesson</option>
+            <option value="book">This book, up to this lesson</option>
+            <option value="lesson">Just the selected lesson(s)</option>
+          </select>
+          <p class="hint">Controls what's allowed as distractors / padding / reading text — never what's tested (see Review below for that).</p>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Review mix</legend>
+        <div class="review-block" data-off id="review-block">
+          <label class="toggle-row"><input type="checkbox" id="review-toggle" /> Mix in review characters from earlier books</label>
+          <p class="hint" style="margin:6px 0 8px">Students may not have finished this book yet, or may have forgotten
+            characters from earlier ones. This blends older, already-taught characters back into every
+            character-based question — not just as filler for wrong answers.</p>
+          <div class="field">
+            <label>Draw review characters from</label>
+            <div class="checks" id="review-book-checks"></div>
+          </div>
+          <div class="field">
+            <label>Review share <span class="ratio-val" id="ratio-val">35%</span></label>
+            <input type="range" id="review-ratio" min="0" max="70" value="35" step="5" />
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Length &amp; layout</legend>
+        <div class="field">
+          <label for="minutes-input">Target class length (minutes)</label>
+          <input type="number" id="minutes-input" min="10" max="90" step="5" value="45" />
+          <p class="hint">The sheet is built to fit this — real sections are generated and measured, not guessed.</p>
+        </div>
+        <div class="row2">
+          <div class="field">
+            <label for="style-select">Style</label>
+            <select id="style-select">
+              <option value="drill" selected>Drill (dense, classroom)</option>
+              <option value="workbook">Workbook (scaffolded)</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="density-select">Density</label>
+            <select id="density-select">
+              <option value="">Default</option>
+              <option value="compact">Compact</option>
+              <option value="spacious">Spacious</option>
+            </select>
+          </div>
+        </div>
+        <div class="row2">
+          <div class="field">
+            <label for="lang-select">Instructions</label>
+            <select id="lang-select">
+              <option value="both" selected>Chinese + English</option>
+              <option value="zh">Chinese only</option>
+              <option value="en">English only</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="seed-input">Seed</label>
+            <input type="number" id="seed-input" value="20260731" />
+          </div>
+        </div>
+        <label class="toggle-row"><input type="checkbox" id="derived-toggle" /> Allow enrichment-derived stroke counts</label>
+        <p class="hint">Off by default: an auto-computed (not textbook-verified) stroke count is never shown unless
+          you opt in here. Turn on if a book's own stroke-count data is incomplete and you'd rather see something
+          than nothing.</p>
+      </fieldset>
+
+      <button id="generate-btn" disabled>Loading Python runtime…</button>
+      <div id="error-box"></div>
+    </section>
+
+    <section class="preview">
+      <div class="preview-bar" id="preview-bar" style="display:none">
+        <button id="print-btn">🖨 Print / Save PDF</button>
+        <button id="download-btn">⬇ Download HTML</button>
+        <span id="report-line"></span>
+      </div>
+      <div class="empty-state" id="empty-state">
+        <div class="zh">题</div>
+        <p>Pick a lesson on the left, then <b>Generate</b>.<br>The worksheet — with its answer key — will preview here.</p>
+      </div>
+      <iframe id="preview-frame" style="display:none" title="Worksheet preview"></iframe>
+    </section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/pyodide/v0.29.4/full/pyodide.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

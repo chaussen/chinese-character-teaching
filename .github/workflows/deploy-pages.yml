@@ -7,7 +7,9 @@
 #
 #   /tools/cardmaker/       Card Maker web app     (built from cardmaker/) — not linked from
 #   /tools/kahoot/          Kahoot tool info page  (chinese_tools/kahoot/web/)   landing;
-#                           reachable only by anyone who already knows the URL.
+#   /tools/worksheet-maker/ Worksheet Maker web app (worksheet-maker/ + zhongwen-worksheets/
+#                           zhw+data, runs in-browser via Pyodide)  reachable only by anyone
+#                           who already knows the URL.
 #
 # One-time setup (repo owner): Settings -> Pages -> "Build and deployment" ->
 # Source: "GitHub Actions". For the custom domain, also add the DNS record and
@@ -26,6 +28,9 @@ on:
       - "landing/**"
       - "classical-reader/index.html"
       - "history-reader/**"
+      - "worksheet-maker/**"
+      - "zhongwen-worksheets/zhw/**"
+      - "zhongwen-worksheets/data/**"
       - ".github/workflows/deploy-pages.yml"
   workflow_dispatch:
 
@@ -61,7 +66,9 @@ jobs:
           set -euo pipefail
           SITE="_site"
           rm -rf "$SITE"
-          mkdir -p "$SITE/character" "$SITE/classical-literature" "$SITE/history" "$SITE/tools/cardmaker" "$SITE/tools/kahoot"
+          mkdir -p "$SITE/character" "$SITE/classical-literature" "$SITE/history" \
+                   "$SITE/tools/cardmaker" "$SITE/tools/kahoot" \
+                   "$SITE/tools/worksheet-maker/py/zhw/qbank" "$SITE/tools/worksheet-maker/data"
 
           # Landing / hub  ->  /
           cp -r landing/. "$SITE"/
@@ -83,6 +90,17 @@ jobs:
 
           # Kahoot tool  ->  /tools/kahoot/   (info page only — the tool itself is a local CLI)
           cp chinese_tools/kahoot/web/index.html "$SITE/tools/kahoot/index.html"
+
+          # Worksheet Maker  ->  /tools/worksheet-maker/   (static shell + a copy of the
+          # zhongwen-worksheets Python package, run client-side via Pyodide — no server,
+          # so the "build" here is just assembling files, no transpile; not linked from
+          # landing, reachable only if you know the URL, same as the other tools above)
+          cp worksheet-maker/index.html worksheet-maker/app.js "$SITE/tools/worksheet-maker/"
+          cp zhongwen-worksheets/zhw/*.py "$SITE/tools/worksheet-maker/py/zhw/"
+          cp zhongwen-worksheets/zhw/qbank/*.py "$SITE/tools/worksheet-maker/py/zhw/qbank/"
+          cp zhongwen-worksheets/data/book7.json zhongwen-worksheets/data/book8.json \
+             zhongwen-worksheets/data/book9.json zhongwen-worksheets/data/timing.json \
+             "$SITE/tools/worksheet-maker/data/"
 
           # Skip Jekyll processing of the artifact.
           touch "$SITE/.nojekyll"
